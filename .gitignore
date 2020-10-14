@@ -1,0 +1,14 @@
+/.idea/
+/.vscode/
+/print_char
+/print_escape
+/print_float
+/print_integer
+c-basics/variables/integer
+c-basics/hello-world/hello
+c-basics/constants/constants
+c-basics/expressions/arithmetic_expressions
+c-basics/selection/switch_statement
+c-basics/hello-world/_hello.c
+c-basics/hello-world/_hello.s
+c-basics/hello-world/hello.o
