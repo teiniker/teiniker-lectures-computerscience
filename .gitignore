@@ -1,9 +1,9 @@
-/.idea/
-/.vscode/
-/print_char
-/print_escape
-/print_float
-/print_integer
+.idea/
+.vscode/
+print_char
+print_escape
+print_float
+print_integer
 c-basics/variables/integer
 c-basics/hello-world/hello
 c-basics/constants/constants
@@ -12,3 +12,10 @@ c-basics/selection/switch_statement
 c-basics/hello-world/_hello.c
 c-basics/hello-world/_hello.s
 c-basics/hello-world/hello.o
+c-basics/selection/conditional_expression
+c-basics/selection/if_statement
+c-std-lib/stdint/standard-integer
+c-std-lib/stdio/printf_char
+c-std-lib/stdio/printf_escape
+c-std-lib/stdio/printf_float
+c-std-lib/stdio/printf_integer
