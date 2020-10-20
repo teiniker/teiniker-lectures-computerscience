@@ -17,3 +17,7 @@ The following topics will be covered:
     * Build Automation
     * [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-testing)
         
+As a development environment, you can use a pre-configured Linux VM image 
+(Debian 10) as a Virtual Lab.         
+
+*Egon Teiniker, 2020, GPL v3.0*         
