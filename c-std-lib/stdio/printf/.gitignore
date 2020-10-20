@@ -1,0 +1,4 @@
+printf_char
+printf_escape
+printf_float
+printf_integer
