@@ -1,0 +1,39 @@
+Exercise: Print ASCII Table
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das die ASCII Tabelle ausgibt.
+Beachten Sie, dass nur darstellbare Zeichen (im Wertebereich 32 <= char <= 126)
+ausgegeben werden.
+Geben Sie die Zeichen, den Dezimal-Wert, den Hex-Wert und den Octal-Wert aus:
+
+       +-----+-------+-------+------+
+        | char|  Dec  |  Hex  |  Oct |
+        +-----+-------+-------+------+
+          ' '    32     0x20     40
+          '!'    33     0x21     41
+          '"'    34     0x22     42
+          '#'    35     0x23     43
+          '$'    36     0x24     44
+          '%'    37     0x25     45
+          '&'    38     0x26     46
+          '''    39     0x27     47
+          '('    40     0x28     50
+          ')'    41     0x29     51
+        
+        ...
+          
+          'x'   120     0x78    170
+          'y'   121     0x79    171
+          'z'   122     0x7a    172
+          '{'   123     0x7b    173
+          '|'   124     0x7c    174
+          '}'   125     0x7d    175
+          '~'   126     0x7e    176
+
+Tipp: Verwenden Sie die printf() Funktion.
+
+Beachten Sie, dass es zwei Varianten gibt das Problem zu lösen:
+a) Sie lassen eine Schleife von 32 bis 126 laufen und geben die Werte als 
+   Zeichen aus. 
+b) Sie lassen die Schleife von 0 bis 127 laufen und überprüfen mit einem
+   if-Statement ob der Wert als Zeichen darstellbar ist.

@@ -1,0 +1,14 @@
+Exercise: Arduino Sketch
+-------------------------------------------------------------------------------
+
+Schreiben Sie eine main() Funktion, welche die Aufrufreihenfolge der 
+Funktionen setup() und loop() so implementiert, wie sie auch in einem Arduino 
+Sketch zu finden ist:
+
+  setup()   ein Aufruf am Beginn
+  loop()    wird immer wieder aufgerufen
+
+Tipp: Verwenden Sie die gegebenen Implementierungen für setup() und loop() um
+      einen einfachen Counter zu implementieren.
+
+Siehe:: https://www.arduino.cc/en/Tutorial/Sketch

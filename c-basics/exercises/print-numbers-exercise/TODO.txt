@@ -1,0 +1,20 @@
+Exercise: Print Numbers
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das die gegebenen Variableninhalte in Form einer
+Tabelle ausgibt:
+
+Filename = "C:\tmp\table.txt"
+        +--------+--------+
+        | char   | #      |
+        | int    | 000001 |
+        | int    | 999999 |
+        | float  | 0.1000 |
+        | double | 3.1415 |
+        +--------+--------+
+Status: 25%
+
+Tipp: Verwenden Sie die printf() Funktion.
+
+Tipp: Die Werte für den Filenamen und den Status können Sie direkt in die printf()
+Funktion schreiben (ohne Variablen).
