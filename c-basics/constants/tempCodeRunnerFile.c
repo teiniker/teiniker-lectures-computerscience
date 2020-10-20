@@ -1,1 +1,0 @@
-STDC_VERSION
