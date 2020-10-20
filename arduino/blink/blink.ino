@@ -8,15 +8,12 @@ const int LED_PIN = 13;
 void setup() 
 {
   pinMode(LED_PIN, OUTPUT);         // initialize digital pin LED_BUILTIN as an output.
-  Serial.begin(9600);
 }
 
 void loop() 
 {
   digitalWrite(LED_PIN, HIGH);      // turn the LED on (HIGH is the voltage level)
   delay(300);                       // wait for a second
-  Serial.println("on");
   digitalWrite(LED_PIN, LOW);       // turn the LED off by making the voltage LOW
   delay(300);                       // wait for a second
-  Serial.println("off");
 }
