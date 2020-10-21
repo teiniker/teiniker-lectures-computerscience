@@ -12,7 +12,7 @@ Every C program consists of:
 int main(void)
 {
     printf("Hello world!\n");
-	return 0;
+    return 0;
 }
 ```
 Include statements insert the content of **header files** into the program.
