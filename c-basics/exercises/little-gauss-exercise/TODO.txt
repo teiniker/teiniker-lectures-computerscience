@@ -1,0 +1,13 @@
+Exercise: Little Gauss Formula
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das für eine Zahl N (int) die Summe von 1 bis N
+berechnet: 1+2+3+...+N
+
+Zu Übungszwecken sollen Sie die Lösung in drei Varianten implementieren:
+i) for Schleife
+ii) while Schleife
+iii) do..while Schleife 
+
+Tipp: Vergleichen Sie Ihre Ergebnisse mit dem Ergebnis der Gauss Formel.
+

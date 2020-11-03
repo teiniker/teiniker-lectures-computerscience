@@ -1,0 +1,13 @@
+Exercise: Leap Year (Schaltjahr)
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das für ein beliebiges Jahr (int) berechnet, ob 
+es sich um ein Schaltjahr handelt.
+
+Regel: 
+i) Wenn die Jahreszahl durch 4 teilbar ist, handelt es sich um ein Schaltjahr
+ii) Wenn die Jahreszahl durch 100 teilbar ist, dann ist es KEIN Schaltjahr
+iii) Wenn die Jahreszahl durch 400 telbar ist, dann ist es ein Schaltjahr 
+
+Tipp: Verwenden Sie den % Operator um festzustellen ob die Jahreszahl sich 
+ohne Rest teilen lässt (jahr % 4 == 0).

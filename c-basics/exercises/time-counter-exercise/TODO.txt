@@ -1,0 +1,15 @@
+Exercise: Time Counter
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das die Zeit von 0:00:00 bis 23:59:59 im 
+Sekundentakt hochzählt.
+
+i) Verwenden die die int Variablen "sec", "min" und "hours" 
+ii) Implementieren Sie eine for Schleife,  welche die Sekunden von 0 bis 24*60*60
+    zählt.
+iii) Sorgen sie mit if/else Statements dafür, dass der Wertebereich von Sekunden,
+     Minuten und Stunden beim Zählen nicht überschritten wird.   
+iv) Geben Sie die Zeit nach jeder gezählten Sekunde aus:
+    printf("%2d:%02d:%02d\n",hours, min, sec);
+
+Tipp: Zählen sie die Sekunden so schnell wie möglich (keine Verzögerung einbauen).          
