@@ -6,7 +6,7 @@ Beachten Sie, dass nur darstellbare Zeichen (im Wertebereich 32 <= char <= 126)
 ausgegeben werden.
 Geben Sie die Zeichen, den Dezimal-Wert, den Hex-Wert und den Octal-Wert aus:
 
-       +-----+-------+-------+------+
+        +-----+-------+-------+------+
         | char|  Dec  |  Hex  |  Oct |
         +-----+-------+-------+------+
           ' '    32     0x20     40
