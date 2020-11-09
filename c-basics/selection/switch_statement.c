@@ -33,5 +33,17 @@ int main(void)
             printf("Invalid grade!\n");
     }
     
+    switch(grade)
+    {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            printf("positiv\n");
+            break;
+        case 5:
+            printf("negativ\n");
+            break;
+    }
 	return 0;
 }

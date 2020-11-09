@@ -47,7 +47,7 @@ testing the value of an expression.
 ```C
     if (expression)
     {
-       statement(s)
+       statements
     }
 ```
 When an if statement is executed, the expression in the parenthesis is evaluated.
@@ -61,11 +61,11 @@ parentheses has the value `false` (zero).
 ```C
     if (expression)
     {
-       statement(s)
+       statements
     }
     else
     {
-       statement(s)
+       statements
     }
 ```
 
@@ -88,10 +88,63 @@ understand** - try to avoid them.
 They are common in certain kinds of macro definitions.
  
 ### Boolean Values 
+Since C99 a Boolean variable can be declared like `_Bool flag;` 
+`_Bool` is an unsigned integer type but a _Bool variable can only be assigned 0 or 1.
+C99 also provides a new header file stdbool.h which provides a macro `bool` that 
+stands for `_Bool` as well as macros named `true` and `false` which stand for 1 and 0. 
 
+```C
+#include <stdbool.h> 
+...
+bool a_is_greater = a > b; 
+```
 
 ## The switch Statement
 
+We often need to compare an expression against a series of values to see 
+which one it currently matches.
+This can be implemented in cascaded `if else` statements.
+As an alternative we can use the switch statement.
+```
+switch (expression)
+{
+    case constant-expression: statements 
+    ...
+    case constant-expression: statements
+    default : statements
+} 
+```
+
+The keyword `switch` must be followed by an integer expression (char is treated 
+as integers in C). Floating-point numbers and strings are not working.
+A **constant expression** is much like an ordinary expression except that it can't
+contain variables of function calls. Note that no braces are required around the 
+**statements**. The last statement in each group is normarry `break`.
+The order of the cases doesn't matter. In particular, the `default` case doesn't 
+need to come last.
+
+Unfortunately, there is no way to write a case label that specifies a range of values.
+But when the last statement in the case has been executed, control **falls through** to the
+first statement of the following case. Without break, control will flow from one case 
+into the next.
+
+```C
+   switch(grade)
+    {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            printf("positiv\n");
+            break;
+        case 5:
+            printf("negativ\n");
+            break;
+    }
+	return 0;
+```
+
+**Forgetting to use break is also a common error!** 
 
 
 ## References
