@@ -1,12 +1,3 @@
 .idea/
 .vscode/
-print_char
-print_escape
-print_float
-print_integer
-c-basics/variables/integer
-c-basics/constants/constants
-c-basics/expressions/arithmetic_expressions
-c-basics/selection/switch_statement
-c-basics/selection/conditional_expression
-c-basics/selection/if_statement
+c-basics/lab-exams
