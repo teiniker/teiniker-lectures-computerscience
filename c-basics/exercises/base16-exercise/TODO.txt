@@ -1,0 +1,18 @@
+Exercise: Base16 Encoder
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das ein Byte (zB: 0xce) in einen Hex-String 
+(zwei Zeichen) umwandelt.
+
+A) Zerlegen Sie das Byte in zwei 4 Bit-Gruppen (low_bits, highBits) die in 
+    uint8_t Variablen gespeichert werden.
+
+B) Implementieren Sie eine Funktion mit der folgenden Signatur:
+    
+    char bits_to_char(uint8_t bits)
+
+    In dieser Funktion erzeugen Sie mit einem switch Statement eine Tabelle, die 
+    den Bits die richtigen Zeichen zuordnen.     
+    
+Beachten Sie, dass Sie auf dese Weise eine beliebige Zuordnung der Bits zu 
+Zeichen implementieren können (einfache Verschlüsselung).    
