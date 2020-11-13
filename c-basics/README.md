@@ -16,7 +16,7 @@
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/arduino-sketch))    
     * Exercise: [print-ascii-table](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/print-ascii-table-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/print-ascii-table))    
-    * Exercise: [lipple-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/little-gauss-exercise)
+    * Exercise: [little-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/little-gauss-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/little-gauss-exercise))
     * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter))        
