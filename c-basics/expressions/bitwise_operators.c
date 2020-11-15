@@ -3,15 +3,7 @@
 #include <stdbool.h>
 
 
-void print_binary(uint32_t number)
-{
-     for(int i=sizeof(number)*8-1; i>= 0; i--)
-    {
-        putchar((number & 1UL << i) ? '1' : '0');
-    }    
-    putchar('\n');
-}
-
+void print_binary(uint32_t number); 
 
 int main(void)
 {
@@ -33,11 +25,13 @@ int main(void)
 
     // Boolean AND
     print_binary(0xcccc);       // 00000000000000001100110011001100
+                                //                         11111111
     print_binary(0xcccc & 0xff);// 00000000000000000000000011001100
     printf("\n");
 
     // Boolean OR
     print_binary(0xcccc);       // 00000000000000001100110011001100
+                                //                         11111111
     print_binary(0xcccc | 0xff);// 00000000000000001100110011111111
     printf("\n");
 
@@ -48,4 +42,13 @@ int main(void)
     printf("\n");
 
     return 0;
+}
+
+void print_binary(uint32_t number)
+{
+    for(int i=sizeof(number)*8-1; i>= 0; i--)
+    {
+        putchar((number & 1 << i) ? '1' : '0');
+    }    
+    putchar('\n'); // printf("%c", c);
 }

@@ -14,7 +14,7 @@ int main(void)
     int sum1 = 0;
     for(int i=1; i<=N; i++)
     {
-        sum1 += i;
+        sum1 += i;  // sum1 = sum1 + i;
     }
     printf("%4d\n", sum1);
     

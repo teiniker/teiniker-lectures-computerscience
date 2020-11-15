@@ -22,3 +22,5 @@ implementiert:
     uint16_t bitSet(uint16_t value, uint8_t bit)
 
 Testen Sie Ihre Implementierungen mit der gegebenen main() Function.
+
+Siehe: https://www.arduino.cc/reference/en/
