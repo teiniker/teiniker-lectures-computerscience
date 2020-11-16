@@ -25,5 +25,5 @@
     * Demo: [functions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions)
 
 * **Arrays**
-    * Demo: [one_dimensional_array](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays)
+    * Demo: [one_dimensional_array, two_dimensional_array](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays)
 
