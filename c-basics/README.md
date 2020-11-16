@@ -1,11 +1,11 @@
 # C Basics
 
-* **First steps in C**
+* **First Steps in C**
     * Demo: [hello](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/hello)
     * Exercise: [print-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/print-numbers-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/print-numbers))
    
-* **Selection (if, switch)**
+* **Selection Statements (if, switch)**
     * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/selection)
     * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/leap-year-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/leap-year))
