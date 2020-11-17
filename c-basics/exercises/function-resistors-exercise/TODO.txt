@@ -1,0 +1,24 @@
+Exercise: Resistors in Series and Parallel 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das eine einfache Schaltung von Widerständen
+berechnet. Die Schaltung besteht aus einer Kombination von Serien- und
+Parallelschaltungen von jeweils zwei Widerständen.
+
+                +-[120]-+
+       --[120]--+       +--[120]--
+                +-[120]-+
+
+A) Implementieren Sie die folgenden Funktionen für die Berechnung des Ersatz-
+   wiederstandes einer Serien- und Parallelschaltung zweier Widerstände:
+    int series(int r1, int r2);
+    int parallel(int r1, int r2);
+
+B) Verwenden Sie die beiden Funktionen um in der main() Funktion den Gesamt-
+   wiederstand der folgenden Schaltung zu berechnen:
+    
+                +-[120]-+
+       --[120]--+       +--[120]--
+                +-[120]-+
+
+   Geben Sie das Ergebnis auf der Konsole aus: R = 300 Ohm
