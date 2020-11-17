@@ -1,0 +1,10 @@
+Exercise: Array Min-,Max-, and Mean Value 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das von einem gegebenen Array von Integer-Elementen
+den minimalen, den maximalen und den Mittelwert berechnet. 
+
+Beachten Sie, dass der Mittelwert als double-Wert berechnet werden soll.
+
+Geben Sie die drei Ergebnisse ihrer Berechnung auf der Konsole aus:
+    min=-16 max=23  mean=3.750000
