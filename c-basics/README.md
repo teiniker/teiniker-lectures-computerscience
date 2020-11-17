@@ -30,8 +30,7 @@
    * Demo: [bitwise_operators, bitwise_operators_arduino](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions)
    * Exercise: [bit_utils](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/bit-utils-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/bit-utils))
-   * Exercise: [base16](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/base16-exercise)   
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/base16))
+   * Exercise: [base16](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/base16-exercise) ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/base16))
       
 * **Arrays**
     * Demo: [one_dimensional_array, two_dimensional_array](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays)
