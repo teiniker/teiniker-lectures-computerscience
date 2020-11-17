@@ -1,0 +1,17 @@
+Exercise: Array XOR Encryption
+-------------------------------------------------------------------------------
+Achtung: XOR Verschlüsselung ist von Natur aus unsicher!!!
+
+Schreiben Sie ein C Programm, das ein gegebenes Byte-Array verschlüsselt, indem
+jedes Byte des Arrays mit dem Key Byte XOR verschlüsselt wird. 
+
+Dazu sind die folgenden Funktionen zu implementieren:
+    void array_xor(int n, uint8_t vector[], uint8_t key);
+    void array_print(int n, uint8_t vector[]);
+
+Die Daten des Arrays werden vor der Verschlüsselung, nach der Verschlüsselung 
+und nach der Entschlüsselung auf der Konsole ausgegeben:
+
+00 11 22 33 44 55 66 77 88 99 aa bb cc dd ee ff 
+cf de ed fc 8b 9a a9 b8 47 56 65 74 03 12 21 30 
+00 11 22 33 44 55 66 77 88 99 aa bb cc dd ee ff 
