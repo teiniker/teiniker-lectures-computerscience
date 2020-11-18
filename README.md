@@ -6,7 +6,7 @@ This project collects examples, exercises and model solutions needed to understa
 The following topics will be covered:
 
 * C Programming Language
-    * [Basics](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics)
+    * [C Basics](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics)
      
 * C Standard Library
     * [stdio](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
