@@ -23,14 +23,14 @@ int main(void)
     uint8_t value = 0xce;
 
     uint8_t low_bits; 
-    uint8_t highBits; 
+    uint8_t high_bits; 
 
     // TODO: A
 
     print_binary(value);
     print_binary(low_bits);
-    print_binary(highBits);
+    print_binary(high_bits);
 
-    printf("\nvalue = 0x%c%c\n", bits_to_char(low_bits), bits_to_char(highBits));
+    printf("\nvalue = 0x%c%c\n", bits_to_char(high_bits), bits_to_char(low_bits));
     return 0;
 }
