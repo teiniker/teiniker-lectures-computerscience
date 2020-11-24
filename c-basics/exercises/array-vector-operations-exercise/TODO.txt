@@ -1,0 +1,42 @@
+Exercise: Array - Vector Operations
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das einfache Vector-Operationen mit Hilfe von
+Integer Arrays durchführen kann. 
+
+Gegeben sind Vectoren der Länge N (N=3)
+
+Implementieren sie die folgenden Operationen:
+
+A) void vector_print(int n, int v[]);
+    Gibt einen Vektor auf der Konsole aus:
+    Beispiele:
+        vector_a = [-7 0 12 ]
+        vector_b = [6 -2 23 ]
+
+B) void vector_reverse(int n, int a[], int b[]);
+    Diese Funktion dreht die Reihenfolge der Elemente im Ergebnis-Vektor um.
+    Beispiel:
+        vector_a reverse = [12 0 -7 ]
+
+C) void vector_add(int n, int a[], int b[], int c[]);
+    Diese Funktion addiert zwei gleich lange Vektoren durch Addition ihrer 
+    zugeordneten Elemente.
+    Beispiel:
+        vector_a + vector_b = [5 0 5 ]
+
+D) void vector_sub(int n, int a[], int b[], int c[]);
+    Diese Funktion subtrahiert zwei gleich lange Vektoren durch Subtraktion 
+    ihrer zugeordneten Elemente.
+    Beispiel:    
+        vector_a - vector_b = [-19 0 19 ]
+
+Tip: Beachten Sie, dass die Länge eines Array Parameters in einer Funktion nicht
+     abgefragt werden kann. Daher wird die Länge als erster Parameter mitgegeben.
+
+Tip: Beachten Sie das Array Parameter per Reference über geben werden, d.h. 
+     Änderungen der Parameter wirken auf die übergebenen Werte zurück.
+
+Tip: Beachten Sie, dass eine Funktion ein Array nicht als Rückgabewert verwenden 
+     kann (nur einen Pointer auf das erste Element des Arrays). Daher werden 
+     Out-Parameter verwendet. Das sind Parameter die in der Funktion gesetzt werden.
