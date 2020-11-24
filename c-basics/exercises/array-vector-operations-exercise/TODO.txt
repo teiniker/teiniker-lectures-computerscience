@@ -31,12 +31,12 @@ D) void vector_sub(int n, int a[], int b[], int c[]);
     Beispiel:    
         vector_a - vector_b = [-19 0 19 ]
 
-Tip: Beachten Sie, dass die Länge eines Array Parameters in einer Funktion nicht
-     abgefragt werden kann. Daher wird die Länge als erster Parameter mitgegeben.
+Tipp: Beachten Sie, dass die Länge eines Array Parameters in einer Funktion nicht
+      abgefragt werden kann. Daher wird die Länge als erster Parameter mitgegeben.
 
-Tip: Beachten Sie das Array Parameter per Reference über geben werden, d.h. 
-     Änderungen der Parameter wirken auf die übergebenen Werte zurück.
+Tipp: Beachten Sie das Array Parameter per Reference über geben werden, d.h. 
+      Änderungen der Parameter wirken auf die übergebenen Werte zurück.
 
-Tip: Beachten Sie, dass eine Funktion ein Array nicht als Rückgabewert verwenden 
-     kann (nur einen Pointer auf das erste Element des Arrays). Daher werden 
-     Out-Parameter verwendet. Das sind Parameter die in der Funktion gesetzt werden.
+Tipp: Beachten Sie, dass eine Funktion ein Array nicht als Rückgabewert verwenden 
+      kann (nur einen Pointer auf das erste Element des Arrays). Daher werden 
+      Out-Parameter verwendet. Das sind Parameter die in der Funktion gesetzt werden.
