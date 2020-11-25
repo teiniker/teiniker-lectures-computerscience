@@ -20,8 +20,8 @@ int main(void)
     vector_print(N, vector_b);
 
     printf("vector_a reverse = ");
-    vector_reverse(N, vector_a, vector_b);
-    vector_print(N, vector_b);
+    vector_reverse(N, vector_a, vector_c);
+    vector_print(N, vector_c);
 
     vector_add(N, vector_a, vector_b, vector_c);
     printf("vector_a + vector_b = ");
