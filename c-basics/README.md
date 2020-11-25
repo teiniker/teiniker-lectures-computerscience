@@ -38,5 +38,13 @@
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-xor-encryption))
     * Exercise: [array-min-max-mean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-min-max-mean-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-min-max-mean))
+    * Exercise: [array-vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-vector-operations-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-vector-operations))
+
+* **Enumerations**
+   * Demo [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/enumerations)
+   * Exercise [enum-events](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/function-resistors-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-events))
+
 
 *Egon Teiniker, 2020, GPL v3.0* 
