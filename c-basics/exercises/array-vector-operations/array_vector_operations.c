@@ -44,11 +44,11 @@ void vector_print(int n, int v[])
     printf("]\n");
 }
 
-void vector_reverse(int n, int a[], int b[])    // b is an out parameter
+void vector_reverse(int n, int a[], int c[])    // c is an out parameter
 {
     for(int i=0; i<n; i++)
     {
-        b[i] = a[(n-1)-i];
+        c[i] = a[(n-1)-i];
     }    
 }
 
