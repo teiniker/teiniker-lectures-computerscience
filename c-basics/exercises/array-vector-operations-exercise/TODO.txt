@@ -23,13 +23,13 @@ C) void vector_add(int n, int a[], int b[], int c[]);
     Diese Funktion addiert zwei gleich lange Vektoren durch Addition ihrer 
     zugeordneten Elemente.
     Beispiel:
-        vector_a + vector_b = [5 0 5 ]
+        vector_a + vector_b = [-1 -2 35 ]
 
 D) void vector_sub(int n, int a[], int b[], int c[]);
     Diese Funktion subtrahiert zwei gleich lange Vektoren durch Subtraktion 
     ihrer zugeordneten Elemente.
     Beispiel:    
-        vector_a - vector_b = [-19 0 19 ]
+        vector_a - vector_b = [-13 2 -11 ]
 
 Tipp: Beachten Sie, dass die Länge eines Array Parameters in einer Funktion nicht
       abgefragt werden kann. Daher wird die Länge als erster Parameter mitgegeben.
