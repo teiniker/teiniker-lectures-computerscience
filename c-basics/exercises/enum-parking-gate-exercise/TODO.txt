@@ -1,4 +1,4 @@
-Exercise: enum Events -> Activities
+Exercise: enum Events -> Activities (Parking Gate)
 -------------------------------------------------------------------------------
 
 In einer Ablaufsteuerung (Park-Schranken) können verschiedene Ereignisse (Events)
