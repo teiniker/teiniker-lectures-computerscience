@@ -1,0 +1,38 @@
+Exercise: State Machine (Parking Gate)
+-------------------------------------------------------------------------------
+
+In einer Ablaufsteuerung (Park-Schranken) können verschiedene Ereignisse (Events)
+auftreten:
+    CAR_AT_GATE         Auto fährt vor den Schranken (Induktionsschleife)
+    TOP_SWITCH          Der Schranken ist vollständig geöffnet (Endschalter)
+    CAR_JUST_EXITED     Auto fährt durch den Schranken (Induktionsschleife)
+    BOTTOM_SWITCH       Der Schranken ist vollständig geschlossen (Endschalter)
+
+Die Ablaufsteuerung besitzt die folgenden Zustände:
+    WAITING             Der Schranken ist geschlossen
+    RAISING             Der Schranken wird geöffnet 
+    OPEN                Der Schranken ist offen
+    LOWERING            Der Schranken wird geschlossen
+
+Die Zusammenhänge zwischen States, Events und Aktivitäten könnnen aus dem 
+vorliegenden StateDiagram entnimmen werden:
+
+    (State) ---- Event / Activity ---> (State) 
+
+A) Implementieren Sie die enums mit dem Namen "events" und "sm_states".
+
+B) Implementieren Sie die Funktion "sm_parking_gate()" mit Hilfe eines switch/case 
+    Konstrukts bei dem Sie, je nach State, einer der folgenden Funktionen aufrufen
+    um die Events in diesem State zu verarbeiten:
+
+    void sm_parking_gate_waiting(enum events event);
+    void sm_parking_gate_raising(enum events event);
+    void sm_parking_gate_open(enum events event);
+    void sm_parking_gate_lowering(enum events event);
+
+    Die Aufrufe von parking_gate() in der main() Funktion sollen folgende Ausgaben 
+    bewirken:
+        MOTOR: >>>
+        MOTOR: ---
+        MOTOR: <<<
+        MOTOR: ---
