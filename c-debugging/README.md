@@ -5,11 +5,11 @@ using various tools available to him, makes an effort to change part of a previo
 **to get rid of an error** that was not caught at the compile (or syntax checking) time.
 
 There are many different ways people perform debugging:
-* **Print Statements**: We use printf() to output some values while running the code. 
+* **Print Statements**: We use `printf()` to output some values while running the code. 
   This is possibly the easiest way to start debugging anything. 
   It is also the most clumsy and time taking way. It is **clumsy** because we can very easily leave all those 
-  (or part of those) printf() statements behind us in the code once we are done, causing an unclean code. 
-  It is **time taking** because we have to write all the printf() statements and then have to monitor them while 
+  (or part of those) `printf()` statements behind us in the code once we are done, causing an unclean code. 
+  It is **time taking** because we have to write all the `printf()` statements and then have to monitor them while 
   the program is being executed.
 
 * **Interactive (Symbolic) Debugger**: There are tools available in your own development machines, which give us 
@@ -22,7 +22,7 @@ There are many different ways people perform debugging:
 
 ## Examples
 
-* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
+* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging) 
     
 * Demo: [functinos](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
         
