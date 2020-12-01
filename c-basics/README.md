@@ -42,9 +42,16 @@
          ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/array-vector-operations))
 
 * **Enumerations**
-   * Demo [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/enumerations)
-   * Exercise [enum-events](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/function-resistors-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-events))
+   * Demo: [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/enumerations)
+   * Exercise: [enum-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-light-bulb-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-light-bulb))
+   * Exercise: [enum-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-parking-gate-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-parking-gate))
+
+* **State Machines**
+   * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-light-bulb)
+   * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate))
 
 
 *Egon Teiniker, 2020, GPL v3.0* 
