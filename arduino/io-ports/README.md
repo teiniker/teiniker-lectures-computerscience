@@ -1,6 +1,5 @@
 # I/O Ports
 
-## Arduino Board
 The I/O ports of the Arduino Uno board can be seen in the following figure:
 
 ![Arduino Uno Board](doc/arduino_board.png)
