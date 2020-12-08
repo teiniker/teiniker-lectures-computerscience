@@ -3,7 +3,7 @@
 ##Arduino Board
 The I/O ports of the Arduino Uno board can be seen in the following figure:
 
-![Arduino Uno Board](doc/arduino_board.png)
+![Arduino Uno Board](doc/UNOpins.png)
 
 * Analog Reference pin (orange)
 * Digital Ground (light green)
