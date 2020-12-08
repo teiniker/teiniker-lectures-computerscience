@@ -1,0 +1,34 @@
+# C Debugging
+
+Debugging is the process in which a developer (who could be the author or not of the code he is trying to debug), 
+using various tools available to him, makes an effort to change part of a previously written code in order 
+**to get rid of an error** that was not caught at the compile (or syntax checking) time.
+
+There are many different ways people perform debugging:
+* **Print Statements**: We use `printf()` to output some values while running the code. 
+  This is possibly the easiest way to start debugging anything. 
+  It is also the most clumsy and time taking way. It is **clumsy** because we can very easily leave all those 
+  (or part of those) `printf()` statements behind us in the code once we are done, causing an unclean code. 
+  It is **time taking** because we have to write all the `printf()` statements and then have to monitor them while 
+  the program is being executed.
+
+* **Interactive (Symbolic) Debugger**: There are tools available in your own development machines, which give us 
+  an all-powerful access to the program at runtime in an interactive mode and let you perform very low level 
+  (and high level) investigation on a running piece of code. 
+  The advantage of this kind of debugging is that it does not need from our part any extra effort to start 
+  debugging the code. We just fire-up the debugger and point it to the executable - we are in the middle of a 
+  running program but we also have all the power to investigate (and even change if needed) it in realtime.
+
+
+## Examples
+
+* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging) 
+    
+* Demo: [functinos](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
+        
+ 
+ # References:
+ 
+ [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)
+        
+*Egon Teiniker, 2020, GPL v3.0* 
