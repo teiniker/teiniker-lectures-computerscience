@@ -15,15 +15,15 @@ int main(void)
 
     uint8_t key = 0xcf;
 
-    array_print(N, vector);
+    array_print(N, vector);     // plain text
 
     // encryption
     array_xor(N, vector, key);
-    array_print(N, vector);
+    array_print(N, vector);     // cipher text
 
     // decryption
     array_xor(N, vector, key);
-    array_print(N, vector);
+    array_print(N, vector);     // pain text
     return 0;
 }
 
@@ -41,6 +41,6 @@ void array_xor(int n, uint8_t vector[], uint8_t key)
 {
     for(int i=0; i<n; i++)
     {
-        vector[i] ^= key;
+        vector[i] ^= key;   // vector[i] = vector[i] ^ key;
     }
 }
