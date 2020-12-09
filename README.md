@@ -9,8 +9,12 @@ The following topics will be covered:
     * [C Basics](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics)
      
 * C Standard Library
-    * [stdio](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
-    * [stdint](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdint)      
+    * [assert.h](teiniker-lectures-computerscience/c-std-lib/assert/function-assert/)
+    * [stdint.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdint)      
+    * [stdio.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
+
+* Arduino
+   * [I/O Ports](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/arduino/io-ports)
 
 * Configuration Management
     * Source Code Versioning
