@@ -39,7 +39,7 @@ The following operators perform Boolean operations on all bits in their operands
 | ~     | bitwise complement |
 | &     | bitwise AND | 
 | ^     | bitwise exclusive OR |
-| &#124; | bitwise AND |
+| &#124; | bitwise OR |
 
 _Tip: Don't confuse the bitwise operators `&` and `|` with the logical operators `&&` and `||`._
 
