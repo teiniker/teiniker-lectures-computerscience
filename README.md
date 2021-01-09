@@ -13,9 +13,6 @@ The following topics will be covered:
     * [stdint.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdint)      
     * [stdio.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
 
-* Arduino
-   * [I/O Ports](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/arduino/io-ports)
-
 * Configuration Management
     * Source Code Versioning
     * Build Automation
@@ -24,4 +21,4 @@ The following topics will be covered:
 As a development environment, you can use a pre-configured Linux VM image 
 (Debian 10) as a Virtual Lab.         
 
-*Egon Teiniker, 2020, GPL v3.0*         
+*Egon Teiniker, 2020 - 2021, GPL v3.0*         
