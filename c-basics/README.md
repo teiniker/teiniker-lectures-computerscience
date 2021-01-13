@@ -49,7 +49,7 @@
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/enum-parking-gate))
 
 * **State Machines**
-   * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-light-bulb)
+   * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine)
    * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate))
 
