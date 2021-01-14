@@ -14,6 +14,7 @@ The following topics will be covered:
     * [stdio.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
 
 * Configuration Management
+    * [Debugging](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
     * Source Code Versioning
     * Build Automation
     * [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-testing)
