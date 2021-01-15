@@ -50,8 +50,10 @@
 
 * **State Machines**
    * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine)
-   * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/sm-parking-gate))
+   * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate))
+   * Exercise: [sm-roller-blind](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind))
 
 
-*Egon Teiniker, 2020, GPL v3.0* 
+*Egon Teiniker, 2020-2021, GPL v3.0* 
