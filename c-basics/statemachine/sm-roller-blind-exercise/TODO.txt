@@ -1,0 +1,67 @@
+Exercise: State Machine (Roller Blind)
+-------------------------------------------------------------------------------
+
+In einer Ablaufsteuerung für Rollos können verschiedene Ereignisse (Events)
+auftreten:
+    UP_BUTTON,          Taste [UP] wird gedrückt
+    DOWN_BUTTON,        Taste [DOWN] wird gedrückt
+    STOP_BUTTON,        Taste [STOP] wird gedrückt
+    TOP_SWITCH,         Endschalter oben wird betätigt
+    BOTTOM_SWITCH       Endschalter unten wird betätigt
+
+Die Ablaufsteuerung besitzt die folgenden Zustände:
+    OPEN,               Rollos sind offen
+    LOWERING,           Rollos werden geschlossen     
+    RAISING,            Rollos werden geöffnet 
+    STOP,               Rollos wurden an der aktuellen Position angehalten
+    CLOSED              Rollos sind geschlossen 
+
+Die Zusammenhänge zwischen States, Events und Aktivitäten könnnen aus dem 
+vorliegenden State Diagramm (SM-Roller-Blind.png) entnommen werden:
+
+    (State) ---- Event / Activity ---> (State) 
+
+A) Implementieren Sie die enums mit dem Namen "events" und "sm_states" sowie die
+    globale Variable "state" vom Typ "enum sm_states".
+
+B) Implementieren Sie die Funktion "sm_roller_blind()" mit Hilfe eines switch/case 
+    Konstrukts bei dem Sie, je nach State, einer der folgenden Funktionen aufrufen
+    um die Events in diesem State zu verarbeiten:
+        void sm_roller_blind_open(enum events event);
+        void sm_roller_blind_lowering(enum events event);
+        void sm_roller_blind_raising(enum events event);
+        void sm_roller_blind_stop(enum events event);
+        void sm_roller_blind_closed(enum events event);
+
+
+    Die Aufrufe von "sm_roller_blind()" in der "main()" Funktion sollen folgende Ausgaben 
+    bewirken:
+        MOTOR: <<<
+        MOTOR: ---
+
+        MOTOR: >>>
+        MOTOR: ---
+
+        MOTOR: <<<
+        MOTOR: ---
+        MOTOR: <<<
+        MOTOR: ---
+
+        MOTOR: >>>
+        MOTOR: ---
+        MOTOR: >>>
+        MOTOR: ---
+
+        MOTOR: <<<
+        MOTOR: ---
+        MOTOR: >>>
+        MOTOR: ---
+
+        MOTOR: >>>
+        MOTOR: ---
+        MOTOR: <<<
+        MOTOR: ---
+
+    Zusätzlich wird durch "assert" Statements überprüft, ob sich die SM im 
+    richtigen State befindet.
+
