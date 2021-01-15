@@ -13,4 +13,13 @@ The following topics will be covered:
     * [stdint.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdint)      
     * [stdio.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
 
+In addition to the constructs of the programming language itself, it is also important to understand the different 
+techniques of 
+[configuration management](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management) 
+and 
+[software quality](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/software-quality).
+
+As a development environment, you can use a pre-configured Linux VM image 
+(Debian 10) as a [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).         
+
 *Egon Teiniker, 2020-2021, GPL v3.0*         
