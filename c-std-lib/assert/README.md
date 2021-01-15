@@ -27,3 +27,8 @@ Disabling `assert` is easy: we need only define the macro `NDEBUG` prior to the 
 Avoid putting an expression that has a **side effect** (including a function call) inside an `assert`.
 If `assert` is disabled at a later date, the expression won't be evaluated.
 
+## References
+K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+ * Chapter 24: Error Handling
+ 
+*Egon Teiniker, 2020-2021, GPL v3.0* 
