@@ -53,6 +53,7 @@ Note that every event can occur in every state, but triggers different activitie
 To implement a state machine, we must first **evaluate the different states**:
 
 ```C
+enum sm_states state; 
 void sm_light_bulb(enum events event)
 {
     print_event(event);
@@ -106,5 +107,6 @@ same scheme.
 * Martin Fowler. **UML Distilled.** Addison-Wesley. 3rd Edition, 2004
 * Michael Sipser. **Introduction of the Theory of Computation.** PWS Publishing, 1997
 * [State machines in C](https://yakking.branchable.com/posts/state-machines-in-c/)
- 
+* [UML Tool: Modelio](https://www.modelio.org/) 
+
 *Egon Teiniker, 2020-2021, GPL v3.0* 
