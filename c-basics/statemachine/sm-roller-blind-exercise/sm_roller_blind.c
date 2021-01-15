@@ -24,7 +24,7 @@ int main(void)
     // down 
     state = OPEN; 
     sm_roller_blind(DOWN_BUTTON);
-    //sm_roller_blind(BOTTOM_SWITCH);
+    sm_roller_blind(BOTTOM_SWITCH);
     assert(state == CLOSED);
     putchar('\n');
 

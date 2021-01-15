@@ -20,6 +20,8 @@ enum events
 
 enum sm_states state; 
 void sm_parking_gate(enum events event);
+
+// Event handler functions
 void sm_parking_gate_waiting(enum events event);
 void sm_parking_gate_raising(enum events event);
 void sm_parking_gate_open(enum events event);
@@ -49,6 +51,7 @@ int main(void)
     return 0;
 }
 
+// SM entry point
 void sm_parking_gate(enum events event)
 {   
     switch(state)
@@ -71,6 +74,7 @@ void sm_parking_gate(enum events event)
     }
 }
 
+// Event handler
 void sm_parking_gate_waiting(enum events event)
 {
     switch(event)
@@ -151,7 +155,7 @@ void sm_parking_gate_lowering(enum events event)
     }
 }
 
-
+// Activities
 void motor_right(void)
 {
     printf("MOTOR: >>>\n");

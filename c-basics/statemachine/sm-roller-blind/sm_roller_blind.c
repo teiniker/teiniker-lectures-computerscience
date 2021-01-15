@@ -91,6 +91,7 @@ int main(void)
     return 0;
 }
 
+// SM entry point
 void sm_roller_blind(enum events event)
 {   
     switch(state)
