@@ -19,16 +19,22 @@ There are many different ways people perform debugging:
   debugging the code. We just fire-up the debugger and point it to the executable - we are in the middle of a 
   running program but we also have all the power to investigate (and even change if needed) it in realtime.
 
-
-## Examples
-
-* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging) 
+* **assert Statements**: Using `assert` statements, we can write **self-checking code**. We can define 
+  conditions in the program code that are **evaluated during runtime**. 
+  If a condition does not apply (`assert(false)`) the program execution is aborted.
+  The advantage over the interactive debugger is the **automation**. `assert` statements are evaluated 
+  automatically, while the debugger forces us to check the variable values manually.  
+  The evaluation of the assert statements can be **switched off** with the help of the `NDEBUG` macro. 
+  It is therefore important to ensure that assert staments do not have any side effects.  
+  `assert.h` is part if the C standard library.
     
+## Examples
+* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)   
 * Demo: [functinos](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
         
  
- # References:
- 
- [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)
-        
-*Egon Teiniker, 2020, GPL v3.0* 
+## References:
+* [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)
+* [How to use assertions in C](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html)       
+
+*Egon Teiniker, 2020-2021, GPL v3.0* 

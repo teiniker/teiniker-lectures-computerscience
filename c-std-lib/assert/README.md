@@ -28,7 +28,9 @@ Avoid putting an expression that has a **side effect** (including a function cal
 If `assert` is disabled at a later date, the expression won't be evaluated.
 
 ## References
-K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
- * Chapter 24: Error Handling
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+    Chapter 24: Error Handling
+* [How to use assertions in C](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html)
+* [How and When to Use C's assert() Macro](https://barrgroup.com/embedded-systems/how-to/use-assert-macro) 
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
