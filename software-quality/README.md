@@ -7,8 +7,8 @@ In the context of software engineering, software quality refers to two related b
    the delivery of the functional requirements, such as robustness or maintainability. 
 
 In the context of C programming, we deal with the following techniques to increase our software quality:
-* [Debugging](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/debugging)
-* [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/testing)
+* [Debugging](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/software-quality/debugging)
+* [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/software-quality/testing)
         
 ## References
 
