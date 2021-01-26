@@ -55,5 +55,9 @@
    * Exercise: [sm-roller-blind](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind))
 
+* **Modular Programming**
+   * Demo: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules)
+   * Exercise: [vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations))
 
 *Egon Teiniker, 2020-2021, GPL v3.0* 
