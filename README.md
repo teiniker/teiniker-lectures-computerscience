@@ -19,7 +19,7 @@ techniques of
 and 
 [software quality](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/software-quality).
 
-As a development environment, you can use a pre-configured Linux VM image 
-(Debian 10) as a [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).         
+As a development environment, you can either use a [Windows setup](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/configuration-management/setup/README.md) or a pre-configured Linux VM image 
+(Debian 10) called [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).         
 
 *Egon Teiniker, 2020-2021, GPL v3.0*         
