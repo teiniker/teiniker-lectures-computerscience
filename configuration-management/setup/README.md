@@ -24,7 +24,7 @@ Make sure that the following system environment variables are set:
 ```
 PATH:
     C:\MinGW\bin 
-	C:\MinGW\msys\1.0\bin 	
+    C:\MinGW\msys\1.0\bin 	
 ```
 
 To test the installation, open a **command line** and type:
