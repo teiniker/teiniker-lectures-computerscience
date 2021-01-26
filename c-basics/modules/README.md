@@ -15,6 +15,8 @@ These definitions are put in a **header file**, and the file must be included in
 * Anything that is not directly usable by the outside world should be kept **private**. 
 All implementation details are stored in a corresponding **implementation file**. 
 
+![Modules](figures/Modules.png)
+
 ## Headers
 Information that is shared between modules should be put in a header file.
 By convention, all header filenames end with `.h` to distinguish them from the `.c` implementation files.
