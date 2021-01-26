@@ -1,0 +1,37 @@
+Exercise: Modular Programming - Vector Operations
+-------------------------------------------------------------------------------
+
+Sie haben ein lauffähiges Programm gegeben, bei dem die gesamte Implementierung 
+in einem Source File (vector_operations.c)untergebracht ist. 
+
+Modulariesieren Sie die vorliegende Implementierung:
+
+i) vector_operations.h 
+    Implementieren Sie ein Header-File, das die vector_* Operationen deklariert
+    (inklusive der Dimension N).
+    Vergessen Sie nicht auf die Include-Guards.
+
+ii) vector_operations.c
+    Lassen Sie nur die Implementierungen der vector_* Operationen in diesem File.
+
+iii) main.c 
+    Verschieben Sie die main() Funktion in dieses Source File.
+    Verwenden Sie das nur das Header File des neu erstellten Moduls.
+
+Nach Ihrem Umbau (Refactoring) sollten Sie das Beispiel mit make bauen und starten
+können. Das notwendige Makefile ist bereits vorhanden und braucht nicht geändert
+zu werden.
+
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c vector_operations.c -o build/vector_operations.o
+gcc -std=c99 -g -Wall   -c main.c -o build/main.o
+gcc -std=c99 -g -Wall   build/vector_operations.o build/main.o -o build/vector_operations
+build/vector_operations
+vector_a = [-7 0 12 ]
+vector_b = [6 -2 23 ]
+vector_a reverse = [12 0 -7 ]
+vector_a + vector_b = [-1 -2 35 ]
+vector_a - vector_b = [-13 2 -11 ]
+
+
