@@ -2,7 +2,7 @@ Exercise: Modular Programming - Vector Operations
 -------------------------------------------------------------------------------
 
 Sie haben ein lauffähiges Programm gegeben, bei dem die gesamte Implementierung 
-in einem Source File (vector_operations.c)untergebracht ist. 
+in einem Source File (vector_operations.c) untergebracht ist. 
 
 Modulariesieren Sie die vorliegende Implementierung:
 
