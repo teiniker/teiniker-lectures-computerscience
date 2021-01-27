@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "sm_parking_gate.h"
 
 // Event handler functions

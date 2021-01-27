@@ -1,8 +1,6 @@
 #ifndef _SM_PARKING_GATE_H_
 #define _SM_PARKING_GATE_H_
 
-#include <stdio.h>
-
 enum events
 {
     CAR_AT_GATE,
@@ -21,6 +19,7 @@ enum sm_states
 
 enum sm_states state; 
 
+// Public operations
 extern void sm_parking_gate(enum events event);
 
 #endif /* SM_PARKING_GATE_H */

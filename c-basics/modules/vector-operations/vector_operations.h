@@ -1,8 +1,6 @@
 #ifndef _VECTOR_OPERATIONS_H_
 #define _VECTOR_OPERATIONS_H_
 
-#include <stdio.h>
-
 #define N 3
 
 extern void vector_print(int n, int v[]);
