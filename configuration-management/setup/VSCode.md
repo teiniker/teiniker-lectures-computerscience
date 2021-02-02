@@ -59,13 +59,14 @@ We can debug a single file by switching into the debug view, click `Run and Debu
             "name": "gcc - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -74,7 +75,6 @@ We can debug a single file by switching into the debug view, click `Run and Debu
                 }
             ],
             "preLaunchTask": "C/C++: gcc build active file",
-            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
@@ -85,7 +85,7 @@ Now we can open our C file, set a **breakpoint** and run the debugger by clickin
 
 To debug an executable which we have built using `make`, we have to change the `launch.json`
 file: 
-* **Remove the "preLaunchTask" element** to stop the automatic compiling before debugging.
+* **Remove the "preLaunchTask" element** to stop automatic compiling before the debugging:
 
   Remove the following line:
   ```
@@ -96,11 +96,11 @@ file:
 
   Change from:  
   ```
-    "program": "${fileDirname}/${fileBasenameNoExtension}",
+    "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
   ```  
   to:	 
   ```
-    "program": "${fileDirname}/build/${fileBasenameNoExtension}",    
+    "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",    
   ```    
 
 Note that we have to open the `main.c` file before we start the debugger because the `${fileBasenameNoExtension}`
@@ -112,24 +112,24 @@ Here the final `launch.json` file:
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "gcc - Build and debug active file",
+            "name": "gcc.exe - Aktive Datei erstellen und debuggen",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/build/${fileBasenameNoExtension}",
+            "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
-                    "description": "Enable pretty-printing for gdb",
+                    "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
             ],
-            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
