@@ -59,5 +59,8 @@
    * Demo: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules)
    * Exercise: [vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations))
+   * Exercise: [vector-bubblesort](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort))
+      
 
 *Egon Teiniker, 2020-2021, GPL v3.0* 
