@@ -13,8 +13,8 @@ main.o: main.c
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
 main: init vector_operations.o main.o
-	$(CC) $(CFLAGS) build/vector_operations.o build/main.o -o build/vector_operations
-	build/vector_operations
+	$(CC) $(CFLAGS) build/vector_operations.o build/main.o -o build/main
+	build/main
 
 clean:
 	rm -rf build/
