@@ -1,0 +1,35 @@
+Exercise: Modular Programming - Vector Bubblesort
+-------------------------------------------------------------------------------
+
+Sie haben ein lauffähiges Programm gegeben, bei dem die gesamte Implementierung 
+in einem Source File (bubblesort.c) untergebracht ist. 
+
+Modulariesieren Sie die vorliegende Implementierung:
+
+i) bubblesort.h 
+    Implementieren Sie ein Header-File, das die vector_* Operationen deklariert.
+    Vergessen Sie nicht auf die Include-Guards.
+
+ii) bubblesort.c
+    Lassen Sie nur die Implementierungen der vector_* Operationen in diesem File.
+
+iii) main.c 
+    Verschieben Sie die main() Funktion in dieses Source File.
+    Verwenden Sie das nur das Header File des neu erstellten Moduls.
+
+iv) Erweitern Sie die main() Funktion: Vergleichen Sie das sortierte Array mit dem 
+    erwarteten (expected) Ergebnis - verwenden Sie dazu das assert() Statement.
+
+Nach Ihrem Umbau (Refactoring) sollten Sie das Beispiel mit make bauen und starten
+können. Das notwendige Makefile ist bereits vorhanden und braucht nicht geändert
+zu werden.
+
+ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c bubblesort.c -o build/bubblesort.o
+gcc -std=c99 -g -Wall   -c main.c -o build/main.o
+gcc -std=c99 -g -Wall   build/bubblesort.o build/main.o -o build/main
+build/main
+[8 6 4 2 0 1 3 5 7 9 ]
+[0 1 2 3 4 5 6 7 8 9 ]
+
