@@ -192,6 +192,9 @@ rm -rf build/
 
 
 ## References
-* Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
-    * Chapter 18: Modular Programming 
+* Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997. Chapter 18: Modular Programming 
+
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
+  Chapter 15: Writing Large Programs
+      
 * [GNU Make](https://www.gnu.org/software/make/)    
