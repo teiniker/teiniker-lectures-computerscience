@@ -17,9 +17,10 @@ enum sm_states
     LOWERING
 };
 
-enum sm_states state; 
+// Variable declarations
+extern enum sm_states state; 
 
-// Public operations
+// Function declarations
 extern void sm_parking_gate(enum events event);
 
 #endif /* SM_PARKING_GATE_H */
