@@ -81,6 +81,7 @@ We can debug a single file by switching into the debug view, click `Run and Debu
 ```
 Now we can open our C file, set a **breakpoint** and run the debugger by clicking the 
 **run button** on the left top corner of the IDE.
+
 ![Debug a single file](figures/DebugSingleFile.png)
 
 To debug an executable which we have built using `make`, we have to change the `launch.json`
