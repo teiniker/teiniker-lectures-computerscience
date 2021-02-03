@@ -13,8 +13,8 @@ main.o: main.c
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
 main: init sm_parking_gate.o main.o
-	$(CC) $(CFLAGS) build/sm_parking_gate.o build/main.o -o build/sm_parking_gate
-	build/sm_parking_gate
+	$(CC) $(CFLAGS) build/sm_parking_gate.o build/main.o -o build/main
+	build/main
 
 clean:
 	rm -rf build/

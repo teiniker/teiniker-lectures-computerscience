@@ -24,7 +24,7 @@ Nach Ihrem Umbau (Refactoring) sollten Sie das Beispiel mit make bauen und start
 können. Das notwendige Makefile ist bereits vorhanden und braucht nicht geändert
 zu werden.
 
- make
+> make
 mkdir -p build
 gcc -std=c99 -g -Wall   -c bubblesort.c -o build/bubblesort.o
 gcc -std=c99 -g -Wall   -c main.c -o build/main.o
