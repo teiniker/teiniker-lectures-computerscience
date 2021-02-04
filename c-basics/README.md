@@ -62,5 +62,8 @@
    * Exercise: [vector-bubblesort](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort))
       
+## References
+* Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
+* K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
 
 *Egon Teiniker, 2020-2021, GPL v3.0* 
