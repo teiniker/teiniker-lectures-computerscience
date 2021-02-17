@@ -63,7 +63,7 @@
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort))
       
 * **Debugging**
-   * [Examples](teiniker-lectures-computerscience/c-basics/debugging/)      
+   * [Examples](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/debugging)      
 
 ## References
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
