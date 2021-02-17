@@ -6,3 +6,4 @@ printf_char.exe
 printf_escape.exe
 printf_float.exe
 printf_integer.exe
+build/

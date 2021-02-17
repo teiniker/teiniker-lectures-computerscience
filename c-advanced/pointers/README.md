@@ -40,8 +40,27 @@ C allows the use of the **assignment operator** to copy pointers, if they have t
 In the given example, i_ptr and j_ptr point to the same variable i. 
 Any number of pointer variables may point to the same variable.
  
- 
 ## Pointer as Arguments
+By default, C passes function arguments by value (**call by value**).
+
+Pointers offer a solution to this problem: instead of passing a variable `i` as the argument to a function, 
+we can supply `&i`, a pointer to `i` (**call by reference**).
+```C
+   i = 7;
+   increment(&i, 10);   
+```
+We declare the corresponding parameter `i_ptr` to be a pointer.
+```C
+void increment(int *i_ptr, int offset)
+{
+    *i_ptr += offset;   
+}
+```
+Each appearance of `*i_ptr` in the body of the function will be an indirect reference to `i`, allowing the function 
+both to read `i` and modify it.
+
+
+
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. Chapter 11: Pointers
