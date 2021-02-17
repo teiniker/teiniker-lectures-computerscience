@@ -7,6 +7,7 @@ The following topics will be covered:
 
 * C Programming Language
     * [C Basics](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics)
+    * [C Advanced Topics](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-advanced/README.md)
      
 * C Standard Library
     * [assert.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/assert)
