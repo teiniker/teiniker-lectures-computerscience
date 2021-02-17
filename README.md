@@ -15,9 +15,7 @@ The following topics will be covered:
 
 In addition to the constructs of the programming language itself, it is also important to understand the different 
 techniques of 
-[configuration management](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management) 
-and 
-[software quality](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/software-quality).
+[configuration management](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management).
 
 As a development environment, you can either use a [Windows setup](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/configuration-management/setup/README.md) or a pre-configured Linux VM image 
 (Debian 10) called [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).         
