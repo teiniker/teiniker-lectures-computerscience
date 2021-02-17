@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+void increment(int *i_ptr, int offset);
+
 int main(void)
 {
     int i = 7;
@@ -18,4 +20,14 @@ int main(void)
     assert(i == 5);
 
     printf("i=%d \t i_ptr=%p \t j_ptr=%p \t *i_ptr=%d\n", i, i_ptr, j_ptr, *i_ptr);
+
+    i = 7;
+    increment(&i, 10);  // pass the address of i 
+    assert(i == 17);
+    printf("i=%d\n", i);
+}
+
+void increment(int *i_ptr, int offset)
+{
+    *i_ptr += offset;   
 }
