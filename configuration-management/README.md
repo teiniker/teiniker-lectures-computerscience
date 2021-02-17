@@ -7,5 +7,6 @@ We select the following topics from a wide range of configuration management tec
 
 * Source Code Versioning
 * [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
+* [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/testing)
         
 *Egon Teiniker, 2020-2021, GPL v3.0*         
