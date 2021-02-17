@@ -1,0 +1,11 @@
+Exercise: Pointer as Arguments - swap
+-------------------------------------------------------------------------------
+
+A) Implementieren Sie die Funktion:
+ 
+    void swap(int *a_ptr, int *b_ptr); 
+ 
+    welche die beiden Integer-Werte vertauscht.
+
+Beachten Sie, dass die beiden Integer-Argumente als Pointer übergeben werden
+(call by reference).

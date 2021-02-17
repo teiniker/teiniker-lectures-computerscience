@@ -1,0 +1,10 @@
+printf_char
+printf_escape
+printf_float
+printf_integer
+printf_char.exe
+printf_escape.exe
+printf_float.exe
+printf_integer.exe
+scanf
+scanf.exe
