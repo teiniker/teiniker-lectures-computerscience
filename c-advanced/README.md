@@ -2,11 +2,11 @@
 
 * [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/pointers)
 
-* **Strings** 
+* [**Strings**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings) 
 
-* **Structures**
+* [**Structures**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures)
 
-* **Memory Management**
+* [**Memory Management**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management)
 
 
 
