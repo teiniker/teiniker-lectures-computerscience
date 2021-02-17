@@ -1,6 +1,6 @@
 # Advanced C Programming
 
-* **Pointers**
+* [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/pointers)
 
 * **Strings** 
 
