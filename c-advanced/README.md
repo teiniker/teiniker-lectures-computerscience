@@ -1,4 +1,4 @@
-# Advanced C Programming
+# C Advanced Topics
 
 * [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/pointers)
 
