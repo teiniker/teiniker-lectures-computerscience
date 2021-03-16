@@ -1,10 +1,11 @@
 # C Advanced Topics
 
+* [**Memory Management**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management)
+
 * [**Strings**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings) 
 
 * [**Structures**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures)
 
-* [**Memory Management**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management)
 
 
 
