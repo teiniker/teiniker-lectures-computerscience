@@ -2,6 +2,7 @@
 #include <assert.h>
 
 void increment(int *i_ptr, int offset);
+int *max(int *a, int *b);
 
 int main(void)
 {
@@ -21,15 +22,33 @@ int main(void)
 
     printf("i=%d \t i_ptr=%p \t j_ptr=%p \t *i_ptr=%d\n", i, i_ptr, j_ptr, *i_ptr);
 
+    // Pointers as arguments
     i = 7;
     increment(&i, 10);  // pass the address of i 
     assert(i == 17);
     printf("i=%d\n", i);
 
+    // Pointers as return values
+    int a = 7;
+    int b = 13;
+    int *m = max(&a, &b);
+    assert(*m == b);
+    printf("max(%d, %d) = %d\n", a, b, *m);
+    
     return 0;
 }
+
 
 void increment(int *i_ptr, int offset)
 {
     *i_ptr += offset;   
+}
+
+
+int *max(int *a, int *b)
+{
+    if(*a > *b)
+        return a;
+    else
+        return b;
 }

@@ -30,14 +30,23 @@ if `p` is a pointer, then `*p `represents the variable to which `p` currently po
 
 We can think  of `*` as the inverse of `&`.
 
-C allows the use of the **assignment operator** to copy pointers, if they have the same type.
+_Example_: Integer variable and integer pointer 
 ```C
     int i; 
-    int *i_ptr = &i;    // pointer assignment
+    int *i_ptr = &i;    // address operator
+```
+![Pointer](figures/Pointer1.png)
+
+C allows the use of the **assignment operator** to copy pointers, if they have the same type.
+
+_Example_: Integer pointer assignment 
+```C
     int *j_ptr;
     j_ptr = i_ptr;      // pointer assignment
 ```
-In the given example, i_ptr and j_ptr point to the same variable i. 
+![Pointer Assignement](figures/Pointer2.png)
+
+In the given example, `i_ptr` and `j_ptr` point to the same variable `i`. 
 Any number of pointer variables may point to the same variable.
  
 ## Pointer as Arguments
@@ -60,6 +69,25 @@ Each appearance of `*i_ptr` in the body of the function will be an indirect refe
 both to read `i` and modify it.
 
 
+## Pointers as Return Values
+
+We can not only pass pointers to functions but also write functions that return pointers.
+A function can return a **pointer parameter**, a pointer to a **global variable** or a **local variable that has been 
+declared static**.
+
+_Example_: Parameter pointer as return value
+```C
+int *max(int *a, int *b)
+{
+    if(*a > *b)
+        return a;
+    else
+        return b;
+}
+```
+
+**Never return a pointer to a local variable!**
+If we leave a function, local variables go out of scope so the pointer will be invalid.
 
 
 ## References
