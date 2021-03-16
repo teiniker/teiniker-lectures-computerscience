@@ -5,7 +5,7 @@
 
 * [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/pointers/README.md)
     * Demo: [pointers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/pointers)
-    * Exercise:[swap](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/swap-exercise) 
+    * Exercise: [swap](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/swap-exercise) 
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/swap))
     * Exercise: [calculator](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator))
