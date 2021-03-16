@@ -1,7 +1,5 @@
 # C Advanced Topics
 
-* [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/pointers)
-
 * [**Strings**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings) 
 
 * [**Structures**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures)
