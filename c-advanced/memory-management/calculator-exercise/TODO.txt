@@ -1,0 +1,17 @@
+Exercise: Pointer und scanf - caluclator
+-------------------------------------------------------------------------------
+
+Es soll eine einfacher UPN Calculator implementiert werden. 
+Der Benutzer wird nach zwei Integerwerten gefragt und nach einer Operation:
+
+a b op > 12 7 -
+12 - 7 = 5
+
+Das Programm liest die Integerwerte und die Operation ('+', '-') ein und 
+berechnet das Ergebnis.
+
+A) Implementieren Sie die Eingabe mittels scanf():
+ 
+B) Berechnen Sie das Ergebnis und geben Sie die vollständige Rechnung aus.
+
+Tipp: Werten Sie die Operation mit Hilfe eines switch/case Statements aus.
