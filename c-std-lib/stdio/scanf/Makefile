@@ -1,13 +1,13 @@
 CFLAGS=-std=c11 -g -Wall
 CC=gcc
 
-all: init calculator
+all: init scanf_int
 
 init:
 	mkdir -p build
 
-calculator: calculator.c
-	$(CC) $(CFLAGS) calculator.c -o build/calculator
+scanf_int: scanf_int.c
+	$(CC) $(CFLAGS) scanf_int.c -o build/scanf_int
 
 clean:
 	rm -rf build/
