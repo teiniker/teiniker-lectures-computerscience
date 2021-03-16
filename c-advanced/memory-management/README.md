@@ -10,7 +10,8 @@
     * Exercise: [calculator](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator))
 
-
+* [**Pointers and Arrays**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays/README.md)
+   * Demo: [pointers_and_arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays)
 
 ## References
 
