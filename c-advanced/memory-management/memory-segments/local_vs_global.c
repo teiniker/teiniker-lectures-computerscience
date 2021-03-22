@@ -51,7 +51,7 @@ int main(void)
     assert(1 == counter());
     assert(2 == counter());
 
-    // External variable
+    // Global variable
     counter_value = 7;
     increment();
     increment();

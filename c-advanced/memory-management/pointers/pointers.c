@@ -20,7 +20,8 @@ int main(void)
     *j_ptr = 5;
     assert(i == 5);
 
-    printf("i=%d \t i_ptr=%p \t j_ptr=%p \t *i_ptr=%d\n", i, i_ptr, j_ptr, *i_ptr);
+    printf("i=%d \t i_ptr=%p \t j_ptr=%p \t *i_ptr=%d \t *j_ptr=%d\n", 
+        i, i_ptr, j_ptr, *i_ptr, *j_ptr);
 
     // Pointers as arguments
     i = 7;
@@ -45,10 +46,10 @@ void increment(int *i_ptr, int offset)
 }
 
 
-int *max(int *a, int *b)
+int *max(int *a_ptr, int *b_ptr)
 {
-    if(*a > *b)
-        return a;
+    if(*a_ptr > *b_ptr)
+        return a_ptr;
     else
-        return b;
+        return b_ptr;
 }
