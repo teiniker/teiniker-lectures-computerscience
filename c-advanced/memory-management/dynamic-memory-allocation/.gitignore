@@ -1,0 +1,7 @@
+dynamic_allocation_malloc
+dynamic_allocation_malloc.exe
+dynamic_allocation_calloc
+dynamic_allocation_calloc.exe
+dynamic_allocation_realloc
+dynamic_allocation_realloc.exe
+build/
