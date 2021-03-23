@@ -1,0 +1,19 @@
+Exercise: Dynamic Memory Allocation, Arrays 
+-------------------------------------------------------------------------------
+
+Es soll ein Integer-Array dynamisch erzeugt werden, welches eine vorgegebene 
+Anzahl von Fibonacci Zahlen beinhaltet.
+
+Beispiel: Fibonacci Sequence 
+    0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+Implementieren Sie die folgende Funktion unter Zuhilfenahme von dynamic 
+memory allocation:
+
+        int *array_fibonacci(size_t n);
+
+wobei n die Anzahl der Fibonicci Zahlen im Array (und somit auch die Länge
+des Arrays) festlegt.
+
+Zurückgegeben wird der Pointer auf das erste Element der Fibonacci Sequence.
+

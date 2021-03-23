@@ -1,0 +1,35 @@
+Exercise: Dynamic Memory Allocation, Arrays, Command Line Paramaters 
+-------------------------------------------------------------------------------
+
+Es sollen die angegebenen Command Line Parameter (Integer-Zahlen) in ein 
+Array gespeichert werden. Dabei kann sich die Anzahl der Parameter verändern.
+Die Integer-Werte des Arrays sollen aufsummiert werden.
+
+Die main() Funktion kann zwei Parameter besitzen:
+
+    int main(int argc, char *argv[])
+
+    argc ist die Anzahl der Parameter + 1(der Name des Executables wird mit 
+         gezählt)
+    argv ist ein Array von Zeichenketten (char Arrays) wobei der erste Eintrag 
+         der Name des Executables ist.
+
+Mit der Funktion atoi() (ASCII to Integer) können diese Zeichenketten zu 
+Integer-Werten umgewandelt werden:
+Beispiel: atoi()
+    int i = atoi("7");
+    assert(7 == i);
+
+Implementieren Sie die folgenden Teile:
+
+A) main() Funktion 
+   Wandeln Sie die Parameter-List in ein dynamisches Array von int Werten um.
+   build/dynamic_arrays_cmd 10 11 12 13 14 15 16 17 18 19 
+        => a[] = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]     
+
+B) int sum_of_array(size_t n, int *a)
+   Implementieren Sie die Funktion "sum_of_array()" um die Summe der int Werte
+   zu berechnen.
+            
+Beachten Sie, dass das Array am Heap anlegt werden soll. 
+Vergessen Sie nicht, den Speicher wieder frei zu geben.
