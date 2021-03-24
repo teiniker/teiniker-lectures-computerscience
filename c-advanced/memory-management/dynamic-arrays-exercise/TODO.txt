@@ -14,22 +14,3 @@ int *array_sub(size_t n, int *a, int *b);
 
 Beachten Sie, dass array_new() ein Array mit angegebener Größe am Heap anlegt, 
 während array_delete() den Speicher wieder frei gibt.
-
-Tipp: Unter Linux kann man mit dem Tool valgrind überprüfen, ob der gesamte
-        Speicher wieder frei gegeben wurde. 
-        
-$ valgrind ./dynamic_arrays 
-==4649== Memcheck, a memory error detector
-==4649== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4649== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
-==4649== Command: ./dynamic_arrays
-==4649== 
-==4649== 
-==4649== HEAP SUMMARY:
-==4649==     in use at exit: 0 bytes in 0 blocks
-==4649==   total heap usage: 4 allocs, 4 frees, 48 bytes allocated
-==4649== 
-==4649== All heap blocks were freed -- no leaks are possible
-==4649== 
-==4649== For counts of detected and suppressed errors, rerun with: -v
-==4649== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)        

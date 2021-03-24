@@ -54,7 +54,7 @@ int *array_add(size_t n, int *a, int *b)
     int *c = array_new(n);
     for(int i=0; i<n; i++)
     {
-        c[i] = a [i] + b[i];
+        c[i] = a[i] + b[i];
     }
     return c;
 }
@@ -64,7 +64,7 @@ int *array_sub(size_t n, int *a, int *b)
     int *c = array_new(n);
     for(int i=0; i<n; i++)
     {
-        c[i] = a [i] - b[i];
+        c[i] = a[i] - b[i];
     }
     return c;
 }
