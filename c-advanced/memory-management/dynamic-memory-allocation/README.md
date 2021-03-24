@@ -21,7 +21,7 @@ header file:
 `malloc()` is the most used. It is more efficient than `calloc()`, since it doesn't have to clear the memory block that 
 it allocates. 
 
-Whn we call a memory allocation function to request a block of memory, the function has no idea what type of data we
+When we call a memory allocation function to request a block of memory, the function has no idea what type of data we
 are planning to store in the block, so it can't return a pointer to an ordinary type such as int or cher.
 Instead, the function returns a value of type `void *`.
 A `void *` value is a **generic pointer** - essentially, just a memory address.
@@ -60,7 +60,7 @@ We also have the option of using pointer arithmetic instead of indexing to acces
 `calloc()` allocates space for an array with `nmemb` elements, each of which is size bytes long.
 It also returns a null pointer if the requested space is not available.
 
-After allocating the memory, calloc initializes it by **setting all bits to 0**.
+After allocating the memory, `calloc()` initializes it by **setting all bits to 0**.
 
 _Example_: Array of n integers 
 ```C
@@ -94,13 +94,13 @@ The C standard spells out a number of rules concerning the behavior of `realloc(
 
 If it is **not possible to enlarge the block** (because the bytes following the block are already in use for some other
 purpose), `realloc()` will allocate a new block elsewhere, then copy the contents of the old block into the new one.
-Once `realloc()` has returned, **be sure to update all pointers to the memory block**, since it is possible that 
+Once `realloc()` has returned, be sure to **update all pointers to the memory block**, since it is possible that 
 `realloc()` has moved the block elsewhere.
 
 
 ## Deallocating Memory
 
-All memory allocation functions obtain memory blocks from a storage pool known as the heap.
+All memory allocation functions obtain memory blocks from a storage pool known as the **heap**.
 Calling these functions too often, or asking them for large blocks of memory, can exhaust the heap, causing the 
 functions to return a null pointer.
 
