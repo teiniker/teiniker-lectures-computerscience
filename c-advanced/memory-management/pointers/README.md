@@ -92,5 +92,6 @@ If we leave a function, local variables go out of scope so the pointer will be i
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. Chapter 11: Pointers
+* [Youtube: CS50 Pointers](https://youtu.be/XISnO2YhnsY)
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
