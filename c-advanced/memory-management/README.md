@@ -13,6 +13,16 @@
 * [**Pointers and Arrays**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays/README.md)
    * Demo: [pointers_and_arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays)
 
+* [**Dynamic Memory Allocation**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation/README.md)
+   * Demo: [dynamic-allocation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation) 
+   * Exercise: [dynamic-arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays))
+   * Exercise: [dynamic-arrays-fibonacci](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-fibonacci-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-fibonacci))
+   * Exercise: [dynamic-arrays-cmd](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-cmd-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-cmd))
+
+
 ## References
 
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
