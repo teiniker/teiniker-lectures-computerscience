@@ -13,6 +13,11 @@
 * [**Pointers and Arrays**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays/README.md)
    * Demo: [pointers_and_arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays)
 
+* [**Dynamic Memory Allocation**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation/README.md)
+   * Demo: [dynamic_allocation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation) 
+   * Exercise: [dynamic_arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays))
+
 ## References
 
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
