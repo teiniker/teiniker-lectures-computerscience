@@ -128,5 +128,6 @@ If we forget that ptr no longer points to a valid memory block, chaos may take p
 
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     Chapter 17: Advanced Uses of Pointers.
+* [Youtube: CS50 Dynamic Memory Allocation](https://youtu.be/9uhSYDY4sxA) 
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
