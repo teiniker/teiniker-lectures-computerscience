@@ -27,16 +27,6 @@ int main(void)
     // Array size vs. string length
     dump_memory(s, STR_LEN+1);
 
-    // Dynamic allocated string
-    char *d = malloc(STR_LEN+1);
-    d[0] = 'A';
-    d[1] = 'B';
-    d[2] = 'C';
-    d[3] = '\0';
-    printf("\"%s\"\n", d);
-    dump_memory(d, STR_LEN+1);
-    free(d);
-
     return 0;
 }
 
