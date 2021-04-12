@@ -23,15 +23,4 @@ int main(void)
     return 0;
 }
 
-int *array_fibonacci(size_t n)
-{
-    int *sequence = calloc(n, sizeof(int));
-    sequence[0] = 0;
-    sequence[1] = 1;
-    for(int i=2; i<n; i++ )
-    {
-        sequence[i] = sequence[i-2] + sequence[i-1];
-    }
-    return sequence; 
-}
-
+// TODO

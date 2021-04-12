@@ -77,12 +77,12 @@ declared static**.
 
 _Example_: Parameter pointer as return value
 ```C
-int *max(int *a, int *b)
+int *max(int *a_ptr, int *b_ptr)
 {
-    if(*a > *b)
-        return a;
+    if(*a_ptr > *b_ptr)
+        return a_ptr;
     else
-        return b;
+        return b_ptr;
 }
 ```
 
