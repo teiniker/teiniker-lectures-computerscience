@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-size_t string_length(char *s);
+// TODO: Declaration
 
 int main(void)
 {
@@ -15,4 +15,4 @@ int main(void)
     return 0;
 }
 
-// TODO
+// TODO: Implementation

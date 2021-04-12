@@ -1,0 +1,11 @@
+Exercise: Strings
+-------------------------------------------------------------------------------
+
+Schreiben Sie eine Funktion "string_length()", welche die Länge eines übergebenen
+Strings berechnet und als "size_t" zurück gibt (Länge ohne '\0').
+Schreiben Sie auch die Deklaration der Funktion selber.
+
+Dabei ist es egal, ob es sich um ein String Literal oder um eine String Variable 
+handelt (in beiden Fällen wird ein char Pointer übergeben).
+
+Das Ergebnis wird in der "main()" Funktion via assert Statements überprüft.
