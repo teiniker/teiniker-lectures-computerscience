@@ -108,7 +108,7 @@ C guarantees that a `char` value requires exactly one byte of storage (`sizeof(c
 
 _Example_: Dynamic allocated string
 ```C
-    char *d = malloc(STR_LEN+1);
+    char *d = malloc(str_len+1);
     //...
     free(d);
 ```
