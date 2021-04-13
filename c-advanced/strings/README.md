@@ -99,6 +99,23 @@ length `N`.
 dump: 54 68 58 73 20 69 73 20 61 20 73 74 72 69 6e 67 20 76 61 72 69 61 62 6c 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 ```
 
+Let's compare the following string declarations:
+```C
+    char s[]  = "This is a string variable";    // declares an array 
+
+    char *ptr = "This is a string variable";    // declares a pointer
+```
+Because of the close relationship between arrays and pointers, we can use either version as a string.
+Any function expecting to be passed a character array or character pointer will accept both versions as an argument.
+
+There are significant differences between the two:
+* In the **array version**, the characters stored in `s[]` **can be modified** like the elements of an array.
+* In the **pointer version**, `ptr` points to a string literal which **should not be modified**. 
+
+If we need a string that can be modified, it is our responsibility to set up an array of characters in which to store
+the string.
+Another possibility is to make `ptr` point to a dynamic allocated string.
+
 ## Dynamic Allocated Strings
 Dynamic storage allocation is often useful for working with strings because it can be hard to anticipate how long these 
 arrays need to be.
