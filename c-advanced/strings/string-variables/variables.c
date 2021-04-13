@@ -4,7 +4,7 @@
 
 #define STR_LEN 40
 
-void dump_memory(char *s, size_t bytes);
+void dump_memory(const char *s, size_t bytes);
 
 int main(void)
 {
@@ -30,7 +30,7 @@ int main(void)
     return 0;
 }
 
-void dump_memory(char *s, size_t bytes)
+void dump_memory(const char *s, size_t bytes)
 {
     printf("dump: ");
     for(size_t i=0; i<bytes; i++)

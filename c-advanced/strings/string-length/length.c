@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-size_t string_length(char *s);
+size_t string_length(const char *s);
 
 int main(void)
 {
@@ -15,14 +15,15 @@ int main(void)
     return 0;
 }
 
-size_t string_length(char *s)
+size_t string_length(const char *s)
 {
     size_t len = 0;
-    int i = 0;
-
+    int i=0;
+ 
     while(s[i++] != '\0')
+    {
         len++;
+    }
 
     return len;
 }
-
