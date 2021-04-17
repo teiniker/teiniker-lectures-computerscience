@@ -3,6 +3,15 @@
 The C library provides a rich set of functions for performing operations on strings.
 Prototypes for these functions can be found in the `string.h` header file.
 
+## Memory Set Function
+The function `memset()` copies a character `c` to the first `n` characters of the string pointed to, by the argument `str`.
+This function returns a pointer to the memory area `str`.
+```C
+    void *memset(void *str, int c, size_t n);
+```
+
+
+
 ## String Length Function
 The function `strlen()` returns the length of a string s (the number of characters in s up
 to but not including, the first null charachter).
@@ -43,6 +52,6 @@ we can test any possible relationship between `s1` and `s2`.
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
     Chapter 13.5: Using the C String Library
 
-* [C <string.h>](https://www.programiz.com/c-programming/library-function/string.h) 
+* [C Library - <string.h>](https://www.tutorialspoint.com/c_standard_library/string_h.htm) 
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
