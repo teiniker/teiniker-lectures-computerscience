@@ -1,4 +1,4 @@
-Exercise: Strings
+Exercise: Strings Length
 -------------------------------------------------------------------------------
 
 Schreiben Sie eine Funktion "string_length()", welche die Länge eines übergebenen
