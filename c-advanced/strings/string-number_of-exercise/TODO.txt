@@ -1,0 +1,15 @@
+Exercise: Number of  a Characters within a String
+-------------------------------------------------------------------------------
+
+Schreiben Sie eine Funktion "string_number_of()", welche ermittelt wie oft ein
+bestimmtes Zeichen in einem String vorkommt.
+
+Beispiele: 
+    "1001 0011 1111 0000" 
+        => 8 mal '1'
+        => 8 mal '0'
+        => 3 mal ' '
+
+Mit jedem Aufruf von "string_number_of()" wird eine Anzahl ermittelt. 
+
+Das Ergebnis wird in der "main()" Funktion via assert Statements überprüft.

@@ -1,0 +1,22 @@
+Exercise: String Operations on the Heap
+-------------------------------------------------------------------------------
+
+Implementieren Sie die folgenden Funktionen die Strings am Heap verarbeiten:
+
+A) bool string_equal(const char *s1, const char *s2)
+    Es werden die beiden Strings s1 und s2 miteinander verglichen.
+    Wenn die beiden Strings die gleichen Zeichenketten enthalten wird "true"
+    zurück geliefert, ansonsten "false".
+    Wenn die Strings unterschiedliche Länge besitzen ist das Ergebnis 
+    ebenfalls "false."        
+
+B) char *string_copy(const char *s)
+    Es wird die Kopie eines bestehenden Strings (Literal oder Variable) am
+    Heap angelegt und der Pointer zu diesem neuen String zurück gegeben.
+
+C) char *string_concatenation(const char *s1, const char *s2)
+    Es wird ein String am Heap angelegt, der sich aus den gegebenen Strings 
+    s1 und s2 zusammen setzt. s1 und s2 werden nur gelesen.
+    Der Rückgabewert ist der Pointer des neuen Strings am Heap.
+
+Das Ergebnis wird in der "main()" Funktion via assert Statements überprüft.
