@@ -1,3 +1,5 @@
 string
-string.exe
+string_console
+string_IO
+*.exe
 build/
