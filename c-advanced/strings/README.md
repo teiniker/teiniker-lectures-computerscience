@@ -131,12 +131,12 @@ _Example_: Dynamic allocated string
 ```
 Again, don't forget to include room for the null character.
 
-## Examplaes
+## Examples
 
 * [String Literals](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-literals)
 * [String Variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-variables)    
 * [Dynamic Allocated Strings](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-dynamic)    
-* Exercises
+* **Exercises**
     * [string-length](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length-exercise) 
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length))
     * [string-number-of](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of-exercise)
