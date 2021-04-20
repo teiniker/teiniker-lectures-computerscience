@@ -125,6 +125,10 @@ itself (**call by reference**).
 Similarly, we might have a function return a pointer to a structure instead of returning an actual structure.
 
 
+## Examples
+* [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
+* [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
+
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 16: Structures, Unions, and Enumerations

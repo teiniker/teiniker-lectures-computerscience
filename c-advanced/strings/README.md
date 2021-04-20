@@ -131,10 +131,25 @@ _Example_: Dynamic allocated string
 ```
 Again, don't forget to include room for the null character.
 
+## Examples
+
+* [String Literals](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-literals)
+* [String Variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-variables)    
+* [Dynamic Allocated Strings](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-dynamic)    
+* **Exercises**
+    * [string-length](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length-exercise) 
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length))
+    * [string-number-of](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of-exercise)
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of))
+    * [string-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations-exercise)
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations))    
+
+
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 13: Strings
     * Chapter 17.2: Dynamically Allocated Strings
+* [C Standard Library - string.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/string)
     
 *Egon Teiniker, 2020-2021, GPL v3.0* 
