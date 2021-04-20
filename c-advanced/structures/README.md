@@ -128,5 +128,6 @@ Similarly, we might have a function return a pointer to a structure instead of r
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 16: Structures, Unions, and Enumerations
+* [Youtube: CS50 Structures](https://youtu.be/N5pA7RvvQDg)
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
