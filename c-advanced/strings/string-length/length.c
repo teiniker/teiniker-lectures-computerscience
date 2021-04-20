@@ -18,10 +18,10 @@ int main(void)
 size_t string_length(const char *s)
 {
     size_t len = 0;
-    int i=0;
- 
-    while(s[i++] != '\0')
+    
+    while(*s != '\0')
     {
+        s++;
         len++;
     }
 
