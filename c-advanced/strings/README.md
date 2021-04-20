@@ -143,7 +143,8 @@ Again, don't forget to include room for the null character.
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of))
     * [string-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations-exercise)
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations))    
-
+    * [string-base64](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-base64-exercise)
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-base64))
 
 
 ## References
