@@ -13,6 +13,7 @@ The following topics will be covered:
     * [assert.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/assert)
     * [stdint.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdint)      
     * [stdio.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/stdio)
+    * [string.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/string)
 
 In addition to the constructs of the programming language itself, it is also important to understand the different 
 techniques of 
