@@ -43,7 +43,7 @@ These functions add characters to the end of a string.
 The function **strcat()** appends the contents of the string `src` to the end of the string `dest`.
 It returns `dest` (a pointer to the resulting string).
 ```C
-    char *strcat(char *dest, const char *scr);
+    char *strcat(char *dest, const char *src);
 ```
 The effect of the call `strcat()` is undefined if the array pointed to by `dest` is not long enough
 to accommodate the additional characters from `src`.
@@ -69,7 +69,7 @@ we can test any possible relationship between `s1` and `s2`.
 
 **strncmp()** compares the first `n` bytes of s1 and s2.
 ```C
-    int strncmp(const char *str1, const char *str2, size_t n);
+    int strncmp(const char *s1, const char *s2, size_t n);
 ```
 
 ## Reading and Writing Strings (Console) 
