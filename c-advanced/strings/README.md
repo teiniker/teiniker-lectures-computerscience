@@ -150,5 +150,6 @@ Again, don't forget to include room for the null character.
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 13: Strings
     * Chapter 17.2: Dynamically Allocated Strings
+* [C Standard Library - string.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/string)
     
 *Egon Teiniker, 2020-2021, GPL v3.0* 
