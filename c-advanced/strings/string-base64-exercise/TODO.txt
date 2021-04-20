@@ -1,0 +1,35 @@
+Exercise: Base64 Encoding
+-------------------------------------------------------------------------------
+
+Schreiben Sie eine Funktion "base64()", welche jeweils 3 Bytes in 4 Zeichen
+umwandelt und in einem String am Heap speichert.
+
+Beispiele: 3 Bytes -> 4 Characters
+ 
+  Bytes:
+  	0x1A       0xCF       0xD2
+    0001 1010  1100 1111  1101 0010
+    
+  6 bit Values:
+    000110  101100  111111  010010
+    0x06    0x2C    0x3F    0x12
+    G       s       /       S 
+
+Jeweils 3 Bytes werden zu 24 Bits zusammen gefasst und dann in 4 Gruppen 
+zu je 6 Bits zerlegt.
+Die 6 Bits werden als Index verwendet um aus dem folgenden String ein 
+Zeichen zu lesen.
+
+   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+
+Auf diese Weise soll die Funktion "base64()" aus jeweils drei Bytes des 
+Input-Array's 4 Zeichen zum Output-String hinzufügen.
+
+Die Länge des Outputs lässt sich aus der Länge des Input-Array's ableiten.
+Es kann somit am Beginn der Funktion ein String der richtigen Länge am 
+Heap angelegt werden.
+
+In dieser vereinfachten Variante des Base64 Encodings sollen nur Arrays 
+verwendet werden, deren Länge ein Vielfaches von 3 ist.
+
+Das Ergebnis wird in der "main()" Funktion via assert Statements überprüft.
