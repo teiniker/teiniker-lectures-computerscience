@@ -1,0 +1,25 @@
+Exercise: Structures on the Heap
+-------------------------------------------------------------------------------
+
+Implementieren Sie die folgenden Funktionen die "user_t" Structures am Heap 
+verarbeiten:
+
+A) user_t *table_new(size_t number_of_elements)
+    Es wird ein Speicher am Heap angelegt, in dem "number_of_elements" Structures
+    vom Type "user_t" Platz finden.
+
+B) void table_delete(user_t * table)
+    Der reservierte Speicher am Heap wird wieder frei gegeben.
+
+C) void table_set_user(user_t * table, int id, char* username, char* password)
+    Das ist eine Hilfsfunktion die eine "user_t" Struktur in den reservierten 
+    Speicher am Heap schreibt.
+    Es wird davon ausgegangen, dass der Pointer, auf die richtige Position 
+    im reservierten Speicher, als Parameter übergeben wird.
+
+D) user_t table_get_user(user_t *table, int index)
+    Diese Hilfsfunktion kopiert eine "user_t" Struktur vom Heap und gibt sie 
+    als Rückgabewert zurück.
+    Wenn man diese Kopie ändert, bleiben die Daten am Heap unverändert.
+
+Das Ergebnis wird in der "main()" Funktion via assert Statements überprüft.
