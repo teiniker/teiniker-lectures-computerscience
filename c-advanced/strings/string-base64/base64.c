@@ -3,7 +3,7 @@
 #include <string.h>
 #include <assert.h>
 
- char *base64_code = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+char *base64_code = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 char *base64(size_t size, unsigned char *bytes)
 {
@@ -13,7 +13,7 @@ char *base64(size_t size, unsigned char *bytes)
         return "";
     }
 
-    char *output = malloc(size * 4 / 3); // 3 bytes => 4 chars
+    char *output = malloc(size * sizeof(char) * 4 / 3 + 1); // 3 bytes => 4 chars
     char *tmp = output;
 
     for(int i=0; i<size; i +=3)
@@ -26,6 +26,7 @@ char *base64(size_t size, unsigned char *bytes)
         tmp[3] = base64_code[word & 0x3f];
         tmp += 4;
     }
+    tmp[0] = '\0';
     return output;    
 }
 
