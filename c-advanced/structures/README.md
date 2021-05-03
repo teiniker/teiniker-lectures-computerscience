@@ -25,7 +25,7 @@ _Example_: Struct variable
         int year;
     } birthday = {23, 6, 1912}; // Alan Turing date of birth
 ```
-The structure variable `birthday` has three members(`day`, `month`, and `year`).
+The structure variable `birthday` has three members (`day`, `month`, and `year`).
 
 The members of a structure are **stored in memory** in the order in which they are declared.
 
@@ -79,6 +79,8 @@ Note that the name of the type must come at the end, not after the keyword `stru
 We can use the new defined type in the same way as the build-in types to declare variables.
 
 ## Structure Operations
+
+### The `.` Operator
 The most common operation on a structure is **selecting one of its members**.
 To access a member within a structure, we write the name of the structure first then a period, then the name of the member.
 The **period** that we use to access a structure member is actually a C operator.
@@ -101,6 +103,7 @@ _Example_: Accessing structure members
     assert(birthday.year == 1912);
 ```
 
+### The `=` Operator
 Another structure operation is **assignment**.
 Since arrays can't be copied using the `= operator`, it comes as something of a surprise to discover that structures can.
 The `= operator` can be used only with structures of compatible types.
@@ -124,6 +127,28 @@ To avoid this overhead, it is sometimes advisable to **pass a pointer to a struc
 itself (**call by reference**).
 Similarly, we might have a function return a pointer to a structure instead of returning an actual structure.
 
+### The `->` Operator
+Accessing a member of a structure using a pointer is so common that C  provides a special operator for this purpose.
+This operator, known as **right arrow selection**, is a minus followed by `>`.
+
+Using the `->` operator, we can write: `marge->id = 7;` instead of: `(*marge).id = 7;`
+
+_Example_: Creating and using a structure on the heap
+```C 
+    user_t *marge = malloc(sizeof(user_t));
+    marge->id = 7;              
+    marge->username = "marge";    
+    marge->password = "LoveMy3Kids!";
+
+    assert(marge->id == 7);         
+    assert(strcmp("marge", marge->username) == 0);
+    assert(strcmp("LoveMy3Kids!", marge->password) == 0);
+    free(marge);
+```
+The `->` operator is a combination of the `*` and `.` operators.
+It performs indirection on `marge` to locate the structure that it points to, then selects the `id` member of the 
+structure. 
+
 
 ## Examples
 * [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
@@ -132,6 +157,8 @@ Similarly, we might have a function return a pointer to a structure instead of r
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 16: Structures, Unions, and Enumerations
+    * Chapter 17: Advanced Uses of Pointers
+    
 * [Youtube: CS50 Structures](https://youtu.be/N5pA7RvvQDg)
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
