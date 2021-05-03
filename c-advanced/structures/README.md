@@ -154,6 +154,8 @@ structure.
 * [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
 * [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
 * **Exercises**
+    * [struct-complex](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex-exercise) 
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex))
     * [struct-usertable](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable-exercise) 
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable))
 
