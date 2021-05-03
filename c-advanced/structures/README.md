@@ -153,6 +153,9 @@ structure.
 ## Examples
 * [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
 * [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
+* **Exercises**
+    * [struct-usertable](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable-exercise) 
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable))
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
