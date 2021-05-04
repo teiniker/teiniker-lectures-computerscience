@@ -3,13 +3,14 @@
 
 int main(void)
 {
+/*
     struct 
     {
         int day;
         int month;
         int year;
     } birthday = {23, 6, 1912}; // Alan Turing date of birth
-
+*/
 /*
     struct 
     {
@@ -23,7 +24,6 @@ int main(void)
     birthday.year = 1912;    
 */
 
-/*
     struct date 
     {
         int day;
@@ -32,10 +32,9 @@ int main(void)
     };
     
     struct date birthday = {23, 6, 1912}; // Alan Turing date of birth
-*/
 
 /*
-    typedef struct date 
+    typedef struct 
     {
         int day;
         int month;
