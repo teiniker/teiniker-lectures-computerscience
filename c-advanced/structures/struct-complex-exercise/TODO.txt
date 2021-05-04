@@ -10,7 +10,7 @@ Variable vom Typ "complex_t" übergegeben (call by reference).
 A) void complex_init(complex_t *self, const double re, const double im)
     Setzt die Werte "re" und "im" in der referenzierten komplexen Zahl.
 
-B) void complex_print(complex_t *self, char* prefix)
+B) void complex_print(complex_t *self, const char* prefix)
     Gibt den Inhalt der komplexen Zahl auf der Console aus.
     Beispiel:  1.000000 + j2.000000
     Beispiel: -2.000000 - j2.000000
