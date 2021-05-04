@@ -4,7 +4,7 @@
 
 #define DELTA 1E-3
 
-typedef struct complex 
+typedef struct 
 {
     double re;
     double im;

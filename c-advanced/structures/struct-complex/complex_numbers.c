@@ -4,7 +4,7 @@
 
 #define DELTA 1E-3
 
-typedef struct complex 
+typedef struct 
 {
     double re;
     double im;
@@ -56,11 +56,11 @@ void complex_print(complex_t *self, char* prefix)
 {
     if(self->im >= 0.0)
     {
-        printf("%s %f + j%f\n", self->re, self->im);
+        printf("%s %f + j%f\n", prefix, self->re, self->im);
     }
     else
     {
-        printf("%s %f - j%f\n", self->re, fabs(self->im));
+        printf("%s %f - j%f\n", prefix, self->re, fabs(self->im));
     }
 }
 
