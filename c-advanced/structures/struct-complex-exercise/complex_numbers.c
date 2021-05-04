@@ -46,32 +46,4 @@ int main(void)
     return 0;
 }
 
-void complex_init(complex_t *self, const double re, const double im)
-{
-    self->re = re;
-    self->im = im;
-}
-
-void complex_print(complex_t *self, char* prefix)
-{
-    if(self->im >= 0.0)
-    {
-        printf("%s %f + j%f\n", self->re, self->im);
-    }
-    else
-    {
-        printf("%s %f - j%f\n", self->re, fabs(self->im));
-    }
-}
-
-void complex_add(complex_t *self, const complex_t c)
-{
-    self->re += c.re;
-    self->im += c.im;
-}
-
-void complex_sub(complex_t *self, const complex_t c)
-{
-    self->re -= c.re;
-    self->im -= c.im;
-}
+// TODO: Implement Functions
