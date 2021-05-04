@@ -66,7 +66,7 @@ As an alternative to declaring a structure tag, we can use `typedef` to define a
 
 _Example_: Structure type using typedef
 ```C
-   typedef struct date 
+   typedef struct
     {
         int day;
         int month;
