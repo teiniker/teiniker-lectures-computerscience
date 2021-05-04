@@ -66,7 +66,7 @@ As an alternative to declaring a structure tag, we can use `typedef` to define a
 
 _Example_: Structure type using typedef
 ```C
-   typedef struct date 
+   typedef struct
     {
         int day;
         int month;
@@ -154,6 +154,8 @@ structure.
 * [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
 * [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
 * **Exercises**
+    * [struct-complex](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex-exercise) 
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex))
     * [struct-usertable](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable-exercise) 
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable))
 
