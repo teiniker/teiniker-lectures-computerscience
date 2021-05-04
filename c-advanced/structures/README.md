@@ -151,7 +151,7 @@ structure.
 
 
 ## Examples
-* [struct-data](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
+* [struct-date](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
 * [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
 * **Exercises**
     * [struct-complex](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex-exercise) 
