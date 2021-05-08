@@ -17,18 +17,6 @@ node_t *new_node(int value)
     return node;
 }
 
-
-int list_get(node_t *list, int index)
-{
-    for(int i=0; i<index; i++)
-    {
-        if(list != NULL)
-            list = list->next_ptr;
-    }
-    return list->value;
-}
-
-
 node_t* list_insert(node_t *list, int index, int value)
 {
     node_t *node = new_node(value);
@@ -44,12 +32,34 @@ node_t* list_insert(node_t *list, int index, int value)
     {
         if(tmp != NULL)
             tmp = tmp->next_ptr;
-    }
-    
+    }    
     node->next_ptr = tmp->next_ptr;
     tmp->next_ptr = node;
     
     return list;
+}
+
+
+size_t list_size(node_t *list)
+{
+    size_t size=0;
+    while(list != NULL)
+    {
+        list = list->next_ptr;
+        size++;
+    }   
+    return size;
+}
+
+
+int list_get(node_t *list, int index)
+{
+    for(int i=0; i<index; i++)
+    {
+        if(list != NULL)
+            list = list->next_ptr;
+    }
+    return list->value;
 }
 
 
@@ -113,6 +123,9 @@ int main(void)
     list_print(list);
     list = list_insert(list, 3, 9);
     list_print(list);
+
+    // Verify size
+    printf("size = %ld\n", list_size(list));
 
     // Verify list_get()
     assert(1 == list_get(list, 0));
