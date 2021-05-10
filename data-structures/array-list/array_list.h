@@ -20,4 +20,4 @@ extern void list_remove(array_list_t* list, int index);
 extern void list_delete(array_list_t* list);
 extern void list_print(array_list_t* list);
 
-#endif /* VECTOR_OPERATIONS_H */
+#endif /* _ARRAY_LIST_H_ */
