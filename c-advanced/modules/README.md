@@ -198,3 +198,6 @@ rm -rf build/
   Chapter 15: Writing Large Programs
       
 * [GNU Make](https://www.gnu.org/software/make/)    
+
+ 
+*Egon Teiniker, 2020, GPL v3.0* 
