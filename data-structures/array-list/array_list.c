@@ -2,14 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
-typedef struct 
-{
-    size_t size;
-    size_t dimension;
-    int* array;
-} array_list_t;
-
+#include "array_list.h"
 
 array_list_t *list_new(size_t dimension)
 {
@@ -91,55 +84,4 @@ void list_print(array_list_t* list)
         printf("%d ", list->array[i]);       
     }
     printf("]\n");
-}
-
-
-int main(void)
-{    
-    array_list_t *list = list_new(16);
-
-    // Verify append
-    list_append(list, 5);
-    list_print(list);
-    list_append(list, 3);
-    list_print(list);
-    list_append(list, 1);
-    list_print(list);
-    list_append(list, 7);
-    list_print(list);
-    list_append(list, 9);
-    list_print(list);
-
-    // Verify insert 
-    list_insert(list, 0, 5);
-    list_print(list);
-    list_insert(list, 0, 3);
-    list_print(list);
-    list_insert(list, 0, 1);
-    list_print(list);
-    list_insert(list, 1, 7);
-    list_print(list);
-    list_insert(list, 3, 9);
-    list_print(list);
-
-    // Verify size
-    printf("size = %ld\n", list_size(list));
-
-    // Verify list_get()
-    assert(1 == list_get(list, 0));
-    assert(3 == list_get(list, 2));
-    assert(5 == list_get(list, 4));
-
-    // Verify remove 
-    list_remove(list, 4);
-    list_print(list);
-    list_remove(list, 2);
-    list_print(list);
-    list_remove(list, 0);
-    list_print(list);
-
-    // verify remove_all 
-    list_delete(list);
-
-    return 0;
 }
