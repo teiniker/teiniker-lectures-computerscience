@@ -1,13 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 
-typedef struct node 
-{
-    int value;
-    struct node *next_ptr;
-} node_t;
-
+#include "linked_list.h"
 
 node_t *new_node(int value)
 {
@@ -105,43 +98,4 @@ void list_print(node_t *first)
         printf("%d ", p->value);       
     }
     printf("]\n");
-}
-
-
-int main(void)
-{
-    node_t *list = NULL;
-
-    // Verify insert 
-    list = list_insert(list, 0, 5);
-    list_print(list);
-    list = list_insert(list, 0, 3);
-    list_print(list);
-    list = list_insert(list, 0, 1);
-    list_print(list);
-    list = list_insert(list, 1, 7);
-    list_print(list);
-    list = list_insert(list, 3, 9);
-    list_print(list);
-
-    // Verify size
-    printf("size = %ld\n", list_size(list));
-
-    // Verify list_get()
-    assert(1 == list_get(list, 0));
-    assert(3 == list_get(list, 2));
-    assert(5 == list_get(list, 4));
-
-    // Verify remove 
-    list = list_remove(list, 4);
-    list_print(list);
-    list = list_remove(list, 2);
-    list_print(list);
-    list = list_remove(list, 0);
-    list_print(list);
-
-    // verify remove_all 
-    list_remove_all(list);
-
-    return 0;
 }
