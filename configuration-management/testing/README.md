@@ -129,4 +129,4 @@ Therefore, **test cases can be executed in any order and as often as required**.
 * [Unity: Getting Started](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityGettingStartedGuide.md)
 * [Unity: Assertions Reference](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md)
  
-*Egon Teiniker, 2020, GPL v3.0* 
+*Egon Teiniker, 2020-2021, GPL v3.0* 
