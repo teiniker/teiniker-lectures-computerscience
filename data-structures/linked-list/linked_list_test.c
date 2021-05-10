@@ -9,15 +9,15 @@ node_t *list = NULL;
 
 void setUp(void)
 {
-    list = list_insert(list, 0, 5);
-    list = list_insert(list, 0, 3);
-    list = list_insert(list, 0, 1);
+    list = list_append(list, 1);
+    list = list_append(list, 3);
+    list = list_append(list, 5);
     list_print(list);
 }
 
 void tearDown(void)
 {
-    list_remove_all(list);
+    list_delete(list);
     list = NULL;
 }
 

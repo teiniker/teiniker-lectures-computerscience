@@ -2,36 +2,13 @@
 
 #include "linked_list.h"
 
-node_t *new_node(int value)
+node_t *node_new(int value)
 {
     node_t *node = malloc(sizeof(node_t));
     node->value = value;
     node->next_ptr = NULL;
     return node;
 }
-
-node_t* list_insert(node_t *list, int index, int value)
-{
-    node_t *node = new_node(value);
-
-    if(index == 0)
-    {
-        node->next_ptr = list;
-        return node;
-    }
-    
-    node_t *tmp = list;
-    for(int i=0; i<index-1; i++)
-    {
-        if(tmp != NULL)
-            tmp = tmp->next_ptr;
-    }    
-    node->next_ptr = tmp->next_ptr;
-    tmp->next_ptr = node;
-    
-    return list;
-}
-
 
 size_t list_size(node_t *list)
 {
@@ -53,6 +30,46 @@ int list_get(node_t *list, int index)
             list = list->next_ptr;
     }
     return list->value;
+}
+
+extern node_t* list_append(node_t *list, int value)
+{
+    if(list == NULL)
+    {
+        list =  node_new(value);
+    }
+    else
+    {    
+        node_t *tmp = list;
+        while(tmp->next_ptr != NULL)
+        {
+            tmp = tmp->next_ptr;
+        }
+        tmp->next_ptr = node_new(value);
+    }
+    return list;
+}
+
+node_t* list_insert(node_t *list, int index, int value)
+{
+    node_t *node = node_new(value);
+
+    if(index == 0)
+    {
+        node->next_ptr = list;
+        return node;
+    }
+    
+    node_t *tmp = list;
+    for(int i=0; i<index-1; i++)
+    {
+        if(tmp != NULL)
+            tmp = tmp->next_ptr;
+    }    
+    node->next_ptr = tmp->next_ptr;
+    tmp->next_ptr = node;
+    
+    return list;
 }
 
 
@@ -79,7 +96,7 @@ node_t* list_remove(node_t *list, int index)
     return list;
 }
 
-void list_remove_all(node_t *list)
+void list_delete(node_t *list)
 {
     while(list->next_ptr != NULL)
     {
