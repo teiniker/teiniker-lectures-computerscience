@@ -1,0 +1,48 @@
+Exercise: Linked List
+-------------------------------------------------------------------------------
+
+Implementieren Sie die folgenden Funktionen für die gegebene Implementierung 
+einer Linked List:
+
+A) size_t list_size(node_t *list)
+    Ermitteln Sie die Anzahl der verlinkten Knoten.
+
+B) int list_get(node_t *list, int index)
+    Lesen Sie den Wert des Knotens mit dem angegebenen Index (beginnend mit 0).
+
+C) node_t* list_insert(node_t *list, int index, int value)
+    Fügen Sie einen neuen Knoten am angegebenen Index ein.
+    Aus dem gegebenen value muss zuerst ei Knoten erstellt werden, der dann 
+    mit den bestehenden Knoten verklinkt wird.
+
+D) node_t* list_remove(node_t *list, int index)
+    Löschen Sie den Knoten mit dem angegebenen Index aus der Liste und geben 
+    Sie dessen Speicher am Heap wieder frei.
+
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+$ cd linked-list-exercise 
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c linked_list.c -o build/linked_list.o
+gcc -std=c99 -g -Wall   -I ../unity -c linked_list_test.c -o build/linked_list_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
+build/linked_list_test
+[ 1 3 5 ]
+linked_list_test.c:57:test_size:PASS
+[ 1 3 5 ]
+linked_list_test.c:58:test_get:PASS
+[ 1 3 5 ]
+[ 10 1 3 5 ]
+[ 10 1 3 33 5 ]
+linked_list_test.c:59:test_insert:PASS
+[ 1 3 5 ]
+[ 1 3 ]
+[ 3 ]
+linked_list_test.c:60:test_remove:PASS
+
+-----------------------
+4 Tests 0 Failures 0 Ignored 
+OK
