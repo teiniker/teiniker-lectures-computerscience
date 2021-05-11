@@ -16,7 +16,7 @@ The following topics will be covered:
     * [string.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/string)
 
 * [**Configuration Management**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management)
-   * [Setup: MinGw, VS Code](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/setup)
+   * [Setup: MinGw, VS Code](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/setup)\
       As a development environment, you can also use a pre-configured Linux VM image (Debian 10) called 
          [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).
    * [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
