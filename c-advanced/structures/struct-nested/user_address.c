@@ -7,7 +7,7 @@
 
 typedef struct
 {
-    char *street;   // 8 Bytes
+    char *street;   // 8 Bytes      
     int number;     // 4 Bytes    
     int zip_code;   // 4 Bytes
 } address_t;
@@ -41,7 +41,7 @@ int main(void)
 
     homer.address.street = "Evergreen Terrace";
     homer.address.number = 742;         // 0x02E6
-    homer.address.zip_code = 58008;     // 0xE209    
+    homer.address.zip_code = 58008;     // 0xE298    
 
     assert(homer.id == 3);
     assert(strcmp("homer", homer.username) == 0);

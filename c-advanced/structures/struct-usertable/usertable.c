@@ -13,7 +13,7 @@ typedef struct
 user_t *table_new(size_t number_of_elements);
 void table_delete(user_t * table);
 user_t table_get_user(user_t *table, int index); 
-void table_set_user(user_t * table, int id, char* username, char* password);
+void table_set_user(user_t * table, int index, int id, char* username, char* password);
 
 
 int main(void)
@@ -22,9 +22,9 @@ int main(void)
 
     user_t *table = table_new(3);
 
-    table_set_user(&table[0], 3, "homer", "Drink4DuffBeers!");
-    table_set_user(&table[1], 5, "bart", "EatMyShorts!");
-    table_set_user(&table[2], 7, "marge", "LoveMy3Kids!");
+    table_set_user(table, 0, 3, "homer", "Drink4DuffBeers!");
+    table_set_user(table, 1, 5, "bart", "EatMyShorts!");
+    table_set_user(table, 2, 7, "marge", "LoveMy3Kids!");
 
     // Read users from the heap
     user_t homer = table_get_user(table, 0);
@@ -68,9 +68,9 @@ user_t table_get_user(user_t *table, int index)
     return table[index];
 }
 
-void table_set_user(user_t * table, int id, char* username, char* password)
+void table_set_user(user_t *table, int index, int id, char* username, char* password)
 {
-    table->id = id;
-    table->username = username;
-    table->password = password;
+    table[index].id = id;
+    (table+index)->username = username;
+    (table+index)->password = password;
 }

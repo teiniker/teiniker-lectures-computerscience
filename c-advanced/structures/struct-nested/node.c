@@ -35,5 +35,6 @@ int main(void)
     free(first_ptr->next_ptr->next_ptr);
     free(first_ptr->next_ptr);
     free(first_ptr);
+    
     return 0;
 }
