@@ -58,10 +58,22 @@ This program built for i686-pc-msys
 
 If you get all these version information, MinGW is installed correctly.
 
+
+## Git Client
+We use a [Git client](https://git-scm.com/download/win) to clone source code repositories from GitHub.
+
+Just download the installer and run it.
+
+Verify the installation from the command line:
+```
+> git --version
+git version 2.31.1.windows.1
+```
+
+
 ## Visual Studio Code
 
 [Code](https://code.visualstudio.com/) is an editor for different programming languages which can be downloaded for free.
-
 
 To install Code we download and start the **installer**: `VSCodeUserSetup-x64-1.46.1.exe`
 
