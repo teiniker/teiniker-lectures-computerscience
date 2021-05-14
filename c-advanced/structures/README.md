@@ -153,11 +153,14 @@ structure.
 ## Examples
 * [struct-date](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
 * [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
+* [struct-nested](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-nested)
 * **Exercises**
     * [struct-complex](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex-exercise) 
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex))
     * [struct-usertable](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable-exercise) 
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable))
+    * [struct-linked-list](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-linked-list-exercise) 
+        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-linked-list))
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
