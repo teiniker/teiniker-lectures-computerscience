@@ -13,9 +13,10 @@ node_t *node_new(int value)
 size_t list_size(node_t *list)
 {
     size_t size=0;
-    while(list != NULL)
+    node_t *tmp = list;   
+    while(tmp != NULL)
     {
-        list = list->next_ptr;
+        tmp = tmp->next_ptr;
         size++;
     }   
     return size;
@@ -24,12 +25,12 @@ size_t list_size(node_t *list)
 
 int list_get(node_t *list, int index)
 {
+    node_t *tmp = list;    
     for(int i=0; i<index; i++)
     {
-        if(list != NULL)
-            list = list->next_ptr;
+        tmp = tmp->next_ptr;
     }
-    return list->value;
+    return tmp->value;
 }
 
 extern node_t* list_append(node_t *list, int value)

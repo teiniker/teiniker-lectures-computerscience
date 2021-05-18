@@ -23,7 +23,7 @@ int list_get(node_t *list, int index)
     return 0;
 }
 
-extern node_t* list_append(node_t *list, int value)
+node_t* list_append(node_t *list, int value)
 {
     if(list == NULL)
     {

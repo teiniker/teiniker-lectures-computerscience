@@ -14,8 +14,8 @@ sprintf_test.o: sprintf_test.c
 	$(CC) $(CFLAGS) -I $(UNITY) -c sprintf_test.c -o build/sprintf_test.o
 
 test: init unity.o sprintf_test.o
-	$(CC) $(CFLAGS) build/unity.o build/sprintf_test.o -o build/test
-	build/test 
+	$(CC) $(CFLAGS) build/unity.o build/sprintf_test.o -o build/sprintf_test
+	build/sprintf_test
 
 clean:
 	rm -rf build/
