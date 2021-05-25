@@ -9,7 +9,7 @@ A) bool stack_is_empty(stack_t *stack)
     Funktion FALSE zurück, ansonsten TRUE.
 
 B) void stack_push(stack_t *stack, int value)
-    Fügt eine "node_t" Objekt mit dem gegebenen Wert "value" am Anfang der Liste 
+    Fügt ein "node_t" Objekt mit dem gegebenen Wert "value" am Anfang der Liste 
     ein.
 
 C) int stack_pop(stack_t *stack)
