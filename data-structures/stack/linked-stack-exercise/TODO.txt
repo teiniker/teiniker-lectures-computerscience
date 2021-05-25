@@ -1,0 +1,48 @@
+Exercise: Linked Stack (Last In, First Out)
+-------------------------------------------------------------------------------
+
+Ergänzen Sie die folgenden Funktionen für die gegebene Implementierung eines 
+Stack (basierend auf einer Linked List):
+
+A) bool stack_is_empty(stack_t *stack)
+    Wenn sich mindestens ein "node_t" Objekt in der Liste befindet, gibt diese 
+    Funktion FALSE zurück, ansonsten TRUE.
+
+B) void stack_push(stack_t *stack, int value)
+    Fügt eine "node_t" Objekt mit dem gegebenen Wert "value" am Anfang der Liste 
+    ein.
+
+C) int stack_pop(stack_t *stack)
+    Gibt den Wert des ersten "node_t" Objekts zurück und löscht diesen Node aus 
+    der Liste.
+
+D) int stack_top(stack_t *stack)
+    Gibt den Wert des ersten "node_t" Objekts zurück (ohne ihn aus der Liste zu 
+    löschen).
+
+E) void stack_delete(stack_t *stack)
+    Löscht alle "node_t" Objekte der Liste und auch das "stack_t" Objekt.
+
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+$ cd linked-stack-exercise 
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c stack.c -o build/stack.o
+gcc -std=c99 -g -Wall   -I ../../unity -c stack_test.c -o build/stack_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/stack.o build/stack_test.o -o build/stack_test
+build/stack_test
+-->[ 5 3 1 ]
+stack_test.c:56:test_is_empty:PASS
+-->[ 5 3 1 ]
+stack_test.c:57:test_is_not_empty:PASS
+-->[ 5 3 1 ]
+stack_test.c:58:test_pop:PASS
+-->[ 5 3 1 ]
+stack_test.c:59:test_top:PASS
+
+-----------------------
+4 Tests 0 Failures 0 Ignored 
+OK
