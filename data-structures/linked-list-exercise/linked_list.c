@@ -10,67 +10,67 @@ node_t *node_new(int value)
     return node;
 }
 
-size_t list_size(node_t *list)
+size_t list_size(node_t *first_ptr)
 {
     // TODO
     return 0;
 }
 
 
-int list_get(node_t *list, int index)
+int list_get(node_t *first_ptr, int index)
 {
     // TODO
     return 0;
 }
 
-node_t* list_append(node_t *list, int value)
+node_t* list_append(node_t *first_ptr, int value)
 {
-    if(list == NULL)
+    if(first_ptr == NULL)
     {
-        list =  node_new(value);
+        first_ptr =  node_new(value);
     }
     else
     {    
-        node_t *tmp = list;
-        while(tmp->next_ptr != NULL)
+        node_t *ptr = first_ptr;
+        while(ptr->next_ptr != NULL)
         {
-            tmp = tmp->next_ptr;
+            ptr = ptr->next_ptr;
         }
-        tmp->next_ptr = node_new(value);
+        ptr->next_ptr = node_new(value);
     }
-    return list;
+    return first_ptr;
 }
 
-node_t* list_insert(node_t *list, int index, int value)
+node_t* list_insert(node_t *first_ptr, int index, int value)
 {
     // TODO
-    return list;
+    return first_ptr;
 }
 
 
-node_t* list_remove(node_t *list, int index)
+node_t* list_remove(node_t *first_ptr, int index)
 {
     // TODO
-    return list;
+    return first_ptr;
 }
 
-void list_delete(node_t *list)
+void list_delete(node_t *first_ptr)
 {
-    while(list->next_ptr != NULL)
+    while(first_ptr->next_ptr != NULL)
     {
-        node_t *rm = list;
-        list = list->next_ptr;
+        node_t *rm = first_ptr;
+        first_ptr = first_ptr->next_ptr;
         free(rm);
     }
-    free(list);
+    free(first_ptr);
 }
 
-void list_print(node_t *first)
+void list_print(node_t *first_ptr)
 {
     printf("[ ");
-    for(node_t *p = first; p != NULL; p = p->next_ptr)
+    for(node_t *ptr = first_ptr; ptr != NULL; ptr = ptr->next_ptr)
     {
-        printf("%d ", p->value);       
+        printf("%d ", ptr->value);       
     }
     printf("]\n");
 }

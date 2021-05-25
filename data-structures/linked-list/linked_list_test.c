@@ -5,50 +5,52 @@
 
 #include "linked_list.h"
 
-node_t *list = NULL;
+node_t *first_ptr = NULL;
 
 void setUp(void)
 {
-    list = list_append(list, 1);
-    list = list_append(list, 3);
-    list = list_append(list, 5);
-    list_print(list);
+    first_ptr = list_append(first_ptr, 1);
+    first_ptr = list_append(first_ptr, 3);
+    first_ptr = list_append(first_ptr, 5);
+    list_print(first_ptr);
 }
 
 void tearDown(void)
 {
-    list_delete(list);
-    list = NULL;
+    list_delete(first_ptr);
+    first_ptr = NULL;
 }
 
 
 void test_size(void)
 {
-    size_t size = list_size(list);
+    size_t size = list_size(first_ptr);
     TEST_ASSERT_EQUAL(3, size);
 }
 
 void test_get(void) 
 {
-    TEST_ASSERT_EQUAL(1, list_get(list, 0));
-    TEST_ASSERT_EQUAL(3, list_get(list, 1));
-    TEST_ASSERT_EQUAL(5, list_get(list, 2));
+    TEST_ASSERT_EQUAL(1, list_get(first_ptr, 0));
+    TEST_ASSERT_EQUAL(3, list_get(first_ptr, 1));
+    TEST_ASSERT_EQUAL(5, list_get(first_ptr, 2));
 }
 
+// TODO: Refactor test case into two tests
 void test_insert(void)
 {
-    list = list_insert(list, 0, 10);
-    list_print(list);
-    list = list_insert(list, 3, 33);
-    list_print(list);
+    first_ptr = list_insert(first_ptr, 0, 10);
+    list_print(first_ptr);
+    first_ptr = list_insert(first_ptr, 3, 33);
+    list_print(first_ptr);
 }
 
+// TODO: Refactor test case into two tests
 void test_remove(void)
 {
-    list = list_remove(list, 2);
-    list_print(list);
-    list = list_remove(list, 0);
-    list_print(list);
+    first_ptr = list_remove(first_ptr, 2);
+    list_print(first_ptr);
+    first_ptr = list_remove(first_ptr, 0);
+    list_print(first_ptr);
 }
 
 int main(void)
