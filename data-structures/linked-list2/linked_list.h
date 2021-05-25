@@ -11,6 +11,7 @@ typedef struct node
 
 extern size_t list_size(node_t **list);
 extern int list_get(node_t **list, int index);
+extern int list_find(node_t **list, int value);
 extern void list_append(node_t **list, int value);
 extern void list_insert(node_t **list, int index, int value);
 extern void list_remove(node_t **list, int index);

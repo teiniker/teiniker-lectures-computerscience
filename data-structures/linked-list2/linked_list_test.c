@@ -36,6 +36,11 @@ void test_get(void)
     TEST_ASSERT_EQUAL(5, list_get(&list, 2));
 }
 
+void test_find(void) 
+{
+    TEST_ASSERT_EQUAL(2, list_find(&list, 5));
+}
+
 void test_insert_first(void)
 {
     list_insert(&list, 0, 10);
@@ -78,6 +83,7 @@ int main(void)
 	UNITY_BEGIN();
 	RUN_TEST(test_size);
 	RUN_TEST(test_get);
+    RUN_TEST(test_find);
 	RUN_TEST(test_insert_first);
 	RUN_TEST(test_insert);
 	RUN_TEST(test_remove_first);

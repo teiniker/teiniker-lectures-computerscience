@@ -35,6 +35,12 @@ void test_get(void)
     TEST_ASSERT_EQUAL(5, list_get(first_ptr, 2));
 }
 
+void test_find(void) 
+{
+    TEST_ASSERT_EQUAL(2, list_find(first_ptr, 5));
+}
+
+
 // TODO: Refactor test case into two tests
 void test_insert(void)
 {
@@ -58,6 +64,7 @@ int main(void)
 	UNITY_BEGIN();
 	RUN_TEST(test_size);
 	RUN_TEST(test_get);
+    RUN_TEST(test_find);
 	RUN_TEST(test_insert);
 	RUN_TEST(test_remove);
 	return UNITY_END();

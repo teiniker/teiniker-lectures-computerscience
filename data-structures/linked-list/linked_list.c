@@ -22,7 +22,6 @@ size_t list_size(node_t *first_ptr)
     return size;
 }
 
-
 int list_get(node_t *first_ptr, int index)
 {
     node_t *tmp = first_ptr;    
@@ -33,7 +32,21 @@ int list_get(node_t *first_ptr, int index)
     return tmp->value;
 }
 
-extern node_t* list_append(node_t *first_ptr, int value)
+int list_find(node_t *first_ptr, int value)
+{
+    node_t *ptr = first_ptr;
+    int index = 0;
+    while(ptr != NULL)
+    {
+        if(ptr->value == value)
+            return index;
+        index++;    
+        ptr = ptr->next_ptr;    
+    }
+    return -1; // not found
+}
+
+node_t* list_append(node_t *first_ptr, int value)
 {
     if(first_ptr == NULL)
     {

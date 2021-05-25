@@ -33,6 +33,20 @@ int list_get(node_t **list, int index)
     return ptr->value;
 }
 
+int list_find(node_t **list, int value)
+{
+    node_t *ptr = (*list);
+    int index = 0;
+    while(ptr != NULL)
+    {
+        if(ptr->value == value)
+            return index;
+        index++;    
+        ptr = ptr->next_ptr;    
+    }
+    return -1; // not found
+}
+
 extern void list_append(node_t **list, int value)
 {
     if(*list == NULL)

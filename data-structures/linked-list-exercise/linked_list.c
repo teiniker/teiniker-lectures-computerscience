@@ -23,6 +23,12 @@ int list_get(node_t *first_ptr, int index)
     return 0;
 }
 
+int list_find(node_t *first_ptr, int value)
+{
+    // TODO
+    return 0;
+}
+
 node_t* list_append(node_t *first_ptr, int value)
 {
     if(first_ptr == NULL)
