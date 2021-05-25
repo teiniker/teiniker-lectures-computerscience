@@ -12,12 +12,14 @@ typedef struct
 
 
 extern array_list_t *list_new(size_t dimension);
+extern void list_delete(array_list_t* list);
+
 extern size_t list_size(array_list_t *list);
+extern int list_get(array_list_t* list, int index);
+extern int list_find(array_list_t *list, int value);
 extern void list_append(array_list_t* list, int value);
 extern void list_insert(array_list_t* list, int index, int value);
-extern int list_get(array_list_t* list, int index);
 extern void list_remove(array_list_t* list, int index);
-extern void list_delete(array_list_t* list);
 extern void list_print(array_list_t* list);
 
 #endif /* _ARRAY_LIST_H_ */

@@ -89,6 +89,4 @@ int main(void)
 	RUN_TEST(test_remove_first);
 	RUN_TEST(test_remove);
 	return UNITY_END();
-
-    return 0;
 }

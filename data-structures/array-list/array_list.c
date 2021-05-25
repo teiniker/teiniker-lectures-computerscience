@@ -13,12 +13,25 @@ array_list_t *list_new(size_t dimension)
     return list;
 }
 
-
 size_t list_size(array_list_t *list)
 {
     return list->size;
 }
 
+int list_get(array_list_t* list, int index)
+{
+    return list->array[index];
+}
+
+int list_find(array_list_t *list, int value)
+{
+    for(int i=0; i<list->size; i++)
+    {
+        if(list->array[i] == value)
+            return i;
+    }
+    return -1;
+}
 
 void list_append(array_list_t* list, int value)
 {
@@ -32,7 +45,6 @@ void list_append(array_list_t* list, int value)
     }
     list->size++;  
 }
-
 
 void list_insert(array_list_t* list, int index, int value)
 {
@@ -52,13 +64,6 @@ void list_insert(array_list_t* list, int index, int value)
     list->size++;
 }
 
-
-int list_get(array_list_t* list, int index)
-{
-    return list->array[index];
-}
-
-
 void list_remove(array_list_t* list, int index)
 {
     list->size--;
@@ -67,7 +72,6 @@ void list_remove(array_list_t* list, int index)
         list->array[i] = list->array[i+1];
     }
 }
-
 
 void list_delete(array_list_t* list)
 {
