@@ -1,0 +1,45 @@
+Exercise: Linked Queue (First In, First Out)
+-------------------------------------------------------------------------------
+
+Ergänzen Sie die folgenden Funktionen für die gegebene Implementierung einer 
+Queue (basierend auf einer Linked List):
+
+A) void queue_enqueue(queue_t *queue, int value)
+    Fügt ein "node_t" Objekt mit dem gegebenen Wert "value" am "tail_ptr" der 
+    Liste ein.
+
+B) int queue_dequeue(queue_t *queue)
+    Gibt den Wert des ersten "node_t" Objekts ("head_ptr") zurück und löscht 
+    diesen Node aus der Liste.
+
+C) bool queue_is_empty(queue_t *queue)
+    Wenn der "head_ptr" und der "tail_ptr" auf NULL zeigen ist die Queue leer, 
+    d.h. diese Funktion liefert TRUE. Ansonsten FALSE.
+    Beachten Sie, dass es nicht genügt wenn beide Pointer den gleichen Wert 
+    haben, in diesem Fall würde sich ein "node_t" Objekt in der Queue befinden.
+
+D) void queue_delete(queue_t *queue)
+    Löscht alle "node_t" Objekte der Liste und auch das "queue_t" Objekt
+    selber.
+
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+$ cd linked-queue-exercise 
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c queue.c -o build/queue.o
+gcc -std=c99 -g -Wall   -I ../../unity -c queue_test.c -o build/queue_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/queue.o build/queue_test.o -o build/queue_test
+build/queue_test
+head_ptr-->[ 1 3 5 ]<--tail_ptr
+queue_test.c:51:test_is_empty:PASS
+head_ptr-->[ 1 3 5 ]<--tail_ptr
+queue_test.c:52:test_is_not_empty:PASS
+head_ptr-->[ 1 3 5 ]<--tail_ptr
+queue_test.c:53:test_dequeue:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
