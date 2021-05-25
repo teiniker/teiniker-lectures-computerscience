@@ -1,6 +1,6 @@
 CFLAGS=-std=c99 -g -Wall  
 CC=gcc
-UNITY=../unity
+UNITY=../..unity
 
 all: init test
 
