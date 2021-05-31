@@ -1,0 +1,39 @@
+Exercise: Recursion - Sum of Integers
+-------------------------------------------------------------------------------
+
+Implementieren Sie die folgenden Funktion durch rekursive Aufrufe:
+
+A) int sum_of_integers(int n)
+    Berechne die Summe aller Zahlen von 0 bis n.
+
+    sum_of_integers(n) = 0 für n == 0
+                       = n + sum_of_integers(n-1) 
+
+
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+$ cd sum-of-integers-exercise 
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c sum.c -o build/sum.o
+gcc -std=c99 -g -Wall   -I ../../unity -c sum_test.c -o build/sum_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/sum.o build/sum_test.o -o build/sum_test
+build/sum_test
+ sum_of_integers(0)
+sum_test.c:39:test_n_zero:PASS
+ sum_of_integers(1)
+ sum_of_integers(0)
+sum_test.c:40:test_n_one:PASS
+ sum_of_integers(5)
+ sum_of_integers(4)
+ sum_of_integers(3)
+ sum_of_integers(2)
+ sum_of_integers(1)
+ sum_of_integers(0)
+sum_test.c:41:test_n:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK

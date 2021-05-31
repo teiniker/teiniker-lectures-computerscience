@@ -1,0 +1,39 @@
+Exercise: Recursion - Linked List 
+-------------------------------------------------------------------------------
+
+Implementieren Sie die folgenden Funktionen durch Rekursion für die gegebene 
+Linked List:
+
+A) node_t* list_append(node_t *first_ptr, int value)
+    Gehe bis an das Ende der Liste und füge einen neuen Knoten ein.
+
+B) void list_print(node_t *first_ptr)
+    Gehe bis an das Ende der Liste und gib dabei den Wert jedes Knotens aus.
+
+C) size_t list_size(node_t *list)
+    Gehe bis an das Ende der Liste und zähle dabei die Anzahl der Knoten.
+
+D) void list_delete(node_t *first_ptr)
+    Gehe bis an das Ende der Liste und gib jeden Knoten am Heap frei.
+    
+Beachten Sie, dass statt Schleifen rekursive Aufrufe der Funktionen zu verwenden 
+sind.
+
+
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+$ cd linked-list-exercise 
+$ make
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c linked_list.c -o build/linked_list.o
+gcc -std=c99 -g -Wall   -I ../../unity -c linked_list_test.c -o build/linked_list_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
+build/linked_list_test
+1 3 5 
+linked_list_test.c:35:test_size:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
