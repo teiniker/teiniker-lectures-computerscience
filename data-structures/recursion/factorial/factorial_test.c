@@ -17,11 +17,6 @@ void tearDown(void)
 }
 
 
-void test_n_negative(void)
-{
-    TEST_ASSERT_EQUAL(0, fact(-1));
-}
-
 void test_n_zero(void)
 {
     TEST_ASSERT_EQUAL(1, fact(0));
@@ -41,7 +36,6 @@ void test_n(void)
 int main(void)
 {
 	UNITY_BEGIN();
-	RUN_TEST(test_n_negative);
 	RUN_TEST(test_n_zero);
     RUN_TEST(test_n_one);
 	RUN_TEST(test_n);
