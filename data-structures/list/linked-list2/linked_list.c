@@ -49,9 +49,10 @@ int list_find(node_t **list, int value)
 
 extern void list_append(node_t **list, int value)
 {
-    if(*list == NULL)
+    node_t *first_ptr = *list;
+    if(first_ptr == NULL)
     {
-        *list =  node_new(value);
+        first_ptr =  node_new(value);
     }
     else
     {    

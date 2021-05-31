@@ -6,7 +6,7 @@ Stack (basierend auf einer Linked List):
 
 A) bool stack_is_empty(stack_t *stack)
     Wenn sich mindestens ein "node_t" Objekt in der Liste befindet, gibt diese 
-    Funktion FALSE zurück, ansonsten TRUE.
+    Funktion "false" zurück, ansonsten "true".
 
 B) void stack_push(stack_t *stack, int value)
     Fügt ein "node_t" Objekt mit dem gegebenen Wert "value" am Anfang der Liste 
