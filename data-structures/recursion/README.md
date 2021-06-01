@@ -35,10 +35,28 @@ There are two basic phases in a recursive process:
     function are revisited in reverse order.
     This phase continues until the original call returns, at which point the recursive process is complete.
 
+## Function Execution in C 
+To understand how recursion really works, it helps to look at the way functions are executed in C.
+
+When a function is called in a C program, a block of storage is allocated on the **stack memory segment** of a process
+to keep track of information associated with the call. 
+The block of storage placed on the stack is called a **stack frame** and consists of incoming parameters, local variables, 
+space for a return value, and the return address.
+
+The stack is a great solution to storing information about function calls because its **last-in, first-out** behavior is 
+well suited to the order in which functions are called and terminated. 
+
+However, stack usage does have a few drawbacks:
+* Maintaining information about every function call until it returns takes a considerable amount of **memory space**.
+* Generating and destroying stack frames takes **CPU time**. Thus, if the overhead associated with these concerns becomes 
+too great, we may need to consider an iterative approach (loops).
+
 
 
 ## References
 * [Youtube: CS50 - Recursion](https://youtu.be/mz6tAJMVmfM)
+
+* [Youtube: CS50 - Call Stacks](https://youtu.be/aCPkszeKRa4)
 
 * Kyle Loudon. Mastering Algorithms with C. O'Reilly,1999
     * Chapter 3: Recursion
