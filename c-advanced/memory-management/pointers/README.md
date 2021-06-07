@@ -90,8 +90,33 @@ int *max(int *a_ptr, int *b_ptr)
 If we leave a function, local variables go out of scope so the pointer will be invalid.
 
 
+## Generic Pointers
+
+A `void *` value is a generic pointer - essentially **just a memory address**.
+
+A void pointer is a pointer that has **no associated data type** with it. 
+A void pointer can hold address of any type and **can be typcasted to any type**.
+
+`Example`: `void *malloc(size_t size)`
+    `malloc()` and `calloc()` return `void *` type and this allows these functions to be 
+    used to allocate memory of any data type (just because of `void *`).
+
+
+Properties of void pointers:
+
+*  void pointers **cannot be dereferenced**.
+
+* The C standard **doesn’t allow pointer arithmetic** with void pointers. 
+    However, in GNU C it is allowed by considering the size of void is 1.
+
+
+
 ## References
-* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. Chapter 11: Pointers
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
+    * Chapter 11: Pointers
+    
 * [Youtube: CS50 Pointers](https://youtu.be/XISnO2YhnsY)
+ 
+* [void pointer in C / C++](https://www.geeksforgeeks.org/void-pointer-c-cpp/) 
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 

@@ -6,6 +6,14 @@
 #include "binary_tree.h"
 
 node_t *root_ptr = NULL;
+/*
+                13
+              /    \
+            7        23
+          /  \      /   \
+        3     11   17    29     
+*/
+
 
 void setUp(void)
 {
