@@ -7,15 +7,6 @@
 #include "search_tree.h"
 
 node_t *root_ptr = NULL;
-/*
-                100
-              /    \
-            20        500
-          /  \      
-        10     30        
-*/
-
-
 
 int comparator(const void *a, const void *b) 
 {
