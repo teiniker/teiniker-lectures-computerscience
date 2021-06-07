@@ -1,0 +1,41 @@
+Exercise: Binary Search Tree 
+-------------------------------------------------------------------------------
+
+Ergänzen Sie die  Implementierung eines binären Suchbaumes, welcher Objekte vom 
+Typ "student_t" speichert.
+
+Implementieren Sie die folgenden Funktionen:
+
+A) int comparator(const void *a, const void *b) 
+    Vergleicht die "id" zweier "student_t" Objekte (siehe search_tree_test.c).
+
+B) node_t *tree_insert(node_t *node_ptr, student_t *value, comparator_t cmp)
+    Fügt ein "student_t" Objekt in den Suchbaum ein. 
+    Als Comparator wird im Test die Funktion (A) verwendet, d.h. die Sortierung
+    erfolgt nader der "id".
+
+C) node_t *tree_search(node_t *node_ptr, student_t *value, comparator_t cmp);
+    Sucht nach einem "student_t" Objekt mit der richtigen "id".
+    Um die Implementierung einfach zu halten (und die gleiche Comparator-Funktion
+    verwenden zu können) wird die "id" in Form eines "student_t" Objekt's übergeben.
+
+D) void tree_delete(node_t *node_ptr)
+    Gibt alle "node_t" UND "student_t" Objekte frei.
+                     
+Überprüfen Sie Ihre Implementierungen mit den zugehörigen Testfällen.
+
+Tipp: Bauen Sie das Beispiel mit make:
+mkdir -p build
+gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c search_tree.c -o build/search_tree.o
+gcc -std=c99 -g -Wall   -I ../../unity -c search_tree_test.c -o build/search_tree_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/search_tree.o build/search_tree_test.o -o build/search_tree_test
+build/search_tree_test
+In-Order: (10,Lisa,Simpson) (20,Bart,Simpson) (30,Maggie,Simpson) (100,Homer,Simpson) (500,Marge,Simpson) 
+search_tree_test.c:62:test_tree_print:PASS
+Result: 20 Bart Simpson
+search_tree_test.c:63:test_tree_search:PASS
+
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
