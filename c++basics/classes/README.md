@@ -11,9 +11,9 @@ typedef struct
     double im;    
 } complex_number_t;
 
-void complex_init(complex_number_t *self, double re, double im);
-void complex_add(complex_number_t *self, ComplexNumber c);
-void complex_sub(complex_number_t *self, ComplexNumber c);
+complex_number_t *complex_number_new(double re, double im);
+void complex_number_add(complex_number_t *self, ComplexNumber c);
+void complex_number_sub(complex_number_t *self, ComplexNumber c);
 ```
 We can define multiple instances of this structure and apply the same 
 functions to each of these instances. We simply pass the pointer of the 
@@ -23,7 +23,7 @@ particular instance to a function.
 complex_number_t number = {1.0, 2.0};
 complex_number_t c = {3.0, 4.0};
 
-complex_add(&number,c);
+complex_number_add(&number,c);
 ```
 This is a common implementation technique for data structures.
 Real objects (e.g. user) can also be displayed in this form.
@@ -33,21 +33,16 @@ With the help of the functions **malloc()** and **free()** we can
 manage any number of *complex_number_t* instances on the heap.
  
 ```C
-complex_number_t *c_ptr = malloc(sizeof(complex_number_t)); 
-complex_init(c_ptr, 1.0, 2.0);
-
+complex_number_t *c_ptr = complex_new(1.0, 2.0);
 //...
-
 free(c_ptr);
 ``` 
 
 This procedure also has **disadvantages**:
 * The data in the Structure *complex_number_t* is always accessible (public) 
 and can be changed or read out at any time.
-* It is easy to forget to call the *complex_init()* function so that the 
-structure has not been initialized.
 * Each function must define the pointer to the structure as the first 
-parameter.
+parameter (`self` pointer).
 
 In C ++, attempts have been made to eliminate these disadvantages by 
 introducing classes.
@@ -154,13 +149,13 @@ There are three different types of constructurs in C++:
     argument (it has no parameters).
     If we do not define any constructor explicitly, the compiler will 
     automatically provide a default constructor implicitly.    
-    Example: ComplexNumber()
+    _Example_: `ComplexNumber()`
     
 * **Parameterized Constrcutors:**
     It is possible to pass arguments to constructors. These arguments 
     help initialize an object when it is created. Note that constructors 
     also can be overloaded.        
-    Example: ComplexNumber(double re, double im)
+    _Example_: `ComplexNumber(double re, double im)`
 
 * **Copy Constructors:**
     A copy constructor is a member function which initializes an object 
@@ -171,14 +166,14 @@ There are three different types of constructurs in C++:
     We need to define our own copy constructor only if an object has 
     pointers or any runtime allocation of the resource like file handle, 
     a network connection etc. (**deep copy**).        
-    Example: ComplexNumber(const ComplexNumber &number)
+    _Example_: `ComplexNumber(const ComplexNumber &number)`
     
     
 ### Destructor
 Destructor is another special member function that is called when the 
-scope of the object ends or the delete operator is called.
+**scope of the object ends** or the **delete operator** is called.
 
-Destructors have same name as the class preceded by a tilde (~), don’t 
+Destructors have same name as the class preceded by a tilde `~`, don’t 
 take any argument, and don’t return anything.
 Note that there can only be one destructor in a class.
 
@@ -195,8 +190,6 @@ we have dynamically allocated memory or pointer in class.
 When a class contains a pointer to memory allocated in class, we should 
 write a destructor to release memory before the class instance is destroyed. 
 This must be done to avoid memory leak.
-
-    
 
 ## References
 Bjarne Stroustrup. **The C++ Programming Language.** Pearson 4th Edition 2017
