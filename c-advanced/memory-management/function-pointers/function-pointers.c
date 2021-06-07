@@ -3,24 +3,16 @@
 #include <assert.h>
 
 
+void print(size_t size, int values[]);
 
 int compare(const void * a, const void * b) 
 {
     const int *integer_a = a;
     const int *integer_b = b;
 
-   return (*integer_a - *integer_b);
+    return (*integer_a - *integer_b);
 }
 
-void print(size_t size, int values[])
-{
-    printf("[");
-    for(int i=0; i<size; i++)
-    {
-        printf("%d ", values[i]);
-    }
-    printf("]\n");
-}
 
 int main(void)
 {
@@ -35,4 +27,13 @@ int main(void)
     return 0;
 }
 
+void print(size_t size, int values[])
+{
+    printf("[");
+    for(int i=0; i<size; i++)
+    {
+        printf("%d ", values[i]);
+    }
+    printf("]\n");
+}
 
