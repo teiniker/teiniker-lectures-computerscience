@@ -10,8 +10,8 @@ node_t *root_ptr = NULL;
 
 int comparator(const void *a, const void *b) 
 {
-    const student_t *student_a = a;
-    const student_t *student_b = b;
+    const student_t *student_a = (student_t *)a;
+    const student_t *student_b = (student_t *)b;
 
     //printf("compare: %d %d = %d\n", student_a->id, student_b->id, student_a->id - student_b->id);
     return student_a->id - student_b->id;

@@ -12,9 +12,9 @@ A) int comparator(const void *a, const void *b)
 B) node_t *tree_insert(node_t *node_ptr, student_t *value, comparator_t cmp)
     Fügt ein "student_t" Objekt in den Suchbaum ein. 
     Als Comparator wird im Test die Funktion (A) verwendet, d.h. die Sortierung
-    erfolgt nader der "id".
+    erfolgt anhand der "id".
 
-C) node_t *tree_search(node_t *node_ptr, student_t *value, comparator_t cmp);
+C) node_t *tree_search(node_t *node_ptr, student_t *value, comparator_t cmp)
     Sucht nach einem "student_t" Objekt mit der richtigen "id".
     Um die Implementierung einfach zu halten (und die gleiche Comparator-Funktion
     verwenden zu können) wird die "id" in Form eines "student_t" Objekt's übergeben.

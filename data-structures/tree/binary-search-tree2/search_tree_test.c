@@ -18,16 +18,16 @@ node_t *root_ptr = NULL;
 
 int comparator_1(const void * a, const void * b) 
 {
-    const int *integer_a = a;
-    const int *integer_b = b;
+    const int *integer_a = (const int *)a;
+    const int *integer_b = (const int *)b;
 
     return (*integer_a - *integer_b);
 }
 
 int comparator_2(const void * a, const void * b) 
 {
-    const int *integer_a = a;
-    const int *integer_b = b;
+    const int *integer_a = (const int *)a;
+    const int *integer_b = (const int *)b;
 
    return (*integer_b - *integer_a);
 }
