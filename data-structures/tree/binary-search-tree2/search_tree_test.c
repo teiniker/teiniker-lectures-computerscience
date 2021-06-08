@@ -36,7 +36,7 @@ comparator_t cmp = NULL;
 
 void setUp(void)
 {
-    cmp = comparator_2;
+    cmp = comparator_1;
     root_ptr = tree_insert(root_ptr, 100, cmp);
     root_ptr = tree_insert(root_ptr, 500, cmp);
     root_ptr = tree_insert(root_ptr, 20, cmp);

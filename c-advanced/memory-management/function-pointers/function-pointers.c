@@ -5,14 +5,19 @@
 
 void print(size_t size, int values[]);
 
-int compare(const void * a, const void * b) 
+int compare1(const void * a, const void * b) 
 {
-    const int *integer_a = a;
-    const int *integer_b = b;
-
+    const int *integer_a = (const int *)a;
+    const int *integer_b = (const int *)b;
     return (*integer_a - *integer_b);
 }
 
+int compare2(const void * a, const void * b) 
+{
+    const int *integer_a = (const int *)a;
+    const int *integer_b = (const int *)b;
+    return (*integer_b - *integer_a);
+}
 
 int main(void)
 {
@@ -20,7 +25,7 @@ int main(void)
 
     print(5, values);
 
-    qsort(values, 5, sizeof(int), compare);
+    qsort(values, 5, sizeof(int), compare1);
 
     print(5, values);
 

@@ -27,7 +27,7 @@ node_t *tree_insert(node_t *node_ptr, int value, comparator_t cmp)
 
 node_t *tree_search(node_t *node_ptr, int value, comparator_t cmp)
 {
-    if(node_ptr == NULL || node_ptr->value == value)
+    if(node_ptr == NULL || cmp(&value, &(node_ptr->value)) == 0)
         return node_ptr;
 
     if(cmp(&value, &(node_ptr->value)) < 0)
