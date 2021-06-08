@@ -42,11 +42,23 @@ that is accessed only through an **interface**. We refer to a program that uses 
 program that specifies the data type as an **implementation**.
 
 
-## Stack
+## Examples
+
+* **Linked List**
+    * Demo: [linked-list](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list)
+    * Demo: [linked-list (pointers-to-pointers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list2)
+    * Demo: [linked-list (API structure)](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list3)
+
+* **Stack**
+    * Exercise: [stack](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/stack/linked-stack-exercise) 
+            ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/stack/linked-stack))
+            
+* **Queue** 
+    * Exercise: [linked-queue](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/queue/linked-queue-exercise) 
+            ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/queue/linked-queue))
 
 
-## FIFO Queues
-   
+* **Binary Tree**
 
 
 ## References
