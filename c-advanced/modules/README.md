@@ -101,39 +101,8 @@ Note that functions not declared in the header file are local to this implementa
 file. Thus, we **encapsulate the implementation details**. 
  
 ## Makefile
-The program **make** is designed to aid the programmer in compiling and linking programs which consists of many 
-source files.
 
-The program `make` allows us to specify the dependencies between source files 
-and the commands that generates the final program in a so called `Makefile`.
-
-The `Makefile` contains the following sections:
-* **Comments**: Any line starting with a hash mark `#` is a comment.
-* **Macros**: A macro has the format `name = value` where `name` is any valid identifier 
-    and `value` is the text that will be substituted whenever make sees `$(name)`.
-* **Explicit rules** tell make what commands are needed to create the program.
-* Default rules
-
-Explicit rules can take several forms, the most common is:
-```
-target: source [source2] [source3] ...
-    command
-    [command2]
-    [command3]
-    ...
-```
-where **target** is the name of a file to create.
-
-It is created out of the source file **source**. If the target is created out of several files, they
-are all listed.
-This list should include any header files included by the source file as well.
-
-The **command** that generates the target is specified on the next line.
-Sometimes we need more than one commend to create the target.
-Commands are listed one per line.
-**Each is indented by a tab**.
-
-Example: Makefile
+Example: Makefile to compile two object files and link them into an executable
 ```
 CFLAGS=-std=c99 -g -Wall  
 CC=gcc
@@ -172,16 +141,6 @@ MOTOR: ---
 ```
 Note that we compile the source files (`*.h` and `*.c`) into object files (`*.o`), link the together 
 into an application, and execute that application.
-
-We can also use the **-n flag** to print out the build steps without executing them:
-```
-$ make -n
-mkdir -p build
-gcc -std=c99 -g -Wall   -c sm_parking_gate.c -o build/sm_parking_gate.o
-gcc -std=c99 -g -Wall   -c main.c -o build/main.o
-gcc -std=c99 -g -Wall   build/sm_parking_gate.o build/main.o -o build/sm_parking_gate
-build/sm_parking_gate
-```
 
 All **build artifacts** are stored in a temporary `build/` directory. 
 Executing the `clean` target removes this directory from our project again:
