@@ -1,6 +1,6 @@
 # From Struct to Class
 
-## Using C Structures
+## C Structures
 
 Given a structure which can be modified with different functions.
 
@@ -48,7 +48,7 @@ In C ++, attempts have been made to eliminate these disadvantages by
 introducing classes.
 
 
-## Using C++ Classes
+## C++ Classes
 
 Classes are the central feature of an **object-oriented language**. 
 
