@@ -56,11 +56,11 @@
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind))
 
 * **Modular Programming**
-   * Demo: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules)
-   * Exercise: [vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-operations))
-   * Exercise: [vector-bubblesort](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/modules/vector-bubblesort))
+   * Demo: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/modules)
+   * Exercise: [vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/modules/vector-operations-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/modules/vector-operations))
+   * Exercise: [vector-bubblesort](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/modules/vector-bubblesort-exercise)
+      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/modules/vector-bubblesort))
       
 * [**Debugging**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/debugging) 
 
