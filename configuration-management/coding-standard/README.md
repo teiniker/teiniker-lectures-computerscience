@@ -8,8 +8,6 @@ its own flavor of a coding standard.
 
 ## General Rules
 
-We use a common formating schema to ensure the readability of source code on the screen.
-
 * **Line Widths**
     * _Rule_: The width of all lines in a program shall be limited to a maximum of 80 characters.
 
