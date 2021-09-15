@@ -1,16 +1,12 @@
 # C Coding Standard
 
-Starting from the heuristics of Robert C. Martin, we can say that **every team should follow a coding standard based on common industry norms**. 
-
-Keep in mind, that every organization or even every team can have its own flavor of a coding standard.
+As Robert C. Martin says, **every team should follow a coding standard based on common industry norms**, therefore, we also use one... 
 
 The following rules are extracted from the [Embedded C Coding Standard](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard) 
-ldefined by the Barr Group which is available online and as a PDF document.
-
+defined by the **Barr Group** which is available online and as a PDF document. But keep in mind, that every organization or even every team can have 
+its own flavor of a coding standard.
 
 ## General Rules
-
-We use a common formating schema to ensure the readability of source code on the screen.
 
 * **Line Widths**
     * _Rule_: The width of all lines in a program shall be limited to a maximum of 80 characters.
