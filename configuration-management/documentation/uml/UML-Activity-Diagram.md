@@ -165,6 +165,8 @@ experts don’t follow them easily.
 
 
 ## References
+* [Activity Diagram in UML: Symbol, Components & Example](https://www.guru99.com/uml-activity-diagram.html)
+
 * Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition, 2004
 
 * Robert C. Martin. **UML for Java Programmers**. Prentice Hall, 2003

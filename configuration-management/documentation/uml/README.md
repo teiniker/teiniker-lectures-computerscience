@@ -51,13 +51,13 @@ When should we use UML:
   The real useful diagrams will keep showing up over and over again.
   Keep only those whose long-term survival has lots of value.
 
-
-
+  
 ## References
 * Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition, 2004
 
 * Robert C. Martin. **UML for Java Programmers**. Prentice Hall, 2003
 
+* Jim Arlow, Ila Neustadt. **UML 2 and the Unified Process**. Addison-Wesley, 2nd Edition, 2005
 
 *Egon Teiniker, 2020-2021, GPL v3.0*  
 
