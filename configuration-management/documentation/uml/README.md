@@ -1,9 +1,13 @@
 # Unified Modeling Language
 
-The *Unified Modeling Language (UML)* is a family of graphical notations, backed by a single meta-model, that help in 
+The **Unified Modeling Language (UML)** is a family of graphical notations that help in 
 describing and designing software systems.
-UML is an open standard, controlled by the Object Management Group (OMG).
-Note that programming languages are not at a high enough level of abstraction to facilitate discussions about design.
+UML is an open standard, controlled by the **Object Management Group (OMG)**.
+
+Graphical modeling languages have been around in the software industry for a long time. 
+The fundamental driver behind them all is that programming languages are not at a high enough level of **abstraction** 
+to facilitate discussions about design.
+
 
 ## Why Modeling?
 Engineers build models to find out if their designs will work.
