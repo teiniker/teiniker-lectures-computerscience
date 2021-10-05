@@ -3,3 +3,5 @@ _hello.s
 hello.o
 hello
 hello.exe
+./classes
+*.class
