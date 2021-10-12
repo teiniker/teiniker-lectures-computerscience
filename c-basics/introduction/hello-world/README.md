@@ -48,7 +48,7 @@ Although a C program may consist of many functions, only the `main()` function i
 The word `void` in parentheses indicates that `main()` has no arguments.
 
 `main()` **returns a status code** that is given to the operating system when the program terminates.
-The statement
+The statement:
 ```C
     return 0;
 ```
@@ -129,7 +129,7 @@ _Example_: Assignments
 ```
 Before a variable can be assigned a value, it must be declared.
 
-A constant assigned to a `float` valiable usually contains a decimal point.
+A constant assigned to a `float` variable usually contains a decimal point.
 It is best to append the letter `f` to a constant that contains a decimal point if the number is assigned to a `float` 
 variable.
 
