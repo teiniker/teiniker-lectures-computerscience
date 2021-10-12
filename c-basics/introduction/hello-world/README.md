@@ -104,10 +104,37 @@ float variables can store numbers with digits after the decimal point, like `3.1
 
 ### Declarations
 
+Variables must be declared **before they can be used**.
+To declare a variable, we first specify the typ of the variable, then its name.
+
+_Example_: Variable declarations
+```C
+    int value;
+    float voltage;
+```
+Notice that each declaration ends with a semicolon.
+
+Since C99, declarations don't have to come before statements.
+Like in C++ or Java, we don't declare variables until they are first needed.
 
 ### Assignment
 
+A variable can be given a value by means of assignment.
 
+_Example_: Assignments
+```C
+    int value;
+    value = 7;
+    float voltage = 0.3f;
+```
+Before a variable can be assigned a value, it must be declared.
+
+A constant assigned to a `float` valiable usually contains a decimal point.
+It is best to append the letter `f` to a constant that contains a decimal point if the number is assigned to a `float` 
+variable.
+
+In general, the right side of an assignment can be a formular (**expression**) involving constants, variables, 
+and operators.
 
 ## References
 K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
