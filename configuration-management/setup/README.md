@@ -88,5 +88,6 @@ Within Code, we install the following **extensions**:
 
 
 ## References
+* [Git - Download](https://git-scm.com/download/win)
 * [MinGW - Download](https://osdn.net/projects/mingw/releases/) 
 * [Visual Studio Code - Download](https://code.visualstudio.com/)
