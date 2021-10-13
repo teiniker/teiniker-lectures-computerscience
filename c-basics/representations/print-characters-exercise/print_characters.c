@@ -2,8 +2,7 @@
 
 int main(void)
 {
-    int i = 1;
-    int j = 999999;
+    char c = '#';
 
     printf("\t+--------+--------+\n");
     // TODO

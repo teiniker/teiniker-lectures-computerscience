@@ -1,0 +1,16 @@
+Exercise: Print Characters
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das die gegebenen Variableninhalte in Form einer
+Tabelle ausgibt:
+
+Filename = "C:\tmp\table.txt"
+        +--------+--------+
+        | char   | #      |
+        +--------+--------+
+Status: 25%
+
+Tipp: Verwenden Sie die printf() Funktion.
+
+Tipp: Die Werte für den Filenamen und den Status können Sie direkt in die printf()
+Funktion schreiben (ohne Variablen).
