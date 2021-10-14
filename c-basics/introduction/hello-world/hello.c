@@ -2,8 +2,7 @@
 
 int main(void)
 {
-    char *name = "Eggenberg";
-    printf("Hello %s!\n", name);
+    printf("Hello Eggenberg!\n");
     
 	return 0;
 }
