@@ -4,5 +4,5 @@ int main(void)
 {
     printf("Hello Eggenberg!\n");
     
-	return 0;
+    return 0;
 }
