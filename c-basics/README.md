@@ -3,10 +3,13 @@
 * **First Steps in C**    
     * Demo: [language-processing](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/language_processing)
     * Demo: [hello-world](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/hello-world)   
+    * Demo: [variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/variables)
         
 * **Representations**
    * Demo: [numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers)
-   * Demo: [signed-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/signed-numbers)
+   * Demo: [numbers-signed](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers-signed)
+   * Demo: [number-types](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/number-types)
+   * Demo: [standard-integers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/standard-integers)
    * Exercise: [print-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers-exercise)
          ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers))  
 
