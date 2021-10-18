@@ -14,5 +14,9 @@ int main(void)
     printf("|%-6d|\n|%-6d|\n|%-6d|\n", i, j, k); 
     printf("|%06d|\n|%06d|\n|%06d|\n", i, j, k);
 
+// TODO: unsigned integers
+    unsigned char byte = 0xfc;
+    printf("unsigned byte =%u; singed byte=%d\n",byte, (char)byte);
+
     return 0;
 }
