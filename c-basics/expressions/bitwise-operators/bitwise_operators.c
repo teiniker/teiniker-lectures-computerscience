@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 
-void print_binary(uint32_t number); 
+void print_binary(uint32_t number); // just use it :-)
 
 int main(void)
 {
@@ -44,6 +44,7 @@ int main(void)
     return 0;
 }
 
+// Helper function (already implemented)
 void print_binary(uint32_t number)
 {
     for(int i=sizeof(number)*8-1; i>= 0; i--)

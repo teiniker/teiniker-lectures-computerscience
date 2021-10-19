@@ -13,17 +13,20 @@ int main(void)
     printf("%d OR  %d = %d\n",a, b, a | b);
 
     // Boolean expression for XOR
-    
     a = true;
     b = false;
     bool result_xor = a && !b || !a && b;
     printf("%d XOR  %d = %d\n",a, b, result_xor);
 
-    // assert statements
-    a = true;
-    b = false;
-    assert(!(a||b) == !a && !b);
+    // Relational expressions
+    int value = 17;
+    bool result_lt = value < 10;
+    printf("%d < 10 => %d\n", value, result_lt);
 
+    // Equality expressions
+    value = 666;
+    bool result_eq = (value == 666);
+    printf("%d == 666 => %d\n", value, result_eq);
 
     return 0;
 }

@@ -15,6 +15,7 @@ Tabelle ausgibt:
 
 Tipp: Verwenden Sie die printf() Funktion.
 
+Tipp: Siehe teiniker-lectures-computerscience/c-std-lib/stdio/printf
+
 Tipp: C library function - printf()
-        https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
-        
+        https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm        

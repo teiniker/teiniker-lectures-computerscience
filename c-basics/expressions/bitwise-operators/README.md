@@ -2,6 +2,20 @@
 
 C provides six bitwise operators, which operate on **integer data** at the **bit level**.
 
+## Bitwise Complement, AND, OR, and Exclusive OR
+
+The following operators perform Boolean operations on all bits in their operands.
+
+| Symbol | Meaning|
+|--------|-------|
+| ~     | bitwise complement |
+| &     | bitwise AND | 
+| ^     | bitwise exclusive OR |
+| &#124; | bitwise OR |
+
+_Tip: Don't confuse the bitwise operators `&` and `|` with the logical operators `&&` and `||`._
+
+
 ## Bitwise Shift Operators
 
 The bitwise shift operators can transform the binary representation of an integer by
@@ -28,20 +42,6 @@ at the left end, while others preserve the sign bit by adding ones).
 
 _Tip: As long as it is not absolutely necessary, shift operations should only be carried out 
 with unsigned integer numbers._
-
-
-## Bitwise Complement, AND, OR, and Exclusive OR
-
-The following operators perform Boolean operations on all bits in their operands.
-
-| Symbol | Meaning|
-|--------|-------|
-| ~     | bitwise complement |
-| &     | bitwise AND | 
-| ^     | bitwise exclusive OR |
-| &#124; | bitwise OR |
-
-_Tip: Don't confuse the bitwise operators `&` and `|` with the logical operators `&&` and `||`._
 
 
 ## Common Single-Bit Operations
