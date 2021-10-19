@@ -1,0 +1,17 @@
+Exercise: Bit Manipulations
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das in einer 16 bit unsigned integer Variable:
+
+A) Ein bit an einer beliebigen Stelle auslesen:
+    value = 0b0000111100001111;        
+    bit an der Stelle 3 = 1
+    bit an der Stelle 4 = 0
+
+B) Ein bit an einer beliebigen Stelle setzen:
+    value = 0b0000111100001111;
+    bit 5
+    => 0000111100101111
+
+Tipp: Verwenden Sie eine Kombination aus Bitwise- und Shift Operators.
+ 
