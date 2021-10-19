@@ -1,8 +1,54 @@
 # Expressions
 
+The simplest expressions are variables and constants.
+A **variable** represents a value to be computed as the program runs. 
+A **constant** represents a value that doesn't change.
+More complicated expressions apply operators to operands (which are themselves expressions).
+Operators are the basic tool for building expressions, and C has a rich collection of them.
+
 ## Arithmetic Operators 
 
+The arithmetic operators perform addition, subtraction, multiplication, and division.
+
+The **unary operators** `plus +` and `minus -` require one operand:
+```C
+i = +1;  // unary + operator (does nothing)
+j = -i;  // unary - operator
+```
+
+The binary operators require two operands:
+
+| Symbol | Meaning|
+|--------|-------|
+| +     | addition |
+| -     | subtraction | 
+| *     | multiplication | 
+| /     | division | 
+| %     | remainder | 
+
+The `/` and `%` operator requires special care:
+* The `/` operator can produce surprising results. When both of its operands are integers, the `/` operator truncates the result by dropping the fractional part.
+
+    _Example_: `1 / 2 = 0`
+
+* The `%` operator requires integer operands. If either operand is not an integer, the program will not compile.
+* Using zero as the right operand of either `/` or `%` causes undefined behavior.
+
+
 ## Assignment Operators
+
+Once the value of an expression has been computed, we will often need to store it in a variable for later use.
+The simple assignment operator `=` is used  for that purpose.
+
+For updating a value already stored in a variable, C provides compound assignment operators.
+
+### Simple Assignment 
+
+
+### Compound Assignment
+
+
+
 
 ## Increment and Decrement Operators
 
