@@ -8,13 +8,6 @@ int main(void)
 
     printf("is_on  = %d\nis_off = %d\n", is_on, is_off);
 
-    bool a = true;
-    bool b = false;
-
-    printf("%d NOT = %d\n", a, !a);
-    printf("%d AND %d = %d\n",a, b, a && b);
-    printf("%d OR  %d = %d\n",a, b, a | b);
-
     return 0;
 }
 
