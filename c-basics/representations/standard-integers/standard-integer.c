@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>     // since c99
 
-
 int main(void)
 {
-
     // int N _t designates a signed integer type with width N, 
     // no padding bits, and a two's-complement representation.
     printf("int8_t : %d byte\n", sizeof(int8_t));
