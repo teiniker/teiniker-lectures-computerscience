@@ -4,12 +4,17 @@ Exercise: Print Numbers
 Schreiben Sie ein C Programm, das die gegebenen Variableninhalte in Form einer
 Tabelle ausgibt:
 
-        +--------+--------+
-        | int    | 000001 |
-        | int    | 999999 |
-        +--------+--------+
+        +---------------+-----------+
+        | short         |   1       |
+        | int           |      -999 |
+        | unsigned long |   0000123 |
+        +---------------+-----------+
+        | hex           | 0000ffd2f |
+        | octal         |     1234  |
+        +---------------+-----------+
 
 Tipp: Verwenden Sie die printf() Funktion.
 
-Tipp: Die Werte für den Filenamen und den Status können Sie direkt in die printf()
-Funktion schreiben (ohne Variablen).
+Tipp: C library function - printf()
+        https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
+        

@@ -4,12 +4,13 @@ Exercise: Print Floating-Point Numbers
 Schreiben Sie ein C Programm, das die gegebenen Variableninhalte in Form einer
 Tabelle ausgibt:
 
-        +--------+--------+
-        | float  | 0.1000 |
-        | double | 3.1415 |
-        +--------+--------+
+        +---------------+-------------+
+        | float         |       0.10  |
+        | double        |     3.1415  |
+        | double        | 1.2000e+03  |
+        +---------------+-------------+
 
 Tipp: Verwenden Sie die printf() Funktion.
 
-Tipp: Die Werte für den Filenamen und den Status können Sie direkt in die printf()
-Funktion schreiben (ohne Variablen).
+Tipp: C library function - printf()
+        https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
