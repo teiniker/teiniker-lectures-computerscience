@@ -19,7 +19,7 @@
    * Demo: [assert](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/assert)
    * Demo: [bitwise-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bitwise-operators)
    * Exercise: [bit-manipulation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bit-manipulation-exercise)
-         ([model solution])(https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bit-manipulation)
+       ([model solution])(https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bit-manipulation)
    * Demo: [arithmetic-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/arithmetic-operators)
          
 * **Selection Statements (if, switch)**
