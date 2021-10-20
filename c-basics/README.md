@@ -6,6 +6,7 @@
     * Demo: [variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/variables)
         
 * **Representations**
+   * Demo: [boolean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/boolean)
    * Demo: [numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers)
    * Demo: [numbers-signed](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers-signed)
    * Demo: [number-types](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/number-types)
