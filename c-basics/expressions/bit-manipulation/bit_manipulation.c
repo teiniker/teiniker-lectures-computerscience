@@ -13,14 +13,14 @@ int main(void)
     // Reads a bit of a number.
     value = 0b0000111100001111;
     bit = 3;
-    bool bit_3 = ((value) >> (bit)) & 0x01;
+    bool bit_3 = (value >> bit) & 0x01;
     printf("bit = %d\n", bit_3);
 
     
     // Sets (writes a 1 to) a bit of a numeric variable.
     value = 0b0000111100001111;
     bit = 5;
-    value = value | (1UL << bit);
+    value = value | (1 << bit);
     printf("value = ");
     print_binary(value);
     printf("\n");

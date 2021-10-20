@@ -5,12 +5,12 @@
 int main(void)
 {
     bool a = true;
-    bool b = false;
+    bool b = true;
 
     // Logical operators
     printf("%d NOT = %d\n", a, !a);
     printf("%d AND %d = %d\n",a, b, a && b);
-    printf("%d OR  %d = %d\n",a, b, a | b);
+    printf("%d OR  %d = %d\n",a, b, a || b);
 
     // Boolean expression for XOR
     a = true;
@@ -22,6 +22,7 @@ int main(void)
     int value = 17;
     bool result_lt = value < 10;
     printf("%d < 10 => %d\n", value, result_lt);
+
 
     // Equality expressions
     value = 666;
