@@ -12,7 +12,7 @@
    * Demo: [number-types](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/number-types)
    * Demo: [standard-integers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/standard-integers)
    * Exercise: [print-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers))  
+   ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers))  
 
 * **Expressions**
    * Demo: [logical-expressions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/logical-expressions)  
