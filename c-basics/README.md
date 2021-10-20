@@ -14,6 +14,14 @@
    * Exercise: [print-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers-exercise)
          ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers))  
 
+* **Expressions**
+   * Demo: [logical-expressions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/logical-expressions)  
+   * Demo: [assert](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/assert)
+   * Demo: [bitwise-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bitwise-operators)
+   * Exercise: [bit-manipulation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bit-manipulation-exercise)
+         ([model solution])(https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/bit-manipulation)
+   * Demo: [arithmetic-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/expressions/arithmetic-operators)
+         
 * **Selection Statements (if, switch)**
     * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/selection)
     * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/leap-year-exercise)
