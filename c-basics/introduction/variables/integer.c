@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // gobal variable declarations
-int year = 2020;                // with initializer    
+int year = 2021;                // with initializer    
 int day;
 
 int main(void)
