@@ -7,6 +7,32 @@ int main(void)
 {
     int grade = 4;      // User input 
     
+    if (grade == 1)
+    {
+        printf("sehr gut\n");
+    }
+    else if(grade == 2)
+    {
+        printf("gut\n");
+    }
+    else if (grade == 3)
+    {
+        printf("befriedigend\n");
+    }
+    else if(grade == 4)
+    {
+        printf("genügend\n");
+    }
+    else if(grade == 5)
+    {
+        printf("nicht genügend\n");
+    }
+    else 
+    {
+        printf("Invalid grade!\n");
+    }
+
+
     switch(grade)
     {
         case 1:
@@ -45,5 +71,6 @@ int main(void)
             printf("negativ\n");
             break;
     }
+
 	return 0;
 }
