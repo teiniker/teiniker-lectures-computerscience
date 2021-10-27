@@ -65,7 +65,7 @@ We often need to compare an expression against a series of values to see
 which one it currently matches.
 This can be implemented in cascaded `if else` statements.
 As an alternative we can use the switch statement.
-```
+```C
 switch (expression)
 {
     case constant-expression: statements 
