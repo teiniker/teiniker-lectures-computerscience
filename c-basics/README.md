@@ -7,10 +7,8 @@
         
 * **Representations**
    * Demo: [boolean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/boolean)
-   * Demo: [numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers)
-   * Demo: [numbers-signed](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers-signed)
-   * Demo: [number-types](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/number-types)
-   * Demo: [standard-integers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/standard-integers)
+   * Demo: [numbers, numbers-signed, standard-integers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/numbers)
+   * Demo: [types_sizeof](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/types_sizeof)
    * Exercise: [print-numbers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/representations/print-numbers))  
 
