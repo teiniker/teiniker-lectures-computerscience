@@ -28,20 +28,20 @@
 
 * **Control Flow**
     * **Selection Statements (if, switch)**
-    * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection)
-    * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year-exercise)
+        * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection)
+        * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year))
-     * Demo: [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/enumerations)
+         * Demo: [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/enumerations)
 
     * **Loops (while, do-while, for)**   
-    * Demo: [while_loop, for_loop, do_while_loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops)
-    * Exercise: [arduino-sketch](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/arduino-sketch-exercise)
+        * Demo: [while_loop, for_loop, do_while_loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops)
+        * Exercise: [arduino-sketch](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/arduino-sketch-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/arduino-sketch))    
-    * Exercise: [print-ascii-table](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table-exercise)
+        * Exercise: [print-ascii-table](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table))    
-    * Exercise: [little-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss-exercise)
+        * Exercise: [little-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss))
-    * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter-exercise)
+        * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter))        
             
 * **Functions**
