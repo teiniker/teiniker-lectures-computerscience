@@ -1,4 +1,4 @@
-# Data Representations in C
+# Data Type Sizes in C
 
 Data types in c refer to an extensive system **used for declaring variables or functions** 
 of different types. 
