@@ -22,6 +22,8 @@ The types in C can be classified as follows:
 
 ## References
 
+* [Online Binary Converter](https://www.binaryconvert.com/)
+
 * [C Data Types (Programiz)](https://www.programiz.com/c-programming/c-data-types)
 
 * [C Data Types (Tutorialspoint)](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
