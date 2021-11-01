@@ -7,6 +7,7 @@
         
 * **Types, Operators, and Expressions**
     * **Types**
+        * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/types-operators-expressions/types/README.md)
         * Demo: [boolean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/boolean)
         * Demo: [integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/integer)
         * Demo: [floating_point](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/floating-point)
