@@ -17,7 +17,7 @@
         * Exercise: [print-integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer))  
 
-    * **Operators**
+    * **Operators and Expressions**
         * Demo: [logical-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/logical-operators)  
         * Demo: [assert](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/assert)
         * Demo: [bitwise-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/bitwise-operators)
