@@ -1,4 +1,4 @@
-# Data Type Sizes in C
+# Type Sizes in C
 
 Data types in c refer to an extensive system **used for declaring variables or functions** 
 of different types. 
@@ -104,7 +104,5 @@ Related constants for floating-point types are deifined in the **float.h** file.
 * [C Data Types (Programiz)](https://www.programiz.com/c-programming/c-data-types)
 
 * [C Data Types (Tutorialspoint)](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
-
-* [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
