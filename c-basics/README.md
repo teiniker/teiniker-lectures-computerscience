@@ -46,11 +46,13 @@
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/time-counter))        
             
 * **Functions**
+    * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/functions/README.md) 
     * Demo: [functions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions)
     * Exercise: [function-resistors](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors))
       
 * **Arrays**
+    * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/arrays/README.md)
     * Demo: [one_dimensional_array, two_dimensional_array](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays)
     * Exercise: [array-xor-encryption](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-xor-encryption-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-xor-encryption))
@@ -61,6 +63,7 @@
 
 
 * **State Machines**
+   * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/statemachine/README.md)  
    * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine)
    * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate-exercise)
       ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate))
