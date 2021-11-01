@@ -10,9 +10,9 @@ The types in C can be classified as follows:
 
 * [**Integer Numbers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/integer)\
     Each integer type represents a finite range of integer numbers. 
-    * **Signed integer types** represent values that can ne negative, zero, or positive.
     * **Unsigned integer types** represent values that can be only zero or positive.
-
+    * **Signed integer types** represent values that can ne negative, zero, or positive.
+   
 * [**Floating-Point Numbers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/floating-point)\
     Floating-point is the most common representation for real numbers in computers.
 
