@@ -41,8 +41,8 @@
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table))    
         * Exercise: [little-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss))
-        * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/exercises/time-counter))        
+        * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/time-counter-exercise)
+        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/time-counter))        
             
 * **Functions**
     * Demo: [functions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions)
