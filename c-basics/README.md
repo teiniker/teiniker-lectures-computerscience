@@ -14,8 +14,7 @@
         * Demo: [types-sizeof](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/types-sizeof)
         
     * **Formated Output**    
-        * Exercise: [print-integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/   
-        c-basics/types-operators-expressions/formated-output/print-integer-exercise)
+        * Exercise: [print-integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer))  
 
     * **Operators**
