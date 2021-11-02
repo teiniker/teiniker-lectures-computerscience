@@ -23,8 +23,9 @@ The types in C can be classified as follows:
 ## References
 
 * Online Converters
-    * [IEEE754 float](https://www.binaryconvert.com/convert_float.html)
     * [Integers](https://www.rapidtables.com/convert/number/decimal-to-binary.html)
+    * [IEEE754 float](https://www.binaryconvert.com/convert_float.html)
+    * [Unicode, UTF-8](https://onlinedevtools.in/unicode-converter)
 
 * [C Data Types (Programiz)](https://www.programiz.com/c-programming/c-data-types)
 
