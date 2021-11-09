@@ -103,7 +103,9 @@ printf("i is %d\n", i);     // prints "i is 2"
 **i++ means: use the old value of i for now, but increment i later**
 
 ## References
-K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
- * Chapter 4: Expressions
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+  * Chapter 4: Expressions
+
+* [YouTube: CS50 - Operators](https://youtu.be/f1xZf4iJDWE)  
  
 *Egon Teiniker, 2020-2021, GPL v3.0* 
