@@ -30,6 +30,5 @@ int main(void)
         printf("a is less or equal to b!\n");
     }
     
-
 	return 0;
 }
