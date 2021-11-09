@@ -1,0 +1,25 @@
+Exercise: Constraint
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das für die Integer-Variable "value" einen 
+Wertebereich definiert: 
+
+    int min = 0;
+    int max = 100;
+
+Wenn der Wert von "value" den Wertebereich über- bzw. unterschreitet
+soll der Wert auf den minimalen oder maximalen Wert des Wertebereiches geändert
+werden. 
+
+Beispiele:
+
+value = 50;
+0 <= 50 <= 100
+
+value = -50
+0 <= 0 <= 100
+
+value = 150
+0 <= 100 <= 100
+
+Tipp: Verwenden sie ein if Statement um den Wertebereich zu überprüfen.

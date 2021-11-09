@@ -1,0 +1,12 @@
+Exercise: Pythagorean Theorem
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das den Satz von Pythagoras berechnen kann. 
+
+Beispiel:
+a=7.000000, b=13.000000, c=14.764823
+
+Tipp: Verwenden sie die folgenden Funktionen aus math.h:
+
+double pow(double base, double power);
+double sqrt(double arg);
