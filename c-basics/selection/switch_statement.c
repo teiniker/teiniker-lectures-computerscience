@@ -32,7 +32,8 @@ int main(void)
         printf("Invalid grade!\n");
     }
 
-
+    // Alternative Implementation 
+    
     switch(grade)
     {
         case 1:
