@@ -22,8 +22,10 @@ The following topics will be covered:
    * [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
    * [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/testing)
 
-* **Datastructures & Algorithms**
+* **Data Structures & Algorithms**
    * [Datastructures](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures)
          
+Also, check out the [Arduino repository](https://github.com/teiniker/teiniker-lectures-arduino) which contains examples
+of C/C++ code for the Arduino platform.
 
 *Egon Teiniker, 2020-2021, GPL v3.0*         
