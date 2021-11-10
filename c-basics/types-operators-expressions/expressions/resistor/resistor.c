@@ -7,6 +7,9 @@ int main(void)
     int r2 = 220;
     int r3 = 220;
 
+
+    // Blah
+
     int r_ges = r1 + r2*r3/(r2+r3);
     assert(r_ges == 210);
     
