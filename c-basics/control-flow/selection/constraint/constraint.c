@@ -17,6 +17,10 @@ int main(void)
     {
         value = max;
     }
+    else
+    {
+        // value in range
+    }
 
     printf("%d <= %d <= %d\n", min, value, max);
 
