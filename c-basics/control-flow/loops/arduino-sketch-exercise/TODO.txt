@@ -11,4 +11,6 @@ Sketch zu finden ist:
 Tipp: Verwenden Sie die gegebenen Implementierungen für setup() und loop() um
       einen einfachen Counter zu implementieren.
 
-Siehe:: https://www.arduino.cc/en/Tutorial/Sketch
+References:
+> https://www.arduino.cc/en/Tutorial/Sketch
+> https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp
