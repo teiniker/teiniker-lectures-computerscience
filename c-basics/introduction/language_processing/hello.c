@@ -5,5 +5,5 @@ int main(void)
     char *name = "Eggenberg";
     printf("Hello %s!\n", name);
     
-	return 0;
+    return 0;
 }
