@@ -1,12 +1,4 @@
-# Expressions
-
-The simplest expressions are variables and constants.
-A **variable** represents a value to be computed as the program runs. 
-A **constant** represents a value that doesn't change.
-More complicated expressions apply operators to operands (which are themselves expressions).
-Operators are the basic tool for building expressions, and C has a rich collection of them.
-
-## Arithmetic Operators 
+# Arithmetic Operators 
 
 The arithmetic operators perform addition, subtraction, multiplication, and division.
 
