@@ -117,7 +117,9 @@ If the **second expression is missing**, it **defaults to a true**, so the for s
 doesn't terminate.
 
 ## References
-K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
- * Chapter 6: Loops
+* [YouTube: CS50 - Loops](https://youtu.be/WgX8e_O7eG8)
+
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+    * Chapter 6: Loops
  
 *Egon Teiniker, 2020, GPL v3.0* 
