@@ -132,24 +132,6 @@ The difference between return and `exit()` is that `exit()` causes program termi
 calls it. The `return` statement causes program termination only when it appears in the `main()` function.
 
 
-## Recursion
-
-**A function is recursive if it calls itself**.
-
-_Example_: calculate the formula n! = n*(n-1)!
-```C
-int fact(int n)
-{
-    if(n <= 1)
-        return 1:
-    else
-        return n * fact(n-1); 
-}
-``` 
-
-Note that all recursive functions need some kind of **termination condition** in order to prevent infinite recursion.
-
-
 ## References
 K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
  * Chapter 9: Functions
