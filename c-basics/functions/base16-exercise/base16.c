@@ -2,15 +2,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-void print_binary(uint16_t number)
-{
-    for(int i=sizeof(number)*8-1; i>= 0; i--)
-    {
-        putchar((number & 1UL << i) ? '1' : '0');
-    }    
-    putchar('\n');
-}
-
+void print_binary(uint16_t number); // Helper function
 
 char bits_to_char(uint8_t bits)
 {
@@ -33,4 +25,13 @@ int main(void)
 
     printf("\nvalue = 0x%c%c\n", bits_to_char(high_bits), bits_to_char(low_bits));
     return 0;
+}
+
+void print_binary(uint16_t number)
+{
+    for(int i=sizeof(number)*8-1; i>= 0; i--)
+    {
+        putchar((number & 1UL << i) ? '1' : '0');
+    }    
+    putchar('\n');
 }
