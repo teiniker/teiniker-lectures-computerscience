@@ -53,6 +53,10 @@
     * Demo: [functions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions)
     * Exercise: [function-resistors](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors))
+    * Exercise: [base16](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/base16-exercise)
+        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/base16))    
+    * Exercise: [bin-utils](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/bit-utils-exercise)
+        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/bit-utils))  
       
 * **Arrays**
     * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/arrays/README.md)
