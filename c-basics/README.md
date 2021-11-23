@@ -31,9 +31,11 @@
     * [**UML Activity Diagram**](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
     * **Selection Statements (if, switch)**
         * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection)
+        * Exercise: [constraint](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/constraint-exercise)
+         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/constraint))
         * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year-exercise)
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year))
-         * Demo: [enum_days](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/enumerations)
+         * [Enumerations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/enumerations)
 
     * **Loops (while, do-while, for)**   
         * Demo: [while_loop, for_loop, do_while_loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops)
