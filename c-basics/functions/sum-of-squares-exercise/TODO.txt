@@ -1,0 +1,13 @@
+Exercise: Sum of Squares
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das für die ganzen Zahlen 1 bis n die Summe ihrer 
+Quadrate berechnet: 1^2 + 2^2 + 3^2 + ... + N^2
+
+Implementieren Sie die Lösung mit Hilfe einer Schleife innerhalb der Funktion 
+"sum_of_squares()".
+
+Überprüfen Sie Ihr Ergebnis mit dem der Summenformel (assert Statement). 
+
+
+
