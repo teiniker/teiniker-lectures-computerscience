@@ -116,10 +116,51 @@ C allows us to omit any or all of the expressions.
 If the **second expression is missing**, it **defaults to a true**, so the for statement 
 doesn't terminate.
 
+
+## The continue Statement
+We can use the `continue` statement inside a loop to jump to the end of the loop body, skipping the execution of the remaining statements inside the loop body for the current iteration.
+
+The `continue` statement is frequently used in conjunction with a conditional statement so that processing may continue with a subsequent loop iteration.
+
+_Example_: Skipping even numbers
+```C
+    while(i++ < 10)     
+    {
+        if(i%2 == 0)
+            continue;   
+
+        printf("\t  i =%2d\n", i);    
+    }
+```
+For every even number `i < 10`, the `printf()` statement will be skipped.
+
+
+## The break Statement 
+Within a loop, a `break` statement causes the loop to terminate and the program execution to resume at the statement following the loop.
+
+We typically use `break` statements to discontinue the execution of the loop when the work it was performing has been completed.
+
+_Example_: Stop the loop execution after 5 iterations
+```C
+    while(i < 10)  
+    {
+        if(i == 5)
+            break;    
+
+        printf("\t  i =%2d\n", i); 
+        i++;   
+    }
+```
+As soon as `i == 5` the while loop terminates and the execution continues after the loop body.
+
 ## References
 * [YouTube: CS50 - Loops](https://youtu.be/WgX8e_O7eG8)
 
-* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+* K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
     * Chapter 6: Loops
  
-*Egon Teiniker, 2020, GPL v3.0* 
+* Robert C. Seacord. **Effective C**. No Starch Press, 2020
+    * Chapter 5: Control Flow
+
+
+*Egon Teiniker, 2020-2021, GPL v3.0* 
