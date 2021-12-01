@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int sum_of_squares(int n);
+int sum_of_squares(int n);  // Function declaration
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
     return 0;
 }
 
-int sum_of_squares(int n)
+int sum_of_squares(int n)   // Function impementation
 {
     int sum = 0;
     for(int k=1; k<=n; k++)
