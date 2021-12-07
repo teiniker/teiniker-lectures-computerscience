@@ -1,0 +1,24 @@
+Exercise: Vector Operations (Products) 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein Programm, das unterschiedliche Vektor-Operationen umsetzt.
+
+A) Implementieren Sie eine Funktion "vector_scalar_product()", die das 
+   Skalraprodukt zweier Vektorn ermittelt. [5 Punkt]
+   
+   Beispiel: [-7 12 3 ] * [6 23 7 ] = 255   
+   
+   Tipp: U * V = u1*v1 + ... + un * vn 
+
+
+B) Implementieren Sie eine Funktion "vector_cross_product()" die für den N=3 das 
+   Kreuzprodukt zweier Vektoren berechnet. [5 Punkte]
+   
+   Beispiel: [-7 12 3 ] x [6 23 7 ] = [15 67 -233 ]
+   
+   Tipp: [u1 u2 u3] x [v1 v2 v3] = [ u2*v3 - u3*v2
+                                     u3*v1 - u1*v3
+                                     u1*v2 - u2*v1]
+   
+   Tipp: Sie können die Formal direkt umsetzen (ohne for Schleife)                                  
+

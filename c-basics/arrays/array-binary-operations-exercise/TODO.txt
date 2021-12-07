@@ -1,0 +1,30 @@
+Exercise: Array Binary Operations 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein Programm, das unterschiedliche binäre Operatoren auf die 
+Elemente von Arrays anwendet.
+Die Auswahl der Operatoren erfolgt über ein Enum.
+
+A) Definieren Sie ein Enum mit dem Namen "binary_op" das die folgenden Einträge
+   besitzt: AND OR EXOR [1 Punkt]
+
+B) Implementieren Sie eine Funktion mit dem Namen "array_print()" welche die 
+   Elemente der Reihe nach in binärer Form ausgibt. [3 Punkte]
+   Beispiel:
+      int a[N] = {0xffffffff, 0xcccccccc, 0x03030303};
+      a = [11111111111111111111111111111111 11001100110011001100110011001100 00000011000000110000001100000011 ]
+
+B) Implementieren Sie die Funktion "array_operation()" welche die drei 
+   binären Operationen (AND, OR, EXOR) ausführen kann. 
+   Die Art der Operation wird als Enum Parameter beim Funktionsaufruf übergeben. 
+   [6 Punkte]
+   Beispiele:
+      a = [11111111111111111111111111111111 11001100110011001100110011001100 00000011000000110000001100000011 ]
+      b = [11001100110011001100110011001100 00000011000000110000001100000011 11111111111111111111111111111111 ]
+
+      a AND b = [11001100110011001100110011001100 00000000000000000000000000000000 00000011000000110000001100000011 ]
+      a OR b  = [11111111111111111111111111111111 11001111110011111100111111001111 11111111111111111111111111111111 ]
+      a EXOR b= [00110011001100110011001100110011 11001111110011111100111111001111 11111100111111001111110011111100 ]
+
+Tipp: Testen Sie Ihre Implementierungen mit der gegebenen "main()" Funktion.
+
