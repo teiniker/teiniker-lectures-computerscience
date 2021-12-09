@@ -6,18 +6,17 @@ Elemente von Arrays anwendet.
 Die Auswahl der Operatoren erfolgt über ein Enum.
 
 A) Definieren Sie ein Enum mit dem Namen "binary_op" das die folgenden Einträge
-   besitzt: AND OR EXOR [1 Punkt]
+   besitzt: AND OR EXOR 
 
 B) Implementieren Sie eine Funktion mit dem Namen "array_print()" welche die 
-   Elemente der Reihe nach in binärer Form ausgibt. [3 Punkte]
-   Beispiel:
-      int a[N] = {0xffffffff, 0xcccccccc, 0x03030303};
+   Elemente der Reihe nach in binärer Form ausgibt. 
+   Beispiel: für int a[N] = {0xffffffff, 0xcccccccc, 0x03030303};
       a = [11111111111111111111111111111111 11001100110011001100110011001100 00000011000000110000001100000011 ]
 
 B) Implementieren Sie die Funktion "array_operation()" welche die drei 
    binären Operationen (AND, OR, EXOR) ausführen kann. 
    Die Art der Operation wird als Enum Parameter beim Funktionsaufruf übergeben. 
-   [6 Punkte]
+   
    Beispiele:
       a = [11111111111111111111111111111111 11001100110011001100110011001100 00000011000000110000001100000011 ]
       b = [11001100110011001100110011001100 00000011000000110000001100000011 11111111111111111111111111111111 ]
