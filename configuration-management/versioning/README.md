@@ -8,5 +8,8 @@ The following scenarios show the use of a source code repository using specific 
 * [Tagging Commits in a Local Repository](https://github.com/teiniker/teiniker-lectures-embeddedcomputing/blob/master/configuration-management/versioning/doc/TaggingLocalRepository.md)
 * [Branching and Merging in a Local Repository](https://github.com/teiniker/teiniker-lectures-embeddedcomputing/blob/master/configuration-management/versioning/doc/BranchingLocalRepository.md)
 
+## References:
+* [Pro Git Book](https://git-scm.com/book/en/v2)
+* [YouTube: Git Tutorial for Beginners: Command-Line Fundamentals](https://youtu.be/HVsySz-h9r4)
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
