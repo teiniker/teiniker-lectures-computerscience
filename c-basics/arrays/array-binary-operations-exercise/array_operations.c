@@ -6,7 +6,7 @@
 // TODO 
 
 void array_print(int n, int v[]);
-void array_operation(enum binary_op, int n, uint32_t a[], uint32_t b[], uint32_t c[]);
+void array_binary_operation(enum binary_op op, int n, uint32_t a[], uint32_t b[], uint32_t c[]);
 
 
 int main(void)
@@ -29,7 +29,7 @@ int main(void)
     array_print(N, c);
 
     array_binary_operation(EXOR, N, a, b, c);
-    printf("a EXOR b= ");
+    printf("a XOR b = ");
     array_print(N, c);
     return 0;
 }

@@ -6,7 +6,7 @@ Elemente von Arrays anwendet.
 Die Auswahl der Operatoren erfolgt über ein Enum.
 
 A) Definieren Sie ein Enum mit dem Namen "binary_op" das die folgenden Einträge
-   besitzt: AND OR EXOR 
+   besitzt: AND OR XOR 
 
 B) Implementieren Sie eine Funktion mit dem Namen "array_print()" welche die 
    Elemente der Reihe nach in binärer Form ausgibt. 
@@ -14,7 +14,7 @@ B) Implementieren Sie eine Funktion mit dem Namen "array_print()" welche die
       a = [11111111111111111111111111111111 11001100110011001100110011001100 00000011000000110000001100000011 ]
 
 B) Implementieren Sie die Funktion "array_operation()" welche die drei 
-   binären Operationen (AND, OR, EXOR) ausführen kann. 
+   binären Operationen (AND, OR, XOR) ausführen kann. 
    Die Art der Operation wird als Enum Parameter beim Funktionsaufruf übergeben. 
    
    Beispiele:
@@ -23,7 +23,7 @@ B) Implementieren Sie die Funktion "array_operation()" welche die drei
 
       a AND b = [11001100110011001100110011001100 00000000000000000000000000000000 00000011000000110000001100000011 ]
       a OR b  = [11111111111111111111111111111111 11001111110011111100111111001111 11111111111111111111111111111111 ]
-      a EXOR b= [00110011001100110011001100110011 11001111110011111100111111001111 11111100111111001111110011111100 ]
+      a XOR b = [00110011001100110011001100110011 11001111110011111100111111001111 11111100111111001111110011111100 ]
 
 Tipp: Testen Sie Ihre Implementierungen mit der gegebenen "main()" Funktion.
 
