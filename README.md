@@ -5,6 +5,10 @@ This project collects examples, exercises and model solutions needed to understa
 
 The following topics will be covered:
 
+* [Setup: MinGw, VS Code](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/setup)\
+      As a development environment, you can also use a pre-configured Linux VM image (Debian 10) called 
+         [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).
+         
 * **C Programming Language**
     * [C Basics](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics)
     * [C Advanced Topics](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-advanced/README.md)
@@ -16,9 +20,7 @@ The following topics will be covered:
     * [string.h](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-std-lib/string)
 
 * [**Configuration Management**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management)
-   * [Setup: MinGw, VS Code](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/setup)\
-      As a development environment, you can also use a pre-configured Linux VM image (Debian 10) called 
-         [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).
+   * [Source Code Versioning](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning)
    * [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
    * [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/testing)
 
