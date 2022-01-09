@@ -12,18 +12,16 @@ We start by modifying a file from the versioned project.
 ```
 $ mkdir sandbox
 $ cd sandbox
-$ git clone https://github.com/teiniker/teiniker-lectures-embeddedcomputing
+$ git clone https://github.com/teiniker/teiniker-lectures-computerscience
 
 $ tree teiniker-lectures-embeddedcomputing/
-teiniker-lectures-embeddedcomputing/
+teiniker-lectures-computerscience/
 ├── configuration-management
 │   ├── building
 │   ├── documentation
 │   ├── testing
 │   └── versioning
-├── embedded
-├── LICENSE
-└── oo-design
+└── LICENSE
 ```
 
 Please note that every change in the repository can be transferred to 
