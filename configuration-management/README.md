@@ -4,7 +4,7 @@ Configuration management refers to the process by which all artifacts relevant t
 
 We select the following topics from a wide range of configuration management techniques:
 
-* [Source Code Versioning](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/configuration-management/versioning) 
+* [Source Code Versioning](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning) 
 
 * [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
 
