@@ -77,7 +77,7 @@ void sm_light_bulb(enum events event)
 A **switch/case statement** is used to **determine the current state** of the SM. 
 Depending on the actual state, a suitable handler function is called.
 
-Each **handler function** must define what to do for each event:
+Each **handler function** must define what to do for each event (in a particular state):
 ```C
 // Handle Events in State: OFF
 void sm_light_bulb_off(enum events event)
@@ -100,8 +100,7 @@ void sm_light_bulb_off(enum events event)
 Activities are mostly encapsulated in their own functions (e.g. `current_on()`) 
 which then access the hardware.
 
-With this implementation pattern, SMs can always be converted into C code using the 
-same scheme.
+Using this pattern, SMs can always be converted into C code using the same implementation scheme.
 
 ## References
 * Martin Fowler. **UML Distilled.** Addison-Wesley. 3rd Edition, 2004
@@ -109,4 +108,4 @@ same scheme.
 * [State machines in C](https://yakking.branchable.com/posts/state-machines-in-c/)
 * [UML Tool: Modelio](https://www.modelio.org/) 
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
