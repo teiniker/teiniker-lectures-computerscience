@@ -33,7 +33,7 @@ trigger-signature [guard]/activity
 
 All three parts to a transition are optional:
 * A **missing activity** indicates that the you don’t do anything during the transition.
-* A **missing guard** indicat****es that you always take the transition if the event occurs.
+* A **missing guard** indicates that the transition is always taken if the event occurs.
 * A **missing trigger-signature** is rare, but does occur. It indicates that you take the transition immediately.
  
 When an event occurs in a state, we can take **only one transition** out of it. 
