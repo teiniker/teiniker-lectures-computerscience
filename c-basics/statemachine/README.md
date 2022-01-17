@@ -103,10 +103,24 @@ which then access the hardware.
 With this implementation pattern, SMs can always be converted into C code using the 
 same scheme.
 
+
+## Types of State Machine
+
+**UML state machines have the characteristics of both Mealy machines and Moore machines**. 
+They support actions that depend on both the state of the system and the triggering event, 
+as in Mealy machines, as well as entry and exit actions, which are associated with states 
+rather than transitions, as in Moore machines.
+
+* A [**Mealy machine**](https://en.wikipedia.org/wiki/Mealy_machine)
+	is a finite-state machine whose **output values are determined both by its current state and the current inputs**. 
+
+* A [**Moore machine**](https://en.wikipedia.org/wiki/Moore_machine)
+	is a finite-state machine whose **output values are determined only by its current state**. 
+
 ## References
 * Martin Fowler. **UML Distilled.** Addison-Wesley. 3rd Edition, 2004
 * Michael Sipser. **Introduction of the Theory of Computation.** PWS Publishing, 1997
 * [State machines in C](https://yakking.branchable.com/posts/state-machines-in-c/)
 * [UML Tool: Modelio](https://www.modelio.org/) 
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
