@@ -33,7 +33,7 @@ trigger-signature [guard]/activity
 
 All three parts to a transition are optional:
 * A **missing activity** indicates that the you don’t do anything during the transition.
-* A **missing guard** indicat****es that you always take the transition if the event occurs.
+* A **missing guard** indicates that the transition is always taken if the event occurs.
 * A **missing trigger-signature** is rare, but does occur. It indicates that you take the transition immediately.
  
 When an event occurs in a state, we can take **only one transition** out of it. 
@@ -77,7 +77,7 @@ void sm_light_bulb(enum events event)
 A **switch/case statement** is used to **determine the current state** of the SM. 
 Depending on the actual state, a suitable handler function is called.
 
-Each **handler function** must define what to do for each event:
+Each **handler function** must define what to do for each event (in a particular state):
 ```C
 // Handle Events in State: OFF
 void sm_light_bulb_off(enum events event)
@@ -100,8 +100,7 @@ void sm_light_bulb_off(enum events event)
 Activities are mostly encapsulated in their own functions (e.g. `current_on()`) 
 which then access the hardware.
 
-With this implementation pattern, SMs can always be converted into C code using the 
-same scheme.
+Using this pattern, SMs can always be converted into C code using the same implementation scheme.
 
 
 ## Types of State Machine
