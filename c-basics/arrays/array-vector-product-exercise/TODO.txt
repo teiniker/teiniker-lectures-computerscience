@@ -1,10 +1,10 @@
 Exercise: Vector Operations (Products) 
 -------------------------------------------------------------------------------
 
-Schreiben Sie ein Programm, das unterschiedliche Vektor-Operationen umsetzt.
+Schreiben Sie ein Programm, das die folgenden Vektor-Operationen implementiert:
 
 A) Implementieren Sie eine Funktion "vector_scalar_product()", die das 
-   Skalraprodukt zweier Vektorn ermittelt. [5 Punkt]
+   Skalraprodukt zweier Vektorn ermittelt. 
    
    Beispiel: [-7 12 3 ] * [6 23 7 ] = 255   
    
@@ -12,7 +12,7 @@ A) Implementieren Sie eine Funktion "vector_scalar_product()", die das
 
 
 B) Implementieren Sie eine Funktion "vector_cross_product()" die für den N=3 das 
-   Kreuzprodukt zweier Vektoren berechnet. [5 Punkte]
+   Kreuzprodukt zweier Vektoren berechnet. 
    
    Beispiel: [-7 12 3 ] x [6 23 7 ] = [15 67 -233 ]
    
