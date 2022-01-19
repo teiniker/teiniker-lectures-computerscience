@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 // State Machine Events (Triggres)
 enum events
@@ -35,18 +36,21 @@ int main(void)
     state = OFF; // initial state
     sm_light_bulb(TURN_ON);
     sm_light_bulb(TURN_OFF);
+    assert(state == OFF);
     printf("\n");
 
     // TURN_ON -> BURN_OUT
     state = OFF;
     sm_light_bulb(TURN_ON);
     sm_light_bulb(BURN_OUT);
+    assert(state == FINAL);
     printf("\n");
 
     // TURN_OFF, BURN_OUT
     state = OFF;
     sm_light_bulb(TURN_OFF);
     sm_light_bulb(BURN_OUT);
+    assert(state == OFF);
     printf("\n");
 
     return 0;
