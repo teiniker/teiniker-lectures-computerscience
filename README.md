@@ -13,17 +13,17 @@ The following topics will be covered:
     * [C Basics](programming-c/c-basics)
     * [C Advanced Topics](programming-c/c-advanced/README.md)
      
-    * **C Standard Library**
+    * C Standard Library
       * [assert.h](programming-c/c-std-lib/assert)
       * [stdint.h](programming-c/c-std-lib/stdint)      
       * [stdio.h](programming-c/c-std-lib/stdio)
       * [string.h](programming-c/c-std-lib/string)
 
 * **Programming in C++**
-   * [C++ Basics](programming-c++/c++basics)
+   * [C++ Basics](programming-c++/c++basics/classes)
 
 * **Configuration Management**
-   * [**Introduction**](configuration-management)
+   * [Introduction](configuration-management)
    * [Source Code Versioning](configuration-management/versioning)
    * [Build Automation](configuration-management/building)
    * [Test Automation](configuration-management/testing)
