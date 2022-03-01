@@ -5,9 +5,9 @@ This project collects examples, exercises and model solutions needed to understa
 
 The following topics will be covered:
 
-* [**Setup: MinGw, VS Code**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/setup)\
-      As a development environment, you can also use a pre-configured Linux VM image (Debian 11) called 
-         [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).
+* **Development Environments**
+      * [**Windows: MinGw, VS Code**](setup)
+      * [**Linux VM (Debian 11)**](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l).
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)
