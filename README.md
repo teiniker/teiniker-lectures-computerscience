@@ -20,7 +20,7 @@ The following topics will be covered:
       * [string.h](programming-c/c-std-lib/string)
 
 * **Programming Arduino**
-   * [**Arduino Repository**](https://github.com/teiniker/teiniker-lectures-arduino))
+   * [**Arduino Repository**](https://github.com/teiniker/teiniker-lectures-arduino)
 
 * **Configuration Management**
    * [Introduction](configuration-management)
