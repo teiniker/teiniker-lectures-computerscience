@@ -7,7 +7,7 @@ The following topics will be covered:
 
 * **Development Environments**
     * [**Windows: MinGw, VS Code**](setup)
-    * [**Linux VM (Debian 11)**](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
+    * [**Virtual Lab: Linux VM (Debian 11)**](operating-systems/setup)
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)
