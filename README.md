@@ -1,4 +1,4 @@
-# Computer Science and Programming in C
+# Computer Science and Programming in C/C++
 
 This project collects examples, exercises and model solutions needed to understand 
 **computer science** and **programming in C**.
