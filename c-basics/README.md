@@ -84,4 +84,4 @@
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
 * Brian W. Kernighan, Denis M. Ritchie. **The C programming Language**. Prentice Hall, 2nd Edition 2010
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 

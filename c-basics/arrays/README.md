@@ -116,7 +116,8 @@ If an initializer isn't large enough to fill a multidimensional array, the remai
 given the value 0.
 
 ## References
-K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
- * Chapter 8: Arrays
+* [YouTube: CS50 - Arrays](https://youtu.be/YdSycMcxvY0)
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+  * Chapter 8: Arrays
  
 *Egon Teiniker, 2020, GPL v3.0* 

@@ -133,7 +133,8 @@ calls it. The `return` statement causes program termination only when it appears
 
 
 ## References
-K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
- * Chapter 9: Functions
+* [YouTube: CS50 - Functions ](https://youtu.be/n1glFqt3g38)
+* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
+  * Chapter 9: Functions
  
 *Egon Teiniker, 2020, GPL v3.0* 
