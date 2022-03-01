@@ -19,8 +19,8 @@ The following topics will be covered:
       * [stdio.h](programming-c/c-std-lib/stdio)
       * [string.h](programming-c/c-std-lib/string)
 
-* **Programming in C++**
-   * [C++ Basics](programming-c++/c++basics/classes)
+* **Programming Arduino**
+   * * [**Arduino Repository**](https://github.com/teiniker/teiniker-lectures-arduino))
 
 * **Configuration Management**
    * [Introduction](configuration-management)
@@ -31,7 +31,8 @@ The following topics will be covered:
 * **Data Structures & Algorithms**
    * [Datastructures](data-structures)
          
-Also, check out the [Arduino repository](https://github.com/teiniker/teiniker-lectures-arduino) which contains examples
-of C/C++ code for the Arduino platform.
+* **Programming in C++**
+   * [C++ Basics](programming-c++/c++basics/classes)
+
 
 *Egon Teiniker, 2020-2022, GPL v3.0*         
