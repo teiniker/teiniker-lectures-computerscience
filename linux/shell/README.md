@@ -1,69 +1,57 @@
-# Linux Shell: Bash
+# Linux Command Line
 
-Before we can start with our examples, make sure that you have opened a **Terminal Window** on 
-your Linux machine.
-![Terminal Window](figures/Terminal.png)
- 
-## Help Yourself
+## The Bourne Shell
 
-* **man** An interface to the on-line reference manuals.
-* **whatis** Display one-line manual page descriptions.
-* **which** Locate a command.
-* **history** GNU History Library.
-* **apropos** Search the manual page names and descriptions.
+A **shell** is a program that runs commands which the user enter.
 
+The shell also serves as a small **programming environment**.
+Many important parts of the system are **shell scripts** - text files that contain a sequence of shell commands.
 
-## Working with the File System: Files, Directories, and Navigation
-
-* **ls** List directory contents.
-* **pwd** Print name of current/working directory.
-* **cd** Change the current working directory.
-* **pushd**, **popd**  Used to "bookmark" directories for quick navigation between locations in the file system. 
- 
-* **file** Determine file type.
-* **locate** Find files by name. It reads one or more databases created by updatedb.
-
-* **touch** Change file timestamps.
-* **cp** Copy files and directories.
-* **mv** Move (rename) files.
-* **rm** Remove files or directories.
-* **mkdir** Create the directory(ies), if they do not already exist.
-* **rmdir** Remove the directory(ies), if they are empty.
-
-## Working with Text Files
-* **cat** Concatenate files and print on the standard output.
-* **less**  A filter for scrolling through text and search for patterns (replacement for more).
-* **nano** Nano's ANOther editor, a free text editor.
+There are many different Unix shells, but all derive several of their fetures from the **Bourne shell** 
+in order to function correctly.
+Linux uses an enhanced version of the Bourne shell called **bash** or the **Bourne-again shell**.
+The bash shell is the default shell on most Linux distributions. 
 
 
-## Working with Users
-* **id** Print real and effective user and group IDs.
-* **users** Print the user names of users currently logged in to the current host.
+## Standard Input and Standard Output 
+Unix processes use **I/O files** to read and write data.
 
-* **sudo** Execute a command as another user.
-* **su** Run a command with substitute user and group ID.
-* **chmod** Change file mode bits.
+Programs such as `ls` actually send their results to a special file called **standard output** (`stdout`)
+and their status messages to another file called **standard error** (`stderr`).
+By default, both stdout and stderr are linked to the screen and not saved into a disk file.
 
-## Working with Processes
-* **watch** Execute a program periodically, showing output fullscreen.
-* **kill** Send a signal to a process.
-* **killall** Kill processes by name.
-* **exit** Cause normal process termination.
-
-## Terminal Shortcuts
-* `[ctrl] + [c]` Exit running process.
-* `[ctrl] + [+]` Terminal font size +
-* `[ctrl] + [-]` Terminal font size -
-* `[ctrl] + [shift] + [c]` Copy marked text 
-* `[ctrl] + [shift] + [v]` Paste text
+In addition, many programs take input from a file called **standard input** (`stdin`), which is, by default, attached to the keyboard.
 
 
-## References 
-*  [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
-    * `0:00:00` Working with the File System: Files, Directories, and Navigation
-    * `0:35:45` Working with Text Files 
-    * `0:46:45` Working with Users 
-    * `1:06:30` Working with Processes
-    * `1:11:15` Terminal Shortcuts
+## Basic Commands
+
+
+## Navigating Directories
+
+
+## Intermediate Commands
+
+
+## Hidden Files
+
+
+## Environment Variables 
+
+
+## Listing and Manipulating Processes 
+
+## File Modes and Permissions
+
+## Archiving and Compressing Files
+
+## Running Commands as the Superuser
+
+
+
+## References
+
+* Brian Ward. **How Linux Works**. No Starch Press, 2015
+    * Chapter 2: Basic Commands and Directory Hierarchy
+    
 
 *Egon Teiniker, 2020-2022, GPL v3.0*    
