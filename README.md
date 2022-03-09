@@ -19,8 +19,7 @@ The following topics will be covered:
       * [stdio.h](programming-c/c-std-lib/stdio)
       * [string.h](programming-c/c-std-lib/string)
 
-* **Arduino Platform**
-   * [**Arduino Repository**](https://github.com/teiniker/teiniker-lectures-arduino)
+* [**Arduino Platform**](https://github.com/teiniker/teiniker-lectures-arduino)
 
 * [**Linux Platform**](linux)
 
