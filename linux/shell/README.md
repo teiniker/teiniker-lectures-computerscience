@@ -245,14 +245,69 @@ program finishes executing.
 We can detach a process from the shell and put it in the background using the & operator.
 The shell should respond by printing the PID of the new background process, and the prompt 
 should return immediately so that we can continue working.
+The process will continue to run after we log out.
 
 
 ## File Modes and Permissions
 
-## Archiving and Compressing Files
+Every file has a set of permissions that terminate whether we can read, write, or run the file.
+Running `ls -l` displays the permissions.
 
-## Running Commands as the Superuser
+_Example_: File permissions
+```
+-rw-r--r-- 1 student student 1308 Mar  9 11:54 README.md
+```
 
+The file's mode `-rw-r--r--` represents the file's permissions and some extra information.
+
+The fist character of the mode is the **file type**: 
+* A `-` in this position denotes a regular file.
+* A `d` in this position indicates a directory.
+
+The rest of a file's mode contains the **permissions**, which break down into three sets: **user**, **group**, 
+**others**.
+Each permission set can contain four basic representations:
+* **r** file readable
+* **w** file is writable
+* **x** file is executable 
+* **-** nothing
+
+### Modifying Permissions
+
+To change a permission, we use the chmod command. 
+First we pick the set of permissions (`u` for user, `g` for group, `o` for others) that you want to change, and then we pick the bit to change.
+```
+$ chmod o+x file 
+```
+
+Sometimes people are changing permissions with numbers:
+`This is called an absolut change becuase it sets all permission bits at once.
+The permissions are represented in octal form: `0644 = 0b 110 100 100 = rw- r-- r--`
+
+**Directories** also have permissions.
+We can list the content of a directory if it is readable, but we can only access a file in a directory if the directory is executable.
+
+
+### Symbolic Links 
+
+A symbolic link is a file that point to another file or a directory, effectively creating an alias.
+Symbolic links offer quick access to obscure directory paths.
+
+A symbolic link has an `l` as file type.
+```
+$ ls -l /bin
+lrwxrwxrwx 1 root root 7 Sep  1  2021 /bin -> usr/bin
+```
+If we access `/bin`, the system gives us `/usr/bin` instead.
+
+To **create a symbolic link** from `linkname` to `target`, we use:
+```
+$ ln -s target linkname
+```
+The `linkname` is the nme of the symbolic link, the `target` argument is the path of the file or directory 
+that the link points to.
+The `-s` flag specifies a **symbolic link**. Without it, `ln` creates a **hard link**, giving an additional real filename 
+to a single file.
 
 
 ## References
