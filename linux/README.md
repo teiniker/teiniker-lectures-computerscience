@@ -3,7 +3,7 @@
 This section provides an overview of using the **Linux platform for software development**.
 
 * [**Linux VM Setup**](setup)
-* [**Linux File System**](filesystem)
+* [**Linux Directory Hierarchy**](filesystem)
 * [**Shell Commands**](shell)
 
 * [**System Calls**](system-calls)
