@@ -140,7 +140,7 @@ When we refer to a file or directory, we specify a **path** or pathname:
     We can even search for text inside less. To search forward for a word type `/word`, and to search backward, 
     we use `?word`. When we find a match, we press `n` to continue searching.
 
-* **diff** To see the differences between two test files: `diff file1 file2`.
+* **diff** To see the differences between two text files: `diff file1 file2`.
 
 * **find** Search for files in a directory hierarchy: `find dir -name file`.
     The `find` command accepts special pattern-matching characters such as `*`, but we must enclose them in single quotes.
