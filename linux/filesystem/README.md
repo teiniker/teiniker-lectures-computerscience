@@ -1,5 +1,7 @@
 # Linux Directory Hierarchy 
 
+![Linux Filesystem](figures/directory-tree.png)
+
 ## The / Directory
 The most important **subdirectories in root** are:
 

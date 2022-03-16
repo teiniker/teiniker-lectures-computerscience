@@ -17,7 +17,7 @@ int sum_of_integers(int n)
 Local variables have the following properties:
 * **Automatic storage duration**. 
     Storage for a local variable is automatically allocated when the enclosing function is called an 
-    deallocated when the function returns - **automatic storage duration**.
+    deallocated when the function returns.
     A local variable doesn't retain its value when its enclosing function returns.
     When the function is called again, there is no guarantee that the variable will still have its 
     old value.

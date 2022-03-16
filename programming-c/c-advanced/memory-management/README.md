@@ -1,26 +1,26 @@
 # Memory Management
 
-* [**Memory Segments**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/memory-segments/README.md)
-    * Demo: [memory-segments](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/memory-segments)
+* [**Memory Segments**](memory-segments/README.md)
+    * Demo: [memory-segments](memory-segments)
 
-* [**Pointers**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/pointers/README.md)
-    * Demo: [pointers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/pointers)
-    * Exercise: [swap](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/swap-exercise) 
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/swap))
-    * Exercise: [calculator](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/calculator))
+* [**Pointers**](pointers/README.md)
+    * Demo: [pointers](pointers)
+    * Exercise: [swap](swap-exercise) 
+        ([model solution](swap))
+    * Exercise: [calculator](calculator-exercise)
+        ([model solution](calculator))
 
-* [**Pointers and Arrays**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays/README.md)
-   * Demo: [pointers_and_arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/arrays)
+* [**Pointers and Arrays**](arrays/README.md)
+   * Demo: [pointers_and_arrays](arrays)
 
-* [**Dynamic Memory Allocation**](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation/README.md)
-   * Demo: [dynamic-allocation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-memory-allocation) 
-   * Exercise: [dynamic-arrays](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays))
-   * Exercise: [dynamic-arrays-fibonacci](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-fibonacci-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-fibonacci))
-   * Exercise: [dynamic-arrays-cmd](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-cmd-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/memory-management/dynamic-arrays-cmd))
+* [**Dynamic Memory Allocation**](dynamic-memory-allocation/README.md)
+   * Demo: [dynamic-allocation](dynamic-memory-allocation) 
+   * Exercise: [dynamic-arrays](dynamic-arrays-exercise)
+         ([model solution](dynamic-arrays))
+   * Exercise: [dynamic-arrays-fibonacci](dynamic-arrays-fibonacci-exercise)
+         ([model solution](dynamic-arrays-fibonacci))
+   * Exercise: [dynamic-arrays-cmd](dynamic-arrays-cmd-exercise)
+         ([model solution](dynamic-arrays-cmd))
 
 
 ## References
@@ -30,4 +30,4 @@
     * Chapter 11: Pointers
     * Chapter 17: Advanced Uses of Pointers.
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
