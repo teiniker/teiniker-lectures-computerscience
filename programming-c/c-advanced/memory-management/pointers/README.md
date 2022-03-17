@@ -115,7 +115,7 @@ Properties of void pointers:
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 11: Pointers
     
-* [Youtube: CS50 Pointers](https://youtu.be/XISnO2YhnsY)
+* [YouTube: CS50 Pointers](https://youtu.be/XISnO2YhnsY)
  
 * [void pointer in C / C++](https://www.geeksforgeeks.org/void-pointer-c-cpp/) 
  
