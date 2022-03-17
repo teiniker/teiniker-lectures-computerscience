@@ -97,7 +97,7 @@ A `void *` value is a generic pointer - essentially **just a memory address**.
 A void pointer is a pointer that has **no associated data type** with it. 
 A void pointer can hold address of any type and **can be typcasted to any type**.
 
-`Example`: `void *malloc(size_t size)`
+_Example_: `void *malloc(size_t size)`
     `malloc()` and `calloc()` return `void *` type and this allows these functions to be 
     used to allocate memory of any data type (just because of `void *`).
 
