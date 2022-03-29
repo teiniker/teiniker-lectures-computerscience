@@ -1,0 +1,27 @@
+Exercise: String Messages (string.h)
+-------------------------------------------------------------------------------
+
+Sie Sollen Meßwerte in eine String Message schreiben und von einer String 
+Message lesen.
+
+Beispiel: "DHT11 1a 32.1 43.8"
+    Sensor = "DHT11"
+    id = 0x1a
+    Temparatur = 32.1 °C
+    Feuchtigkeit = 43.8 %
+
+Implementeren Sie die folgenden Funktionen:
+
+A) char *message_write(char *sensor, uint8_t id, double temperature, double humidity)
+    Die Meßwerte werden zu einer Message (String am Heap) zusammen gefügt.
+    Der Pointer der Message wird als Ergebnis zurück gegeben. 
+    Tipp: Verwenden Sie die Funktion "sprintf()".
+
+B) void message_read(const char *msg, char *sensor, uint8_t *id, double *temperature, double *humidity)
+    Eine Message wird in ihre einzelnen Datenelemente zerlegt.
+    Die Datenelemente werden "per Reference" an die Funktion übergeben.
+    Lesen sie den Namen des Sensors zuerst in ein lokales char Array und kopieren 
+    Sie nur die maximale Anzahl von Zeichen (10) in den Parameter. 
+    Tipp: Verwenden Sie die Funktion "sscanf()".
+
+Die Ergebnisse werden in der "main()" Funktion via assert Statements überprüft.
