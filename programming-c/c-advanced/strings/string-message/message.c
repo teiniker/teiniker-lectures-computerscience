@@ -14,7 +14,6 @@ int main(void)
 {
     // Write data into a message
     char *msg = message_write("DHT11", 0x1a, 32.1, 43.8);
-    printf("msg : %s\n", msg);
     assert(strcmp("DHT11 1a 32.1 43.8", msg) == 0); 
     free(msg);
 
@@ -48,5 +47,5 @@ void message_read(const char *msg, char *sensor, uint8_t *id, double *temperatur
     char s[10];
     sscanf(msg, "%s %x %lf %lf", s, id, temperature, humidity);
     strncpy(sensor, s, 10);
-    printf("'%s %x %3.1f %3.1f'\n", sensor, *id, *temperature, *humidity);
+    printf("msg: '%s %x %3.1f %3.1f'\n", sensor, *id, *temperature, *humidity);
 }
