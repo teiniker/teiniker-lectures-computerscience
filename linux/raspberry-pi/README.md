@@ -121,6 +121,7 @@ while True:
 ```
 
 ## References
+* [YouTube: How to SSH Into Raspberry Pi Without Monitor (Headless)](https://youtu.be/qQB4s3WjKCo)
 
 * [Raspberry Pi: Software Download](https://www.raspberrypi.com/software/)  
 * [Raspberry Pi: Documentation](https://www.raspberrypi.com/documentation/computers)  
