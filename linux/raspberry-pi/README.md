@@ -21,7 +21,7 @@ $ scp led.py pi@192.168.0.213:/home/pi/sandbox
 ```
 
 ## GPIO
-A powerful feature of the Raspberry Pi is the row of GPIO **General-Purpose Input/Output (GPIO)**) pins along the top edge of the board. 
+A powerful feature of the Raspberry Pi is the row of GPIO **General-Purpose Input/Output (GPIO)** pins along the top edge of the board. 
 
 ![GPIO Pinout](GPIO-Pinout-Diagram.png)
 
