@@ -1,13 +1,14 @@
 # Raspberry Pi OS
 
-Raspberry Pi OS is a free operating system based on **Debian**, optimised for the Raspberry Pi hardware, and is the recommended operating system for normal use on a Raspberry Pi.
+Raspberry Pi OS is a free operating system **based on Debian**, optimised for the Raspberry Pi hardware, 
+and is the recommended operating system for normal use on a Raspberry Pi.
 
 ## Connecting via SSH
 
 The **Secure Shell Protocol (SSH)** provides a secure encrypted connection between two 
 hosts over an insecure network. 
 
-This connection can also be used for terminal access, file transfers, and for tunneling other applications. 
+This connection can also be used for **terminal access**, **file transfers**, and for **tunneling other applications**. 
 
 _Example_: Connect to a remote Rasperry Pi 
 ```
