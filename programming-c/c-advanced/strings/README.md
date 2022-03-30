@@ -133,18 +133,20 @@ Again, don't forget to include room for the null character.
 
 ## Examples
 
-* [String Literals](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-literals)
-* [String Variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-variables)    
-* [Dynamic Allocated Strings](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-dynamic)    
+* [String Literals](string-literals)
+* [String Variables](string-variables)    
+* [Dynamic Allocated Strings](string-dynamic)    
 * **Exercises**
-    * [string-length](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length-exercise) 
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-length))
-    * [string-number-of](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of-exercise)
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-number_of))
-    * [string-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations-exercise)
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-operations))    
-    * [string-base64](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-base64-exercise)
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/strings/string-base64))
+    * [string-length](string-length-exercise) 
+        ([Model Solution](string-length))
+    * [string-number-of](string-number_of-exercise)
+        ([Model Solution](string-number_of))
+    * [string-operations](string-operations-exercise)
+        ([Model Solution](string-operations))    
+    * [string-base64](string-base64-exercise)
+        ([Model Solution](string-base64))
+    * [string-message](string-message-exercise)
+        ([Model Solution](string-message))
 
 
 ## References
