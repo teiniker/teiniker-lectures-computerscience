@@ -1,4 +1,4 @@
-# Raspberry Pi OS
+# Raspberry Pi 
 
 Raspberry Pi OS is a free operating system **based on Debian**, optimised for the Raspberry Pi hardware, 
 and is the recommended operating system for normal use on a Raspberry Pi.
