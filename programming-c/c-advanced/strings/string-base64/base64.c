@@ -26,7 +26,7 @@ char *base64(size_t size, unsigned char *bytes)
         tmp[3] = base64_code[word & 0x3f];
         tmp += 4;
     }
-    tmp[0] = '\0';
+    *tmp = '\0';
     return output;    
 }
 
