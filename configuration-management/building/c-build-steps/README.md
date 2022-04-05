@@ -33,6 +33,8 @@ $ ./hello
 
 In fact, the path from C source code to an executable includes several intermediate steps.
 
+![C Build Process](C-Build-Process.png)
+
 ### C Preprocessor
 The preprocessor modifies the source code on a text basis (`#` commands). Header files are integrated, macros are replaced, etc.
 
