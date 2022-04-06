@@ -21,7 +21,7 @@ All implementation details are stored in a corresponding **implementation file**
 Information that is shared between modules should be put in a header file.
 By convention, all header filenames end with `.h` to distinguish them from the `.c` implementation files.
 
-The header should contain all the bublic information:
+The header should contain all the public information:
 * Common constants
 * Common data structures
 * Prototypes of all public functions
