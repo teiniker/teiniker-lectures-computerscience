@@ -59,12 +59,12 @@ file.
 
 Note that every header file should implement the **include guard** idiom:
 ```C
-#ifndef MY_HEADER_FILE_H
-#define MY_HEADER_FILE_H
+#ifndef _MY_HEADER_FILE_H_
+#define _MY_HEADER_FILE_H_
 
 // Constants, prototypes...
 
-#endif /* MY_HEADER_FILE_H */
+#endif /* _MY_HEADER_FILE_H_ */
 ```
 This ensures that when a header file is included in multiple places, it will not be duplicated
 for the compiler's input.
