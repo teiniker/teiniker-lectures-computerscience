@@ -2,6 +2,8 @@
 
 The preprocessor is a piece of software that **edits C programs just prior to compilation**. This makes C and also C++ unique among major programming languages.
 
+![C Pre Processor](CPreprocessor.png)
+
 The bahavior of the preprocessor is controlled by **preprocessing directives**:
 commands that begin with a `#` character.
 
