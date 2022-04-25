@@ -4,10 +4,15 @@ Configuration management refers to the process by which all artifacts relevant t
 
 We select the following topics from a wide range of configuration management techniques:
 
-* [Source Code Versioning](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning) 
+* [Build Automation](building)
+   * [From C Source Code to an Executable](c-build-steps)
+   * [C Preprocessor](../c-advanced/preprocessor)
+   * [Modular Programming](../programming-c/c-advanced/modules)
+   * [C Libraries](building/string-operations-lib-static)
 
-* [Build Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/building)
+* [Test Automation](testing)
 
-* [Test Automation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/testing)
+* [Source Code Versioning](versioning) 
+
         
 *Egon Teiniker, 2020-2022, GPL v3.0*         
