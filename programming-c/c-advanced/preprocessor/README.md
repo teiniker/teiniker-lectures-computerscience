@@ -1,4 +1,4 @@
-# Preprocessor
+# C Preprocessor
 
 The preprocessor is a piece of software that **edits C programs just prior to compilation**. This makes C and also C++ unique among major programming languages.
 
