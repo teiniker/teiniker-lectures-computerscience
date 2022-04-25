@@ -5,8 +5,8 @@ Configuration management refers to the process by which all artifacts relevant t
 We select the following topics from a wide range of configuration management techniques:
 
 * [Build Automation](building)
-   * [From C Source Code to an Executable](c-build-steps)
-   * [C Preprocessor](../c-advanced/preprocessor)
+   * [From C Source Code to an Executable](building/c-build-steps)
+   * [C Preprocessor](../programming-c/c-advanced/preprocessor)
    * [Modular Programming](../programming-c/c-advanced/modules)
    * [C Libraries](building/string-operations-lib-static)
 
