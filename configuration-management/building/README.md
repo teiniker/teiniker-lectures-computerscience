@@ -188,10 +188,8 @@ Here the final `launch.json` file:
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
-}```
-
-
-
+}
+```
 
 ## References
 * [GNU Make](https://www.gnu.org/software/make/)
