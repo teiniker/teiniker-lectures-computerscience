@@ -159,4 +159,4 @@ rm -rf build/
 * [GNU Make](https://www.gnu.org/software/make/)    
 
  
-*Egon Teiniker, 2020, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
