@@ -292,6 +292,9 @@ Here are a few common use cases for conditional compilation:
     ```
 
 ## References
+* [YouTube (Jacob Sorber): Defining Constants. Should I use CONST or #DEFINE?](https://youtu.be/ZIhy4uy5uJM)
+* [YouTube (Jacob Sorber): How to Write Function-Like Preprocessor Macros](https://youtu.be/w3iXBUbq4NY)
+* [YouTube (Jacob Sorber): Header Issues: Guards, Name Mangling, and extern "C"](https://youtu.be/NeOTr0u7ALk)
 
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 14: The Preprocessor
