@@ -1,0 +1,39 @@
+Exercise: Build and Test Automation
+-------------------------------------------------------------------------------
+
+A) Modular Programming
+    Bauen Sie den gegebenen Source Code so um, dass die folgenden Files entstehen:
+    - main.c 
+    - usertable.h (include guards nicht vergessen)
+    - usertable.c 
+    
+B) Build Automation 
+    Erstellen Sie ein Makefile um diese Files zu einem Executable "build/main" 
+    zusammen zu bauen.
+
+    $ make main
+    mkdir -p build
+    gcc -std=c99 -g -Wall   -c main.c -o build/main.o
+    gcc -std=c99 -g -Wall   -c usertable.c -o build/usertable.o
+    gcc -std=c99 -g -Wall   build/main.o build/usertable.o -o build/main
+    build/main
+
+C) Test Automation 
+    Erstellen Sie ein File "test.c" das die Testfälle aus "main.c" mit dem Unity 
+    Framework implementiert.
+    Erweitern Sie das Makefile so, dass "build/test" gebaut und ausgeführt wird.       
+    
+    $ make
+    mkdir -p build
+    gcc -std=c99 -g -Wall   -c ../unity/unity.c -o build/unity.o
+    gcc -std=c99 -g -Wall   -c usertable.c -o build/usertable.o
+    gcc -std=c99 -g -Wall   -I ../unity -c test.c -o build/test.o
+    gcc -std=c99 -g -Wall   build/unity.o build/usertable.o build/test.o -o build/test
+    build/test
+    test.c:69:test_get_user_0:PASS
+    test.c:70:test_get_user_1:PASS
+    test.c:71:test_get_user_2:PASS
+    test.c:72:test_set_user:PASS
+    -----------------------
+    4 Tests 0 Failures 0 Ignored 
+    OK  
