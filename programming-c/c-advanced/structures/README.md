@@ -150,18 +150,6 @@ It performs indirection on `marge` to locate the structure that it points to, th
 structure. 
 
 
-## Examples
-* [struct-date](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-date)
-* [struct-user](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-user)
-* [struct-nested](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-nested)
-* **Exercises**
-    * [struct-complex](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex-exercise) 
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-complex))
-    * [struct-usertable](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable-exercise) 
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-usertable))
-    * [struct-linked-list](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-linked-list-exercise) 
-        ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-linked-list))
-
 ## References
 * [YouTube (CS50): Structures](https://youtu.be/N5pA7RvvQDg)
 
