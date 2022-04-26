@@ -163,10 +163,10 @@ structure.
         ([Model Solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-advanced/structures/struct-linked-list))
 
 ## References
+* [YouTube (CS50): Structures](https://youtu.be/N5pA7RvvQDg)
+
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
     * Chapter 16: Structures, Unions, and Enumerations
-    * Chapter 17: Advanced Uses of Pointers
-    
-* [Youtube: CS50 Structures](https://youtu.be/N5pA7RvvQDg)
+    * Chapter 17: Advanced Uses of Pointers    
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
