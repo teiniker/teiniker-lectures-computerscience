@@ -84,57 +84,6 @@ Now we can open our C file, set a **breakpoint** and run the debugger by clickin
 
 ![Debug a single file](figures/DebugSingleFile.png)
 
-To debug an executable which we have built using `make`, we have to change the `launch.json`
-file: 
-* **Remove the "preLaunchTask" element** to stop automatic compiling before the debugging:
-
-  Remove the following line:
-  ```
-    "preLaunchTask": "C/C++: gcc build active file",
-  ```  
-
-* **Change the "program" element** to point to the executable created by make within the `build` folder:
-
-  Change from:  
-  ```
-    "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-  ```  
-  to:	 
-  ```
-    "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",    
-  ```    
-
-Note that we have to open the `main.c` file before we start the debugger because the `${fileBasenameNoExtension}`
-variable contains the current opened file's basename.
-
-Here the final `launch.json` file:
-```
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc.exe - Aktive Datei erstellen und debuggen",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-        }
-    ]
-}
-```
 
 
 ## References 
