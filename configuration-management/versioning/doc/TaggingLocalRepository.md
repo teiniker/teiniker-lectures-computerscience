@@ -1,4 +1,4 @@
-# Example: Tagging Commits in a Local Repository
+# Tagging Commits in a Local Repository
 
 A tag is used to label and mark a specific commit in the history.
 It is usually used to mark release points.

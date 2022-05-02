@@ -4,16 +4,19 @@ The following examples present common scenarios that can occur when dealing with
 
 We start our experiments with a **local repository**:
 
-* [Git Settings](doc/GitSettings.md)
-* [Create Local Git Repository and Commit a Simple C Project](doc/CreateGitRepositoryAndCommitProject.md)
-* [Modify an Existing Project](doc/ModifyProjectFiles.md)
-* [Tagging Commits in a Local Repository](doc/TaggingLocalRepository.md)
-* [Branching and Merging in a Local Repository](doc/BranchingLocalRepository.md)
+* [Git settings](doc/GitSettings.md)
+* [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
+* [Modify files in a repository](doc/ModifyProjectFiles.md)
+* [Rename files in a repository](doc/RenameProjectFiles.md)
+* [Remove files from a repository](doc/RemoveProjectFiles.md)
+
+* [Tagging commits in a local repository](doc/TaggingLocalRepository.md)
+* [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
 
 
 The next step is to use a **remote repository** such as GitHub or GitLab:
 
-* [Clone a Remote Repository](doc/CloneRemoteRepository.md)
+* [Clone a remote repository](doc/CloneRemoteRepository.md)
 
 
 

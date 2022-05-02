@@ -1,4 +1,4 @@
-# Example: Modify an Existing Project
+# Modify Files in a Repository
 
 In this example we modify files in a project that is versioned with Git.
 

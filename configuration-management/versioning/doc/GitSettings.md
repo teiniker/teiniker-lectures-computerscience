@@ -27,7 +27,7 @@ be looked up there.
 ```
 
 ## References
-* [Pro Git Book](https://git-scm.com/book/en/v2)
+* [YouTube: Git Tutorial for Beginners: Learn Git in 1 Hour](https://youtu.be/8JJ101D3knE)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*
 

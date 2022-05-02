@@ -1,4 +1,4 @@
-# Example: Create Local Git Repository and Commit a Simple C Project
+# Create a Local Git Repository and Add Files
 
 In this example we create a local Git repository and save a C 
 project in it.
@@ -111,7 +111,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 	
-## Commit the C project files to the repository
+## Add the C project files to the repository
 
 We have to tell Git which files should not be managed by providing a
 **.gitignore** file:
