@@ -21,8 +21,6 @@ The next step is to use a **remote repository** such as GitHub or GitLab:
 ## References:
 * [YouTube: Git Tutorial for Beginners: Learn Git in 1 Hour](https://youtu.be/8JJ101D3knE)
 * [YouTube: Git Tutorial for Beginners: Command-Line Fundamentals](https://youtu.be/HVsySz-h9r4)
-
-
 * [Git Client: Downloads](https://git-scm.com/downloads)
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
