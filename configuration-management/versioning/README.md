@@ -6,9 +6,9 @@ We start our experiments with a **local repository**:
 
 * [Git settings](doc/GitSettings.md)
 * [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
-* [Modify files in a repository](doc/ModifyProjectFiles.md)
-* [Rename files in a repository](doc/RenameProjectFiles.md)
-* [Remove files from a repository](doc/RemoveProjectFiles.md)
+* [Modify files in a git project](doc/ModifyProjectFiles.md)
+* [Rename files in a git project](doc/RenameProjectFiles.md)
+* [Remove files from a git project](doc/RemoveProjectFiles.md)
 
 * [Tagging commits in a local repository](doc/TaggingLocalRepository.md)
 * [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
