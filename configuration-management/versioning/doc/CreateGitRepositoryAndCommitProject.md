@@ -99,18 +99,16 @@ drwxr-xr-x 5 pi pi  4096 Feb 24 19:58 ..
 drwxr-xr-x 7 pi pi  4096 Feb 24 20:00 .git
 
 $ git status
-Auf Branch master
+On branch master
 
-Noch keine Commits
+No commits yet
 
-Unversionierte Dateien:
-  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
-
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
 	complex_numbers
 	complex_numbers.c
 
-nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
-(benutzen Sie "git add" zum Versionieren)
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 	
 ## Commit the C project files to the repository
@@ -129,13 +127,14 @@ $ git add .gitignore
 $ git add complex_numbers.c 
 
 $ git status
-Auf Branch master
-Noch keine Commits
-Zum Commit vorgemerkte Änderungen:
-  (benutzen Sie "git rm --cached <Datei>..." zum Entfernen aus der Staging-Area)
+On branch master
 
-	neue Datei:     .gitignore
-	neue Datei:     complex_numbers.c
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   complex_numbers.c
 ```
 
 
@@ -148,8 +147,8 @@ $ git commit -m "Initial import."
  create mode 100644 complex_numbers.c
 
 $ git status
-Auf Branch master
-nichts zu committen, Arbeitsverzeichnis unverändert
+On branch master
+nothing to commit, working tree clean
 ```
 
 ## References
