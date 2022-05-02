@@ -58,12 +58,23 @@ int main(void)
 }    
 ```
 
+Also, let's create a `README.md` file:
+```
+# README
+
+This is just a simple markdown file which will be:
+* created
+* committed 
+* and finally removed
+```
+
 We compile the C file into an execuable:
 ```
 $ gcc -Wall -o complex_numbers complex_numbers.c
 
 $ tree
 .
+├── README.md
 ├── complex_numbers
 └── complex_numbers.c
 ```
@@ -92,11 +103,12 @@ $ git init
 Initialized empty Git repository in sandbox/c-example/.git/
 
 $ ll -a
-drwxr-xr-x 3 pi pi  4096 Feb 24 20:00 .
-drwxr-xr-x 5 pi pi  4096 Feb 24 19:58 ..
--rwxr-xr-x 1 pi pi 15592 Feb 24 19:59 complex_numbers
--rw-r--r-- 1 pi pi   755 Feb 24 19:42 complex_numbers.c
-drwxr-xr-x 7 pi pi  4096 Feb 24 20:00 .git
+drwxr-xr-x  3 student student  4096 May  2 14:26 .
+drwxr-x--- 15 student student  4096 May  2 10:08 ..
+-rwxr-xr-x  1 student student 16752 May  2 10:10 complex_numbers
+-rw-r--r--  1 student student   767 May  2 10:50 complex_numbers.c
+drwxr-xr-x  8 student student  4096 May  2 14:26 .git
+-rw-r--r--  1 student student   105 May  2 14:55 README.md
 
 $ git status
 On branch master
@@ -105,7 +117,8 @@ No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	complex_numbers
+	README.md
+  complex_numbers
 	complex_numbers.c
 
 nothing added to commit but untracked files present (use "git add" to track)
@@ -124,7 +137,7 @@ $ code .gitignore
 
 ```
 $ git add .gitignore 
-$ git add complex_numbers.c 
+$ git add complex_numbers.c README.md 
 
 $ git status
 On branch master
@@ -134,6 +147,7 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 	new file:   .gitignore
+  new file:   README.md
 	new file:   complex_numbers.c
 ```
 
@@ -142,8 +156,9 @@ Finally, we commit all files which are in the staging area:
 ```
 $ git commit -m "Initial import."
 [master (Basis-Commit) bdbd20e] Initial import.
- 2 files changed, 42 insertions(+)
+ 3 files changed, 42 insertions(+)
  create mode 100644 .gitignore
+ create mode 100644 README.md
  create mode 100644 complex_numbers.c
 
 $ git status

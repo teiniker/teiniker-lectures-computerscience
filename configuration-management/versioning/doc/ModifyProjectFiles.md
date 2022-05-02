@@ -54,8 +54,8 @@ index f1b077b..caff86e 100644
      complex c1 = {1.0, 1.0};
 ```
 
-If we made some mistakes, we can easily go back to the version stored 
-in the repository.
+If we made some mistakes, we can easily **go back to the version stored 
+in the repository**.
 ```
 $ git checkout complex_numbers.c
 
@@ -103,6 +103,10 @@ On branch master
 nothing to commit, working directory clean
 ```
 
+## Review all commits
+
+We can print the **history of all commits** in the repository:
+
 ```
 $ git log
 commit 6a115638bfb4829d52067da17c71e86004c8223e (HEAD -> master)
@@ -118,11 +122,11 @@ Date:   Mon Feb 24 20:53:22 2020 +0100
     Initial import.
 ```
 
-We can also use a single line log format.
+We can also use a **single line log format**.
 ```    
-$ git log --pretty=oneline
-6a115638bfb4829d52067da17c71e86004c8223e (HEAD -> master) Added complex_sub operation.
-bdbd20e4400a4f80d02c44944cfeb8af522a1ddc Initial import.    
+$ git log --oneline
+6a11563 (HEAD -> master) Added complex_sub operation.
+bdbd20e Initial import.    
 ```
 
 ## References
