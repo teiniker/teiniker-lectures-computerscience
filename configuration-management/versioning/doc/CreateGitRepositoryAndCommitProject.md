@@ -12,7 +12,7 @@ $ cd sandbox/c-examples
 
 First, we implement a simple C file called "complex_numbers.c":
 ```
-$ vi complex_numbers.c
+$ code complex_numbers.c
 ```
 
 ```C
@@ -118,7 +118,7 @@ nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
 We have to tell Git which files should not be managed by providing a
 **.gitignore** file:
 ```
-$ vi .gitignore
+$ code .gitignore
 # Files ignored by Git:
 /complex_numbers
 ```
@@ -155,4 +155,4 @@ nichts zu committen, Arbeitsverzeichnis unverändert
 ## References
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
