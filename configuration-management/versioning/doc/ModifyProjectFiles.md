@@ -6,7 +6,7 @@ In this example we modify files in a project that is versioned with Git.
 
 We start by modifying a file from the versioned project.
 ```
-$ vi complex_numbers.c
+$ code complex_numbers.c
 ```
 We make some modifications...
 
@@ -75,7 +75,7 @@ repository.
 
 Again, we modify a file from the versioned project.
 ```
-$ vi complex_numbers.c
+$ code complex_numbers.c
 ```
 ```C
 complex complex_sub(complex a, complex b)
@@ -128,4 +128,4 @@ bdbd20e4400a4f80d02c44944cfeb8af522a1ddc Initial import.
 ## References
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
