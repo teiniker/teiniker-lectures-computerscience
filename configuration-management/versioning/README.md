@@ -2,7 +2,7 @@
 
 The following examples present common scenarios that can occur when dealing with git.
 
-We start our experiments with a **local repository**.
+We start our experiments with a **local repository**:
 
 * [Git Settings](doc/GitSettings.md)
 * [Create Local Git Repository and Commit a Simple C Project](doc/CreateGitRepositoryAndCommitProject.md)
@@ -11,7 +11,7 @@ We start our experiments with a **local repository**.
 * [Branching and Merging in a Local Repository](doc/BranchingLocalRepository.md)
 
 
-The next step is to use a **remote repository** such as GitHub or GitLab.
+The next step is to use a **remote repository** such as GitHub or GitLab:
 
 * [Clone a Remote Repository](doc/CloneRemoteRepository.md)
 
