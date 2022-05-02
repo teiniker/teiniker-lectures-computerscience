@@ -1,12 +1,22 @@
 # Source Code Versioning
 
-The following scenarios show the use of a source code repository using specific examples:
+The following examples present common scenarios that can occur when dealing with git.
 
-* [Clone a Remote Repository](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning/doc/CloneRemoteRepository.md)
-* [Create Local Git Repository and Commit a Simple C Project](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning/doc/CreateGitRepositoryAndCommitProject.md)
-* [Modify an Existing Project](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning/doc/ModifyProjectFiles.md)
-* [Tagging Commits in a Local Repository](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning/doc/TaggingLocalRepository.md)
-* [Branching and Merging in a Local Repository](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/configuration-management/versioning/doc/BranchingLocalRepository.md)
+We start our experiments with a **local repository**.
+
+* [Git Settings](doc/GitSettings.md)
+* [Create Local Git Repository and Commit a Simple C Project](doc/CreateGitRepositoryAndCommitProject.md)
+* [Modify an Existing Project](doc/ModifyProjectFiles.md)
+* [Tagging Commits in a Local Repository](doc/TaggingLocalRepository.md)
+* [Branching and Merging in a Local Repository](doc/BranchingLocalRepository.md)
+
+
+The next step is to use a **remote repository** such as GitHub or GitLab.
+
+* [Clone a Remote Repository](doc/CloneRemoteRepository.md)
+
+
+
 
 ## References:
 * [YouTube: Git Tutorial for Beginners: Learn Git in 1 Hour](https://youtu.be/8JJ101D3knE)
