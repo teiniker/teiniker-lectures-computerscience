@@ -12,4 +12,6 @@ The following scenarios show the use of a source code repository using specific 
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 * [YouTube: Git Tutorial for Beginners: Command-Line Fundamentals](https://youtu.be/HVsySz-h9r4)
 
+* [Git Client - Downloads](https://git-scm.com/downloads)
+
 *Egon Teiniker, 2020-2022, GPL v3.0*
