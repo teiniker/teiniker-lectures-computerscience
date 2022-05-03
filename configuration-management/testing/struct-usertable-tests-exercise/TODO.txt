@@ -8,7 +8,7 @@ A) Modular Programming
     - usertable.c 
     
 B) Build Automation 
-    Erstellen Sie ein Makefile um diese Files zu einem Executable "build/main" 
+    Erweitern Sie das Makefile um diese Files zu einem Executable "build/main" 
     zusammen zu bauen.
 
     $ make main
