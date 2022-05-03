@@ -6,7 +6,7 @@ project in it.
 ## Create a simple C project
 
 ```
-$ mkdir -p sandbox/c-example
+$ mkdir -p sandbox/c-examples
 $ cd sandbox/c-examples
 ```
 
