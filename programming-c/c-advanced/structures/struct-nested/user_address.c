@@ -51,8 +51,8 @@ int main(void)
     assert(homer.address.number == 742);
     assert(homer.address.zip_code == 58008);    
 
-    printf("sizeof(address_t) = %d\n", sizeof(address_t));
-    printf("sizeof(user_t) = %d\n", sizeof(user_t));
+    printf("sizeof(address_t) = %lu\n", sizeof(address_t));
+    printf("sizeof(user_t) = %lu\n", sizeof(user_t));
     dump_memory((unsigned char*) &homer, sizeof(user_t));
 
     return 0;
