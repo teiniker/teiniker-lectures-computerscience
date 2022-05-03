@@ -1,12 +1,12 @@
 CFLAGS=-std=c99 -g -Wall  
 CC=gcc
 
-all: init usertable 
+all: init usertable
 
 init:
 	mkdir -p build
 
-user: usertable.c
+usertable: usertable.c
 	$(CC) $(CFLAGS) usertable.c -o build/usertable
 	build/usertable
 

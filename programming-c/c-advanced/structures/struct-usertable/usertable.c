@@ -71,6 +71,6 @@ user_t table_get_user(user_t *table, int index)
 void table_set_user(user_t *table, int index, int id, char* username, char* password)
 {
     table[index].id = id;
-    (table+index)->username = username;
+    table[index].username = username;
     (table+index)->password = password;
 }
