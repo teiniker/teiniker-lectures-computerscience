@@ -1,0 +1,36 @@
+Exercise: Build and Test Automation - User Structure 
+-------------------------------------------------------------------------------
+
+A) Modular Programming
+    Bauen Sie den gegebenen Source Code so um, dass die folgenden Files entstehen:
+    - main.c 
+    - user.h (include guards nicht vergessen)
+    
+B) Build Automation 
+    Erweitern Sie das Makefile um diese Files zu einem Executable "build/main" 
+    zusammen zu bauen.
+
+    $ make main
+    mkdir -p build
+    gcc -std=c99 -g -Wall   -c main.c -o build/main.o
+    gcc -std=c99 -g -Wall   build/main.o -o build/main
+    build/main
+
+C) Test Automation 
+    Erstellen Sie ein File "test.c" das die Testfälle aus "main.c" mit dem Unity 
+    Framework implementiert.
+    Erweitern Sie das Makefile so, dass "build/test" gebaut und ausgeführt wird.       
+    
+    $ make
+    mkdir -p build
+    gcc -std=c99 -g -Wall   -c ../unity/unity.c -o build/unity.o
+    gcc -std=c99 -g -Wall   -I ../unity -c test.c -o build/test.o
+    gcc -std=c99 -g -Wall   build/unity.o build/test.o -o build/test
+    build/test
+    test.c:67:test_user_create:PASS
+    test.c:68:test_user_init:PASS
+    test.c:69:test_user_create_heap:PASS
+    -----------------------
+    3 Tests 0 Failures 0 Ignored 
+    OK
+    
