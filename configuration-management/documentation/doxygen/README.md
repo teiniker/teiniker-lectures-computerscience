@@ -110,4 +110,4 @@ Now, we can review the generated documentation from the `doc/index.html` file.
 
 * [Automatic online documentation for GitHub projects using Doxygen, Travis CI and GitHub pages](https://joeloskarsson.github.io/2018/automatic-docs)
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
