@@ -37,11 +37,11 @@ $ git branch
 In our new branch we are implementing a new function *complex_mul()*.
 
 ```
-$ vi complex_numbers.c 
+$ code complex_numbers.c 
 
 complex complex_mul(complex a, double real)
 {
-	complex c;
+    complex c;
     c.re = a.re * real;
     c.im = a.im * real;
     return c;
