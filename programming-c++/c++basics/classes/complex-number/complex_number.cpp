@@ -1,11 +1,15 @@
 #include "complex_number.h"
 
+/*
+ * Constructor
+ */
 ComplexNumber::ComplexNumber(double re, double im)
 {
     _re = re;
     _im = im;
 }
 
+// Destructor
 ComplexNumber::~ComplexNumber() 
 {
 }
