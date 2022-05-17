@@ -60,6 +60,7 @@ extern user_t *table_new(size_t number_of_elements);
 ```
 
 Here the generated documentation:
+
 ![Doxygen-Function](Doxygen-Function.png)
 
 
