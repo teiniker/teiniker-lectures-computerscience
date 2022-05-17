@@ -5,6 +5,8 @@ Doxygen is the de facto standard tool for **generating documentation from annota
 
 ## Source Code 
 
+A special comment block is a C or C++ style comment block with some additional markings, so doxygen knows it is a piece of structured text that needs to end up in the generated documentation.
+
 ### Comment Blocks
 
 For each entity in the code there are two types of descriptions, which together 
