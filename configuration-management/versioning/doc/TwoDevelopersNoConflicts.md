@@ -1,87 +1,48 @@
-Example: Two developers no conficts
-====================================
+# Two Developers Work Together with no Conficts
 
-This is a test !!!!
-This is a second one :-D :-(
+The following example shows two developers collaborating on a GitHub repository.
+Try this with our own GitHub repository.
 
+* **(A)** Uses a browser to access the repository
+   https://github.com/teiniker/teiniker-lectures-computerscience
 
-A: Uses a browser
------------------
-	https://github.com/teiniker/teiniker-lectures-configurationmanagement/blob/master/versioning/Java-Algebra-Vector/src/main/java/org/se/lab/Main.java
+* **(B)** Uses the command line interface
+   ```
+   $ mkdir sandbox
+   $ cd sandbox
+   $ git clone git@github.com:teiniker/teiniker-lectures-computerscience.git
+   ```
+   ```
+   $ git remote -v
+   origin	git@github.com:teiniker/teiniker-lectures-computerscience.git (fetch)
+   origin	git@github.com:teiniker/teiniker-lectures-computerscience.git (push)
+   ```
 
+Let's start with the experiment:
 
-B: Uses the command line
-------------------------
+* **(A)** Changes some files and commits these changes.
 
-```
-$ mkdir sandbox
-$ cd sandbox
-$ git clone https://github.com/teiniker/teiniker-lectures-configurationmanagement/
-```
-```
-$ git remote -v
-origin	https://github.com/teiniker/teiniker-lectures-configurationmanagement/ (fetch)
-origin	https://github.com/teiniker/teiniker-lectures-configurationmanagement/ (push)
-```
+* **(B)** Starts coding, changes and commit a file. 
+   Note that every development starts with a `git pull` to get the lates 
+   changes from the repo.
+   ```
+   $ git pull
 
-A: Changes a file
------------------
-[Commit Changes]
+   $ code configuration-management/versioning/doc/TwoDevelopersNoConflicts.md
+   # do some modifications...
 
-B: Starts coding 
------------------
+   $ git status
+   $ git commit -a -m "Changed test cases."
 
-```
-$ git pull
-remote: Counting objects: 11, done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (11/11), done.
-From https://github.com/teiniker/teiniker-lectures-configurationmanagement
-   e653cf2..175ef7e  master     -> origin/master
-Updating e653cf2..175ef7e
-Fast-forward
- versioning/Java-Algebra-Vector/src/main/java/org/se/lab/Main.java | 4 ++--
- 1 file changed, 2 insertions(+), 2 deletions(-)
-```
+   $ git pull
+   Already up-to-date.
 
-```
-$ vi versioning/Java-Algebra-Vector/src/main/java/org/se/lab/Main.java
-Do some modifacations...
-```
+   $ git push
+   ```
+   Also, for every `git push`, repeat `git pull`!!
 
-```
-$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+* **(A)** Refresh the web page and review the changes.
 
-	modified:   versioning/Java-Algebra-Vector/src/main/java/org/se/lab/Main.java
+## References
 
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-```
-$ git commit -a -m "Changed test cases."
-[master 0108980] Changed test cases.
-1 file changed, 2 insertions(+), 2 deletions(-)
-```
-
-```
-$ git pull
-Already up-to-date.
-
-$ git push
-Counting objects: 11, done.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (11/11), 719 bytes | 0 bytes/s, done.
-Total 11 (delta 3), reused 0 (delta 0)
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-To https://github.com/teiniker/teiniker-lectures-configurationmanagement/
-   175ef7e..0108980  master -> master
-```
-
-A: Refresh
-----------
+*Egon Teiniker, 2020-2022, GPL v3.0*

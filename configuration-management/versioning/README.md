@@ -14,10 +14,11 @@ We start our experiments with a **local repository**:
 * [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
 
 
-The next step is to use a **remote repository** such as GitHub or GitLab:
+The next step is to use a **remote repository** such as **GitHub** or GitLab:
 
 * [Clone a remote repository](doc/CloneRemoteRepository.md)
-
+* [Create GitHub Repository](doc/CreateGitHubRepository.md)
+* [Two Developers Work Together with no Conficts](doc/TwoDevelopersNoConflicts.md)
 
 
 
