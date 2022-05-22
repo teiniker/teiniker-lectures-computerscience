@@ -65,9 +65,19 @@ program that specifies the data type as an **implementation**.
         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-search-tree-students))
 
 ## References
+
+* [YouTube (CS50): Arrays](https://youtu.be/YdSycMcxvY0)
+* [YouTube (CS50): Singly-Linked Lists](https://youtu.be/zQI3FyWm144) 
+* [YouTube (CS50): Doubly-Linked Lists](https://youtu.be/FHMPswJDCvU) 
+* [YouTube (CS50): Stacks](https://youtu.be/hVsNqhEthOk)
+* [YouTube (CS50): Queues](https://youtu.be/3TmUv1uS92s)
+* [YouTube (CS50): Hash Tables](https://youtu.be/nvzVHwrrub0)
+* [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
+
 * Robert Sedgewick. **Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching**. 
     Pearson Education, 1998 
     * Chapter 3: Elementary Data Structures
     * Chapter 4: Abstract Data Types
                  
-                 
+
+*Egon Teiniker, 2020-2022, GPL v3.0*                       
