@@ -430,4 +430,4 @@ No variable shall have a name that is a keyword of C, C++, or any other well-kno
 
 * Barr Group. [Embedded C Coding Standard](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*      
+*Egon Teiniker, 2020-2022, GPL v3.0*      
