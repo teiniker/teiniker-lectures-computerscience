@@ -10,18 +10,18 @@ its own flavor of a coding standard.
 ## General Rules
 
 * **Line Widths**
-    * _Rule_: The width of all lines in a program shall be limited to a maximum of 80 characters.
+    * _Rule_: The **width of all lines** in a program shall be limited to a maximum of **80 characters**.
 
     * _Reasoning_: From time-to-time, peer reviews and other code examinations are conducted on printed pages. 
     To be useful, such print-outs must be free of distracting line wraps as well as missing (i.e., past the right margin) characters.    
 
 * **Braces**
-    * _Rule_: Braces shall always surround the blocks of code, following `if`, `else`, `switch`, `while`, `do`, and `for` statements; single statements and empty statements following these keywords shall also always be surrounded by braces.
+    * _Rule_: Braces shall **always surround the blocks of code**, following `if`, `else`, `switch`, `while`, `do`, and `for` statements; single statements and empty statements following these keywords shall also always be surrounded by braces.
     
-    * _Rule_: Each left brace `{` shall appear by itself on the line below the start of the block it opens. 
+    * _Rule_: Each left brace `{` shall appear by itself on the **line below the start of the block** it opens. 
     The corresponding right brace `}` shall appear by itself in the same position the appropriate number of lines later in the file.
 
-    * _Reasoning_: There is considerable risk associated with the presence of empty statements and single statements that are not surrounded by braces. Code constructs like this are often associated with bugs when nearby code is changed or commented out. This risk is entirely eliminated by the consistent use of braces.\ 
+    * _Reasoning_: There is considerable risk associated with the presence of empty statements and single statements that are not surrounded by braces. Code constructs like this are often associated with bugs when nearby code is changed or commented out. This risk is entirely eliminated by the consistent use of braces.\
     The placement of the left brace on the following line allows for easy visual checking for the corresponding right brace.
 
 * **Parentheses**
@@ -31,12 +31,6 @@ its own flavor of a coding standard.
     * _Rule_: Unless it is a single identifier or constant, each operand of the logical AND `&&` and logical OR `||` operators shall be surrounded by parentheses.
 
     * _Reasoning_: The syntax of the C programming language has many operators. The precedence rules that dictate which operators are evaluated before which others are complicated—with over a dozen priority levels—and not always obvious to all programmers. When in doubt it’s better to be explicit about what you hope the compiler will do with your calculations.
-
-* **Casts**
-    * _Rule_: Each cast shall feature an associated comment describing how the code ensures proper behavior across the range 
-    of possible values on the right side.
-
-    * _Reasoning_: Casting is dangerous. 
 
 
 ## White Space Rules
@@ -93,13 +87,11 @@ its own flavor of a coding standard.
     * _Rule_: There shall be a blank line before and after each natural block of code. 
     Examples of natural blocks of code are loops, `if…else` and `switch` statements, and consecutive declarations.
 
-    * _Rule_: Each source file shall terminate with a comment marking the end of file followed by a blank line.
-
-    * _Reasoning_: Appropriate placement of white space provides visual separation and thus makes code easier to read and understand, just as the white space areas between paragraphs of this coding standard aid readability. Clearly marking the end of a file is important for human reviewers looking at printouts and the blank line following may be required by some older compilers.
+    * _Reasoning_: Appropriate placement of white space provides visual separation and thus makes code easier to read and understand, just as the white space areas between paragraphs of this coding standard aid readability. 
 
 
 * **Indentation**
-    * _Rule_: Each indentation level should align at a multiple of 4 characters from the start of the line.
+    * _Rule_: Each indentation level should align at a multiple of **4 characters** from the start of the line.
 
     * _Rule_: Within a `switch` statement, the case labels shall be aligned; the contents of each case block shall be indented once from there.
 
@@ -110,17 +102,9 @@ its own flavor of a coding standard.
 
 * **Tabs**
 
-    * _Rule_: The tab character (ASCII `0x09`) shall never appear within any source code file.
+    * _Rule_: The tab character (ASCII `0x09`) shall **never appear** within any source code file.
 
     * _Reasoning_: The width of the tab character varies by text editor and programmer preference, making consistent visual layout a continual source of headaches during code reviews and maintenance.
-
-
-* **Non-Printing Characters**
-
-    * _Rule_: Whenever possible, all source code lines shall end only with the single character ‘LF’ (ASCII `0x0A`), 
-    not with the pair ‘CR’-‘LF’ (`0x0D 0x0A`).
-
-    * _Reasoning_: The multi-character sequence ‘CR’-‘LF’ is more likely to cause problems in a multi-platform development environment than the single character ‘LF’. One such problem is associated with multi-line preprocessor macros on Unix platforms.
 
 
 ## Data Type Rules
@@ -130,7 +114,7 @@ its own flavor of a coding standard.
 
     * _Rule_: Non-Boolean values shall be converted to Boolean via use of relational operators (e.g., `<` or `!=`), not via casts.
 
-    * _Reasoning_: The C99 language standard introduced a new data type for Boolean variables along with new constants `true` and `false` in the `<stdbool.h>` header file.
+    * _Reasoning_: The C99 language standard introduced a new data type for Boolean variables along with new constants `true` and `false` in the `stdbool.h` header file.
 
 * **Fixed-Width Integers**
     * _Rule_: Whenever the width, in bits or bytes, of an integer value matters in the program, one of the **fixed width data types** (`int8_t`, `int16_t`, `int32_t`, `int64_t`, `uint8_t`, `uint16_t`, `uint32_t`, `uint64_t`) shall be used in place 
@@ -143,31 +127,31 @@ its own flavor of a coding standard.
     * _Reasoning_: The C99 standard did introduce the type names shown in the table, which are defined in the `stdint.h` header file.
 
 * **Floating Point**
-    * _Rule_: Avoid the use of floating point constants and variables whenever possible.
+    * _Rule_: **Avoid the use of floating point** constants and variables whenever possible.
 
     * _Rule_: Use the C99 type names `float32_t`, `float64_t`, and `float128_t`.
 
-    * _Rule_: Append an `f` to all single-precision constants (e.g., `pi = 3.141592f`).
+    * _Rule_: Append an `f` to all **single-precision constants** (e.g., `pi = 3.141592f`).
 
     * _Rule_: Ensure that the compiler supports double precision, if your math depends on it.
 
-    * _Rule_: Never test for equality or inequality of floating point values.    
+    * _Rule_: **Never test for equality or inequality** of floating point values.    
 
     * _Rule_: Always invoke the `isfinite()` macro to check that prior calculations have resulted in neither `INFINITY` nor `NAN`.
 
     * Reasoning: A large number of risks of defects stem from incorrect use of floating point arithmetic.
     By default, C promotes all floating-point constants to double precision, which may be inefficient or unsupported on the target platform. However, many microcontrollers do not have any hardware support for floatingpoint math. The compiler may not warn of these incompatibilities, instead performing the requested numerical operations by linking in a large (typically a few kilobytes of code) and slow (numerous instruction cycles per operation) floating- point emulation library.
 
-* **Naming Conventions**
-    * _Rule_: The names of all new data types, including structures, unions, and enumerations, shall consist only of lowercase characters and internal underscores and end with `_t`.
+* **Naming Conventions (custom data types)**
+    * _Rule_: The names of all new data types, including **structures, unions, and enumerations**, shall consist only of **lowercase characters and internal underscores** and end with `_t`.
 
-    * _Rule_: All new structures, unions, and enumerations shall be named via a typedef.
+    * _Rule_: All new structures, unions, and enumerations shall be named via a `typedef`.
 
     * _Reasoning_: Data type names and variable names are often appropriately similar.
 
 
 
-* **Naming Conventions**
+* **Naming Conventions (variables)**
 No variable shall have a name that is a keyword of C, C++, or any other well-known extension of the C programming language, including specifically K&R C and C99. Restricted names include `interrupt`, `inline`, `restrict`, `class`, `true`, `false`, `public`, `private`, `friend`, and `protected`.
 
     * _Rule_: No variable shall have a name that overlaps with a variable name from the C Standard Library (e.g., `errno`).
@@ -187,13 +171,13 @@ No variable shall have a name that is a keyword of C, C++, or any other well-kno
 
 * **Initialization**
 
-    * _Rule_: All variables shall be initialized before use.
+    * _Rule_: All variables shall be **initialized before use**.
 
-    * _Rule_: Any pointer variable lacking an initial address shall be initialized to `NULL`.
+    * _Rule_: Any **pointer variable** lacking an initial address shall be initialized to `NULL`.
 
-    * _Rule_: It is preferable to define local variables as you need them, rather than all at the top of a function.
+    * _Rule_: It is preferable to **define local variables as you need them**, rather than all at the top of a function.
 
-    * _Rule_: If project- or file-global variables are used, their definitions shall be grouped together and placed at the top of a source code file.
+    * _Rule_: If **project- or file-global variables** are used, their definitions shall be grouped together and placed at the top of a source code file.
 
     * _Reasoning_: Too many programmers assume the C run-time will watch out for them, e.g., by zeroing the value of uninitialized variables on system startup. This is a bad assumption, which can prove dangerous in a mission-critical system. For readability reasons it is better to declare local variables as close as possible to their first use, which C99 makes possible by incorporating that earlier feature of C++.
 
@@ -241,7 +225,7 @@ No variable shall have a name that is a keyword of C, C++, or any other well-kno
 
 
 * **Jumps**
-    * _Rule_: The `goto` statements shall not be used.
+    * _Rule_: **The `goto` statements shall not be used**.
 
     * _Rule_: C Standard Library functions `abort()`, `exit()`, `setjmp()`, and `longjmp()` shall not be used.
 
@@ -250,7 +234,7 @@ No variable shall have a name that is a keyword of C, C++, or any other well-kno
 
 * **Equivalence Tests**
 
-    * _Rule_: When evaluating the equality of a variable against a constant, the constant shall always be placed to the left of the equal-to operator `==`.
+    * _Rule_: When evaluating the equality of a variable against a constant, the **constant shall always be placed to the left of the equal-to operator `==`**.
 
     * _Reasoning_: It is always desirable to detect possible typos and as many other coding defects as possible at compile-time. Defect discovery in later phases is not guaranteed and often also more costly. By following this rule, any compiler will reliably detect erroneous attempts to assign (i.e., `=` instead of `==`) a new value to a constant.
 
@@ -280,15 +264,15 @@ No variable shall have a name that is a keyword of C, C++, or any other well-kno
 
 * **Functions**
 
-    * _Rule_: All reasonable effort shall be taken to keep the length of each function limited to one printed page, or a maximum of 100 lines.
+    * _Rule_: All reasonable effort shall be taken to keep the length of each function limited to one printed page, or a maximum of **100 lines**.
 
     * _Rule_: It is a preferred practice that all functions shall have just one exit point and it shall be via a return at the bottom of the function.
 
     * _Rule_: Each parameter shall be explicitly declared and meaningfully named.
 
-    * _Rule_: A prototype shall be declared for each public function in the module header file.
+    * _Rule_: A prototype shall be declared for each **public function** in the module header file.
 
-    * _Rule_: All private functions shall be declared static.
+    * _Rule_: All **private functions** shall be declared static.
 
     * _Reasoning_: Code reviews take place at the function level and often on paper. Each function should thus ideally be visible on a single printed page, so that flipping papers back and forth does not distract the reviewers.
     Multiple return statements should be used only when it improves the readability of the code.
