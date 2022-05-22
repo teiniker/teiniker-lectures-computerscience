@@ -17,4 +17,6 @@ We select the following topics from a wide range of configuration management tec
 
 * [Documentation](documentation)
 
+* [Coding Standard](c-coding-standard)
+
 *Egon Teiniker, 2020-2022, GPL v3.0*         
