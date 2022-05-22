@@ -1,6 +1,7 @@
 # C Coding Standard
 
-As Robert C. Martin says, **every team should follow a coding standard based on common industry norms**, therefore, we also use one... 
+As Robert C. Martin says, **every team should follow a coding standard based on common industry norms**.
+By using a coding standard, the source code becomes easier to read for all team members and the frequency of errors decreases.
 
 The following rules are extracted from the [Embedded C Coding Standard](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard) 
 defined by the **Barr Group** which is available online and as a PDF document. But keep in mind, that every organization or even every team can have 
