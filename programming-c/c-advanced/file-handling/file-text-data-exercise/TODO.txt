@@ -1,0 +1,33 @@
+Exercise: Read Text File 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein Programm, das Meßdaten von einem Text-File in ein Array liest
+und die Daten im Array auswertet.
+
+Die folgenden Funktionen sind zu implementieren:
+
+A) int data_read(char *filename, double data[], size_t size)
+    Liest eine gegebene Anzahl von Daten aus dem gegebenen Text-File 
+    "measurement.txt" in ein Array.
+
+B) void data_print(double data[], size_t size)
+    Gibt die gelesenen Daten das Array's auf der Konsole aus:
+    Beispiel:
+        data[0] = 1.123000
+        data[1] = 1.345000
+        data[2] = 1.678000
+        data[3] = 1.987000
+        data[4] = 2.121000
+        data[5] = 2.001000
+        data[6] = 1.987000
+        data[7] = 1.765000
+        data[8] = 1.654000
+        data[9] = 1.423000
+
+C) double data_min(double data[], size_t size)
+    Berechne den Minimalwert der gelesenen Daten. 
+    Beispiel: min = 1.123000
+
+D) double data_max(double data[], size_t size)
+    Berechne den Maximalwert der gelesenen Daten.
+    Beispiel: max = 2.121000     
