@@ -17,9 +17,9 @@ We start our experiments with a **local repository**:
 The next step is to use a **remote repository** such as **GitHub** or GitLab:
 
 * [Clone a remote repository](doc/CloneRemoteRepository.md)
-* [Create GitHub Repository](doc/CreateGitHubRepository.md)
-* [Two Developers Work Together with no Conficts](doc/TwoDevelopersNoConflicts.md)
-
+* [Create GitHub repository](doc/CreateGitHubRepository.md)
+* [Two developers work together](doc/TwoDevelopersNoConflicts.md)
+* [Two developers work together and create merge conficts](doc/TwoDevelopersWithMergeConflict.md)
 
 
 ## References:
