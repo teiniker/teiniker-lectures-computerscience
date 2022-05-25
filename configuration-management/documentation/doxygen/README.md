@@ -77,6 +77,13 @@ The `@note` command ends when a blank line or some other sectioning command is e
 
 ## Doxygen Configuration and Usage
 
+To install the `Doxygen` tool:
+```
+$ sudo apt install doxygen
+$ doxygen --version
+1.9.1
+```
+
 We start by **generating a Doxygen configuration file**:
 ```
 $ doxygen -g
