@@ -41,6 +41,9 @@ To connect a client to GitHub vis SSH, we have to:
     * On **GitHub**, in the upper-right corner, click your profile photo, then click **Settings**.    
     * In the **Access** section of the sidebar, click **SSH and GPG keys**.
     * Click **New SSH key** or **Add SSH key**. Open `.ssh/id_ed25519.pub` and copy the content. 
+    ```
+    $ code .ssh/id_ed25519.pub
+    ```
     * Testing the SSH connection
     ```
     $ ssh -T git@github.com
