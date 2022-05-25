@@ -13,7 +13,7 @@ With a valid GitHub account we can:
 In oder to create new repositories, we select the **New repository** menu
 item.
 
-![Create Repository](figurest/CreateGitHubRepo.png)
+![Create Repository](figures/CreateGitHubRepo.png)
 
 After typing a **repository name** and choosing a **license** we can create the repository.
 
@@ -41,6 +41,9 @@ To connect a client to GitHub vis SSH, we have to:
     * On **GitHub**, in the upper-right corner, click your profile photo, then click **Settings**.    
     * In the **Access** section of the sidebar, click **SSH and GPG keys**.
     * Click **New SSH key** or **Add SSH key**. Open `.ssh/id_ed25519.pub` and copy the content. 
+    ```
+    $ code .ssh/id_ed25519.pub
+    ```
     * Testing the SSH connection
     ```
     $ ssh -T git@github.com
