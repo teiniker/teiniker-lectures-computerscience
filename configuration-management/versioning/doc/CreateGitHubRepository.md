@@ -13,7 +13,7 @@ With a valid GitHub account we can:
 In oder to create new repositories, we select the **New repository** menu
 item.
 
-![Create Repository](figurest/CreateGitHubRepo.png)
+![Create Repository](figures/CreateGitHubRepo.png)
 
 After typing a **repository name** and choosing a **license** we can create the repository.
 
