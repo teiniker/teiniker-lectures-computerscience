@@ -315,7 +315,7 @@ to a single file.
 * Brian Ward. **How Linux Works**. No Starch Press, 2015
     * Chapter 2: Basic Commands and Directory Hierarchy
     
-* [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
+* [YouTube: Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
     * `0:00:00` Working with the File System: Files, Directories, and Navigation
     * `0:35:45` Working with Text Files 
     * `0:46:45` Working with Users 
