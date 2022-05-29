@@ -45,24 +45,24 @@ program that specifies the data type as an **implementation**.
 ## Examples
 
 * **Linked List**
-    * Demo: [linked-list](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list)
-    * Demo: [linked-list (pointers-to-pointers](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list2)
-    * Demo: [linked-list (API structure)](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/list/linked-list3)
+    * Demo: [linked-list](list/linked-list)
+    * Demo: [linked-list (pointers-to-pointers](linked-list2)
+    * Demo: [linked-list (API structure)](linked-list3)
 
 * **Stack**
-    * Exercise: [stack](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/stack/linked-stack-exercise) 
-            ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/stack/linked-stack))
+    * Exercise: [stack](stack/linked-stack-exercise) 
+            ([model solution](stack/linked-stack))
             
 * **Queue** 
-    * Exercise: [linked-queue](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/queue/linked-queue-exercise) 
-            ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/queue/linked-queue))
+    * Exercise: [linked-queue](queue/linked-queue-exercise) 
+            ([model solution](queue/linked-queue))
 
 * **Binary Tree**
-    * Demo: [binary-tree](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-tree)
-    * Demo: [binary-search-tree](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-search-tree)
-    * Demo: [binary-search-tree (comparison function)](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-search-tree2)
-    * Exercise: [binary-search-tree-students](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-search-tree-students-exercise) 
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/data-structures/tree/binary-search-tree-students))
+    * Demo: [binary-tree](tree/binary-tree)
+    * Demo: [binary-search-tree](tree/binary-search-tree)
+    * Demo: [binary-search-tree (comparison function)](tree/binary-search-tree2)
+    * Exercise: [binary-search-tree-students](tree/binary-search-tree-students-exercise) 
+        ([model solution](tree/binary-search-tree-students))
 
 ## References
 
@@ -74,8 +74,7 @@ program that specifies the data type as an **implementation**.
 * [YouTube (CS50): Hash Tables](https://youtu.be/nvzVHwrrub0)
 * [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
 
-* Robert Sedgewick. **Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching**. 
-    Pearson Education, 1998 
+* Robert Sedgewick. **Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching**. Pearson Education, 1998 
     * Chapter 3: Elementary Data Structures
     * Chapter 4: Abstract Data Types
                  
