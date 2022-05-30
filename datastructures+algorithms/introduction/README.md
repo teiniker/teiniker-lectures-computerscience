@@ -86,9 +86,7 @@ The mathematical artifact that allows us to suppress detail when we are analyzin
 Definition: **A function g(N) is said to be O(f(N)) if there exist constants c0 and N0 such 
 that g(N) < c0 * f(N) for all N > N0**. 
 
-To allow us to classify algorithms according to upper bounds on their total running times
-
-We use the O-notation for three distinct purposes: 
+To allow us to classify algorithms according to upper bounds on their total running times, we use the O-notation for three distinct purposes: 
 * To bound the error that we make when we ignore small terms in mathematical formulas. 
 * To bound the error that we make when we ignore parts of a program that contribute a small amount to the total being analyzed.
 * To allow us to **classify algorithms** according to upper bounds on their total running times.
