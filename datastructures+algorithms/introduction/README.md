@@ -101,7 +101,7 @@ Studying the **worst-case performance of algorithms** is attractive because it a
 Programs with good worst-case performance characteristics are a basic goal in algorithm design.
 
 Worst-case analysis using the O-notation **frees the analyst from considering the details of particular machine characteristics**.
-We ignore constant factors in the analysis; in most cases, if we want to know whether the running time of an algorithm is proportional to N or proportional to log N, it does not matter whether the algorithm is to be run on a nanocomputer or on a supercomputer, and it does not matter whether the inner loop has been implemented carefully with only a few instructions or badly implemented with many instructions.
+We ignore constant factors in the analysis; in most cases, if we want to know whether the running time of an algorithm is proportional to N or proportional to log N, it does not matter whether the algorithm is to be run on a microcontroller or on a supercomputer, and it does not matter whether the inner loop has been implemented carefully with only a few instructions or badly implemented with many instructions.
 
 
 ## Examples of Algorithm Analysis
