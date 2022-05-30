@@ -12,20 +12,25 @@ Algorithms and data structures go hand in hand.
 
 ## Implementation and Empirical Analysis
 
+Analysis plays a role at every point in the process of designing and implementing algorithms.
+
+We design and develop algorithms by layering **abstract operations** that help us to understand the essential nature of the computational problems that we want to solve.
+In our course, we keep our feet on the ground by expressing all the algorithms that we consider in an actual **programming language: C**.
+
 Carefully constructed **programs** in an actual programming language provide an effective means of **expressing our algorithms**.
 
-The first challenge that we face in empirical analysis is to **develop a correct and complete implementation**.
+* The first challenge that we face in empirical analysis is to **develop a correct and complete implementation**.
 
-The second challenge that we face in empirical analysis is to **determine the nature of the input data** and other factors that have direct influence on the experiments to be performed.
+* The second challenge that we face in empirical analysis is to **determine the nature of the input data** and other factors that have direct influence on the experiments to be performed.
 
-Typically, we have three basic choices: 
-* **Actual data** enable us truly to measure the cost of the program in use
+    Typically, we have three basic choices: 
+    * **Actual data** enable us truly to measure the cost of the program in use
 
-* **Random data** assure us that our experiments test the algorithm, not the data
+    * **Random data** assure us that our experiments test the algorithm, not the data
 
-* **Perverse data** assure us that our programs can handle any input presented them.
+    * **Perverse data** assure us that our programs can handle any input presented them.
 
-The principal danger in comparing programs empirically is that one implementation may be coded more carefully than the other.
+The principal danger in comparing programs empirically is that **one implementation may be coded more carefully than the other**.
 
 
 ## Growth of Functions
@@ -78,8 +83,8 @@ Most algorithms have running times proportional to one of the following function
 
 The mathematical artifact that allows us to suppress detail when we are analyzing algorithms is called the **O-notation** which is defined as follows.
 
-Definition 2.1 A function g(N) is said to be O(f(N)) if there exist constants c0 and N0 such 
-that g(N) < c0 * f(N) for all N > N0. 
+Definition: **A function g(N) is said to be O(f(N)) if there exist constants c0 and N0 such 
+that g(N) < c0 * f(N) for all N > N0**. 
 
 To allow us to classify algorithms according to upper bounds on their total running times
 
@@ -91,6 +96,7 @@ We use the O-notation for three distinct purposes:
 The O-notation allows us to keep track of the leading terms while **ignoring smaller terms when manipulating approximate mathematical expressions**, and ultimately allows us to make concise statements that give accurate approximations to the quantities that we analyze.
 The O-notation provides us with a way to get an **approximate answer for large N** without bothering with such terms.
 
+![Growth of Functions](growth_of_functions/GrowthOfFunctions.png)
 
 Studying the **worst-case performance of algorithms** is attractive because it allows us to make guarantees about the running time of programs. We say that the number of times certain abstract operations are executed is less than a certain function of the number of inputs, no matter what the input values are.
 
