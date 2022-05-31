@@ -7,14 +7,14 @@ suitable for implementation as a computer program.
 Most algorithms of interest involve methods of organizing the data involved in the computation. 
 Objects created in this way are called **data structures**. 
 
-Algorithms and data structures go hand in hand.
+**Algorithms and data structures go hand in hand**.
 
 
 ## Implementation and Empirical Analysis
 
 Analysis plays a role at every point in the process of designing and implementing algorithms.
 
-We design and develop algorithms by layering **abstract operations** that help us to understand the essential nature of the computational problems that we want to solve.
+We design and develop algorithms by using **abstract operations** that help us to understand the essential nature of the computational problems that we want to solve.
 In our course, we keep our feet on the ground by expressing all the algorithms that we consider in an actual **programming language: C**.
 
 Carefully constructed **programs** in an actual programming language provide an effective means of **expressing our algorithms**.
