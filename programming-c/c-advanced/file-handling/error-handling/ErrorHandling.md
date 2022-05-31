@@ -31,4 +31,7 @@ a status `EXIT_FAILURE` which is defined as `-1`.
 
 * [C - Error Handling](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm)
 
+* [errno.h](https://www2.hs-fulda.de/~klingebiel/c-stdlib/sys.errno.h.htm)
+
+
 *Egon Teiniker, 2020-2022, GPL v3.0* 
