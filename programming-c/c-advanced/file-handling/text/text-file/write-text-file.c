@@ -34,7 +34,7 @@ int main(void)
 
     for(int i=0; i < 12; i++)
     {
-        fprintf(fp, "%2d   %5.3lf\n", i+1, data[i]);
+        fprintf(fp, "%5.3lf\n", data[i]);
     }   
  
     fclose(fp);

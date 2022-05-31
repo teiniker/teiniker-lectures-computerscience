@@ -16,11 +16,13 @@ int main(void)
         return -1;
     }
     
-    int i;
-    double value;
-    while(fscanf(fptr, "%d %lf", &i, &value) != EOF)
+    int i=0;
+    char line[81];
+
+    while(fgets(line, 80, fptr) != NULL)
     {
-        printf("%3d \t %5.3f\n", i, value);
+        printf("%3d \t %s", i, line);
+        i++;
     }
     fclose(fptr);
 
