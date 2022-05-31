@@ -25,12 +25,16 @@ The following topics will be covered:
 
 * **Configuration Management**
    * [Introduction](configuration-management)
-   * [Source Code Versioning](configuration-management/versioning)
    * [Build Automation](configuration-management/building)
    * [Test Automation](configuration-management/testing)
-
+   * [Source Code Versioning](configuration-management/versioning)
+   * [Documentation](configuration-management/documentation/doxygen)
+   * [C Coding Standard](configuration-management/coding-standard)
+   
 * **Data Structures & Algorithms**
-   * [Datastructures](data-structures)
+   * [Introduction](datastructures%2Balgorithms/introduction) 
+   * [Data Structures](datastructures%2Balgorithms/datastructures)
+   
          
 * **Programming in C++**
    * [C++ Basics](programming-c++/c++basics/classes)
