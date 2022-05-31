@@ -15,7 +15,7 @@ When dealing with files in C, there are two types of files we should know about:
 ### File Pointer
 When working with files, you need to declare a **pointer of type file**. This declaration is needed for communication between the file and the program.
 ```C
-    FILE *fptr;
+    FILE *fp;
 ```
 
 ### Opening a File 
@@ -24,7 +24,7 @@ Opening a file is performed using the `fopen()` function defined in the `stdio.h
 
 The syntax for opening a file in standard I/O is:
 ```C
-    fptr = fopen("filename","mode");
+    fp = fopen("filename","mode");
 ```
 
 Possible opening **modes** in standard I/O are:
@@ -71,9 +71,9 @@ The file (both text and binary) should be closed after reading/writing.
 
 Closing a file is performed using the `fclose()` function.
 ```C
-    fclose(fptr);
+    fclose(fp);
 ```
-Here, `fptr` is a file pointer associated with the file to be closed.
+Here, `fp` is a file pointer associated with the file to be closed.
 
 
 ### Reading and Writing to a Text File
@@ -85,36 +85,69 @@ The only difference is that `fprintf()` and `fscanf()` expects a pointer to the 
 
 _Example_: Writing to a text file
 ```C
-    fprintf(fptr, "%2d   %5.3lf\n", i, value);
+    fprintf(fp, "%5.3lf\n", value);
 ```
 
 _Example_: Reading from a text file
 ```C
-    fscanf(fptr, "%d %lf", &i, &value);
+    fscanf(fp, "%lf", &value);
 ```
 
-Other functions like `fgetchar()`, `fputc()` etc. can be used in a similar way.
+Other functions like `fgetchar()`, `fgets()`, `fputc()` etc. can be used in a similar way.
 
 
 ### Reading and Writing to a Binary File
 
 Functions `fread()` and `fwrite()` are used for reading from and writing to a file on the disk respectively in case of binary files.
 
+To **write into a binary file**, we need to use the `fwrite()` function. 
+The functions take four arguments:
+* `address of data` to be written in the disk
+* `size of data` to be written in the disk
+* `number` of such type `of data`
+* `pointer to the file` where you want to write.
+
+
 _Example_: Writing to a binary file
 ```C
-    
+    fwrite(data, sizeof(double), NUMBER_OF_VALUES, fp);
 ```
+
+To read data from a binary file, we use the function `fread()` 
+which also takes the same four arguments:
+* `address of data` to be written in the disk
+* `size of data` to be written in the disk
+* `number` of such type `of data`
+* `pointer to the file` where you want to write.
 
 _Example_: Reading from a binary file
 ```C
-    
+    for(int i=0; i< NUMBER_OF_VALUES; i++)
+    {
+        fread(&data[i], sizeof(double), 1, fp);
+        printf("%2d  %lf\n", i, data[i]);
+    }
 ```
 
+If we have many records inside a file and need to **access a record at 
+a specific position**, we need to loop through all the records before 
+it to get the record.
+
+An easier way to get to the required data can be achieved using `fseek()`
+which seeks the cursor to the given record in the file, and takes the following 
+parameters:
+* pointer to the file 
+* offset which defines the position of the record to be found
+* specifies the location where the offset starts:
+    * `SEEK_SET`: Starts the offset from the beginning of the file.
+    * `SEEK_END`: Starts the offset from the end of the file.
+    * `SEEK_CUR`: Starts the offset from the current location of the cursor in the file.
 
 
-
-
-
+_Example_: Using `fseek()` to move the cursor to the 5th element (starting with 0) in the file
+```C
+    fseek(fp, sizeof(double) * 5, SEEK_SET);
+```
 
 
 ## References
