@@ -11,13 +11,8 @@ The following topics will be covered:
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)
-    * [C Advanced Topics](programming-c/c-advanced/README.md)
-     
-    * C Standard Library
-      * [assert.h](programming-c/c-std-lib/assert)
-      * [stdint.h](programming-c/c-std-lib/stdint)      
-      * [stdio.h](programming-c/c-std-lib/stdio)
-      * [string.h](programming-c/c-std-lib/string)
+    * [C Advanced Topics](programming-c/c-advanced)     
+    * [C Standard Library](programming-c/c-std-lib)
 
 * [**Arduino Platform**](https://github.com/teiniker/teiniker-lectures-arduino)
 
