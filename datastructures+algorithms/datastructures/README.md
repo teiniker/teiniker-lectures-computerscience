@@ -48,6 +48,7 @@ program that specifies the data type as an **implementation**.
     * Demo: [linked-list](list/linked-list)
     * Demo: [linked-list (pointers-to-pointers](linked-list2)
     * Demo: [linked-list (API structure)](linked-list3)
+    * Demo: [array-list (API structure)](array-list)
 
 * **Stack**
     * Exercise: [stack](stack/linked-stack-exercise) 
