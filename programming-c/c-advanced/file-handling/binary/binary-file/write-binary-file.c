@@ -25,8 +25,7 @@ int main(void)
 {
     char *file_name = "data.bin";
 
-    FILE *fp;
-    fp = fopen(file_name, "wb");
+    FILE *fp = fopen(file_name, "wb");
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't create file: %s !\n", file_name);

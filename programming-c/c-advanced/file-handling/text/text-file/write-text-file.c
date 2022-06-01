@@ -24,8 +24,7 @@ int main(void)
 {
     char *file_name = "measurement.txt";
 
-    FILE *fp;
-    fp = fopen(file_name, "w");
+    FILE *fp = fopen(file_name, "w");
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't create file: %s !\n", file_name);

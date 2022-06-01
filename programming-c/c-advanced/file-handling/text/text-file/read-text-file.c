@@ -8,12 +8,11 @@ int main(void)
 {
     char *file_name = "data.txt";
 
-    FILE *fp;
-    fp = fopen(file_name, "r");
+    FILE *fp = fopen(file_name, "r");
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", file_name);
-        return -1;
+        return EXIT_FAILURE;
     }
     
     int i=0;
@@ -25,5 +24,5 @@ int main(void)
     }
     fclose(fp);
 
-    return 0;
+    return EXIT_SUCCESS;
 }

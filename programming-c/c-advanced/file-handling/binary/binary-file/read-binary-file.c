@@ -11,8 +11,7 @@ int main(void)
 {
     char *file_name = "data.bin";
 
-    FILE *fp;
-    fp = fopen(file_name, "rb");
+    FILE *fp = fopen(file_name, "rb");
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", file_name);

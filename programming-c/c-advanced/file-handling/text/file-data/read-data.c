@@ -36,8 +36,7 @@ int main(void)
 
 int data_read(char *filename, double data[], size_t size)
 {
-    FILE *fptr;
-    fptr = fopen(filename, "r");
+    FILE *fptr = fopen(filename, "r");
     if (fptr == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", filename);
