@@ -45,7 +45,8 @@ program that specifies the data type as an **implementation**.
 ## Examples
 
 * **Linked List**
-    * Demo: [linked-list](list/linked-list)
+    * Demo: [linked-list (Concept)](list/linked-list)
+    * Demo: [linked-list](list/linked-list1)
     * Demo: [linked-list (pointers-to-pointers](linked-list2)
     * Demo: [linked-list (API structure)](linked-list3)
     * Demo: [array-list (API structure)](array-list)
