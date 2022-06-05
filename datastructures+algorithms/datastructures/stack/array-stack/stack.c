@@ -6,7 +6,7 @@ stack_t *stack_new(size_t size)
 {
     stack_t *stack = malloc(sizeof(stack_t));
     stack->size = size;
-    stack->top = 0;
+    stack->top = -1;
     stack->buffer = calloc(size, sizeof(int));
     return stack;
 }
@@ -25,7 +25,7 @@ bool stack_is_empty(stack_t *stack)
 
 bool stack_is_full(stack_t *stack)
 {
-    return stack->top >= stack->size;
+    return stack->top == stack->size;
 }
 
 void stack_push(stack_t *stack, int value)
@@ -33,8 +33,8 @@ void stack_push(stack_t *stack, int value)
     if(stack_is_full(stack))
         return;    // stack is full
     
+    stack->top++;
     stack->buffer[stack->top] = value;
-    stack->top++;    
 }
 
 int stack_top(stack_t *stack)
@@ -42,7 +42,7 @@ int stack_top(stack_t *stack)
     if(stack_is_empty(stack))
         return EXIT_FAILURE;
 
-    return stack->buffer[stack->top - 1];
+    return stack->buffer[stack->top];
 }
 
 int stack_pop(stack_t *stack)
@@ -58,7 +58,7 @@ int stack_pop(stack_t *stack)
 void stack_print(stack_t *stack)
 {
     printf("-->[ ");
-    for(int i=0; i < stack->top; i++)
+    for(int i=0; i <= stack->top; i++)
     {
         printf("%d ", stack->buffer[i]);       
     }
