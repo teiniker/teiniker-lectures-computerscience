@@ -14,8 +14,10 @@ Mainly the following basic operations are performed in the stack:
 
 ## References
 * [CS50 - Stacks](https://youtu.be/hVsNqhEthOk)
-      
+
+* [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+
 * Kyle Loudon. **Mastering Algorithms with C**. O'REILLY, 1999
     * Chapter 6: Stacks and Queues     
      
-*Egon Teiniker, 2020, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
