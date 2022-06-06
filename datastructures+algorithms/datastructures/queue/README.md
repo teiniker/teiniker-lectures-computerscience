@@ -16,7 +16,7 @@ Mainly the following basic operations are performed in the queue:
 
 
 ## References
-* [CS50 - Queues](https://youtu.be/3TmUv1uS92s)
+* [YouTube (CS50): Queues](https://youtu.be/3TmUv1uS92s)
 
 * Kyle Loudon. **Mastering Algorithms with C**. O'REILLY, 1999
     * Chapter 6: Stacks and Queues      

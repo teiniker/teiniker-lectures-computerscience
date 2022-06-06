@@ -13,7 +13,7 @@ Mainly the following basic operations are performed in the stack:
 
 
 ## References
-* [CS50 - Stacks](https://youtu.be/hVsNqhEthOk)
+* [YouTube (CS50): Stacks](https://youtu.be/hVsNqhEthOk)
 
 * [Stack Data Structure (Introduction and Program)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
 
