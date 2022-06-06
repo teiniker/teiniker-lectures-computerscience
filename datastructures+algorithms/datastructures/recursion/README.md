@@ -27,7 +27,7 @@ To do this, we define `n!` as n times the factorial of `(n-1)`.
 There are two basic phases in a recursive process:
 * In the **winding phase**, each recursive call preserve the recursion by making an additional recursive call itself.
     The winding phase terminates when one of the calls reaches a **terminating condition**.
-    A terminating condition defines the state at which a recursive function sgould return instead of making another 
+    A terminating condition defines the state at which a recursive function should return instead of making another 
     recursive call.
     Every recursive funstion must have at least one terminating condition, otherwise, the winding phase never terminates.
 
