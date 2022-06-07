@@ -9,9 +9,9 @@ node_t *root_ptr = NULL;
 /*
                 100
               /    \
-            20        500
-          /  \      
-        10     30        
+            20     500
+           /  \      
+         10    30        
 */
 
 void setUp(void)
