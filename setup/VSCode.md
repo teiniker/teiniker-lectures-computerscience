@@ -47,46 +47,9 @@ vector_a + vector_b = [-1 -2 35 ]
 vector_a - vector_b = [-13 2 -11 ]
 ```
 
-## Debugging C Programs
-
-We can debug a single file by switching into the debug view, click `Run and Debug` and select 
-`C++(GDB/LLDB)`. This creates the following `launch.json` file:
-```
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc - Build and debug active file",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc build active file",
-        }
-    ]
-}
-```
-Now we can open our C file, set a **breakpoint** and run the debugger by clicking the 
-**run button** on the left top corner of the IDE.
-
-![Debug a single file](figures/DebugSingleFile.png)
-
-
-
 ## References 
 * [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics)
 * [Debugging](https://code.visualstudio.com/docs/editor/debugging)
 * [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference) 
+
+*Egon Teiniker, 2020-2022, GPL v3.0* 
