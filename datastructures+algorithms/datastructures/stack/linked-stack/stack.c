@@ -27,7 +27,6 @@ void stack_delete(stack_t *stack)
 bool stack_is_empty(stack_t *stack)
 {
     return (stack->first_ptr == NULL);
-
 }
 
 void stack_push(stack_t *stack, int value)

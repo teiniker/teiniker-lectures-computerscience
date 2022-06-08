@@ -30,11 +30,8 @@ void test_is_not_empty(void)
 
 void test_is_empty(void)
 {
-    stack_pop(stack);
-    stack_pop(stack);
-    stack_pop(stack);
-
-    TEST_ASSERT_TRUE(stack_is_empty(stack));
+    stack_t *s = stack_new();
+    TEST_ASSERT_TRUE(stack_is_empty(s));
 }
 
 void test_pop(void) 
