@@ -6,6 +6,10 @@
 * [Bubble Sort](bubble-sort)
 * [Selection Sort](selection-sort)
 * [insertion Sort](insertion-sort)
+* [Merge Sort](merge-sort)
+* [Quick Sort](quick-sort)
+* [Quick Sort (C Standard Library)](quick-sort-stdlib)
+
 
 ## Searching Algorithms
 
