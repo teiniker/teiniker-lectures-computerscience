@@ -12,15 +12,15 @@ The basic steps to perform Binary Search are:
 * Repeatedly check from the second point until the value is found or the interval is empty.
 
 
-## Binary Search at Work
+## Example
 
 * Initial array: [2, 3, 4, 10, 40]; key = 10
 
-* First pass: [2, 3, **4**, 10, 40]; l=0, m=2, r=4  
+* First iteration: [2, 3, **4**, 10, 40]; l=0, m=2, r=4  
     * The mid element of the whole array is less then the key: 4 < 10
     * Search in the upper half
 
-* Second pass: [2, 3, 4, **10**, 40]; l=3, m=3, r=4
+* Second iteration: [2, 3, 4, **10**, 40]; l=3, m=3, r=4
     * The mid element is equal to the key: 10 == 10
     * Return the index of the mid element: 3
 

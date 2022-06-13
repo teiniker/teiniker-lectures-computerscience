@@ -2,25 +2,25 @@
 
 Bubble Sort is the simplest sorting algorithm that **works by repeatedly swapping the adjacent elements if they are in the wrong order**. This algorithm is not suitable for large data sets as its average and worst case time complexity is quite high.
 
-## Bubble Sort at Work
+## Example
 
 * Initial array: [5, 1, 4, 2, 8]
     
-* First pass:
+* First iteration:
     * Bubble sort starts with very first two elements, comparing them to check which one is greater.
     * [ **5**, **1**, 4, 2, 8 ] => [ **1**, **5**, 4, 2, 8 ] swaps since 5 > 1
     * [ 1, **5**, **4**, 2, 8 ] =>  [1, **4**, **5**, 2, 8 ] swap since 5 > 4
     * [ 1, 4, **5**, **2**, 8 ] =>  [ 1, 4, **2**, **5**, 8 ] swap since 5 > 2 
     * [ 1, 4, 2, **5**, **8** ] => [ 1, 4, 2, **5**, **8** ] elements are already in order (8 > 5)
     
-* Second pass: 
+* Second iteration: 
     * Now, during second iteration it should look like this:
     * [ **1**, **4**, 2, 5, 8 ] => [ **1**, **4**, 2, 5, 8 ] 
     * [ 1, **4**, **2**, 5, 8 ] => [ 1, **2**, **4**, 5, 8 ] swap since 4 > 2 
     * [ 1, 2, **4**, **5**, 8 ] => [ 1, 2, **4**, **5**, 8 ] 
     * [ 1, 2, 4, **5**, **8** ] => [ 1, 2, 4, **5**, **8** ] 
 
-* Third pass: 
+* Third iteration: 
     * Now, the array is **already sorted**, but our **algorithm does not know** 
         if it is completed.
     * The algorithm needs one whole pass without any swap to know it is sorted.
