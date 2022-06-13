@@ -1,16 +1,17 @@
 # Algorithms
+
 ## Searching Algorithms
 
-* [Linear Search](search/linear-search)
-* [Binary Search](search/binary-search)
-* [Binary Search (C Standard Library)](search/binary-search-stdlib)
+* [Linear Search](searching/linear-search)
+* [Binary Search](searching/binary-search)
+* [Binary Search (C Standard Library)](searching/binary-search-stdlib)
 
 
 ## Sorting Algorithms
 
 * [Bubble Sort](sorting/bubble-sort)
 * [Selection Sort](sorting/selection-sort)
-* [insertion Sort](sorting/insertion-sort)
+* [Insertion Sort](sorting/insertion-sort)
 * [Merge Sort](sorting/merge-sort)
 * [Quick Sort](sorting/quick-sort)
 * [Quick Sort (C Standard Library)](sorting/quick-sort-stdlib)
