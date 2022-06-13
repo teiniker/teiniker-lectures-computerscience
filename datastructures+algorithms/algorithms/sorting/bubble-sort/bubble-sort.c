@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void array_bubble_sort(int data[], int n);
-void array_print(int data[], int size);
-
-#define N 5
-int data[N] = { 5, 1, 4, 2, 8 };
-
-int main(void)
-{
-    array_bubble_sort(data, N);
-    array_print(data, N);
-
-    return EXIT_SUCCESS;
-}
+#include "bubble-sort.h"
 
 void swap(int* xp, int* yp)
 {

@@ -1,21 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void array_selection_sort(int data[], int n);
-void array_print(int data[], int size);
-
+#include "selection-sort.h"
  
-#define N 5
-int data[N] = {64, 25, 12, 22, 11};
-
-int main(void)
-{
-    array_selection_sort(data, N);
-    array_print(data, N);
-
-    return EXIT_SUCCESS;
-}
-
 void swap(int *xp, int *yp)
 {
     int temp = *xp;

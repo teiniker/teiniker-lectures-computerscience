@@ -1,22 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void array_merge_sort(int data[], int n);
-void array_print(int data[], int size);
-
+#include "merge-sort.h"
  
-#define N 6
-int data[N] = {12, 11, 13, 5, 6, 7 };
-
-int main(void)
-{
-    array_merge_sort(data, N);
-    array_print(data, N);
-
-    return EXIT_SUCCESS;
-}
-
-
 // Merges two subarrays of data[]
 // First subarray is data[l..m]
 // Second subarray is data[m+1..r]
@@ -26,16 +12,20 @@ void merge(int data[], int l, int m, int r)
     int n1 = m - l + 1;
     int n2 = r - m;
  
-    /* create temp arrays */
+    // Create temp arrays 
     int L[n1], R[n2];
  
-    /* Copy data to temp arrays L[] and R[] */
+    // Copy data to temp arrays L[] and R[] 
     for (i = 0; i < n1; i++)
+    {
         L[i] = data[l + i];
+    }
     for (j = 0; j < n2; j++)
+    {
         R[j] = data[m + 1 + j];
- 
-    /* Merge the temp arrays back into data[l..r]*/
+    }
+
+    // Merge the temp arrays back into data[l..r]
     i = 0; // Initial index of first subarray
     j = 0; // Initial index of second subarray
     k = l; // Initial index of merged subarray
@@ -54,8 +44,7 @@ void merge(int data[], int l, int m, int r)
         k++;
     }
  
-    /* Copy the remaining elements of L[], if there
-    are any */
+    // Copy the remaining elements of L[], if there are any 
     while (i < n1) 
     {
         data[k] = L[i];
@@ -63,8 +52,7 @@ void merge(int data[], int l, int m, int r)
         k++;
     }
  
-    /* Copy the remaining elements of R[], if there
-    are any */
+    // Copy the remaining elements of R[], if there are any 
     while (j < n2) 
     {
         data[k] = R[j];
@@ -74,14 +62,12 @@ void merge(int data[], int l, int m, int r)
 }
 
 
-/* l is for left index and r is right index of the
-sub-array of arr to be sorted */
+// l is for left index and r is right index of the sub-array of arr to be sorted 
 void merge_sort(int arr[], int l, int r)
 {
     if (l < r) 
     {
-        // Same as (l+r)/2, but avoids overflow for
-        // large l and h
+        // Same as (l+r)/2, but avoids overflow for large l and h
         int m = l + (r - l) / 2;
  
         // Sort first and second halves

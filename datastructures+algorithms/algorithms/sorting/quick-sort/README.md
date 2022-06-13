@@ -14,11 +14,10 @@ we swap current element with arr[i]. Otherwise we ignore current element.
 
 
 
-## Quick Sort at Work
+## Example
 
 * Initial array [10, 80, 30, 90, 40, 50, 70]
 
-* First pass:
     
 
 ## Complexity Analysis:

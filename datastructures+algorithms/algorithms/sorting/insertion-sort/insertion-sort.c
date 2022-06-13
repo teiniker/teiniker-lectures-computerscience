@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void array_insertion_sort(int data[], int n);
-void array_print(int data[], int size);
-
-#define N 5
-int data[N] = { 12, 11, 13, 5, 6 };
-
-int main(void)
-{
-    array_insertion_sort(data, N);
-    array_print(data, N);
-
-    return EXIT_SUCCESS;
-}
+#include "insertion-sort.h"
 
 void array_insertion_sort(int data[], int n)
 {

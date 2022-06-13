@@ -11,13 +11,13 @@ A simple approach is to do a linear search:
 
 * Initial array: [2, 3, 4, 10, 40]; key = 10
 
-* First pass: [**2**, 3, 4, 10, 40]; 2 != key
+* First iteration: [**2**, 3, 4, 10, 40]; 2 != key
 
-* Second pass: [2, **3**, 4, 10, 40]; 3 != key
+* Second iteration: [2, **3**, 4, 10, 40]; 3 != key
 
-* Third pass: [2, 3, **4**, 10, 40]; 4 != key
+* Third iteration: [2, 3, **4**, 10, 40]; 4 != key
 
-* Fourth pass: [2, 3, 4, **10**, 40]; 10 == key
+* Fourth iteration: [2, 3, 4, **10**, 40]; 10 == key
     * Return the index 3 as the position of the key in the array.
 
 ## Complexity Analysis:

@@ -4,11 +4,10 @@ Merge Sort is a **Divide and Conquer** algorithm. It divides the input array int
 
 The merge() function is used for merging two halves. The merge(data, l, m, r) is a key process that assumes that data[l..m] and data[m+1..r] are sorted and merges the two sorted sub-arrays into one. 
 
-## Merge Sort at Work
+## Example
 
 * Initial array [38, 27, 43, 3, 9, 82, 10]
 
-* First pass:
     
 
 ## Complexity Analysis:
