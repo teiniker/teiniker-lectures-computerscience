@@ -15,7 +15,7 @@ void tearDown(void)
 {
 }
 
-void test_linear_search(void)
+void test_binary_search(void)
 {
     int x = 10;
     int index = array_binary_search(data, N, x);
@@ -27,7 +27,7 @@ void test_linear_search(void)
 int main(void)
 {
 	UNITY_BEGIN();
-	RUN_TEST(test_linear_search);
+	RUN_TEST(test_binary_search);
 
 	return UNITY_END();
 }
