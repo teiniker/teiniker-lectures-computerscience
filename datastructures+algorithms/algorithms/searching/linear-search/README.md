@@ -7,7 +7,7 @@ A simple approach is to do a linear search:
 * If x matches with an element, return the index.
 * If x doesn’t match with any of elements, return -1.
 
-## Linear Search at Work
+## Example
 
 * Initial array: [2, 3, 4, 10, 40]; key = 10
 
