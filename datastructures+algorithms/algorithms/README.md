@@ -13,9 +13,9 @@
 
 ## Searching Algorithms
 
-* [Linear Search](search/linear-search)
-* [Binary Search](search/binary-search)
-* [Binary Search (C Standard Library)](search/binary-search-stdlib)
+* [Linear Search](searching/linear-search)
+* [Binary Search](searching/binary-search)
+* [Binary Search (C Standard Library)](searching/binary-search-stdlib)
 
 
 ## References:
