@@ -66,7 +66,7 @@ class ComplexNumber
         double _re;
         double _im;
    
-   public:
+    public:
         ComplexNumber(double re, double im);
         ~ComplexNumber();
         
@@ -78,8 +78,7 @@ class ComplexNumber
         void sub(ComplexNumber c);
 };
 ``` 
-All members of a class (attributes and methods) are private 
-per default.
+All members of a class (attributes and methods) are private per default.
 
 We can separate the 
 declaration and the implementation of methods (header and source file).
@@ -204,4 +203,4 @@ Bjarne Stroustrup. **The C++ Programming Language.** Pearson 4th Edition 2017
 
 [Destructors in C++](https://www.geeksforgeeks.org/destructors-c/)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
