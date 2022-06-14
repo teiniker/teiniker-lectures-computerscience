@@ -61,19 +61,9 @@ program that specifies the data type as an **implementation**.
 
 * **Binary Tree**
     * Demo: [binary-tree](tree/binary-tree)
-    * Demo: [binary-search-tree](tree/binary-search-tree)
-    * Demo: [binary-search-tree (comparison function)](tree/binary-search-tree2)
-    * Exercise: [binary-search-tree-students](tree/binary-search-tree-students-exercise) 
-        ([model solution](tree/binary-search-tree-students))
 
 ## References
 
-* [YouTube (CS50): Arrays](https://youtu.be/YdSycMcxvY0)
-* [YouTube (CS50): Singly-Linked Lists](https://youtu.be/zQI3FyWm144) 
-* [YouTube (CS50): Doubly-Linked Lists](https://youtu.be/FHMPswJDCvU) 
-* [YouTube (CS50): Stacks](https://youtu.be/hVsNqhEthOk)
-* [YouTube (CS50): Queues](https://youtu.be/3TmUv1uS92s)
-* [YouTube (CS50): Hash Tables](https://youtu.be/nvzVHwrrub0)
 * [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
 
 * Robert Sedgewick. **Algorithms in C, Parts 1-4: Fundamentals, Data Structures, Sorting, Searching**. Pearson Education, 1998 

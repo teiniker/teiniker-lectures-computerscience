@@ -5,7 +5,10 @@
 * [Linear Search](searching/linear-search)
 * [Binary Search](searching/binary-search)
 * [Binary Search (C Standard Library)](searching/binary-search-stdlib)
-
+* [Binary Search Tree](searching/binary-search-tree)
+  * Demo: [Binary Search Tree (comparator function)](searching/binary-search-tree2)
+  * Exercise: [Binary Search Tree (students)](searching/binary-search-tree-students-exercise) 
+        ([model solution](searching/binary-search-tree-students))
 
 ## Sorting Algorithms
 
