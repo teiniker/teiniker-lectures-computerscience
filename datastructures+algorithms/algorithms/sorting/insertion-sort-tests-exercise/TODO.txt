@@ -1,0 +1,29 @@
+Exercise: Testing Insertion Sort
+-------------------------------------------------------------------------------
+
+Sie haben eine Implementierung von Insertion Sort gegeben.
+Diese Implementierung wird mit der Funktion "test_insertion_sort()" getestet.
+
+Erweitern sie die Test Suite um die folgenden Test-Funktionen:
+
+A) test_insertion_sort_dynamic()
+    Es soll ein Array von 10 int Werten am Heap angelegt werden.
+    Die 10 Elemente des Arrays sollen in einer Schleife auf die folgenden Werte 
+    gesetzt werden: [81 64 49 36 25 16 9 4 1 0] 
+    Sortieren Sie das Array.
+    Vergleichen Sie das sortierte Array mit den Werten erwarteteten Werten:
+    [0 1 4 9 16 25 36 49 64 81]. 
+
+B) test_insertion_sort_file()
+    Implementieren Sie eine Hilfs-Funktion: 
+        int *data_read(char *filename, size_t size)    
+    die "size" int Werte aus einem Textfile liest, ein Array dynamisch am Heap 
+    anlegt und die gelesenen Werte in das Array schreibt.
+    Die Funktion liefert den Pointer auf das dynamische Array zurück.
+
+    Verwenden Sie "data_read()" um die 25 int Werte aus dem File "data.txt" 
+    zu lesen.
+    Sortieren Sie das Array.
+    Vergleichen Sie das sortierte Array mit den 25 int Werten die im File 
+    "data-sorted.txt" stehen (verwenden die wieder "data_read()").
+
