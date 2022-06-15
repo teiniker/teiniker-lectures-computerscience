@@ -14,9 +14,9 @@ int data[N] = {10, 7, 8, 9, 1, 5};
  */
 int compare_ascending(const void * a, const void * b) 
 {
-    int value_a = *(int*)a;
-    int value_b = *(int*)b;     
-    return ( value_a - value_b);    
+    int *value_a = (int*)a;
+    int *value_b = (int*)b;     
+    return ( *value_a - *value_b);    
 }
 
 /*
