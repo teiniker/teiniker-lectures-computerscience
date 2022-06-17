@@ -3,7 +3,6 @@
 #include <unity.h>
 
 #define N 5
-int data[N] = { 2, 3, 4, 10, 40 };
 
 /*
  * Comparator function: ascending order
@@ -30,6 +29,7 @@ void tearDown(void)
 void test_binary_search(void)
 {
     int key = 10;
+    int data[N] = { 2, 3, 4, 10, 40 };
 
     int *item = bsearch (&key, data, N, sizeof (int), compare_ascending);
     printf("Found item = %d at index = %ld\n", *item, item-data);
@@ -40,6 +40,7 @@ void test_binary_search(void)
 
 void test_key_not_found(void)
 {
+    int data[N] = { 2, 3, 4, 10, 40 };
     int key = 666;
 
     int *item = bsearch (&key, data, N, sizeof (int), compare_ascending);
