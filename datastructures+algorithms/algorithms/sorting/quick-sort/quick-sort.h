@@ -1,7 +1,7 @@
 #ifndef _ARRAY_QUICK_SORT_H_
 #define _ARRAY_QUICK_SORT_H_
 
-extern void swap(int* a, int* b);
+extern void array_quick_sort(int data[], int n);
 
 /**
  * This function takes last element as pivot, places the pivot element at its 
@@ -15,9 +15,8 @@ extern void swap(int* a, int* b);
  */
 extern int partition (int data[], int low, int high);
 
-extern void array_print(int data[], int size);
+extern void swap(int* a, int* b);
 
-extern void array_quick_sort(int data[], int n);
+extern void array_print(int data[], int size);
  
 #endif /* _ARRAY_QUICK_SORT_H_ */ 
-#define N 6
