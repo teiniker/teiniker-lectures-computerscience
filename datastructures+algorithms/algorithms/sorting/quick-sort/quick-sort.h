@@ -5,12 +5,13 @@ extern void swap(int* a, int* b);
 
 /**
  * This function takes last element as pivot, places the pivot element at its 
- * correct position in sorted array, and places all smaller (smaller than pivot)
- * to left of pivot and all greater elements to right of pivot.
+ * correct position in the sorted array, and places all elements smaller than 
+ * the pivot element to left of the pivot element and all greater elements to 
+ * the right of the pivot element.
  * @param data array of data
- * @param low 
- * @param high 
- * @return int 
+ * @param low start of the subarray
+ * @param high end of the subarray
+ * @return int index of the pivot element
  */
 extern int partition (int data[], int low, int high);
 
