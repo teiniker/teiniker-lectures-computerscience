@@ -3,11 +3,11 @@
 
 #include "merge-sort.h"
  
-// Merges two subarrays of data[]
-// First subarray is data[l..m]
-// Second subarray is data[m+1..r]
 void merge(int data[], int l, int m, int r)
 {
+    printf("merge: l=%d m=%d r=%d  ", l, m, r);
+    array_print(data, 6);
+    
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
