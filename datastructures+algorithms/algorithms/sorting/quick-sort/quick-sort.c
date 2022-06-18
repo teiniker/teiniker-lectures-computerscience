@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void array_quick_sort(int data[], int n);
-void array_print(int data[], int size);
- 
-#define N 6
-int data[N] = {10, 7, 8, 9, 1, 5};
-
-int main(void)
-{
-    array_quick_sort(data, N);
-    array_print(data, N);
-
-    return EXIT_SUCCESS;
-}
+#include "quick-sort.h"
 
 void swap(int* a, int* b)
 {
@@ -22,13 +10,10 @@ void swap(int* a, int* b)
     *b = t;
 }
 
-/* This function takes last element as pivot, places
-the pivot element at its correct position in sorted
-array, and places all smaller (smaller than pivot)
-to left of pivot and all greater elements to right
-of pivot */
 int partition (int data[], int low, int high)
 {
+    printf("partition: low=%d high=%d\n", low, high);
+    
     int pivot = data[high]; // pivot
     int i = (low - 1); // Index of smaller element and indicates the right position of pivot found so far
  
