@@ -20,15 +20,15 @@ The following topics will be covered:
          * [Selection Statements (if, switch)](programming-c/c-basics/control-flow/selection)
          * [Loops (while, do-while, for)](programming-c/c-basics/control-flow/loops)
       * [Functions](programming-c/c-basics/functions/)
-      * [State Machines](programming-c/c-basics/functions/statemachine/)
+      * [State Machines](programming-c/c-basics/statemachine/)
       * [Arrays](programming-c/c-basics/arrays/)
          
-    * [C Advanced Topics](programming-c/c-advanced)
-      * [**Memory Management**](memory-management)
-      * [**Strings**](strings) 
-      * [**Structures**](structures)
-      * [**Modular Programming**](modules)
-      * [**File Handling**](file-handling)
+    * [C Advanced Topics](programming-c/c-advanced/)
+      * [Memory Management](programming-c/c-advanced/memory-management)
+      * [Strings](programming-c/c-advanced/strings) 
+      * [Structures](programming-c/c-advanced/structures)
+      * [Modular Programming](programming-c/c-advanced/modules)
+      * [File Handling](programming-c/c-advanced/file-handling)
       
     * [C Debugging](programming-c/c-debugging)
     
