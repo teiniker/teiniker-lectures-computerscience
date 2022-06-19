@@ -51,7 +51,7 @@ The following topics will be covered:
    * [Data Structures](datastructures%2Balgorithms/datastructures)
    * [Algorithms](datastructures%2Balgorithms/algorithms)
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
-      * [Sorting]((datastructures%2Balgorithms/algorithms/sorting)
+      * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
 * **Programming in C++**
    * [C++ Basics](programming-c++/c++basics/classes)
