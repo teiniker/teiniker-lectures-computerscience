@@ -42,7 +42,7 @@ The following topics will be covered:
    * [Build Automation](configuration-management/building)
    * [Test Automation](configuration-management/testing)
    * [Source Code Versioning](configuration-management/versioning)
-   * [Documentation](configuration-management/documentation/doxygen)
+   * [Source Code Documentation](configuration-management/documentation/doxygen)
    * [C Coding Standard](configuration-management/coding-standard)
    
 * **Data Structures & Algorithms**
