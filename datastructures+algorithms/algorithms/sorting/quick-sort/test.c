@@ -55,7 +55,7 @@ void test_quick_sort(void)
     // Verify
     array_print(data, 6);
     int expected[6] = { 1, 5, 7, 8, 9, 10 };
-    TEST_ASSERT_EQUAL_INT_ARRAY(expected, data, N);
+    TEST_ASSERT_EQUAL_INT_ARRAY(expected, data, 6);
 
     // Teardown
 }
