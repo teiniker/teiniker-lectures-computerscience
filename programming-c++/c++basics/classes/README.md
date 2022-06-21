@@ -15,8 +15,8 @@ complex_number_t *complex_number_new(double re, double im);
 void complex_number_add(complex_number_t *self, ComplexNumber c);
 void complex_number_sub(complex_number_t *self, ComplexNumber c);
 ```
-We can define multiple instances of this structure and apply the same 
-functions to each of these instances. We simply pass the pointer of the 
+We can define **multiple instances of this structure** and apply the **same 
+functions** to each of these instances. We simply pass the pointer of the 
 particular instance to a function.
 
 ```C
