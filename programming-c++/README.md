@@ -1,6 +1,6 @@
 # Programming in C++
 
-* [Classes](classes/)
+* [Classes](c++basics/classes/)
 
 
 ## References
