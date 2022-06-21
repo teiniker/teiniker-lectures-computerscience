@@ -82,7 +82,7 @@ All members of a class (attributes and methods) are private per default.
 
 We can separate the 
 declaration and the implementation of methods (header and source file).
-When we implement methods outside a class we use the scope **resolution :: operator**.
+When we implement methods outside a class we use the **scope resolution :: operator**.
 
 All the member functions defined inside the class definition are by 
 default **inline**, but we can also make any non-class function inline 
