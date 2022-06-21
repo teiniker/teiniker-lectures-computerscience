@@ -53,7 +53,8 @@ The following topics will be covered:
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
 * **Programming in C++**
-   * [C++ Basics](programming-c++/c++basics/classes)
+   * [C++ Basics](programming-c++/c++basics/)
+      * [Classes](programming-c++/c++basics/classes/)
 
 
 *Egon Teiniker, 2020-2022, GPL v3.0*         
