@@ -1,81 +1,81 @@
 # C Basics
 
 * **First Steps in C**    
-    * Demo: [language-processing](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/language_processing)
-    * Demo: [hello-world](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/hello-world)   
-    * Demo: [variables](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/introduction/variables)
+    * Demo: [language-processing](introduction/language_processing)
+    * Demo: [hello-world](introduction/hello-world)   
+    * Demo: [variables](introduction/variables)
         
 * **Types, Operators, and Expressions**
     * **Types**
-        * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/types-operators-expressions/types/README.md)
-        * Demo: [boolean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/boolean)
-        * Demo: [integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/integer)
-        * Demo: [floating_point](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/floating-point)
-        * Demo: [character](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/character)
-        * Demo: [types-sizeof](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/types/types-sizeof)
+        * [Introduction](types-operators-expressions/types/README.md)
+        * Demo: [boolean](types-operators-expressions/types/boolean)
+        * Demo: [integer](types-operators-expressions/types/integer)
+        * Demo: [floating_point](types-operators-expressions/types/floating-point)
+        * Demo: [character](types-operators-expressions/types/character)
+        * Demo: [types-sizeof](types-operators-expressions/types/types-sizeof)
         
     * **Formated Output**    
-        * Exercise: [print-integer](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/formated-output/print-integer))  
+        * Exercise: [print-integer](types-operators-expressions/formated-output/print-integer-exercise)
+        ([model solution](types-operators-expressions/formated-output/print-integer))  
 
     * **Operators and Expressions**
-        * Demo: [logical-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/logical-operators)  
-        * Demo: [assert](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/assert)
-        * Demo: [bitwise-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/bitwise-operators)
-        * Exercise: [bit-manipulation](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/bit-manipulation-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/bit-manipulation))
-        * Demo: [arithmetic-operators](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/types-operators-expressions/operators/arithmetic-operators)
+        * Demo: [logical-operators](types-operators-expressions/operators/logical-operators)  
+        * Demo: [assert](types-operators-expressions/operators/assert)
+        * Demo: [bitwise-operators](types-operators-expressions/operators/bitwise-operators)
+        * Exercise: [bit-manipulation](types-operators-expressions/operators/bit-manipulation-exercise)
+        ([model solution](types-operators-expressions/operators/bit-manipulation))
+        * Demo: [arithmetic-operators](types-operators-expressions/operators/arithmetic-operators)
          
 
 * **Control Flow**
-    * [**UML Activity Diagram**](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
+    * [**UML Activity Diagram**](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
     * **Selection Statements (if, switch)**
-        * Demo: [if_statement, switch statement, conditional_expression](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection)
-        * Exercise: [constraint](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/constraint-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/constraint))
-        * Exercise: [leap-year](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/leap-year))
-         * [Enumerations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/selection/enumerations)
+        * Demo: [if_statement, switch statement, conditional_expression](control-flow/selection)
+        * Exercise: [constraint](control-flow/selection/constraint-exercise)
+         ([model solution](control-flow/selection/constraint))
+        * Exercise: [leap-year](control-flow/selection/leap-year-exercise)
+        ([model solution](control-flow/selection/leap-year))
+         * [Enumerations](control-flow/selection/enumerations)
 
     * **Loops (while, do-while, for)**   
-        * Demo: [while_loop, for_loop, do_while_loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops)
-        * Exercise: [arduino-sketch](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/arduino-sketch-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/arduino-sketch))    
-        * Exercise: [print-ascii-table](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/print-ascii-table))    
-        * Exercise: [little-gauss](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/little-gauss))
-        * Exercise: [time-counter](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/time-counter-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/control-flow/loops/time-counter))        
+        * Demo: [while_loop, for_loop, do_while_loop](control-flow/loops)
+        * Exercise: [arduino-sketch](control-flow/loops/arduino-sketch-exercise)
+        ([model solution](control-flow/loops/arduino-sketch))    
+        * Exercise: [print-ascii-table](control-flow/loops/print-ascii-table-exercise)
+        ([model solution](control-flow/loops/print-ascii-table))    
+        * Exercise: [little-gauss](control-flow/loops/little-gauss-exercise)
+        ([model solution](control-flow/loops/little-gauss))
+        * Exercise: [time-counter](control-flow/loops/time-counter-exercise)
+        ([model solution](control-flow/loops/time-counter))        
             
 * **Functions**
-    * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/functions/README.md) 
-    * Demo: [functions](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions)
-    * Exercise: [function-resistors](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/function-resistors))
-    * Exercise: [base16](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/base16-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/base16))    
-    * Exercise: [bin-utils](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/bit-utils-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/functions/bit-utils))  
+    * [Introduction](functions/README.md) 
+    * Demo: [functions](functions/)
+    * Exercise: [function-resistors](functions/function-resistors-exercise)
+        ([model solution](functions/function-resistors))
+    * Exercise: [base16](functions/base16-exercise)
+        ([model solution](functions/base16))    
+    * Exercise: [bin-utils](functions/bit-utils-exercise)
+        ([model solution](functions/bit-utils))  
       
 * **Arrays**
-    * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/arrays/README.md)
-    * Demo: [one_dimensional_array, two_dimensional_array](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays)
-    * Exercise: [array-xor-encryption](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-xor-encryption-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-xor-encryption))
-    * Exercise: [array-min-max-mean](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-min-max-mean-exercise)
-        ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-min-max-mean))
-    * Exercise: [array-vector-operations](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-vector-operations-exercise)
-         ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/arrays/array-vector-operations))
+    * [Introduction](arrays/README.md)
+    * Demo: [one_dimensional_array, two_dimensional_array](arrays)
+    * Exercise: [array-xor-encryption](arrays/array-xor-encryption-exercise)
+        ([model solution](arrays/array-xor-encryption))
+    * Exercise: [array-min-max-mean](arrays/array-min-max-mean-exercise)
+        ([model solution](arrays/array-min-max-mean))
+    * Exercise: [array-vector-operations](arrays/array-vector-operations-exercise)
+         ([model solution](arrays/array-vector-operations))
 
 
 * **State Machines**
-   * [Introduction](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/c-basics/statemachine/README.md)  
-   * Demo: [sm-light-bulb](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine)
-   * Exercise: [sm-parking-gate](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-parking-gate))
-   * Exercise: [sm-roller-blind](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind-exercise)
-      ([model solution](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-basics/statemachine/sm-roller-blind))
+   * [Introduction](statemachine/README.md)  
+   * Demo: [sm-light-bulb](statemachine/)
+   * Exercise: [sm-parking-gate](statemachine/sm-parking-gate-exercise)
+      ([model solution](statemachine/sm-parking-gate))
+   * Exercise: [sm-roller-blind](statemachine/sm-roller-blind-exercise)
+      ([model solution](statemachine/sm-roller-blind))
       
 
 ## References
