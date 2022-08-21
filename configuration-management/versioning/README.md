@@ -29,4 +29,7 @@ The next step is to use a **remote repository** such as **GitHub** or GitLab:
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
+* [YouTube (Dave Farley): GOTO 2022 - Git Flow Is A Bad Idea](https://youtu.be/JOr4QeIjyW4)
+
+
 *Egon Teiniker, 2020-2022, GPL v3.0*
