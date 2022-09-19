@@ -55,6 +55,6 @@ The following topics will be covered:
 * **Programming in C++**
    * [C++ Basics](programming-c++/c++basics/)
       * [Classes](programming-c++/c++basics/classes/)
-
+   * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*         
