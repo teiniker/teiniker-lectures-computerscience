@@ -8,7 +8,7 @@ The following topics will be covered:
 * **Development Environments**
     * [Setup](setup/)
       * [**Windows: MinGw, Git, VS Code**](setup)
-      * [**Virtual Lab: Linux VM (Debian 11)**](linux/setup)
+      * [**Virtual Lab: Linux VM (Debian 11.5)**](linux/setup)
     * [**Arduino Platform**](https://github.com/teiniker/teiniker-lectures-arduino)
     * [**Linux Platform**](linux)
          
