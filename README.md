@@ -14,6 +14,7 @@ The following topics will be covered:
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)
+      * [Language Processing](programming-c/c-basics/introduction/language_processing)
       * [First Steps in C](programming-c/c-basics/introduction)
       * [Types, Operators, and Expressions](programming-c/c-basics/types-operators-expressions/)
          * [Types](programming-c/c-basics/types-operators-expressions/types/) 
