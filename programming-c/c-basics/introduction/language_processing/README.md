@@ -133,4 +133,4 @@ Using the **Java Virtual Machine (JVM)** the bytecode will be interpreted and ex
 Randall Hyde. **Writing Great Code, Volume 2: Thinking Low Level, Writing High Level**. No Starch Press, 2020
 
  
-*Egon Teiniker, 2020-21, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
