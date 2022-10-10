@@ -1,8 +1,8 @@
 # C Basics
 
 * **First Steps in C**    
-    * Demo: [language-processing](introduction/language_processing)
-    * Demo: [hello-world](introduction/hello-world)   
+    * Demo: [Language Processing](introduction/language_processing)
+    * Demo: [A Simple Program](introduction/hello-world)   
     * Demo: [variables](introduction/variables)
         
 * **Types, Operators, and Expressions**

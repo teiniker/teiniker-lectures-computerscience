@@ -7,14 +7,15 @@ The following topics will be covered:
 
 * **Development Environments**
     * [Setup](setup/)
-      * [**Windows: MinGw, Git, VS Code**](setup)
-      * [**Virtual Lab: Linux VM (Debian 11)**](linux/setup)
-    * [**Arduino Platform**](https://github.com/teiniker/teiniker-lectures-arduino)
-    * [**Linux Platform**](linux)
+      * [Windows: MinGw, Git, VS Code](setup)
+      * [Virtual Lab: Linux VM (Debian 11.5)](linux/setup)
+    * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
+    * [Linux Platform](linux)
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)
-      * [First Steps in C](programming-c/c-basics/introduction)
+      * [Language Processing](programming-c/c-basics/introduction/language_processing)
+      * [A Simple Program](programming-c/c-basics/introduction/hello-world)
       * [Types, Operators, and Expressions](programming-c/c-basics/types-operators-expressions/)
          * [Types](programming-c/c-basics/types-operators-expressions/types/) 
          * [Formated Output](programming-c/c-basics/types-operators-expressions/)
@@ -55,6 +56,6 @@ The following topics will be covered:
 * **Programming in C++**
    * [C++ Basics](programming-c++/c++basics/)
       * [Classes](programming-c++/c++basics/classes/)
-
+   * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*         
