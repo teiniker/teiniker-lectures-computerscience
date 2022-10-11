@@ -13,29 +13,9 @@ The following topics will be covered:
     * [Linux Platform](linux)
          
 * **Programming in C**
-    * [C Basics](programming-c/c-basics)
-      * [Language Processing](programming-c/c-basics/introduction/language_processing)
-      * [A Simple Program](programming-c/c-basics/introduction/hello-world)
-      * [Types, Operators, and Expressions](programming-c/c-basics/types-operators-expressions/)
-         * [Types](programming-c/c-basics/types-operators-expressions/types/) 
-         * [Formated Output](programming-c/c-basics/types-operators-expressions/)
-         * [Operators and Expressions](programming-c/c-basics/types-operators-expressions/operators/)
-      * [Control Flow](programming-c/c-basics/control-flow/)
-         * [Selection Statements (if, switch)](programming-c/c-basics/control-flow/selection)
-         * [Loops (while, do-while, for)](programming-c/c-basics/control-flow/loops)
-      * [Functions](programming-c/c-basics/functions/)
-      * [State Machines](programming-c/c-basics/statemachine/)
-      * [Arrays](programming-c/c-basics/arrays/)
-         
-    * [C Advanced Topics](programming-c/c-advanced/)
-      * [Memory Management](programming-c/c-advanced/memory-management)
-      * [Strings](programming-c/c-advanced/strings) 
-      * [Structures](programming-c/c-advanced/structures)
-      * [Modular Programming](programming-c/c-advanced/modules)
-      * [File Handling](programming-c/c-advanced/file-handling)
-      
+    * [C Basics](programming-c/c-basics)         
+    * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Debugging](programming-c/c-debugging)
-    
     * [C Standard Library](programming-c/c-std-lib)
 
 * **Configuration Management**
