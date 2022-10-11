@@ -14,12 +14,10 @@
         * [Type Sizes](types-operators-expressions/types/types-sizeof)
         
     * Operators and Expressions
-        * Demo: [logical-operators](types-operators-expressions/operators/logical-operators)  
-        * Demo: [assert](types-operators-expressions/operators/assert)
-        * Demo: [bitwise-operators](types-operators-expressions/operators/bitwise-operators)
-        * Exercise: [bit-manipulation](types-operators-expressions/operators/bit-manipulation-exercise)
-        ([model solution](types-operators-expressions/operators/bit-manipulation))
-        * Demo: [arithmetic-operators](types-operators-expressions/operators/arithmetic-operators)
+        * [Logical Expressions](types-operators-expressions/operators/logical-operators)  
+        * [Assert Statements](types-operators-expressions/operators/assert)
+        * [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
+        * [Arithmetic Operators](types-operators-expressions/operators/arithmetic-operators)
          
 * **Control Flow**
     * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
