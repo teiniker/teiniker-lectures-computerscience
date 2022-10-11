@@ -22,6 +22,8 @@ The types in C can be classified as follows:
 
 ## References
 
+* [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)
+
 * Online Converters
     * [Integers](https://www.rapidtables.com/convert/number/decimal-to-binary.html)
     * [IEEE754 float](https://www.binaryconvert.com/convert_float.html)
@@ -31,5 +33,4 @@ The types in C can be classified as follows:
 
 * [C Data Types (Tutorialspoint)](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 
-* [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)
 
