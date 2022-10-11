@@ -1,7 +1,7 @@
 # C Basics
 
 * **Introduction**    
-    * [Language Processing](introduction/language_processing)
+    * [Computer Language Processing](introduction/language_processing)
     * [A Simple Program](introduction/hello-world)   
         
 * **Types, Operators, and Expressions**
