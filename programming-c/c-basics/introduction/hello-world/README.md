@@ -1,4 +1,4 @@
-# A Simple Program
+# A Simple C Program
 
 A Simple C program has the following form:
 
@@ -80,4 +80,4 @@ This style of comment ends automatically at the end of a line.
 K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
  * Chapter 2: C Fundamentals
  
-*Egon Teiniker, 2020-21, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
