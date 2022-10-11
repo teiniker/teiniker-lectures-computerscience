@@ -6,19 +6,15 @@
     * Demo: [variables](introduction/variables)
         
 * **Types, Operators, and Expressions**
-    * **Types**
-        * [Introduction](types-operators-expressions/types/README.md)
-        * Demo: [boolean](types-operators-expressions/types/boolean)
-        * Demo: [integer](types-operators-expressions/types/integer)
-        * Demo: [floating_point](types-operators-expressions/types/floating-point)
-        * Demo: [character](types-operators-expressions/types/character)
-        * Demo: [types-sizeof](types-operators-expressions/types/types-sizeof)
-        
-    * **Formated Output**    
-        * Exercise: [print-integer](types-operators-expressions/formated-output/print-integer-exercise)
-        ([model solution](types-operators-expressions/formated-output/print-integer))  
+    * [Variables](types-operators-expressions/variables)
+    
+    * [Formated Ouput](types-operators-expressions/formated-output)
 
-    * **Operators and Expressions**
+    * Types
+        * [Data Types](types-operators-expressions/types)
+        * [Type Sizes](types-operators-expressions/types/types-sizeof)
+        
+    * Operators and Expressions
         * Demo: [logical-operators](types-operators-expressions/operators/logical-operators)  
         * Demo: [assert](types-operators-expressions/operators/assert)
         * Demo: [bitwise-operators](types-operators-expressions/operators/bitwise-operators)
@@ -26,10 +22,9 @@
         ([model solution](types-operators-expressions/operators/bit-manipulation))
         * Demo: [arithmetic-operators](types-operators-expressions/operators/arithmetic-operators)
          
-
 * **Control Flow**
-    * [**UML Activity Diagram**](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
-    * **Selection Statements (if, switch)**
+    * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
+    * Selection Statements (if, switch)
         * Demo: [if_statement, switch statement, conditional_expression](control-flow/selection)
         * Exercise: [constraint](control-flow/selection/constraint-exercise)
          ([model solution](control-flow/selection/constraint))
@@ -37,7 +32,7 @@
         ([model solution](control-flow/selection/leap-year))
          * [Enumerations](control-flow/selection/enumerations)
 
-    * **Loops (while, do-while, for)**   
+    * Loops (while, do-while, for)   
         * Demo: [while_loop, for_loop, do_while_loop](control-flow/loops)
         * Exercise: [arduino-sketch](control-flow/loops/arduino-sketch-exercise)
         ([model solution](control-flow/loops/arduino-sketch))    
