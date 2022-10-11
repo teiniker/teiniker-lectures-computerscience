@@ -14,8 +14,8 @@ The following topics will be covered:
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)         
-    * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Debugging](programming-c/c-debugging)
+    * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Standard Library](programming-c/c-std-lib)
 
 * **Configuration Management**
