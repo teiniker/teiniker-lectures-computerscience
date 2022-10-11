@@ -44,7 +44,7 @@ For `e` and `f` specifiers − this is the number of digits to be printed after 
 For `s` − this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. 
 
 
-_Example_: Using printf()
+_Example_: Using `printf()` for integer values
 ```C
     short i = 1;
     int j = -999;
