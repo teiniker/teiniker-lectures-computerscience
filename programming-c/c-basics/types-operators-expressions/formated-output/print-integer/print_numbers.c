@@ -9,11 +9,11 @@ int main(void)
     unsigned int o = 01234;
 
     printf("\t+---------------+-----------+\n");
-    printf("\t| short         |   %-02d      |\n", i);
+    printf("\t| short         |   %-7d |\n", i);
     printf("\t| int           |   %7d |\n", j);
     printf("\t| unsigned long |   %07u |\n", k);
     printf("\t+---------------+-----------+\n");
-    printf("\t| hex           | %08xf |\n", h);
+    printf("\t| hex           | %08x  |\n", h);
     printf("\t| octal         | %8o  |\n", o);
     printf("\t+---------------+-----------+\n");
 
