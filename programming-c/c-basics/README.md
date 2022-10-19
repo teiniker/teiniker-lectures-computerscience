@@ -7,7 +7,7 @@
 * **Types, Operators, and Expressions**
     * [Variables](types-operators-expressions/variables)
     
-    * [Formated Ouput](types-operators-expressions/formated-output)
+    * [Formated Output](types-operators-expressions/formated-output)
 
     * Types
         * [Data Types](types-operators-expressions/types)
