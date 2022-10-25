@@ -34,3 +34,5 @@ The types in C can be classified as follows:
 * [C Data Types (Tutorialspoint)](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 
 
+
+*Egon Teiniker, 2020-2022, GPL v3.0* 
