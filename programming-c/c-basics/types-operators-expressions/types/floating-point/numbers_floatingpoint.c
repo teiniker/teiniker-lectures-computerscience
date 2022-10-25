@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    float e = 2.71828;
+    float e = 2.71828f;
     double pi = 3.141592653589793;
     double x = 0.1;
-    float y = 1E-6;
+    float y = 1E-6f;
 
     printf("e  = %f\n", e);
     printf("pi = %f\n", pi);
