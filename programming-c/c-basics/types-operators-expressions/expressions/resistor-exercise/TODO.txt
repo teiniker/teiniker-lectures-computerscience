@@ -1,0 +1,15 @@
+Exercise: Resistor Circuit
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das den Gesamtwiederstand r_ges für die gegebene
+Schaltung berechnet:
+
+                   +---[ R2 ]---+
+                   |            |
+        o--[ R1 ]--+            +---o
+                   |            |
+                   +---[ R3 ]---+
+
+Geg: R1=100Ohm, R2=220Ohm, R3=330Ohm 
+
+Tip: Verwenden Sie double Variablen für die Berechnung von r_ges.
