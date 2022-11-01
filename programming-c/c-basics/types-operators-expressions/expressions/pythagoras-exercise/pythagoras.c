@@ -13,7 +13,7 @@ int main(void)
 
     // TODO: c=...
 
-    printf("a=%f, b=%f, c=%f\n", a,b,c);
+    printf("a=%5.2f, b=%5.2f, c=%5.2f\n", a,b,c);
     assert(fabs(EXPECTED - c) <= ERROR);
 
     return 0;

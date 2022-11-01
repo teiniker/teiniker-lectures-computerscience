@@ -6,7 +6,9 @@ Schreiben Sie ein C Programm, das den Satz von Pythagoras berechnen kann.
 Beispiel:
 a=7.000000, b=13.000000, c=14.764823
 
-Tipp: Verwenden sie die folgenden Funktionen aus math.h:
+Tipp: Verwenden sie die folgenden Funktionen aus math.h (siehe c-std-lib/math)
+- double pow(double base, double power);
+- double sqrt(double arg);
 
-double pow(double base, double power);
-double sqrt(double arg);
+Tipp: Sie müssen die libm.a mit linken: 
+    $ gcc -std=c99 -g -Wall   pythagoras.c -o pythagoras -lm

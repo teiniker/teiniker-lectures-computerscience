@@ -25,7 +25,9 @@ The `math.h` header defines various mathematical functions and one macro. All th
 
 * ...
 
+To add the math.h functions to our programm we have to link the libm.a library:
 ```C
+$ gcc -std=c99 -g -Wall program.c -o program -lm
 ```
 
 ## References
