@@ -37,7 +37,7 @@ int main(void)
     uint8_t byte;
     byte = 0xff;
     bitClear(byte, 3);
-    print_binary(byte);             // 0000000011110111
+    print_binary(byte);             // 11111111 11110111
     printf("\n");
 
     byte = 0x00;
