@@ -13,11 +13,14 @@
         * [Data Types](types-operators-expressions/types)
         * [Type Sizes](types-operators-expressions/types/types-sizeof)
         
-    * Operators and Expressions
-        * [Logical Expressions](types-operators-expressions/operators/logical-operators)  
+    * Operators 
+        * [Logical Operators](types-operators-expressions/operators/logical-operators)  
         * [Assert Statements](types-operators-expressions/operators/assert)
         * [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
         * [Arithmetic Operators](types-operators-expressions/operators/arithmetic-operators)
+    
+    * Expressions
+    
          
 * **Control Flow**
     * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
