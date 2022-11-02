@@ -1,4 +1,4 @@
-# Logical Expressions
+# Logical Operators
 
 Several of C's statements, including the if statement, must test the value 
 of an expression to see if it is `true` or `false`. 
