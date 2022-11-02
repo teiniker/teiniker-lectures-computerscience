@@ -1,0 +1,17 @@
+Exercise: Nibble (4bits) Manipulations
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das aus einer Byte Variable Nibbles extrahieren,
+und aus diesen wieder ein Byte zusammensetzen kann:
+
+A) Lesen Sie die unteren 4bits aus einem Byte und speichern
+    Sie diese in einer Variable vom Type "uint8_t" mit dem 
+    Namen "lo_nibble". 
+
+B) Lesen Sie die oberen 4bits aus einem Byte und speichern
+    Sie diese in einer Variable vom Type "uint8_t" mit dem 
+    Namen "hi_nibble". 
+
+C) Fügen Sie "lo_nibble" und "hi_nibble", in umgekehrter 
+    Reihenfolge, zu einem neuen Byte mit dem Namen "result" zusammen.
+    
