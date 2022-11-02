@@ -38,7 +38,6 @@ is equivalent to
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
   * Chapter 4: Expressions
-
 * [YouTube: CS50 - Operators](https://youtu.be/f1xZf4iJDWE)  
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2022, GPL v3.0* 
