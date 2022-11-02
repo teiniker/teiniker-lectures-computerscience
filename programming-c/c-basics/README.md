@@ -19,15 +19,14 @@
         * [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
         * [Arithmetic Operators](types-operators-expressions/operators/arithmetic-operators)
     
-    * Expressions
+    * [Expressions](types-operators-expressions/expressions)
       * [Comparing Doubles](types-operators-expressions/expressions/double-comparing)
       * Exercise: [Resistor](types-operators-expressions/expressions/resistor-exercise)
           ([model solution](types-operators-expressions/expressions/resistor))
       * Exercise: [Pythagoras](types-operators-expressions/expressions/pythagoras-exercise)
           ([model solution](types-operators-expressions/expressions/pythagoras))
          
-   * Type Conversions
-      * [Introduction](types-operators-expressions/type-conversions)
+   * [Type Conversions](types-operators-expressions/type-conversions)
       * [Double Conversion](types-operators-expressions/type-conversions/double-conversion)
          
 * **Control Flow**
