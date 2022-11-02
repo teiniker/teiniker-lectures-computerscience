@@ -1,43 +1,17 @@
-# Expressions
+# Expressions in C
 
-The simplest expressions are variables and constants.
-A **variable** represents a value to be computed as the program runs. 
-A **constant** represents a value that doesn't change.
+* [Introduction](types-operators-expressions/expressions/introduction) 
 
-More complicated expressions apply **operators** to operands (which are themselves expressions).
-Operators are the basic tool for building expressions, and C has a rich collection of them.
+* [Comparing Doubles](types-operators-expressions/expressions/double-comparing)
 
-## Order of Expression Evaluation
+* Exercise: [Resistor](types-operators-expressions/expressions/resistor-exercise)
+    ([model solution](types-operators-expressions/expressions/resistor))
 
-The table below shows the precedence of the most important operators.
-
-| Symbol | Meaning             | Precedence |
-|--------|---------------------|------------|
-| ++     | increment (postfix) | 1          |
-| --     | decrement (postfix) | 1          |  
-| ++     | increment (prefix)  | 2          |
-| --     | decrement (pretfix) | 2          |
-| +      | unary plus          | 2          | 
-| -      | unary minus         | 2          | 
-| * / %  | multiplicative      | 3          | 
-| + -    | addidive            | 4          |
-| =      | assignment          | 5          |
-
-Note that we can always control the evaluation order with parentheses.
-
-_Example_: Evaluation order of operators
-```C
-a = b += c++ - d + --e / -f
-```
-is equivalent to
-```C
-(a = (b += (((c++) - d) + ((--e) / (-f)))))
-```
+* Exercise: [Pythagoras](types-operators-expressions/expressions/pythagoras-exercise)
+    ([model solution](types-operators-expressions/expressions/pythagoras))
 
 
-## References
-* K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
-  * Chapter 4: Expressions
-* [YouTube: CS50 - Operators](https://youtu.be/f1xZf4iJDWE)  
- 
+* K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
+    * Chapter 4: Expressions
+
 *Egon Teiniker, 2020-2022, GPL v3.0* 

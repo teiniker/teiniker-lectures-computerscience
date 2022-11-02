@@ -12,17 +12,8 @@
     * [Data Types](types-operators-expressions/types)
         
     * [Operators](types-operators-expressions/operators) 
-        * [Logical Operators](types-operators-expressions/operators/logical-operators)  
-        * [Assert Statements](types-operators-expressions/operators/assert)
-        * [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
-        * [Arithmetic Operators](types-operators-expressions/operators/arithmetic-operators)
     
     * [Expressions](types-operators-expressions/expressions)
-      * [Comparing Doubles](types-operators-expressions/expressions/double-comparing)
-      * Exercise: [Resistor](types-operators-expressions/expressions/resistor-exercise)
-          ([model solution](types-operators-expressions/expressions/resistor))
-      * Exercise: [Pythagoras](types-operators-expressions/expressions/pythagoras-exercise)
-          ([model solution](types-operators-expressions/expressions/pythagoras))
          
    * [Type Conversions](types-operators-expressions/type-conversions)
       * [Double Conversion](types-operators-expressions/type-conversions/double-conversion)
