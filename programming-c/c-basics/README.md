@@ -11,7 +11,7 @@
 
     * [Data Types](types-operators-expressions/types)
         
-    * Operators 
+    * [Operators](types-operators-expressions/operators) 
         * [Logical Operators](types-operators-expressions/operators/logical-operators)  
         * [Assert Statements](types-operators-expressions/operators/assert)
         * [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
