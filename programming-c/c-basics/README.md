@@ -10,7 +10,6 @@
     * [Formated Output](types-operators-expressions/formated-output)
 
     * [Data Types](types-operators-expressions/types)
-        * [Type Sizes](types-operators-expressions/types/types-sizeof)
         
     * Operators 
         * [Logical Operators](types-operators-expressions/operators/logical-operators)  
