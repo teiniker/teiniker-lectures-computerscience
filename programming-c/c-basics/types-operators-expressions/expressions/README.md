@@ -1,14 +1,14 @@
 # Expressions in C
 
-* [Introduction](types-operators-expressions/expressions/introduction) 
+* [Introduction](introduction) 
 
-* [Comparing Doubles](types-operators-expressions/expressions/double-comparing)
+* [Comparing Doubles](double-comparing)
 
-* Exercise: [Resistor](types-operators-expressions/expressions/resistor-exercise)
-    ([model solution](types-operators-expressions/expressions/resistor))
+* Exercise: [Resistor](resistor-exercise)
+    ([model solution](resistor))
 
-* Exercise: [Pythagoras](types-operators-expressions/expressions/pythagoras-exercise)
-    ([model solution](types-operators-expressions/expressions/pythagoras))
+* Exercise: [Pythagoras](pythagoras-exercise)
+    ([model solution](pythagoras))
 
 
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
