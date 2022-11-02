@@ -9,8 +9,7 @@
     
     * [Formated Output](types-operators-expressions/formated-output)
 
-    * Types
-        * [Data Types](types-operators-expressions/types)
+    * [Data Types](types-operators-expressions/types)
         * [Type Sizes](types-operators-expressions/types/types-sizeof)
         
     * Operators 
