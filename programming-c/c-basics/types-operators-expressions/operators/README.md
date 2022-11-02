@@ -1,17 +1,17 @@
 # Operators in C
 
-* [Logical Operators](types-operators-expressions/operators/logical-operators)  
+* [Logical Operators](logical-operators)  
     
-* [Assert Statements](types-operators-expressions/operators/assert)
+* [Assert Statements](assert)
 
-* [Bitwise Operators](types-operators-expressions/operators/bitwise-operators)
-    * [bit-manipulation-arduino](types-operators-expressions/operators/bit-manipulation-arduino)
-    * Exercise: [bit-manipulation](types-operators-expressions/operators/bit-manipulation-exercise)
-        ([model solution](types-operators-expressions/operators/bit-manipulation))
-    * Exercise: [nibble-manipulation](types-operators-expressions/operators/nibble-manipulation-exercise)
-        ([model solution](types-operators-expressions/operators/nibble-manipulation))
+* [Bitwise Operators](bitwise-operators)
+    * [bit-manipulation-arduino](bit-manipulation-arduino)
+    * Exercise: [bit-manipulation](bit-manipulation-exercise)
+        ([model solution](bit-manipulation))
+    * Exercise: [nibble-manipulation](nibble-manipulation-exercise)
+        ([model solution](nibble-manipulation))
 
-* [Arithmetic Operators](types-operators-expressions/operators/arithmetic-operators)
+* [Arithmetic Operators](arithmetic-operators)
     
 
 
