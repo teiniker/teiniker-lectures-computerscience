@@ -4,20 +4,8 @@
     * [Computer Language Processing](introduction/language_processing)
     * [A Simple Program](introduction/hello-world)   
         
-* **Types, Operators, and Expressions**
-    * [Variables](types-operators-expressions/variables)
-    
-    * [Formated Output](types-operators-expressions/formated-output)
+* [**Types, Operators, and Expressions**](types-operators-expressions)
 
-    * [Data Types](types-operators-expressions/types)
-        
-    * [Operators](types-operators-expressions/operators) 
-    
-    * [Expressions](types-operators-expressions/expressions)
-         
-   * [Type Conversions](types-operators-expressions/type-conversions)
-      * [Double Conversion](types-operators-expressions/type-conversions/double-conversion)
-         
 * **Control Flow**
     * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
     * Selection Statements (if, switch)
