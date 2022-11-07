@@ -10,5 +10,10 @@ int main(void)
     printf(" U+03C0  = \u03C0 \n");
     printf(" U+2153  = \u2153 \n");
     printf(" U+1F642 = \U0001F642 \n");
+
+    printf(" U+1F353 = \U0001F353 \n");
+    printf(" U+1F643 = \U0001F643 \n");
+    printf(" U+1F480 = \U0001F480 \n");
+
     return 0;
 }
