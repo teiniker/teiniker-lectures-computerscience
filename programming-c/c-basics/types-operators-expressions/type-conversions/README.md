@@ -127,7 +127,7 @@ to integer numbers**.
     
 ## References
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
-    * Chapter 7: Basic Types 
-    
+    * Chapter 7: Basic Types    
+* [Common mathematical functions](https://en.cppreference.com/w/c/numeric/math)   
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
