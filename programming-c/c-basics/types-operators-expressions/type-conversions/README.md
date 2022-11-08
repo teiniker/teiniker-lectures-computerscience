@@ -34,7 +34,7 @@ We can divide the rules for performing the usual arithmetic conversions into two
     Note that these rules cover mixtures of integer and floating types: **if one operand has an integer type and
     the other hast a floating point type, the integer operand is converted into the floating-point**.
 
-_Example: Type conversions
+_Example_: Type conversions
 ```C
 char c;
 short int s;
