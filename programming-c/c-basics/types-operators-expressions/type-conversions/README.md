@@ -97,9 +97,37 @@ as
     ((double) divident) / divisor    
 ```
 
+## Rounding
+
+
+* **double ceil( double arg )**\
+    The `ceil()` function computes the nearest integer greater than the argument passed.
+  
+    _Example_: If `2.3` is passed to `ceil()`, it will return `3`.
+
+* **double floor(double arg)**\
+    The `floor()` function calculates the nearest integer less than the argument passed.
+    
+    _Example_: If `2.3` is passed to `floor()`, it will return `2`.
+    
+* **double round (double y)**\
+    The `round()` function provides the integer value that is nearest to the double argument 
+    passed to it. 
+    
+    If the decimal number is between `1` and `.5`, it gives an integer number less than the 
+    argument. If the decimal number is between `.6` and `.9`, it gives an integer number 
+    greater than the parameter.
+    
+* **double trunc(double arg)**\
+    The `trunc()` function allows to remove the decimal value from a floating number 
+    and return an inetger value.
+    
+    _Example_: If `2.3` is passed to `trunc()`, it will return 2.
+    
+    
 ## References
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
     * Chapter 7: Basic Types 
-
+    
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
