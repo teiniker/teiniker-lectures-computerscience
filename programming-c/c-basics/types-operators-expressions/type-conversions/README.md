@@ -99,10 +99,10 @@ as
 
 ## Rounding
 
-Some functions are defined in `math.h`, which enable a conversion of floating-point numbers 
-to integer numbers.
+Some functions are defined in `math.h`, which enable a conversion of **floating-point numbers 
+to integer numbers**.
 
-* **double ceil( double arg )**\
+* **double ceil( double arg)**\
     The `ceil()` function computes the nearest integer greater than the argument passed.
   
     _Example_: If `2.3` is passed to `ceil()`, it will return `3`.
