@@ -12,6 +12,8 @@
 
 * [Type Conversions](type-conversions)
     * [Double Conversion](type-conversions/double-conversion)
+    * [Rounding](type-conversions/rounding)
+    * Exercise: [sensor-data](type-conversions/sensor-data-exercise), ([model solution](type-conversions/sensor-data))
 
 
 ## References
