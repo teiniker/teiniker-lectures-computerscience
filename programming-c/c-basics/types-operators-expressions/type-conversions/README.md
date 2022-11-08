@@ -34,7 +34,7 @@ We can divide the rules for performing the usual arithmetic conversions into two
     Note that these rules cover mixtures of integer and floating types: **if one operand has an integer type and
     the other hast a floating point type, the integer operand is converted into the floating-point**.
 
-_Example: Type conversions
+_Example_: Type conversions
 ```C
 char c;
 short int s;
@@ -67,7 +67,7 @@ For this reason, C provides **cast expressions**:
 ```
 where **type-name** specifies the type to which the expression should be converted.
 
-_Example: Convert a floating-point into an integer type
+_Example_: Convert a floating-point into an integer type
 ```C
     float f;
     int i;
@@ -81,7 +81,7 @@ Cast expressions enable us to **document type conversions** that would take plac
 
 They also enable us to overrule the compiler and force it to do conversations that we want.
 
-_Example: 
+_Example_: 
 ```C
     double quotient;
     int dividend, divisor;
@@ -97,9 +97,37 @@ as
     ((double) divident) / divisor    
 ```
 
+## Rounding
+
+Some functions are defined in `math.h`, which enable a conversion of **floating-point numbers 
+to integer numbers**.
+
+* **double ceil( double arg)**\
+    The `ceil()` function computes the nearest integer greater than the argument passed.
+  
+    _Example_: If `2.3` is passed to `ceil()`, it will return `3`.
+
+* **double floor(double arg)**\
+    The `floor()` function calculates the nearest integer less than the argument passed.
+    
+    _Example_: If `2.3` is passed to `floor()`, it will return `2`.
+    
+* **double round (double arg)**\
+    The `round()` function provides the integer value that is nearest to the double argument 
+    passed to it. 
+    
+    _Example_: `round(0.5)` is `1.0`, and `round(-0.5)` is `-1.0`
+    
+* **double trunc(double arg)**\
+    The `trunc()` function allows to remove the decimal value from a floating number 
+    and return an inetger value.
+    
+    _Example_: If `2.3` is passed to `trunc()`, it will return `2`.
+    
+    
 ## References
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
-    * Chapter 7: Basic Types 
-
+    * Chapter 7: Basic Types    
+* [Common mathematical functions](https://en.cppreference.com/w/c/numeric/math)   
 
 *Egon Teiniker, 2020-2022, GPL v3.0* 
