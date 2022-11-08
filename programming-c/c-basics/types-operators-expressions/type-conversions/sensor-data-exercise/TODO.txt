@@ -1,0 +1,11 @@
+Exercise: Sensor Data 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das den 10 bit Analog-to-Digital Converter Wert
+umrechnet:
+
+A) In eine Spannung im Wertebereich 0.00 bis 5.00 V 
+
+B) In einen Temperatur-Wert im Wertebereich -20.0 bis 80.0 °C
+
+Tipp: Überprüfen Sie Ihre Berechnungen auch an den Rändern des ADC Intervalls.
