@@ -99,6 +99,8 @@ as
 
 ## Rounding
 
+Some functions are defined in `math.h`, which enable a conversion of floating-point numbers 
+to integer numbers.
 
 * **double ceil( double arg )**\
     The `ceil()` function computes the nearest integer greater than the argument passed.
@@ -110,19 +112,17 @@ as
     
     _Example_: If `2.3` is passed to `floor()`, it will return `2`.
     
-* **double round (double y)**\
+* **double round (double arg)**\
     The `round()` function provides the integer value that is nearest to the double argument 
     passed to it. 
     
-    If the decimal number is between `1` and `.5`, it gives an integer number less than the 
-    argument. If the decimal number is between `.6` and `.9`, it gives an integer number 
-    greater than the parameter.
+    _Example_: `round(0.5)` is `1.0`, and `round(-0.5)` is `-1.0`
     
 * **double trunc(double arg)**\
     The `trunc()` function allows to remove the decimal value from a floating number 
     and return an inetger value.
     
-    _Example_: If `2.3` is passed to `trunc()`, it will return 2.
+    _Example_: If `2.3` is passed to `trunc()`, it will return `2`.
     
     
 ## References
