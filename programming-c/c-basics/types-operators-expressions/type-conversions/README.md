@@ -67,7 +67,7 @@ For this reason, C provides **cast expressions**:
 ```
 where **type-name** specifies the type to which the expression should be converted.
 
-_Example: Convert a floating-point into an integer type
+_Example_: Convert a floating-point into an integer type
 ```C
     float f;
     int i;
@@ -81,7 +81,7 @@ Cast expressions enable us to **document type conversions** that would take plac
 
 They also enable us to overrule the compiler and force it to do conversations that we want.
 
-_Example: 
+_Example_: 
 ```C
     double quotient;
     int dividend, divisor;
