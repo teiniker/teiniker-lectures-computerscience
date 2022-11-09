@@ -1,4 +1,4 @@
-# Expressions
+# Expressions in C
 
 The simplest expressions are variables and constants.
 A **variable** represents a value to be computed as the program runs. 
