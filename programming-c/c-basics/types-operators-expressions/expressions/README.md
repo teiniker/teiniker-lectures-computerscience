@@ -1,4 +1,4 @@
-# Expressions in C
+# Expressions
 
 * [Introduction](introduction) 
 
