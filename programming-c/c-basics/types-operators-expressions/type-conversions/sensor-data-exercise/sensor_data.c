@@ -8,7 +8,7 @@ int main(void)
     int adc = 511;
     printf("ADV value = %d\n", adc);
 
-    // adc -> voltage [0..5]V 
+    // adc -> voltage [0.0..5.0]V 
     double voltage = // TODO
     printf("voltage = %3.2f [V]\n", voltage);
 
