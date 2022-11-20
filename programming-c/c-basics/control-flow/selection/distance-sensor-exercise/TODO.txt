@@ -1,0 +1,22 @@
+Exercise: Selection Statements (Distance Sensor)
+-------------------------------------------------------------------------------
+
+Sie haben den Wert eines Abstandes gemessen (HC-SR04 Ultrasonic Distance Sensor).
+Der Abstand wird von der verwendeten Bibliothek in cm (vom Typ long) angegeben.  
+
+A) Definieren Sie einen enum "led_t" mit den Werten: OFF, GREEN, YELLOW, RED 
+
+B) Implementieren Sie folgende Auswertung für den Abstand:
+    distance > 100cm            => led = OFF
+    100cm >= distance > 50cm    => led = GREEN 
+    50cm >= distance > 25cm     => led = YELLOW
+    25cm >= distance > 0cm      => led = RED
+    für alle anderen Werte von "distance" soll die Variable "led" auf "OFF"
+    gesetzt werden.
+
+C) LED Ausgabe 
+    Geben Sie den Wert der Variablen "led" auf der Konsole aus. 
+    Beispiel: LED: green
+
+Testen Sie Ihre Implementierung mit verschiedenen Werten von "distance" 
+(ändern Sie den Wert der Variablen "distance").
