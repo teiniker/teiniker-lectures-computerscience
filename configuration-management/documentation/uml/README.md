@@ -33,7 +33,7 @@ UML 2 describes **13 diagram types** which can be classified in the following wa
     * Package Diagram
 
 * **Behavior Diagrams**:
-  * [Activity Diagram](https://github.com/teiniker/teiniker-lectures-computerscience/blob/master/configuration-management/documentation/uml/UML-Activity-Diagram.md)
+  * [Activity Diagram](UML-Activity-Diagram.md)
   * Use Case Diagram
   * State Diagram
   * Sequence Diagram
