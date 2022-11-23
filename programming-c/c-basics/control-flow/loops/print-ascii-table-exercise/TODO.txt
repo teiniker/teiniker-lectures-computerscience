@@ -36,4 +36,5 @@ Beachten Sie, dass es zwei Varianten gibt das Problem zu lösen:
 a) Sie lassen eine Schleife von 32 bis 126 laufen und geben die Werte als 
    Zeichen aus. 
 b) Sie lassen die Schleife von 0 bis 127 laufen und überprüfen mit einem
-   if-Statement ob der Wert als Zeichen darstellbar ist.
+   if-Statement ob der Wert den Zeichen 'A' bis 'Z' entspricht - nur diese
+   geben Sie dann aus.

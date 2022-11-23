@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-typedef enum _led
+enum _led
 {
     OFF,
     GREEN,
     YELLOW,
     RED
-} led_t;
+};
 
-led_t led;   
+typedef enum _led led_t;
 
 int main(void)
 {   
     //distance in [cm] read from HC-SR04 Ultrasonic Distance Sensor
-    long distance = 100; 
+    long distance = 20; 
+
+    led_t led; 
 
     // Map distance to LED color
     if(distance <= 100 && distance > 50)
@@ -39,7 +41,7 @@ int main(void)
         case GREEN: printf("LED: green\n"); break;
         case YELLOW: printf("LED: yellow\n"); break;
         case RED: printf("LED: red\n"); break;
-        default: printf("LED: off\n");
+        case OFF: printf("LED: off\n");
     }
 
     return 0;

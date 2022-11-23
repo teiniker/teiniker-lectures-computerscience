@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Events (Triggres)
+// Events (Triggers)
 enum events
 {
     TURN_ON,
