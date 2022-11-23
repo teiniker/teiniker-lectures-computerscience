@@ -14,7 +14,8 @@
          ([model solution](control-flow/selection/constraint))
         * Exercise: [leap-year](control-flow/selection/leap-year-exercise)
         ([model solution](control-flow/selection/leap-year))
-         * [Enumerations](control-flow/selection/enumerations)
+         
+    * [Enumerations](control-flow/enumerations)
 
     * Loops (while, do-while, for)   
         * Demo: [while_loop, for_loop, do_while_loop](control-flow/loops)
