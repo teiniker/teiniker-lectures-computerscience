@@ -1,0 +1,23 @@
+Exercise: enum Events -> Activities (Parking Gate)
+-------------------------------------------------------------------------------
+
+In einer Ablaufsteuerung (Park-Schranken) können verschiedene Ereignisse (Events)
+auftreten:
+    CAR_AT_GATE         Auto fährt vor den Schranken (Induktionsschleife)
+    TOP_SWITCH          Der Schranken ist vollständig geöffnet (Endschalter)
+    CAR_JUST_EXITED     Auto fährt durch den Schranken (Induktionsschleife)
+    BOTTOM_SWITCH       Der Schranken ist vollständig geschlossen (Endschalter)
+
+Je nach Event soll die Steuerung unterschiedliche Aktivitäten (Activities) 
+ausführen (printf() Statements):
+    CAR_AT_GATE     => MOTOR: >>>
+    TOP_SWITCH      => MOTOR: ---
+    CAR_JUST_EXITED => MOTOR: <<<
+    BOTTOM_SWITCH   => MOTOR: ---
+
+A) Implementieren Sie einen enum Typ mit dem Namen "events_t", das die gegebenen 
+    Ereignisse definiert.
+
+B) Implementieren Sie die Steuerung mit Hilfe eines switch/case Konstrukts in der 
+    main() Funktion. 
+
