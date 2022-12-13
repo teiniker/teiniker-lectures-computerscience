@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h> 
 
 int series(int r1, int r2);
 int parallel(int r1, int r2);
@@ -14,7 +15,9 @@ int main(void)
     int r = series(r_series, 120);
 
     //int r = series(series(120, parallel(120, 120)),120);
+    
     printf("R = %d Ohm\n", r);
+    assert(300 == r);
 
     return 0;
 }
