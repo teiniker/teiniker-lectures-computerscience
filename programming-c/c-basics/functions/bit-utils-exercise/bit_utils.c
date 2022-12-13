@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-
+#include <assert.h> 
 
 // Extracts the low-order (rightmost) byte of a variable (e.g. a word).
 uint8_t lowByte(uint16_t word);

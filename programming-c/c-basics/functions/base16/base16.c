@@ -1,13 +1,35 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <assert.h> 
 
 void print_binary(uint8_t number);  // Helper function
 
-// Variante 1: switch/case
-char bits_to_char(uint8_t bits)
+char nibble_to_char(uint8_t nibble);
+
+
+int main(void)
 {
-    switch(bits)
+    uint8_t value = 0xce;
+    print_binary(value);
+
+    uint8_t lo_bits = value & 0x0f;
+    uint8_t hi_bits = (value >> 4) & 0x0f;
+    
+    print_binary(lo_bits);
+    assert('E' == nibble_to_char(lo_bits));
+
+    print_binary(hi_bits);
+    assert('C' == nibble_to_char(hi_bits));
+
+    printf("\nvalue = 0x%c%c\n", nibble_to_char(hi_bits), nibble_to_char(lo_bits));
+    return 0;
+}
+
+// Variante 1: switch/case
+char nibble_to_char(uint8_t nibble)
+{
+    switch(nibble)
     {
         case 0x00: return '0';
         case 0x01: return '1';
@@ -29,34 +51,22 @@ char bits_to_char(uint8_t bits)
     }
 }
 
+
 // Variante 2: array lookup
-// char CHAR_TABLE[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-// char bits_to_char(uint8_t bits)
-// {
-//     if(bits <= 0xf) // 00000000 bis 00001111
-//     {
-//         return CHAR_TABLE[bits];
-//     }
-//     else            // default
-//     {
-//         return ' ';
-//     }        
-// }
-
-int main(void)
+/*
+char CHAR_TABLE[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+char nibble_to_char(uint8_t nibble)
 {
-    uint8_t value = 0xce;
-
-    uint8_t low_bits = value & 0x0f;
-    uint8_t high_bits = (value >> 4) & 0x0f;
-
-    print_binary(value);
-    print_binary(low_bits);
-    print_binary(high_bits);
-
-    printf("\nvalue = 0x%c%c\n", bits_to_char(high_bits), bits_to_char(low_bits));
-    return 0;
+    if(nibble <= 0xf) // 00000000 bis 00001111
+    {
+        return CHAR_TABLE[nibble];
+    }
+    else            // default
+    {
+        return ' ';
+    }        
 }
+*/
 
 void print_binary(uint8_t number)
 {
