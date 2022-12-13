@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-
-void print_binary(uint16_t number)
-{
-    for(int i=sizeof(number)*8-1; i>= 0; i--)
-    {
-        putchar((number & 1UL << i) ? '1' : '0');
-    }    
-    putchar('\n');
-}
+#include <assert.h>
 
 // Extracts the low-order (rightmost) byte of a variable (e.g. a word).
 uint8_t lowByte(uint16_t word);
@@ -31,20 +23,16 @@ uint16_t bitSet(uint16_t value, uint8_t bit);
 
 int main(void)
 {
-    printf("%d\n", bit(3));         // 8
+    assert(0xdc == lowByte(0xfedc));
+    assert(0xfe == highByte(0xfedc));
 
-    print_binary(0xfedc);           // 1111111011011100
-    print_binary(lowByte(0xfedc));  // 0000000011011100
-    print_binary(highByte(0xfedc)); // 0000000011111110
-    printf("\n");
+    assert(0b00001000 == bit(3));
 
-    print_binary(0xcc);             // 0000000011001100    
-    bool b = bitRead(0xcc, 2);
-    printf("%d\n", b);
+    // 0xcc = 0b11001100    
+    assert(true == bitRead(0xcc, 3));
+    assert(false == bitRead(0xcc, 4));
 
-    uint16_t value = bitSet(0x00, 3);
-    print_binary(value);            // 0000000000001000
-    printf("\n");
+    assert(0b00001000 == bitSet(0x00, 3));
 
     return 0;
 }
