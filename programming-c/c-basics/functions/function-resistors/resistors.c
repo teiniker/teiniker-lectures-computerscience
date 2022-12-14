@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <assert.h> 
 
-int series(int r1, int r2);
+int series(int r1, int r2);     // Function declaration
 int parallel(int r1, int r2);
 
 int main(void)
@@ -19,13 +20,13 @@ int main(void)
     printf("R = %d Ohm\n", r);
     assert(300 == r);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
-int series(int r1, int r2)
+int series(int r1, int r2)  // Function implementation
 {
     int r_series = r1 + r2; 
-    return r_series;
+    return r_series;    // copy
 }
 
 int parallel(int r1, int r2)

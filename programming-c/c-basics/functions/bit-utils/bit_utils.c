@@ -32,7 +32,7 @@ int main(void)
     assert(true == bitRead(0xcc, 3));
     assert(false == bitRead(0xcc, 4));
 
-    assert(0b00001000 == bitSet(0x00, 3));
+    assert(0b00001001 == bitSet(0x01, 3));
 
     return 0;
 }
@@ -40,14 +40,14 @@ int main(void)
 
 uint8_t lowByte(uint16_t word)
 {
-    uint8_t b = word & 0xff;
+    uint8_t b = (uint8_t)(word & 0xff);    // 0b0000000011111111
     return b;
 }
 
 
 uint8_t highByte(uint16_t word)
 {
-    uint8_t b = (word >> 8);
+    uint8_t b = (uint8_t)(word >> 8);
     return b;
 }
 
@@ -60,7 +60,7 @@ int bit(uint8_t b)
 
 bool bitRead(uint16_t value, uint8_t bit)
 {
-    return (value >> bit) & 0x01;
+    return (bool)((value >> bit) & 0x01);
 }
 
 
