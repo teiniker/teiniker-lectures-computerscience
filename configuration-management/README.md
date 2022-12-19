@@ -10,6 +10,8 @@ We select the following topics from a wide range of configuration management tec
    * [Modular Programming](../programming-c/c-advanced/modules)
    * [C Libraries](building/string-operations-lib-static)
 
+* [Debugging](debugging)
+ 
 * [Test Automation](testing)
    * [Unity Test Framework](testing/unit-tests/) 
 

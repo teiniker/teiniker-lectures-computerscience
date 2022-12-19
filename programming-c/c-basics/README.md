@@ -8,6 +8,7 @@
 
 * **Control Flow**
     * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
+    * [Debugging in VS Code](/configuration-management/debugging/)
     * Selection Statements (if, switch)
         * Demo: [if_statement, switch statement, conditional_expression](control-flow/selection)
         * Exercise: [constraint](control-flow/selection/constraint-exercise)
