@@ -1,0 +1,12 @@
+Exercise: Factorial n!
+-------------------------------------------------------------------------------
+
+Die Fakultät von n ist definiert als: n! = 1 * 2 * 3 * 4....n  (mit n > 0)
+
+Schreiben Sie ein C Programm, das für eine Zahl N (int) die Fakultät berechnet.
+
+Zu Übungszwecken sollen Sie die Lösung in drei Varianten implementieren:
+i) for Schleife
+ii) while Schleife
+iii) do..while Schleife 
+
