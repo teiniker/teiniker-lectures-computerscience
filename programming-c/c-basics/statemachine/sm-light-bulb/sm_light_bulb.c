@@ -21,9 +21,9 @@ enum sm_states
 
 enum sm_states state; 
 void sm_light_bulb(enum events event);
-void sm_light_bulb_off(enum events event);
-void sm_light_bulb_on(enum events event);
-void sm_light_bulb_final(enum events event);
+void sm_light_bulb_handler_off(enum events event);
+void sm_light_bulb_handler_on(enum events event);
+void sm_light_bulb_handler_final(enum events event);
 
 // State Machince Activities
 void current_on(void);
@@ -63,21 +63,21 @@ void sm_light_bulb(enum events event)
     switch(state)
     {
         case OFF:
-            sm_light_bulb_off(event);
+            sm_light_bulb_handler_off(event);
             break;
 
         case ON:
-            sm_light_bulb_on(event);
+            sm_light_bulb_handler_on(event);
             break;
 
         case FINAL:
-            sm_light_bulb_final(event);
+            sm_light_bulb_handler_final(event);
             break;
     }
 }
 
 // Handle Events in State: OFF
-void sm_light_bulb_off(enum events event)
+void sm_light_bulb_handler_off(enum events event)
 {
     switch(event)
     {
@@ -95,7 +95,7 @@ void sm_light_bulb_off(enum events event)
 }
 
 // Handle Events in State: ON
-void sm_light_bulb_on(enum events event)
+void sm_light_bulb_handler_on(enum events event)
 {
     switch(event)
     {
@@ -115,7 +115,7 @@ void sm_light_bulb_on(enum events event)
 }
 
 // Handle Events in State: FINAL
-void sm_light_bulb_final(enum events event)
+void sm_light_bulb_handler_final(enum events event)
 {
     switch(event)
     {

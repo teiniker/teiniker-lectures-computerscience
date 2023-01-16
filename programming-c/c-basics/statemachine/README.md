@@ -20,7 +20,7 @@ has an arrow that points to the initial state.
 
 The **final state** indicates that the state machine is completed.
 
-![States and Transitions](doc/StatesAndTransitions.png)
+![States and Transitions](figures/StatesAndTransitions.png)
 
 The diagram also gives the rules by which the state machine changes from state to state. 
 These rules are in the form of **transitions**, which indicates a movement from one state to another:
@@ -61,15 +61,15 @@ void sm_light_bulb(enum events event)
     switch(state)
     {
         case OFF:
-            sm_light_bulb_off(event);
+            sm_light_bulb_handler_off(event);
             break;
 
         case ON:
-            sm_light_bulb_on(event);
+            sm_light_bulb_handler_on(event);
             break;
 
         case FINAL:
-            sm_light_bulb_final(event);
+            sm_light_bulb_handler_final(event);
             break;
     }
 }
@@ -80,7 +80,7 @@ Depending on the actual state, a suitable handler function is called.
 Each **handler function** must define what to do for each event (in a particular state):
 ```C
 // Handle Events in State: OFF
-void sm_light_bulb_off(enum events event)
+void sm_light_bulb_handler_off(enum events event)
 {
     switch(event)
     {
@@ -122,4 +122,4 @@ rather than transitions, as in Moore machines.
 * [State machines in C](https://yakking.branchable.com/posts/state-machines-in-c/)
 * [UML Tool: Modelio](https://www.modelio.org/) 
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

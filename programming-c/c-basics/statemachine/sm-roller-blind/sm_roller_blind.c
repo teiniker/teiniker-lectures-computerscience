@@ -24,11 +24,11 @@ enum sm_states
 enum sm_states state; 
 void sm_roller_blind(enum events event);
 
-void sm_roller_blind_open(enum events event);
-void sm_roller_blind_lowering(enum events event);
-void sm_roller_blind_raising(enum events event);
-void sm_roller_blind_stop(enum events event);
-void sm_roller_blind_closed(enum events event);
+void sm_roller_blind_handler_open(enum events event);
+void sm_roller_blind_handler_lowering(enum events event);
+void sm_roller_blind_handler_raising(enum events event);
+void sm_roller_blind_handler_stop(enum events event);
+void sm_roller_blind_handler_closed(enum events event);
 
 // Activities
 void motor_right(void);
@@ -97,29 +97,29 @@ void sm_roller_blind(enum events event)
     switch(state)
     {
         case OPEN:
-            sm_roller_blind_open(event);
+            sm_roller_blind_handler_open(event);
             break;
 
         case LOWERING:
-            sm_roller_blind_lowering(event);
+            sm_roller_blind_handler_lowering(event);
             break;
 
         case RAISING:
-            sm_roller_blind_raising(event);    
+            sm_roller_blind_handler_raising(event);    
             break;
 
         case STOP:
-            sm_roller_blind_stop(event);
+            sm_roller_blind_handler_stop(event);
             break;
 
         case CLOSED:
-            sm_roller_blind_closed(event);
+            sm_roller_blind_handler_closed(event);
             break;
     }
 }
 
 // Event handler for state: OPEN
-void sm_roller_blind_open(enum events event)
+void sm_roller_blind_handler_open(enum events event)
 {
     switch(event)
     {
@@ -144,7 +144,7 @@ void sm_roller_blind_open(enum events event)
 
 
 // Event handler for state: LOWERING
-void sm_roller_blind_lowering(enum events event)
+void sm_roller_blind_handler_lowering(enum events event)
 {
     switch(event)
     {
@@ -171,7 +171,7 @@ void sm_roller_blind_lowering(enum events event)
 
 
 // Event handler for state: RAISING
-void sm_roller_blind_raising(enum events event)
+void sm_roller_blind_handler_raising(enum events event)
 {
     switch(event)
     {
@@ -198,7 +198,7 @@ void sm_roller_blind_raising(enum events event)
 
 
 // Event handler for state: STOP
-void sm_roller_blind_stop(enum events event)
+void sm_roller_blind_handler_stop(enum events event)
 {
     switch(event)
     {
@@ -225,7 +225,7 @@ void sm_roller_blind_stop(enum events event)
 
 
 // Event handler for state: CLOSED
-void sm_roller_blind_closed(enum events event)
+void sm_roller_blind_handler_closed(enum events event)
 {
     switch(event)
     {

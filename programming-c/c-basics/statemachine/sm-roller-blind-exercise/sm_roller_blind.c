@@ -7,11 +7,11 @@
 
 void sm_roller_blind(enum events event);
 
-void sm_roller_blind_open(enum events event);
-void sm_roller_blind_lowering(enum events event);
-void sm_roller_blind_raising(enum events event);
-void sm_roller_blind_stop(enum events event);
-void sm_roller_blind_closed(enum events event);
+void sm_roller_blind_handler_open(enum events event);
+void sm_roller_blind_handler_lowering(enum events event);
+void sm_roller_blind_handler_raising(enum events event);
+void sm_roller_blind_handler_stop(enum events event);
+void sm_roller_blind_handler_closed(enum events event);
 
 // Activities
 void motor_right(void);
@@ -74,6 +74,7 @@ int main(void)
     return 0;
 }
 
+// TODO: Implement handler functions
 
 // Activities 
 

@@ -22,10 +22,10 @@ enum sm_states state;
 void sm_parking_gate(enum events event);
 
 // Event handler functions
-void sm_parking_gate_waiting(enum events event);
-void sm_parking_gate_raising(enum events event);
-void sm_parking_gate_open(enum events event);
-void sm_parking_gate_lowering(enum events event);
+void sm_parking_gate_handler_waiting(enum events event);
+void sm_parking_gate_handler_raising(enum events event);
+void sm_parking_gate_handler_open(enum events event);
+void sm_parking_gate_handler_lowering(enum events event);
 
 // Activities
 void motor_right(void);
@@ -57,25 +57,25 @@ void sm_parking_gate(enum events event)
     switch(state)
     {
         case WAITING:
-            sm_parking_gate_waiting(event);
+            sm_parking_gate_handler_waiting(event);
             break;
 
         case RAISING:
-            sm_parking_gate_raising(event);
+            sm_parking_gate_handler_raising(event);
             break;
 
         case OPEN:
-            sm_parking_gate_open(event);    
+            sm_parking_gate_handler_open(event);    
             break;
 
         case LOWERING:
-            sm_parking_gate_lowering(event);
+            sm_parking_gate_handler_lowering(event);
             break;
     }
 }
 
 // Event handler
-void sm_parking_gate_waiting(enum events event)
+void sm_parking_gate_handler_waiting(enum events event)
 {
     switch(event)
     {
@@ -95,7 +95,7 @@ void sm_parking_gate_waiting(enum events event)
     }
 }
 
-void sm_parking_gate_raising(enum events event)
+void sm_parking_gate_handler_raising(enum events event)
 {
     switch(event)
     {
@@ -115,7 +115,7 @@ void sm_parking_gate_raising(enum events event)
     }
 }
 
-void sm_parking_gate_open(enum events event)
+void sm_parking_gate_handler_open(enum events event)
 {
     switch(event)
     {
@@ -135,7 +135,7 @@ void sm_parking_gate_open(enum events event)
     }
 }
 
-void sm_parking_gate_lowering(enum events event)
+void sm_parking_gate_handler_lowering(enum events event)
 {
     switch(event)
     {
