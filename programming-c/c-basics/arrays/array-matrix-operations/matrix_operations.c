@@ -4,17 +4,17 @@
 #define COLUMNS 3
 
 void matrix_print(int rows, int columns, int matrix[ROWS][COLUMNS]);
-void matrix_transpose(int rows, int columns, int A[ROWS][COLUMNS], 
-    int C[ROWS][COLUMNS]);
-void matrix_add(int rows, int columns, int A[ROWS][COLUMNS], 
-    int B[ROWS][COLUMNS], int C[ROWS][COLUMNS]);
-void matrix_sub(int rows, int columns, int A[ROWS][COLUMNS], 
-    int B[ROWS][COLUMNS], int C[ROWS][COLUMNS]);
+void matrix_transpose(int rows, int columns, int A[ROWS][COLUMNS], int C[ROWS][COLUMNS]);
+void matrix_add(int rows, int columns, int A[ROWS][COLUMNS],int B[ROWS][COLUMNS], int C[ROWS][COLUMNS]);
+void matrix_sub(int rows, int columns, int A[ROWS][COLUMNS],int B[ROWS][COLUMNS], int C[ROWS][COLUMNS]);
 
 
 int main(void)
 {
-    int matrix_a[ROWS][COLUMNS] = { {5,6,7}, {8,9,10}, {3,1,2} };
+    int matrix_a[ROWS][COLUMNS] = 
+    { {5,6,7}, 
+      {8,9,10}, 
+      {3,1,2} };
     int matrix_b[ROWS][COLUMNS] = { {1,2,3}, {4,5,6}, {7,8,9} };
     int matrix_c[ROWS][COLUMNS];
 
