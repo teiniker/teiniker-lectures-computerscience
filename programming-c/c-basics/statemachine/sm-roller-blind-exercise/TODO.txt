@@ -27,11 +27,11 @@ A) Implementieren Sie die enums mit dem Namen "events" und "sm_states" sowie die
 B) Implementieren Sie die Funktion "sm_roller_blind()" mit Hilfe eines switch/case 
     Konstrukts bei dem Sie, je nach State, einer der folgenden Funktionen aufrufen
     um die Events in diesem State zu verarbeiten:
-        void sm_roller_blind_open(enum events event);
-        void sm_roller_blind_lowering(enum events event);
-        void sm_roller_blind_raising(enum events event);
-        void sm_roller_blind_stop(enum events event);
-        void sm_roller_blind_closed(enum events event);
+        void sm_roller_blind_handler_open(enum events event);
+        void sm_roller_blind_handler_lowering(enum events event);
+        void sm_roller_blind_handler_raising(enum events event);
+        void sm_roller_blind_handler_stop(enum events event);
+        void sm_roller_blind_handler_closed(enum events event);
 
 
     Die Aufrufe von "sm_roller_blind()" in der "main()" Funktion sollen folgende Ausgaben 
