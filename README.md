@@ -10,12 +10,14 @@ The following topics will be covered:
       * [Windows: MinGw, Git, VS Code](setup)
       * [Virtual Lab: Linux VM (Debian 11.5)](linux/setup)
     * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
-    * [Linux Platform](linux)
          
 * **Programming in C**
     * [C Basics](programming-c/c-basics)         
     * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Standard Library](programming-c/c-std-lib)
+
+* **Operating Systems**
+    * [Linux Platform](linux)
 
 * **Configuration Management**
    * [Introduction](configuration-management)
@@ -37,4 +39,4 @@ The following topics will be covered:
       * [Classes](programming-c++/c++basics/classes/)
    * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*         
+*Egon Teiniker, 2020-2023, GPL v3.0*         
