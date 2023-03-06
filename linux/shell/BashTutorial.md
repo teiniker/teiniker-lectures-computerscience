@@ -39,6 +39,7 @@ your Linux machine.
 ## Working with Users
 * **id** Print real and effective user and group IDs.
 * **users** Print the user names of users currently logged in to the current host.
+* **passwd** Change a user's password.
 
 * **sudo** Execute a command as another user.
 * **su** Run a command with substitute user and group ID.
@@ -66,4 +67,4 @@ your Linux machine.
     * `1:06:30` Working with Processes
     * `1:11:15` Terminal Shortcuts
 
-*Egon Teiniker, 2020-2022, GPL v3.0*    
+*Egon Teiniker, 2020-2023, GPL v3.0*    

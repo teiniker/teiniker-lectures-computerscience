@@ -202,50 +202,6 @@ Environment variables are useful because many programs read them for configurati
     ```
 
 
-## Working with Processes 
-
-### Listing Processes
-For a quick listing of running processes, we run the command `ps`.
-```
-$ ps
-    PID TTY          TIME CMD
-   1680 pts/2    00:00:00 bash
-   2670 pts/2    00:00:00 ps 
-```
-The fields are as follows:
-* **PID** The process ID.
-* **TTY** The terminal device where the process is running.
-* **TIME** The amount of CPU time in minutes and seconds that the program has used so far.
-* **CMD** Name of the running process.
-
-The `ps` command has many options:
-* `ps x` Show all of our running processes
-* `ps ax` Show all processes running on the system
-* `ps u` Include more detailed information on processes
-* `ps w` Show full command names
-
-### Killing Processes
-To terminate a process, we send a **signal** with the `kill` command.
-A singnal is a message to a process from the kernel.
-```
-$ kill pid
-```
-There are many types of signals:
-* `-TERM` Terminate the process (default)
-* `-STOP` Freeze a process. A stopped process is still in memory. 
-* `-CONT` Continue running.
-* `-KILL` While other signals give the process a chance to clean up after itself, `KILL` does not. 
-Note that using `CTRL-C` to terminate a process that is running in the current terminal is 
-the same as using kill to end the process with the `-INT` (interrupt) signal. 
-
-### Background Processes
-Normally, when we run a command from the shell, we don't get the shell prompt back until the 
-program finishes executing.
-
-We can detach a process from the shell and put it in the background using the & operator.
-The shell should respond by printing the PID of the new background process, and the prompt 
-should return immediately so that we can continue working.
-The process will continue to run after we log out.
 
 
 ## File Modes and Permissions
