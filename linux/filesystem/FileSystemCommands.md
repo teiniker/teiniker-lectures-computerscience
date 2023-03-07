@@ -1,0 +1,44 @@
+# Working with the File System
+
+
+## Files, Directories, and Navigation
+
+* **ls** List directory contents.
+* **pwd** Print name of current/working directory.
+* **cd** Change the current working directory.
+* **pushd**, **popd**  Used to "bookmark" directories for quick navigation between locations in the file system. 
+ 
+* **file** Determine file type.
+* **locate** Find files by name. It reads one or more databases created by updatedb.
+
+* **touch** Change file timestamps.
+* **cp** Copy files and directories.
+* **mv** Move (rename) files.
+* **rm** Remove files or directories.
+* **mkdir** Create the directory(ies), if they do not already exist.
+* **rmdir** Remove the directory(ies), if they are empty.
+
+## Directory Structure
+
+
+$ tree
+.
+├── build
+│   ├── sprintf_test
+│   ├── sprintf_test.o
+│   └── unity.o
+├── Makefile
+└── sprintf_test.c
+
+
+## Working with Text Files
+* **cat** Concatenate files and print on the standard output.
+* **less**  A filter for scrolling through text and search for patterns (replacement for more).
+* **nano** Nano's ANOther editor, a free text editor.
+
+
+## References
+* Brian Ward. **How Linux Works**. No Starch Press, 2015
+    * Chapter 2: Basic Commands and Directory Hierarchy
+
+*Egon Teiniker, 2020-2023, GPL v3.0* 

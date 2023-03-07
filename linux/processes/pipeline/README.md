@@ -1,4 +1,4 @@
-# Pipelines 
+# Working with Pipelines 
 
 ```
 $ cat names.txt 

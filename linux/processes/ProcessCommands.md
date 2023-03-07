@@ -90,6 +90,34 @@ The shell should respond by printing the PID of the new background process, and 
 should return immediately so that we can continue working.
 The process will continue to run after we log out.
 
+## Time 
+
+The **time** command in Linux and Unix-like operating systems lets you determine 
+how long a specific command will take to run. 
+
+In addition, the time command can also display the **system resource usage of the process**, making it a helpful tool for reviewing the efficiency of a specific command.
+
+`time` runs the given command with any given arguments (arg). Once the command 
+finishes its task, time outputs information which includes the duration it took 
+to run the command and the resources used by it.
+
+```
+$ time gcc -std=c99 -g -Wall -c ../unity/unity.c -o build/unity.o
+
+real    0m0.132s
+user    0m0.095s
+sys	    0m0.016s
+```
+* **Real-time (real)**: The real-life time it takes for the process to run 
+    from start to finish. This includes any time taken by other processes 
+    and the time spent waiting for them to be complete.
+* **User time (user)**: The amount of CPU time spent in **user mode** during the 
+    process. Other processes and blocked time are not included.
+* **System time (sys)**: The total CPU time spent in **kernel mode** during the 
+    process. Similar to user time, other processes and time spent blocked by 
+    other processes are not counted.
+
+
 ## Listing Threads
 
 A thread is a **lightweight process**. A process can do more than one unit of work 
@@ -123,6 +151,7 @@ Also, note that the value, once assigned to an LWP, is never given to another pr
 
 ## References
 
-*[Linux Process vs. Thread](https://www.baeldung.com/linux/process-vs-thread)
+* [Linux Process vs. Thread](https://www.baeldung.com/linux/process-vs-thread)
+* [How to Use Linux Time Command: All You Need to Know](https://www.hostinger.com/tutorials/linux-time-command/)
 
 *Egon Teiniker, 2020-2023, GPL v3.0* 
