@@ -26,24 +26,6 @@ Before we can start with our examples, make sure that you have opened a **Termin
 * **su** Run a command with substitute user and group ID.
 * **chmod** Change file mode bits.
 
-
-Other topics:
-
-* Processes & Threads
-    * [Process Commands](../processes/README.md)
-    * [Pipelines](../processes/pipeline/README.md)
-
-* File System
-    * [File System Commands](../filesystem/FileSystemCommands.md)
-    * [Directory Hierarchy](../filesystem/DirectoryHierarchy.md)
-
-* Archives 
-    * [Archiving Commands](./Archiving.md)
-
-* Editors
-    * [vim](../editors/vim.md)
-
-
 ## References 
 *  [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
     * `0:00:00` Working with the File System: Files, Directories, and Navigation
