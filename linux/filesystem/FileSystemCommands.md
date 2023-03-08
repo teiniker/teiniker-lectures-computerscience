@@ -33,7 +33,6 @@ $ tree
 ## Working with Text Files
 * **cat** Concatenate files and print on the standard output.
 * **less**  A filter for scrolling through text and search for patterns (replacement for more).
-* **nano** Nano's ANOther editor, a free text editor.
 
 
 ## References
