@@ -1,4 +1,4 @@
-# Virtual Laboratory
+# Virtual Laboratory Setup
 
 A virtual machine is used to provide a uniform environment for the examples in this repository. 
 This is a **Debian Linux** image that can be hosted via **VirtualBox**.
