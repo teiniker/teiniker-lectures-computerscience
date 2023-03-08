@@ -19,8 +19,9 @@
 * **rmdir** Remove the directory(ies), if they are empty.
 
 ## Directory Structure
+The `tree` command can be used to get an overview of a subtree of the file system.
 
-
+```
 $ tree
 .
 ├── build
@@ -29,7 +30,7 @@ $ tree
 │   └── unity.o
 ├── Makefile
 └── sprintf_test.c
-
+```
 
 ## Working with Text Files
 * **cat** Concatenate files and print on the standard output.
