@@ -25,14 +25,14 @@ free [download](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF
 
 We use a Linux system together with free and open source tools.
 
-Before you start the VM image, make sure that you have the following settings:
+**Before you start the VM** image, make sure that you have done the following settings:
 * **System**: You can increase the memory size if you want (and your PC is supporting it).
 * **Network**: Adapter 1 NAT
 * **USB**: 1.1 Controller 
 * **Shared Folder**: Make sure that the directory `C:\shared` exists or change the path to an existing folder.
 
 
-After starting the VM, we can use the following accounts have been pre-configured:
+**After starting the VM**, we can use the following accounts have been pre-configured:
 
 * **Regular user** (should be used by default): 
     * username: `student` 
