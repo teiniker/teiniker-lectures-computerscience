@@ -6,7 +6,6 @@
 * **ls** List directory contents.
 * **pwd** Print name of current/working directory.
 * **cd** Change the current working directory.
-* **pushd**, **popd**  Used to "bookmark" directories for quick navigation between locations in the file system. 
  
 * **file** Determine file type.
 * **locate** Find files by name. It reads one or more databases created by updatedb.
