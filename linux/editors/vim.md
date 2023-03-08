@@ -25,7 +25,7 @@ _Example_: Edit an existing file
     - **[l]** Moves the cursor one character to the right
     - **[k]** Moves the cursor up one line
     - **[j]** Moves the cursor down one line
-    - **[nG] or **[:n]** Cursor goes to the specified (n) line
+    - **[nG]** or **[:n]** Cursor goes to the specified (n) line
 3. Edit required text (replace or delete or insert).
 4. Hit **[Esc]** to exit from insert mode if you insert or replace text.
 5. Type **[:][w][q]**
