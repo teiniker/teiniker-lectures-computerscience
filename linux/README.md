@@ -4,16 +4,16 @@ This section provides an overview of using the **Linux platform for software dev
 
 * [Linux VM Setup](setup)
 
-* [Shell Commands](shell)
+* Shell Commands
     * [Linux Shell: Bash](shell/BashTutorial.md)
-    * [Archiving Commands](./Archiving.md)
-    * [Editor: vim](../editors/vim.md)
+    * [Archiving Commands](shell/Archiving.md)
+    * [Editor: vim](editors/vim.md)
 
 * Processes & Threads
     * [Process Commands](processes/README.md)
     * [Pipelines](processes/pipeline/README.md)
 
-* [Linux Directory Hierarchy](filesystem)
+* Linux Directory Hierarchy
     * [Linux Directory Hierarchy](filesystem/DirectoryHierarchy.md)
     * [Working with the File System](filesystem/FileSystemCommands.md)
    
