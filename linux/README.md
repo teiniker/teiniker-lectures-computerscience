@@ -13,7 +13,7 @@ This section provides an overview of using the **Linux platform for software dev
     * [Process Commands](processes/ProcessCommands.md)
     * [Pipelines](processes/pipeline/README.md)
 
-* Linux Directory Hierarchy
+* File System
     * [Linux Directory Hierarchy](filesystem/DirectoryHierarchy.md)
     * [Working with the File System](filesystem/FileSystemCommands.md)
    
