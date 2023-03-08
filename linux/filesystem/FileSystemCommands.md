@@ -8,7 +8,6 @@
 * **cd** Change the current working directory.
  
 * **file** Determine file type.
-* **locate** Find files by name. It reads one or more databases created by updatedb.
 
 * **touch** Change file timestamps.
 * **cp** Copy files and directories.
