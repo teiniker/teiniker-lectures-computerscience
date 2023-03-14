@@ -24,7 +24,6 @@ Before we can start with our examples, make sure that you have opened a **Termin
 
 * **sudo** Execute a command as another user.
 * **su** Run a command with substitute user and group ID.
-* **chmod** Change file mode bits.
 
 ## References 
 *  [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
