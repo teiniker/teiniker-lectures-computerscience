@@ -19,6 +19,7 @@ This section provides an overview of using the **Linux platform for software dev
 
 * User Management 
     * [Add and Delete Users](user-management/AddAndDeleteUser.md)
+    * [Change Passwords](user-management/ChangePassword.md)
 
 * [System Calls](system-calls)
 
