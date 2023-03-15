@@ -16,7 +16,10 @@ This section provides an overview of using the **Linux platform for software dev
 * File System
     * [Linux Directory Hierarchy](filesystem/DirectoryHierarchy.md)
     * [Working with the File System](filesystem/FileSystemCommands.md)
-   
+
+* User Management 
+    * [Add and Delete Users](user-management/AddAndDeleteUser.md)
+
 * [System Calls](system-calls)
 
 * [Docker](docker/)
