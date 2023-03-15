@@ -1,3 +1,7 @@
 scanf_int
 scanf_int.exe
+scanf_float
+scanf_float.exe
+scanf_int_int
+scanf_int_int.exe
 build/
