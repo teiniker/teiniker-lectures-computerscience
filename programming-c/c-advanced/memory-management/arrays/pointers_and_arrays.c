@@ -15,11 +15,13 @@ int main(void)
 {
     // Array arguments
     int vector[N];
+   
     fill_array(N, vector, 0xff);
     for(int i=0; i<N; i++)
     {
         assert(0xff == vector[i]);
     }
+
     fill_array(3, vector + 7, 0xee);
     printf("[ ");
     for(int i=0; i<N; i++)

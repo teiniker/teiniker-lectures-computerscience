@@ -16,7 +16,7 @@ int main(void)
     int n = 10;
 
     // Allocate array
-    int *a = malloc(n * sizeof(int));
+    int *a = (int *)malloc(n * sizeof(int));
     print_array(n, a);
 
     for(int i=0; i<n; i++)
@@ -27,6 +27,7 @@ int main(void)
 
     // Deallocate array
     free(a);
+    print_array(n, a);
 
     return 0;
 }

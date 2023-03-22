@@ -25,7 +25,8 @@ int main(void)
 
 int *array_fibonacci(size_t n)
 {
-    int *sequence = calloc(n, sizeof(int));
+    // Pre condition: n > 2
+    int *sequence = (int *)malloc(n * sizeof(int));
     sequence[0] = 0;
     sequence[1] = 1;
     for(int i=2; i<n; i++ )

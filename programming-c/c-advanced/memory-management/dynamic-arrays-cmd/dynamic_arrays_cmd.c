@@ -7,7 +7,7 @@ int sum_of_array(size_t n, int *a);
 int main(int argc, char *argv[])
 {
     printf("argc = %d\n", argc);
-    for(int i=0; i<argc; i++)
+    for(int i=1; i<argc; i++)
     {
         printf("argv[%2d] = %2d\n", i, atoi(argv[i]));
     }
