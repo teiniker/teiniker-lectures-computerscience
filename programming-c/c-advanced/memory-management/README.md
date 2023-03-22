@@ -1,20 +1,23 @@
 # Memory Management
 
-* [**Memory Segments**](memory-segments/README.md)
-    * Demo: [memory-segments](memory-segments)
+* Memory Segments
+   * [Introduction](memory-segments/README.md)
+   * [memory-segments](memory-segments)
 
-* [**Pointers**](pointers/README.md)
-    * Demo: [pointers](pointers)
+* Pointers
+    * [Introduction](pointers/README.md)
     * Exercise: [swap](swap-exercise) 
         ([model solution](swap))
     * Exercise: [calculator](calculator-exercise)
         ([model solution](calculator))
 
-* [**Pointers and Arrays**](arrays/README.md)
-   * Demo: [pointers_and_arrays](arrays)
+* Pointers and Arrays
+   * [Introduction](arrays/README.md)
+   * [pointers_and_arrays](arrays)
 
-* [**Dynamic Memory Allocation**](dynamic-memory-allocation/README.md)
-   * Demo: [dynamic-allocation](dynamic-memory-allocation) 
+* Dynamic Memory Allocation
+   * [Introduction](dynamic-memory-allocation/README.md)
+   * [dynamic-allocation](dynamic-memory-allocation) 
    * Exercise: [dynamic-arrays](dynamic-arrays-exercise)
          ([model solution](dynamic-arrays))
    * Exercise: [dynamic-arrays-fibonacci](dynamic-arrays-fibonacci-exercise)
@@ -30,4 +33,4 @@
     * Chapter 11: Pointers
     * Chapter 17: Advanced Uses of Pointers.
  
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
