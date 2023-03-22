@@ -139,10 +139,11 @@ build/linked_list_test
 
 ## References
 * [GNU Make](https://www.gnu.org/software/make/)
-
 * [GNU Make Manual](https://www.gnu.org/software/make/manual/)
+
+* [YouTube (Jacob Sorber): Why that "Perfect" Makefile Doesn't Work](https://youtu.be/l5KqE0DMG-Q)
 
 * Robert Mecklenburg. Managing Projects with GNU Make. OReilly, 2005
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
