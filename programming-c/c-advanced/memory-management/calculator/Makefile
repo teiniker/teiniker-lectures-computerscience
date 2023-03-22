@@ -8,7 +8,8 @@ init:
 
 calculator: calculator.c
 	$(CC) $(CFLAGS) calculator.c -o build/calculator
-
+	./build/calculator
+	
 clean:
 	rm -rf build/
 
