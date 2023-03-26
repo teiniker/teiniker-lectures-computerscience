@@ -1,0 +1,22 @@
+Exercise: Dynamic Memory Allocation, Arrays - Triangular Numbers 
+-------------------------------------------------------------------------------
+
+Es soll ein Integer-Array dynamisch erzeugt werden, welches eine vorgegebene 
+Anzahl von Zahlen beinhaltet.
+
+Beispiel: Triangular Numbers
+    1, 3, 6, 10, 15, 21, 28, 36, 45, ...
+
+    Die Berechnungsvorschrift lautet: x[n] = n(n+1)/2 für n >= 1
+    
+A) int *array_triangular(size_t n)
+    Implementieren Sie diese  Funktion unter Zuhilfenahme von dynamic 
+    memory allocation, wobei n die Anzahl der Zahlen im Array (und somit 
+    auch die Länge des Arrays) festlegt.
+    Zurückgegeben wird der Pointer auf das erste Element der Zahlen-Sequence.
+    Beachten Sie, dass der Index im dynamischen Array mit 0 beginnt!
+
+B) Geben Sie den reservierten Speicher wieder frei.
+    Überprüfen Sie ihre Implementierung mit: 
+    $ valgrind build/dynamic_arrays_triangular
+    
