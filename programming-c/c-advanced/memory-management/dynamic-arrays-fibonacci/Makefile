@@ -1,14 +1,16 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall  
 CC=gcc
 
-all: init dynamic_arrays_fibonacci
+all: build build/dynamic_arrays_fibonacci run
 
-init:
+build:
 	mkdir -p build
 
-dynamic_arrays_fibonacci: dynamic_arrays_fibonacci.c
+build/dynamic_arrays_fibonacci: dynamic_arrays_fibonacci.c
 	$(CC) $(CFLAGS) dynamic_arrays_fibonacci.c -o build/dynamic_arrays_fibonacci
+
+run: build
 	build/dynamic_arrays_fibonacci
 
-clean:
+clean: 
 	rm -rf build/
