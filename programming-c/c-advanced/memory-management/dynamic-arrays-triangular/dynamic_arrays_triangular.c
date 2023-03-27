@@ -4,11 +4,11 @@
 
 int *array_triangular(size_t n);
 
-int expected[] = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55};
+int expected[] = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120};
 
 int main(void)
 {
-    int n = 10;
+    int n = 15;
 
     int *triangular = array_triangular(n);
 
