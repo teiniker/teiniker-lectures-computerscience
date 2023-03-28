@@ -1,4 +1,4 @@
-CFLAGS=-std=c17 -g -Wall  
+CFLAGS=-std=c17 -g -Wall
 CC=gcc
 
 all: build run

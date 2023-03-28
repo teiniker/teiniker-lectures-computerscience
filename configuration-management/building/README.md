@@ -56,29 +56,28 @@ Sometimes we need more than one commend to create the target.
 Commands are listed one per line.
 **Each is indented by a tab**.
 
-_Example_: Makefile to compile three object files and link them into an executable
+_Example_: string-operations-modular
 ```
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall
 CC=gcc
-UNITY=../../unity
 
-all: init test
+all: build build/main run
 
-init:
+build:
 	mkdir -p build
 
-unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
-	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
+build/string_operations.o: string_operations.c string_operations.h
+	$(CC) $(CFLAGS) -c string_operations.c -o build/string_operations.o
 
-linked_list.o: linked_list.h linked_list.c
-	$(CC) $(CFLAGS) -c linked_list.c -o build/linked_list.o
+build/main.o: main.c string_operations.h
+	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
-linked_list_test.o: linked_list_test.c
-	$(CC) $(CFLAGS) -I $(UNITY) -c linked_list_test.c -o build/linked_list_test.o
 
-test: init unity.o linked_list.o linked_list_test.o
-	$(CC) $(CFLAGS) build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
-	build/linked_list_test
+build/main: build/string_operations.o build/main.o 
+	$(CC) $(CFLAGS) build/main.o build/string_operations.o -o build/main
+
+run:
+	build/main
 
 clean:
 	rm -rf build/
@@ -86,36 +85,24 @@ clean:
 
 When we call `make` to execute the `Makefile`, we get the following output:
 ```
-$ makemkdir -p build
-gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
-gcc -std=c99 -g -Wall   -c linked_list.c -o build/linked_list.o
-gcc -std=c99 -g -Wall   -I ../../unity -c linked_list_test.c -o build/linked_list_test.o
-gcc -std=c99 -g -Wall   build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
-build/linked_list_test
-linked_list_test.c:65:test_size:PASS
-linked_list_test.c:66:test_get:PASS
-linked_list_test.c:67:test_find:PASS
-linked_list_test.c:68:test_insert:PASS
-linked_list_test.c:69:test_remove:PASS
------------------------
-5 Tests 0 Failures 0 Ignored 
-OK
+mkdir -p build
+gcc -std=c17 -g -Wall -c string_operations.c -o build/string_operations.o
+gcc -std=c17 -g -Wall -c main.c -o build/main.o
+gcc -std=c17 -g -Wall build/main.o build/string_operations.o -o build/main
+build/main
+"1001 0011 1111 0000" 
+"1001 0011 1111 0000" 
 ```
+
 Note that we compile the source files (`*.h` and `*.c`) into **object files** (`*.o`), link the together 
 into an **executable**, and run that application.
 
-In the given example, we use the **unity testing framework** to implement automated test cases.
-In general, two **diffent executables** can be built: 
-* One for running **test cases** (only used during development)
-* A second representing the **software release** (shipped to the customer)
-
 All **build artifacts** are stored in a temporary `build/` directory. 
 ```
-build
-├── linked_list.o
-├── linked_list_test
-├── linked_list_test.o
-└── unity.o
+├── build
+│   ├── main
+│   ├── main.o
+│   └── string_operations.o
 ```
 
 Executing the `clean` target removes this directory from our project again:
@@ -129,11 +116,10 @@ to print out all build steps **without executing them**:
 ```
 $ make -n
 mkdir -p build
-gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
-gcc -std=c99 -g -Wall   -c linked_list.c -o build/linked_list.o
-gcc -std=c99 -g -Wall   -I ../../unity -c linked_list_test.c -o build/linked_list_test.o
-gcc -std=c99 -g -Wall   build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
-build/linked_list_test
+gcc -std=c17 -g -Wall -c string_operations.c -o build/string_operations.o
+gcc -std=c17 -g -Wall -c main.c -o build/main.o
+gcc -std=c17 -g -Wall build/main.o build/string_operations.o -o build/main
+build/main
 ```
 
 
