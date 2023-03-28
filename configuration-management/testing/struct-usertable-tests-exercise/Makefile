@@ -1,17 +1,19 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall  
 CC=gcc
 UNITY=../unity
 
-all: usertable 
+all: run 
 
-init:
+build:
 	mkdir -p build
 
-usertable.o: usertable.c 
+build/usertable.o: usertable.c 
 	$(CC) $(CFLAGS) -c usertable.c -o build/usertable.o
 
-usertable: init usertable.o 
+build/usertable: build/usertable.o 
 	$(CC) $(CFLAGS) build/usertable.o -o build/usertable
+
+run: build build/usertable
 	build/usertable
 
 clean:

@@ -1,17 +1,19 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall
 CC=gcc
 UNITY=../unity
 
-all: struct-user 
+all: run 
 
-init:
+build:
 	mkdir -p build
 
-struct-user.o: struct-user.c 
+build/struct-user.o: struct-user.c 
 	$(CC) $(CFLAGS) -c struct-user.c -o build/struct-user.o
 
-struct-user: init struct-user.o 
+build/struct-user: build/struct-user.o 
 	$(CC) $(CFLAGS) build/struct-user.o -o build/struct-user
+
+run: build build/struct-user
 	build/struct-user
 
 clean:

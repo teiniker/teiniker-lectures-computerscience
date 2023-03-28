@@ -10,7 +10,7 @@ B) Build Automation
     Erweitern Sie das Makefile um diese Files zu einem Executable "build/main" 
     zusammen zu bauen.
 
-    $ make main
+    $ make run
     mkdir -p build
     gcc -std=c99 -g -Wall   -c main.c -o build/main.o
     gcc -std=c99 -g -Wall   build/main.o -o build/main

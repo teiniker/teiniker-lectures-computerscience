@@ -1,27 +1,31 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall
 CC=gcc
 UNITY=../unity
 
-all: test 
+all: run_test 
 
-init:
+build:
 	mkdir -p build
 
-unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
+build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
 	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
 	
-main.o: main.c user.h
+build/main.o: main.c user.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
-main: init main.o 
+build/main: build/main.o 
 	$(CC) $(CFLAGS) build/main.o -o build/main
+	
+run: build build/main	
 	build/main
 
-test.o: test.c
+build/test.o: test.c
 	$(CC) $(CFLAGS) -I $(UNITY) -c test.c -o build/test.o
 
-test: init unity.o test.o
+build/test: build/unity.o build/test.o
 	$(CC) $(CFLAGS) build/unity.o build/test.o -o build/test
+
+run_test: build build/test
 	build/test
 
 clean:
