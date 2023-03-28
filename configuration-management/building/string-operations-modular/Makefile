@@ -1,7 +1,7 @@
 CFLAGS=-std=c17 -g -Wall
 CC=gcc
 
-all: build build/main run
+all: build run
 
 build:
 	mkdir -p build
@@ -16,7 +16,7 @@ build/main.o: main.c string_operations.h
 build/main: build/string_operations.o build/main.o 
 	$(CC) $(CFLAGS) build/main.o build/string_operations.o -o build/main
 
-run:
+run: build/main 
 	build/main
 
 clean:

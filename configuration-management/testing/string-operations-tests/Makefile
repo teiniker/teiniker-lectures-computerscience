@@ -2,7 +2,7 @@ CFLAGS=-std=c17 -g -Wall
 CC=gcc
 UNITY=../unity
 
-all: build build/main run_test
+all: build run_test
 
 build:
 	mkdir -p build
