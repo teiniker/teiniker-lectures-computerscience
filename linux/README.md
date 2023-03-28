@@ -21,6 +21,8 @@ This section provides an overview of using the **Linux platform for software dev
     * [File Permissions](filesystem/Permissions.md)
     * [Archiving Commands](filesystem/Archiving.md)
 
+* [Package Management](package-manager/README.md)
+
 * Editors 
     * [Editor: vim](editors/vim.md)
 
