@@ -5,8 +5,7 @@ This section provides an overview of using the **Linux platform for software dev
 * [Linux VM Setup](setup)
 
 * Shell Commands
-    * [Linux Shell: Bash](shell/BashTutorial.md)    
-    * [Editor: vim](editors/vim.md)
+    * [Linux Shell: Bash](shell/README.md)    
 
 * User Management 
     * [Add and Delete Users](user-management/AddAndDeleteUser.md)
@@ -19,7 +18,11 @@ This section provides an overview of using the **Linux platform for software dev
 * File System
     * [Linux Directory Hierarchy](filesystem/DirectoryHierarchy.md)
     * [Working with the File System](filesystem/FileSystemCommands.md)
+    * [File Permissions](filesystem/Permissions.md)
     * [Archiving Commands](filesystem/Archiving.md)
+
+* Editors 
+    * [Editor: vim](editors/vim.md)
 
 * [System Calls](system-calls)
 
