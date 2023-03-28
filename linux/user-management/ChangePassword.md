@@ -2,6 +2,7 @@
 
 Users can change their own passwords and users belonging to the sudo (super user) group can administrate the passwords of other users.
 
+
 ## Change your own Password
 
 A user can change its password at any time using the `passwd` command. 

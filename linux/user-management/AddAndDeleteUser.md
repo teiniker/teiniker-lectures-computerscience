@@ -3,6 +3,14 @@
 Linux is a multi-user operating system. 
 Each user can have different permission levels and specific settings for various command-line and GUI applications.
 
+In order to retrive information about users or to switch to another user, we can use 
+the following commands:
+* **id** Print real and effective user and group IDs.
+* **users** Print the user names of users currently logged in to the current host.
+
+* **sudo** Execute a command as the superuser.
+* **su** When called with no user specified, `su` defaults to running an interactive shell as root.
+
 ## Add a User 
 We use the adduser cammand to add a new user to the Linux system.
 In order to add a new user, we have have to switch into the rootmode. 
