@@ -1,13 +1,15 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall  
 CC=gcc
 
-all: init string_operations 
+all: build run
 
-init:
+build:
 	mkdir -p build
 
-string_operations: string_operations.c
+build/string_operations: string_operations.c
 	$(CC) $(CFLAGS) string_operations.c -o build/string_operations
+
+run: build/string_operations
 	build/string_operations
 
 clean:

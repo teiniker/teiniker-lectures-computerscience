@@ -1,20 +1,22 @@
-CFLAGS=-std=c11 -g -Wall  
+CFLAGS=-std=c17 -g -Wall
 CC=gcc
 
-all: main 
+all: build build/main run
 
-init:
+build:
 	mkdir -p build
 
-string_operations.o: string_operations.c string_operations.h
+build/string_operations.o: string_operations.c string_operations.h
 	$(CC) $(CFLAGS) -c string_operations.c -o build/string_operations.o
 
-main.o: main.c string_operations.h
+build/main.o: main.c string_operations.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
 
-main: init string_operations.o main.o 
+build/main: build/string_operations.o build/main.o 
 	$(CC) $(CFLAGS) build/main.o build/string_operations.o -o build/main
+
+run:
 	build/main
 
 clean:
