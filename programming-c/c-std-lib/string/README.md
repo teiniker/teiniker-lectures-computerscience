@@ -34,7 +34,7 @@ third argument.
  written a total on `n` characters.
  Note that if `n` is too small, `strncpy()` will not be able to copy a terminating null character.
  
-_Secure Coding Tip_: **Don't use strcpy() - use stncpy() whenever possible!!**  
+_Secure Coding Tip_: **Don't use strcpy() - use strncpy() whenever possible!!**  
 
 
 ## String Concatenation Functions
