@@ -17,7 +17,7 @@ To **initialize a structure**, we prepare a list of values to be stored in the s
 The values in the initializer must appear in the same order as the members of the structure.
 
 _Example_: Struct variable
-```C
+```C {.line-numbers}
     struct 
     {
         int day;
