@@ -20,7 +20,7 @@ Since a string literal is stored as an array, the compiler treats it as a **poin
 In general, we can use a string literal wherever C allows a `char *` pointer.
 
 _Example_: String literal
-```C
+```C=
     char *s;
     s = "This is a string literal";
 
