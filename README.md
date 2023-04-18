@@ -3,6 +3,8 @@
 This project collects examples, exercises and model solutions needed to understand 
 **computer science** and **programming in C**.
 
+HELLO!!!
+
 The following topics will be covered:
 
 * **Development Environments**
