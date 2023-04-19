@@ -44,7 +44,7 @@ char *message_write(char *sensor, uint8_t id, double temperature, double humidit
 
 void message_read(const char *msg, char *sensor, uint8_t *id, double *temperature, double *humidity)
 {
-    char s[10];
+    char s[20];
     sscanf(msg, "%s %x %lf %lf", s, id, temperature, humidity);
     strncpy(sensor, s, 10);
     printf("msg: '%s %x %3.1f %3.1f'\n", sensor, *id, *temperature, *humidity);
