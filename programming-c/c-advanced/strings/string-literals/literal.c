@@ -1,10 +1,9 @@
-#include<stdlib>
+#include<assert.h>
 #include<string.h>
 
 int main(void)
 {
-    char *s;
-    s = "This is a string literal";
+    char *s = "This is a string literal";
 
     assert(s[0] == 'T');
     assert(s[1] == 'h');

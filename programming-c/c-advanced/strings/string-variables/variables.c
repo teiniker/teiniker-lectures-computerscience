@@ -22,11 +22,11 @@ int main(void)
     memory_dump(s, STR_LEN);
 
     // Unlike String literals, String variables can be modified.
-    s[5] = 'I';
-    s[6] = 'S';
-    s[16] = '\0';
-    printf("\"%s\"\n", s);
-    memory_dump(s, STR_LEN);
+    // s[5] = 'I';
+    // s[6] = 'S';
+    // s[16] = '\0';
+    // printf("\"%s\"\n", s);
+    // memory_dump(s, STR_LEN);
 
     return 0;
 }

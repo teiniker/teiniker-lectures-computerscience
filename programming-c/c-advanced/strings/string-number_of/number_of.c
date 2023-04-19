@@ -21,13 +21,12 @@ int main(void)
 size_t string_number_of(const char *s, char c)
 {
     size_t number_of = 0;
- 
-    while(*s != '\0')
+
+    for(size_t i = 0; s[i] != '\0'; i++)
     {
-        if(*s == c)
+        if(s[i] == c)
             number_of++;
-        s++;    
-    }
+    }    
 
     return number_of;
 }
