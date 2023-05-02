@@ -1,7 +1,5 @@
 # Working with ChatGPT
 
-## ChatGPT in the SDL
-
 From the practical perspective, we have to integrate ChatGPT into the **Software Development Cycle**.
 We have to analyze every phase in the SDL cycle and develop 
 practices to integrate ML.
