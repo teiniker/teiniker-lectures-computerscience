@@ -1,6 +1,20 @@
 # Working with ChatGPT
 
-## Use Cases in Software Programming
+## ChatGPT in the SDL
+
+From the practical perspective, we have to integrate ChatGPT into the **Software Development Cycle**.
+We have to analyze every phase in the SDL cycle and develop 
+practices to integrate ML.
+
+A promising approach is to **use ChatGPT as a programming pair**:
+
+**Pair programming** is a software development technique in which two programmers work together on the same computer to complete a task. It involves two roles: the **driver** and the **navigator**. 
+The driver is responsible for writing the code, while the navigator reviews each line of code, provides feedback, and thinks strategically about the overall direction of the program.
+
+In pair programming, the two programmers **collaborate in real time**, discussing and solving problems together. They **switch roles frequently**, allowing both individuals to actively participate in the coding process. The driver focuses on the implementation details, typing the code, and executing the immediate tasks, while the navigator takes a broader view, identifying potential issues, suggesting improvements, and conducting research when needed.
+
+
+## Use Cases in Software Development
 
 The possible areas of application of ChatGPT in software development are very diverse. Here are some examples:
 
@@ -137,22 +151,7 @@ The destructor of the `Stack` class is responsible for freeing the memory alloca
 In the `main()` function, an instance of the `Stack` class named `myStack` is created with a size of `10`. The stack can then be used as needed within the scope of the `main()` function. When `myStack` goes out of scope at the end of `main()`, the destructor is automatically called to free the allocated memory.
 
 
-
-## ChatGPT in the SDL
-
-From the practical perspective, we have to integrate ChatGPT into the **Software Development Cycle**.
-We have to analyze every phase in the SDL cycle and develop 
-practices to integrate ML.
-
-A promising approach is to **use ChatGPT as a programming pair**:
-
-**Pair programming** is a software development technique in which two programmers work together on the same computer to complete a task. It involves two roles: the **driver** and the **navigator**. 
-The driver is responsible for writing the code, while the navigator reviews each line of code, provides feedback, and thinks strategically about the overall direction of the program.
-
-In pair programming, the two programmers **collaborate in real time**, discussing and solving problems together. They **switch roles frequently**, allowing both individuals to actively participate in the coding process. The driver focuses on the implementation details, typing the code, and executing the immediate tasks, while the navigator takes a broader view, identifying potential issues, suggesting improvements, and conducting research when needed.
-
-
-## ChatGPT in the Class
+## ChatGPT in Education
 
 In the same way that pair programming is a great way for novice programmers to get started, ChatGPT can be used as a **personal learning coach**.
 
@@ -166,7 +165,7 @@ The **assessment must be made in the class** through concrete problems. Homework
 
 * Nathan Hunter. The Art of Prompt Engineering with ChatGPT. ChatGPT Trainings, 2023
 
-* [YouTube (Douglas Schmidt): Applying ChatGPT to Computer Science Courses at Vanderbilt University]
+* [YouTube (Douglas Schmidt): Applying ChatGPT to Computer Science Courses at Vanderbilt University](https://youtu.be/rXUnGaYGTt4)
 
 * Egon Teiniker, Gerhard Seuchter. Improving the Flipped Classroom Model by the Use of Inductive Learning. 2020 IEEE Global Engineering Education Conference (EDUCON)
 
