@@ -6,9 +6,9 @@ This project collects examples, exercises and model solutions needed to understa
 The following topics will be covered:
 
 * **Development Environments**
-    * [Setup](setup/)
-      * [Windows: MinGw, Git, VS Code](setup)
-      * [Virtual Lab: Linux VM (Debian 11.5)](linux/setup)
+    * [Setup](introduction/setup/)
+      * [Windows: MinGw, Git, VS Code](introduction/setup)
+      * [Virtual Lab: Linux VM (Debian 11.5)](introduction/linux/setup)
     * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
          
 * **Programming in C**
