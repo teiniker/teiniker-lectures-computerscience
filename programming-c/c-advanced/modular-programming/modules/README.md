@@ -104,23 +104,25 @@ file. Thus, we **encapsulate the implementation details**.
 
 Example: Makefile to compile two object files and link them into an executable
 ```
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c17 -g -Wall  
 CC=gcc
 
-all: main  
+all: run  
 
-init:
+build:
 	mkdir -p build
 
-sm_parking_gate.o: sm_parking_gate.c sm_parking_gate.h
+build/sm_parking_gate.o: sm_parking_gate.c sm_parking_gate.h
 	$(CC) $(CFLAGS) -c sm_parking_gate.c -o build/sm_parking_gate.o
 
-main.o: main.c
+build/main.o: main.c
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
-main: init sm_parking_gate.o main.o
-	$(CC) $(CFLAGS) build/sm_parking_gate.o build/main.o -o build/sm_parking_gate
-	build/sm_parking_gate
+build/main: build build/sm_parking_gate.o build/main.o
+	$(CC) $(CFLAGS) build/sm_parking_gate.o build/main.o -o build/main
+
+run: build/main
+	build/main
 
 clean:
 	rm -rf build/
@@ -159,4 +161,4 @@ rm -rf build/
 * [GNU Make](https://www.gnu.org/software/make/)    
 
  
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

@@ -1,12 +1,15 @@
 # C Advanced Topics
 
-* [**Memory Management**](memory-management)
+* Modular Programming
+    * [Pre-Processor](modular-programming/preprocessor)
+    * [Modules](modular-programming/modules)
 
-* [**Strings**](strings) 
+* [Memory Management](memory-management)
 
-* [**Structures**](structures)
+* [Strings](strings) 
 
-* [**Modular Programming**](modules)
+* [Structures](structures)
+
 
 * [**File Handling**](file-handling)
 
@@ -14,4 +17,4 @@
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008.
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
