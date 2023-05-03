@@ -24,7 +24,7 @@ teiniker-lectures-computerscience/
 └── LICENSE
 ```
 
-Please note that every change in the repository can be transferred to 
+Note that every change in the repository can be transferred to 
 the local repository by a simple update.
 ```
 $ git pull

@@ -12,7 +12,7 @@ We start our experiments with a **local repository**:
 
 * [Tagging commits in a local repository](doc/TaggingLocalRepository.md)
 * [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
-
+* [Explore the commit history](doc/ExploreCommitHistory.md)
 
 The next step is to use a **remote repository** such as **GitHub** or GitLab:
 
@@ -32,4 +32,4 @@ The next step is to use a **remote repository** such as **GitHub** or GitLab:
 * [YouTube (Dave Farley): GOTO 2022 - Git Flow Is A Bad Idea](https://youtu.be/JOr4QeIjyW4)
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
