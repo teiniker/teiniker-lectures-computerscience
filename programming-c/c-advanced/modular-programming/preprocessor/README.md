@@ -73,7 +73,7 @@ _Example_: Parameterized macros from `Arduino.h`
 #define round(x)     ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
 #define radians(deg) ((deg)*DEG_TO_RAD)
 #define degrees(rad) ((rad)*RAD_TO_DEG)
-#define sq(x) ((x)*(x))```
+#define sq(x) ((x)*(x))
 ```
 
 The replacements are full of **parentheses**. There are two rules to follow when deciding where to put  parentheses in a macro definition:
