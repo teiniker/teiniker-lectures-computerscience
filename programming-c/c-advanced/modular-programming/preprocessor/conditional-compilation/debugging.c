@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define DEBUG
+//#define DEBUG
 
 void debug(const char *msg)
 {
@@ -9,6 +9,7 @@ void debug(const char *msg)
 #endif
 }
 
+// Use: cpp -P debugging.c  to see the cpp output
 int main(void)
 {
     debug("enter main()");
