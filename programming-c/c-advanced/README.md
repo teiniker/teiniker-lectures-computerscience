@@ -10,8 +10,7 @@
 
 * [Structures](structures)
 
-
-* [**File Handling**](file-handling)
+* [File Handling](file-handling)
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008.
