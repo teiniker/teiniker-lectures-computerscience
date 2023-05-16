@@ -44,12 +44,15 @@ program that specifies the data type as an **implementation**.
 
 ## Examples
 
-* **Linked List**
-    * Demo: [linked-list (concept)](list/linked-list)
-    * Exercise: [linked-list](list/linked-list1-exercise) ([model solution](list/linked-list1))
-    * Demo: [linked-list (pointers-to-pointers)](list/linked-list2) 
-    * Demo: [linked-list (API structure)](list/linked-list3)
-    * Demo: [array-list (API structure)](list/array-list)
+* **List**
+    * Array
+        * Demo: [array-list (API structure)](list/array-list)
+    * Linked List
+        * Demo: [linked-list (concept)](list/linked-list)
+        * Exercise: [linked-list](list/linked-list1-exercise) ([model solution](list/linked-list1))
+        * Demo: [linked-list (pointers-to-pointers)](list/linked-list2) 
+        * Demo: [linked-list (API structure)](list/linked-list3)
+    
 
 * **Stack**
     * Exercise: [stack](stack/linked-stack-exercise) 
@@ -71,4 +74,4 @@ program that specifies the data type as an **implementation**.
     * Chapter 4: Abstract Data Types
                  
 
-*Egon Teiniker, 2020-2022, GPL v3.0*                       
+*Egon Teiniker, 2020-2023, GPL v3.0*                       
