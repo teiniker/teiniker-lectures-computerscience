@@ -4,13 +4,15 @@
     * [Pre-Processor](modular-programming/preprocessor)
     * [Modules](modular-programming/modules)
 
-* [Memory Management](memory-management)
+* [Memory Management](memory-management/)
 
-* [Strings](strings) 
+* [Strings](strings/) 
 
-* [Structures](structures)
+* [Structures](structures/)
 
-* [File Handling](file-handling)
+* [File Handling](file-handling/)
+
+* [Error Handling](error-handling/)
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008.
