@@ -1,7 +1,9 @@
 # Programming in C++
 
-* C++ Basics
-  * [Classes](c++basics/classes/)
+* Basics
+  * [Classes and Objects](basics/classes/)
+
+* [Data Structures](datastructures/) 
 
 
 ## References
@@ -10,4 +12,4 @@
 
 * Bjarne Stroustrup. **The C++ Programming Language.** Pearson 4th Edition 2017
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
