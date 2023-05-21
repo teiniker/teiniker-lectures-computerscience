@@ -22,6 +22,11 @@ size_t say_hello(const char *name)
 
 The only difference for now is that we call the header file `cstdin` and not `stdin.h`
 
+In C++, the traditional C library headers, such as `stdio.h`, have been adapted to the 
+**C++ standard library** and given the `c` prefix. 
+The primary reason for this adaptation is to ensure compatibility and consistency 
+between C and C++ codebases. 
+
 In addition, we change the name of the compiler from `gcc` to `g++` in the `Makefile`.
 
 The C++ implementation files have a `.cpp` extension to distinguish them 
