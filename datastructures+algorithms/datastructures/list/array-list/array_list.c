@@ -4,6 +4,14 @@
 
 #include "array_list.h"
 
+struct array_list
+{
+    size_t size;
+    size_t dimension;
+    int* array;
+};
+
+
 array_list_t *list_new(size_t dimension)
 {
     array_list_t *list = malloc(sizeof(array_list_t));
