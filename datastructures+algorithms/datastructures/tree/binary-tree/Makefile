@@ -2,23 +2,25 @@ CFLAGS=-std=c99 -g -Wall
 CC=gcc
 UNITY=../../unity
 
-all: init test
+all: test_run
 
-init:
+build:
 	mkdir -p build
 
-unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
+build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
 	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
 
-binary_tree.o: binary_tree.h binary_tree.c
+build/binary_tree.o: binary_tree.h binary_tree.c
 	$(CC) $(CFLAGS) -c binary_tree.c -o build/binary_tree.o
 
-binary_tree_test.o: binary_tree_test.c
-	$(CC) $(CFLAGS) -I $(UNITY) -c binary_tree_test.c -o build/binary_tree_test.o
+build/test.o: test.c
+	$(CC) $(CFLAGS) -I $(UNITY) -c test.c -o build/test.o
 
-test: init unity.o binary_tree.o binary_tree_test.o
-	$(CC) $(CFLAGS) build/unity.o build/binary_tree.o build/binary_tree_test.o -o build/binary_tree_test
-	build/binary_tree_test
+build/test: build build/unity.o build/binary_tree.o build/test.o
+	$(CC) $(CFLAGS) build/unity.o build/binary_tree.o build/test.o -o build/test
+
+test_run: build/test
+	build/test
 
 clean:
 	rm -rf build/
