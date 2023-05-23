@@ -18,8 +18,8 @@ $ make
 mkdir -p build
 gcc -std=c99 -g -Wall   -c ../../unity/unity.c -o build/unity.o
 gcc -std=c99 -g -Wall   -c sum.c -o build/sum.o
-gcc -std=c99 -g -Wall   -I ../../unity -c sum_test.c -o build/sum_test.o
-gcc -std=c99 -g -Wall   build/unity.o build/sum.o build/sum_test.o -o build/sum_test
+gcc -std=c99 -g -Wall   -I ../../unity -c test.c -o build/test.o
+gcc -std=c99 -g -Wall   build/unity.o build/sum.o build/test.o -o build/test
 build/sum_test
  sum_of_integers(0)
 sum_test.c:39:test_n_zero:PASS
