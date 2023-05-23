@@ -67,7 +67,7 @@ In fact, **many tool chains offer C and C++ support** (see also the **Arduino Fr
 
 ## References
 
-* Josh. Lospinoso. **C++ Crash Course**. No Starch Press, 2019 
+* Josh Lospinoso. **C++ Crash Course**. No Starch Press, 2019 
     * Part I: Chapter 1: Up and Running 
 
 *Egon Teiniker, 2020-2023, GPL v3.0*
