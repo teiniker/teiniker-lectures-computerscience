@@ -60,9 +60,9 @@ void tree_traversal_inorder(node_t *node_ptr)
     }
     else 
     {
-        tree_traversal_preorder(node_ptr->left_ptr);
+        tree_traversal_inorder(node_ptr->left_ptr);
         printf("%d ", node_ptr->value);
-        tree_traversal_preorder(node_ptr->right_ptr);
+        tree_traversal_inorder(node_ptr->right_ptr);
     }
 }
 
@@ -74,8 +74,8 @@ void tree_traversal_postorder(node_t *node_ptr)
     }
     else 
     {
-        tree_traversal_preorder(node_ptr->left_ptr);
-        tree_traversal_preorder(node_ptr->right_ptr);
+        tree_traversal_postorder(node_ptr->left_ptr);
+        tree_traversal_postorder(node_ptr->right_ptr);
         printf("%d ", node_ptr->value);
     }
 }
