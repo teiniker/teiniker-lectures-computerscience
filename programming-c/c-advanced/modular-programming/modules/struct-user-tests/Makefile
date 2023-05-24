@@ -13,19 +13,19 @@ build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
 build/main.o: main.c user.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
-build/main: build/main.o 
+build/main: build build/main.o 
 	$(CC) $(CFLAGS) build/main.o -o build/main
 	
-run: build build/main	
+run: build/main	
 	build/main
 
-build/test.o: test.c
+build/test.o: test.c user.h
 	$(CC) $(CFLAGS) -I $(UNITY) -c test.c -o build/test.o
 
-build/test: build/unity.o build/test.o
+build/test: build build/unity.o build/test.o
 	$(CC) $(CFLAGS) build/unity.o build/test.o -o build/test
 
-run_test: build build/test
+run_test: build/test
 	build/test
 
 clean:

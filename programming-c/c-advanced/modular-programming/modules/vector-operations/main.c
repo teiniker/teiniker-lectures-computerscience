@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "vector_operations.h"
-#include<stdio.h>
 
 int main(void)
 {
