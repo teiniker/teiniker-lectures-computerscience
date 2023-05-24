@@ -13,10 +13,47 @@ When dealing with files in C, there are two types of files we should know about:
 ## Working with Files
 
 ### File Pointer
-When working with files, you need to declare a **pointer of type file**. This declaration is needed for communication between the file and the program.
+When working with files, you need to declare a **pointer of type FILE**. 
+This declaration is needed for communication between the file and the program.
 ```C
     FILE *fp;
 ```
+
+The inner structure of the `FILE` type is actually implementation-dependent, 
+which means its structure may vary across different compilers or platforms. 
+The exact details of the FILE structure are not specified by the C standard.
+
+However, the `FILE` structure typically contains various fields that store 
+information about the associated file stream. These fields may include:
+
+1. **File Descriptor**: A file descriptor is an integer value that represents 
+the file opened by the `FILE` structure. It is used by the operating system to 
+identify the file when performing file-related operations.
+
+2. **Buffering Information**: The `FILE` structure may contain information about 
+buffering, such as a buffer for input or output operations. Buffering improves 
+performance by reducing the number of system calls to read or write data.
+
+3. **Current Position**: The `FILE` structure usually maintains the current 
+position within the file, which keeps track of the next character to be read 
+from or written to.
+
+4. **Error and End-of-File Indicators**: There are typically fields that store 
+information about error conditions and end-of-file status. These indicators help 
+in detecting and handling errors or determining if the end of the file has been reached.
+
+5. **File Mode and Type**: The `FILE` structure may include information about 
+the file's open mode (e.g., read, write, append) and file type (e.g., text or binary).
+
+6. **Other Control Flags**: Various control flags might be present to manage 
+the behavior of the file stream, such as flags for text/binary mode, buffering 
+options, and more.
+
+Keep in mind that the structure of `FILE` is typically considered an implementation detail and
+it is recommended to use the provided functions and macros from the standard library, such 
+as `fopen()`, `fread()`, `fwrite()' , etc., to interact with files through the `FILE` lpointers 
+in a portable manner.
+
 
 ### Opening a File 
 
@@ -29,40 +66,40 @@ The syntax for opening a file in standard I/O is:
 
 Possible opening **modes** in standard I/O are:
 
-* `"r"` : Open for reading in text mode.
+* `"r"` : Open for **reading in text mode**.
     If the file does not exist, `fopen()` returns `NULL`.
 
-* `"rb"`: Open for reading in binary mode.
+* `"rb"`: Open for **reading in binary mode**.
     If the file does not exist, `fopen()` returns `NULL`.
 
-* `"w"` : Open for writing in text mode. 
+* `"w"` : Open for **writing in text mode**. 
     If the file exists, its contents are overwritten. If the file does not exist, it will be created.
 
-* `"wb`: Open for writing in binary mode.
+* `"wb`: Open for **writing in binary mode**.
     If the file exists, its contents are overwritten. If the file does not exist, it will be created.
 
-* `"a"` : Open for append. Data is added to the end of the file.
+* `"a"` : Open for **append**. Data is added to the end of the file.
     If the file does not exist, it will be created.
 
-* `"ab"`: Open for append in binary mode. Data is added to the end of the file.
+* `"ab"`: Open for **append in binary mode**. Data is added to the end of the file.
     If the file does not exist, it will be created.
 
-* `"r+"`: Open for both reading and writing.    
+* `"r+"`: Open for both **reading and writing**.    
     If the file does not exist, `fopen()` returns `NULL`.
 
-* `"rb+"`: Open for both reading and writing in binary mode.
+* `"rb+"`: Open for both **reading and writing in binary mode**.
     If the file does not exist, `fopen()` returns `NULL`.
 
-* `"w+"`: Open for both reading and writing.
+* `"w+"`: Open for both **reading and writing**.
     If the file exists, its contents are overwritten. If the file does not exist, it will be created.
 
-* `"wb+"`: Open for both reading and writing in binary mode.
+* `"wb+"`: Open for both **reading and writing in binary mode**.
     If the file exists, its contents are overwritten. If the file does not exist, it will be created.
 
-* `"a+"`: Open for both reading and appending.
+* `"a+"`: Open for both **reading and appending**.
     If the file does not exist, it will be created.
 
-* `"ab+"`: Open for both reading and appending in binary mode.
+* `"ab+"`: Open for both **reading and appending in binary mode**.
     If the file does not exist, it will be created.
 
 
@@ -73,7 +110,7 @@ Closing a file is performed using the `fclose()` function.
 ```C
     fclose(fp);
 ```
-Here, `fp` is a file pointer associated with the file to be closed.
+Here, `fp` is a `FILE` pointer associated with the file to be closed.
 
 
 ### Reading and Writing to a Text File
@@ -158,4 +195,4 @@ _Example_: Using `fseek()` to move the cursor to the 5th element (starting with 
 
 * [YouTube (Jacob Sorber): Reading and Writing Files in C, two ways (fopen vs. open)](https://youtu.be/BQJBe4IbsvQ)
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

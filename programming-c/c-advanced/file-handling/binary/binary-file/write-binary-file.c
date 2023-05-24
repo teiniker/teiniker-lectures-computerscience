@@ -29,12 +29,12 @@ int main(void)
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't create file: %s !\n", file_name);
-        return -1;
+        return EXIT_FAILURE;
     }
 
     fwrite(data, sizeof(double), NUMBER_OF_VALUES, fp);
 
     fclose(fp);
 
-    return 0;
+    return EXIT_SUCCESS;
 }

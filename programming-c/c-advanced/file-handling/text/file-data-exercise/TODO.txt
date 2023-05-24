@@ -9,6 +9,7 @@ Die folgenden Funktionen sind zu implementieren:
 A) int data_read(char *filename, double data[], size_t size)
     Liest eine gegebene Anzahl von Daten aus dem gegebenen Text-File 
     "measurement.txt" in ein Array.
+    Tipp: Verwenden Sie fscanf().
 
 B) void data_print(double data[], size_t size)
     Gibt die gelesenen Daten das Array's auf der Konsole aus:

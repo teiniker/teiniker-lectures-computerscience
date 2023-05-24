@@ -15,7 +15,7 @@ int main(void)
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", file_name);
-        return -1;
+        return EXIT_FAILURE;
     }
     
     for(int i=0; i< NUMBER_OF_VALUES; i++)
@@ -35,5 +35,5 @@ int main(void)
 
     fclose(fp);
 
-    return 0;
+    return EXIT_SUCCESS;
 }

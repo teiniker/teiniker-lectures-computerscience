@@ -5,20 +5,20 @@
 
 bool is_valid_user(char* username, char* password)
 {
-    char _username[256];
-    char _password[256];
-    FILE *fp;
-    fp = fopen("application-users.config", "r");
+    char stored_username[256];
+    char stored_password[256];
+    
+    FILE *fp = fopen("application-users.config", "r");
     if (fp == NULL) 
     {
         fprintf(stderr, "Can't open application-users.config file!\n");
         return false;
     }
     
-    while(fscanf(fp, "%s %s", _username, _password) != EOF)
+    while(fscanf(fp, "%s %s", stored_username, stored_password) != EOF)
     {
-        if(strcmp(username,_username) == 0
-            && strcmp(password,_password) == 0)
+        if(strcmp(username,stored_username) == 0
+            && strcmp(password,stored_password) == 0)
         {
             fclose(fp);
             return true;
