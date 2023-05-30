@@ -1,0 +1,41 @@
+Exercise: Double-Linked List
+-------------------------------------------------------------------------------
+
+Sie haben die unvollständige Implementierung einer doppelt-verketteten Liste 
+gegeben (jeder "node_t" besitzt zwei Pointer: "next_ptr" und "prev_ptr").
+
+Beachten Sie, dass "list_t" zwei Pointer speichert, "first_ptr" zeigt auf das 
+erste Objekt der Liste, "last_ptr" zeigt auf das letzte Objekt der Liste.
+
+Implementieren Sie die fehlenden Funktionen:
+
+A) void list_append(list_t *list, int value)
+    Hängt einen neuen "node_t" am Ende der Liste an.
+    Wenn "list->last_ptr == NULL", dann ist die Liste leer.
+    Wird ein erster "node_t" eingefügt, zeigen beide "list" Pointer auf das eine 
+    Objekt.
+
+B) void list_prepend(list_t *list, int value)
+    Fügt einen neuen "node_t" am Anfang der Liste ein.
+    Wenn "list->first_ptr == NULL", dann ist die Liste leer.
+    Wird ein erster "node_t" eingefügt, zeigen beide "list" Pointer auf das eine 
+    Objekt.
+
+Überprüfen Sie Ihre Implementierung mit den gegebenen Testfällen:
+
+> make 
+mkdir -p build
+gcc -std=c99 -g -Wall   -c unity/unity.c -o build/unity.o
+gcc -std=c99 -g -Wall   -c linked_list.c -o build/linked_list.o
+gcc -std=c99 -g -Wall   -I unity -c linked_list_test.c -o build/linked_list_test.o
+gcc -std=c99 -g -Wall   build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
+build/linked_list_test
+[ 1 3 5 5 3 1 ]
+linked_list_test.c:64:test_size:PASS
+linked_list_test.c:65:test_prepend:PASS
+linked_list_test.c:66:test_append:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
+
