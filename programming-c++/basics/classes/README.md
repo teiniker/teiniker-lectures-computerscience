@@ -1,4 +1,4 @@
-# From Struct to Class
+# Classes and Objects
 
 ## C Structures
 
