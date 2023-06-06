@@ -19,10 +19,10 @@ Modern C++ compilers will accommodate most of your C programming habits.
 This makes it easy to embrace a few of the tactical niceties that the C++ language 
 affords us while deliberately avoiding the language’s deeper themes. 
 
-This style of C++ - we can call it **Super C** - is important to discuss for several reasons. 
+This style of C++ - we can call it **Super C** - is important to discuss for several reasons: 
 * First, seasoned C programmers can immediately benefit from applying simple, tactical-level 
   C++ concepts to their programs. 
-* Second, Super C is not idiomatic C++. Simply sprinkling references and instances of 
+* Second, Super C is not fully comprehensive C++. Simply sprinkling references and instances of 
   auto around a C program might make your code more robust and readable, but you’ll need 
   to learn other concepts to take full advantage of it. 
 * Third, in some environments (embedded software and heterogeneous computing), the 

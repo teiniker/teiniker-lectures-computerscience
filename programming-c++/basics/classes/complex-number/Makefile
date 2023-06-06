@@ -2,23 +2,25 @@ CFLAGS= -g -Wall
 CC=g++
 UNITY=../../../unity
 
-all: init test
+all: run_test
 
-init:
+build:
 	mkdir -p build
 
-unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
+build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
 	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
 
-complex_number.o: complex_number.cpp complex_number.h
+build/complex_number.o: complex_number.cpp complex_number.h
 	$(CC) $(CFLAGS) -c complex_number.cpp -o build/complex_number.o
 
-complex_number_test.o: complex_number_test.cpp
-	$(CC) $(CFLAGS) -I $(UNITY) -c complex_number_test.cpp -o build/complex_number_test.o
+build/test.o: test.cpp
+	$(CC) $(CFLAGS) -I $(UNITY) -c test.cpp -o build/test.o
 
-test: init unity.o complex_number.o complex_number_test.o
-	$(CC) $(CFLAGS) build/unity.o build/complex_number.o build/complex_number_test.o -o build/complex_number_test
-	build/complex_number_test
+build/test: build build/unity.o build/complex_number.o build/test.o
+	$(CC) $(CFLAGS) build/unity.o build/complex_number.o build/test.o -o build/test
+
+run_test: build/test 
+	build/test
 
 clean:
 	rm -rf build/
