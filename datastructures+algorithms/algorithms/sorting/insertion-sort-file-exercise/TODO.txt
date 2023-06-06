@@ -1,4 +1,4 @@
-Exercise: Testing Insertion Sort
+Exercise: Insertion Sort (Daten werden von einem File gelesen)
 -------------------------------------------------------------------------------
 
 Sie haben eine Implementierung von Insertion Sort gegeben.
