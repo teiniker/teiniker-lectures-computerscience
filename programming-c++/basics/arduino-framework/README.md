@@ -12,7 +12,7 @@ together with some examples:
 
 * Function Overloading
     * [cores/arduino/Arduino.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h)
-    * [cores/arduino/IPAddress.h](https://github.com/arduino/ArduinoCore-avr/blob/master/)cores/arduino/IPAddress.h
+    * [cores/arduino/IPAddress.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/IPAddress.h)
 
 * Default Arguments
     * [cores/arduino/Arduino.h](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/Arduino.h)
