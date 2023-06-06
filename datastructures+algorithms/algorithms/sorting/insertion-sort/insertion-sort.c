@@ -8,6 +8,7 @@ void array_insertion_sort(int data[], int n)
     int key, j;
     for (int i = 1; i < n; i++) 
     {
+        array_print(data, n);
         key = data[i];
         j = i - 1;
  

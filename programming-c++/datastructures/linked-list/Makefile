@@ -2,23 +2,26 @@ CFLAGS= -g -Wall
 CC=g++
 UNITY=../../unity
 
-all: init test
+all: run_test
 
-init:
+build:
 	mkdir -p build
 
-unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
+build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
 	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
 
 build/linked_list.o: linked_list.cpp linked_list.h
 	$(CC) $(CFLAGS) -c linked_list.cpp -o build/linked_list.o
 
-build/linked_list_test.o: linked_list_test.cpp
-	$(CC) $(CFLAGS) -I $(UNITY) -c linked_list_test.cpp -o build/linked_list_test.o
+build/test.o: test.cpp 
+	$(CC) $(CFLAGS) -I $(UNITY) -c test.cpp -o build/test.o
 
-test: init unity.o build/linked_list.o build/linked_list_test.o
-	$(CC) $(CFLAGS) build/unity.o build/linked_list.o build/linked_list_test.o -o build/linked_list_test
-	build/linked_list_test
+build/test: build build/unity.o build/linked_list.o build/test.o
+	$(CC) $(CFLAGS) build/unity.o build/linked_list.o build/test.o -o build/test
+	build/test
+
+run_test: build/test
+	build/test
 
 clean:
 	rm -rf build/

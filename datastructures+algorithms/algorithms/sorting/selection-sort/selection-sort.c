@@ -17,6 +17,7 @@ void array_selection_sort(int data[], int n)
     // One by one move boundary of unsorted subarray
     for (int i = 0; i < n-1; i++)
     {
+        array_print(data, n);
         // Find the minimum element in unsorted array
         min_idx = i;
         for (int j = i+1; j < n; j++)

@@ -14,6 +14,7 @@ void array_bubble_sort(int data[], int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
+        array_print(data, n);
         for (int j = 0; j < n - i - 1; j++)
         {
             if (data[j] > data[j + 1])
