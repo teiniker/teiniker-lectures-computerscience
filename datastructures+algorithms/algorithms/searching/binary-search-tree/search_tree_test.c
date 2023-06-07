@@ -5,7 +5,7 @@
 
 #include "search_tree.h"
 
-node_t *root_ptr = NULL;
+node_t *tree = NULL;
 /*
                 100
               /    \
@@ -16,23 +16,23 @@ node_t *root_ptr = NULL;
 
 void setUp(void)
 {
-    root_ptr = tree_insert(root_ptr, 100);
-    root_ptr = tree_insert(root_ptr, 500);
-    root_ptr = tree_insert(root_ptr, 20);
-    root_ptr = tree_insert(root_ptr, 10);
-    root_ptr = tree_insert(root_ptr, 30);
+    tree = tree_insert(tree, 100);
+    tree = tree_insert(tree, 500);
+    tree = tree_insert(tree, 20);
+    tree = tree_insert(tree, 10);
+    tree = tree_insert(tree, 30);
 }
 
 void tearDown(void)
 {
-    tree_delete(root_ptr);
-    root_ptr = NULL;
+    tree_delete(tree);
+    tree = NULL;
 }
 
 
 void test_tree_search(void)
 {
-    node_t *n = tree_search(root_ptr, 30);
+    node_t *n = tree_search(tree, 30);
 
     printf("Result: %d\n", n->value);
     TEST_ASSERT_EQUAL(30, n->value);
@@ -41,7 +41,7 @@ void test_tree_search(void)
 void test_tree_print(void)
 {
     printf("In-Order: ");
-    tree_print(root_ptr);
+    tree_print(tree);
     printf("\n");
 }
 

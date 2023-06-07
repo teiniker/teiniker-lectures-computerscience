@@ -18,7 +18,6 @@ student_t *student_new(int id, char *first_name, char *last_name)
     student->first_name = first_name;
     student->last_name = last_name;
     return student;
-
 }
 
 node_t *tree_insert(node_t *node_ptr, student_t *value, comparator_t cmp)

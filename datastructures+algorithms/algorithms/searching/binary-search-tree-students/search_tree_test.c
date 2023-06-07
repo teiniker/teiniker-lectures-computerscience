@@ -6,7 +6,7 @@
 
 #include "search_tree.h"
 
-node_t *root_ptr = NULL;
+node_t *tree = NULL;
 
 int comparator(const void *a, const void *b) 
 {
@@ -20,17 +20,17 @@ comparator_t cmp = NULL;
 void setUp(void)
 {
     cmp = comparator;
-    root_ptr = tree_insert(root_ptr, student_new(100, "Homer", "Simpson"), cmp);
-    root_ptr = tree_insert(root_ptr, student_new(500, "Marge", "Simpson"), cmp);
-    root_ptr = tree_insert(root_ptr, student_new(20, "Bart", "Simpson"), cmp);
-    root_ptr = tree_insert(root_ptr, student_new(10, "Lisa", "Simpson"), cmp);
-    root_ptr = tree_insert(root_ptr, student_new(30, "Maggie", "Simpson"), cmp);
+    tree = tree_insert(tree, student_new(100, "Homer", "Simpson"), cmp);
+    tree = tree_insert(tree, student_new(500, "Marge", "Simpson"), cmp);
+    tree = tree_insert(tree, student_new(20, "Bart", "Simpson"), cmp);
+    tree = tree_insert(tree, student_new(10, "Lisa", "Simpson"), cmp);
+    tree = tree_insert(tree, student_new(30, "Maggie", "Simpson"), cmp);
 }
 
 void tearDown(void)
 {
-    tree_delete(root_ptr);
-    root_ptr = NULL;
+    tree_delete(tree);
+    tree = NULL;
 }
 
 void test_compare_a_gt_b(void)
@@ -87,7 +87,7 @@ void test_compare_a_eq_b(void)
 void test_tree_search(void)
 {
     student_t *student = student_new(20, "", "");
-    node_t *n = tree_search(root_ptr, student, cmp);
+    node_t *n = tree_search(tree, student, cmp);
     free(student);
 
     printf("Result: %d %s %s\n", n->value->id, n->value->first_name, n->value->last_name);
@@ -99,7 +99,7 @@ void test_tree_search(void)
 void test_tree_print(void)
 {
     printf("In-Order: ");
-    tree_print(root_ptr);
+    tree_print(tree);
     printf("\n");
 }
 

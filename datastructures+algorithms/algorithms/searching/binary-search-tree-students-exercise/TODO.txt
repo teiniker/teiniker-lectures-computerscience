@@ -1,4 +1,4 @@
-Exercise: Binary Search Tree 
+Exercise: Binary Search Tree (of Students)
 -------------------------------------------------------------------------------
 
 Ergänzen Sie die  Implementierung eines binären Suchbaumes, welcher Objekte vom 
