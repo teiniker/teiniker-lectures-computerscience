@@ -1,0 +1,38 @@
+Exercise: Binary Tree (of Books)
+-------------------------------------------------------------------------------
+
+Sie haben die Implementiereung eines Binary Tree's gegeben.
+Werweitern Sie die Implementierung, damit statt "int" Werten Pointer auf 
+"book_t" Instanzen gespeichert werden können.
+
+A) book_t 
+Fügen Sie eine Struktur "book_t" hinzu, die aus den folgenden Elementen besteht:
+    char *ISBN;
+    char *author;
+    char *title;
+
+B) void print_book(book_t *value)
+Implementieren Sie im File "binary_tree.c" die Funktion "print_book()", welche 
+die Daten einer "book_t" Instanz ausgibt: ISBN: Author - 'Title'
+    978-1593278885: Josh Lospinoso - 'C++ Crash Course: A Fast-Paced Introduction'
+
+C) Refactoring
+Ändern Sie die bestehende Implementierung ("binary_tree.h", "binary_tree.c" und 
+"test.c") so, dass die "int value"s im binary Tree durch "book_t *value" ersetzt 
+werden.
+
+Bauen sie im "test.c" folgende Baumstruktur auf:
+/*
+               book1
+              /    \
+           book2   book3
+          /  \    
+       book4 book5        
+*/
+
+book_t book1 = {"978-0393979503", "K. N. King", "C Programming: A Modern Approach"};
+book_t book2 = {"978-0131103627","Brian W. Kernighan, Dennis Ritchie","The C Programming Language"};
+book_t book3 = {"978-1718501041","Robert C. Seacord","Effective C: An Introduction to Professional C Programming"};
+book_t book4 = {"978-1593278885","Josh Lospinoso","C++ Crash Course: A Fast-Paced Introduction"};
+book_t book5 = {"978-0275967819", "Stroustrup Bjarne","Programming: Principles and Practice Using C++"};
+
