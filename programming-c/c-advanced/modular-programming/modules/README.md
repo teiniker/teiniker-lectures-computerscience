@@ -153,6 +153,8 @@ rm -rf build/
 
 
 ## References
+* [YouTube (Jacob Sorber): Understanding the Extern Keyword in C](https://youtu.be/ySY_FlA7EvA)
+
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997. Chapter 18: Modular Programming 
 
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008. 
