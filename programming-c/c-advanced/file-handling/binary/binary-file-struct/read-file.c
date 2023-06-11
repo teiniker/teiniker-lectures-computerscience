@@ -25,12 +25,15 @@ int main(void)
         return EXIT_FAILURE;
     }
     
+    // Read all records from file into the array
+    size_t size = fread(data, sizeof(resistor_t), NUMBER_OF_VALUES, fp);
+    printf("Read %d elements from file.\n", size);
+
     for(int i=0; i< NUMBER_OF_VALUES; i++)
     {
-        fread(&data[i], sizeof(resistor_t), 1, fp);
         printf("%4d Ohms, %d %%\n", data[i].value, data[i].tolerance);
     }
-    puts("\n");
+    puts("\n"); // puts(str) short for printf("%s", str);
 
     fclose(fp);
 
