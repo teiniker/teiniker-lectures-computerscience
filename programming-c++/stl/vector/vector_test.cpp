@@ -72,6 +72,22 @@ void test_vector_sort(void)
    TEST_ASSERT_TRUE(expected == numbers);
 }
 
+// Comparator function to sort in descending order
+bool compareDesc(int a, int b) 
+{
+    return a > b;
+}
+
+void test_vector_sort_descending(void)
+{
+   vector<int> numbers = {7, 5, 16, 8};
+
+   sort(numbers.begin(), numbers.end(), compareDesc);
+
+   vector<int> expected = {16, 8, 7, 5};
+   TEST_ASSERT_TRUE(expected == numbers);
+}
+
 
 int main(void)
 {
@@ -82,6 +98,7 @@ int main(void)
    RUN_TEST(test_vector_push_back);
    RUN_TEST(test_vector_for_each);
    RUN_TEST(test_vector_sort);
+   RUN_TEST(test_vector_sort_descending);
    //...
 
 	return UNITY_END();
