@@ -91,12 +91,28 @@ We can very easily create C++ classes from the given data structure implementati
 
 A huge benefit of learning C++ is that you gain access to the C++ Standard Library, the `stdlib`, free of charge. The stdlib is composed of three interlocking parts: **containers**, **iterators**, and **algorithms**.
 
-### Containers
+### String Library
 * [String](stl/string/)
-* [Vector](stl/vector/)
+
+
+### Containers Library
+* Sequence Containers\
+  Sequence containers implement data structures which can be accessed sequentially.
+  * [Vector](stl/vector/)
+  * [List](stl/list/)
+
+* Container Adaptors\
+  Container adaptors provide a different interface for sequential containers.
+
+  * [Stack](stl/stack/)
+  * [Queue](stl/queue/)
 
 
 ## References
+
+* [YouTube (CppCon 2021): Back to Basics: Classic STL - Bob Steagall](https://youtu.be/tXUXl_RzkAk)
+
+* [C++ Reference: Containers Library](https://en.cppreference.com/w/cpp/container)
 
 * Josh. Lospinoso. **C++ Crash Course**. No Starch Press, 2019 
 
