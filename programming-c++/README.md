@@ -3,7 +3,7 @@
 In the hands of a knowledgeable programmer, C++ can produce smaller, more efficient,
 and more readable code than any other system programming language.
 
-_Example_: [Hello World in C++](basics/introduction/hello-world/)
+_Example_: [Hello World in C++](introduction/hello-world/)
 
 As a descendant of C, C++ also takes **zero-overhead abstraction** and direct mapping 
 to hardware very seriously. This commitment goes beyond just the C language features 
@@ -36,11 +36,6 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 * [Function Overloading](basics/first-steps/function-overloading/)
 * [Default Arguments](basics/first-steps/default-arguments/)
 * [References](basics/first-steps/references/)
-
-### Arduino Framework
-If we look at the source code of the Arduino Framework, we will find many C++ idioms:
-
-_Example:_ [C++ Features in the Arduino Core](basics/arduino-framework/)
 
 
 ## Object-Oriented Programming (OOP)
@@ -86,7 +81,6 @@ We can very easily create C++ classes from the given data structure implementati
 * [Stack](datastructures/stack/)
 
 
-
 ## Standard Template Library (STL)
 
 A huge benefit of learning C++ is that you gain access to the C++ Standard Library, the `stdlib`, free of charge. The stdlib is composed of three interlocking parts: **containers**, **iterators**, and **algorithms**.
@@ -106,6 +100,12 @@ A huge benefit of learning C++ is that you gain access to the C++ Standard Libra
 
   * [Stack](stl/stack/)
   * [Queue](stl/queue/)
+
+
+## Arduino Framework
+If we look at the source code of the Arduino Framework, we will find many C++ features:
+
+_Example:_ [C++ Features in the Arduino Core](arduino-framework/)
 
 
 ## References
