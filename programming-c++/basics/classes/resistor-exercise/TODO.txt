@@ -1,0 +1,25 @@
+Exercise: Class & Objects (Resistor)
+-------------------------------------------------------------------------------
+
+Implementieren Sie eine Klasse "Resistor" mit den folgenden Attributen und 
+Operationen:
+    private:
+        uint32_t _value;
+        uint8_t _tolerance;
+
+    public:
+        Resistor(uint32_t value, uint8_t tolerance = 1);
+        
+        // Accessor methods
+        uint32_t value();
+        uint8_t tolerance();
+
+        // Methods 
+        void serial(Resistor& r);
+        void parallel(Resistor& r);
+
+Verwenden sie dazu die Filenamen "resistor.h" und "resistor.cpp".
+
+Überprüfen Sie Ihre Implementierung mit "test.c".
+
+Tip: Das "Makefile ist bereits vorhanden und braucht nicht erweitert werden.
