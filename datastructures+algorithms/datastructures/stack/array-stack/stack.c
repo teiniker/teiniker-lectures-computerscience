@@ -19,7 +19,7 @@ void stack_delete(stack_t *stack)
 
 bool stack_is_empty(stack_t *stack)
 {
-    return stack->top == 0;
+    return stack->top == -1;
 
 }
 
@@ -57,10 +57,16 @@ int stack_pop(stack_t *stack)
 
 void stack_print(stack_t *stack)
 {
-    printf("-->[ ");
+    if(stack_is_empty(stack))
+    {
+        printf("[]<--top\n");
+        return;
+    }
+
+    printf("[ ");
     for(int i=0; i <= stack->top; i++)
     {
         printf("%d ", stack->buffer[i]);       
     }
-    printf("]\n");
+    printf("]<--top\n");
 }

@@ -12,9 +12,7 @@ void setUp(void)
     stack = stack_new(10);
     stack_push(stack, 1);
     stack_push(stack, 3);
-    stack_push(stack, 5);
-
-    stack_print(stack);
+    stack_push(stack, 5); 
 }
 
 void tearDown(void)
@@ -30,10 +28,12 @@ void test_is_not_empty(void)
 
 void test_is_empty(void)
 {
+    stack_print(stack);
     stack_pop(stack);
     stack_pop(stack);
     stack_pop(stack);
-
+    stack_print(stack);
+    
     TEST_ASSERT_TRUE(stack_is_empty(stack));
 }
 
