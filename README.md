@@ -35,8 +35,7 @@ The following topics will be covered:
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
 * **Programming in C++**
-   * [C++ Basics](programming-c++/c++basics/)
-      * [Classes](programming-c++/c++basics/classes/)
+   * [C++ Basics](programming-c++/)
    * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
 
 *Egon Teiniker, 2020-2023, GPL v3.0*         
