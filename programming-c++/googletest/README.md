@@ -42,8 +42,10 @@ $ sudo make install
 $ g++ test.cpp -o test -lgtest -lgtest_main -pthread
 ```
 
-
 ## References
 * [GoogleTest User’s Guide](https://google.github.io/googletest/)
 
+* [YouTube: Introduction to Google Test and Google Mock](https://youtu.be/N8a7IFPAPXs?si=zYIqGOk5jvBA_TX0)
+
 * [YouTube (Google C++ Testing): GTest, GMock Framework Part- 1 : Introduction](https://youtu.be/nbFXI9SDfbk?si=aA0FZvMv6gr2yu7A)
+
