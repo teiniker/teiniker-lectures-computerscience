@@ -170,8 +170,8 @@ experts don’t follow them easily.
 * [Activity Diagram in UML: Symbol, Components & Example](https://www.guru99.com/uml-activity-diagram.html)
 
 * Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition, 2004
+  * Chapter 11: Activity Diagrams
+
 * Robert C. Martin. **UML for Java Programmers**. Prentice Hall, 2003
-* Jim Arlow, Ila Neustadt. **UML 2 and the Unified Process**. Addison-Wesley, 2nd Edition, 2005
 
-
-*Egon Teiniker, 2020-2022, GPL v3.0*  
+*Egon Teiniker, 2020-2023, GPL v3.0*  
