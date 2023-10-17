@@ -2,7 +2,7 @@
 
 Every variable must have a type, which specifies what kind of data it will hold.
 C has a wide variety of types.
-Choosing the proper type is critical, since the type affects how the variable is stored and what operations can be performed on the variable.
+**Choosing the proper type is critical**, since the type affects how the variable is stored and what operations can be performed on the variable.
 
 The type of a numeric variable determines the largest and smallest numbers that the variable can store, it also determines whether or not digits are allowed after the decimal point.
 
@@ -24,6 +24,11 @@ float variables can store numbers with digits after the decimal point, like `3.1
 * [Formated Output](formated-output)
 
 * [Data Types](types)
+  * boolean
+  * integer
+  * floating-point 
+  * characters 
+  * strings 
 
 * [Operators](operators) 
 
