@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 // Macro definition is a pre-processor directive
 // #define PIN_NUMBER 3 
 
