@@ -16,8 +16,11 @@ The types in C can be classified as follows:
 * [**Floating-Point Numbers**](floating-point)\
     Floating-point is the most common representation for real numbers in computers.
 
-* [**Characters**](character)\
+* [**Characters**](characters)\
     Character data include alphabethic symbols, punctuation marks, numeric digits, spaces, tabs, and so on.
+
+* [**Strings**](strings)\
+    C uses character arrays to store strings.
 
 
 ## References
@@ -35,4 +38,4 @@ The types in C can be classified as follows:
 
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
