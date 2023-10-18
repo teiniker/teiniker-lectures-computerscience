@@ -1,6 +1,6 @@
 # Formated Output
 
-The `printf()` functionis designed to display the contents of a sting, known as the **format string**, with values possibly inserted at specified points in the string.
+The `printf()` function is designed to display the contents of a string, known as the **format string**, with values possibly inserted at specified points in the string.
 
 The values displayed can be constants, variables, or more complicated expressions.
 
