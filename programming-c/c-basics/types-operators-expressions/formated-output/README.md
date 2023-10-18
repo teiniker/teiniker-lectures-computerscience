@@ -44,23 +44,6 @@ For `e` and `f` specifiers − this is the number of digits to be printed after 
 For `s` − this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. 
 
 
-_Example_: Using `printf()` for integer values
-```C
-    short i = 1;
-    int j = -999;
-    unsigned long k = 123L;
-    unsigned int h = 0xffd2;
-    unsigned int o = 01234;
-
-    printf("%-02d\n", i);
-    printf("%7d\n", j);
-    printf("%07u\n", k);
-
-    printf("%08xf\n", h);
-    printf("%8o\n", o);
-```
-
-
 ## References
 
 * [C library function - printf()](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
