@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void print_memeory(void *address, size_t size); // just use it :-)
+void print_memory(void *address, size_t size); // just use it :-)
 void print_binary(unsigned int number);
 
 /*On x86 architectures, integer numbers will be stored in Little-Endian order
@@ -16,14 +16,14 @@ int main(void)
 {
     uint32_t number = 0x11223344;      
 
-    print_memeory(&number, sizeof(number));
+    print_memory(&number, sizeof(number));
  
     return 0;
 }
 
 // Helper funtions 
 
-void print_memeory(void *address, size_t size)
+void print_memory(void *address, size_t size)
 {
     uint8_t *ptr = (uint8_t *)address;
     for(size_t i=0; i<size; i++)
