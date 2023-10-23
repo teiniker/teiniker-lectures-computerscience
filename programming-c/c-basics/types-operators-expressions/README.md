@@ -18,17 +18,11 @@ float variables can store numbers with digits after the decimal point, like `3.1
 * The value of a `float` variable is often just an aproximation of the number that was stored in it, 
     thanks to **rounding error**.
 
+* [Data Types](types)
 
 * [Variables and Constants](types/variables-and-constants/)
 
 * [Formated Output](types/formated-output)
-
-* [Data Types](types)
-  * boolean
-  * integer
-  * floating-point 
-  * characters 
-  * strings 
 
 * [Operators](operators) 
 
