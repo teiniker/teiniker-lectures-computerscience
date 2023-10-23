@@ -19,9 +19,9 @@ float variables can store numbers with digits after the decimal point, like `3.1
     thanks to **rounding error**.
 
 
-* [Variables and Constants](variables-and-constants/)
+* [Variables and Constants](types/variables-and-constants/)
 
-* [Formated Output](formated-output)
+* [Formated Output](types/formated-output)
 
 * [Data Types](types)
   * boolean
@@ -34,10 +34,10 @@ float variables can store numbers with digits after the decimal point, like `3.1
 
 * [Expressions](expressions)
 
-* [Type Conversions](type-conversions)
-    * [Double Conversion](type-conversions/double-conversion)
-    * [Rounding](type-conversions/rounding)
-    * Exercise: [sensor-data](type-conversions/sensor-data-exercise), ([model solution](type-conversions/sensor-data))
+* [Type Conversions](types/type-conversions)
+    * [Double Conversion](types/type-conversions/double-conversion)
+    * [Rounding](types/type-conversions/rounding)
+    * Exercise: [sensor-data](types/type-conversions/sensor-data-exercise), ([model solution](types/type-conversions/sensor-data))
 
 
 ## References
