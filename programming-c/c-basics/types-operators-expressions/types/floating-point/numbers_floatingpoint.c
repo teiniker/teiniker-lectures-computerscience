@@ -13,8 +13,8 @@ int main(void)
 
     printf("e  = %f\n", e);
     printf("pi = %f\n", pi);
-    printf("x  = %2.20f\n", x);
-    printf("y  = %2.20f\n", y);
+    printf("x  = %22.20f\n", x);
+    printf("y  = %22.20f\n", y);
 
     printf("NAN  = %f\n", NAN);
     printf("INFINITY  = %f\n", INFINITY);
