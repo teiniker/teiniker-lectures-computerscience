@@ -36,7 +36,7 @@ For updating a value already stored in a variable, C provides compound assignmen
 ### Simple Assignment 
 The effect of the assignment `v = e` is to evaluate the expression `e` and copy its value into `v`.
 
-If `v` ane don't have the same type, then the value of `e` is converted to the type of `v` as assignment takes place.
+If `v` and `e` don't have the same type, then the value of `e` is converted to the type of `v` as assignment takes place.
 
 Because in C assignment is an operator, the act of assignment produces a result. The value of an assignment `v = e`
 is the value of `v` _after_ the assignment.

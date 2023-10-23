@@ -68,7 +68,7 @@ The keyword `switch` must be followed by an integer expression (char is treated
 as integers in C). Floating-point numbers and strings are not working.
 A **constant expression** is much like an ordinary expression except that it can't
 contain variables of function calls. Note that no braces are required around the 
-**statements**. The last statement in each group is normarry `break`.
+**statements**. The last statement in each group is normally `break`.
 The order of the cases doesn't matter. In particular, the `default` case doesn't 
 need to come last.
 

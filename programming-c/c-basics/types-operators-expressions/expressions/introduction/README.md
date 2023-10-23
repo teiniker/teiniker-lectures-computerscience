@@ -16,7 +16,7 @@ The table below shows the precedence of the most important operators.
 | ++     | increment (postfix) | 1          |
 | --     | decrement (postfix) | 1          |  
 | ++     | increment (prefix)  | 2          |
-| --     | decrement (pretfix) | 2          |
+| --     | decrement (prefix)  | 2          |
 | +      | unary plus          | 2          | 
 | -      | unary minus         | 2          | 
 | * / %  | multiplicative      | 3          | 

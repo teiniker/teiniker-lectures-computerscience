@@ -50,7 +50,7 @@ int printf (const char *__restrict __fmt, ...)
 
 We have to arrange the C program so that the definition of each function call precedes all its calls
 (**call-before-definition**). 
-But, such an arrangement doesn't always exist, amd even when it does, it may make the program 
+But, such an arrangement doesn't always exist, and even when it does, it may make the program 
 hard to understand.
 Fortunately, C offers a better solution: **declare each function before calling it**.
 
@@ -60,7 +60,7 @@ return-type function-name ( parameters );
 ``` 
 A function prototype doesn't have to specify the names of the function's parameter, as long as their
 types are present.
-Since C99, calling a function for which the compiler has not yest seen a declaration or definition is an error.
+Since C99, calling a function for which the compiler has not yet seen a declaration or definition is an error.
 
 ## Arguments
 

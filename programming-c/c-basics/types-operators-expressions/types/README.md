@@ -1,7 +1,7 @@
 # Data Types in C
 
 Arithmetic operations in digital systems with **limited range and precision** do not always produce 
-the same result as they would in ordinary methematics.
+the same result as they would in ordinary mathematics.
 
 The types in C can be classified as follows:
 

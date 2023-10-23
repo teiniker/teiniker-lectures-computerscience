@@ -22,7 +22,7 @@ header file:
 it allocates. 
 
 When we call a memory allocation function to request a block of memory, the function has no idea what type of data we
-are planning to store in the block, so it can't return a pointer to an ordinary type such as int or cher.
+are planning to store in the block, so it can't return a pointer to an ordinary type such as int or char.
 Instead, the function returns a value of type `void *`.
 A `void *` value is a **generic pointer** - essentially, just a memory address.
 

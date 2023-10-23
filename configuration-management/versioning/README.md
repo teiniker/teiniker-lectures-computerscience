@@ -19,7 +19,7 @@ The next step is to use a **remote repository** such as **GitHub** or GitLab:
 * [Clone a remote repository](doc/CloneRemoteRepository.md)
 * [Create GitHub repository](doc/CreateGitHubRepository.md)
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)
-* [Two developers work together and create merge conficts](doc/TwoDevelopersWithMergeConflict.md)
+* [Two developers work together and create merge conflicts](doc/TwoDevelopersWithMergeConflict.md)
 
 
 ## References:

@@ -1,6 +1,6 @@
 # Loops
 
-A **loop** is a statement whose job s to repeatedly execute some  other statement
+A **loop** is a statement whose job is to repeatedly execute some  other statement
 (the **loop body**).
 
 Every loop has a **controlling expression**. 
@@ -38,7 +38,7 @@ _Example_: Infinite loop
 ```C
     while(true)
     {
-        // do someting forever
+        // do something forever
     }
 ```
 A _while_ statement will not terminate if the controlling expression always has a _true_ 
