@@ -20,18 +20,19 @@ float variables can store numbers with digits after the decimal point, like `3.1
 
 * [Data Types](types)
 
-* [Variables and Constants](types/variables-and-constants/)
+  * [Variables and Constants](types/variables-and-constants/)
 
-* [Formated Output](types/formated-output)
+  * [Formated Output](types/formated-output)
+
+  * [Type Conversions](types/type-conversions)
+      * [Double Conversion](types/type-conversions/double-conversion)
+      * [Rounding](types/type-conversions/rounding)
+      * Exercise: [sensor-data](types/type-conversions/sensor-data-exercise), ([model solution](types/type-conversions/sensor-data))
 
 * [Operators](operators) 
 
 * [Expressions](expressions)
 
-* [Type Conversions](types/type-conversions)
-    * [Double Conversion](types/type-conversions/double-conversion)
-    * [Rounding](types/type-conversions/rounding)
-    * Exercise: [sensor-data](types/type-conversions/sensor-data-exercise), ([model solution](types/type-conversions/sensor-data))
 
 
 ## References
