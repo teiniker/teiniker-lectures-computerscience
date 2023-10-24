@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main(void)
 {
-    int a = 7;
-    int b = 13;
+    // Integer Arithmetic 
+
+    int32_t a = 7;
+    int32_t b = 13;
 
     printf("a + b = %d\n", a+b);
     printf("a - b = %d\n", a-b);
@@ -23,13 +26,5 @@ int main(void)
     a -= 5;    // a = a - 5
     printf("a = %d\n", a);
    
-
-    double x = 7.0;
-    double y = 13.0;
-    printf("x + y = %f\n", x+y);
-    printf("x - y = %f\n", x-y);
-    printf("x * y = %f\n", x*y);
-    printf("x / y = %f\n", x/y);
-
     return 0;
 }
