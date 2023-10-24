@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int value = 123;
+    int value = 126;
     printf("value = %d\n", value);
     
     // Use assert to automatically verify a Boolean expression
