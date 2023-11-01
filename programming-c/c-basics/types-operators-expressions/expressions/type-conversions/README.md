@@ -129,8 +129,6 @@ to integer numbers**.
       
 * [Double Conversion](double-conversion)
 * [Rounding](rounding)
-* Exercise: [sensor-data](sensor-data-exercise/), 
-    ([model solution](sensor-data))
 
 
 ## References
