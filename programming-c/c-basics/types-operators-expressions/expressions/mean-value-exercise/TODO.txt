@@ -1,0 +1,17 @@
+Exercise: Mean Value
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das den Mittelwert aus 5 Integer-Werte berechnet.
+
+A) Berechnen Sie die Summe der gegebenen Integer-Werte und speichern Sie das 
+    Ergebnis in einer geeigneten Variable mit dem Namen "sum".
+    
+B) Implementierten Sie ein assert Statement, welches den errechneten Wert "sum" 
+    mit dem erwarteten Wert vergleicht.
+
+C) Berechnen Sie den Mittelwert aus den 5 gegebenen Integer-Werten und speichern 
+    Sie das Ergebnis in einer geeigneten Variable mit dem Namen "mean".
+
+D) Implementierten Sie ein assert Statement, welches den errechneten Wert "mean" 
+    mit dem erwarteten Wert vergleicht.
+         
