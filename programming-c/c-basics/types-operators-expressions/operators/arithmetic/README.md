@@ -100,4 +100,4 @@ printf("i is %d\n", i);     // prints "i is 2"
 
 * [YouTube: CS50 - Operators](https://youtu.be/f1xZf4iJDWE)  
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

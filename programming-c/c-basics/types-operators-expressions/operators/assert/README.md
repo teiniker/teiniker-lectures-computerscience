@@ -32,4 +32,4 @@ If `assert` is disabled at a later date, the expression won't be evaluated.
 * [How to use assertions in C](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html)
 * [How and When to Use C's assert() Macro](https://barrgroup.com/embedded-systems/how-to/use-assert-macro) 
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

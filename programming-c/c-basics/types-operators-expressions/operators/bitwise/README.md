@@ -67,4 +67,4 @@ Idiom: `if(word & 1 << j) {...}`
 K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
  * Chapter 20: Low-Level Programming
  
-*Egon Teiniker, 2020, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

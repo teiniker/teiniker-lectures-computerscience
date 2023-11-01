@@ -124,10 +124,18 @@ to integer numbers**.
     
     _Example_: If `2.3` is passed to `trunc()`, it will return `2`.
     
-    
+
+## Examples
+      
+* [Double Conversion](double-conversion)
+* [Rounding](rounding)
+* Exercise: [sensor-data](sensor-data-exercise/), 
+    ([model solution](sensor-data))
+
+
 ## References
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
     * Chapter 7: Basic Types    
 * [Common mathematical functions](https://en.cppreference.com/w/c/numeric/math)   
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 

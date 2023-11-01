@@ -2,7 +2,6 @@
 
 int main(void)
 {
-    // Implicit type casting
     // Implicit type casting means conversion of data types 
     // without losing its original meaning. 
     // int -> double

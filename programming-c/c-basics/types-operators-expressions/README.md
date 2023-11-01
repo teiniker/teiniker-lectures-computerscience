@@ -2,42 +2,82 @@
 
 Every variable must have a type, which specifies what kind of data it will hold.
 C has a wide variety of types.
-**Choosing the proper type is critical**, since the type affects how the variable is stored and what operations can be performed on the variable.
+**Choosing the proper type is critical**, since the type affects how the variable 
+is stored and what operations can be performed on the variable.
 
-The type of a numeric variable determines the largest and smallest numbers that the variable can store, it also determines whether or not digits are allowed after the decimal point.
+The type of a numeric variable determines the largest and smallest numbers that 
+the variable can store, it also determines whether or not digits are allowed after 
+the decimal point.
 
-A variable of type `int` (**integer**) can store a whole number such as `0`, `1392` or `-2553`.
-The range of possible values is limited. The largest `int` value is **typically 2 147 483 647 (32 bits)** but 
-can by as **small as 32 767 (16 bits)**. 
+A variable of type `int` (**integer**) can store a whole number such as `0`, `1392` 
+or `-2553`.
+The range of possible values is limited. The largest `int` value is 
+**typically 2 147 483 647 (32 bits)** but can by as **small as 32 767 (16 bits)**. 
 
-A variable of type `float` (**floating-point**) can store much larger numbers than an `int` variable.
-float variables can store numbers with digits after the decimal point, like `3.1415`.
+A variable of type `float` (**floating-point**) can store much larger numbers than 
+an `int` variable.
+`float` variables can store numbers with digits after the decimal point, like `3.1415`.
 
 `float` variables have **drawbacks**:
-* Arithmetic on `float` numbers may be **slower** than arithmetic on int numbers.
-* The value of a `float` variable is often just an aproximation of the number that was stored in it, 
-    thanks to **rounding error**.
+* Arithmetic on `float` numbers may be **slower** than arithmetic on `int` numbers.
+* The value of a `float` variable is often just an aproximation of the number that 
+  was stored in it, thanks to **rounding error**.
 
 The topics in this chapter are structured as follows:
 
-* [Data Types](types)
+* **Data Types**
+  * [Boolean](types/boolean)\
+      Since C99, we have the macros `bool`, `true` and `false`, which stand for `1` 
+      and `0`, and can be used for Boolean variables.
+
+  * [Integer Numbers](types/integer)\
+      Each integer type represents a finite range of integer numbers. 
+      * Unsigned integer types represent values that can be only zero or positive.
+      * Signed integer types represent values that can ne negative, zero, or positive.
+    
+  * [Floating-Point Numbers](types/floating-point)\
+      Floating-point is the most common representation for real numbers in computers.
+
+  * [Characters](types/characters)\
+      Character data include alphabethic symbols, punctuation marks, numeric digits, spaces, tabs, and so on.
+
+  * [Strings](types/strings)\
+      C uses character arrays to store strings.
 
   * [Variables and Constants](types/variables-and-constants/)
 
   * [Formated Output](types/formated-output)
 
-  * [Type Conversions](types/type-conversions)
-      * [Double Conversion](types/type-conversions/double-conversion)
-      * [Rounding](types/type-conversions/rounding)
-      * Exercise: [sensor-data](types/type-conversions/sensor-data-exercise), ([model solution](types/type-conversions/sensor-data))
+* [**Operators**](operators) 
+    * [Arithmetic Operators](operators/arithmetic/)
 
-* [Operators](operators) 
+    * [Logical Operators](operators/logical/)
+    
+    * [Assert Statements](operators/logical/assert/)
 
-* [Expressions](expressions)
+    * [Bitwise Operators](operators/bitwise/)  
+      
+    * [Bitwise Operators](operators/bitwise-operators)
 
+* [**Expressions**](expressions)
+  * [Type Conversions](type-conversions/)
+  * Exercise: [Pythagoras](pythagoras-exercise)
+      ([model solution](pythagoras))
 
 
 ## References
+* [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)
+* [YouTube: CS50 - Operators](https://youtu.be/f1xZf4iJDWE) 
+
+* Online Converters
+    * [Integers](https://www.rapidtables.com/convert/number/decimal-to-binary.html)
+    * [IEEE754 float](https://www.binaryconvert.com/convert_float.html)
+    * [Unicode, UTF-8](https://onlinedevtools.in/unicode-converter)
+
+* [C Data Types (Programiz)](https://www.programiz.com/c-programming/c-data-types)
+
+* [C Data Types (Tutorialspoint)](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
+
 * K. N. King. **C Programming, A Modern Approach**. W. W. Norton & Company, inc. 2nd Edition 2008
   * Chapter 3: Formatted Input/Output 
   * Chapter 4: Expressions  

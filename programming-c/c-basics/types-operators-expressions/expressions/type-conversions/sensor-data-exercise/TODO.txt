@@ -2,7 +2,7 @@ Exercise: Sensor Data
 -------------------------------------------------------------------------------
 
 Schreiben Sie ein C Programm, das den 10 bit Analog-to-Digital Converter Wert
-umrechnet:
+umrechnet (0..1023):
 
 A) In eine Spannung im Wertebereich 0.00 bis 5.00 V 
 
