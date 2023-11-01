@@ -64,8 +64,10 @@ The topics in this chapter are structured as follows:
     * Exercise: [Resistor Circuit](expressions/resistor-exercise/)
         ([model solution](expressions/resistor/))
     * [Type Conversions](type-conversions/)
+    * Exercise: [Mean Value](expressions/mean-value-exercise/)
+        ([model solution](expressions/mean-value/))          
     * Exercise: [Sensor Data](expressions/sensor-data-exercise/)
-        ([model solution](expressions/sensor-data/))  
+        ([model solution](expressions/sensor-data/))          
     * Exercise: [Pythagoras](pythagoras-exercise)
         ([model solution](pythagoras))
 
