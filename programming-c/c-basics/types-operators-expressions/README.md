@@ -60,10 +60,14 @@ The topics in this chapter are structured as follows:
     * [Bitwise Operators](operators/bitwise-operators)
 
 * [**Expressions**](expressions)
-  * [Type Conversions](type-conversions/)
-  * Exercise: [Pythagoras](pythagoras-exercise)
-      ([model solution](pythagoras))
-
+    * [Double Comparing](expressions/double-comparing/)
+    * Exercise: [Resistor Circuit](expressions/resistor-exercise/)
+        ([model solution](expressions/resistor/))
+    * [Type Conversions](type-conversions/)
+    * Exercise: [Sensor Data](expressions/sensor-data-exercise/)
+        ([model solution](expressions/sensor-data/))  
+    * Exercise: [Pythagoras](pythagoras-exercise)
+        ([model solution](pythagoras))
 
 ## References
 * [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)
