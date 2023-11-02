@@ -48,16 +48,14 @@ The topics in this chapter are structured as follows:
 
   * [Formated Output](types/formated-output)
 
-* [**Operators**](operators) 
+* **Operators** 
     * [Arithmetic Operators](operators/arithmetic/)
 
     * [Logical Operators](operators/logical/)
     
-    * [Assert Statements](operators/logical/assert/)
+    * [Assert Statements](operators/assert/)
 
     * [Bitwise Operators](operators/bitwise/)  
-      
-    * [Bitwise Operators](operators/bitwise-operators)
 
 * [**Expressions**](expressions)
     * [Double Comparing](expressions/double-comparing/)
