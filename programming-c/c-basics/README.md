@@ -1,11 +1,11 @@
 # C Basics
 
-* **Introduction**    
+1. **Introduction**    
     * [A Simple Program](introduction/hello-world)   
         
-* [**Types, Operators, and Expressions**](types-operators-expressions)
+2. [**Types, Operators, and Expressions**](types-operators-expressions)
 
-* **Control Flow**
+3. **Control Flow**
     * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
     * [Debugging in VS Code](/configuration-management/debugging/)
     * Selection Statements (if, switch)
@@ -28,7 +28,7 @@
         * Exercise: [time-counter](control-flow/loops/time-counter-exercise)
         ([model solution](control-flow/loops/time-counter))        
             
-* **Functions**
+4. **Functions**
     * [Introduction](functions/README.md) 
     * Demo: [functions](functions/)
     * Exercise: [function-resistors](functions/function-resistors-exercise)
@@ -38,7 +38,7 @@
     * Exercise: [bin-utils](functions/bit-utils-exercise)
         ([model solution](functions/bit-utils))  
       
-* **Arrays**
+5. **Arrays**
     * [Introduction](arrays/README.md)
     * Demo: [one_dimensional_array, two_dimensional_array](arrays)
     * Exercise: [array-xor-encryption](arrays/array-xor-encryption-exercise)
@@ -49,7 +49,7 @@
          ([model solution](arrays/array-vector-operations))
 
 
-* **State Machines**
+6. **State Machines**
    * [Introduction](statemachine/README.md)  
    * Demo: [sm-light-bulb](statemachine/)
    * Exercise: [sm-parking-gate](statemachine/sm-parking-gate-exercise)
