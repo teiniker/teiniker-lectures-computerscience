@@ -5,16 +5,18 @@ This project collects examples, exercises and model solutions needed to understa
 
 The following topics will be covered:
 
-* **Development Environments**
-    * [Setup](introduction/setup/)
-      * [Windows: MinGw, Git, VS Code](introduction/setup)
-      * [Virtual Lab: Linux VM (Debian 11.5)](introduction/linux/setup)
-    * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
-         
+* **Introduction**
+    * [Computer Language Processing](introduction/language_processing)
+    * [Working with ChatGPT](introduction/ChatGPT.md)
+      
 * **Programming in C**
     * [C Basics](programming-c/c-basics)         
     * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Standard Library](programming-c/c-std-lib)
+
+* **Programming in C++**
+   * [C++ Basics](programming-c++/)
+   * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
 
 * **Operating Systems**
     * [Linux Platform](linux)
@@ -34,8 +36,10 @@ The following topics will be covered:
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
-* **Programming in C++**
-   * [C++ Basics](programming-c++/)
-   * [More C++](https://github.com/teiniker/teiniker-lectures-embeddedcomputing)
+* **Development Environments**
+    * [Setup](introduction/setup/)
+      * [Windows: MinGw, Git, VS Code](introduction/setup)
+      * [Virtual Lab: Linux VM (Debian 11.5)](introduction/linux/setup)
+    * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
 
 *Egon Teiniker, 2020-2023, GPL v3.0*         
