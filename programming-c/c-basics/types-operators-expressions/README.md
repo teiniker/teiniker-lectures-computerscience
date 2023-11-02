@@ -61,13 +61,13 @@ The topics in this chapter are structured as follows:
     * [Double Comparing](expressions/double-comparing/)
     * Exercise: [Resistor Circuit](expressions/resistor-exercise/)
         ([model solution](expressions/resistor/))
-    * [Type Conversions](type-conversions/)
+    * [Type Conversions](expressions/type-conversions/)
     * Exercise: [Mean Value](expressions/mean-value-exercise/)
         ([model solution](expressions/mean-value/))          
     * Exercise: [Sensor Data](expressions/sensor-data-exercise/)
         ([model solution](expressions/sensor-data/))          
-    * Exercise: [Pythagoras](pythagoras-exercise)
-        ([model solution](pythagoras))
+    * Exercise: [Pythagoras](expressions/pythagoras-exercise)
+        ([model solution](expressions/pythagoras))
 
 ## References
 * [YouTube: CS50 - Data Types](https://youtu.be/Fc9htmvVZ9U)

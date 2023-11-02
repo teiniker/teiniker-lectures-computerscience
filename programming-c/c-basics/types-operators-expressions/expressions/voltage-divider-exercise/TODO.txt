@@ -1,0 +1,21 @@
+Exercise: Voltage Divider 
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das die Ausgangsspannung eines Spannungsteilers 
+berechnet:
+
+                Ue
+        ------------------------->                       
+        o---[ R1 ]--+---[ R2 ]---o
+                    ------------->
+                          Ua
+                   
+
+Geg: R1=100Ohm, R2=330Ohm, Ue = 5V 
+
+A) Berechnen Sie den Wert von Ua und speichern Sie diesen Wert in einer passenden 
+    Variablen.
+
+B) Implementierten Sie ein assert Statement, welches den errechneten Wert von Ua 
+    mit dem erwarteten Wert 3.8372V vergleicht.
+         
