@@ -6,7 +6,7 @@
 2. [**Types, Operators, and Expressions**](types-operators-expressions)
 
 3. **Control Flow**
-    * [UML Activity Diagram](/configuration-management/documentation/uml/UML-Activity-Diagram.md) 
+    * [UML Activity Diagram](/configuration-management/documentation/uml/activity-diagram) 
     * [Debugging in VS Code](/configuration-management/debugging/)
     * Selection Statements (if, switch)
         * Demo: [if_statement, switch statement, conditional_expression](control-flow/selection)
