@@ -1,21 +1,25 @@
 # Type Conversion
 
 Computers tend to be more restrictive than C when it comes to arithmetic.
-For a computer to perform an arithmetic operation, the operands must usually be of the same size (same number of bits) and be stored in the same way.
+For a computer to perform an arithmetic operation, the operands must usually be of the same 
+size (same number of bits) and be stored in the same way.
 
 **C allows the basic types to be mixed in expressions**.
 We can combine integers, floating-point numbers, and even characters in a single expression.
 The C compiler may then have to generate instructions that convert some operands to different types so that the hardware will be able to eveluate the expression.
 
-Because the compiler handles these conversions automatically, without the programmer's involvement, they are known as **implicit conversions**.
+Because the compiler handles these conversions automatically, without the programmer's involvement, 
+they are known as **implicit conversions**.
 C also allows the programmer to perform **explicit conversions**, using the **cast operator**.
 
 
 ## Usual Arithmetic Conversions
 
-The strategy behind the usual arithmetic conversions is to convert operands to the _narrowest_ type that will safely accommodate both values.
+The strategy behind the usual arithmetic conversions is to convert operands to the _narrowest_ 
+type that will safely accommodate both values.
 
-The types of the operands can often be made match by converting the operand of the narrower type to the type of the other operand (known as **promotion**).
+The types of the operands can often be made match by converting the operand of the narrower type 
+to the type of the other operand (known as **promotion**).
 
 We can divide the rules for performing the usual arithmetic conversions into two cases:
 

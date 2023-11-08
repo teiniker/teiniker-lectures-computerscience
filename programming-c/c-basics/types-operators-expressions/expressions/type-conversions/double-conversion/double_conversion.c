@@ -29,7 +29,7 @@ int main(void)
     {
         int a = 7;
         double b = 3.0;
-        int x = (int)a/b; // =(int) (int)a / (double)b
+        int x = a/(int)b; // =(int) (int)a / (double)b
         printf("x: %d\n", x);
     }
 
