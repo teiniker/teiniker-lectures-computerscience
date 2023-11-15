@@ -11,7 +11,7 @@ typedef enum events
 
 int main(void)
 {
-    events_t event = BURN_OUT;
+    events_t event = TURN_ON;
 
     switch(event)
     {
