@@ -1,0 +1,19 @@
+Exercise: Discount Calculation
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das den Rabatt einer Bestellung berechnet:
+
+        Betrag   | Rabatt 
+    -------------+---------
+     ab 100.00   |   2%
+     ab 500.00   |   5%
+     ab 1000.00  |  10%
+
+Berechnen Sie für einen gegebenen Betrag (in Cents) den Rabatt (in %)
+mit Hilfe von if-else Statements.
+
+Variieren Sie den Betrag um Ihre Implementierung zu testen.
+
+
+
+
