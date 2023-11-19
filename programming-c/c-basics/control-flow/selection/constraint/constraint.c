@@ -24,5 +24,13 @@ int main(void)
 
     printf("%d <= %d <= %d\n", min, value, max);
 
+    // Alternative Implementation
+    int value = 150;
+    
+    value = (value > max) ? max: value;
+    value = (value < min) ? min: value;
+
+    printf("%d <= %d <= %d\n", min, value, max);
+
     return 0;
 }

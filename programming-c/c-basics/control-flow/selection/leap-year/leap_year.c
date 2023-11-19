@@ -7,11 +7,11 @@ int main(void)
     //int yyyy = 1900;    // false
     //int yyyy = 1999;    // false
     //int yyyy = 2000;    // true
-    int yyyy = 2020;    // true
+    int yyyy = 2020;    // truel
 
-    bool is_leap_year = false;
+    bool is_leap_year;
     
-    if((yyyy % 4 == 0) && (yyyy % 100 != 0) || (yyyy % 400 == 0))
+    if((yyyy % 400 == 0) || (yyyy % 4 == 0) && (yyyy % 100 != 0))
     {
         is_leap_year = true;
     }
