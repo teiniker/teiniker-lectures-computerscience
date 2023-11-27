@@ -6,7 +6,7 @@ int main(void)
     printf("\t| char|  Dec  |  Hex  |  Oct |\n");
     printf("\t+-----+-------+-------+------+\n");
 
-    for(int c = 0; c <= 127; c++)
+    for(char c = 0; c <= 127; c++)
     {
         if(c >= '0' && c <= '9')
         {    
