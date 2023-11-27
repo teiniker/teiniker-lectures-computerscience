@@ -37,8 +37,12 @@
         ([model solution](functions/base16))    
     * Exercise: [bin-utils](functions/bit-utils-exercise)
         ([model solution](functions/bit-utils))  
-      
-5. **Arrays**
+
+5. **Structures**
+    * [Introduction](structures//README.md) 
+         
+
+6. **Arrays**
     * [Introduction](arrays/README.md)
     * Demo: [one_dimensional_array, two_dimensional_array](arrays)
     * Exercise: [array-xor-encryption](arrays/array-xor-encryption-exercise)

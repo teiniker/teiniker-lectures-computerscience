@@ -1,0 +1,33 @@
+Exercise: Leap-Years (if-else, loops, functions)
+-------------------------------------------------------------------------------
+
+Schreiben Sie ein C Programm, das für ein gegebenes Zeitintervall 
+[start_year, end_year] alle Schaltjare ausgibt.
+
+Beispiel: [1990, 2025]
+1992
+1996
+2000
+2004
+2008
+2012
+2016
+2020
+2024
+
+Dazu sind die folgenden Funktionen zu implementieren:
+
+A) bool is_leap_year(int yyyy)
+    Liefert "true" für ein Schaltjahr ansonsten "false".
+    Regeln: 
+    i) Wenn die Jahreszahl durch 4 teilbar ist, handelt es sich 
+        potentiell um ein Schaltjahr.
+    ii) Wenn die Jahreszahl zusätzlich durch 100 teilbar ist, 
+        dann ist es KEIN Schaltjahr
+    iii) Wenn die Jahreszahl zusätzlich durch 400 teilbar ist, 
+        dann ist es ein Schaltjahr 
+
+B) void print_leap_year(int start_year, int end_year)
+    Schreibt die Liste von Schaltjahren im gegebenen Intervall 
+    auf die Konsole (ein Jahr pro Zeile)    
+
