@@ -1,0 +1,27 @@
+Exercise: Structures - Resistor
+-------------------------------------------------------------------------------
+
+Es soll eine Struktur resistor_t definiert werden mit deren Hilfe einfache
+Widerstandsnetzwerke berechnet werden können.
+
+A) Structure
+    Definieren Sie eine Struktur mit der Namen "resistor_t", welche die 
+    folgenden Members enthält:
+        uint32_t value;
+        uint8_t tolerance;
+
+B) Operationen
+    Implementieren Sie die folgenden Operationen, die "resistor_t" Instanzen 
+    verarbeiten:
+
+    resistor_t resistor_serial(resistor_t r1, resistor_t r2);
+        Addiert die Werte der beiden gegebenen Widerstände.
+        Als Wert für die Toleranz wird der größere der beiden Werte übernommen.
+        Erzeugen Sie eine neue "resistor_t" Instanz, welche die berechneten Werte 
+        aufnimmt und als Ergebnis zurück gegeben wird.
+
+    resistor_t resistor_parallel(resistor_t r1, resistor_t r2);
+        Berechnet der Parallelwiderstand der beiden gegebenen Widerstände.
+        Als Wert für die Toleranz wird der größere der beiden Werte übernommen.
+        Erzeugen Sie eine neue "resistor_t" Instanz, welche die berechneten Werte 
+        aufnimmt und als Ergebnis zurück gegeben wird.
