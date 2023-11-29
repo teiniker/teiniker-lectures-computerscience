@@ -39,8 +39,15 @@
         ([model solution](functions/bit-utils))  
 
 5. **Structures**
-    * [Introduction](structures//README.md) 
-         
+    * [Introduction](structures/README.md) 
+        * [struct-date](structures/struct-date/)
+        * Exercise: [struct-resistor](structures/struct-resistor-exercise/)
+            ([model solution](structures/struct-resistor))  
+
+    * [Structures in C vs. Structures and Classes in C++](structures/C++Structures.md)
+        * [C++ struct-data](structures/cpp-struct-date/)
+        * [C++ struct-resistor](structures/cpp-struct-resistor/)
+        * [C++ class-data](structures/cpp-class-date/)
 
 6. **Arrays**
     * [Introduction](arrays/README.md)
