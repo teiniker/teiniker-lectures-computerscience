@@ -145,6 +145,10 @@ Some additional mechanisms are available for functions in C++:
     Default parameters allow functions to be called with fewer arguments than they are defined with, 
     by **specifying default values for some parameters**.
 
+* [References](../../../programming-c++/basics/functions/references/)
+    In C++ functions, references are used as parameters to allow the function to 
+    **modify the original argument** passed, or to **avoid copying large objects** for efficiency.
+
 ## References
 * [YouTube: CS50 - Functions ](https://youtu.be/n1glFqt3g38)
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
