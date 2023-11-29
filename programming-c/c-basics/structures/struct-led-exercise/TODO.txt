@@ -1,0 +1,21 @@
+Exercise: Structures - LED
+-------------------------------------------------------------------------------
+
+Es soll eine Struktur led_t definiert werden mit deren Hilfe die Werte einer 
+RGB LED (NeoPixel) gespeichert werden können.
+
+A) Structure
+    Definieren Sie eine Struktur mit der Namen "led_t", welche die 
+    folgenden Members enthält:
+        uint8_t red;
+        uint8_t green;
+        uint8_t blue;
+
+B) Operation
+    Implementieren Sie die folgende Funktion:
+
+    void show_pixel(led_t pixel);
+        Es sollen die RGB Werte der LED auf der Konsole ausgegeben werden:
+        red: 0x00, green: 0xff, blue: 0xaa
+
+Überprüfen Sie Ihre Implementierung mit der gegebenen main() Funktion.
