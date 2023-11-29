@@ -27,7 +27,7 @@ A) bool is_leap_year(int yyyy)
     iii) Wenn die Jahreszahl zusätzlich durch 400 teilbar ist, 
         dann ist es ein Schaltjahr 
 
-B) void print_leap_year(int start_year, int end_year)
+B) void print_leap_years(int start_year, int end_year)
     Schreibt die Liste von Schaltjahren im gegebenen Intervall 
     auf die Konsole (ein Jahr pro Zeile)    
 

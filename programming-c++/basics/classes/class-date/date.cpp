@@ -3,7 +3,7 @@
 
 class Date 
 {
-    // public fields
+    // private fields
     int day;
     int month;
     int year;

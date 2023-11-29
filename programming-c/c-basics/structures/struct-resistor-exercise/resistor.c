@@ -7,7 +7,7 @@
 
 resistor_t resistor_serial(resistor_t r1, resistor_t r2);
 resistor_t resistor_parallel(resistor_t r1, resistor_t r2);
-int max(uint8_t t1, uint8_t t2);
+uint8_t max(uint8_t t1, uint8_t t2);
 
 int main(void)
 {
