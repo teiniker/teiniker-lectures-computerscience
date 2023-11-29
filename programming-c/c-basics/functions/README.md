@@ -136,12 +136,12 @@ calls it. The `return` statement causes program termination only when it appears
 
 Some additional mechanisms are available for functions in C++:
 
-* [Function Overloading](../../../programming-c++/basics/first-steps/function-overloading/)
+* [Function Overloading](../../../programming-c++/basics/functions/function-overloading/)
     Function overloading in C++ is a feature that allows **multiple functions to have the same name** 
     with **different parameters**, enabling different implementations based on the arguments passed 
     to them.
 
-* [Default Arguments](../../../programming-c++/basics/first-steps/default-arguments/)
+* [Default Arguments](../../../programming-c++/basics/functions/default-arguments/)
     Default parameters allow functions to be called with fewer arguments than they are defined with, 
     by **specifying default values for some parameters**.
 
