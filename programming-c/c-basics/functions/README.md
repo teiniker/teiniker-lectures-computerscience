@@ -132,6 +132,19 @@ The difference between return and `exit()` is that `exit()` causes program termi
 calls it. The `return` statement causes program termination only when it appears in the `main()` function.
 
 
+## Functions in C++
+
+Some additional mechanisms are available for functions in C++:
+
+* [Function Overloading](../../../programming-c++/basics/first-steps/function-overloading/)
+    Function overloading in C++ is a feature that allows **multiple functions to have the same name** 
+    with **different parameters**, enabling different implementations based on the arguments passed 
+    to them.
+
+* [Default Arguments](../../../programming-c++/basics/first-steps/default-arguments/)
+    Default parameters allow functions to be called with fewer arguments than they are defined with, 
+    by **specifying default values for some parameters**.
+
 ## References
 * [YouTube: CS50 - Functions ](https://youtu.be/n1glFqt3g38)
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008

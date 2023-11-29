@@ -131,6 +131,21 @@ itself (**call by reference**).
 Similarly, we might have a function return a pointer to a structure instead of returning an actual structure.
 
 
+## Structures in C++
+
+ Structures in C++ offer more advanced features compared to C. 
+ 
+ Unlike C structures, C++ structures can have **member functions**, including 
+ **constructors and destructors**, allowing them to behave more like classes. 
+ 
+ Additionally, C++ structures support features like **access specifiers** (public, 
+ private, protected), **inheritance**, and can utilize C++ specific principles like 
+ polymorphism and encapsulation, making them more versatile and powerful than their 
+ C counterparts.
+
+[Read more...](../../../programming-c++/basics/structures/)
+
+
 ## References
 * [YouTube (CS50): Structures](https://youtu.be/N5pA7RvvQDg)
 
