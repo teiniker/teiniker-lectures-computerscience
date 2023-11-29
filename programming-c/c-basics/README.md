@@ -9,7 +9,7 @@
     * [UML Activity Diagram](/configuration-management/documentation/uml/activity-diagram) 
     * [Debugging in VS Code](/configuration-management/debugging/)
     * Selection Statements (if, switch)
-        * Demo: [if_statement, switch statement, conditional_expression](control-flow/selection)
+        * [if_statement, switch statement, conditional_expression](control-flow/selection)
         * Exercise: [constraint](control-flow/selection/constraint-exercise)
          ([model solution](control-flow/selection/constraint))
         * Exercise: [leap-year](control-flow/selection/leap-year-exercise)
@@ -18,7 +18,7 @@
     * [Enumerations](control-flow/enumerations)
 
     * Loops (while, do-while, for)   
-        * Demo: [while_loop, for_loop, do_while_loop](control-flow/loops)
+        * [while_loop, for_loop, do_while_loop](control-flow/loops)
         * Exercise: [arduino-sketch](control-flow/loops/arduino-sketch-exercise)
         ([model solution](control-flow/loops/arduino-sketch))    
         * Exercise: [print-ascii-table](control-flow/loops/print-ascii-table-exercise)
@@ -30,13 +30,15 @@
             
 4. **Functions**
     * [Introduction](functions/README.md) 
-    * Demo: [functions](functions/)
+    * [functions](functions/)
     * Exercise: [function-resistors](functions/function-resistors-exercise)
         ([model solution](functions/function-resistors))
-    * Exercise: [base16](functions/base16-exercise)
-        ([model solution](functions/base16))    
+    * Exercise: [leap-years](functions/leap-years-exercise/)
+        ([model solution](functions/leap-years))  
     * Exercise: [bin-utils](functions/bit-utils-exercise)
         ([model solution](functions/bit-utils))  
+    * Exercise: [base16](functions/base16-exercise)
+        ([model solution](functions/base16))    
 
 5. **Structures**
     * [Introduction](structures/README.md) 
@@ -51,7 +53,7 @@
 
 6. **Arrays**
     * [Introduction](arrays/README.md)
-    * Demo: [one_dimensional_array, two_dimensional_array](arrays)
+    * [one_dimensional_array, two_dimensional_array](arrays)
     * Exercise: [array-xor-encryption](arrays/array-xor-encryption-exercise)
         ([model solution](arrays/array-xor-encryption))
     * Exercise: [array-min-max-mean](arrays/array-min-max-mean-exercise)
@@ -62,7 +64,7 @@
 
 6. **State Machines**
    * [Introduction](statemachine/README.md)  
-   * Demo: [sm-light-bulb](statemachine/)
+   * [sm-light-bulb](statemachine/)
    * Exercise: [sm-parking-gate](statemachine/sm-parking-gate-exercise)
       ([model solution](statemachine/sm-parking-gate))
    * Exercise: [sm-roller-blind](statemachine/sm-roller-blind-exercise)
@@ -75,4 +77,4 @@
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
 * Brian W. Kernighan, Denis M. Ritchie. **The C programming Language**. Prentice Hall, 2nd Edition 2010
 
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2023, GPL v3.0* 
