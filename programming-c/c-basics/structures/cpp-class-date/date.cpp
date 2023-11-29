@@ -1,8 +1,14 @@
 #include <stdio.h>
 #include <assert.h>
 
-struct Date 
+class Date 
 {
+    // public fields
+    int day;
+    int month;
+    int year;
+
+    public:
     // constructor
     Date(int d, int m, int y)   
     {
@@ -10,11 +16,6 @@ struct Date
         month = m;
         year = y;
     }
-
-    // public fields
-    int day;
-    int month;
-    int year;
 
     // public methods
     bool isLeapYear()

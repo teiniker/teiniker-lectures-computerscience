@@ -21,7 +21,7 @@ int sum_of_squares(int n)   // Function impementation
     int sum = 0;
     for(int k=1; k<=n; k++)
     {
-        sum += k*k;
+        sum += k*k; // sum = sum + k*k;
     }
     return sum;
 }

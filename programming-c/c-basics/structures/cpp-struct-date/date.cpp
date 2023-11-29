@@ -17,7 +17,7 @@ struct Date
     int year;
 
     // public methods
-    bool isLeapYear()
+    bool isLeapYear(void)
     {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
