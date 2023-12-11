@@ -4,6 +4,8 @@ The following examples present common scenarios that can occur when dealing with
 
 We start our experiments with a **local repository**:
 
+
+
 * [Git settings](doc/GitSettings.md)
 * [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
 * [Modify files in a git project](doc/ModifyProjectFiles.md)
