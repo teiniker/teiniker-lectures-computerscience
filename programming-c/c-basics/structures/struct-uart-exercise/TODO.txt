@@ -1,0 +1,31 @@
+Exercise: Structures - UART
+-------------------------------------------------------------------------------
+
+Es soll eine Struktur uart_t definiert werden mit deren Hilfe die EInstellungen
+einer UART Schnittstelle gespeichert werden können.
+
+A) Structure
+    Definieren Sie eine Struktur mit der Namen "uart_t", welche die 
+    folgenden Members enthält:
+        uint32_t baudrate
+        uint8_t data_bits
+        bool parity
+        uint8_t stop_bits
+
+B) Operationen
+    Implementieren Sie die folgenden Operationen für "uart_t" Instanzen: 
+
+    uart_t uart_init(uint32_t baudrate, uint8_t data_bits, bool parity, uint8_t stop_bits);
+        Initialisiert eine neue "uart_t" Struktur und gibt eine Kopie davon als 
+        Rückgabewert zurück (vgl. Constructor in C++).
+
+    void uart_to_string(uart_t uart);
+        Gibt die Einstellungen einer "uart_t" Instanz als Text auf der Konsole aus.
+        Beispiel:
+            Baudrate: 9600
+            Data bits: 8
+            Parity: 0
+            Stop bits: 1        
+
+Verwenden Sie die assert-Statements in der "main()" Funktion um Ihre Implementiereungen 
+zu testen.
