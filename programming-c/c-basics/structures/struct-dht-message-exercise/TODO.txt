@@ -1,0 +1,40 @@
+Exercise: Refactorint towards Structures
+-------------------------------------------------------------------------------
+
+Verbessern Sie den gegebenen Source Code durch die Verwendung einer Structure.
+
+Das Beispiel zeigt die Auswertung eines DHT11 Sensors (Simulation). Die Werte 
+der Messung werden von der Funktion "dht_measure()" in die folgenden globalen 
+Variablen geschrieben:
+    uint16_t id;
+    dht_type_t type;
+    double temperature;
+    double humidity;
+
+Die Funktion "dht_to_string()" wandelt die gemessenen Werte in die folgende 
+Message um: "DHT11-000: 25.00°C 50.00%"
+
+Führen Sie folgende Verbesserungen durch:
+
+A) Structure "message_t"
+    Fassen Sie die globalen Variablen der Message zu einer Structure mit dem 
+    namen "message_t" zusammen.
+
+B) Parameter + Return Values
+    Ändern Sie die gegebenen Funktionen so, dass die Structure als Parameter 
+    und als Rückgabewert verwendet wird, damit keine globalen Variablen übrig 
+    bleiben.    
+
+    message_t dht_measure(uint16_t id);
+
+    void dht_to_string(message_t msg);
+
+Tipp: Es muss auch die "main()" Funktion angepasst werden:
+
+int main(void)
+{
+    message_t msg = dht_measure(3);
+    dht_to_string(msg);
+
+    return 0;
+}

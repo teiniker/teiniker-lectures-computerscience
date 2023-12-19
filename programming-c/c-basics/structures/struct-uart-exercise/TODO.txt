@@ -1,7 +1,7 @@
 Exercise: Structures - UART
 -------------------------------------------------------------------------------
 
-Es soll eine Struktur uart_t definiert werden mit deren Hilfe die EInstellungen
+Es soll eine Struktur "uart_t" definiert werden mit deren Hilfe die Einstellungen
 einer UART Schnittstelle gespeichert werden können.
 
 A) Structure
