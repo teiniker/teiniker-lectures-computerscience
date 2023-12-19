@@ -50,7 +50,7 @@ int main(void)
 
 bool equals(double a, double b)
 {
-    return fabs(a - b) < DELTA;
+    return fabs(a - b) <= DELTA;
 }
 
 // TODO: Implement functions here
