@@ -1,0 +1,46 @@
+Exercise: Structures - 3D Vector
+-------------------------------------------------------------------------------
+
+Erstellen Sie eine Struktur mit dem Namen "vector_t", welche drei Koordinaten 
+"x","y" und "z" (alle von Typ double) zusammenführt.
+
+Mit Instanzen dieser Struktur sollen die folgenden Operationen durchgeführt 
+werden können - implementieren Sie diese Funtionen:
+
+A) bool vector_equal(vector_t a, vector_t b)
+Vergleichen Sie die beiden Vektoren "a" und "b" auf Gleichheit.
+Vektoren sind gleich, wenn ihre Koordinaten auch jeweils gleich sind.
+
+B) void vector_print(vector_t a)
+Geben Sie den Vektor "a" auf der Konsole aus.
+Beispiel: [1.000000, 2.000000, 3.000000]
+
+C) vector_t vector_add(vector_t a, vector_t b)
+Addieren Sie die Vektoren "a" und "b" und geben Sie einen neuen Vektor zurück.
+Vektoren werden addiert, indem ihre Koordinaten jeweils addiert werden.
+
+D) vector_t vector_sub(vector_t a, vector_t b)
+Subtraheren Sie die Vektoren "a" und "b" und geben Sie einen neuen Vektor zurück.
+Vektoren werden subtrahiert, indem ihre Koordinaten jeweils subtrahiert werden.
+
+E) vector_t vector_scalar_mult(double c, vector_t a)
+Multiplizieren Sie den Vektor "a" mit einer Konstante "c".
+Ein Vektor wird mit einem Skalar multipliziert, indem jede Koordinate mit 
+dem Skalar multipliziert wird. 
+
+F) double vector_dot_product(vector_t a, vector_t b)
+Berechnen Sie das Skalar-Produkt (dot product) der beiden Vektoren "a" 
+und "b".
+Das Skalar-Produkt erhalten SIe aus der Summe der Produkte der jeweiligen 
+Koordinaten.  
+
+G) vector_t vecor_cross_product(vector_t a, vector_t b)
+Berechnen Sie das Kreuz-Produkt (cross product) der beiden Vektoren "a" 
+und "b".
+Das Kreuz-Produkt für zwei Vektoren mit drei Koordinaten berechnet man 
+durch:
+    [a.y * b.z - a.z * b.y, 
+     a.z * b.x - a.x * b.z, 
+     a.x * b.y - a.y * b.x]
+
+Überprüfen Sie Ihre Implementierungen mit der "main()" Funktion.
