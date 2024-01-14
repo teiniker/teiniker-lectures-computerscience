@@ -33,12 +33,12 @@ int main(void)
 message_t dht_measure(uint16_t id)
 {
     // Fake a measurement (no hardware connected)
-    message_t msg;
-    msg.id = id;
-    msg.type = DHT11;
-    msg.temperature = 25.0;
-    msg.humidity = 50.0;
-    return msg;
+    message_t msg = {id, DHT11, 25.0, 50.0};
+//    msg.id = id;
+//    msg.type = DHT11;
+//    msg.temperature = 25.0;
+//    msg.humidity = 50.0;
+    return msg; // return by value
 }
 
 void dht_to_string(message_t msg)

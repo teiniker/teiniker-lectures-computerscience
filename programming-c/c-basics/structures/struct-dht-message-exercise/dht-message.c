@@ -30,11 +30,10 @@ int main(void)
 void dht_measure(uint16_t sensor_id)
 {
     // Fake a measurement (no hardware connected)
-    id = id;
+    id = sensor_id;
     type = DHT11;
     temperature = 25.0;
     humidity = 50.0;
-
 }
 
 void dht_to_string(void)
