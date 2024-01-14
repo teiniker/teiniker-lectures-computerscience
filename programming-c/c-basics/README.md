@@ -51,17 +51,6 @@
         * [C++ struct-resistor](structures/cpp-struct-resistor/)
         * [C++ class-data](structures/cpp-class-date/)
 
-6. **Arrays**
-    * [Introduction](arrays/README.md)
-    * [one_dimensional_array, two_dimensional_array](arrays)
-    * Exercise: [array-xor-encryption](arrays/array-xor-encryption-exercise)
-        ([model solution](arrays/array-xor-encryption))
-    * Exercise: [array-min-max-mean](arrays/array-min-max-mean-exercise)
-        ([model solution](arrays/array-min-max-mean))
-    * Exercise: [array-vector-operations](arrays/array-vector-operations-exercise)
-         ([model solution](arrays/array-vector-operations))
-
-
 6. **State Machines**
    * [Introduction](statemachine/README.md)  
    * [sm-light-bulb](statemachine/)
@@ -77,4 +66,4 @@
 * Steve Oualline. **Practical C Programming**. O'REILLY 3rd Edition 1997
 * Brian W. Kernighan, Denis M. Ritchie. **The C programming Language**. Prentice Hall, 2nd Edition 2010
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
