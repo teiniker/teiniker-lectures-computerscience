@@ -2,7 +2,7 @@
 
 This section provides an overview of using the **Linux platform for software development**.
 
-* [Linux VM Setup](setup)
+* [Linux VM Setup](../introduction/setup/Environment-Linux.md)
 
 * Shell Commands
     * [Linux Shell: Bash](shell/README.md)    
