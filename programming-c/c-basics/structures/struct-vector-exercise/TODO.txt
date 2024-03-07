@@ -31,7 +31,7 @@ dem Skalar multipliziert wird.
 F) double vector_dot_product(vector_t a, vector_t b)
 Berechnen Sie das Skalar-Produkt (dot product) der beiden Vektoren "a" 
 und "b".
-Das Skalar-Produkt erhalten SIe aus der Summe der Produkte der jeweiligen 
+Das Skalar-Produkt erhalten Sie aus der Summe der Produkte der jeweiligen 
 Koordinaten.  
 
 G) vector_t vecor_cross_product(vector_t a, vector_t b)
