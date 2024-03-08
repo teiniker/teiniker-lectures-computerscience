@@ -120,4 +120,4 @@ given the value 0.
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
   * Chapter 8: Arrays
  
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
