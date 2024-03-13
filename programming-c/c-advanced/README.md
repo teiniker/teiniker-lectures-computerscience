@@ -1,4 +1,4 @@
-# C Advanced Topics
+# Advanced Topics in C
 
 * Arrays
     * [Introduction](arrays/introduction/)
