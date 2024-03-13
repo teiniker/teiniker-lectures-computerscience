@@ -1,17 +1,20 @@
 # C Advanced Topics
 
-* Modular Programming
-    * [Pre-Processor](modular-programming/preprocessor)
-    * [Modules](modular-programming/modules)
-
-* [Memory Management](memory-management/)
-
 * Arrays
     * [Introduction](arrays/introduction/)
     * [Arrays and Pointers](arrays/pointers/)
     * [Dynamic Arrays](arrays/dynamic/)
 
+* Memory Management
+    * [Introduction](memory-management/)
+    * [Pointers](memory-management/pointers/)
+    * [Using the Heap](memory-management/dynamic-memory-allocation/)
+
 * [Strings](strings/) 
+
+* Modular Programming
+    * [Pre-Processor](modular-programming/preprocessor)
+    * [Modules](modular-programming/modules)
 
 * [File Handling](file-handling/)
 

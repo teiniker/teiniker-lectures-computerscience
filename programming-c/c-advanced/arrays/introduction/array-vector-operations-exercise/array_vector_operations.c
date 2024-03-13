@@ -3,7 +3,7 @@
 #define N 3
 
 void vector_print(int n, int v[]);
-void vector_reverse(int n, int a[], int b[]);
+void vector_reverse(int n, int a[], int c[]);
 void vector_add(int n, int a[], int b[], int c[]);
 void vector_sub(int n, int a[], int b[], int c[]); 
 
