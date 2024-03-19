@@ -11,10 +11,6 @@
     * Exercise: [calculator](calculator-exercise)
         ([model solution](calculator))
 
-* Pointers and Arrays
-   * [Introduction](arrays/README.md)
-   * [pointers_and_arrays](arrays)
-
 * Dynamic Memory Allocation
    * [Introduction](dynamic-memory-allocation/README.md)
    * [dynamic-allocation](dynamic-memory-allocation) 
