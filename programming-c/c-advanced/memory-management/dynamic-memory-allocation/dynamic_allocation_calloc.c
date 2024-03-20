@@ -16,7 +16,7 @@ int main(void)
     int n = 10;
 
     // Allocate array
-    int *a = calloc(n, sizeof(int));
+    int *a = (int *)calloc(n, sizeof(int));
     print_array(n, a);
 
     for(int i=0; i<n; i++)

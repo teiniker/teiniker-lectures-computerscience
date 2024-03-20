@@ -16,7 +16,7 @@ int main(void)
     int n = 10;
 
     // Allocate array
-    int *a = malloc(n * sizeof(int));
+    int *a = (int *)malloc(n * sizeof(int));
     printf("a -> %p\n", a);
 
     for(int i=0; i<n; i++)
@@ -27,7 +27,7 @@ int main(void)
 
 
     // Resize array
-    int *b = realloc(a, 2*n * sizeof(int));
+    int *b = (int *)realloc(a, 2*n * sizeof(int));
     printf("b -> %p\n", b); // Note that p can point to a new location
 
     for(int i=n; i<2*n; i++)
