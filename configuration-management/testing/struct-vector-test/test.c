@@ -67,7 +67,7 @@ void test_dot_product(void)
     double product = vector_dot_product(a, b);
 
     // Verify
-    TEST_ASSERT_FLOAT_WITHIN(DELTA, 32.0, product);
+    TEST_ASSERT_FLOAT_WITHIN(DELTA, 32, product);
 }
 
 void test_cross_product(void)
