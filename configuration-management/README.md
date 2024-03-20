@@ -6,8 +6,8 @@ We select the following topics from a wide range of configuration management tec
 
 * [Build Automation](building)
    * [From C Source Code to an Executable](building/c-build-steps)
-   * [C Preprocessor](../programming-c/c-advanced/preprocessor)
-   * [Modular Programming](../programming-c/c-advanced/modules)
+   * [C Preprocessor](../programming-c/c-advanced/modular-programming/preprocessor)
+   * [Modular Programming](../programming-c/c-advanced/modular-programming/modules)
    * [C Libraries](building/string-operations-lib-static)
 
 * [Debugging](debugging)
