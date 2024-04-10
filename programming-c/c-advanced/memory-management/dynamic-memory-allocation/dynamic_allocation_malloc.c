@@ -21,13 +21,13 @@ int main(void)
 
     for(int i=0; i<n; i++)
     {
-        a[i] = i*i;
+        a[i] = i*i; // a[i] == *(a+i)
     }
     print_array(n, a);
 
     // Deallocate array
     free(a);
-    print_array(n, a);
+    //print_array(n, a);  // read after free
 
     return 0;
 }
