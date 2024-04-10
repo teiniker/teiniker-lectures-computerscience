@@ -19,9 +19,8 @@ size_t string_length(const char *s)
 {
     size_t len = 0;
     
-    while(*s != '\0')
+    while(*(s+len) != '\0')
     {
-        s++;
         len++;
     }
 
