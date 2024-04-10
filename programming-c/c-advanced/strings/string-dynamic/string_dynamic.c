@@ -8,7 +8,7 @@ int main(void)
     int str_len = 40;
 
     // Dynamic allocated string buffer
-    char *d = malloc(str_len+1);
+    char *d = (char *)calloc(str_len+1, sizeof(char));
     d[0] = 'A';
     d[1] = 'B';
     d[2] = 'C';

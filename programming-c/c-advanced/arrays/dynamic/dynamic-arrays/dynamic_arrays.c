@@ -41,7 +41,7 @@ int main(void)
 
 int *array_new(size_t n)
 {
-    return calloc(n, sizeof(int));
+    return (int *)calloc(n, sizeof(int));
 }
 
 void array_delete(int *ptr)
