@@ -67,7 +67,7 @@ bool string_equal(const char *s1, const char *s2)
 char *string_copy(const char *s)
 {
     int size =  string_length(s);
-    char *p = malloc(size+1);
+    char *p = (char *)malloc(size+1);
 
     for(int i=0; i<size+1; i++)
     {
@@ -82,7 +82,7 @@ char *string_concatenation(const char *s1, const char *s2)
     int size1 =  string_length(s1);
     int size2 =  string_length(s2);
 
-    char *p = malloc(size1+size2+1);
+    char *p = (char *)malloc(size1+size2+1);
 
     for(int i=0; i<size1; i++)
     {
