@@ -9,10 +9,10 @@ We start our experiments with a **local repository**:
 * [Modify files in a git project](doc/ModifyProjectFiles.md)
 * [Rename files in a git project](doc/RenameProjectFiles.md)
 * [Remove files from a git project](doc/RemoveProjectFiles.md)
+* [Explore the commit history](doc/ExploreCommitHistory.md)
 
 * [Tagging commits in a local repository](doc/TaggingLocalRepository.md)
 * [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
-* [Explore the commit history](doc/ExploreCommitHistory.md)
 
 The next step is to use a **remote repository** such as **GitHub** or GitLab:
 
