@@ -4,6 +4,15 @@
 
 #define N  10
 
+
+void assert_array(int size, int expected[], int actual[])
+{
+    for(int i=0; i<size; i++)
+    {
+        assert(expected[i] == actual[i]);
+    }
+}
+
 int main(void)
 {
     int vector[N] = {8,6,4,2,0,1,3,5,7,9};
@@ -14,10 +23,7 @@ int main(void)
     vector_sort(N, vector);
 
     vector_print(N, vector);    
-    for(int i=0; i<N; i++)
-    {
-        assert(expected[i] == vector[i]);
-    }
+    assert_array(N, expected, vector);  // Custom assert
         
     return 0;
 }

@@ -20,9 +20,11 @@ iii) main.c
 iv) Erweitern Sie die main() Funktion: Vergleichen Sie das sortierte Array mit dem 
     erwarteten (expected) Ergebnis - verwenden Sie dazu das assert() Statement.
 
+v) Erweitern Sie das Makefile, damit Sie die modulare Implementierung 
+    bauen und starten können.
+
 Nach Ihrem Umbau (Refactoring) sollten Sie das Beispiel mit make bauen und starten
-können. Das notwendige Makefile ist bereits vorhanden und braucht nicht geändert
-zu werden.
+können. 
 
 > make
 mkdir -p build

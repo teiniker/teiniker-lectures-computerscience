@@ -6,17 +6,11 @@ all: run
 build:
 	mkdir -p build
 
-build/bubblesort.o: bubblesort.c bubblesort.h
-	$(CC) $(CFLAGS) -c bubblesort.c -o build/bubblesort.o
+build/bubblesort: bubblesort.c 
+	$(CC) $(CFLAGS) bubblesort.c -o build/bubblesort
 
-build/main.o: main.c
-	$(CC) $(CFLAGS) -c main.c -o build/main.o
-
-build/main: build build/bubblesort.o build/main.o
-	$(CC) $(CFLAGS) build/bubblesort.o build/main.o -o build/main
-
-run: build/main
-	build/main
+run: build/bubblesort
+	build/bubblesort
 
 clean:
 	rm -rf build/
