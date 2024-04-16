@@ -103,7 +103,7 @@ Let's compare the following string declarations:
 ```C
     char s[]  = "This is a string variable";    // declares an array 
 
-    char *ptr = "This is a string variable";    // declares a pointer
+    char *ptr = "This is a string literal";    // declares a pointer
 ```
 Because of the close relationship between arrays and pointers, we can use either version as a string.
 Any function expecting to be passed a character array or character pointer will accept both versions as an argument.
