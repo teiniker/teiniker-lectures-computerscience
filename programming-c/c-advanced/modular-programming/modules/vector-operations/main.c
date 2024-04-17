@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "vector_operations.h"
 
+#define N 3
+
 int main(void)
 {
     int vector_a[N] = {-7, 0, 12};

@@ -8,7 +8,6 @@ Modulariesieren Sie die vorliegende Implementierung:
 
 i) vector_operations.h 
     Implementieren Sie ein Header-File, das die vector_* Operationen deklariert
-    (inklusive der Dimension N).
     Vergessen Sie nicht auf die Include-Guards.
 
 ii) vector_operations.c
