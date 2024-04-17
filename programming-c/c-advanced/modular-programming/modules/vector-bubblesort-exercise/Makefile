@@ -1,7 +1,7 @@
 CFLAGS=-std=c17 -g -Wall  
 CC=gcc
 
-all: run  
+all: build run  
 
 build:
 	mkdir -p build
