@@ -11,7 +11,7 @@ typedef struct node
 
 node_t *new_node(int value)
 {
-    node_t *node_ptr = malloc(sizeof(node_t));
+    node_t *node_ptr = (node_t *)malloc(sizeof(node_t));
     node_ptr->value = value;
     node_ptr->next_ptr = NULL;
     return node_ptr;

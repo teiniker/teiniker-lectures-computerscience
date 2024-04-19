@@ -12,7 +12,7 @@ node_t *node_new(int value)
 
 list_t *list_new()
 {
-    list_t *list = malloc(sizeof(list_t));
+    list_t *list = (list_t *)malloc(sizeof(list_t));
     list->first_ptr = NULL;
     return list;
 }
