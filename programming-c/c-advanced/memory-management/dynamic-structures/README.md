@@ -1,7 +1,16 @@
 # Structures on the Heap
 
+We can't just reserve memory on the heap for primitive types. We can also 
+**allocate memory for structures using the sizeof operator**.
 
-## Instances on the Heap 
+This happens so often that there is a separate operator for dealing with pointers 
+on structures.
+
+
+## Structure Instances on the Heap 
+
+The given function is used to create a new `date_t` structure dynamically on the heap 
+and initialize it with specific values for `day`, `month`, and `year`. 
 
 _Example_: Creating and using a structure on the heap
 ```C 
@@ -14,6 +23,20 @@ date_t * new_date(int day, int month, int year)
     return date;
 }
 ``` 
+
+* `malloc(sizeof(date_t))`: This function call allocates memory on the heap that is 
+    large enough to hold a `date_t` structure. The `sizeof(date_t)` part calculates 
+    the size of the `date_t` type.
+
+* `date->day`, `date->month`, and `date->year` are accessing the `day`, `month`, 
+    and `year` members of the `date_t` structure respectively and assigning them 
+    the values passed to the function.
+
+* The function returns the pointer to the newly allocated and initialized `date_t` 
+    structure. This allows the function's caller to use this dynamically allocated 
+    date structure elsewhere in their program. It is important for the caller to 
+    ensure that this memory is eventually freed to avoid memory leaks.
+
 
 ## The `->` Operator
 Accessing a member of a structure using a pointer is so common that C  provides a special operator for this purpose.
