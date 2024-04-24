@@ -8,13 +8,16 @@
 * Memory Management
     * [Introduction](memory-management/)
     * [Pointers](memory-management/pointers/)
+    * [Memory Segments](memory-management/memory-segments/)
     * [Using the Heap](memory-management/dynamic-memory-allocation/)
-
+        * [Dynamic Structures](memory-management/dynamic-structures/) 
+        
 * [Strings](strings/) 
 
 * Modular Programming
     * [Pre-Processor](modular-programming/preprocessor)
     * [Modules](modular-programming/modules)
+    * [Libraries](modular-programming/libraries/)
 
 * [File Handling](file-handling/)
 
