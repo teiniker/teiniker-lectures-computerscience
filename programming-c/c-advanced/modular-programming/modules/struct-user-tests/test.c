@@ -18,7 +18,7 @@ void tearDown(void)
 void test_user_create(void)
 {
     // Setup
-    user_t homer;
+    user_t homer;   // stack segment
 
 	// Exercise
     homer.id = 3;
@@ -45,7 +45,7 @@ void test_user_init(void)
 void test_user_create_heap(void)
 {
     // Setup
-    user_t *marge = malloc(sizeof(user_t));
+    user_t *marge = (user_t *)malloc(sizeof(user_t));   // heap segment
 
 	// Exercise
     marge->id = 7;  

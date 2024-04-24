@@ -9,4 +9,4 @@ extern bool string_equal(const char *s1, const char *s2);
 extern char *string_copy(const char *s);
 extern char *string_concatenation(const char *s1, const char *s2);
 
-#endif /* _STRING_OPERATIONS_H_ */
+#endif 

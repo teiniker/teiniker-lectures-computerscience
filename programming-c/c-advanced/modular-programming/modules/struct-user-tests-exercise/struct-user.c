@@ -31,7 +31,7 @@ int main(void)
     assert(strcmp("EatMyShorts!", bart.password) == 0);
 
     // Test: user create heap
-    user_t *marge = malloc(sizeof(user_t));
+    user_t *marge = (user_t *)malloc(sizeof(user_t));
     marge->id = 7;              
     marge->username = "marge";    
     marge->password = "LoveMy3Kids!";

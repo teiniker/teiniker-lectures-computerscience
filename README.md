@@ -24,6 +24,7 @@ The following topics will be covered:
 * **Configuration Management**
    * [Introduction](configuration-management)
    * [Build Automation](configuration-management/building)
+        * [Compiler Flags](configuration-management/building/compiler-flags/)
    * [Test Automation](configuration-management/testing)
    * [Source Code Versioning](configuration-management/versioning)
    * [Source Code Documentation](configuration-management/documentation/doxygen)
