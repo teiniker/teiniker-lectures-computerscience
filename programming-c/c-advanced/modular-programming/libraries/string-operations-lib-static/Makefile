@@ -22,7 +22,7 @@ build/main.o: install main.c
 	$(CC) $(CFLAGS) -c main.c -o build/main.o -I./include 
 
 build/main: build/main.o
-	$(CC) $(CFLAGS) -o build/main build/main.o -I./include -L./lib -lstrops
+	$(CC) $(CFLAGS) -o build/main build/main.o -L./lib -lstrops
 
 run:
 	build/main
