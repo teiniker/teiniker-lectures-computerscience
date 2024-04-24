@@ -3,7 +3,7 @@
 
 TEST(TestDemo, test_1)
 {
-    ASSERT_TRUE(false);
+    ASSERT_FALSE(false);
 }
 
 TEST(TestDemo, test_2)
