@@ -7,9 +7,6 @@ all: run_test
 build:
 	mkdir -p build
 
-build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
-	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
-	
 build/main.o: main.c user.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
@@ -19,6 +16,10 @@ build/main: build build/main.o
 run: build/main	
 	build/main
 
+
+build/unity.o: $(UNITY)/unity.c $(UNITY)/unity.h
+	$(CC) $(CFLAGS) -c $(UNITY)/unity.c -o build/unity.o
+	
 build/test.o: test.c user.h
 	$(CC) $(CFLAGS) -I $(UNITY) -c test.c -o build/test.o
 

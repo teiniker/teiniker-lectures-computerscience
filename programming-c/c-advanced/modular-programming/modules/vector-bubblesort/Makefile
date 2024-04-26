@@ -9,7 +9,7 @@ build:
 build/bubblesort.o: bubblesort.c bubblesort.h
 	$(CC) $(CFLAGS) -c bubblesort.c -o build/bubblesort.o
 
-build/main.o: main.c
+build/main.o: main.c bubblesort.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
 build/main: build build/bubblesort.o build/main.o
