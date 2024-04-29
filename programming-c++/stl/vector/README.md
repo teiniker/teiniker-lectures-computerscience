@@ -2,7 +2,7 @@
 
 `std::vector` is a sequence container that encapsulates **dynamic size arrays**.
 
-The elements are stored contiguously, which means that elements can be accessed 
+The **elements are stored contiguously**, which means that elements can be accessed 
 not only through iterators, but also using offsets to regular pointers to elements. 
 
 The storage of the vector is handled automatically, being expanded as needed. 
