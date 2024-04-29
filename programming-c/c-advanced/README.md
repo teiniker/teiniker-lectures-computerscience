@@ -18,6 +18,8 @@
     * [Pre-Processor](modular-programming/preprocessor)
     * [Modules](modular-programming/modules)
     * [Libraries](modular-programming/libraries/)
+        * [Static Libraries](modular-programming/libraries/string-operations-lib-static/)
+        * [Example: GLib](modular-programming/libraries/glib/)
 
 * [File Handling](file-handling/)
 
