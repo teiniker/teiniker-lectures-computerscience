@@ -11,7 +11,7 @@ A) int data_read(char *filename, double data[], size_t size)
     "measurement.txt" in ein Array.
     Wenn alles funktioniert gibt die Funktion 0 zurück, ansonsten
     einen Wert ungleich 0.
-    Tipp: Verwenden Sie fscanf().
+    Tipp: Verwenden Sie fscanf() oder sscanf().
 
 B) void data_print(double data[], size_t size)
     Gibt die gelesenen Daten das Array's auf der Konsole aus:

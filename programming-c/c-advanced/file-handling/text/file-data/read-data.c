@@ -43,7 +43,7 @@ int data_read(char *filename, double data[], size_t size)
         return RETURN_ERROR;
     }
     
-    for(int i=0; i < 10; i++)
+    for(int i=0; i < size; i++)
     {
         fscanf(fptr, "%lf", &data[i]);
     }
