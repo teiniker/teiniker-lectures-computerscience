@@ -58,11 +58,13 @@ $ pkg-config --libs glib-2.0
 ```
 
 ## Configure VS Code 
-Open Command Palette: Press Ctrl+Shift+P
-Edit Configurations: Type C/C++: Edit Configurations (UI)
+
+* Open Command Palette: Press Ctrl+Shift+P
+* Edit Configurations: Type C/C++: Edit Configurations (UI)
 	This opens the UI to edit the c_cpp_properties.json file.
-Locate the "Include path" setting 
-Add the paths to the directories containing the headers of your third-party libraries. 
+* Locate the "Include path" setting 
+* Add the paths to the directories containing the headers of 
+    our third-party libraries. 
 
 _Example_: `.vscode/c_cpp_properties.json`
 ```
