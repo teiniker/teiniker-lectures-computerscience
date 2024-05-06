@@ -29,6 +29,8 @@ a status `EXIT_FAILURE` which is defined as `-1`.
 
 ## References
 
+* [YouTube (Jacob Sorber): Handling Errors in C/Unix (perror, strerror, errno)](https://youtu.be/IZiUT-ipnj0?si=VAW_7NvAM4hfpaiF)
+
 * [C - Error Handling](https://www.tutorialspoint.com/cprogramming/c_error_handling.htm)
 
 * [errno.h](https://www2.hs-fulda.de/~klingebiel/c-stdlib/sys.errno.h.htm)
