@@ -14,7 +14,7 @@ int *data_read(char *filename, size_t size)
         return NULL;
     }
     
-    int *data = calloc(size, sizeof(int));
+    int *data = (int *)calloc(size, sizeof(int));
 
     for(int i=0; i < size; i++)
     {

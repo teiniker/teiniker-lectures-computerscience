@@ -12,5 +12,5 @@ int main(int argc, char **argv)
     printf("Open file %s...\n", argv[1]);
     //...
 
-
+     return EXIT_SUCCESS;
 }    

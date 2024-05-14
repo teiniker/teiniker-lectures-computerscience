@@ -8,7 +8,7 @@ int data[N] = {10, 7, 8, 9, 1, 5};
 
 /*
  * Comparator function: ascending order
- *     a > b => positivenumber 
+ *     a > b => positive number 
  *     a < b => negative number
  *     a == b => 0
  */
