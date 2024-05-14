@@ -39,8 +39,8 @@ The following topics will be covered:
       
 * **Development Environments**
     * [Setup](introduction/setup/)
-      * [Windows: MinGw, Git, VS Code](introduction/setup)
-      * [Virtual Lab: Linux VM (Debian 11.5)](introduction/linux/setup)
+      * [Windows: MinGw, Git, VS Code](introduction/setup/Environment-Windows.md)
+      * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
     * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
 
-*Egon Teiniker, 2020-2023, GPL v3.0*         
+*Egon Teiniker, 2020-2024, GPL v3.0*         
