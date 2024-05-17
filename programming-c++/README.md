@@ -32,7 +32,6 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 
 * [Implicit typedef](basics/first-steps/implicit-typedef/)
 * [Namespaces](basics/first-steps/namespaces/)
-* [auto Initialization](basics/first-steps/auto-initialization/)
 * [Function Overloading](basics/first-steps/function-overloading/)
 * [Default Arguments](basics/first-steps/default-arguments/)
 * [References](basics/first-steps/references/)
