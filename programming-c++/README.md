@@ -72,13 +72,24 @@ In essence, OOP allows for the clear structure of programs, making them easier t
 understand and manage. It also enhances code reusability and makes programs more 
 modular and efficient.
 
-### Data Structures 
-One area of application where data and behavior can be combined into objecs are 
-data structures.
+## C++ in the Arduino Framework
+If we look at the source code of the Arduino Framework, we will find many C++ features:
+
+_Example:_ [C++ Features in the Arduino Core](arduino-framework/)
+
+
+
+## Data Structures in C++ 
+One area of application where data and behavior can be combined into objecs 
+are data structures.
 We can very easily create C++ classes from the given data structure implementations:
 
-* [Linked-List](datastructures/linked-list/)
-* [Stack](datastructures/stack/)
+* **List** 
+  * [Linked-List](datastructures/linked-list/)
+
+* **Stack** 
+  * [Array Stack](datastructures/stack/array-stack/)
+  * [Linked Stack](datastructures/stack/linked-stack/)
 
 
 ## Standard Template Library (STL)
@@ -86,26 +97,21 @@ We can very easily create C++ classes from the given data structure implementati
 A huge benefit of learning C++ is that you gain access to the C++ Standard Library, the `stdlib`, free of charge. The stdlib is composed of three interlocking parts: **containers**, **iterators**, and **algorithms**.
 
 ### String Library
-* [String](stl/string/)
+
+* [std::string ](stl/string/)
 
 
 ### Containers Library
-* Sequence Containers\
+
+* **Sequence Containers**:
   Sequence containers implement data structures which can be accessed sequentially.
-  * [Vector](stl/vector/)
-  * [List](stl/list/)
+  * [std::vector](stl/vector/)
+  * [std::list](stl/list/)
 
-* Container Adaptors\
+* **Container Adaptors**:
   Container adaptors provide a different interface for sequential containers.
-
-  * [Stack](stl/stack/)
-  * [Queue](stl/queue/)
-
-
-## Arduino Framework
-If we look at the source code of the Arduino Framework, we will find many C++ features:
-
-_Example:_ [C++ Features in the Arduino Core](arduino-framework/)
+  * [std::stack](stl/stack/)
+  * [std::queue](stl/queue/)
 
 
 ## References
@@ -118,4 +124,4 @@ _Example:_ [C++ Features in the Arduino Core](arduino-framework/)
 
 * Bjarne Stroustrup. **The C++ Programming Language.** Pearson 4th Edition 2017
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2024, GPL v3.0*
