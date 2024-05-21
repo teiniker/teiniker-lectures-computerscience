@@ -30,12 +30,12 @@ This style of C++ - we can call it **Super C** - is important to discuss for sev
 
 It’s possible to benefit immediately from at least **some C++ idioms**:
 
-* [Implicit typedef](basics/first-steps/implicit-typedef/)
+* [Implicit typedef](basics/structures/implicit-typedef/)
 * [Namespaces](basics/first-steps/namespaces/)
-* [auto Initialization](basics/first-steps/auto-initialization/)
-* [Function Overloading](basics/first-steps/function-overloading/)
-* [Default Arguments](basics/first-steps/default-arguments/)
-* [References](basics/first-steps/references/)
+* [`auto` Initialization](basics/first-steps/auto-initialization/)
+* [Function Overloading](basics/functions/function-overloading/)
+* [Default Arguments](basics/functions/default-arguments/)
+* [References](basics/functions/references/)
 
 
 ## Object-Oriented Programming (OOP)
