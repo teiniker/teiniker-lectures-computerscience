@@ -33,9 +33,9 @@ The C++ implementation files have a `.cpp` extension to distinguish them
 from the C source files.
 
 ```
-CFLAGS= -std=c++17 -g -Wall
 CC=g++
-UNITY=../../../unity
+CFLAGS= -std=c++17 -g -Wall
+UNITY=../../unity
 
 all: test_run
 
