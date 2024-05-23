@@ -1,0 +1,44 @@
+Exercise: Quick Sort + File Handling
+-------------------------------------------------------------------------------
+
+Im gegebenen "qsort.c" File sehen sie die Verwendung von "qsort()" aus der 
+C Standard Library. 
+
+Sie sollen darauf ein Modul "quick-sort" bauen, welches das folgende API besitzt:
+
+    typedef int (*comparator_t)(const void *, const void*);
+    int array_from_file(int data[], int n, char *filename);
+    int array_to_file(int data[], int n, char *filename);
+    void array_sort(int data[], int n, comparator_t comp);
+    void array_print(int data[], int n);
+
+A) Modularisierung 
+    Implementieren Sie die Files "quick-sort.h" und "quick-sort.c".
+    Die Operationen "array_from_file()" und "array_to_file()" lesen bzw.
+    schreiben ein Integer-Array von bzw. in ein File.
+
+B) Test Cases 
+    Die folgenden Testfälle sind zu implementieren:
+    i) test_array_from_file: Mit der Funktion "array_from_file()" werden 
+        25 int Werte vom File "data.txt" gelesen und mit einem erwarteten 
+        Array verglichen.
+
+    ii) test_array_to_file: Mit der Funktion "array_to_file()" wird ein 
+        int Array mit 25 Werten in ein Textfile mit dem namen "copy.txt"
+        geschrieben.
+        Überprüfen Sie, ob das File geschrieben wurde.
+        Tipp:
+            FILE *fp = fopen("copy.txt", "r");
+            fseek(fp, 0, SEEK_END);   // Move the file pointer to the end of the file
+            long file_size = ftell(fp); // Get the current file pointer position which is the file size
+            fclose(fp);
+
+    iii) test_array_sort: Lesen Sie 25 int Werte vom File "data.txt" in ein
+        statisches Array, sortieren sie das Array und vergleichen Sie das 
+        sortierte Array mit dem erwarteten Array.
+        Tipp: Implementieren Sie die passende Comparator Funktion.
+
+    iv) test_dynamic_array_sort: Lesen Sie 25 int Werte vom File "data.txt" 
+        in ein dynamisch reserviertes Array am Heap, sortieren sie das Array und 
+        vergleichen Sie das sortierte Array mit dem erwarteten Array.
+        Tipp: Implementieren Sie die passende Comparator Funktion.
