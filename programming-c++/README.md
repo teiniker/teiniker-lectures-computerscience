@@ -3,13 +3,14 @@
 In the hands of a knowledgeable programmer, C++ can produce smaller, more efficient,
 and more readable code than any other system programming language.
 
-_Example_: [Hello World in C++](introduction/hello-world/)
+_Example_: From [hello-world-c](introduction/hello-world-c/) to [hello-world-c++](introduction/hello-world-c++/)
 
 As a descendant of C, C++ also takes **zero-overhead abstraction** and direct mapping 
 to hardware very seriously. This commitment goes beyond just the C language features 
 that C++ supports. 
 
-Everything that C++ builds on top of C, including new language features, upholds these principles, and departures from either are made very deliberately. 
+Everything that C++ builds on top of C, including new language features, upholds these principles, 
+and departures from either are made very deliberately. 
 In fact, some C++ features imply even less overhead than corresponding C code.
 
 
@@ -30,12 +31,14 @@ This style of C++ - we can call it **Super C** - is important to discuss for sev
 
 It’s possible to benefit immediately from at least **some C++ idioms**:
 
-* [Implicit typedef](basics/structures/implicit-typedef/)
-* [Namespaces](basics/first-steps/namespaces/)
-* [`auto` Initialization](basics/first-steps/auto-initialization/)
-* [Function Overloading](basics/functions/function-overloading/)
-* [Default Arguments](basics/functions/default-arguments/)
-* [References](basics/functions/references/)
+* First Steps...
+  * [Namespaces](basics/first-steps/namespaces/)
+* Structures
+  * [Implicit typedef](basics/structures/implicit-typedef/)
+* Functions
+  * [Function Overloading](basics/functions/function-overloading/)
+  * [Default Arguments](basics/functions/default-arguments/)
+  * [References](basics/functions/references/)
 
 
 ## Object-Oriented Programming (OOP)
@@ -49,15 +52,19 @@ Here's a brief summary of the key concepts:
 of classes, which can be thought of as blueprints. 
 Each object is an instance of a class and has state (attributes or properties) 
 and behavior (methods or functions).
+
+_Examples_:
   * From [date-c](basics/classes/introduction/date-c/) to [date-c++](basics/classes/introduction/date-c++/)
   * From [book-c](basics/classes/introduction/book-c/) to [book-c++](basics/classes/introduction/book-c++/)
-  * [comples-number](basics/classes/complex-number/)
-  * Exercise: [resitor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
 
 * **Encapsulation**: This is the principle of bundling the attributes and the 
 methods that operate on the attributes into a single unit, which is called a class. 
 This mechanism helps to hide the internal implementation details and protects the data 
 from being accessed directly.
+
+_Examples_:
+  * [comples-number](basics/classes/complex-number/)
+  * Exercise: [resitor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
 
 * **Inheritance**: This is a way to form new classes using classes that have 
 already been defined. The new classes, known as derived classes, inherit attributes 
