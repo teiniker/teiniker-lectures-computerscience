@@ -48,12 +48,12 @@ rather than functions and logic. An object has unique attributes and behavior.
 
 Here's a brief summary of the key concepts:
 
-* [**Classes and Objects**](basics/classes/introduction/): In OOP, objects are instances 
+* [Classes and Objects](basics/classes/introduction/): In OOP, objects are instances 
 of classes, which can be thought of as blueprints. 
 Each object is an instance of a class and has state (attributes or properties) 
 and behavior (methods or functions).
 
-_Examples_:
+  _Examples_:
   * From [date-c](basics/classes/introduction/date-c/) to [date-c++](basics/classes/introduction/date-c++/)
   * From [book-c](basics/classes/introduction/book-c/) to [book-c++](basics/classes/introduction/book-c++/)
 
@@ -62,7 +62,7 @@ methods that operate on the attributes into a single unit, which is called a cla
 This mechanism helps to hide the internal implementation details and protects the data 
 from being accessed directly.
 
-_Examples_:
+  _Examples_:
   * [comples-number](basics/classes/complex-number/)
   * Exercise: [resitor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
 
