@@ -45,10 +45,14 @@ rather than functions and logic. An object has unique attributes and behavior.
 
 Here's a brief summary of the key concepts:
 
-* [**Classes and Objects**](basics/classes/): In OOP, objects are instances 
+* [**Classes and Objects**](basics/classes/introduction/): In OOP, objects are instances 
 of classes, which can be thought of as blueprints. 
 Each object is an instance of a class and has state (attributes or properties) 
 and behavior (methods or functions).
+  * From [date-c](basics/classes/introduction/date-c/) to [date-c++](basics/classes/introduction/date-c++/)
+  * From [book-c](basics/classes/introduction/book-c/) to [book-c++](basics/classes/introduction/book-c++/)
+  * [comples-number](basics/classes/complex-number/)
+  * Exercise: [resitor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
 
 * **Encapsulation**: This is the principle of bundling the attributes and the 
 methods that operate on the attributes into a single unit, which is called a class. 
