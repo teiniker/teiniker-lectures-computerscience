@@ -7,18 +7,17 @@ class Date
 {
     public:
         Date(int d, int m, int y);   
+        ~Date();
 
-        // Accessor methods
-        int getDay();
-        void setDay(int d);
+        int getDay() const;
+        void setDay(const int d);
         
-        int getMonth(); 
-        void setMonth(int m);
+        int getMonth() const; 
+        void setMonth(const int m);
         
-        int getYear();
-        void setYear(int y);
+        int getYear() const;
+        void setYear(const int y);
 
-        // public methods
         bool isLeapYear();
 
     private:

@@ -3,23 +3,23 @@
 
 class ComplexNumber 
 {
-    private:
-        double _re;
-        double _im;
-   
     public:
         ComplexNumber(double re, double im);    // Constructor
         ~ComplexNumber();                       // Destructor
         
         // Accessor methods
-        double real();
-        void real(double re);
-        double imag();
-        void imag(double im);
+        double real() const;
+        void real(const double re);
+        double imag() const;
+        void imag(const double im);
 
         // Methods 
-        void add(ComplexNumber c);
-        void sub(ComplexNumber c);
+        void add(const ComplexNumber& c);
+        void sub(const ComplexNumber& c);
+
+    private:
+        double _re;
+        double _im;   
 };
 
 #endif 

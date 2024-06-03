@@ -9,8 +9,8 @@ class Resistor
         Resistor(uint32_t value, uint8_t tolerance = 1);
         
         // Accessor methods
-        uint32_t value();
-        uint8_t tolerance();
+        uint32_t value() const;
+        uint8_t tolerance() const;
 
         // Methods 
         void serial(Resistor& r);

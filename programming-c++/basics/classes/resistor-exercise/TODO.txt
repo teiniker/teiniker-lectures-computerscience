@@ -11,8 +11,8 @@ Operationen:
         Resistor(uint32_t value, uint8_t tolerance = 1);
         
         // Accessor methods
-        uint32_t value();
-        uint8_t tolerance();
+        uint32_t value() const;
+        uint8_t tolerance() const;
 
         // Methods 
         void serial(Resistor& r);
@@ -20,6 +20,6 @@ Operationen:
 
 Verwenden sie dazu die Filenamen "resistor.h" und "resistor.cpp".
 
-Überprüfen Sie Ihre Implementierung mit "test.c".
+Überprüfen Sie Ihre Implementierung mit "test.cpp".
 
 Tip: Das "Makefile ist bereits vorhanden und braucht nicht erweitert werden.

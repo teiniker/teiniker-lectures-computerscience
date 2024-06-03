@@ -3,23 +3,20 @@
 /*
  * Constructor
  */
-Resistor::Resistor(uint32_t value, uint8_t tolerance)
+Resistor::Resistor(uint32_t value, uint8_t tolerance) : _value(value), _tolerance(tolerance)
 {
-    _value = value;
-    _tolerance = tolerance;
 }
 
-uint32_t Resistor::value()
+uint32_t Resistor::value() const
 {
     return _value;
 }
 
-uint8_t Resistor::tolerance()
+uint8_t Resistor::tolerance() const
 {
     return _tolerance;
 }
     
-
 void Resistor::serial(Resistor& r)
 {
     _value = _value + r.value();

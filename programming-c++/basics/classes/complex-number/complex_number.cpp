@@ -1,12 +1,8 @@
 #include "complex_number.h"
 
-/*
- * Constructor
- */
-ComplexNumber::ComplexNumber(double re, double im)
+//Constructor
+ComplexNumber::ComplexNumber(double re, double im) : _re(re), _im(im)
 {
-    _re = re;
-    _im = im;
 }
 
 // Destructor
@@ -14,35 +10,34 @@ ComplexNumber::~ComplexNumber()
 {
 }
     
-double ComplexNumber::real()
+double ComplexNumber::real() const  
 {
     return _re;
 }
 
-void ComplexNumber::real(double re)
+void ComplexNumber::real(const double re)
 {
     _re = re;
 }
 
-double ComplexNumber::imag()
+double ComplexNumber::imag() const 
 {
     return _im;
 }
 
-void ComplexNumber::imag(double im)
+void ComplexNumber::imag(const double im)
 {
     _im = im;
 }
 
-void ComplexNumber::add(ComplexNumber c)
+void ComplexNumber::add(const ComplexNumber& c)
 {
     _re += c.real();
     _im += c.imag();
 }
 
-void ComplexNumber::sub(ComplexNumber c)
+void ComplexNumber::sub(const ComplexNumber& c)
 {
     _re -= c.real();
     _im -= c.imag();
 }
-
