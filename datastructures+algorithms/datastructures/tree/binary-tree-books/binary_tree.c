@@ -4,7 +4,7 @@
 
 node_t *node_new(book_t *value)
 {
-    node_t *node = malloc(sizeof(node_t));
+    node_t *node = (node_t *)malloc(sizeof(node_t));
     node->value = value;
     node->left_ptr = NULL;
     node->right_ptr = NULL;

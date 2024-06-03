@@ -14,7 +14,7 @@ int compare_ascending(const void * a, const void * b)
 {
     int *value_a = (int*)a;
     int *value_b = (int*)b;     
-    return ( *value_a - *value_b);    
+    return (*value_a - *value_b);    
 }
 
 

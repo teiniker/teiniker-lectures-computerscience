@@ -10,7 +10,7 @@ int array_from_file(int data[], int n, char *filename)
     if (fptr == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", filename);
-        return -1;
+        return EXIT_FAILURE;
     }
     
     for(int i=0; i < n; i++)
@@ -27,7 +27,7 @@ int array_to_file(int data[], int n, char *filename)
     if (fptr == NULL) 
     {
         fprintf(stderr, "Can't open %s file!\n", filename);
-        return -1;
+        return EXIT_FAILURE;
     }
     
     for(int i=0; i < n; i++)

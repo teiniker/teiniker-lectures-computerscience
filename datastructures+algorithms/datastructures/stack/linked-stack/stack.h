@@ -15,7 +15,7 @@ typedef struct
     node_t *first_ptr;
 } stack_t;
 
-extern stack_t *stack_new();
+extern stack_t *stack_new(void);
 extern void stack_delete(stack_t *stack);
 
 extern bool stack_is_empty(stack_t *stack);
