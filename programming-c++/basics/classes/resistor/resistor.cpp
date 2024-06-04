@@ -17,13 +17,13 @@ uint8_t Resistor::tolerance() const
     return _tolerance;
 }
     
-void Resistor::serial(Resistor& r)
+void Resistor::serial(const Resistor& r)
 {
     _value = _value + r.value();
     _tolerance =  _max(_tolerance, r.tolerance());
 }
 
-void Resistor::parallel(Resistor& r)
+void Resistor::parallel(const Resistor& r)
 {
     _value = _value * r.value() / (_value + r.value());
     _tolerance =  _max(_tolerance, r.tolerance());

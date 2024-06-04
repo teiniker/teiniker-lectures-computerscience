@@ -13,8 +13,8 @@ class Resistor
         uint8_t tolerance() const;
 
         // Methods 
-        void serial(Resistor& r);
-        void parallel(Resistor& r);
+        void serial(const Resistor& r);
+        void parallel(const Resistor& r);
 
     private:
         uint32_t _value;
