@@ -1,0 +1,25 @@
+Exercise: C++ Class - CAN Message 
+-------------------------------------------------------------------------------
+
+A CAN Bus message consists of a CAN message identifier, a data length code,
+and up to 8 data bytes. 
+
+Implement a class which models such a CAN bus message and generates a string 
+representation of this CAN message.
+
+A) CanMsg(uint32_t id, uint8_t dlc, const uint8_t *data);
+    Implement a constrctor which takes all the data and stores them in 
+    private fields.
+
+B) Accessor methods
+    Implement read-only accessor methods to get the stored data:
+        uint32_t id()
+        uint8_t dlc()
+        uint8_t data(uint8_t index)    
+
+C) std::string asString()
+    Implement a method which generates a string representation of the 
+    CAN-Bus message.
+    Example: "CAN:123|8| 01 02 03 04 05 06 07 08"
+
+Test your implementation with "test.c".
