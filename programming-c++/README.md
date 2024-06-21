@@ -63,8 +63,8 @@ This mechanism helps to hide the internal implementation details and protects th
 from being accessed directly.
 
   _Examples_:
-  * [comples-number](basics/classes/complex-number/)
-  * Exercise: [resitor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
+  * [complex-number](basics/classes/complex-number/)
+  * Exercise: [resistor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
 
 * **Inheritance**: This is a way to form new classes using classes that have 
 already been defined. The new classes, known as derived classes, inherit attributes 
