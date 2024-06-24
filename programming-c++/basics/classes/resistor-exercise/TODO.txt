@@ -15,8 +15,8 @@ Operationen:
         uint8_t tolerance() const;
 
         // Methods 
-        void serial(Resistor& r);
-        void parallel(Resistor& r);
+        void serial(const Resistor& r);
+        void parallel(const Resistor& r);
 
 Verwenden sie dazu die Filenamen "resistor.h" und "resistor.cpp".
 
