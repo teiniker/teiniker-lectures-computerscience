@@ -1,0 +1,47 @@
+Exercise: Linux Command Line - Directory Structure
+-------------------------------------------------------------------------------
+
+A) Erstellen Sie in der Linux Shell die folgende Directory Struktur:
+
+shop/
+    books/
+        computer-science/
+        mathematics/
+    electronics/
+        resistors/
+        transistors/
+            npn/
+            pnp/
+
+B) Navigation im Filesystem
+
+i) Navigieren Sie in das verzeichnis "npn" und legen sie dort ein leeres 
+    File mit dem Namen "BC547.txt" 
+
+ii) Navigieren Sie vom Verzeichnis "npn" in das Verzeichnis "computer-science"
+    und legen Sie dort ein leeres File mit dem namen "c++.txt" an.
+
+iii) Navigieren Sie vom Verzeichnis "computer-science" in das Verzeichnis 
+    "pnp" und legen Sie dort ein leeres File mit dem namen "BC557.txt" an.
+
+C) Archivieren Sie das Verzeichnis über "shop" in einem File mit dem Namen 
+    "shop.zip".
+   Zeigen Sie den Inhalt des ZIP Files an.
+
+D) Löschen Sie das Verzeichnis "shop".
+
+E) Stellen Sie das Verzeichnis "shop" aus dem "shop.zip" File wieder her.
+
+$ tree
+├── shop
+│   ├── books
+│   │   ├── computer-science
+│   │   │   └── c++.txt
+│   │   └── mathematics
+│   └── electronics
+│       ├── resistors
+│       └── transistors
+│           ├── npn
+│           │   └── BC547.txt
+│           └── pnp
+│               └── BC557.txt

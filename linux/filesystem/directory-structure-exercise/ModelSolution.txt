@@ -1,0 +1,95 @@
+Model Solution: Linux Command Line - Directory Structure
+-------------------------------------------------------------------------------
+
+A) Directory Structure 
+
+$ mkdir -p shop/books/computer-science
+$ mkdir -p shop/books/mathematics
+$ mkdir -p shop/electronics/resistors
+$ mkdir -p shop/electronics/transistors/npn
+$ mkdir -p shop/electronics/transistors/pnp
+
+By using the -p flag in the mkdir command, you ensure that all parent directories 
+are created if they do not already exist. This allows you to create the entire 
+structure in one step.
+
+$ tree
+├── shop
+│   ├── books
+│   │   ├── computer-science
+│   │   └── mathematics
+│   └── electronics
+│       ├── resistors
+│       └── transistors
+│           ├── npn
+│           └── pnp
+
+B) Navigation 
+
+i) 
+$ cd shop/electronics/transistors/npn
+$ touch BC547.txt
+
+ii) 
+$ cd ../../../books/computer-science/
+$ touch c++.txt
+
+iii) 
+$ cd ../../electronics/transistors/pnp/
+$ touch BC557.txt
+
+C) Archivieren 
+$ cd ../../../../
+$ zip -r shop.zip shop/
+$ unzip -l shop.zip 
+Archive:  shop.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2024-06-25 16:46   shop/
+        0  2024-06-25 16:46   shop/books/
+        0  2024-06-25 16:53   shop/books/computer-science/
+        0  2024-06-25 16:53   shop/books/computer-science/c++.txt
+        0  2024-06-25 16:46   shop/books/mathematics/
+        0  2024-06-25 16:46   shop/electronics/
+        0  2024-06-25 16:46   shop/electronics/transistors/
+        0  2024-06-25 16:52   shop/electronics/transistors/npn/
+        0  2024-06-25 16:52   shop/electronics/transistors/npn/BC547.txt
+        0  2024-06-25 16:58   shop/electronics/transistors/pnp/
+        0  2024-06-25 16:58   shop/electronics/transistors/pnp/BC557.txt
+        0  2024-06-25 16:46   shop/electronics/resistors/
+---------                     -------
+        0                     12 files
+
+D) Löschen 
+$ rm -rf shop/
+
+E) Wiederherstellen 
+$ unzip shop.zip 
+Archive:  shop.zip
+   creating: shop/
+   creating: shop/books/
+   creating: shop/books/computer-science/
+ extracting: shop/books/computer-science/c++.txt  
+   creating: shop/books/mathematics/
+   creating: shop/electronics/
+   creating: shop/electronics/transistors/
+   creating: shop/electronics/transistors/npn/
+ extracting: shop/electronics/transistors/npn/BC547A.txt  
+   creating: shop/electronics/transistors/pnp/
+ extracting: shop/electronics/transistors/pnp/BC557.txt  
+   creating: shop/electronics/resistors/
+
+$ tree
+├── shop
+│   ├── books
+│   │   ├── computer-science
+│   │   │   └── c++.txt
+│   │   └── mathematics
+│   └── electronics
+│       ├── resistors
+│       └── transistors
+│           ├── npn
+│           │   └── BC547.txt
+│           └── pnp
+│               └── BC557.txt
+    
