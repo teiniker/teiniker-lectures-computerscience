@@ -102,4 +102,4 @@ Many modules that the kernel can load and unload on demand during are located un
     
 * [Filesystem Hierarchy Standard](https://www.pathname.com/fhs/pub/fhs-2.3.html)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*    
+*Egon Teiniker, 2020-2024, GPL v3.0*    

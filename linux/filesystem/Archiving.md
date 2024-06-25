@@ -42,4 +42,4 @@
     * Chapter 2: Basic Commands and Directory Hierarchy
     
 
-*Egon Teiniker, 2020-2022, GPL v3.0*    
+*Egon Teiniker, 2020-2024, GPL v3.0*    

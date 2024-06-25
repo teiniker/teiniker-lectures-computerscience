@@ -46,3 +46,4 @@ We can list the content of a directory if it is readable, but we can only access
 ## References
 * [File Permissions in Linux / Unix: How to Read, Write & Change?](https://www.guru99.com/file-permissions.html)
 
+*Egon Teiniker, 2020-2024, GPL v3.0*    

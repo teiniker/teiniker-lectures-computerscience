@@ -6,8 +6,8 @@
 class Date 
 {
     public:
-        Date(int d, int m, int y);   
-        ~Date();
+        Date(int d, int m, int y);  // Constructor   
+        ~Date();                    // Destructor
 
         int getDay() const;
         void setDay(const int d);

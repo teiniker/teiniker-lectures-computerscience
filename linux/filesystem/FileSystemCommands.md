@@ -157,4 +157,4 @@ We can send output through as many piped commands as we wish.
 * Brian Ward. **How Linux Works**. No Starch Press, 2015
     * Chapter 2: Basic Commands and Directory Hierarchy
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
