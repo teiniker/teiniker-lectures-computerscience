@@ -14,7 +14,7 @@ void tearDown(void)
 
 void test_constructor(void)
 {
-    Resistor r(470, 2);                         
+    Resistor r(470, 2);        // Stack                 
 
     TEST_ASSERT_EQUAL(470, r.value());
     TEST_ASSERT_EQUAL(2, r.tolerance());
@@ -22,7 +22,7 @@ void test_constructor(void)
 
 void test_constructor_with_new(void)
 {
-    Resistor *r = new Resistor(470, 2); 
+    Resistor *r = new Resistor(470, 2); // Heap 
 
     TEST_ASSERT_EQUAL(470, r->value());
     TEST_ASSERT_EQUAL(2, r->tolerance());

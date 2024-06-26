@@ -42,3 +42,17 @@ $ rm tux.jpg
 $ cd ..
 $ rmdir figures/
 
+
+Appendix:
+JPEG files start with a specific sequence of bytes known as a "magic number" 
+or file signature. 
+
+The full sequence of bytes that often starts a JPEG file is FF D8 FF E0, where 
+E0 can vary depending on the specific JPEG format or application segment. 
+However, the essential magic number is FF D8 FF.
+
+$ hexdump -C tux 
+00000000  ff d8 ff e0 00 10 4a 46  49 46 00 01 01 02 00 1c  |......JFIF......|
+00000010  00 1c 00 00 ff db 00 43  00 06 04 05 06 05 04 06  |.......C........|
+...
+

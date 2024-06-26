@@ -1,7 +1,7 @@
 Exercise: Linux Command Line - File Handling
 -------------------------------------------------------------------------------
 
-A) Erstellen Sie den Folder "figures" und kopieren Sie das "tux.bin" File in 
+A) Erstellen Sie den Folder "figures" und kopieren Sie das "tux" File in 
     diesen Folder.
 
 B) Wechseln Sie in den "figures" Folder, Analysieren Sie den Filetype und 
