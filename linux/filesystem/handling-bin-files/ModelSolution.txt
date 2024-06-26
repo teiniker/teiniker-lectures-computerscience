@@ -1,11 +1,11 @@
 Model Solution: Linux Command Line - File Handling
 -------------------------------------------------------------------------------
 
-A) Erstellen Sie den Folder "figures" und kopieren Sie das "tux.bin" File in 
+A) Erstellen Sie den Folder "figures" und kopieren Sie das "tux" File in 
     diesen Folder.
 
 $ mkdir figures
-$ cp tux.bin figures/
+$ cp tux figures/
 
 
 B) Wechseln Sie in den "figures" Folder, Analysieren Sie den Filetype und 
@@ -13,10 +13,11 @@ B) Wechseln Sie in den "figures" Folder, Analysieren Sie den Filetype und
 
 $ cd figures/
 
-$ file tux.bin 
-tux.bin: JPEG image data, JFIF standard 1.01, resolution (DPCM), density 28x28, segment length 16, progressive, precision 8, 256x256, components 3
+$ file tux
+tux: JPEG image data, JFIF standard 1.01, resolution (DPCM), density 28x28, 
+segment length 16, progressive, precision 8, 256x256, components 3
 
-$ mv tux.bin tux.jpg
+$ mv tux tux.jpg
 
 
 C) Finden Sie heraus, aus wie viele Bytes dieses File besteht
