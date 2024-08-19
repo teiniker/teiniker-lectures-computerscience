@@ -29,12 +29,12 @@ There are many different ways people perform debugging:
   `assert.h` is part if the C standard library.
     
 ## Examples
-* Demo: [for-loop](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)   
-* Demo: [functinos](https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/c-debugging)
+* Demo: [for-loop](for_loop.c)   
+* Demo: [functinos](function.c)
         
  
 ## References:
 * [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)
 * [How to use assertions in C](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html)       
 
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2024, GPL v3.0* 
