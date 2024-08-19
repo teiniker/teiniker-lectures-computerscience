@@ -6,7 +6,7 @@ void dump_memory(void *ptr, size_t size);
 int main(void)
 {
     unsigned int i = 0x12345678;
-    dump_memory(&i, sizeof(float));
+    dump_memory(&i, sizeof(unsigned int));
     // 78 01111000 56 01010110 34 00110100 12 00010010 
  
     float f = 1.234567;
