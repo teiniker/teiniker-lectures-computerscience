@@ -25,18 +25,18 @@ This is different in software engineering and the Unified Modeling Language:
 UML 2 describes **13 diagram types** which can be classified in the following way:
 
 * **Structure Diagrams**:
-    * Class Diagram
-    * Object Diagram
+    * [Class Diagram](class-diagram/README.md)
+    * [Object Diagram](object-diagram/README.md)
     * Component Diagram
     * Composite Structure Diagram
     * Deployment Diagram
-    * Package Diagram
+    * [Package Diagram](package-diagram/README.md)
 
 * **Behavior Diagrams**:
   * [Activity Diagram](activity-diagram/README.md)
   * Use Case Diagram
   * [State Diagram](state-machine-diagram/README.md)
-  * Sequence Diagram
+  * [Sequence Diagram](sequence-diagram/README.md)
   * Communication Diagram
   * Timing Diagram
 
@@ -63,6 +63,6 @@ When should we use UML:
 
 * Jim Arlow, Ila Neustadt. **UML 2 and the Unified Process**. Addison-Wesley, 2nd Edition, 2005
 
-*Egon Teiniker, 2020-2023, GPL v3.0*  
+*Egon Teiniker, 2020-2024, GPL v3.0*  
 
 
