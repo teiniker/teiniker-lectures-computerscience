@@ -12,7 +12,7 @@ This section provides an overview of using the **Linux platform for software dev
     * [Change Passwords](user-management/ChangePassword.md)
 
 * Processes & Threads
-    * [Process Commands](processes/ProcessCommands.md)
+    * [Process Commands](processes/README.md)
     * [Pipelines](processes/pipeline/README.md)
 
 * File System
