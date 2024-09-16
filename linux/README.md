@@ -11,10 +11,6 @@ This section provides an overview of using the **Linux platform for software dev
     * [Add and Delete Users](user-management/AddAndDeleteUser.md)
     * [Change Passwords](user-management/ChangePassword.md)
 
-* Processes & Threads
-    * [Process Commands](processes/README.md)
-    * [Pipelines](processes/pipeline/README.md)
-
 * File System
     * [Linux Directory Hierarchy](filesystem/DirectoryHierarchy.md)
     * [Working with the File System](filesystem/FileSystemCommands.md)
@@ -32,6 +28,10 @@ This section provides an overview of using the **Linux platform for software dev
 
 * Editors 
     * [Editor: vim](editors/vim.md)
+
+* Processes & Threads
+    * [Process Commands](processes/README.md)
+    * [Pipelines](processes/pipeline/README.md)
 
 * [System Calls](system-calls)
 
