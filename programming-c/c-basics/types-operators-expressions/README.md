@@ -48,6 +48,8 @@ The topics in this chapter are structured as follows:
 
   * [Formated Output](types/formated-output)
 
+  * [Pitfalls in Mapping Numbers](types/pitfalls/README.md)
+
 * **Operators** 
     * [Arithmetic Operators](operators/arithmetic/)
 
