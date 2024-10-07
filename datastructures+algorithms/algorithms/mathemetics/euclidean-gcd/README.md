@@ -85,4 +85,6 @@ divisibility:
 
 * [Wikipedia: Euclidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
 
+* [Adding Rational Types to the C Programming Language](https://psychocod3r.wordpress.com/2020/08/07/adding-rational-types-to-the-c-programming-language/)
+
 *Egon Teiniker, 2020-2024, GPL v3.0* 
