@@ -14,7 +14,7 @@ int gcd(int a, int b)
         return a;
 
     int gcd;
-    while(a % b)
+    while((a % b) != 0)
     {
         gcd = a % b;
         a = b;
@@ -41,6 +41,15 @@ int main(void)
         int result = gcd(a,b);
         printf("%d\n", result);
         assert(4 == result);
+    }
+
+    // Test 3
+    {
+        int a = 3;
+        int b = 7;
+        int result = gcd(a,b);
+        printf("%d\n", result);
+        assert(1 == result);
     }
 
     return 0;
