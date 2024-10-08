@@ -43,7 +43,7 @@ Here is a breakdown of the supported C versions by gcc 10.2.1:
 * [Linux manual page: gcc](https://man7.org/linux/man-pages/man1/gcc.1.html)
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0*    
+*Egon Teiniker, 2020-2024, GPL v3.0*    
 
 
 
