@@ -6,7 +6,7 @@ void dump_memory(const void *s, size_t bytes); // just use it :-)
 
 int main(void)
 {
-    float f =  -17.125f;
+    float f =  -4.6015625f;
     dump_memory(&f, sizeof(f));
 
     // memory [0x7fffee3767b0]: 00 40 93 c0 !! little-endian 
