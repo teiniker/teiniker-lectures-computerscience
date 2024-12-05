@@ -108,7 +108,6 @@ _Example_: Accessing structure members
 
 ### The `=` Operator
 Another structure operation is **assignment**.
-Since arrays can't be copied using the `= operator`, it comes as something of a surprise to discover that structures can.
 The `= operator` can be used only with structures of compatible types.
 
 _Example_: Structure assignment
