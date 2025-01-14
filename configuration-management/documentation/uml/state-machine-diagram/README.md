@@ -18,7 +18,7 @@ has an arrow that points to the initial state.
 The **final state** indicates that the state machine is completed, implying the deletion 
 of the controller object.
 
-![States](figures/SM-States.png)
+![States](figures/SM-State.png)
 
 The diagram also gives the rules by which the controller changes from state to state. 
 These rules are in the form of **transitions**, which indicates a movement from one state 
