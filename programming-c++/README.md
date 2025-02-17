@@ -32,9 +32,13 @@ This style of C++ - we can call it **Super C** - is important to discuss for sev
 It’s possible to benefit immediately from at least **some C++ idioms**:
 
 * First Steps...
+  * [Stronger type checking](basics/first-steps/type-checking/README.md)
+  * [auto Initialization](basics/first-steps/auto/)
   * [Namespaces](basics/first-steps/namespaces/)
+
 * Structures
   * [Implicit typedef](basics/structures/implicit-typedef/)
+
 * Functions
   * [Function Overloading](basics/functions/function-overloading/)
   * [Default Arguments](basics/functions/default-arguments/)

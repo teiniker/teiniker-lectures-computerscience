@@ -1,4 +1,5 @@
 # auto Initialization
+
 C often requires you to repeat type information more than once. 
 In C++, you can express a variable’s type information just once by utilizing the `auto` keyword. 
 The compiler will know the variable’s type because it knows the type of the value being used to 
