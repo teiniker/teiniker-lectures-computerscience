@@ -30,7 +30,7 @@ There are many different ways people perform debugging:
     
 ## Examples
 * Demo: [for-loop](for_loop.c)   
-* Demo: [functinos](function.c)
+* Demo: [functions](function.c)
         
  
 ## References:

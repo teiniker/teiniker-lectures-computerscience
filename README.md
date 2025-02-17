@@ -7,7 +7,7 @@ The following topics will be covered:
 
 * **Introduction**
     * [Computer Language Processing](introduction/language_processing)
-    * [Working with ChatGPT](introduction/ChatGPT.md)
+    * [Working with ChatGPT](introduction/chatgpt/README.md)
       
 * **Programming in C**
     * [C Basics](programming-c/c-basics)         

@@ -46,11 +46,6 @@
         * Exercise: [struct-resistor](structures/struct-resistor-exercise/)
             ([model solution](structures/struct-resistor))  
 
-    * [Structures in C vs. Structures and Classes in C++](structures/C++Structures.md)
-        * [C++ struct-data](structures/cpp-struct-date/)
-        * [C++ struct-resistor](structures/cpp-struct-resistor/)
-        * [C++ class-data](structures/cpp-class-date/)
-
 6. **State Machines**
    * [Introduction](statemachine/README.md)  
    * [sm-light-bulb](statemachine/)

@@ -108,7 +108,6 @@ _Example_: Accessing structure members
 
 ### The `=` Operator
 Another structure operation is **assignment**.
-Since arrays can't be copied using the `= operator`, it comes as something of a surprise to discover that structures can.
 The `= operator` can be used only with structures of compatible types.
 
 _Example_: Structure assignment
@@ -129,28 +128,6 @@ As a result, these operations impose a fair amount of overhead an a program, esp
 To avoid this overhead, it is sometimes advisable to **pass a pointer to a structure** instead of passing the structure 
 itself (**call by reference**).
 Similarly, we might have a function return a pointer to a structure instead of returning an actual structure.
-
-### The `->` Operator
-Accessing a member of a structure using a pointer is so common that C  provides a special operator for this purpose.
-This operator, known as **right arrow selection**, is a minus followed by `>`.
-
-Using the `->` operator, we can write: `marge->id = 7;` instead of: `(*marge).id = 7;`
-
-_Example_: Creating and using a structure on the heap
-```C 
-    user_t *marge = malloc(sizeof(user_t));
-    marge->id = 7;              
-    marge->username = "marge";    
-    marge->password = "LoveMy3Kids!";
-
-    assert(marge->id == 7);         
-    assert(strcmp("marge", marge->username) == 0);
-    assert(strcmp("LoveMy3Kids!", marge->password) == 0);
-    free(marge);
-```
-The `->` operator is a combination of the `*` and `.` operators.
-It performs indirection on `marge` to locate the structure that it points to, then selects the `id` member of the 
-structure. 
 
 
 ## Structures in C++
