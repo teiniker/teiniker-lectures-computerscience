@@ -31,20 +31,20 @@ Docker provides a set of infrastructure components that simplify distributing Do
 
 Note that Docker runs as the root user on our system (Debian 10).
 ```
-# sudo systemctl start docker
-# sudo systemctl status docker
+$ sudo systemctl start docker
+$ sudo systemctl status docker
 
-# sudo docker version
-# sudo docker info
+$ docker version
+$ docker info
 ...
-# sudo systemctl stop docker
+$ sudo systemctl stop docker
 ```
 
 A **Docker Container** is an instance of that image running as a process.
 There are many container specific commands we can use:
 
 ```
-# docker container help
+$ docker container help
 Commands:
   attach      Attach local standard input, output, and error streams to a running container
   commit      Create a new image from a container's changes
@@ -77,7 +77,7 @@ A **Docker Image** is the application we want to run.
 Also there are many commands we can use to manage images:
 
 ```
-# docker image help
+$ docker image help
 Commands:
   build       Build an image from a Dockerfile
   history     Show the history of an image
@@ -99,4 +99,4 @@ The --env flag or -e for short can be used to inject any environment variable.
 
 _Example:_ [Build and Run a Docker Image](docker-gcc/) 
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
