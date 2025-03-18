@@ -43,4 +43,4 @@ The following topics will be covered:
       * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
     * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
 
-*Egon Teiniker, 2020-2024, GPL v3.0*         
+*Egon Teiniker, 2020-2025, GPL v3.0*         
