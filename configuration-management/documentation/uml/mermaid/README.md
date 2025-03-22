@@ -33,7 +33,7 @@ stateDiagram-v2
 
 To use Mermaid in VS Code, install the following extension:
 
-![Mermaid Extension](figures/VSCodeExtension-MermaidEditor.png)]
+![Mermaid Extension](figures/VSCodeExtension-MermaidEditor.png)
 
 
 
