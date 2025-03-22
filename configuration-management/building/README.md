@@ -56,27 +56,26 @@ Sometimes we need more than one commend to create the target.
 Commands are listed one per line.
 **Each is indented by a tab**.
 
-_Example_: string-operations-modular
+_Example_: struct-vector-modular
 ```
-CFLAGS=-std=c17 -g -Wall
+CFLAGS=-std=c17 -g -Wall -I.
 CC=gcc
 
-all: build build/main run
+all: build run
 
 build:
 	mkdir -p build
 
-build/string_operations.o: string_operations.c string_operations.h
-	$(CC) $(CFLAGS) -c string_operations.c -o build/string_operations.o
+build/vector.o: vector.c vector.h
+	$(CC) $(CFLAGS) -c vector.c -o build/vector.o
 
-build/main.o: main.c string_operations.h
+build/main.o: main.c vector.h
 	$(CC) $(CFLAGS) -c main.c -o build/main.o
 
+build/main: build/vector.o build/main.o 
+	$(CC) $(CFLAGS) build/main.o build/vector.o -o build/main
 
-build/main: build/string_operations.o build/main.o 
-	$(CC) $(CFLAGS) build/main.o build/string_operations.o -o build/main
-
-run:
+run: build/main
 	build/main
 
 clean:
@@ -86,13 +85,17 @@ clean:
 When we call `make` to execute the `Makefile`, we get the following output:
 ```
 mkdir -p build
-gcc -std=c17 -g -Wall -c string_operations.c -o build/string_operations.o
-gcc -std=c17 -g -Wall -c main.c -o build/main.o
-gcc -std=c17 -g -Wall build/main.o build/string_operations.o -o build/main
+gcc -std=c17 -g -Wall -I. -c vector.c -o build/vector.o
+gcc -std=c17 -g -Wall -I. -c main.c -o build/main.o
+gcc -std=c17 -g -Wall -I. build/main.o build/vector.o -o build/main
+
 build/main
-"1001 0011 1111 0000" 
-"1001 0011 1111 0000" 
-```
+[1.000000, 2.000000, 3.000000]
+[4.000000, 5.000000, 6.000000]
+[5.000000, 7.000000, 9.000000]
+[-3.000000, -3.000000, -3.000000]
+[2.000000, 4.000000, 6.000000]
+[-3.000000, 6.000000, -3.000000]```
 
 Note that we compile the source files (`*.h` and `*.c`) into **object files** (`*.o`), link the together 
 into an **executable**, and run that application.
@@ -102,7 +105,7 @@ All **build artifacts** are stored in a temporary `build/` directory.
 ├── build
 │   ├── main
 │   ├── main.o
-│   └── string_operations.o
+│   └── vector.o
 ```
 
 Executing the `clean` target removes this directory from our project again:
@@ -116,9 +119,9 @@ to print out all build steps **without executing them**:
 ```
 $ make -n
 mkdir -p build
-gcc -std=c17 -g -Wall -c string_operations.c -o build/string_operations.o
-gcc -std=c17 -g -Wall -c main.c -o build/main.o
-gcc -std=c17 -g -Wall build/main.o build/string_operations.o -o build/main
+gcc -std=c17 -g -Wall -I. -c vector.c -o build/vector.o
+gcc -std=c17 -g -Wall -I. -c main.c -o build/main.o
+gcc -std=c17 -g -Wall -I. build/main.o build/vector.o -o build/main
 build/main
 ```
 
@@ -132,4 +135,4 @@ build/main
 * Robert Mecklenburg. Managing Projects with GNU Make. OReilly, 2005
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
