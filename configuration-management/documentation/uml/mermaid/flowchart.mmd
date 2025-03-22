@@ -1,0 +1,14 @@
+flowchart TD
+    Start[Start] --> Assign[/"value = 150\nmin = 0\nmax = 100"/]
+    Assign --> Condition1{"value < min?"}
+    
+    Condition1 -->|Yes| SetMin["value = min"]
+    Condition1 -->|No| Condition2{"value > max?"}
+    
+    Condition2 -->|Yes| SetMax["value = max"]
+    Condition2 -->|No| InRange["value within range"]
+    
+    SetMin --> End[End]
+    SetMax --> End
+    InRange --> End
+    

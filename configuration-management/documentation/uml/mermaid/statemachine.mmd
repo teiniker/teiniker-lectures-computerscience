@@ -1,0 +1,6 @@
+stateDiagram-v2 
+    [*] --> OFF
+    OFF --> ON: turn_on()/current_on()
+    ON --> OFF: turn_off()/current_off()
+    ON --> [*]: burn_out()/current_off()
+    
