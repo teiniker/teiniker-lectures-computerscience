@@ -34,10 +34,10 @@ There are many different ways people perform debugging:
   - Example: [functions](single-file/function.c)
         
 * Debugging Multiple Files:
-  - 
+  - Example: [struct-vector-modular](multiple-files/struct-vector-modular/)
  
 ## References:
 * [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)
 * [How to use assertions in C](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html)       
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
