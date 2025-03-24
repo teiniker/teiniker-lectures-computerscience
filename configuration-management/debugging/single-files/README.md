@@ -38,4 +38,4 @@ Now we can open our C file, set a **breakpoint** and run the debugger by clickin
 ![Debug a single file](figures/DebugSingleFile.png)
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 

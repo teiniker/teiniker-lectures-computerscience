@@ -29,9 +29,12 @@ There are many different ways people perform debugging:
   `assert.h` is part if the C standard library.
     
 ## Examples
-* Demo: [for-loop](for_loop.c)   
-* Demo: [functions](function.c)
+* Debugging Single Files:
+  - Example: [for-loop](single-file/for_loop.c)   
+  - Example: [functions](single-file/function.c)
         
+* Debugging Multiple Files:
+  - 
  
 ## References:
 * [An introduction to Debugging](https://towardsdatascience.com/an-introduction-to-debugging-in-c-and-lldb-part-i-e3c51991f83a)

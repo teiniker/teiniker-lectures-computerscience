@@ -6,18 +6,23 @@ We select the following topics from a wide range of configuration management tec
 
 * [Build Automation](building)
    * [From C Source Code to an Executable](building/c-build-steps)
-   * [C Preprocessor](../programming-c/c-advanced/modular-programming/preprocessor)
-   * [Modular Programming](../programming-c/c-advanced/modular-programming/modules)
-   * [C Libraries](building/string-operations-lib-static)
+   * [gcc Compiler Flags](building/compiler-flags/README.md)
+   * [Building with Make](building/struct-vector/)
+   * [Building Multiple Source Files](building/struct-vector-modular/)
+   * [Building C Libraries](building/struct-vector-lib/)
 
 * [Debugging](debugging)
+   - [Debugging Single Files](debugging/single-files/)
+   - [Debugging Multiple Files](debugging/multiple-files/)
  
 * [Test Automation](testing)
-   * [Unity Test Framework](testing/unit-tests/) 
+   - [Unity Test Framework](testing/unit-tests/) 
 
 * [Source Code Versioning](versioning) 
 
 * [Documentation](documentation)
+   - [Source Code Documentation](documentation/doxygen)
+   - [Project Documentation](documentation/markdown)
 
 * [Coding Standard](coding-standard)
 
