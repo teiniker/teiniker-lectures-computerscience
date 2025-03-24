@@ -1,4 +1,4 @@
-# C Debugging
+# Debugging C Code
 
 Debugging is the process in which a developer (who could be the author or not of the code he is trying to debug), 
 using various tools available to him, makes an effort to change part of a previously written code in order 
