@@ -26,6 +26,9 @@ To include LaTex formulars in markdown files, you need to install the following 
 
 ## References
 
+* [LaTeX for Students – A Simple Quickstart Guide](https://youtu.be/lgiCpA4zzGU?si=X_E8km-zwqy9oksj)
+* [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+
 * [VS Code Extension: Markdown+Math](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 

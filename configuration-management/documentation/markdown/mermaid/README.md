@@ -13,7 +13,24 @@ from the UML Activity Diagram in that it does not have a formal specification.
 
 _Example:_
 ```mermaid
+flowchart TD
+    Start([Start]) --> Assign[/"value = 150; min = 0; max = 100"/]
+    Assign --> Condition1{"value < min?"}
+    
+    Condition1 -->|Yes| SetMin["value = min"]
+    Condition1 -->|No| Condition2{"value > max?"}
+    
+    Condition2 -->|Yes| SetMax["value = max"]
+    Condition2 -->|No| InRange["value within range"]
+    
+    SetMin --> End([End])
+    SetMax --> End
+    InRange --> End    
 ```
+
+Note that Mermaid does not support UML activity diagrams, but rather a flowchart. 
+The notation is similar but not entirely identical. Flowcharts can also be used 
+to model the flow of functions.
 
 ## UML State Machine Diagram 
 
@@ -44,6 +61,8 @@ To use Mermaid in VS Code, install the following extension:
 * [Mermaid Live Editor](https://mermaid.live/edit)
 
 * [VS Code Extension: Mermaid Editor](https://marketplace.visualstudio.com/items?itemName=tomoyukim.vscode-mermaid-editor)
+
+* [Wikipedia: Flowchart](https://en.wikipedia.org/wiki/Flowchart)
 
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
