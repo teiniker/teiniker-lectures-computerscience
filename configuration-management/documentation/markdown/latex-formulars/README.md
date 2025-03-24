@@ -9,6 +9,7 @@ Write LaTeX using `$...$` (inline) or `$$...$$` (block).
 _Example:_ Inline formular - Euler's identity: $e^{i\pi} + 1 = 0$
 
 _Example:_ Block formular - Fundamental theorem of calculus:
+
 $$
 \frac{d}{dx} \int_{a}^{x} f(t)dt = f(x)
 $$
