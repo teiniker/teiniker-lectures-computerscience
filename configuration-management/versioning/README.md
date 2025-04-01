@@ -1,7 +1,5 @@
 # Source Code Versioning
 
-Hallo !!!!
-
 The following examples present common scenarios that can occur when dealing with git.
 
 We start our experiments with a **local repository**:
