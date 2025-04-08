@@ -2,7 +2,7 @@
 
 The following examples present common scenarios that can occur when dealing with git.
 
-We start our experiments with a **local repository**:
+You start our experiments with a **local repository**:
 
 * [Git settings](doc/GitSettings.md)
 * [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
