@@ -1,4 +1,4 @@
-# Datastructure: Array
+# Arrays
 
 In C, an array is a **collection of elements** of the **same data type** 
 stored in **contiguous memory locations**. Arrays are useful when we want 

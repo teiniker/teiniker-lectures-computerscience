@@ -33,30 +33,10 @@ The following operations are commonly performed on lists:
 * **Reversal**: Reversing the order of elements in the list.
 
 
-## Linked Lists
-A linked list is a **linear data structure** composed of nodes, where 
-each node contains two parts:
+## List Implementations
 
-* **Data**: Holds the actual information.
-
-* **Pointer**: Stores the memory address of the next node.
-
-Unlike arrays, **linked lists don't store data in contiguous memory 
-locations**. Instead, they **link individual nodes using pointers**. 
-This allows linked lists to grow or shrink dynamically.
-
-Common types of Linked Lists are:
-
-* **Singly Linked List**: Nodes point in one direction (forward).
-
-* **Doubly Linked List**: Nodes point in both directions (forward and backward).
-
-* **Circular Linked List**: Last node points back to the first node.
-
-
-## Array List 
-
-Note that these operaions can also be implemented using an **array-based list**.
+Note that these List operaions can be implemented using an **array**
+or using **linked lists**.
 
 A list implemented using an array cannot grow as easily as a linked list.
 Inserting and deleting elements is also more complex because elements have 
