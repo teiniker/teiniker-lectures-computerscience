@@ -3,8 +3,12 @@
 
 #include <stdio.h>
 
-struct array_list; // Forward declation (see C file)
-typedef struct array_list array_list_t;
+typedef struct array_list
+{
+    size_t size;
+    size_t dimension;
+    int* array;
+} array_list_t;
 
 extern array_list_t *list_new(size_t dimension);
 extern void list_delete(array_list_t* list);

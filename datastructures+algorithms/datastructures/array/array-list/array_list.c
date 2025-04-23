@@ -4,14 +4,6 @@
 
 #include "array_list.h"
 
-struct array_list
-{
-    size_t size;
-    size_t dimension;
-    int* array;
-};
-
-
 array_list_t *list_new(size_t dimension)
 {
     array_list_t *list = malloc(sizeof(array_list_t));
@@ -28,6 +20,12 @@ size_t list_size(array_list_t *list)
 
 int list_get(array_list_t* list, int index)
 {
+    // Input validation
+    if(index < 0 || index >= list->size)
+    {
+        fprintf(stderr, "Index out of bounds\n");
+        exit(EXIT_FAILURE);
+    }
     return list->array[index];
 }
 
@@ -56,6 +54,13 @@ void list_append(array_list_t* list, int value)
 
 void list_insert(array_list_t* list, int index, int value)
 {
+    // Input validation
+    if(index < 0 || index > list->size)
+    {
+        fprintf(stderr, "Index out of bounds\n");
+        exit(EXIT_FAILURE);
+    }
+
     if(list->size == 0)
     { 
         list->array[0] = value;
@@ -74,6 +79,13 @@ void list_insert(array_list_t* list, int index, int value)
 
 void list_remove(array_list_t* list, int index)
 {
+    // Input validation
+    if(index < 0 || index >= list->size)
+    {
+        fprintf(stderr, "Index out of bounds\n");
+        exit(EXIT_FAILURE);
+    }
+    
     list->size--;
     for(int i = index; i < list->size; i++)
     {
