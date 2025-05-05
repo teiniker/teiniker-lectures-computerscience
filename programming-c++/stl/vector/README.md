@@ -28,4 +28,4 @@ The complexity (efficiency) of common operations on vectors is as follows:
 * [C++ Reference: vector](https://en.cppreference.com/w/cpp/container/vector)
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
