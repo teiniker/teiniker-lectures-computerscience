@@ -5,7 +5,7 @@
 
 #include "array_list.h"
 
-array_list_t *list = NULL;
+list_t *list = NULL;
 
 void setUp(void)
 {
