@@ -3,14 +3,16 @@
 A hash table is a data structure that implements an **associative array**, 
 a structure that can **map keys to values**. 
 
-A hash table uses a **hash function** to compute an index into an **array 
+We use a **hash function** to compute an index into an **array 
 of buckets** or slots, from which the desired value can be found.
 
 ## Hash Function
 
-The hash function takes a key and returns an index in the array.
+The hash function takes a `key` and returns an index in the array.
 
-This function is a simple hash function, often used in hash tables or similar data structures. It maps an integer key to a valid index within a fixed range (dimension).
+This function is a simple hash function, often used in hash tables or similar 
+data structures. It maps an integer `key` to a valid index within a fixed range 
+(`dimension`).
 
 ```C
 size_t hash_value(size_t dimension, int key) 
@@ -37,7 +39,7 @@ the keys uniformly across the array.
 
 ## Hash Table Implementation 
 
-A hash table is typically implemented as an array of linked lists. Each
+A hash table is typically implemented as an **array of linked lists**. Each
 index in the array corresponds to a linked list that contains all the keys
 that hash to that index.
 
