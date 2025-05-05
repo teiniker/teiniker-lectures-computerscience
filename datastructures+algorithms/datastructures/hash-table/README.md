@@ -76,5 +76,6 @@ Bucket 4: (44 => 444444)
 ## References
 
 * [YouTube (CS50): Hash Tables](https://youtu.be/nvzVHwrrub0?si=Th6DkK1RRF2tYOZr)
+* [YouTube (Jacob Sorber): Understanding and implementing a Hash Table (in C)](https://youtu.be/2Ti5yvumFTU?si=k7Ed09MRc6SmzTh9)
 
 *Egon Teiniker, 2020-2025, GPL v3.0*  
