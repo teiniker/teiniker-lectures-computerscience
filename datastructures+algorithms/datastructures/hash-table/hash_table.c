@@ -30,7 +30,7 @@ void table_delete(table_t* table)
     for (size_t i = 0; i < table->dimension; i++) 
     {
         node_t *current = table->array[i].next_ptr;
-        while (current) 
+        while(current != NULL) 
         {
             node_t *temp = current;
             current = current->next_ptr;
@@ -48,7 +48,7 @@ size_t table_put(table_t* table, int key, int value)
     
     // Update value if key exists
     node_t *current = table->array[index].next_ptr;
-    while (current) 
+    while(current != NULL) 
     {
         if (current->key == key) 
         {
@@ -74,7 +74,7 @@ int table_get(table_t* table, int key)
     size_t index = hash_value(table->dimension, key);
     node_t *current = table->array[index].next_ptr;
 
-    while (current) 
+    while(current != NULL) 
     {
         if (current->key == key) 
         {
@@ -109,7 +109,7 @@ void table_remove(table_t* table, int key)
     node_t *current = table->array[index].next_ptr;
     node_t *prev = NULL;
 
-    while (current) 
+    while(current != NULL) 
     {
         if (current->key == key) 
         {
