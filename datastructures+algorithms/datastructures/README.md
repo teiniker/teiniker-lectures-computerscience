@@ -79,6 +79,7 @@ and a program that specifies the data type as an **implementation**.
 * **Queue** 
     * Exercise: [linked-queue](queue/linked-queue-exercise) 
             ([model solution](queue/linked-queue))
+    * Example: [circular-queue](queue/circular-queue/)        
 
 * **Map**
 
