@@ -97,6 +97,18 @@ and a program that specifies the data type as an **implementation**.
         * Exercise: [binary-tree-books](tree/binary-tree-books-exercise/) 
                 ([model solution](tree/binary-tree-books))
 
+
+## Implementation in Embedded Systems
+
+Abstract data structures can often be implemented differently (see: **arrays vs. linked lists**).
+
+* In **embedded systems with limited memory** (e.g., 8-bit Arduino AVR microcontrollers), 
+    **array-based implementations** are primarily used.
+
+* In **single-board computers** (e.g., Raspberry Pi), **dynamic memory implementations** can 
+    be used without restrictions.
+
+
 ## References
 * [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
 * [YouTube (CS50): Data Structures](https://youtu.be/0euvEdPwQnQ?si=6P1fqGo5zsP9WsZu)
