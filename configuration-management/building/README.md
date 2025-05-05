@@ -83,7 +83,7 @@ clean:
 ```
 
 When we call `make` to execute the `Makefile`, we get the following output:
-```
+```bash
 mkdir -p build
 gcc -std=c17 -g -Wall -I. -c vector.c -o build/vector.o
 gcc -std=c17 -g -Wall -I. -c main.c -o build/main.o
@@ -96,6 +96,7 @@ build/main
 [-3.000000, -3.000000, -3.000000]
 [2.000000, 4.000000, 6.000000]
 [-3.000000, 6.000000, -3.000000]```
+```
 
 Note that we compile the source files (`*.h` and `*.c`) into **object files** (`*.o`), link the together 
 into an **executable**, and run that application.
@@ -109,14 +110,14 @@ All **build artifacts** are stored in a temporary `build/` directory.
 ```
 
 Executing the `clean` target removes this directory from our project again:
-```
+```bash
 $ make clean
 rm -rf build/
 ```
 
 To see all commands which will be executed by make, we can use the **-n flag** 
 to print out all build steps **without executing them**:
-```
+```bash
 $ make -n
 mkdir -p build
 gcc -std=c17 -g -Wall -I. -c vector.c -o build/vector.o
