@@ -35,6 +35,41 @@ The hash function should also be **fast** to compute, and should distribute
 the keys uniformly across the array.
 
 
+## Hash Table Implementation 
+
+A hash table is typically implemented as an array of linked lists. Each
+index in the array corresponds to a linked list that contains all the keys
+that hash to that index.
+
+```C
+table_t *table = NULL;
+
+void setUp(void)
+{
+	table = table_new(5);
+    table_put(table, 11, 111111);
+    table_put(table, 22, 222222);
+    table_put(table, 33, 333333);
+    table_put(table, 44, 444444);
+    table_put(table, 55, 555555);
+    table_put(table, 66, 666666);
+    table_put(table, 77, 777777);
+}
+```
+
+Here we create a hash table with 5 buckets and add some key-value pairs to it.
+
+When we print the table, we can see how the keys are distributed across the
+buckets:
+
+```
+Bucket 0: (55 => 555555)
+Bucket 1: (66 => 666666) (11 => 111111)
+Bucket 2: (77 => 777777) (22 => 222222)
+Bucket 3: (33 => 333333)
+Bucket 4: (44 => 444444)
+```
+
 
 ## References
 
