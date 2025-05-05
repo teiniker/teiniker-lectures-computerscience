@@ -80,13 +80,24 @@ and a program that specifies the data type as an **implementation**.
     * Exercise: [linked-queue](queue/linked-queue-exercise) 
             ([model solution](queue/linked-queue))
 
-* **Binary Tree**
-    * Example: [binary-tree](tree/binary-tree)
-    * Exercise: [binary-tree-books](tree/binary-tree-books-exercise/) 
-            ([model solution](tree/binary-tree-books))
+* **Map**
+
+    * **Hash Table**
+        * Example: [hash-table](hash-table/)
+
+    * **Recursion**
+        * Example: [factorial](recursion/factorial/)
+        * Exercise: [sum-of-integers](recursion/sum-of-integers-exercise/) 
+                ([model solution](recursion/sum-of-integers))
+        * Exercise: [linked-list](recursion/linked-list-exercise/) 
+                ([model solution](recursion/linked-list))
+
+    * **Binary Tree**
+        * Example: [binary-tree](tree/binary-tree)
+        * Exercise: [binary-tree-books](tree/binary-tree-books-exercise/) 
+                ([model solution](tree/binary-tree-books))
 
 ## References
-
 * [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
 * [YouTube (CS50): Data Structures](https://youtu.be/0euvEdPwQnQ?si=6P1fqGo5zsP9WsZu)
 
