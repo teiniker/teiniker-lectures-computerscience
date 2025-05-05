@@ -3,7 +3,7 @@
 #include "hash_table.h"
 
 // Hash function: simple modulo
-size_t hash_value(size_t dimension, int key) 
+size_t hash_code(size_t dimension, int key) 
 {
     return (size_t)(abs(key) % dimension);
 }
@@ -44,7 +44,7 @@ void table_delete(table_t* table)
 // Add or update a key-value pair
 size_t table_put(table_t* table, int key, int value) 
 {
-    size_t index = hash_value(table->dimension, key);
+    size_t index = hash_code(table->dimension, key);
     
     // Update value if key exists
     node_t *current = table->array[index].next_ptr;
@@ -71,7 +71,7 @@ size_t table_put(table_t* table, int key, int value)
 // Get value by key
 int table_get(table_t* table, int key) 
 {
-    size_t index = hash_value(table->dimension, key);
+    size_t index = hash_code(table->dimension, key);
     node_t *current = table->array[index].next_ptr;
 
     while(current != NULL) 
@@ -89,7 +89,7 @@ int table_get(table_t* table, int key)
 // Find if key exists (1 = yes, 0 = no)
 bool contains_key(table_t* table, int key) 
 {
-    size_t index = hash_value(table->dimension, key);
+    size_t index = hash_code(table->dimension, key);
     node_t *current = table->array[index].next_ptr;
 
     while (current) 
@@ -105,7 +105,7 @@ bool contains_key(table_t* table, int key)
 // Remove key-value pair
 void table_remove(table_t* table, int key) 
 {
-    size_t index = hash_value(table->dimension, key);
+    size_t index = hash_code(table->dimension, key);
     node_t *current = table->array[index].next_ptr;
     node_t *prev = NULL;
 

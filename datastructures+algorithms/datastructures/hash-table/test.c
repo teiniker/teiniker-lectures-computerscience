@@ -27,13 +27,13 @@ void tearDown(void)
 
 void test_hash_function(void)
 {
-    TEST_ASSERT_EQUAL_INT(1, hash_value(table->dimension, 11));
-    TEST_ASSERT_EQUAL_INT(2, hash_value(table->dimension, 22));
-    TEST_ASSERT_EQUAL_INT(3, hash_value(table->dimension, 33));
-    TEST_ASSERT_EQUAL_INT(4, hash_value(table->dimension, 44));
-    TEST_ASSERT_EQUAL_INT(0, hash_value(table->dimension, 55));
-    TEST_ASSERT_EQUAL_INT(1, hash_value(table->dimension, 66));
-    TEST_ASSERT_EQUAL_INT(2, hash_value(table->dimension, 77));
+    TEST_ASSERT_EQUAL_INT(1, hash_code(table->dimension, 11));
+    TEST_ASSERT_EQUAL_INT(2, hash_code(table->dimension, 22));
+    TEST_ASSERT_EQUAL_INT(3, hash_code(table->dimension, 33));
+    TEST_ASSERT_EQUAL_INT(4, hash_code(table->dimension, 44));
+    TEST_ASSERT_EQUAL_INT(0, hash_code(table->dimension, 55));
+    TEST_ASSERT_EQUAL_INT(1, hash_code(table->dimension, 66));
+    TEST_ASSERT_EQUAL_INT(2, hash_code(table->dimension, 77));
 }
 
 void test_print(void)

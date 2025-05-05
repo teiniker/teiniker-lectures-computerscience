@@ -16,7 +16,7 @@ typedef struct table
     node_t* array;
 } table_t;
 
-extern size_t hash_value(size_t dimension, int key); 
+extern size_t hash_code(size_t dimension, int key); 
 
 extern table_t *table_new(size_t dimension);
 extern void table_delete(table_t* table);
