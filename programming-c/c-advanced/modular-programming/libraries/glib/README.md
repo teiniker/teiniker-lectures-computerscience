@@ -91,6 +91,7 @@ _Example_: `.vscode/c_cpp_properties.json`
 
 ## References
 
-* [GLib Reference Manual](https://web.mit.edu/ghudson/dev/nokrb/third/glib2/docs/reference/glib/html/index.html)
+* [GLib Reference Manual: Doubly-Linked Lists](https://gnome.pages.gitlab.gnome.org/libsoup/glib/glib-Doubly-Linked-Lists.html)
+* [GLib Reference Manual](https://gnome.pages.gitlab.gnome.org/libsoup/glib/)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
