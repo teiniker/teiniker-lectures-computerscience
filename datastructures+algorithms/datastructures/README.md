@@ -110,6 +110,31 @@ Abstract data structures can often be implemented differently (see: **arrays vs.
     be used without restrictions.
 
 
+## Data Structure Libraries
+
+Data structures are widely used and are available in various implementations 
+as **open source libraries**.
+
+
+### C Library: GLib 
+
+GLib provides several data structures for general use, including dynamically 
+sized arrays (`GArray`), balanced binary trees (`GTree`), hash tables 
+(`GHashTable`), linked lists (`GList` for doubly-linked lists and `GSList` 
+for singly-linked lists), queues (`GQueue`), and more. 
+
+see: [c-advanced/modular-programming/libraries/glib](../../programming-c/c-advanced/modular-programming/libraries/glib/)
+
+
+### C++ Standard Template Library (STL)
+
+The C++ Standard Template Library (STL) is a powerful set of **C++ template classes** designed 
+to provide general-purpose classes and functions with templates that implement many popular 
+and commonly used data structures and algorithms.
+
+see: [programmingc++/stl](../../programming-c++/stl/)
+
+
 ## References
 * [YouTube (CS50): Data Structures Summary](https://youtu.be/3uGchQbk7g8)
 * [YouTube (CS50): Data Structures](https://youtu.be/0euvEdPwQnQ?si=6P1fqGo5zsP9WsZu)
