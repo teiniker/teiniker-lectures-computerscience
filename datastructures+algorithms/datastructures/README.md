@@ -83,8 +83,8 @@ and a program that specifies the data type as an **implementation**.
 
 * **Map**
 
-    * **Hash Table**
-        * Example: [hash-table](hash-table/)
+    * **Hash Map**
+        * Example: [hash-map](map/hash-map/)
 
     * **Recursion**
         * Example: [factorial](recursion/factorial/)
@@ -97,6 +97,9 @@ and a program that specifies the data type as an **implementation**.
         * Example: [binary-tree](tree/binary-tree)
         * Exercise: [binary-tree-books](tree/binary-tree-books-exercise/) 
                 ([model solution](tree/binary-tree-books))
+
+    * **Tree Map**: 
+        * Example: [tree-map](map/tree-map/)
 
 
 ## Implementation in Embedded Systems
