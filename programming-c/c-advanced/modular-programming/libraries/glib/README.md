@@ -88,6 +88,15 @@ _Example_: `.vscode/c_cpp_properties.json`
 }
 ```
 
+## Examples 
+
+* DAta Structures 
+    * [GString](GString/)
+    * [GList](GList/)
+
+* File I/O
+    * [GFile](GFile/)
+    * [GError](GError/)
 
 ## References
 
