@@ -50,7 +50,7 @@ table_t *table = NULL;
 
 void setUp(void)
 {
-	table = table_new(5);
+    table = table_new(5);
     table_put(table, 11, 111111);
     table_put(table, 22, 222222);
     table_put(table, 33, 333333);
