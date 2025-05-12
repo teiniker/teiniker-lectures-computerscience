@@ -90,7 +90,7 @@ _Example_: `.vscode/c_cpp_properties.json`
 
 ## Examples 
 
-* DAta Structures 
+* Data Structures 
     * [GString](GString/)
     * [GList](GList/)
 
