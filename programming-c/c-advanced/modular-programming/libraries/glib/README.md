@@ -94,8 +94,7 @@ _Example_: `.vscode/c_cpp_properties.json`
     * [GString](GString/)
     * [GList](GList/)
 
-* File I/O
-    * [GFile](GFile/)
+* Error Handling
     * [GError](GError/)
 
 ## References
