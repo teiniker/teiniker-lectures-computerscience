@@ -91,6 +91,6 @@ _Example_: `.vscode/c_cpp_properties.json`
 
 ## References
 
-* [GLib Reference Manual](https://developer-old.gnome.org/glib/unstable/index.html)
+* [GLib Reference Manual](https://web.mit.edu/ghudson/dev/nokrb/third/glib2/docs/reference/glib/html/index.html)
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
