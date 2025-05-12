@@ -11,59 +11,59 @@ void node_print(node_t* root);
 void node_delete(node_t* root);
 
 
-table_t* table_new(void) 
+map_t* map_new(void) 
 {
-    table_t* table = (table_t*)malloc(sizeof(table_t));
-    table->tree = NULL;
-    return table;
+    map_t* map = (map_t*)malloc(sizeof(map_t));
+    map->tree = NULL;
+    return map;
 }
 
-void table_delete(table_t* table) 
+void map_delete(map_t* map) 
 {
-    if (table == NULL) 
+    if (map == NULL) 
         return;
-    node_delete(table->tree);
-    free(table);
+    node_delete(map->tree);
+    free(map);
 }
 
-void table_put(table_t* table, int key, int value) 
+void map_put(map_t* map, int key, int value) 
 {
-    if (table == NULL) 
+    if (map == NULL) 
     {
-        table = table_new();
+        map = map_new();
     }
-    table->tree = node_put(table->tree, key, value);
+    map->tree = node_put(map->tree, key, value);
 }
 
-int table_get(table_t* table, int key) 
+int map_get(map_t* map, int key) 
 {
-    if (table==NULL || table->tree == NULL) 
+    if (map==NULL || map->tree == NULL) 
     {
         fprintf(stderr, "Key not found\n");
         exit(EXIT_FAILURE);
     }
-    return node_get(table->tree, key);
+    return node_get(map->tree, key);
 }
 
-bool contains_key(table_t* table, int key) 
+bool contains_key(map_t* map, int key) 
 {
-    if (table == NULL || table->tree == NULL) 
+    if (map == NULL || map->tree == NULL) 
         return false;
-    return node_contains(table->tree, key);
+    return node_contains(map->tree, key);
 }
 
-void table_remove(table_t* table, int key) 
+void map_remove(map_t* map, int key) 
 {
-    if (table==NULL || table->tree == NULL) 
+    if (map==NULL || map->tree == NULL) 
         return;
-    table->tree = node_remove(table->tree, key);
+    map->tree = node_remove(map->tree, key);
 }
 
-void table_print(table_t* table) 
+void map_print(map_t* map) 
 {
-    if (table == NULL || table->tree == NULL) 
+    if (map == NULL || map->tree == NULL) 
         return;
-    node_print(table->tree);
+    node_print(map->tree);
 }
 
 
