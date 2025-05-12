@@ -61,6 +61,7 @@ only allows movement through the list in the forward direction).
 
 ## References
 
+* [GLib Reference Maunal: Singly-Linked Lists](https://gnome.pages.gitlab.gnome.org/libsoup/glib/glib-Singly-Linked-Lists.html)
 * [GLib Reference Manual: Doubly-Linked Lists](https://developer-old.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html)
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 

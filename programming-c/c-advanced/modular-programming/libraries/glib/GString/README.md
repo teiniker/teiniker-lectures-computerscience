@@ -57,6 +57,6 @@ struct GString {
 
 ## References
 
-* [GLib Reference Manual: Strings](https://developer-old.gnome.org/glib/unstable/glib-Strings.html)
+* [GLib Reference Manual: Strings](https://gnome.pages.gitlab.gnome.org/libsoup/glib/glib-Strings.html)
 
-*Egon Teiniker, 2020-2024, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
