@@ -93,6 +93,7 @@ _Example_: `.vscode/c_cpp_properties.json`
 * Data Structures 
     * [GString](GString/)
     * [GList](GList/)
+    * [GHashTable](GHashTable/)
 
 * Error Handling
     * [GError](GError/)
