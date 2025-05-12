@@ -100,5 +100,6 @@ _Example_: `.vscode/c_cpp_properties.json`
 ## References
 
 * [GLib Reference Manual](https://gnome.pages.gitlab.gnome.org/libsoup/glib/)
+* [GitHub: GLib](https://github.com/GNOME/glib/tree/main)
 
 *Egon Teiniker, 2020-2025, GPL v3.0* 
