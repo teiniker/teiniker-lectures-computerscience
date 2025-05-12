@@ -13,6 +13,12 @@ list_t *list_new(size_t dimension)
     return list;
 }
 
+void list_delete(list_t* list)
+{
+    free(list->array);
+    free(list);
+}
+
 size_t list_size(list_t *list)
 {
     return list->size;
@@ -92,13 +98,6 @@ void list_remove(list_t* list, int index)
         list->array[i] = list->array[i+1];
     }
 }
-
-void list_delete(list_t* list)
-{
-    free(list->array);
-    free(list);
-}
-
 
 void list_print(list_t* list)
 {

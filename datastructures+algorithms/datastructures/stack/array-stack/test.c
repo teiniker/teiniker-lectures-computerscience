@@ -10,9 +10,13 @@ stack_t *stack = NULL;
 void setUp(void)
 {
     stack = stack_new(10);
+    stack_print(stack);
     stack_push(stack, 1);
+    stack_print(stack);
     stack_push(stack, 3);
-    stack_push(stack, 5); 
+    stack_print(stack);
+    stack_push(stack, 5);
+    stack_print(stack); 
 }
 
 void tearDown(void)
@@ -39,9 +43,13 @@ void test_is_empty(void)
 
 void test_pop(void) 
 {
+    stack_print(stack);
     TEST_ASSERT_EQUAL(5, stack_pop(stack));
+    stack_print(stack);
     TEST_ASSERT_EQUAL(3, stack_pop(stack));
+    stack_print(stack);
     TEST_ASSERT_EQUAL(1, stack_pop(stack));
+    stack_print(stack);
 }
 
 void test_top(void) 

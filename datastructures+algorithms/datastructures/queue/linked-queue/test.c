@@ -10,10 +10,12 @@ queue_t *queue = NULL;
 void setUp(void)
 {
     queue = queue_new();
+    queue_print(queue);
     queue_enqueue(queue, 1);
+    queue_print(queue);
     queue_enqueue(queue, 3);
+    queue_print(queue);
     queue_enqueue(queue, 5);
-
     queue_print(queue);
 }
 
@@ -39,8 +41,11 @@ void test_is_empty(void)
 
 void test_dequeue(void) 
 {
+    queue_print(queue);
     TEST_ASSERT_EQUAL(1, queue_dequeue(queue));
+    queue_print(queue);
     TEST_ASSERT_EQUAL(3, queue_dequeue(queue));
+    queue_print(queue);
     TEST_ASSERT_EQUAL(5, queue_dequeue(queue));
 }
 

@@ -11,11 +11,11 @@ typedef struct
     int *data;
     int head;
     int tail;
-    size_t count;
     size_t size;
+    size_t dimension;
 } circular_queue_t;
 
-extern circular_queue_t *queue_new(size_t size);
+extern circular_queue_t *queue_new(size_t dimension);
 extern void queue_delete(circular_queue_t *cb);
 
 extern bool queue_is_empty(circular_queue_t* cb);
