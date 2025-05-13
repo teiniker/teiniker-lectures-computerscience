@@ -11,7 +11,6 @@ node_t *node_new(int value)
     return node;
 }
 
-
 node_t *tree_insert(node_t *node_ptr, int value)
 {
     if(node_ptr == NULL)
@@ -24,18 +23,6 @@ node_t *tree_insert(node_t *node_ptr, int value)
 
     return node_ptr;
 }
-
-node_t *tree_search(node_t *node_ptr, int value)
-{
-    if(node_ptr == NULL || node_ptr->value == value)
-        return node_ptr;
-
-    if(value < node_ptr->value)
-        return tree_search(node_ptr->left_ptr, value);
-    else 
-        return tree_search(node_ptr->right_ptr, value);    
-}
-
 
 void tree_delete(node_t *node_ptr)
 {
@@ -55,4 +42,15 @@ void tree_print(node_t *node_ptr)
     tree_print(node_ptr->left_ptr);
     printf("%d ", node_ptr->value);
     tree_print(node_ptr->right_ptr);
+}
+
+node_t *tree_search(node_t *node_ptr, int value)
+{
+    if(node_ptr == NULL || node_ptr->value == value)
+        return node_ptr;
+
+    if(value < node_ptr->value)
+        return tree_search(node_ptr->left_ptr, value);
+    else 
+        return tree_search(node_ptr->right_ptr, value);    
 }

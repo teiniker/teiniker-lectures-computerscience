@@ -11,7 +11,6 @@ node_t *node_new(int value)
     return node;
 }
 
-
 node_t *tree_insert(node_t *node_ptr, int value, comparator_t cmp)
 {
     if(node_ptr == NULL)
@@ -24,18 +23,6 @@ node_t *tree_insert(node_t *node_ptr, int value, comparator_t cmp)
 
     return node_ptr;
 }
-
-node_t *tree_search(node_t *node_ptr, int value, comparator_t cmp)
-{
-    if(node_ptr == NULL || cmp(&value, &(node_ptr->value)) == 0)
-        return node_ptr;
-
-    if(cmp(&value, &(node_ptr->value)) < 0)
-        return tree_search(node_ptr->left_ptr, value, cmp);
-    else 
-        return tree_search(node_ptr->right_ptr, value, cmp);    
-}
-
 
 void tree_delete(node_t *node_ptr)
 {
@@ -55,4 +42,15 @@ void tree_print(node_t *node_ptr)
     tree_print(node_ptr->left_ptr);
     printf("%d ", node_ptr->value);
     tree_print(node_ptr->right_ptr);
+}
+
+node_t *tree_search(node_t *node_ptr, int value, comparator_t cmp)
+{
+    if(node_ptr == NULL || cmp(&value, &(node_ptr->value)) == 0)
+        return node_ptr;
+
+    if(cmp(&value, &(node_ptr->value)) < 0)
+        return tree_search(node_ptr->left_ptr, value, cmp);
+    else 
+        return tree_search(node_ptr->right_ptr, value, cmp);    
 }
