@@ -138,6 +138,9 @@ a specific order. Typically, one of four types or traversals is used:
 
 
 ## References
+
+* [YouTube (Jacob Sorber): How to Implement a Tree in C](https://youtu.be/UbhlOk7vjVY?si=Z6-rF7iagz6huaK1)
+
 * [Data Structure and Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
 
 * Kyle Loudon. **Mastering Algorithms with C**. O'REILLY, 1999
