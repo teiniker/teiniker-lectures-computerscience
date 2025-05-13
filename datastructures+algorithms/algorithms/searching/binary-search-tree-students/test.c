@@ -10,8 +10,9 @@ node_t *tree = NULL;
 
 int comparator(const void *a, const void *b) 
 {
-    // TODO
-    return 0;
+    const student_t *student_a = (student_t *)a;
+    const student_t *student_b = (student_t *)b;
+    return student_a->id - student_b->id;
 }
 
 comparator_t cmp = NULL; 
@@ -32,6 +33,56 @@ void tearDown(void)
     tree = NULL;
 }
 
+void test_compare_a_gt_b(void)
+{
+    // Setup
+    student_t *lisa = student_new(7, "Lisa", "Simpson");    // a
+    student_t *bart = student_new(3, "Bart", "Simpson");    // b
+
+    // Exercise
+    int result = cmp(lisa, bart);
+
+    // Verify
+    TEST_ASSERT_TRUE( result > 0);
+
+    // Teardown
+    free(bart);
+    free(lisa);
+}
+
+void test_compare_a_lt_b(void)
+{
+    // Setup
+    student_t *lisa = student_new(3, "Lisa", "Simpson");
+    student_t *bart = student_new(7, "Bart", "Simpson");
+
+    // Exercise
+    int result = cmp(lisa, bart);
+
+    // Verify
+    TEST_ASSERT_TRUE(result < 0);
+
+    // Teardown
+    free(bart);
+    free(lisa);
+}
+
+void test_compare_a_eq_b(void)
+{
+    // Setup
+    student_t *lisa = student_new(7, "Lisa", "Simpson");
+    student_t *bart = student_new(7, "Bart", "Simpson");
+
+    // Exercise
+    int result = cmp(lisa, bart);
+
+    // Verify
+    TEST_ASSERT_TRUE(result == 0);
+
+    // Teardown
+    free(bart);
+    free(lisa);
+}
 
 void test_tree_search(void)
 {
@@ -56,6 +107,9 @@ void test_tree_print(void)
 int main(void)
 {
 	UNITY_BEGIN();
+    RUN_TEST(test_compare_a_lt_b);
+    RUN_TEST(test_compare_a_gt_b);
+    RUN_TEST(test_compare_a_eq_b);
     RUN_TEST(test_tree_print);
     RUN_TEST(test_tree_search);
 	return UNITY_END();
