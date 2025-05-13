@@ -139,10 +139,10 @@ Functions `fread()` and `fwrite()` are used for reading from and writing to a fi
 
 To **write into a binary file**, we need to use the `fwrite()` function. 
 The functions take four arguments:
-* `address of data` to be written in the disk
-* `size of data` to be written in the disk
-* `number` of such type `of data`
-* `pointer to the file` where you want to write.
+* address of `data` to be written to the disk
+* sizeof() `data` to be written to the disk
+* `NUMBER_OF_VALUES` number of such type of data
+* `fp` pointer to the file we want to write to.
 
 
 _Example_: Writing to a binary file
@@ -152,10 +152,10 @@ _Example_: Writing to a binary file
 
 To read data from a binary file, we use the function `fread()` 
 which also takes the same four arguments:
-* `address of data` to be written in the disk
-* `size of data` to be written in the disk
-* `number` of such type `of data`
-* `pointer to the file` where you want to write.
+* address of `data` to be read from disk
+* `sizeof()` data to be read from disk
+* `NUMBER_OF_VALUES` number of such type of data
+* `fp` pointer to the file we want to read from.
 
 _Example_: Reading from a binary file
 ```C
