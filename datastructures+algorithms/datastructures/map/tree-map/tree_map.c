@@ -69,15 +69,21 @@ void map_print(map_t* map)
 
 // Private functions
 
+node_t* node_new(int key, int value) 
+{
+    node_t* new_node = (node_t*)malloc(sizeof(node_t));
+    new_node->key = key;
+    new_node->value = value;
+    new_node->left_ptr = NULL;
+    new_node->right_ptr = NULL;
+    return new_node;
+}
+
 node_t* node_put(node_t* root, int key, int value) 
 {
     if(root == NULL) 
     {
-        node_t* node = (node_t*)malloc(sizeof(node_t));
-        node->key = key;
-        node->value = value;
-        node->left_ptr = node->right_ptr = NULL;
-        return node;
+        return node_new(key, value);
     }
 
     if(key < root->key) 
