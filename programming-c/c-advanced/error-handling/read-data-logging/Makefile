@@ -1,6 +1,6 @@
 CFLAGS=-std=c17 -g -Wall
 CC=gcc
-LOG=../log/src
+LOG=../log.c/src
 
 all: run 
 
