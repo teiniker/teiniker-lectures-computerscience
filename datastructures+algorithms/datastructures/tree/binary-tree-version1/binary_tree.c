@@ -11,34 +11,31 @@ node_t *node_new(int value)
     return node;
 }
 
-node_t *tree_insert(node_t *node_ptr, int value)
-{
-    if(node_ptr == NULL)
-        return node_new(value);
 
-    if(value < node_ptr->value)
+node_t *tree_insert_left(node_t *node_ptr, int value)
+{
+    node_t *ptr = node_new(value);
+    if(node_ptr != NULL)
     {
-        node_ptr->left_ptr = tree_insert(node_ptr->left_ptr, value);
+        node_ptr->left_ptr = ptr;       
     }
-    else if (value > node_ptr->value)
-    {
-        node_ptr->right_ptr = tree_insert(node_ptr->right_ptr, value);    
-    }
-    else 
-    {
-        node_ptr->value = value;
-    }
-    return node_ptr;
+    return ptr;
 }
+
+node_t *tree_insert_right(node_t *node_ptr, int value)
+{
+    node_t *ptr = node_new(value);
+    if(node_ptr != NULL)
+    {
+        node_ptr->right_ptr = ptr;       
+    }
+    return ptr;
+}
+
 
 void tree_delete(node_t *node_ptr)
 {
-    if(node_ptr == NULL)
-        return;
 
-    tree_delete(node_ptr->left_ptr);
-    tree_delete(node_ptr->right_ptr);
-    free(node_ptr);
 }
 
 void tree_traversal_preorder(node_t *node_ptr)

@@ -62,6 +62,7 @@ and a program that specifies the data type as an **implementation**.
 ## Examples and Exercises
 
 * **List**
+    * [Introduction](list/README.md)
     * Example: [array-list (first version)](list/array-list-version1/)
     * Example: [array-list](list/array-list)
 
@@ -72,11 +73,13 @@ and a program that specifies the data type as an **implementation**.
     * Exercise: [double-linked-list](list/double-linked-list-exercise/) ([model solution](list/double-linked-list))
 
 * **Stack**
+    * [Introduction](stack/README.md)
     * Example: [array-stack](stack/array-stack/)
     * Exercise: [stack](stack/linked-stack-exercise) 
             ([model solution](stack/linked-stack))
             
 * **Queue** 
+    * [Introduction](queue/README.md)
     * Exercise: [linked-queue](queue/linked-queue-exercise) 
             ([model solution](queue/linked-queue))
     * Example: [circular-queue](queue/circular-queue/)        
@@ -87,6 +90,7 @@ and a program that specifies the data type as an **implementation**.
         * Example: [hash-map](map/hash-map/)
 
     * **Recursion**
+        * [Introduction](recursion/)
         * Example: [factorial](recursion/factorial/)
         * Exercise: [sum-of-integers](recursion/sum-of-integers-exercise/) 
                 ([model solution](recursion/sum-of-integers))
@@ -94,6 +98,8 @@ and a program that specifies the data type as an **implementation**.
                 ([model solution](recursion/linked-list))
 
     * **Binary Tree**
+        * [Introduction](tree/README.md)
+        * Example: [binary-tree (first version)](tree/binary-tree-version1/)
         * Example: [binary-tree](tree/binary-tree)
         * Exercise: [binary-tree-books](tree/binary-tree-books-exercise/) 
                 ([model solution](tree/binary-tree-books))

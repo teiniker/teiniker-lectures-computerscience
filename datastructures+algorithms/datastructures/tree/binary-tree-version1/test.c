@@ -14,20 +14,32 @@ node_t *tree = NULL;
         3     11   17    29     
 */
 
+
 void setUp(void)
 {
-    tree = tree_insert(tree, 13);
-    tree = tree_insert(tree, 7);
-    tree = tree_insert(tree, 23);
-    tree = tree_insert(tree, 3);
-    tree = tree_insert(tree, 11);
-    tree = tree_insert(tree, 17);
-    tree = tree_insert(tree, 29);
+    tree = node_new(13);
+    tree_insert_left(tree, 7);
+    tree_insert_right(tree, 23);
+
+    tree_insert_left(tree->left_ptr, 3);
+    tree_insert_right(tree->left_ptr, 11);
+
+    tree_insert_left(tree->right_ptr, 17);
+    tree_insert_right(tree->right_ptr, 29);
+
 }
 
 void tearDown(void)
 {
-    tree_delete(tree);
+    free(tree->left_ptr->left_ptr);
+    free(tree->left_ptr->right_ptr);
+    free(tree->left_ptr);
+
+    free(tree->right_ptr->left_ptr);
+    free(tree->right_ptr->right_ptr);
+    free(tree->right_ptr);
+
+    free(tree);
     tree = NULL;
 }
 
