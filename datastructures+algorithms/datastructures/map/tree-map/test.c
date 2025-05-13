@@ -10,13 +10,13 @@ map_t *map = NULL;
 void setUp(void)
 {
     map = map_new();
-    map_put(map, 11, 111111);
-    map_put(map, 22, 222222);
-    map_put(map, 33, 333333);
     map_put(map, 44, 444444);
+    map_put(map, 11, 111111);
     map_put(map, 55, 555555);
-    map_put(map, 66, 666666);
+    map_put(map, 22, 222222);
     map_put(map, 77, 777777);
+    map_put(map, 33, 333333);
+    map_put(map, 66, 666666);
 }
 
 void tearDown(void)
