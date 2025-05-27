@@ -8,6 +8,11 @@ The following topics will be covered:
 * **Introduction**
     * [Computer Language Processing](introduction/language_processing)
     * [Working with ChatGPT](introduction/chatgpt/README.md)
+    
+    * [Development Environments](introduction/setup/)
+      * [Windows: MinGw, Git, VS Code](introduction/setup/Environment-Windows.md)
+      * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
+      * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
       
 * **Programming in C**
     * [C Basics](programming-c/c-basics)         
@@ -37,10 +42,4 @@ The following topics will be covered:
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
-* **Development Environments**
-    * [Setup](introduction/setup/)
-      * [Windows: MinGw, Git, VS Code](introduction/setup/Environment-Windows.md)
-      * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
-    * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
-
 *Egon Teiniker, 2020-2025, GPL v3.0*         
