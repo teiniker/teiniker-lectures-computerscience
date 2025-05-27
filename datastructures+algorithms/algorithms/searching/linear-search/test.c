@@ -24,10 +24,20 @@ void test_linear_search(void)
     TEST_ASSERT_EQUAL(3, index);
 }
 
+void test_not_found(void)
+{
+    int x = 50; // Element not present
+    int index = array_linear_search(data, N, x);
+    printf("Element %d found at index %d\n", x, index);
+    
+    TEST_ASSERT_EQUAL(-1, index);
+}
+
 int main(void)
 {
 	UNITY_BEGIN();
 	RUN_TEST(test_linear_search);
-
+    RUN_TEST(test_not_found);
+    
 	return UNITY_END();
 }
