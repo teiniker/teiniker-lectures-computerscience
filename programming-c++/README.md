@@ -33,7 +33,6 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 
 * First Steps...
   * [Stronger type checking](basics/first-steps/type-checking/README.md)
-  * [auto Initialization](basics/first-steps/auto/)
   * [Namespaces](basics/first-steps/namespaces/)
 
 * Structures
