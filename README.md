@@ -16,7 +16,7 @@ The following topics will be covered:
 
 * **Programming in C++**
    * [C++ Basics](programming-c++/)
-   * [More C++](https://github.com/teiniker/teiniker-lectures-softwaredesign-cpp)
+   * [More C++](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
 
 * **Operating Systems**
     * [Linux Platform](linux)
