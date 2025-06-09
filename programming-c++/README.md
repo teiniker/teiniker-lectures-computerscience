@@ -99,7 +99,7 @@ are data structures.
 We can very easily create C++ classes from the given data structure implementations:
 
 * **List** 
-  * [Linked-List](datastructures/linked-list/)
+  * [Linked-List](datastructures/list/linked-list)
 
 * **Stack** 
   * [Array Stack](datastructures/stack/array-stack/)
