@@ -119,9 +119,14 @@ A huge benefit of learning C++ is that you gain access to the C++ Standard Libra
 
 * **Sequence Containers**:
   Sequence containers implement data structures which can be accessed sequentially.
+  * [std::array](stl/array)
   * [std::vector](stl/vector/)
   * [std::list](stl/list/)
 
+* **Associative Container**
+  * [std::map](stl/map)
+  * [std::unordered_map](stl/unordered_map)
+    
 * **Container Adaptors**:
   Container adaptors provide a different interface for sequential containers.
   * [std::stack](stl/stack/)
