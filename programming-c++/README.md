@@ -33,7 +33,6 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 
 * First Steps...
   * [Stronger type checking](basics/first-steps/type-checking/README.md)
-  * [auto Initialization](basics/first-steps/auto/)
   * [Namespaces](basics/first-steps/namespaces/)
 
 * Structures
@@ -100,7 +99,7 @@ are data structures.
 We can very easily create C++ classes from the given data structure implementations:
 
 * **List** 
-  * [Linked-List](datastructures/linked-list/)
+  * [Linked-List](datastructures/list/linked-list)
 
 * **Stack** 
   * [Array Stack](datastructures/stack/array-stack/)
@@ -120,9 +119,14 @@ A huge benefit of learning C++ is that you gain access to the C++ Standard Libra
 
 * **Sequence Containers**:
   Sequence containers implement data structures which can be accessed sequentially.
+  * [std::array](stl/array)
   * [std::vector](stl/vector/)
   * [std::list](stl/list/)
 
+* **Associative Container**
+  * [std::map](stl/map)
+  * [std::unordered_map](stl/unordered_map)
+    
 * **Container Adaptors**:
   Container adaptors provide a different interface for sequential containers.
   * [std::stack](stl/stack/)
