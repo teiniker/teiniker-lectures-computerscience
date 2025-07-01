@@ -9,6 +9,9 @@ public:
     // Constructor
     Book(const std::string& isbn, const std::string& author, const std::string& title);
 
+    // Destructor
+    ~Book() {}
+
     // Accessor methods for isbn
     std::string getIsbn() const;
     void setIsbn(const std::string& isbn);

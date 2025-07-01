@@ -25,7 +25,7 @@ void book_delete(book_t *book)
     }
 }
 
-char *toJson(book_t *book)
+char *book_toJson(book_t *book)
 {
     char *json = (char *)malloc(1024);  // Fixed sized buffer!!
     if (json != NULL)

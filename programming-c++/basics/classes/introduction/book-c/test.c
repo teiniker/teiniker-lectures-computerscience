@@ -37,7 +37,7 @@ void test_constructor_with_new(void)
 void test_json(void)
 {
     book_t book = {"978-0131103627", "Brian W. Kernighan and Dennis Ritchie", "The C Programming Language"};
-    char *json = toJson(&book);
+    char *json = book_toJson(&book);
     printf("json: %s\n", json);
 
     char *expected = "{\"isbn\":\"978-0131103627\",\"author\":\"Brian W. Kernighan and Dennis Ritchie\",\"title\":\"The C Programming Language\"}";

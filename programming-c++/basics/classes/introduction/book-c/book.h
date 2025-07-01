@@ -11,6 +11,6 @@ typedef struct
 book_t *book_new(char *isbn, char *author, char *title);
 void book_delete(book_t *book);
 
-char *toJson(book_t *book);
+char *book_toJson(book_t *book);
 
 #endif // BOOK_H

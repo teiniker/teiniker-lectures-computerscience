@@ -30,7 +30,7 @@ void test_constructor_with_new(void)
     TEST_ASSERT_TRUE("Brian W. Kernighan and Dennis Ritchie" == book->getAuthor());
     TEST_ASSERT_TRUE("The C Programming Language" == book->getTitle());
 
-    delete book;
+    delete book;    // Destructor will be called automatically
 }
 
 
