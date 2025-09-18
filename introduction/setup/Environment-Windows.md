@@ -5,7 +5,7 @@ the examples of this repository can be executed.
 
 ## MinGW
 First we need a C compiler and other command line tools.
-[MinGW](https://osdn.net/projects/mingw/releases/) 
+[MinGW](https://sourceforge.net/projects/mingw/) 
 is a free and open source software development environment to create Microsoft Windows 
 applications using GNU tools.
 
@@ -89,5 +89,5 @@ Within Code, we install the following **extensions**:
 
 ## References
 * [Git - Download](https://git-scm.com/download/win)
-* [MinGW - Download](https://osdn.net/projects/mingw/releases/) 
+* [MinGW - Download](https://sourceforge.net/projects/mingw/) 
 * [Visual Studio Code - Download](https://code.visualstudio.com/)
