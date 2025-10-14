@@ -9,8 +9,8 @@ void print_complex(const char *text, double complex c)
 int main() 
 {
     // Declare and initialize two complex numbers
-    double complex c1 = 3.0 + 2.0*I;  // 3 + 2i
-    double complex c2 = 1.0 + 7.0*I;  // 1 + 7i
+    double complex c1 = 3.0 + 2.0*I;        // 3 + 2i
+    double complex c2 = CMPLX(1.0, 7.0);    // 1 + 7i
 
     // Add the complex numbers
     print_complex("c1 = ", c1);
