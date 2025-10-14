@@ -1,15 +1,70 @@
-# Mapping Pitfalls: Number Sets vs. C Types
+# Numbers
+
+**Number Theory** is the branch of mathematics that deals with the properties 
+of and relationships between numbers.
+
+The very basics of Number Theory involve defining key **number sets**.
+Different number sets take on different characteristics, and if we know that 
+a number lies within a specific set, then we know that it possesses the 
+characteristics which define the set. This allows us to study numbers and 
+how they work together more easily.
+
+
+## Number Sets 
+
+The most common sets of numbers are:
+
+* **Natural Numbers**: These are the numbers we use for counting objects: 
+    
+    _Definition:_ $\mathbb{N} = {1, 2, 3, 4, 5, 6, \dots}$
+
+
+* **Whole Numbers**: Whole numbers extend natural numbers by including `0`:
+    
+    _Definition:_ $\mathbb{N_0} = {0, 1, 2, 3, 4, \dots}$
+
+* **Integers**: Integers include whole numbers and their negatives.
+
+    _Definition:_ $\mathbb{Z} = {\dots, -3, -2, -1, 0, 1, 2, 3, \dots}$
+
+
+* **Rational Numbers**: A number is rational if it can be expressed as a fraction:
+
+    _Definition:_ $\mathbb{Q} = \frac{p}{q}, \text{ where } p, q \in \mathbb{Z} \text{ and } q \neq 0$
+
+* **Irrational Numbers**: Numbers that **cannot** be written as a fraction of two integers.
+
+    _Definition:_ $\mathbb{I} = \mathbb{R} - \mathbb{Q}$
+
+    _Examples:_ $\sqrt{2}$, $\pi$, $e$
+
+
+* **Real Numbers**: All rational and irrational numbers together.
+
+    _Definition:_ $\mathbb{R} = \mathbb{Q} \cup \mathbb{I}$
+
+* **Imaginary Numbers**: Numbers that involve the square root of a negative number.
+
+    The imaginary unit is defined as: $i = \sqrt{-1}$
+
+    _Examples:_ $3i$, $-5i$, $\frac{2}{3}i$
+ 
+* **Complex Numbers**: Numbers that have both real and imaginary parts: $z = a + bi, \quad \text{where } a,b \in \mathbb{R}; i = \sqrt{-1}$
+
+    _Examples:_ $3 + 2i$, $-1 - 4i$, $-i$
+
+
+## Mapping Pitfalls: Number Sets vs. C Types
 
 When mapping mathematical sets of numbers to types in C, problems often arise.
 
-## Whole Numbers
+### Integer Numbers
 
-* **Natural numbers** (including zero) are mapped to **unsigned integer** types 
+* **Natural numbers (including zero)** are mapped to **unsigned integer** types 
     (e.g. `unsigned int`).
 
-* **Whole Numbers** (positive and negative values) are mapped to **signed integer types**
-    (e.g. `int`).
-
+* **Integers (positive and negative values)** are mapped to **signed integer** 
+    types (e.g. `int`).
 
 The problems in the mapping mainly result from the limitations of the data types 
 in terms of their size, value range and representation. 
@@ -35,7 +90,7 @@ Here are the main challenges in detail:
     while it may be 32 or 64 bits in size on a 64-bit system.
 
 
-## Real Numbers
+### Real Numbers
 
 Mapping real numbers (floating-point numbers) to **floating-point types** (`float`, 
 `double`, `long double`, etc.) in the C programming language presents several 
