@@ -11,6 +11,7 @@ The following topics will be covered:
     
     * [Development Environments](introduction/setup/)
       * [Windows: MinGw, Git, VS Code](introduction/setup/Environment-Windows.md)
+      * [MacOS](introduction/setup/Environment-MacOS.md)
       * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
       * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
       
