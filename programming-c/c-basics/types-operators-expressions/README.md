@@ -38,6 +38,10 @@ The topics in this chapter are structured as follows:
   * [Floating-Point Numbers](types/floating-point)\
       Floating-point is the most common representation for real numbers in computers.
 
+  * [Complex Numbers](types/complex/)\
+        Complex numbers allow to representation and manipulation of numbers with 
+        real and imaginary parts.
+
   * [Characters](types/characters)\
       Character data include alphabethic symbols, punctuation marks, numeric digits, spaces, tabs, and so on.
 

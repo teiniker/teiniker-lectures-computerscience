@@ -1,4 +1,4 @@
-# Numbers
+# Number Mapping Pitfalls 
 
 **Number Theory** is the branch of mathematics that deals with the properties 
 of and relationships between numbers.
@@ -54,7 +54,7 @@ The most common sets of numbers are:
     _Examples:_ $3 + 2i$, $-1 - 4i$, $-i$
 
 
-## Mapping Pitfalls: Number Sets vs. C Types
+## Number Sets vs. C Types
 
 When mapping mathematical sets of numbers to types in C, problems often arise.
 
