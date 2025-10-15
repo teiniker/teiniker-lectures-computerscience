@@ -41,8 +41,8 @@ The most common sets of numbers are:
 
     _Definition:_ $\mathbb{R} = \mathbb{Q} \cup \mathbb{I}$
  
-* **Complex Numbers**: Numbers are defined in a two dimentional plane where the have a real and an imaginary parts: $z = a + bi, \quad \text{where } a,b \in \mathbb{R}
-    and **Imaginary Unit** is defined as: $i^2 = -1$
+* **Complex Numbers**: Numbers are defined in a two dimentional plane where the have a real and an imaginary parts: $z = a + bi, \quad \text{where } a,b \in \mathbb{R}$
+    and the **Imaginary Unit** is defined as: $i^2 = -1$
 
     _Examples:_ $3 + 2i$, $-1 - 4i$, $-i$
 
