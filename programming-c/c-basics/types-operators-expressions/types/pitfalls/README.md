@@ -18,12 +18,11 @@ The most common sets of numbers are:
     
     _Definition:_ $\mathbb{N} = {1, 2, 3, 4, 5, 6, \dots}$
 
-
-* **Whole Numbers**: Whole numbers extend natural numbers by including `0`:
+    Sometimes we extend the natural numbers by `0`:
     
     _Definition:_ $\mathbb{N_0} = {0, 1, 2, 3, 4, \dots}$
 
-* **Integers**: Integers include whole numbers and their negatives.
+* **Integers**: Integers include natural numbers, their negatives, and zero.
 
     _Definition:_ $\mathbb{Z} = {\dots, -3, -2, -1, 0, 1, 2, 3, \dots}$
 
@@ -38,18 +37,12 @@ The most common sets of numbers are:
 
     _Examples:_ $\sqrt{2}$, $\pi$, $e$
 
-
 * **Real Numbers**: All rational and irrational numbers together.
 
     _Definition:_ $\mathbb{R} = \mathbb{Q} \cup \mathbb{I}$
-
-* **Imaginary Numbers**: Numbers that involve the square root of a negative number.
-
-    The imaginary unit is defined as: $i = \sqrt{-1}$
-
-    _Examples:_ $3i$, $-5i$, $\frac{2}{3}i$
  
-* **Complex Numbers**: Numbers that have both real and imaginary parts: $z = a + bi, \quad \text{where } a,b \in \mathbb{R}; i = \sqrt{-1}$
+* **Complex Numbers**: Numbers are defined in a two dimentional plane where the have a real and an imaginary parts: $z = a + bi, \quad \text{where } a,b \in \mathbb{R}$
+    and the **Imaginary Unit** is defined as: $i^2 = -1$
 
     _Examples:_ $3 + 2i$, $-1 - 4i$, $-i$
 
