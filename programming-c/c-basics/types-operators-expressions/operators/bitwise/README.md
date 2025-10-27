@@ -54,14 +54,23 @@ uint16_t word;
 ```
 
 * **Setting a bit**: The easiest way to set a bit is to `OR` the value of `word` with a mask that 
-contains a 1 bit on the desired location `j`. Idiom: `word |= 1 << j; `
+    contains a 1 bit on the desired location `j`. 
 
-* **Clearing a bit**: To clear bit `j` of `word`, we use a mask with a 0 bit at position `j` and 1 bits everywhere else.
-Idiom: `word &= ~(1 << j);`
+    _Idiom_: `word |= 1 << j; `
+
+* **Clearing a bit**: To clear bit `j` of `word`, we use a mask with a 0 bit at position `j` and 
+    1 bits everywhere else.
+
+    _Idiom_: `word &= ~(1 << j);`
 
 * **Testing a bit**: To test whether bit j is set, we use the following statement.
-Idiom: `if(word & 1 << j) {...}`
 
+    _Idiom_: `if(word & 1 << j) {...}`
+
+* **Toggling a bit**: The easiest way to toggle a bit (0 get 1 and 1 gets 0), is to XOR 
+    the value of word with a mask that contains a 1 bit on the desired location `j`.
+
+    _Idiom_: `word ^= 1 << j`;
 
 ## References
 K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
