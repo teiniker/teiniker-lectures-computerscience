@@ -2,6 +2,7 @@
 
 
 ## The `if` Statement
+
 The if statement allows a program to choose between two alternatives by 
 testing the value of an expression.
 ```C
@@ -15,7 +16,9 @@ If the value of the expression is `true` (nonzero), the statement is executed.
 
 **Don't confuse == (equality) with = (assignment)**
 
+
 ### The `else` Clause
+
 The statement that follows the keyword `else` is executed if the expression in 
 parentheses has the value `false` (zero).
 ```C
@@ -29,7 +32,51 @@ parentheses has the value `false` (zero).
     }
 ```
 
+Note that we can **nest multiple `if-else` statements** inside one another:
+```C
+    if(yyyy % 400 == 0)
+    {
+        is_leap_year = true;
+    }
+    else
+    { 
+        if(yyyy % 100 == 0)
+        {
+            is_leap_year = false;
+        } 
+        else
+        { 
+            if(yyyy % 4 == 0)
+            {
+                is_leap_year = true;
+            }
+            else 
+            {
+                is_leap_year = false;
+            }
+        }
+    }
+```
+
+Such nested constructions can lead to **hard-to-read code**.
+Therefore, consider carefully whether you can achieve an equivalent implementation
+by using logical combinations of expressions:
+
+```C
+    if((yyyy % 400 == 0) || (yyyy % 4 == 0) && (yyyy % 100 != 0))
+    {
+        is_leap_year = true;
+    }
+    else
+    {
+        is_leap_year = false;     
+    }
+```
+
+
+
 ## Conditional Expressions
+
 C also provides an operator that allows an expression to produce
 one of two values depending on the value of the condition.
 ```C
@@ -102,4 +149,4 @@ into the next.
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
    * Chapter 5: Selection Statements
  
-*Egon Teiniker, 2020-21, GPL v3.0* 
+*Egon Teiniker, 2020-2025, GPL v3.0* 
