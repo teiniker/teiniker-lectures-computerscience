@@ -25,33 +25,28 @@ Note that we have to open the `main.c` file before we start the debugger because
 variable contains the current opened file's basename.
 
 Here the final `launch.json` file:
-```
+```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc - Build and debug active file",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/build/${fileBasenameNoExtension}", //!! change
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-//!! remove "preLaunchTask": "C/C++: gcc build active file",
-            "miDebuggerPath": "/usr/bin/gdb"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+  {
+      "name": "Debug build/main (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/build/${fileBasenameNoExtension}", //!!!
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        { "text": "-enable-pretty-printing" }
+      ]
+    }
+  ]
 }
 ```
 
-*Egon Teiniker, 2020-2025, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
