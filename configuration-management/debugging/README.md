@@ -30,8 +30,8 @@ There are many different ways people perform debugging:
     
 ## Examples
 * Debugging Single Files:
-  - Example: [for-loop](single-file/for_loop.c)   
-  - Example: [functions](single-file/function.c)
+  - Example: [for-loop](single-files/for_loop.c)   
+  - Example: [functions](single-files/function.c)
         
 * Debugging Multiple Files:
   - Example: [struct-vector-modular](multiple-files/struct-vector-modular/)
