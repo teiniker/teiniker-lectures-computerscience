@@ -8,7 +8,7 @@ We select the following topics from a wide range of configuration management tec
    * [From C Source Code to an Executable](building/build-steps)
    * [gcc Compiler Flags](building/compiler-flags/README.md)
    * [Building with Make](building/struct-vector/)
-   * [Building Multiple Source Files](building/struct-vector-modular/)
+   * [Building Multiple Source Files](building/project-layout/)
    * [Building C Libraries](building/libraries/)
 
 * [Debugging](debugging)
