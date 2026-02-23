@@ -43,4 +43,4 @@ The following topics will be covered:
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
-*Egon Teiniker, 2020-2025, GPL v3.0*         
+*Egon Teiniker, 2020-2026, GPL v3.0*         
