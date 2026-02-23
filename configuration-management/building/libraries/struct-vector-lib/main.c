@@ -58,7 +58,7 @@ int main(void)
 
     // Test cross_product
     {
-        vector_t c = vecor_cross_product(a, b);
+        vector_t c = vector_cross_product(a, b);
         vector_print(c);
         assert(equal(-3.0, c.x, DELTA));
         assert(equal(6.0, c.y, DELTA));
