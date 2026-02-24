@@ -44,6 +44,11 @@ $ mkdir -p include
 $ cp vector.h include/
 ```
 
+* **ar** is the archive tool for static (`*.a`) libraries.
+  - `-c` creates the archive if it doesn’t exist.
+  - `-v` verbose output (lists files as they’re added).
+  - `-q` quick append (adds build/vector.o to the end without full index rebuild).
+
 After these steps we have a library (`libvector.a`) in the `lib/` folder and 
 the corresponding header file (`vector.h`) in the `include/` folder. 
 
