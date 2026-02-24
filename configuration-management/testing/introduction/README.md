@@ -1,94 +1,30 @@
 # Introduction to Test Automation
 
-A testing framework such as **Unity** enforces a consistent structure 
-for each unit test, ensuring the **four phases** (setup, exercise, 
-verify, and teardown) are applied. 
+To implement automated tests, we use a **testing framework** like **Unity**. 
 
-This improves readability, reduces duplication, and makes tests more 
-reliable and maintainable.
+Most frameworks are based on **xUnit** patterns and provide a common 
+set of features, such as test discovery, setup/teardown hooks, 
+assertions, and reporting. 
 
-_Example_: The four test phases implemented in a single test function
-```C
-char buffer[81];
+This consistency makes tests easier to write, run, and maintain across 
+different languages and tools.
 
-void test_A(void)
-{
-    // Setup
-    memset(buffer, 0x00, sizeof buffer);
-    
-    // Exercise
-    int len = sprintf(buffer,"Hello");
-    
-    // Verify
-    TEST_ASSERT_EQUAL_STRING("Hello", buffer);
-    TEST_ASSERT_EQUAL(5, len);
-    
-    // Teardown
-}
-```
+Each automated test is represented by a **test function** that implements 
+a single **four-phase procedure**:
 
-To avoid code redundancies we can use explicit **setup()** 
-and **teardown()** functions. 
+* **Setup**: We set up the test fixture that is required for the SUT to exhibit the expected behavior as well as anything we need to put in place to be able to observe the actual outcome.
 
-_Example_: Setup and teardown implemented in separate functions 
-```C
-char buffer[81];
+* **Exercise**: We interact with the SUT.
 
-void setUp(void)
-{
-    // Setup
-    memset(buffer, 0x00, sizeof buffer);
-}
+* **Verify**: We do whatever is necessary to determine whether the expected outcome has been obtained.
 
-void tearDown(void)
-{
-    // Teardown 
-}
-
-void test_NoFormatString(void)
-{
-    // Exercise
-    int len = sprintf(buffer,"Hello");
-    
-    // Verify
-    TEST_ASSERT_EQUAL_STRING("Hello", buffer);
-    TEST_ASSERT_EQUAL(5, len);
-}
-```
-Note that in Unity we always need to provide `setUp()` and `tearDown()` 
-functions, even when they contain no code. The framework expects these 
-hooks to be defined for every test module to ensure consistent lifecycle 
-handling.
-
-The **Test Runner** executes `setUp()` before, and `tearDown()` after 
-each test function.
-
-_Example_: Execution order enforced by the test runner 
-```C
-Setup
-Test_A
-Teardown
-unit_test.c:31:test_A:PASS
-
-Setup
-Test_B
-Teardown
-unit_test.c:32:test_B:PASS
-
------------------------
-2 Tests 0 Failures 0 Ignored 
-OK
-```
-
-Note that `setUp()` and `tearDown()` isolate the individual test cases 
-from each other. Each test case begins with the same prerequisites. 
-
-Therefore, **test cases can be executed in any order and as often as required**.
+* **Teardown**: We tear down the test fixture to put the world back into the state in which we found it.
 
 
 ## References
 * Gerard Meszaros. **xUnit Test Patterns**. Addison-Wesley, 2007 
 * [XUnit Basics](http://xunitpatterns.com/XUnitBasics.html)
+
 * [Unity: Getting Started](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityGettingStartedGuide.md)
 * [Unity: Assertions Reference](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md)
  
