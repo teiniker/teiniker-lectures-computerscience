@@ -6,19 +6,14 @@ We select the following topics from a wide range of configuration management tec
 
 * [Build Automation](building/)
 
-* [Debugging](debugging)
-   - [Debugging Single Files](debugging/single-files/)
-   - [Debugging Multiple Files](debugging/multiple-files/)
+* [Debugging](debugging/)
  
-* [Test Automation](testing)
-   - [Unity Test Framework](testing/unit-tests/) 
+* [Test Automation](testing/)
 
-* [Source Code Versioning](versioning) 
+* [Source Code Versioning](versioning/) 
 
-* [Documentation](documentation)
-   - [Source Code Documentation](documentation/doxygen)
-   - [Project Documentation](documentation/markdown)
+* [Documentation](documentation/)
 
-* [Coding Standard](coding-standard)
+* [Coding Standard](coding-standard/)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*         
+*Egon Teiniker, 2020-2026, GPL v3.0*         
