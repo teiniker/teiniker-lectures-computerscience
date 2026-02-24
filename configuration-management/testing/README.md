@@ -5,7 +5,8 @@
 * [Unity Framework]
     - [unity](unity/)
     - [unit-tests](unit-tests/)
-    - Example: [struct-vector-test/](struct-vector-test/)    
+    - Example: [struct-vector-tests/](struct-vector-tests/)    
+    - Example: [math-tests](math-tests/)
     - Example: [sprintf-tests](sprintf-tests/)
     - Example: [string-operations-tests/](string-operations-tests/)
 
