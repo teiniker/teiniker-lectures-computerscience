@@ -16,7 +16,9 @@
     - Example: [struct-vector-lib](libraries/struct-vector-lib/)
     - Example: [unity](libraries/unity/)
 
-* [Compiler Flags](compiler-flags/)
+* Compiler Flags
+    - [gcc Flags](compiler-flags/gcc-flags/)
+    - [Compiler Explorer](compiler-flags/compiler-explorer/README.md)
 
 
 *Egon Teiniker, 2020-2026, GPL v3.0* 
