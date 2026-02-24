@@ -1,6 +1,7 @@
 # Using the Unity Test Framework
 
-## Create a Test File
+## Structure of a Test File
+
 Test files are C files. 
 Most often you will create a single test file for each C module that you want to test. 
 The test file should include `unity.h` and the header for your C module to be tested.
@@ -60,6 +61,35 @@ int main(void)                  // Configure and start the test runner
     return UNITY_END();
 }
 ```
+
+## Test Runner
+
+The **Test Runner** is embedded in the final executable and executes 
+`setUp()` before, and `tearDown()` after each test function.
+
+_Example_: Execution order enforced by the test runner
+
+```bash
+Setup
+Test_A
+Teardown
+unit_test.c:31:test_A:PASS
+
+Setup
+Test_B
+Teardown
+unit_test.c:32:test_B:PASS
+
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
+```
+
+Note that `setUp()` and `tearDown()` isolate the individual test cases 
+from each other. Each test case begins with the same prerequisites.
+
+Therefore, **test cases can be executed in any order and as often as required**.
+
 
 ## Result Verification
 
@@ -170,54 +200,36 @@ Unity provides a lot of assert functions we can use:
   
 ## Build and Run a Test File
 
-A test is built by **linking unity, the test file, and the C file(s) being tested**. 
-These files **create an executable which can be run as the test set for that module**. 
+A test is produced by **compiling and linking Unity, the test source, and 
+the C modules under test**.  
+The resulting binary **is the test executable for that module** and can 
+be run directly.
+
+In practice, this means each module gets its own small test program, 
+which keeps dependencies minimal and makes failures easier to isolate. 
+
+We can rebuild and rerun these executables frequently during development 
+to validate changes quickly.
 
 _Example_: Use **make** to build and run the test file
-```
+```bash
 $ make
 mkdir -p build
-gcc -std=c11 -g -Wall -c ../unity/unity.c -o build/unity.o
-gcc -std=c11 -g -Wall -I ../unity -c unit_testing.c -o build/unit_testing.o
-gcc -std=c11 -g -Wall build/unity.o build/unit_testing.o -o build/unit_testing
-build/unit_testing 
-
-Setup
-Test_A
-Teardown
-unit_testing.c:28:test_A:PASS
-Setup
-Test_B
-Teardown
-unit_testing.c:29:test_B:PASS
-
------------------------
-2 Tests 0 Failures 0 Ignored 
-OK
+gcc -std=c17 -g -Wall -c ../unity/unity.c -o build/unity.o
+gcc -std=c17 -g -Wall -I ../unity -c test.c -o build/test.o
+gcc -std=c17 -g -Wall build/unity.o build/test.o -o build/test
 ```
 
-Then, this process is repeated for the next test file. 
-This flexibility of separating tests into individual executables allows us to much more 
-thoroughly unit test our system and it **keeps all the test code out of our final release**!
+To run the tests, simply execute the built test binary. 
+This launches the Unity test runner and prints a summary of 
+passed and failed cases.
 
-In the context of embedded programming,it might surprise that 
-**Unity tests are not running on our target hardware**. 
-There are many reasons for this, but here's a short version:
-* On hardware, you have too many constraints (processing power, memory, etc),
-* On hardware, you don't have complete control over all registers,
-* On hardware, unit testing is more challenging,
-* Unit testing isn't System testing. Keep them separate.
+```bash
+$ build/test
+``` 
 
-Instead of running Unity tests on our actual hardware, most developers choose to develop 
-them as native applications (using gcc or MSVC for example) or as applications running 
-on a simulator. 
-Either is a good option. Native apps have the advantages of being faster and easier to 
-set up. Simulator apps have the advantage of working with the same compiler as your 
-target application. 
- 
- 
 ## References
 * [Unity: Getting Started](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityGettingStartedGuide.md)
 * [Unity: Assertions Reference](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md)
  
-*Egon Teiniker, 2020-2021, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
