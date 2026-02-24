@@ -4,12 +4,7 @@ Configuration management refers to the process by which all artifacts relevant t
 
 We select the following topics from a wide range of configuration management techniques:
 
-* [Build Automation](building)
-   * [From C Source Code to an Executable](building/build-steps)
-   * [gcc Compiler Flags](building/compiler-flags/README.md)
-   * [Building with Make](building/struct-vector/)
-   * [Building Multiple Source Files](building/project-layout/)
-   * [Building C Libraries](building/libraries/)
+* [Build Automation](building/)
 
 * [Debugging](debugging)
    - [Debugging Single Files](debugging/single-files/)
