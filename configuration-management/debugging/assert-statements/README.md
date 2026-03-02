@@ -22,6 +22,9 @@ Each time `assert` is executed, it tests the value of its argument:
 On disadvantage of assert is, that it slightly increases the running time of 
 a program because of the extra check it performs.
 
+
+## Disable Assert Verification
+
 Many programmers use assert during testing, then disable it when the program 
 is finished. Disabling `assert` is easy: we need only define the macro `NDEBUG` 
 prior to the include statement:
@@ -33,6 +36,7 @@ prior to the include statement:
 Avoid putting an expression that has a **side effect** (including a function call) 
 inside an `assert`.
 If `assert` is disabled at a later date, the expression won't be evaluated.
+
 
 ## References
 * K. N. King. **C Programming, A Modern Approach.** W. W. Norton & Company, inc. 2nd Edition 2008
