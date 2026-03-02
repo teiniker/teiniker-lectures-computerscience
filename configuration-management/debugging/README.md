@@ -7,11 +7,10 @@
 
 * Interactive Debugger
   - Debugging Single Files
-    - Example: [for-loop](single-files/for_loop.c)   
-    - Example: [functions](single-files/function.c)
+    - Example: [for-loop](interactive-debugger/single-files/for_loop.c)   
+    - Example: [functions](interactive-debugger/single-files/function.c)
           
   - Debugging Multiple Files
-    - Example: [struct-vector-modular](multiple-files/struct-vector-modular/)
-
+    - Example: [struct-vector-modular](interactive-debugger/multiple-files/struct-vector-modular/)
 
 *Egon Teiniker, 2020-2026, GPL v3.0* 
