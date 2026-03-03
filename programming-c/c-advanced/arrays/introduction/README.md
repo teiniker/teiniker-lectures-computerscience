@@ -1,4 +1,4 @@
-# Arrays
+# Introduction to Arrays
 
 C supports aggregate variables, which can store collections of values.
 There are two kinds of aggregates in C: arrays and structures.
