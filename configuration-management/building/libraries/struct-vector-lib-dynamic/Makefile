@@ -1,6 +1,5 @@
 CFLAGS=-std=c17 -g -Wall
 CC=gcc
-LDFLAGS_SHARED=-shared
 
 all: build run
 
@@ -12,7 +11,7 @@ build/vector.o: vector.c vector.h
 
 
 lib: build/vector.o
-	$(CC) $(LDFLAGS_SHARED) -Wl,-soname,libvector.so -o build/libvector.so build/vector.o
+	$(CC) -shared -Wl,-soname,libvector.so -o build/libvector.so build/vector.o
 
 install: lib
 	mkdir -p lib

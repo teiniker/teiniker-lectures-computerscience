@@ -1,7 +1,6 @@
 CFLAGS=-std=c17 -g -Wall -DUNITY_INCLUDE_DOUBLE
 CC=gcc
 UNITY=../unity
-LIBS=-lm
 
 all: build run_test
 
@@ -15,7 +14,7 @@ build/test.o: test.c
 	$(CC) $(CFLAGS) -I $(UNITY) -c test.c -o build/test.o
 
 build/test: build/unity.o build/test.o
-	$(CC) $(CFLAGS) build/unity.o build/test.o -o build/test $(LIBS)
+	$(CC) $(CFLAGS) build/unity.o build/test.o -o build/test -lm
 
 run_test: build/test
 	build/test
