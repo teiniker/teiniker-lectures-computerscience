@@ -36,7 +36,7 @@ char *message_write(char *sensor, uint8_t id, double temperature, double humidit
     // "DHT11 1a 32.1 43.8"  3 spaces, '\0'
     size_t size = strlen(sensor) + 2 + 2*4 + 3 + 1;
     printf("msg: '%s %02x %3.1f %3.1f'\n", sensor, id, temperature, humidity);
-    printf("size: %u\n", size);    
+    printf("size: %lu\n", size);    
     char *msg = malloc(size);    
     sprintf(msg, "%s %02x %3.1f %3.1f", sensor, id, temperature, humidity);
     return msg;
@@ -45,7 +45,7 @@ char *message_write(char *sensor, uint8_t id, double temperature, double humidit
 void message_read(const char *msg, char *sensor, uint8_t *id, double *temperature, double *humidity)
 {
     char s[20];
-    sscanf(msg, "%s %x %lf %lf", s, id, temperature, humidity);
+    sscanf(msg, "%s %hhx %lf %lf", s, id, temperature, humidity);
     strncpy(sensor, s, 10);
-    printf("msg: '%s %x %3.1f %3.1f'\n", sensor, *id, *temperature, *humidity);
+    printf("msg: '%s %02x %3.1f %3.1f'\n", sensor, *id, *temperature, *humidity);
 }
