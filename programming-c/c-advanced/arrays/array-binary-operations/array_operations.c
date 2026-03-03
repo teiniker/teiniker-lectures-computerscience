@@ -7,7 +7,7 @@ enum binary_op { AND, OR, EXOR};
 
 void print_binary(uint32_t number);
 void array_print(int n, int v[]);
-void array_operation(enum binary_op, int n, uint32_t a[], uint32_t b[], uint32_t c[]);
+void array_binary_operation(enum binary_op, int n, uint32_t a[], uint32_t b[], uint32_t c[]);
 
 
 int main(void)
