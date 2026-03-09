@@ -4,7 +4,7 @@
 
 * [Unity Framework]
     - [unity](unity/)
-    - [unit-tests](unit-tests/)
+    - [unity-demo](unity-demo/)
     - Example: [struct-vector-tests/](struct-vector-tests/)    
     - Example: [math-tests](math-tests/)
     - Example: [sprintf-tests](sprintf-tests/)
