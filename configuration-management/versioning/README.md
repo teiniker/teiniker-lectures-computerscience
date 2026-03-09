@@ -23,6 +23,7 @@ The next step is to use a **remote repository** such as **GitHub** or GitLab:
 
 
 ## References:
+* [YouTube (GitHub): The ultimate beginner's guide to GitHub in 2025](https://youtu.be/NUELGzIHT-I?si=WnvEa-se0mwMY1v0)
 * [YouTube: Git Tutorial for Beginners: Learn Git in 1 Hour](https://youtu.be/8JJ101D3knE)
 * [YouTube (Corey Schafer): Git Tutorial for Beginners: Command-Line Fundamentals](https://youtu.be/HVsySz-h9r4)
 
