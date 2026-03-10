@@ -9,15 +9,22 @@ Markdown was originally created by **John Gruber** in 2004 with the intention
 of making content easy to read in its plain-text form, while still allowing 
 it to be easily converted to structurally valid HTML.
 
-Markdown (often abbreviated as "MD") is a lightweight markup language designed for easy-to-read and easy-to-write plain text formatting. It's widely used to create formatted text in documents, websites, blogs, README files, documentation, and chat platforms (like GitHub, Reddit, and Stack Overflow).
+Markdown (often abbreviated as "MD") is a lightweight markup language designed 
+for easy-to-read and easy-to-write plain text formatting. It's widely used to 
+create formatted text in documents, websites, blogs, README files, 
+documentation, and chat platforms (like GitHub, Reddit, and Stack Overflow).
 
-Markdown was originally created by **John Gruber** in 2004 with the intention of making content easy to read in its plain-text form, while still allowing it to be easily converted to structurally valid HTML.
+Markdown was originally created by **John Gruber** in 2004 with the intention 
+of making content easy to read in its plain-text form, while still allowing 
+it to be easily converted to structurally valid HTML.
 
 
 ## Basic Syntax Examples
 
 ### Headings:
+
 Use `#` symbols for headings:
+
 ```markdown
 # Heading Level 1
 ## Heading Level 2
@@ -25,6 +32,7 @@ Use `#` symbols for headings:
 ```
 
 ### Emphasis (bold and italics):
+
 ```markdown
 *Italic text*
 **Bold text**
@@ -34,6 +42,7 @@ Use `#` symbols for headings:
 ### Lists:
 
 - **Unordered List:**
+
 ```markdown
 - Item 1
 - Item 2
@@ -41,6 +50,7 @@ Use `#` symbols for headings:
 ```
 
 - **Ordered List:**
+
 ```markdown
 1. First item
 2. Second item
@@ -48,23 +58,29 @@ Use `#` symbols for headings:
 ```
 
 ### Links:
+
 ```markdown
 [Link Text](https://example.com)
 ```
 
 ### Images:
+
 ```markdown
 ![Alt Text](image-url.jpg)
 ```
 
 ### Inline Code:
+
 Wrap inline code with backticks (`` ` ``):
+
 ```markdown
 Use the `print()` function.
 ```
 
 ### Code Blocks:
+
 Wrap multi-line code with triple backticks (` ``` `):
+
 ````markdown
 ```python
 def greet(name):
@@ -73,11 +89,13 @@ def greet(name):
 ````
 
 ### Blockquotes:
+
 ```markdown
 > This is a quoted text.
 ```
 
 ### Tables:
+
 ```markdown
 | Column A | Column B |
 | -------- | -------- |
@@ -93,6 +111,7 @@ common developer tools**.
 
 
 ### **README files**
+
 Every software repository benefits from a clear README file, usually 
 named `README.md`. It is often the first point of contact for users 
 and developers.
@@ -106,6 +125,7 @@ and developers.
 
 
 ### **Documentation**
+
 Markdown makes documentation easy to write, update, and maintain.
 
 Typical documentation includes:
@@ -116,6 +136,7 @@ Typical documentation includes:
 
 
 ### **Issue Tracking and Pull Requests**
+
 Many version control platforms, such as GitHub and GitLab, use Markdown 
 for writing clear, structured issues and pull requests.
 
@@ -127,6 +148,7 @@ Useful for:
 
 
 ### **Changelogs**
+
 Markdown is ideal for writing clear changelogs (usually named 
 `CHANGELOG.md`) that track software releases, updates, and fixes.
 
@@ -141,6 +163,7 @@ Typical structure:
 ```
 
 ### **Code Comments and Tutorials**
+
 Markdown can be embedded in codebases to document important functions, 
 classes, or processes clearly.
 
@@ -150,6 +173,7 @@ Example use cases:
 
 
 ### **Wiki Pages**
+
 Tools such as GitHub Wikis and GitLab Wikis natively support Markdown, 
 allowing teams to maintain collaborative, easily editable documentation.
 
@@ -164,4 +188,4 @@ Common use cases:
 * [Quickstart for writing on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 * [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*         
+*Egon Teiniker, 2020-2026, GPL v3.0*         
