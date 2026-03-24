@@ -33,7 +33,7 @@ The following topics will be covered:
         * [Compiler Flags](configuration-management/building/compiler-flags/)
    * [Test Automation](configuration-management/testing)
    * [Source Code Versioning](configuration-management/versioning)
-   * [Source Code Documentation](configuration-management/documentation/doxygen)
+   * [Documentation](configuration-management/documentation/doxygen)
    * [C Coding Standard](configuration-management/coding-standard)
    
 * **Data Structures & Algorithms**
