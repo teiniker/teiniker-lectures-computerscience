@@ -66,4 +66,4 @@ To connect a client to GitHub vis SSH, we have to:
 * [YouTube: Setting Up SSH Keys for GitHub](https://youtu.be/8X4u9sca3Io)
 * [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

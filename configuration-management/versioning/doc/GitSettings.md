@@ -29,5 +29,5 @@ be looked up there.
 ## References
 * [YouTube: Git Tutorial for Beginners: Learn Git in 1 Hour](https://youtu.be/8JJ101D3knE)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
 

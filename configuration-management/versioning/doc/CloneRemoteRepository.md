@@ -1,4 +1,4 @@
-# Example: Clone a Remote Repository
+# Clone a Remote Repository
 
 This example shows how a remote repository can be used.
 
@@ -33,5 +33,5 @@ $ git pull
 ## References
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
 

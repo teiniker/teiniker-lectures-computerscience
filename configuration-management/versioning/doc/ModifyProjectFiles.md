@@ -2,7 +2,7 @@
 
 In this example we modify files in a project that is versioned with Git.
 
-## Modify a file and undo changes 
+## Modify a File and Undo Changes 
 
 We start by modifying a file from the versioned project.
 ```
@@ -68,7 +68,7 @@ Note that these features, making a diff or even going back to the
 version we committed into the repostory is a huge benefit for developers.
 
 
-## Modify a file and commit changes 
+## Modify a File and Commit Changes 
 
 On the other hand, most changes we make to files are saved in the Git 
 repository.
@@ -103,7 +103,7 @@ On branch master
 nothing to commit, working directory clean
 ```
 
-## Review all commits
+## Review All Commits
 
 We can print the **history of all commits** in the repository:
 
@@ -129,7 +129,9 @@ $ git log --oneline
 bdbd20e Initial import.    
 ```
 
+
 ## References
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*

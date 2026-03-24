@@ -2,24 +2,24 @@
 
 The following examples present common scenarios that can occur when dealing with git.
 
-We start our experiments with a **local repository**:
-
+**Setting up a git repository**:
 * [Git settings](doc/GitSettings.md)
 * [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
+* [Create GitHub repository](doc/CreateGitHubRepository.md)
+* [Clone a remote repository](doc/CloneRemoteRepository.md)
+
+**Working with a git repository**:
 * [Modify files in a git project](doc/ModifyProjectFiles.md)
 * [Rename files in a git project](doc/RenameProjectFiles.md)
 * [Remove files from a git project](doc/RemoveProjectFiles.md)
 * [Explore the commit history](doc/ExploreCommitHistory.md)
-
-* [Tagging commits in a local repository](doc/TaggingLocalRepository.md)
-* [Branching and merging in a local repository](doc/BranchingLocalRepository.md)
-
-The next step is to use a **remote repository** such as **GitHub** or GitLab:
-
-* [Clone a remote repository](doc/CloneRemoteRepository.md)
-* [Create GitHub repository](doc/CreateGitHubRepository.md)
+* [Working with a Remote Repository](doc/WorkingWithRemoteRepo.md)
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)
 * [Two developers work together and create merge conflicts](doc/TwoDevelopersWithMergeConflict.md)
+
+**Tagging and Branching**:
+* [Tagging commits in a local repository](doc/Tagging.md)
+* [Branching and merging in a local repository](doc/Branching.md)
 
 
 ## References:

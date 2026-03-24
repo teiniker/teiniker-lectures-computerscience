@@ -1,4 +1,4 @@
-# Two Developers Work Together with no Conficts
+# Two Developers Work Together With no Conficts
 
 The following example shows two developers collaborating on a GitHub repository.
 Try this with our own GitHub repository.
@@ -7,15 +7,10 @@ Try this with our own GitHub repository.
    https://github.com/teiniker/teiniker-lectures-computerscience
 
 * **(B)** Uses the command line interface
-   ```
+   ```bash
    $ mkdir sandbox
    $ cd sandbox
    $ git clone git@github.com:teiniker/teiniker-lectures-computerscience.git
-   ```
-   ```
-   $ git remote -v
-   origin	git@github.com:teiniker/teiniker-lectures-computerscience.git (fetch)
-   origin	git@github.com:teiniker/teiniker-lectures-computerscience.git (push)
    ```
 
 Let's start with the experiment:
@@ -25,7 +20,7 @@ Let's start with the experiment:
 * **(B)** Starts coding, changes and commit a file. 
    Note that every development starts with a `git pull` to get the lates 
    changes from the repo.
-   ```
+   ```bash
    $ git pull
 
    $ code configuration-management/versioning/doc/TwoDevelopersNoConflicts.md
@@ -39,10 +34,14 @@ Let's start with the experiment:
 
    $ git push
    ```
-   Also, for every `git push`, repeat `git pull`!!
+   Remember: for every `git push`, repeat `git pull`!!
 
 * **(A)** Refresh the web page and review the changes.
 
+
 ## References
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+* [Git Reference Manual](https://git-scm.com/docs)
+* [Pro Git Book](https://git-scm.com/book/en/v2)
+
+*Egon Teiniker, 2020-2026, GPL v3.0*

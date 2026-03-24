@@ -1,13 +1,13 @@
 # Two Developers with Merge Conflicts
 
-The following example shows two developers collaborating on a GitHub repository.
-Try this with our own GitHub repository.
+The following example shows two developers collaborating on a GitHub 
+repository.Try this with our own GitHub repository.
 
 * **(A)** Uses a browser to access the repository
    https://github.com/teiniker/teiniker-lectures-computerscience
 
 * **(B)** Uses the command line interface
-   ```
+   ```bash
    $ mkdir sandbox
    $ cd sandbox
    $ git clone git@github.com:teiniker/teiniker-lectures-computerscience.git
@@ -18,7 +18,7 @@ Let's start with the experiment:
 * **(A)** Changes some files and commits these changes.
 
 * **(B)** Changes the **same file in the same line**.
-  ```
+  ```bash
    $ git pull
 
    $ code configuration-management/versioning/doc/TwoDevelopersNoConflicts.md
@@ -29,12 +29,12 @@ Let's start with the experiment:
   ```
 
   We can make a diff between the local working directory and the remote repository:
-  ```
+  ```bash
   $ git diff origin/master
   ```
 
   When we use git pull, a merge conflict occurs: 
-  ```
+  ```bash
   $ git pull
   ...
   CONFLICT (content): Merge conflict in versioning
@@ -42,7 +42,7 @@ Let's start with the experiment:
   ```
 
   We can see the two versions in the changed file:
-  ```
+  ```bash
   <<<<<<< HEAD
           Vector v1 = new Vector(1,2,3,4,7);
           Vector v2 = new Vector(3,2,1,4,7);
@@ -55,12 +55,12 @@ Let's start with the experiment:
   We have to **resolve the merge conflict manually**. Also, we have to remove the conflict-resolution markers.
 	 
   **Staging a file marks it as resolved**.
-  ```
+  ```bash
   $ git add . 
   ```
 
   Finally, we **commit and push** our changes.
-  ```
+  ```bash
   $ git commit -m "Resolved merge conflict." 
   $ git push
   ```
@@ -69,6 +69,8 @@ Let's start with the experiment:
 
 
 ## References
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+
+*Egon Teiniker, 2020-2026, GPL v3.0*

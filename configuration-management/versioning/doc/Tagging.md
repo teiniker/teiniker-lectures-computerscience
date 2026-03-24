@@ -1,13 +1,14 @@
-# Tagging Commits in a Local Repository
+# Tagging Commits 
 
 A tag is used to label and mark a specific commit in the history.
 It is usually used to mark release points.
-Although a tag may appear similar to branch, a tag however does not change.
+
+Note that a tag however does not change.
 It points directly to a specific commit in the history.
 
 ## Use an Existing Repository
 
-```
+```bash
 $ cd sandbox/c-example
 
 $ git log --pretty=oneline
@@ -20,7 +21,7 @@ bdbd20e4400a4f80d02c44944cfeb8af522a1ddc Initial import.
 
 First, we tag the current version of our project: *version-1.0.0*
 
-```
+```bash
 $ git tag -a version-1.0.0 -m "A first working version of this project."
 
 $ git tag
@@ -29,7 +30,7 @@ version-1.0.0
 
 Make some modifications, commit them and tag the new commit.
 
-``` 
+```bash 
 $ vi complex_numbers.c
 Do some modifications...
 
@@ -49,14 +50,14 @@ We use tags to identify special points in the course of a project.
 The cool thing about tags is that we can reconstruct the state of the 
 project for a given tag at any time.
 
-```
+```bash
 $ git checkout tags/version-1.0.0
 
 $ cat complex_numbers.c 
 You will see the old version of this file.
 ```
 
-```
+```bash
 $ git checkout tags/version-2.0.0
 
 $ cat complex_numbers.c  
@@ -68,7 +69,7 @@ You will see the new version of this file again.
 
 We can also tag commits after we have moved past them.
 
-```
+```bash
 $ git log --pretty=oneline
 d80d56d613680e5eb9445acb622690c85f6e8fb8 (HEAD -> master, tag: version-2.0.0) Added some comments.
 6a115638bfb4829d52067da17c71e86004c8223e (tag: version-1.0.0) Added complex_sub operation.
@@ -82,7 +83,7 @@ version-2.0.0
 version-Initial
 ```
 
-```
+```bash
 $ git checkout tags/version-Initial
 
 $ cat complex_numbers.c
@@ -92,7 +93,7 @@ You will see the first version of this project.
  
 ## Go Back to the Master Branch
 
-```
+```bash
 $ git checkout master
 Switched to branch 'master'
 
@@ -101,7 +102,21 @@ On branch master
 nothing to commit, working directory clean
 ```
 
+## Push a Tag to the Remote Repository 
+
+We can push a local tag to the remote repository:
+
+```bash
+$ git push origin --tags
+```
+
+The idea is not to tag the remote directly, we tag locally, 
+then push the tag to the remote.
+
+
 ## References
+
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
