@@ -5,13 +5,13 @@ project in it.
 
 ## Create a simple C project
 
-```
+```bash
 $ mkdir -p sandbox/c-examples
 $ cd sandbox/c-examples
 ```
 
 First, we implement a simple C file called "complex_numbers.c":
-```
+```bash
 $ code complex_numbers.c
 ```
 
@@ -69,7 +69,7 @@ This is just a simple markdown file which will be:
 ```
 
 We compile the C file into an execuable:
-```
+```bash
 $ gcc -Wall -o complex_numbers complex_numbers.c
 
 $ tree
@@ -80,7 +80,7 @@ $ tree
 ```
 
 To execute the binary we type:
-```
+```bash
 $ ./complex_numbers 
 c1 = (1.000000,1.000000)
 c2 = (2.000000,4.000000)
@@ -95,7 +95,7 @@ Git repository.
 ## Create a Git repository
 
 We create the Git repository within our C project directory: 
-```
+```bash
 $ pwd
 sandbox/c-examples
 
@@ -128,14 +128,14 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 We have to tell Git which files should not be managed by providing a
 **.gitignore** file:
-```
+```bash
 $ code .gitignore
 # Files ignored by Git:
 /complex_numbers
 ```
 
 
-```
+```bash
 $ git add .gitignore 
 $ git add complex_numbers.c README.md 
 
@@ -153,7 +153,7 @@ Changes to be committed:
 
 
 Finally, we commit all files which are in the staging area:
-```
+```bash
 $ git commit -m "Initial import."
 [master (Basis-Commit) bdbd20e] Initial import.
  3 files changed, 42 insertions(+)
@@ -167,6 +167,7 @@ nothing to commit, working tree clean
 ```
 
 ## References
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*

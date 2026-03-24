@@ -28,12 +28,12 @@ We can **create**, **edit** and **view files** using the GitHub web interface, a
 To connect a client to GitHub vis SSH, we have to:
 
 * Create a SSH key pair on the local box
-    ```
+    ```bash
     $ ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
 * Add the SSH private key to the ssh-agent 
-    ```
+    ```bash
     $ ssh-add ~/.ssh/id_ed25519    
     ```
 
@@ -43,17 +43,17 @@ To connect a client to GitHub vis SSH, we have to:
     * In the **Access** section of the sidebar, click **SSH and GPG keys**.
     
     * Click **New SSH key** or **Add SSH key**. Open `.ssh/id_ed25519.pub` and copy the content of the public key. 
-    ```
+    ```bash
     $ code .ssh/id_ed25519.pub
     ```
 
     * Testing the SSH connection
-    ```
+    ```bash
     $ ssh -T git@github.com
     ```
 
 * Check out a repository via SSH 
-    ```
+    ```bash
     $ git clone git@github.com:teiniker/teiniker-lectures-computerscience.git
     ```
 

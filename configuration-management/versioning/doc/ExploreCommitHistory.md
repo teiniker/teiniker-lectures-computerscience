@@ -9,7 +9,7 @@ By default, `git log` displays the following information for each commit:
 * Date: The date and time when the commit was made.
 * Commit Message: The message provided by the author to describe the changes made in the commit.
 
-```
+```bash
 $ git log
 commit 7a7b34a5e19e74252e883d3fa700bb285acf246b (HEAD -> master, new-feature)
 Author: Egon Teiniker <egon.teiniker@gmail.com>
@@ -51,7 +51,8 @@ The `git log --oneline` command is used to display a **condensed version of the 
 When we run `git log --oneline`, the following information is displayed for each commit:
 * Commit Hash (SHA): A shortened version of the commit hash, usually the first 7 characters.
 * Commit Message: The commit message provided by the author.
-```
+
+```bash
 $ git log --oneline
 7a7b34a (HEAD -> master, new-feature) Added super new feature.
 7d20d58 (tag: version-2.0.0) Added references to doc.
@@ -67,7 +68,7 @@ _Example: Show only tag-related information_\
 To show the **tag messages** in the Git history, we can use the `git log` command with the `--decorate` option. The `--decorate` option adds additional information, such as tags and branch names, to the commit messages displayed by `git log`.
 If we want to see **only the tag-related information**, you can combine git log with the `--simplify-by-decoration` option:
 
-```
+```bash
 $ git log --decorate --simplify-by-decoration
 commit 7a7b34a5e19e74252e883d3fa700bb285acf246b (HEAD -> master, new-feature)
 Author: Egon Teiniker <egon.teiniker@gmail.com>
@@ -93,7 +94,8 @@ _Example: Show the files committed in each Git commit_\
 To see the **files committed in each Git commit**, we can use the `git log --stat` command. This command provides a summary of the files that were modified in each commit along with some additional statistics.
 
 The output of `git log --stat` will show you the commit hash, author, date, and commit message as well as a summary of the files modified in each commit. The summary includes the file name, the number of lines added and deleted, and the total number of changes.
-```
+
+```bash
 $ git log --stat
 commit 7a7b34a5e19e74252e883d3fa700bb285acf246b (HEAD -> master, new-feature)
 Author: Egon Teiniker <egon.teiniker@gmail.com>
@@ -119,4 +121,4 @@ README.md | 5 ++++-
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

@@ -5,7 +5,8 @@ In this example we modify files in a project that is versioned with Git.
 ## Modify a File and Undo Changes 
 
 We start by modifying a file from the versioned project.
-```
+
+```bash
 $ code complex_numbers.c
 ```
 We make some modifications...
@@ -21,17 +22,19 @@ complex complex_sub(complex a, complex b)
 ```
 
 Always, we can use *git status* to find files which have been changed.
-```
+
+```bash
 $ git status
 	geändert:       complex_numbers.c
 
 $ git status -s
  M complex_numbers.c
 ```
+
 Also, we can compare the content of files to the version stored in the
 Git repository:
 
-```
+```bash
 $ git diff complex_numbers.c
 diff --git a/complex_numbers.c b/complex_numbers.c
 index f1b077b..caff86e 100644
@@ -56,7 +59,8 @@ index f1b077b..caff86e 100644
 
 If we made some mistakes, we can easily **go back to the version stored 
 in the repository**.
-```
+
+```bash
 $ git checkout complex_numbers.c
 
 $ git status
@@ -74,9 +78,11 @@ On the other hand, most changes we make to files are saved in the Git
 repository.
 
 Again, we modify a file from the versioned project.
-```
+
+```bash
 $ code complex_numbers.c
 ```
+
 ```C
 complex complex_sub(complex a, complex b)
 {
@@ -86,14 +92,16 @@ complex complex_sub(complex a, complex b)
     return c;
 }
 ```
-```
+
+```bash
 $ git status -s
  M complex_numbers.c
 ```
 
 In order to transfer all changes to the project files to the repository, 
 they must be committed.
-```
+
+```bash
 $ git commit -a -m "Added complex_sub operation."
 [master 6a11563] Added complex_sub operation.
  1 file changed, 8 insertions(+)
@@ -107,7 +115,7 @@ nothing to commit, working directory clean
 
 We can print the **history of all commits** in the repository:
 
-```
+```bash
 $ git log
 commit 6a115638bfb4829d52067da17c71e86004c8223e (HEAD -> master)
 Author: teiniker <egon.teiniker@gmail.com>
@@ -123,7 +131,8 @@ Date:   Mon Feb 24 20:53:22 2020 +0100
 ```
 
 We can also use a **single line log format**.
-```    
+
+```bash    
 $ git log --oneline
 6a11563 (HEAD -> master) Added complex_sub operation.
 bdbd20e Initial import.    
@@ -134,4 +143,4 @@ bdbd20e Initial import.
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
