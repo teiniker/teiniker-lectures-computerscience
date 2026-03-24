@@ -3,6 +3,8 @@
 In this example we create a local Git repository and save a C 
 project in it.
 
+![WorkingDirectory](figures/WorkingDirectory.png)
+
 ## Create a simple C project
 
 ```bash

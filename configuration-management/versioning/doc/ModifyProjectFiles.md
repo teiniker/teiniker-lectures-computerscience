@@ -2,6 +2,7 @@
 
 In this example we modify files in a project that is versioned with Git.
 
+
 ## Modify a File and Undo Changes 
 
 We start by modifying a file from the versioned project.

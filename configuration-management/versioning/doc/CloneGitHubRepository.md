@@ -2,6 +2,8 @@
 
 This example shows how a remote repository can be used.
 
+![WorkingDirectoryRemote](figures/WorkingDirectoryRemote.png)
+
 ## Clone a GitHub Repository 
 
 A GitHub repository can be visited via a Web browser. We can review all
