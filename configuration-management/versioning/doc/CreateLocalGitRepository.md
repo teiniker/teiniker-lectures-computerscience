@@ -2,7 +2,9 @@
 
 In this example we create a local Git repository.
 
-## Create a Project Directory
+![Local Repository](figures/LocalRepository.png)
+
+## Create a Working Directory
 
 Simply create a directory ans change into this folder:
 
@@ -10,6 +12,8 @@ Simply create a directory ans change into this folder:
 $ mkdir -p sandbox/c-examples
 $ cd sandbox/c-examples
 ```
+
+## Create Local Repository 
 
 Create the local git repository within our project directory: 
 
