@@ -1,11 +1,11 @@
-# Create a Local Git Repository and Add Files
+# Add Files
 
-In this example we create a local Git repository and save a C 
-project in it.
+In this example we some C source files to the local repository.
 
 ![WorkingDirectory](figures/WorkingDirectory.png)
 
-## Create a simple C project
+
+## Create a Simple C Example
 
 ```bash
 $ mkdir -p sandbox/c-examples
@@ -71,19 +71,23 @@ This is just a simple markdown file which will be:
 ```
 
 We compile the C file into an execuable:
+
 ```bash
-$ gcc -Wall -o complex_numbers complex_numbers.c
+$ mkdir build
+$ gcc -Wall -o build/complex_numbers complex_numbers.c
 
 $ tree
 .
+├── build/
+|   └── complex_numbers
 ├── README.md
-├── complex_numbers
 └── complex_numbers.c
 ```
 
 To execute the binary we type:
+
 ```bash
-$ ./complex_numbers 
+$ ./build/complex_numbers 
 c1 = (1.000000,1.000000)
 c2 = (2.000000,4.000000)
 c1 + c2 = (3.000000,5.000000)
@@ -91,27 +95,19 @@ c1 + c2 = (3.000000,5.000000)
 ```
 
 Well done. Now we have a very simple C project which we can put into a
-Git repository.
+git repository.
 
-
-## Create a Git repository
-
-We create the Git repository within our C project directory: 
 ```bash
-$ pwd
-sandbox/c-examples
-
-$ git init
-Initialized empty Git repository in sandbox/c-example/.git/
-
 $ ll -a
 drwxr-xr-x  3 student student  4096 May  2 14:26 .
 drwxr-x--- 15 student student  4096 May  2 10:08 ..
--rwxr-xr-x  1 student student 16752 May  2 10:10 complex_numbers
+drwxr-xr-x  1 student student 16752 May  2 10:10 build
 -rw-r--r--  1 student student   767 May  2 10:50 complex_numbers.c
 drwxr-xr-x  8 student student  4096 May  2 14:26 .git
 -rw-r--r--  1 student student   105 May  2 14:55 README.md
+```
 
+```bash
 $ git status
 On branch master
 
@@ -125,17 +121,23 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-	
-## Add the C project files to the repository
 
-We have to tell Git which files should not be managed by providing a
-**.gitignore** file:
+## Files to be Ignored
+
+Before we add files to the local repository, we have to tell git which 
+files should not be managed by providing a **.gitignore** file:
+
 ```bash
 $ code .gitignore
 # Files ignored by Git:
-/complex_numbers
+build
 ```
 
+By convention the name of the file containing a list of ignored files
+is `.gitignore`.
+
+
+## Add Files to the Local Repository
 
 ```bash
 $ git add .gitignore 
@@ -155,6 +157,7 @@ Changes to be committed:
 
 
 Finally, we commit all files which are in the staging area:
+
 ```bash
 $ git commit -m "Initial import."
 [master (Basis-Commit) bdbd20e] Initial import.

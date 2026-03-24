@@ -4,16 +4,17 @@ The following examples present common scenarios that can occur when dealing with
 
 **Setting up a git repository**:
 * [Git settings](doc/GitSettings.md)
-* [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
+* [Create a local git repository](doc/CreateLocalGitRepository.md)
 * [Create GitHub repository](doc/CreateGitHubRepository.md)
 * [Clone a GitHub repository](doc/CloneGitHubRepository.md)
 
 **Working with a git repository**:
-* [Modify files in a git project](doc/ModifyProjectFiles.md)
-* [Rename files in a git project](doc/RenameProjectFiles.md)
-* [Remove files from a git project](doc/RemoveProjectFiles.md)
+* [Add files to git](doc/AddFiles.md)
+* [Modify files in git](doc/ModifyProjectFiles.md)
+* [Rename files in git](doc/RenameProjectFiles.md)
+* [Remove files from git](doc/RemoveProjectFiles.md)
 * [Explore the commit history](doc/ExploreCommitHistory.md)
-* [Working with a Remote Repository](doc/WorkingWithRemoteRepo.md)
+* [Working with a remote repository](doc/WorkingWithRemoteRepo.md)
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)
 * [Two developers work together and create merge conflicts](doc/TwoDevelopersWithMergeConflict.md)
 
