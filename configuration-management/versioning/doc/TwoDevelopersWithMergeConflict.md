@@ -52,7 +52,8 @@ Let's start with the experiment:
   >>>>>>> 3d18e3a935fbea99c37511f4de9e72656fbf0b79 
   ```
 
-  We have to **resolve the merge conflict manually**. Also, we have to remove the conflict-resolution markers.
+  We have to **reslolve the merge conflict manually** in the text editor. 
+  Also, we have to remove the conflict-resolution markers.
 	 
   **Staging a file marks it as resolved**.
   ```bash
