@@ -18,7 +18,7 @@ The following examples present common scenarios that can occur when dealing with
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)
 * [Two developers work together and create merge conflicts](doc/TwoDevelopersWithMergeConflict.md)
 
-**Tagging and Branching**:
+**Tagging and branching**:
 * [Tagging commits in a local repository](doc/Tagging.md)
 * [Branching and merging in a local repository](doc/Branching.md)
 
