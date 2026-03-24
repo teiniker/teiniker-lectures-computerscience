@@ -3,6 +3,8 @@
 A tag is used to label and mark a specific commit in the history.
 It is usually used to mark release points.
 
+![Tagging](figures/Tagging.png)
+
 Note that a tag however does not change.
 It points directly to a specific commit in the history.
 

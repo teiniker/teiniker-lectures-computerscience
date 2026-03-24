@@ -3,6 +3,8 @@
 Branching means we **diverge from the mainline of development** 
 and continue to do work without messing with that mainline.
 
+![Branching](figures/Branching.png)
+
 The way git branches is **incredibly lightweight**, making 
 branching operations nearly instantaneous, and switching back 
 and forth between branches generally, just as fast.
