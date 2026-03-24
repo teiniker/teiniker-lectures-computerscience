@@ -1,4 +1,4 @@
-# Remove Files from a Git Project
+# Remove Files 
 
 If we delete one or more files in the working directory, the files still remain stored 
 in the staging area. We must therefore also inform the repository that the files have 
@@ -8,7 +8,7 @@ been deleted.
 
 First we remove the file in the working directory.
 
-```
+```bash
 $ rm README.md 
 $ ll
 -rwxr-xr-x 1 student student 16752 May  2 10:10 complex_numbers
@@ -27,7 +27,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 To make this change also visible to the repository, we add and commit the
 deleted file:
 
-```
+```bash
 $ git add README.md 
 $ git commit -m "Removed documentation."
 [master caf8263] Removed documentation.
@@ -35,11 +35,12 @@ $ git commit -m "Removed documentation."
  delete mode 100644 README.md
 ```
 
-## Remove files using git
+## Remove Files Using git
 
 Deleting files is a common activity, so there is an **easier way to delete a file** 
 from the Git repository:
-```
+
+```bash
 $ git rm README.md 
 rm 'README.md'
 
@@ -60,6 +61,7 @@ Note that `git rm` deletes the file from both the working directory and the repo
 
 
 ## References
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

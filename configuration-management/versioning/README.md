@@ -6,7 +6,7 @@ The following examples present common scenarios that can occur when dealing with
 * [Git settings](doc/GitSettings.md)
 * [Create a local git repository and add files](doc/CreateGitRepositoryAndAddFiles.md)
 * [Create GitHub repository](doc/CreateGitHubRepository.md)
-* [Clone a remote repository](doc/CloneRemoteRepository.md)
+* [Clone a GitHub repository](doc/CloneGitHubRepository.md)
 
 **Working with a git repository**:
 * [Modify files in a git project](doc/ModifyProjectFiles.md)

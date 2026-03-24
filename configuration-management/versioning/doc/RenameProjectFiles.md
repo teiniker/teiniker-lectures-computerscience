@@ -1,12 +1,12 @@
-# Rename Files in a Git Project
+# Rename Files 
 
 There are two ways to rename files in the working directory and in the repository. A two-step one in which the file in the working directory is first renamed or the direct command using the git mv.
 
-## Rename files in the working directory
+## Rename Files in the Working Directory
 
 First we rename the file in the working directory.
 
-```
+```bash
 $ mv README.md doc.md 
 $ ll
 total 28
@@ -30,7 +30,7 @@ Renaming a file in the working directory causes git to delete a file with the ol
 and add a file with the new name. As soon as both files are in the staging area, git 
 recognizes the renaming:
 
-```
+```bash
 $ git add README.md doc.md
 
 $ git status
@@ -41,17 +41,19 @@ Changes to be committed:
 ```
 
 A `git commit` completes this operation:
-```
+
+```bash
 $ git commit -m "Renamed documentation file."
 [master 01b38a6] Renamed documentation file.
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename README.md => doc.md (100%)
 ```
 
-## Rename files using git
+## Rename Files Using git
 
 There is also a direct way that renames files in both the working directory and the repository:
-```
+
+```bash
 $ git mv README.md doc.md 
 
 $ ll
@@ -64,11 +66,11 @@ On branch master
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	renamed:  README.md -> doc.md
-
 ```
 
 Again, `git commit` completes the operation:
-```
+
+```bash
 $ git commit -m "Renamed documentation file."
 [master 01b38a6] Renamed documentation file.
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -76,6 +78,8 @@ $ git commit -m "Renamed documentation file."
 ```
 
 ## References
+* [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+
+*Egon Teiniker, 2020-2026, GPL v3.0*
