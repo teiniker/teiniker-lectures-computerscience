@@ -9,10 +9,10 @@ The following examples present common scenarios that can occur when dealing with
 * [Clone a GitHub repository](doc/CloneGitHubRepository.md)
 
 **Working with a git repository**:
-* [Add files to git](doc/AddFiles.md)
-* [Modify files in git](doc/ModifyProjectFiles.md)
-* [Rename files in git](doc/RenameProjectFiles.md)
-* [Remove files from git](doc/RemoveProjectFiles.md)
+* [Add files](doc/AddFiles.md)
+* [Modify files](doc/ModifyProjectFiles.md)
+* [Rename files](doc/RenameProjectFiles.md)
+* [Remove files](doc/RemoveProjectFiles.md)
 * [Explore the commit history](doc/ExploreCommitHistory.md)
 * [Working with a remote repository](doc/WorkingWithRemoteRepo.md)
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)
