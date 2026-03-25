@@ -1,6 +1,8 @@
-# Two Developers Work Together With no Conficts
+# Two Developers Work Together 
 
-The following example shows two developers collaborating on a GitHub repository.
+The following example shows two developers collaborating on a GitHub 
+repository. 
+
 Try this with our own GitHub repository.
 
 * **(A)** Uses a browser to access the repository

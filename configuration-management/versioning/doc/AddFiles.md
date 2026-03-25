@@ -181,22 +181,6 @@ Now, all files (except those listed in `.gitignore`) are tracked
 by the local Git repository.
 
 
-## Push Changes to the Remote Repository 
-
-After adding files to the local repository, we can **upload 
-these changes to the remote repository**:
-
-```bash
-$ git push 
-```
-
-**Before starting a working session**, it is recommended to pull 
-the latest changes from the remote repository first:
-
-```bash
-$ git pull 
-```
-
 ## References
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)

@@ -25,6 +25,7 @@ the local repository by a simple update command:
 $ git pull
 ```
 
+
 ## References
 * [Git Reference Manual](https://git-scm.com/docs)
 * [Pro Git Book](https://git-scm.com/book/en/v2)

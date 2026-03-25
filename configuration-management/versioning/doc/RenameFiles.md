@@ -1,6 +1,9 @@
 # Rename Files 
 
-There are two ways to rename files in the working directory and in the repository. A two-step one in which the file in the working directory is first renamed or the direct command using the git mv.
+There are two ways to rename files in the working directory and in the repository. 
+A two-step one in which the file in the working directory is first renamed or 
+the direct command using the `git mv`.
+
 
 ## Rename Files in the Working Directory
 
@@ -51,7 +54,8 @@ $ git commit -m "Renamed documentation file."
 
 ## Rename Files Using git
 
-There is also a direct way that renames files in both the working directory and the repository:
+There is also a direct way that renames files in both the working 
+directory and the repository:
 
 ```bash
 $ git mv README.md doc.md 

@@ -1,10 +1,11 @@
 # Remove Files 
 
-If we delete one or more files in the working directory, the files still remain stored 
-in the staging area. We must therefore also inform the repository that the files have 
-been deleted. 
+If we delete one or more files in the working directory, the files still 
+remain stored in the staging area. We must therefore also inform the 
+repository that the files have been deleted. 
 
-## Remove files from the working directory
+
+## Remove Files From the Working Directory
 
 First we remove the file in the working directory.
 

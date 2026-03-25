@@ -1,7 +1,9 @@
 # Two Developers with Merge Conflicts
 
 The following example shows two developers collaborating on a GitHub 
-repository.Try this with our own GitHub repository.
+repository.
+
+Try this with our own GitHub repository.
 
 * **(A)** Uses a browser to access the repository
    https://github.com/teiniker/teiniker-lectures-computerscience
@@ -52,7 +54,7 @@ Let's start with the experiment:
   >>>>>>> 3d18e3a935fbea99c37511f4de9e72656fbf0b79 
   ```
 
-  We have to **reslolve the merge conflict manually** in the text editor. 
+  We have to **reslolve the merge conflict manually** in our text editor. 
   Also, we have to remove the conflict-resolution markers.
 	 
   **Staging a file marks it as resolved**.

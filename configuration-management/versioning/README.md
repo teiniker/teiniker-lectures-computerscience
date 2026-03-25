@@ -14,8 +14,9 @@ The following examples present common scenarios that can occur when dealing with
 * [Rename files](doc/RenameFiles.md)
 * [Remove files](doc/RemoveFiles.md)
 * [Explore the commit history](doc/ExploreCommitHistory.md)
+
 * [Working with a remote repository](doc/WorkingWithRemoteRepo.md)
-* [Two developers work together](doc/TwoDevelopersNoConflicts.md)
+* [Two developers work together](doc/TwoDevelopers.md)
 * [Two developers work together and create merge conflicts](doc/TwoDevelopersWithMergeConflict.md)
 
 **Tagging and branching**:

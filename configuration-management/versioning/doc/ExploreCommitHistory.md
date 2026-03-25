@@ -1,13 +1,16 @@
 # Explore the Commit History 
 
-The `git log` command is used to **display the commit history** in a Git repository. 
-It shows a chronological list of commits, starting from the most recent commit and going back in time to the initial commit.
+The `git log` command is used to **display the commit history** in a git 
+repository. 
+It shows a chronological list of commits, starting from the most recent 
+commit and going back in time to the initial commit.
 
 By default, `git log` displays the following information for each commit:
-* Commit Hash (SHA): A unique identifier for each commit.
-* Author: The name and email address of the person who made the commit.
-* Date: The date and time when the commit was made.
-* Commit Message: The message provided by the author to describe the changes made in the commit.
+* **Commit Hash (SHA)**: A unique identifier for each commit.
+* **Author**: The name and email address of the person who made the commit.
+* **Date**: The date and time when the commit was made.
+* **Commit Message**: The message provided by the author to describe the 
+    changes made in the commit.
 
 ```bash
 $ git log
@@ -36,7 +39,10 @@ Date:   Tue Apr 25 13:37:37 2023 +0200
     Renamed doc file.
 ```
 
-The `git log` command provides various options that allow you to customize the output and filter the commit history based on specific criteria. Here are some commonly used options:
+The `git log` command provides various options that allow you to customize 
+the output and filter the commit history based on specific criteria. 
+
+Here are some commonly used options:
 * `--oneline`: Condenses the commit information into a single line, showing only the commit hash and the commit message.
 * `--graph`: Displays a text-based ASCII graph representing the commit history, with branches and merges.
 * `--author=<pattern>`: Filters the commit history to show only the commits made by the specified author(s) based on the provided pattern.
@@ -45,12 +51,18 @@ The `git log` command provides various options that allow you to customize the o
 * `--grep=<pattern>`: Filters the commit history to show only the commits with commit messages matching the specified pattern.
 
 
-_Example: Show each commit in one line_\
-The `git log --oneline` command is used to display a **condensed version of the commit history** in a Git repository. It provides a simplified output that shows each commit on a single line, making it easier to scan through the history quickly.
+_Example:_ Show each commit in one line
 
-When we run `git log --oneline`, the following information is displayed for each commit:
-* Commit Hash (SHA): A shortened version of the commit hash, usually the first 7 characters.
-* Commit Message: The commit message provided by the author.
+The `git log --oneline` command is used to display a **condensed version of 
+the commit history** in a git repository. It provides a simplified output 
+that shows each commit on a single line, making it easier to scan through 
+the history quickly.
+
+When we run `git log --oneline`, the following information is displayed 
+for each commit:
+* **Commit Hash (SHA)**: A shortened version of the commit hash, usually 
+    the first 7 characters.
+* **Commit Message**: The commit message provided by the author.
 
 ```bash
 $ git log --oneline
@@ -63,10 +75,15 @@ $ git log --oneline
 17b7da3 Initial import.
 ```
 
+_Example:_ Show only tag-related information
 
-_Example: Show only tag-related information_\
-To show the **tag messages** in the Git history, we can use the `git log` command with the `--decorate` option. The `--decorate` option adds additional information, such as tags and branch names, to the commit messages displayed by `git log`.
-If we want to see **only the tag-related information**, you can combine git log with the `--simplify-by-decoration` option:
+To show the **tag messages** in the git history, we can use the `git log` 
+command with the `--decorate` option. The `--decorate` option adds additional 
+information, such as tags and branch names, to the commit messages displayed 
+by `git log`.
+
+If we want to see **only the tag-related information**, we can combine `git log` 
+with the `--simplify-by-decoration` option:
 
 ```bash
 $ git log --decorate --simplify-by-decoration
@@ -90,10 +107,18 @@ Date:   Tue Apr 25 13:37:37 2023 +0200
 ...
 ```
 
-_Example: Show the files committed in each Git commit_\
-To see the **files committed in each Git commit**, we can use the `git log --stat` command. This command provides a summary of the files that were modified in each commit along with some additional statistics.
+_Example:_ Show the files committed in each Git commit
 
-The output of `git log --stat` will show you the commit hash, author, date, and commit message as well as a summary of the files modified in each commit. The summary includes the file name, the number of lines added and deleted, and the total number of changes.
+To see the **files committed in each Git commit**, we can use the 
+`git log --stat` command. This command provides a summary of the 
+files that were modified in each commit along with some additional 
+statistics.
+
+The output of `git log --stat` will show you the commit hash, author, 
+date, and commit message as well as a summary of the files modified 
+in each commit. 
+The summary includes the file name, the number of lines added and 
+deleted, and the total number of changes.
 
 ```bash
 $ git log --stat
