@@ -3,16 +3,16 @@
 The following examples present common scenarios that can occur when dealing with git.
 
 **Setting up a git repository**:
-* [Git settings](doc/GitSettings.md)
+* [Git setup](doc/GitSetup.md)
 * [Create a local git repository](doc/CreateLocalGitRepository.md)
 * [Create GitHub repository](doc/CreateGitHubRepository.md)
 * [Clone a GitHub repository](doc/CloneGitHubRepository.md)
 
 **Working with a git repository**:
 * [Add files](doc/AddFiles.md)
-* [Modify files](doc/ModifyProjectFiles.md)
-* [Rename files](doc/RenameProjectFiles.md)
-* [Remove files](doc/RemoveProjectFiles.md)
+* [Modify files](doc/ModifyFiles.md)
+* [Rename files](doc/RenameFiles.md)
+* [Remove files](doc/RemoveFiles.md)
 * [Explore the commit history](doc/ExploreCommitHistory.md)
 * [Working with a remote repository](doc/WorkingWithRemoteRepo.md)
 * [Two developers work together](doc/TwoDevelopersNoConflicts.md)

@@ -1,9 +1,26 @@
 # Git Settings
 
-Before we start working with git, we need to make some settings. 
-These settings have to be **made once** and then apply to **all repositories on the local machine**.
+Before we start working with git, we need to make some setup and configurations. 
+These settings have to be **made once** and then apply to **all repositories 
+on the local machine**.
 
-We need to configure our **name**, **email address** and **default editor** (eg: VS Code). 
+## Setup Git 
+
+We can install git using the Debian package manager:
+
+```bash
+ $ sudo apt install git 
+
+ $ git --version
+```
+
+Note that in our VM Image git is already installed.
+
+
+## Configure Git 
+
+We need to configure our **name**, **email address** and **default editor** 
+(eg: VS Code). 
 In addition, we set the git client to insert the **line break** correctly, 
 depending on the operating system.
 
@@ -14,8 +31,8 @@ depending on the operating system.
 	$ git config --global core.autocrlf input	// true for windows
 ```
 
-All these settings are stored in a file called `.gitconfig` in the home directory and can 
-be looked up there.
+All these settings are stored in a file called `.gitconfig` in the home 
+directory and can be looked up there.
 
 ```bash
 	$ cat .gitconfig

@@ -14,20 +14,13 @@ We start by modifying a file from the versioned project.
 ```bash
 $ mkdir sandbox
 $ cd sandbox
-$ git clone https://github.com/teiniker/teiniker-lectures-computerscience
 
-$ tree teiniker-lectures-embeddedcomputing/
-teiniker-lectures-computerscience/
-├── configuration-management
-│   ├── building
-│   ├── documentation
-│   ├── testing
-│   └── versioning
-└── LICENSE
+$ git clone https://github.com/teiniker/teiniker-lectures-computerscience
 ```
 
 Note that every change in the repository can be transferred to 
-the local repository by a simple update.
+the local repository by a simple update command:
+
 ```bash
 $ git pull
 ```

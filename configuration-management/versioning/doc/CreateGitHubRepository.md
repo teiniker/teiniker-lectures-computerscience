@@ -15,29 +15,32 @@ item.
 
 ![Create Repository](figures/CreateGitHubRepo.png)
 
-After typing a **repository name** and choosing a **license** we can create the repository.
+After typing a **repository name**, selecting either **public or private**, 
+and choosing a **license** we can create the repository.
 
 
 ## Using the Web Interface
 
-We can **create**, **edit** and **view files** using the GitHub web interface, as you already know from this Computer Engineering repository.
+We can **create**, **edit** and **view files** using the GitHub web interface, 
+as we already know from this Computer Engineering repository.
 
 
 ## Using SSH to Connect to GitHub 
 
-To connect a client to GitHub vis SSH, we have to:
+In a Linux environment, we connect a client to GitHub vis SSH:
 
-* Create a SSH key pair on the local box
+* **Create a SSH key pair** on the local box
     ```bash
     $ ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
-* Add the SSH private key to the ssh-agent 
+    Also, we add the SSH private key to the ssh-agent:
+
     ```bash
     $ ssh-add ~/.ssh/id_ed25519    
     ```
 
-* Add the SSH key to your account on GitHub
+* **Add the SSH key to your account** on GitHub:
     * On **GitHub**, in the upper-right corner, click your profile photo, then click **Settings**.    
     
     * In the **Access** section of the sidebar, click **SSH and GPG keys**.
@@ -52,7 +55,8 @@ To connect a client to GitHub vis SSH, we have to:
     $ ssh -T git@github.com
     ```
 
-* Check out a repository via SSH 
+* **Check out a repository via SSH:**
+ 
     ```bash
     $ git clone git@github.com:teiniker/teiniker-lectures-computerscience.git
     ```

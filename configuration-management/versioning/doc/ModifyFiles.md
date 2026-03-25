@@ -1,6 +1,6 @@
 # Modify Files in a Repository
 
-In this example we modify files in a project that is versioned with Git.
+In this example we modify files in our working directory.
 
 
 ## Modify a File and Undo Changes 
@@ -22,7 +22,7 @@ complex complex_sub(complex a, complex b)
 }
 ```
 
-Always, we can use *git status* to find files which have been changed.
+Always, we can use `git status` to find files which have been changed.
 
 ```bash
 $ git status
@@ -33,7 +33,7 @@ $ git status -s
 ```
 
 Also, we can compare the content of files to the version stored in the
-Git repository:
+local Git repository:
 
 ```bash
 $ git diff complex_numbers.c
@@ -70,13 +70,14 @@ nothing to commit, working directory clean
 ```
 
 Note that these features, making a diff or even going back to the 
-version we committed into the repostory is a huge benefit for developers.
+version we committed into the repostory is a huge benefit for developers
+in particular if we use coding agents.
 
 
 ## Modify a File and Commit Changes 
 
-On the other hand, most changes we make to files are saved in the Git 
-repository.
+On the other hand, most changes we make to files should be saved 
+into the git repository.
 
 Again, we modify a file from the versioned project.
 

@@ -1,18 +1,21 @@
 # Add Files
 
-In this example we some C source files to the local repository.
+In this example we add some C source files to our local repository.
 
 ![WorkingDirectory](figures/WorkingDirectory.png)
 
 
 ## Create a Simple C Example
 
+We change into our **working directory**:
+
 ```bash
 $ mkdir -p sandbox/c-examples
 $ cd sandbox/c-examples
 ```
 
-First, we implement a simple C file called "complex_numbers.c":
+Next, we implement a simple C file called "complex_numbers.c":
+
 ```bash
 $ code complex_numbers.c
 ```
@@ -61,6 +64,7 @@ int main(void)
 ```
 
 Also, let's create a `README.md` file:
+
 ```
 # README
 
@@ -84,7 +88,7 @@ $ tree
 └── complex_numbers.c
 ```
 
-To execute the binary we type:
+To execute the binary type:
 
 ```bash
 $ ./build/complex_numbers 
@@ -94,7 +98,9 @@ c1 + c2 = (3.000000,5.000000)
 *c_ptr = (7.000000,-13.000000)
 ```
 
-Well done. Now we have a very simple C project which we can put into a
+Well done. 
+
+Now we have a very simple C project which we can put into a
 git repository.
 
 ```bash
@@ -139,6 +145,9 @@ is `.gitignore`.
 
 ## Add Files to the Local Repository
 
+To add untracked files to the repository, first place them in the 
+**staging area**, then create a commit:
+
 ```bash
 $ git add .gitignore 
 $ git add complex_numbers.c README.md 
@@ -155,9 +164,6 @@ Changes to be committed:
 	new file:   complex_numbers.c
 ```
 
-
-Finally, we commit all files which are in the staging area:
-
 ```bash
 $ git commit -m "Initial import."
 [master (Basis-Commit) bdbd20e] Initial import.
@@ -169,6 +175,26 @@ $ git commit -m "Initial import."
 $ git status
 On branch master
 nothing to commit, working tree clean
+```
+
+Now, all files (except those listed in `.gitignore`) are tracked 
+by the local Git repository.
+
+
+## Push Changes to the Remote Repository 
+
+After adding files to the local repository, we can **upload 
+these changes to the remote repository**:
+
+```bash
+$ git push 
+```
+
+**Before starting a working session**, it is recommended to pull 
+the latest changes from the remote repository first:
+
+```bash
+$ git pull 
 ```
 
 ## References
