@@ -71,4 +71,6 @@ from the beginning**.
 
 * Jez Humble, Davis Farley. **Continuous Delivery**. Addison-Wesley, 2010
 
+* [YouTube (Dave Farley): Continuous Delivery Pipelines: How to Build Better Software Faster](https://youtu.be/eoaDr5PpT2c?si=fKfZIJ58cWPUd9P_)
+
 *Egon Teiniker, 2020-2026, GPL v3.0*  

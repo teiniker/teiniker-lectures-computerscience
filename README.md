@@ -1,7 +1,7 @@
 # Computer Science and Programming in C/C++
 
 This project collects examples, exercises and model solutions needed to understand 
-**computer science** and **programming in C**.
+**computer science** and **programming in C and C++**.
 
 The following topics will be covered:
 
@@ -19,10 +19,6 @@ The following topics will be covered:
     * [C Basics](programming-c/c-basics)         
     * [C Advanced Topics](programming-c/c-advanced/)   
     * [C Standard Library](programming-c/c-std-lib)
-
-* **Programming in C++**
-   * [C++ Basics](programming-c++/)
-   * [More C++](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
 
 * **Operating Systems**
     * [Linux Platform](linux)
@@ -43,4 +39,8 @@ The following topics will be covered:
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
       
+* **Introduction to Programming in C++**
+   * [C++ Basics](programming-c++/)
+   * [More C++](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
+
 *Egon Teiniker, 2020-2026, GPL v3.0*         
