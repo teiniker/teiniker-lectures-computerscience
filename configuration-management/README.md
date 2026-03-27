@@ -16,4 +16,6 @@ We select the following topics from a wide range of configuration management tec
 
 * [Coding Standard](coding-standard/)
 
+* [Continuous Integration](continuous-integration/)
+
 *Egon Teiniker, 2020-2026, GPL v3.0*         
