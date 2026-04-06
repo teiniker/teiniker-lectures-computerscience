@@ -15,7 +15,7 @@ $$
 $$
 
 
-## Examples
+## Formula Examples
 
 | Formula                      | LaTeX code                     |
 | ---------------------------- | ------------------------------ |
