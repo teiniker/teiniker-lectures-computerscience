@@ -43,11 +43,11 @@ $$
 | $\prod_{i=1}^{n} i$          | `$\prod_{i=1}^{n} i$`          |
 | $\int_a^b f(x),dx$           | `$\int_a^b f(x)\,dx$`          |
 | $\lim_{x\to\infty} f(x)$     | `$\lim_{x\to\infty} f(x)$`     |
-| $\sin (x)$                   | `$\sin (x)$`                   |
-| $\cos x$                     | `$\cos x$`                     |
-| $\tan x$                     | `$\tan x$`                     |
-| $\log x$                     | `$\log x$`                     |
-| $\ln x$                      | `$\ln x$`                      |
+| $\sin(x)$                    | `$\sin(x)$`                    |
+| $\cos(x)$                    | `$\cos(x)$`                    |
+| $\tan(x)$                    | `$\tan(x)$`                    |
+| $\log(x)$                    | `$\log(x)$`                    |
+| $\ln(x)$                     | `$\ln(x)$`                     |
 | $e^x$                        | `$e^x$`                        |
 | $\alpha, \beta, \gamma, \pi$ | `$\alpha, \beta, \gamma, \pi$` |
 | $\infty$                     | `$\infty$`                     |
