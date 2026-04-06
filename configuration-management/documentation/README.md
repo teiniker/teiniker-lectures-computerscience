@@ -8,7 +8,7 @@
 
     - Markdown
         - [Introduction](markdown/introduction/README.md)
-        - [LaTex Formulars](markdown/latex-formulars/README.md)
+        - [LaTex Formulars](markdown/latex-formulas/README.md)
         - [Mermaid Diagrams](markdown/mermaid/README.md)
 
     - Unified Modeling Language (UML)
