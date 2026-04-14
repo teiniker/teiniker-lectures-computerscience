@@ -40,6 +40,8 @@ Most algorithms have a primary **parameter N** that affects the running time mos
 Our goal is to **express the resource requirements** of our programs (most often running time) 
 **in terms of N**, using mathematical formulas that are as simple as possible and that are accurate for large values of the parameters.
 
+![GrowthOfFunctions](growth_of_functions/GrowthOfFunctions.png)
+
 Most algorithms have running times proportional to one of the following functions:
 
 * **1** Most instructions of most programs are executed once or at most only a few times. 
@@ -83,8 +85,8 @@ Most algorithms have running times proportional to one of the following function
 
 The mathematical artifact that allows us to suppress detail when we are analyzing algorithms is called the **O-notation** which is defined as follows.
 
-Definition: **A function g(N) is said to be O(f(N)) if there exist constants c0 and N0 such 
-that g(N) < c0 * f(N) for all N > N0**. 
+> Definition: **A function `g(N)` is said to be `O(f(N))` if there exist 
+> constants `c0` and `N0` such that `g(N) < c0 * f(N)` for all `N > N0`**. 
 
 To allow us to classify algorithms according to upper bounds on their total running times, we use the O-notation for three distinct purposes: 
 * To bound the error that we make when we ignore small terms in mathematical formulas. 
@@ -93,8 +95,6 @@ To allow us to classify algorithms according to upper bounds on their total runn
 
 The O-notation allows us to keep track of the leading terms while **ignoring smaller terms when manipulating approximate mathematical expressions**, and ultimately allows us to make concise statements that give accurate approximations to the quantities that we analyze.
 The O-notation provides us with a way to get an **approximate answer for large N** without bothering with such terms.
-
-![Growth of Functions](growth_of_functions/GrowthOfFunctions.png)
 
 Studying the **worst-case performance of algorithms** is attractive because it allows us to make guarantees about the running time of programs. We say that the number of times certain abstract operations are executed is less than a certain function of the number of inputs, no matter what the input values are.
 
