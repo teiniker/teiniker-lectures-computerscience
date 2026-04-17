@@ -144,7 +144,7 @@ If we use `fgets()` to read a string from the **console window**, we can use the
 
 The following finctions, declared in stdio.h, allow us to **read and write data using a string**.
  
-The `sprintf()` and `sscanf()` functions write charachers into a string while the sscanf() function reads
+The `sprintf()` function writes charachers into a string while the sscanf() function reads
 characters from a string.
 
 ### Writing into a String
