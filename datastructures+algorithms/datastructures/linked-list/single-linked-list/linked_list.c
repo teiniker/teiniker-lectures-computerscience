@@ -17,7 +17,7 @@ node_t *new_node(int value)
     return node_ptr;
 }
 
-int main()
+int main(void)
 {
     // setup linked list
     node_t *first_ptr = NULL;
