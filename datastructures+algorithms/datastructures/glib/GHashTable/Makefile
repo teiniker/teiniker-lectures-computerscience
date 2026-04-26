@@ -1,4 +1,4 @@
-CFLAGS=-std=c99 -g -Wall
+CFLAGS=-std=c17 -g -O0 -Wall
 INCLUDE=-I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
 LIB=-lglib-2.0  
 CC=gcc
