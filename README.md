@@ -38,6 +38,8 @@ The following topics will be covered:
    * [Algorithms](datastructures%2Balgorithms/algorithms)
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
+   * Libraries 
+      - [GLib](datastructures+algorithms/libraries/glib/)   
       
 * **Introduction to Programming in C++**
    * [C++ Basics](programming-c++/)
