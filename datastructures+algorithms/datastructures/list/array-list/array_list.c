@@ -6,10 +6,10 @@
 
 list_t *list_new(size_t dimension)
 {
-    list_t *list = malloc(sizeof(list_t));
+    list_t *list = (list_t *)malloc(sizeof(list_t));
     list->size = 0;
     list->dimension = dimension;
-    list->array = calloc(dimension, sizeof(int));
+    list->array = (int *)calloc(dimension, sizeof(int));
     return list;
 }
 

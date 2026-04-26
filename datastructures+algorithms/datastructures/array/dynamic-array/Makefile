@@ -1,4 +1,4 @@
-CFLAGS=-std=c99 -g -Wall  
+CFLAGS=-std=c99 -g -O0 -Wall  
 CC=gcc
 
 all: init dynamic_arrays

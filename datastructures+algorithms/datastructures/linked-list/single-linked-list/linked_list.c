@@ -20,7 +20,7 @@ node_t *new_node(int value)
 int main()
 {
     // setup linked list
-    node_t *first_ptr;
+    node_t *first_ptr = NULL;
     first_ptr = new_node(1);
     first_ptr->next_ptr = new_node(2);
     first_ptr->next_ptr->next_ptr = new_node(3);
