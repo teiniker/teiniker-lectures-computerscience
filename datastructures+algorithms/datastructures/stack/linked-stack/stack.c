@@ -12,7 +12,7 @@ node_t *node_new(int value)
 
 stack_t *stack_new()
 {
-    stack_t *stack = malloc(sizeof(stack_t));
+    stack_t *stack = (stack_t *)malloc(sizeof(stack_t));
     stack->first_ptr = NULL;
     return stack;
 }
