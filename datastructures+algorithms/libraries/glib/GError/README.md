@@ -4,12 +4,12 @@
 various functions and libraries that use GLib. It is designed to make error 
 reporting and handling more consistent and flexible compared to traditional 
 error handling mechanisms in C, such as returning special error codes or setting 
-global variables like errno.
+global variables like `errno`.
 
 
-The GError structure is defined as follows:
+The `GError` structure is defined as follows:
 
-```Java
+```C
 struct GError {
     GQuark domain;
     gint code;
