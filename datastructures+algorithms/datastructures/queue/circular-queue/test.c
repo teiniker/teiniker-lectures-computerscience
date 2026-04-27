@@ -5,7 +5,7 @@
 
 #include "queue.h"
 
-circular_queue_t *queue = NULL;
+queue_t *queue = NULL;
 
 void setUp(void)
 {

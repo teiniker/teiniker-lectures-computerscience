@@ -3,9 +3,9 @@
 #include "queue.h"
 
 
-circular_queue_t *queue_new(size_t dimension) 
+queue_t *queue_new(size_t dimension) 
 {
-    circular_queue_t *queue = (circular_queue_t *)malloc(sizeof(circular_queue_t));
+    queue_t *queue = (queue_t *)malloc(sizeof(queue_t));
     queue->data = (int *)calloc(dimension, sizeof(int)); 
     queue->head = 0;
     queue->tail = 0;
@@ -14,23 +14,23 @@ circular_queue_t *queue_new(size_t dimension)
     return queue;
 }
 
-void queue_delete(circular_queue_t *cb)
+void queue_delete(queue_t *cb)
 {
     free(cb->data);
     free(cb);
 }
 
-bool queue_is_empty(circular_queue_t* cb) 
+bool queue_is_empty(queue_t* cb) 
 {
     return cb->size == 0;
 }
 
-bool queue_is_full(circular_queue_t* cb) 
+bool queue_is_full(queue_t* cb) 
 {
     return cb->size == cb->dimension;
 }
 
-bool queue_enqueue(circular_queue_t* cb, int value) 
+bool queue_enqueue(queue_t* cb, int value) 
 {
     if (queue_is_full(cb)) 
     {
@@ -44,7 +44,7 @@ bool queue_enqueue(circular_queue_t* cb, int value)
     return true;
 }
 
-int queue_dequeue(circular_queue_t* cb) 
+int queue_dequeue(queue_t* cb) 
 {
     if(queue_is_empty(cb)) 
     {
@@ -57,7 +57,7 @@ int queue_dequeue(circular_queue_t* cb)
     return data;
 }
 
-void queue_print(circular_queue_t* cb) 
+void queue_print(queue_t* cb) 
 {
     if (queue_is_empty(cb)) 
     {
