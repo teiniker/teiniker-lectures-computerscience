@@ -2,12 +2,12 @@
 
 #include "stack.h"
 
-stack_t *stack_new(size_t size)
+stack_t *stack_new(size_t dimension)
 {
     stack_t *stack = (stack_t*)malloc(sizeof(stack_t));
-    stack->size = size;
+    stack->dimension = dimension;
     stack->top = -1;
-    stack->buffer = (int*)calloc(size, sizeof(int));
+    stack->buffer = (int*)calloc(dimension, sizeof(int));
     return stack;
 }
 
@@ -25,7 +25,7 @@ bool stack_is_empty(stack_t *stack)
 
 bool stack_is_full(stack_t *stack)
 {
-    return stack->top == stack->size-1;
+    return stack->top == (int)(stack->dimension - 1);
 }
 
 void stack_push(stack_t *stack, int value)

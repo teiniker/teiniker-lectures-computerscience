@@ -7,12 +7,12 @@
 
 typedef struct  
 {
-    size_t size;
-    size_t top;
+    size_t dimension;
+    int top;
     int *buffer;
 } stack_t;
 
-extern stack_t *stack_new(size_t size);
+extern stack_t *stack_new(size_t dimension);
 extern void stack_delete(stack_t *stack);
 
 extern bool stack_is_empty(stack_t *stack);
