@@ -1,4 +1,4 @@
-CFLAGS=-std=c17 -g -Wall  
+CFLAGS=-std=c17 -g -O0 -Wall  
 CC=gcc
 UNITY=../../unity
 

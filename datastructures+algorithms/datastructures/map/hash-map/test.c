@@ -9,7 +9,7 @@ map_t *map = NULL;
 
 void setUp(void)
 {
-	map = map_new(5);
+	map = map_new(3);
     map_put(map, 11, 111111);
     map_put(map, 22, 222222);
     map_put(map, 33, 333333);

@@ -20,10 +20,10 @@ enum sm_states
 };
 
 enum sm_states state; 
-void sm_light_bulb(enum events event);
-void sm_light_bulb_handler_off(enum events event);
-void sm_light_bulb_handler_on(enum events event);
-void sm_light_bulb_handler_final(enum events event);
+void sm_led(enum events event);
+void sm_led_handler_off(enum events event);
+void sm_led_handler_on(enum events event);
+void sm_led_handler_final(enum events event);
 
 // State Machince Activities
 void current_on(void);
@@ -34,50 +34,50 @@ int main(void)
 {
     // TURN_ON -> TURN_OFFs
     state = OFF; // initial state
-    sm_light_bulb(TURN_ON);
-    sm_light_bulb(TURN_OFF);
+    sm_led(TURN_ON);
+    sm_led(TURN_OFF);
     assert(state == OFF);
     printf("\n");
 
     // TURN_ON -> BURN_OUT
     state = OFF;
-    sm_light_bulb(TURN_ON);
-    sm_light_bulb(BURN_OUT);
+    sm_led(TURN_ON);
+    sm_led(BURN_OUT);
     assert(state == FINAL);
     printf("\n");
 
     // TURN_OFF, BURN_OUT
     state = OFF;
-    sm_light_bulb(TURN_OFF);
-    sm_light_bulb(BURN_OUT);
+    sm_led(TURN_OFF);
+    sm_led(BURN_OUT);
     assert(state == OFF);
     printf("\n");
 
     return 0;
 }
 
-void sm_light_bulb(enum events event)
+void sm_led(enum events event)
 {
     print_event(event);
 
     switch(state)
     {
         case OFF:
-            sm_light_bulb_handler_off(event);
+            sm_led_handler_off(event);
             break;
 
         case ON:
-            sm_light_bulb_handler_on(event);
+            sm_led_handler_on(event);
             break;
 
         case FINAL:
-            sm_light_bulb_handler_final(event);
+            sm_led_handler_final(event);
             break;
     }
 }
 
 // Handle Events in State: OFF
-void sm_light_bulb_handler_off(enum events event)
+void sm_led_handler_off(enum events event)
 {
     switch(event)
     {
@@ -95,7 +95,7 @@ void sm_light_bulb_handler_off(enum events event)
 }
 
 // Handle Events in State: ON
-void sm_light_bulb_handler_on(enum events event)
+void sm_led_handler_on(enum events event)
 {
     switch(event)
     {
@@ -115,7 +115,7 @@ void sm_light_bulb_handler_on(enum events event)
 }
 
 // Handle Events in State: FINAL
-void sm_light_bulb_handler_final(enum events event)
+void sm_led_handler_final(enum events event)
 {
     switch(event)
     {
