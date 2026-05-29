@@ -30,9 +30,4 @@ B) Implementieren Sie die Funktion "sm_parking_gate()" mit Hilfe eines switch/ca
     void sm_parking_gate_open(enum events event);
     void sm_parking_gate_lowering(enum events event);
 
-    Die Aufrufe von parking_gate() in der main() Funktion sollen folgende Ausgaben 
-    bewirken:
-        MOTOR: >>>
-        MOTOR: ---
-        MOTOR: <<<
-        MOTOR: ---
+Überprüfen Sie ihre Implementierungen mit "test.c"    
