@@ -33,35 +33,5 @@ B) Implementieren Sie die Funktion "sm_roller_blind()" mit Hilfe eines switch/ca
         void sm_roller_blind_handler_stop(enum events event);
         void sm_roller_blind_handler_closed(enum events event);
 
-
-    Die Aufrufe von "sm_roller_blind()" in der "main()" Funktion sollen folgende Ausgaben 
-    bewirken:
-        MOTOR: <<<
-        MOTOR: ---
-
-        MOTOR: >>>
-        MOTOR: ---
-
-        MOTOR: <<<
-        MOTOR: ---
-        MOTOR: <<<
-        MOTOR: ---
-
-        MOTOR: >>>
-        MOTOR: ---
-        MOTOR: >>>
-        MOTOR: ---
-
-        MOTOR: <<<
-        MOTOR: ---
-        MOTOR: >>>
-        MOTOR: ---
-
-        MOTOR: >>>
-        MOTOR: ---
-        MOTOR: <<<
-        MOTOR: ---
-
-    Zusätzlich wird durch "assert" Statements überprüft, ob sich die SM im 
-    richtigen State befindet.
+Überprüfen Sie Ihre Implementierungen mit "test.c".
 
