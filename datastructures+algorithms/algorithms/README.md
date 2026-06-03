@@ -2,22 +2,43 @@
 
 ## Searching Algorithms
 
-* [Linear Search](searching/linear-search)
-* [Binary Search](searching/binary-search)
-* [Binary Search (C Standard Library)](searching/binary-search-stdlib)
-* [Binary Search Tree](searching/binary-search-tree)
-  * Demo: [Binary Search Tree (comparator function)](searching/binary-search-tree)
-  * Exercise: [Binary Search Tree (students)](searching/binary-search-tree-students-exercise) 
-        ([model solution](searching/binary-search-tree-students))
+* **Linear Search**
+  - Demo: [linear-search](searching/linear-search)
+
+* **Binary Search**
+  - Demo: [binary-search](searching/binary-search)
+  - Demo: [binary-search-stdlib (C Standard Library)](searching/binary-search-stdlib)
+
+* **Binary Search Tree**
+  - Demo: [binary-search-tree](searching/binary-search-tree)
+  - Demo: [binary-search-tree-comparator](searching/binary-search-tree)
+  - Exercise: [binary-search-tree-students](searching/binary-search-tree-students-exercise) 
+        ([Model Solution](searching/binary-search-tree-students))
+
 
 ## Sorting Algorithms
 
-* [Bubble Sort](sorting/bubble-sort)
-* [Selection Sort](sorting/selection-sort)
-* [Insertion Sort](sorting/insertion-sort)
-* [Merge Sort](sorting/merge-sort)
-* [Quick Sort](sorting/quick-sort)
-* [Quick Sort (C Standard Library)](sorting/quick-sort-stdlib)
+* **Bubble Sort**
+  - Demo: [bubble-sort](sorting/bubble-sort)
+  - Demo: [bubble-sort-comparator](sorting/bubble-sort-comparator-exercise/)
+      ([Model Solution](sorting/bubble-sort-comparator))
+
+* **Selection Sort**
+  - Demo: [selection-sort](sorting/selection-sort)
+  - Exercise: [selection-sort-string](sorting/selection-sort-string-exercise/)
+      ([Model Solution](sorting/selection-sort-string))
+
+* **Insertion Sort**
+  - Demo: [insertion-sort](sorting/insertion-sort)
+  - Exercise: [insertion-sort-file](sorting/insertion-sort-file-exercise/)
+      ([Model Solution](sorting/insertion-sort-file))
+
+* **Merge Sort**
+  - Demo: [merge-sort](sorting/merge-sort)
+
+* **Quick Sort**
+  - Demo: [quick-sort](sorting/quick-sort)
+  - Demo: [quick-sort-stdlib (C Standard Library)](sorting/quick-sort-stdlib)
 
 
 ## References:

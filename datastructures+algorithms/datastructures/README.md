@@ -75,8 +75,10 @@ and a program that specifies the data type as an **implementation**.
 * **Stack**
     * [Introduction](stack/README.md)
     * Example: [array-stack](stack/array-stack/)
-    * Exercise: [stack](stack/linked-stack-exercise) 
+    * Exercise: [linked-stack](stack/linked-stack-exercise) 
             ([model solution](stack/linked-stack))
+    * Exercise: [array-stack-generic](stack/array-stack-generic-exercise/) 
+            ([model solution](stack/array-stack-generic))
             
 * **Queue** 
     * [Introduction](queue/README.md)
