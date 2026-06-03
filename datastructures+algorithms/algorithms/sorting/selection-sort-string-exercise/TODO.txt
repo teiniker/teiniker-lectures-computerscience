@@ -1,0 +1,18 @@
+Exercise: Selection Sort for Strings 
+-------------------------------------------------------------------------------
+
+Modify the existing Selection Sort algorithm to work with string arrays 
+instead of integer arrays.
+
+A) selection-sort.h
+Update the function declarations for "array_selection_sort()" and 
+"array_print()" to accept "char*" arrays as parameters.
+
+B) selection-sort.c
+Refactor the implementation of "array_selection_sort()",  
+"array_print()" and "swap()" to handle "char*" arrays
+and "char*".
+
+Use test cases in "test.c" to verify your implementation.
+
+
