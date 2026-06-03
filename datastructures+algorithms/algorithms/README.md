@@ -25,4 +25,4 @@
 * [YouTube (CS50): Algorithms Summary](https://youtu.be/ktWL3nN38ZA)
 * [Algorithm Visualizations](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*      
+*Egon Teiniker, 2020-2026, GPL v3.0*      
