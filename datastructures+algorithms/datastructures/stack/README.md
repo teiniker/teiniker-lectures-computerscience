@@ -20,4 +20,4 @@ Mainly the following basic operations are performed in the stack:
 * Kyle Loudon. **Mastering Algorithms with C**. O'REILLY, 1999
     * Chapter 6: Stacks and Queues     
      
-*Egon Teiniker, 2020-2022, GPL v3.0* 
+*Egon Teiniker, 2020-2026, GPL v3.0* 
