@@ -1,0 +1,14 @@
+Exercise: Generic Array Stack 
+-------------------------------------------------------------------------------
+
+Refactor the given array stack to store void* instead of int values.
+Using void* we can store pointers to any data in the stack.
+
+A) stack.h 
+Refactor the "stack_t" structure and the function declarations to use 
+"void*" instead of "int" values.
+
+B) stack.c 
+Refactor the affected functions to use "void*" instead of "int" as values.
+
+Test your implementations with test cases implemented in "test.c". 
