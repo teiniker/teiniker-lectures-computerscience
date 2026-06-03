@@ -1,0 +1,18 @@
+Exercise: Bubble Sort with Comparator Function
+-------------------------------------------------------------------------------
+
+Modify the existing Bubble Sort implementation to accept a function pointer
+parameter that defines a custom comparison function. This comparator should
+determine the sorting order of the resulting array.
+
+A) bubble_sort.h
+Add this typedef for a comparator function:
+    typedef int (*comparator_t)(const void *a, const void *b);
+Refactor "array_bubble_sort()" to take a "comparator_t" function pointer as 
+a third parameter.
+
+B) bubble_sort.c
+Update the "array_bubble_sort()" implementation to use the comparator 
+function parameter to compare "data[j]" and "data[j + 1]" during sorting.
+
+Use test cases in "test.c" to verify your implementations.
