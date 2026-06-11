@@ -34,6 +34,7 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 * First Steps...
   * [Stronger type checking](basics/first-steps/type-checking/README.md)
   * [Namespaces](basics/first-steps/namespaces/)
+  * [auto Initialization](basics/first-steps/auto-initialization/)
 
 * Structures
   * [Implicit typedef](basics/structures/implicit-typedef/)
