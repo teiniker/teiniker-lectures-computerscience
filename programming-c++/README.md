@@ -51,12 +51,12 @@ rather than functions and logic. An object has unique attributes and behavior.
 
 Here's a brief summary of the key concepts:
 
-* [Classes and Objects](basics/classes/introduction/): In OOP, objects are instances 
-of classes, which can be thought of as blueprints. 
+* **Classes and Objects**: In OOP, objects are instances of classes, which 
+can be thought of as blueprints. 
 Each object is an instance of a class and has state (attributes or properties) 
 and behavior (methods or functions).
 
-  _Examples_:
+  _Examples_: [From C Structures to C++ Classes](basics/classes/introduction/README.md)
   * From [date-c](basics/classes/introduction/date-c/) to [date-c++](basics/classes/introduction/date-c++/)
   * From [book-c](basics/classes/introduction/book-c/) to [book-c++](basics/classes/introduction/book-c++/)
 
@@ -66,8 +66,11 @@ This mechanism helps to hide the internal implementation details and protects th
 from being accessed directly.
 
   _Examples_:
-  * [complex-number](basics/classes/complex-number/)
-  * Exercise: [resistor](basics/classes/resistor-exercise/) - ([Model Solution](basics/classes/resistor/))
+  * Demo: [complex-number](basics/classes/complex-number/)
+  * Exercise: [can-message](basics/classes/can-message-exercise/) ([Model Solution](basics/classes/can-message/))
+  * Exercise: [resistor](basics/classes/resistor-exercise/) ([Model Solution](basics/classes/resistor/))
+  * Exercise: [eeprom](basics/classes/eeprom-exercise/) ([Model Solution](basics/classes/eeprom/))
+  * Exercise: [lcd](basics/classes/lcd-exercise/) ([Model Solution](basics/classes/lcd/))
 
 * **Inheritance**: This is a way to form new classes using classes that have 
 already been defined. The new classes, known as derived classes, inherit attributes 
@@ -86,51 +89,25 @@ In essence, OOP allows for the clear structure of programs, making them easier t
 understand and manage. It also enhances code reusability and makes programs more 
 modular and efficient.
 
-## C++ in the Arduino Framework
+
+## Practical C++ Use Cases
+
+### Arduino Framework
 If we look at the source code of the Arduino Framework, we will find many C++ features:
 
-_Example:_ [C++ Features in the Arduino Core](arduino-framework/)
+_Examples:_ [C++ Features in the Arduino Core](arduino-framework/)
 
 
+### Data Structures in C++ 
 
-## Data Structures in C++ 
-One area of application where data and behavior can be combined into objecs 
-are data structures.
-We can very easily create C++ classes from the given data structure implementations:
-
-* **List** 
-  * [Linked-List](datastructures/list/linked-list)
-
-* **Stack** 
-  * [Array Stack](datastructures/stack/array-stack/)
-  * [Linked Stack](datastructures/stack/linked-stack/)
+_Examples:_ [Data Structures implemented in C++](datastructures/)
 
 
-## Standard Template Library (STL)
+### C++ Standard Template Library (STL)
 
 A huge benefit of learning C++ is that you gain access to the C++ Standard Library, the `stdlib`, free of charge. The stdlib is composed of three interlocking parts: **containers**, **iterators**, and **algorithms**.
 
-### String Library
-
-* [std::string ](stl/string/)
-
-
-### Containers Library
-
-* **Sequence Containers**:
-  Sequence containers implement data structures which can be accessed sequentially.
-  * [std::array](stl/array)
-  * [std::vector](stl/vector/)
-  * [std::list](stl/list/)
-
-* **Associative Container**
-  * [std::map](stl/map)
-  * [std::unordered_map](stl/unordered_map)
-    
-* **Container Adaptors**:
-  Container adaptors provide a different interface for sequential containers.
-  * [std::stack](stl/stack/)
-  * [std::queue](stl/queue/)
+_Examples:_ [STL Strings, Containers, Iterators, and Algorithms](stl/)
 
 
 ## References
@@ -143,4 +120,4 @@ A huge benefit of learning C++ is that you gain access to the C++ Standard Libra
 
 * Bjarne Stroustrup. **The C++ Programming Language.** Pearson 4th Edition 2017
 
-*Egon Teiniker, 2020-2024, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

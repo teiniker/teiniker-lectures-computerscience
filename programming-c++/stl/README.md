@@ -6,6 +6,13 @@ implement many popular and commonly used data structures and algorithms.
 
 The STL provides implementations of commonly used data structures.
 
+## Strings 
+
+One of the many advantages of the STL is the ability to use the `std::string` 
+class to avoid many problems with character arrays.
+
+_Example:_ [std::string](string/) 
+
 
 ## Containers
 These are data structures that store objects and data. STL containers can be 
@@ -17,9 +24,9 @@ divided into several categories:
     - **list**: Doubly-linked list; fast insertions/removals anywhere.
 
     - _Examples:_
-        * [array](array/)
-        * [vector](vector/)
-        * [list](list/)
+        * Demo: [array](array/)
+        * Demo: [vector](vector/)
+        * Demo: [list](list/)
 
 * **Associative Containers**: Automatically sort elements and provide fast 
     retrieval using keys.
@@ -29,7 +36,7 @@ divided into several categories:
     - **multimap**: Key-value pairs with duplicate keys allowed.
 
     - _Examples:_
-        * [map](map/)
+        * Demo: [map](map/)
 
 
 * **Unordered Associative Containers**: Use hash tables for faster average 
@@ -40,7 +47,7 @@ divided into several categories:
     - **unordered_multimap**: Key-value pairs with duplicate keys allowed, no particular order.
 
     - _Examples:_
-        * [unordered_map](unordered_map/)
+        * Demo: [unordered_map](unordered_map/)
 
 
 * **Container Adapters**: Provide restricted interfaces based on existing containers.
@@ -49,8 +56,8 @@ divided into several categories:
     - **priority_queue**: A heap-based structure for accessing the highest priority element.
 
     - _Examples:_
-        * [stack](stack/)
-        * [queue](queue/)
+        * Demo: [stack](stack/)
+        * Demo: [queue](queue/)
 
 
 
@@ -86,4 +93,4 @@ Often used for custom sorting or filtering.
 
 *  David R. Musser, Atul Saini. **STL Tutorial & Reference Guide: C++ Programming With the Standard Template Library**. Addison-Wesley, 2nd edition, 2001.
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS= -g -Wall  
+CFLAGS= -std=c++17 -g -O0 -Wall  
 UNITY=../../../../unity
 
 all: run_test

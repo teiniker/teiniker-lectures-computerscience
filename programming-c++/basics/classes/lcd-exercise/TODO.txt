@@ -1,0 +1,33 @@
+Exercise: Classes and Objects - LCD
+--------------------------------------------------------------------------------
+
+Implement a class LCD which can be used to simulate a simple display.
+We can create any number of displays (LCD objects) and use them.
+
+A) lcd.h
+Review the given lcd.h file to understand the structure of the 
+LCD class.
+
+B) lcd.cpp
+Write the missing class implementation in a file called "lcd.cpp". 
+
+
+Tip: Run "test.cpp" to verify your implementations.
+
+$ make 
+mkdir -p build
+g++ -std=c++17 -g -O0 -Wall -c ../../../unity/unity.c -o build/unity.o
+g++ -std=c++17 -g -O0 -Wall -c lcd.cpp -o build/lcd.o
+g++ -std=c++17 -g -O0 -Wall -I ../../../unity -c test.cpp -o build/test.o
+g++ -std=c++17 -g -O0 -Wall build/unity.o build/lcd.o build/test.o -o build/test
+build/test
+
+test.cpp:71:test_clear:PASS
+test.cpp:72:test_print_char:PASS
+test.cpp:73:test_print_char_ptr:PASS
+test.cpp:74:test_print:PASS
+test.cpp:75:test_heap:PASS
+-----------------------
+5 Tests 0 Failures 0 Ignored 
+OK
+

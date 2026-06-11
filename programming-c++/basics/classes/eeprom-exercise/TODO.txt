@@ -1,0 +1,29 @@
+Exercise: Classes and Objects - EEPROM
+--------------------------------------------------------------------------------
+
+Implement a class EEPROM which can be used to simulate memory devices.
+We can create any number of devices (EEPROM objects) and use them.
+
+A) eeprom.h
+Review the given eeprom.h file to understand the structure of the 
+EEPROM class.
+
+B) eeprom.cpp
+Write the missing class implementation in a file called "eeprom.cpp". 
+
+
+Tip: Run "test.cpp" to verify your implementations.
+
+$ make 
+mkdir -p build
+g++ -g -Wall -c ../../../unity/unity.c -o build/unity.o
+g++ -g -Wall -c eeprom.cpp -o build/eeprom.o
+g++ -g -Wall -I ../../../unity -c test.cpp -o build/test.o
+g++ -g -Wall build/unity.o build/eeprom.o build/test.o -o build/test
+build/test
+
+test.cpp:34:test_read_write:PASS
+test.cpp:35:test_type:PASS
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
