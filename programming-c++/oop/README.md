@@ -5,15 +5,15 @@ rather than functions and logic. An object has unique attributes and behavior.
 
 * **From C Structures to C++ Classes**
   * [Introduction](classes/introduction/README.md)
-  * From [date-c](basics/classes/introduction/date-c/) to [date-c++](basics/classes/introduction/date-c++/)
-  * From [book-c](basics/classes/introduction/book-c/) to [book-c++](basics/classes/introduction/book-c++/)
+  * From [date-c](classes/introduction/date-c/) to [date-c++](classes/introduction/date-c++/)
+  * From [book-c](classes/introduction/book-c/) to [book-c++](classes/introduction/book-c++/)
 
 * **Classes**
-  - Demo: [complex-number](basics/classes/complex-number/)
-  - Exercise: [can-message](basics/classes/can-message-exercise/) ([Model Solution](basics/classes/can-message/))
-  - Exercise: [resistor](basics/classes/resistor-exercise/) ([Model Solution](basics/classes/resistor/))
-  - Exercise: [eeprom](basics/classes/eeprom-exercise/) ([Model Solution](basics/classes/eeprom/))
-  - Exercise: [lcd](basics/classes/lcd-exercise/) ([Model Solution](basics/classes/lcd/))
+  - Demo: [complex-number](classes/complex-number/)
+  - Exercise: [can-message](classes/can-message-exercise/) ([Model Solution](classes/can-message/))
+  - Exercise: [resistor](classes/resistor-exercise/) ([Model Solution](classes/resistor/))
+  - Exercise: [eeprom](classes/eeprom-exercise/) ([Model Solution](classes/eeprom/))
+  - Exercise: [lcd](classes/lcd-exercise/) ([Model Solution](classes/lcd/))
 
 * **Associations**
   - Demo: [User ---[1]-> Mail](associations/user-mail-directed/)
