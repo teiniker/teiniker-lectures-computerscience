@@ -41,7 +41,7 @@ The following topics will be covered:
    * Libraries 
       - [GLib](datastructures+algorithms/libraries/glib/)   
       
-* **Introduction to Programming in C++**
+* **Object-Oriented Programming in C++**
    * [C++ Basics](programming-c++/)
    * [C++ Advanced](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
 
