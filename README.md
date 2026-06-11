@@ -43,6 +43,6 @@ The following topics will be covered:
       
 * **Introduction to Programming in C++**
    * [C++ Basics](programming-c++/)
-   * [More C++](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
+   * [C++ Advanced](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*         
