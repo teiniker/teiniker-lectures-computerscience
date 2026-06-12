@@ -3,7 +3,7 @@
 In the hands of a knowledgeable programmer, C++ can produce smaller, more efficient,
 and more readable code than any other system programming language.
 
-_Example_: From [hello-world-c](introduction/hello-world-c/) to [hello-world-c++](introduction/hello-world-c++/)
+_Example_: From [hello-world-c](hello-world-c/) to [hello-world-c++](hello-world-c++/)
 
 As a descendant of C, C++ also takes **zero-overhead abstraction** and direct mapping 
 to hardware very seriously. This commitment goes beyond just the C language features 
