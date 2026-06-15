@@ -1,12 +1,12 @@
 #include <unity.h>
 
-#include "linked_list.h"
+#include "array_list.h"
 
-LinkedList *list = NULL;
+ArrayList *list = NULL;
 
 void setUp(void)
 {
-    list = new LinkedList();
+    list = new ArrayList(16);
 
     list->append(1);
     list->append(3);
@@ -21,8 +21,7 @@ void tearDown(void)
 
 void test_size(void)
 {
-    size_t size = list->size();
-    TEST_ASSERT_EQUAL(3, size);
+    TEST_ASSERT_EQUAL(3, list->size());
 }
 
 void test_get(void)
@@ -74,6 +73,7 @@ void test_remove(void)
     TEST_ASSERT_EQUAL(1, list->get(0));
     TEST_ASSERT_EQUAL(3, list->get(1));
 }
+
 
 int main(void)
 {

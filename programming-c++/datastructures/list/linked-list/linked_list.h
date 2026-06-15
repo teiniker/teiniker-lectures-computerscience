@@ -27,7 +27,9 @@ public:
     int get(int index);
     int find(int value);
     void append(int value);
-    
+    void insert(int index, int value);
+    void remove(int index);
+
     void print();
 };
 

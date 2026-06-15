@@ -79,6 +79,60 @@ void LinkedList::append(int value)
     }
 }
        
+void LinkedList::insert(int index, int value)
+{
+    if (index < 0 || index > (int)size())
+    {
+        fprintf(stderr, "Index out of bounds\n");
+        exit(EXIT_FAILURE);
+    }
+
+    Node *ptr = new Node(value);
+
+    if (index == 0)
+    {
+        ptr->next_ptr = first_ptr;
+        first_ptr = ptr;
+    }
+    else
+    {
+        Node *prev = first_ptr;
+        for (int i = 0; i < index - 1; i++)
+        {
+            prev = prev->next_ptr;
+        }
+        ptr->next_ptr = prev->next_ptr;
+        prev->next_ptr = ptr;
+    }
+}
+
+void LinkedList::remove(int index)
+{
+    if (index < 0 || index >= (int)size())
+    {
+        fprintf(stderr, "Index out of bounds\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (index == 0)
+    {
+        Node *rm = first_ptr;
+        first_ptr = first_ptr->next_ptr;
+        delete rm;
+    }
+    else
+    {
+        Node *prev = first_ptr;
+        for (int i = 0; i < index - 1; i++)
+        {
+            prev = prev->next_ptr;
+        }
+        Node *rm = prev->next_ptr;
+        prev->next_ptr = rm->next_ptr;
+        delete rm;
+    }
+}
+
 void LinkedList::print()
 {
     printf("[ ");
