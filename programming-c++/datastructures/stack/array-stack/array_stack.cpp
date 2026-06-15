@@ -2,37 +2,37 @@
 #include <cstdlib>
 #include <cstdio>
 
-#include "stack.h"
+#include "array_stack.h"
 
-Stack::Stack(size_t size)
+ArrayStack::ArrayStack(size_t size)
 {
     _size = size;
     _top = 0;
     _buffer = new int[size];
 }
 
-Stack::~Stack()
+ArrayStack::~ArrayStack()
 {
     delete[] _buffer;
 }
 
-bool Stack::isEmpty()
+bool ArrayStack::isEmpty()
 {
-     return _top == 0;
+    return _top == 0;
 }
 
-void Stack::push(int value)
+void ArrayStack::push(int value)
 {
-    if(_top == _size-1)
-        return;  
-    
+    if (_top == _size - 1)
+        return;
+
     _top++;
     _buffer[_top] = value;
 }
 
-int Stack::pop()
+int ArrayStack::pop()
 {
-    if(isEmpty())
+    if (isEmpty())
         return EXIT_FAILURE;
 
     int value = top();
@@ -40,20 +40,20 @@ int Stack::pop()
     return value;
 }
 
-int Stack::top()
+int ArrayStack::top()
 {
-    if(isEmpty())
+    if (isEmpty())
         return EXIT_FAILURE;
 
     return _buffer[_top];
 }
 
-void Stack::print()
+void ArrayStack::print()
 {
     printf("-->[ ");
-    for(size_t i = 0; i <= _top; i++)
+    for (size_t i = 1; i <= _top; i++)
     {
-        printf("%d ", _buffer[i]);       
+        printf("%d ", _buffer[i]);
     }
     printf("]\n");
 }
