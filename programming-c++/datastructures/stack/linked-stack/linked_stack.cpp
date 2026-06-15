@@ -2,32 +2,32 @@
 #include <cstdlib>
 #include <cstdio>
 
-#include "stack.h"
+#include "linked_stack.h"
 
-Stack::Stack()
+LinkedStack::LinkedStack()
 {
     first_ptr = NULL;
 }
 
-Stack::~Stack()
+LinkedStack::~LinkedStack()
 {
-    while(!isEmpty())
+    while (!isEmpty())
         pop();
 }
 
-bool Stack::isEmpty()
+bool LinkedStack::isEmpty()
 {
     return first_ptr == NULL;
 }
 
-void Stack::push(int value)
+void LinkedStack::push(int value)
 {
     Node *ptr = new Node(value);
     ptr->next_ptr = first_ptr;
-    first_ptr = ptr;   
+    first_ptr = ptr;
 }
 
-int Stack::pop()
+int LinkedStack::pop()
 {
     Node *ptr = first_ptr;
     int value = ptr->value;
@@ -36,17 +36,17 @@ int Stack::pop()
     return value;
 }
 
-int Stack::top()
+int LinkedStack::top()
 {
     return first_ptr->value;
 }
 
-void Stack::print()
+void LinkedStack::print()
 {
     printf("first_ptr -->[ ");
-    for(Node *ptr = first_ptr; ptr != NULL; ptr = ptr->next_ptr)
+    for (Node *ptr = first_ptr; ptr != NULL; ptr = ptr->next_ptr)
     {
-        printf("%d ", ptr->value);       
+        printf("%d ", ptr->value);
     }
     printf("]\n");
 }

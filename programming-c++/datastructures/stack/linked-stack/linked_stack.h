@@ -1,7 +1,7 @@
-#ifndef _STACK_H_
-#define _STACK_H_
+#ifndef _LINKED_STACK_H_
+#define _LINKED_STACK_H_
 
-struct Node 
+struct Node
 {
     Node(int initialValue)
     {
@@ -9,25 +9,25 @@ struct Node
         next_ptr = NULL;
     }
 
-    int value;
+    int   value;
     Node *next_ptr;
 };
 
 
-class Stack    
+class LinkedStack
 {
-   public:
-        Stack();
-        ~Stack();
-        
+    public:
+        LinkedStack();
+        ~LinkedStack();
+
         bool isEmpty();
         void push(int value);
-        int pop();
-        int top();
+        int  pop();
+        int  top();
         void print();
 
     private:
         Node *first_ptr;
 };
 
-#endif /* _STACK_H_ */
+#endif /* _LINKED_STACK_H_ */
