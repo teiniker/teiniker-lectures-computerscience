@@ -16,19 +16,19 @@ struct Node
 
 class LinkedList    
 {
-   public:
-        LinkedList();
-        ~LinkedList();
-        
-        size_t size();
-        int get(int index);
-        int find(int value);
-        void append(int value);
-       
-        void print();
+private:
+    Node *first_ptr;
 
-    private:
-        Node *first_ptr;
+public:
+    LinkedList();
+    ~LinkedList();
+    
+    size_t size();
+    int get(int index);
+    int find(int value);
+    void append(int value);
+    
+    void print();
 };
 
 #endif 
