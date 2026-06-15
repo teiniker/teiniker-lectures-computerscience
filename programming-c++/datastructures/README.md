@@ -11,6 +11,6 @@ We can very easily create C++ classes from the given data structure implementati
 * **Stack** 
   * Demo: [Array Stack](stack/array-stack/)
   * Demo: [Linked Stack](stack/linked-stack/)
-
+  * Demo: [Stack (Strategy Pattern)](stack/abstract-stack/)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*

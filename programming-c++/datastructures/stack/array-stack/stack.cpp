@@ -13,7 +13,7 @@ Stack::Stack(size_t size)
 
 Stack::~Stack()
 {
-    delete _buffer;
+    delete[] _buffer;
 }
 
 bool Stack::isEmpty()
