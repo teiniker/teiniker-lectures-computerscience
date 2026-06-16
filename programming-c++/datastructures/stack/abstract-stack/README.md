@@ -1,6 +1,62 @@
 # Example: Abstract Base-Class - Stack
 
-## Abstract Base-Class: Stack
+
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction LR
+    class Stack {
+        <<abstract>>
+        +~Stack()
+        +isEmpty() bool*
+        +push(value: int) void*
+        +pop() int*
+        +top() int*
+        +print() void*
+    }
+
+    class ArrayStack {
+        -size_t: size
+        -size_t: top
+        -int*: buffer
+        
+        +ArrayStack(size: size_t)$
+        +~ArrayStack()
+        +isEmpty() bool
+        +push(value: int) void
+        +pop() int
+        +top() int
+        +print() void
+    }
+
+    class Node {
+        +int: value
+        +Node*: next_ptr
+        +Node(initialValue: int)$
+    }
+
+    class LinkedStack {
+        -Node*: first_ptr
+        +LinkedStack()$
+        +~LinkedStack()
+        +isEmpty() bool
+        +push(value: int) void
+        +pop() int
+        +top() int
+        +print() void
+    }
+
+    ArrayStack --|> Stack
+    LinkedStack --|> Stack
+    LinkedStack --> "1" Node : first_ptr
+    Node --> "1" Node : next_ptr
+```
+
+
+## Implementation
+
+### Abstract Base-Class: Stack
 
 An abstract base class defines an **interface**, a **set of operations that every
 concrete implementation must provide**, without committing to any particular
@@ -31,7 +87,7 @@ the internal storage layout) is encapsulated behind a stable interface and can
 be swapped without touching the calling code.
 
 
-## Concrete Sub-Classes: ArrayStack and LinkedStack
+### Concrete Sub-Classes: ArrayStack and LinkedStack
 
 Both subclasses inherit publicly from `Stack` and provide a concrete body for
 every pure virtual method.
