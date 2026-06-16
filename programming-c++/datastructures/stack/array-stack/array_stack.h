@@ -18,7 +18,7 @@ class ArrayStack
 
     private:
         size_t  _size;
-        size_t  _top;
+        int     _top;
         int    *_buffer;
 };
 

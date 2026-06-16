@@ -7,7 +7,7 @@
 ArrayStack::ArrayStack(size_t size)
 {
     _size = size;
-    _top = 0;
+    _top  = -1;
     _buffer = new int[size];
 }
 
@@ -18,16 +18,15 @@ ArrayStack::~ArrayStack()
 
 bool ArrayStack::isEmpty()
 {
-    return _top == 0;
+    return _top == -1;
 }
 
 void ArrayStack::push(int value)
 {
-    if (_top == _size - 1)
+    if (_top == (int)_size - 1)
         return;
 
-    _top++;
-    _buffer[_top] = value;
+    _buffer[++_top] = value;
 }
 
 int ArrayStack::pop()
@@ -51,7 +50,7 @@ int ArrayStack::top()
 void ArrayStack::print()
 {
     printf("-->[ ");
-    for (size_t i = 1; i <= _top; i++)
+    for (int i = 0; i <= _top; i++)
     {
         printf("%d ", _buffer[i]);
     }

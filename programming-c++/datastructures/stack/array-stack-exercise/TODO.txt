@@ -21,4 +21,20 @@ Tip: Review the existing C implementation:
 
 Tip: Run "test.cpp" to verify your implementations.
 
+$ make 
+mkdir -p build
+g++ -g -Wall -c ../../../unity/unity.c -o build/unity.o
+g++ -g -Wall -c array_stack.cpp -o build/array_stack.o
+g++ -g -Wall -I ../../../unity -c test.cpp -o build/test.o
+g++ -g -Wall build/unity.o build/array_stack.o build/test.o -o build/test
+build/test
+
+test.cpp:54:test_is_empty:PASS
+-->[ 1 3 5 ]
+test.cpp:55:test_is_not_empty:PASS
+test.cpp:56:test_pop:PASS
+test.cpp:57:test_top:PASS
+-----------------------
+4 Tests 0 Failures 0 Ignored 
+OK
 
