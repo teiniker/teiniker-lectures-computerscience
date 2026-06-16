@@ -10,7 +10,8 @@ We can very easily create C++ classes from the given data structure implementati
   * Demo: [linked-list](list/linked-list)
 
 * **Stack** 
-  * Demo: [array-stack](stack/array-stack/)
+  * Exercise: [array-stack](stack/array-stack-exercise/) 
+    ([Model Solution](stack/array-stack/))
   * Demo: [linked-stack/](stack/linked-stack/)
   * Demo: [abstract-stack (Strategy Pattern)](stack/abstract-stack/)
 
