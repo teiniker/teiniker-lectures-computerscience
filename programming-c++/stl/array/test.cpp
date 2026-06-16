@@ -100,6 +100,24 @@ void test_not_equal(void)
    TEST_ASSERT_TRUE(expected != array);
 }
 
+
+void test_find(void)
+{
+   std::array<int, 5>::iterator it = std::find(array.begin(), array.end(), 30);
+   TEST_ASSERT_TRUE(it != array.end());
+   TEST_ASSERT_EQUAL(30, *it);
+
+   it = std::find(array.begin(), array.end(), 99);
+   TEST_ASSERT_TRUE(it == array.end());
+}
+
+void test_binary_search(void)
+{
+   // array == {10, 20, 30, 40, 50} -- already sorted
+   TEST_ASSERT_TRUE(std::binary_search(array.begin(), array.end(), 40));
+   TEST_ASSERT_FALSE(std::binary_search(array.begin(), array.end(), 99));
+}
+
 void test_sort(void)
 {
    std::array<int, 5> unsorted = {30, 10, 50, 20, 40};
@@ -110,6 +128,7 @@ void test_sort(void)
    TEST_ASSERT_EQUAL(40, unsorted[3]);
    TEST_ASSERT_EQUAL(50, unsorted[4]);
 }
+
 
 int main(void)
 {
@@ -126,6 +145,8 @@ int main(void)
    RUN_TEST(test_iteration);
    RUN_TEST(test_equal);
    RUN_TEST(test_not_equal);
+   RUN_TEST(test_find);
+   RUN_TEST(test_binary_search);
    RUN_TEST(test_sort);
    //...
 

@@ -32,6 +32,55 @@ etc.) while maintaining the performance and memory layout of built-in arrays.
 `array` also supports equality operators (`==`, `!=`) and other comparisons.
 
 
+## Searching
+
+`std::array` has no search member function. Searching is done with free
+functions from `<algorithm>`.
+
+### std::find()
+
+`std::find()` performs a **linear search** and works on unsorted data.
+It returns an iterator to the first matching element, or `end()` if the
+value is not found:
+
+```cpp
+std::array<int, 5> a = {10, 20, 30, 40, 50};
+
+std::array<int, 5>::iterator it = std::find(a.begin(), a.end(), 30);
+if (it != a.end())
+{
+    // element found, *it == 30
+}
+```
+
+Comparing the returned iterator to `end()` is the standard way to check
+whether the search succeeded. Dereferencing the iterator with `*it`
+gives the found value.
+
+* **Complexity**: O(n) -- every element may be examined.
+
+* **Requirement**: none, works on unsorted ranges.
+
+
+### std::binary_search()
+
+`std::binary_search()` performs a **binary search** and returns a `bool`
+indicating whether the value exists in the range:
+
+```cpp
+std::array<int, 5> a = {10, 20, 30, 40, 50};  // must be sorted
+
+bool found = std::binary_search(a.begin(), a.end(), 40);
+// found == true
+```
+
+* **Complexity**: O(log n) -- far faster than linear search for large
+    arrays.
+
+* **Requirement**: the range **must be sorted** in ascending order
+    before calling `binary_search()`.
+
+
 ## Sorting
 
 `std::array` has no `sort()` member function. Sorting is done with the
