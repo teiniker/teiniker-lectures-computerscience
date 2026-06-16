@@ -92,6 +92,29 @@ void test_list_sort_descending(void)
 }
 
 
+void test_list_find(void)
+{
+   list<int> numbers = {7, 5, 16, 8};
+
+   list<int>::iterator it = find(numbers.begin(), numbers.end(), 16);
+   TEST_ASSERT_TRUE(it != numbers.end());
+   TEST_ASSERT_EQUAL(16, *it);
+
+   it = find(numbers.begin(), numbers.end(), 99);
+   TEST_ASSERT_TRUE(it == numbers.end());
+}
+
+// Note: std::list has no random-access iterators, so binary_search()
+// cannot jump to the midpoint and falls back to O(n) linear stepping.
+// It returns a correct result but without the O(log n) benefit.
+void test_list_binary_search(void)
+{
+   list<int> numbers = {5, 7, 8, 16};   // must be sorted
+
+   TEST_ASSERT_TRUE(binary_search(numbers.begin(), numbers.end(), 8));
+   TEST_ASSERT_FALSE(binary_search(numbers.begin(), numbers.end(), 99));
+}
+
 int main(void)
 {
 	UNITY_BEGIN();
@@ -102,6 +125,8 @@ int main(void)
    RUN_TEST(test_for_each);
    RUN_TEST(test_list_sort);
    RUN_TEST(test_list_sort_descending);
+   RUN_TEST(test_list_find);
+   RUN_TEST(test_list_binary_search);
    //...
 
 	return UNITY_END();
