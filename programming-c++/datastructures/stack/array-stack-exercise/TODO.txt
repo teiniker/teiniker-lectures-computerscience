@@ -1,0 +1,24 @@
+Exercise: Classes and Objects - ArrayStack
+--------------------------------------------------------------------------------
+
+Implement a class ArrayStack which can store a given number of int values. 
+
+
+A) array_stack.h
+Declare the class ArrayStack with the following methods:
+    bool isEmpty();
+    void push(int value);
+    int  pop();
+    int  top();
+    void print();
+
+
+B) array_stack.cpp
+Write the class implementation in a file called "array_stack.cpp". 
+
+Tip: Review the existing C implementation: 
+    datastructures+algorithms/datastructures/stack/array-stack
+
+Tip: Run "test.cpp" to verify your implementations.
+
+
