@@ -35,7 +35,7 @@ Here are some key features and functions provided by the `std::string` class:
         `[]` or the `at()` member function.
 
 * String Information and Access:
-    * We can retrieve information about a string's length using the `length() or 
+    * We can retrieve information about a string's length using the `length()` or 
         `size()` member functions.
     * The `c_str()` member function returns a C-style null-terminated string 
         equivalent to the contents of the `std::string` object, allowing you to 
