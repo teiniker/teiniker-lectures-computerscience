@@ -10,12 +10,37 @@ wherever a `User` object is expected, which enables **polymorphism**: a
 `User*` pointer can point to an `Admin` object, and shared behaviour is
 accessed uniformly through the base class interface.
 
-![Class Diagram](ClassDiagram.png)
+
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction LR
+    class Mail {
+        -string: address
+        +Mail(address: string)$
+    }
+
+    class User {
+        -int: id
+        -string: username
+        -Mail*: mail
+        +User(id: int, username: string, mail: Mail*)$
+    }
+
+    class Admin {
+        -string: password
+        +Admin(id: int, username: string, password: string, mail: Mail*)$
+    }
+
+    User --> "1" Mail : mail
+    Admin --|> User
+```
 
 In the class diagram, inheritance is shown with a solid line and a hollow
 arrowhead pointing from the derived class (`Admin`) to the base class
 (`User`). `Admin` inherits all public members of `User` and adds the
-private `_password` attribute.
+private `password` attribute.
 
 
 ## Implementation

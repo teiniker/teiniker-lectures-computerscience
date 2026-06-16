@@ -35,7 +35,7 @@ classDiagram
         +mail(mail: Mail*) void
     }
 
-    User "1" --> "1" Mail : mail
+    User --> "1" Mail : mail
 ```
 
 In UML, a directed association is shown with an open arrowhead pointing

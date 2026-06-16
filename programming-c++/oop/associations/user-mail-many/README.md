@@ -29,7 +29,7 @@ classDiagram
         +mailCount() size_t
     }
 
-    User "1" --> "*" Mail : mails
+    User --> "*" Mail : mails
 ```
 
 ## Implementation
