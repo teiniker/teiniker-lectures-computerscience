@@ -1,4 +1,4 @@
-# Example: Directed Association - User and Mail
+# Example: One-to-One Direted Association - User and Mail
 
 A **directed association** is a relationship between two classes where one
 class holds a reference to another class, but not vice versa. 
@@ -14,12 +14,33 @@ object is not owned by the containing class: the `Mail` object is created
 and destroyed separately from the `User` object, and the caller is
 responsible for memory management.
 
-![Class Diagram](ClassDiagram.png)
+
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction LR
+    class Mail {
+        -string: address
+        +Mail(address: string)$
+    }
+
+    class User {
+        -int: id
+        -string: username
+        -string: password
+        -Mail*: mail
+        +User(id: int, username: string, password: string, mail: Mail*)$
+        +mail() Mail
+        +mail(mail: Mail*) void
+    }
+
+    User "1" --> "1" Mail : mail
+```
 
 In UML, a directed association is shown with an open arrowhead pointing
 from the source class to the target class, annotated with multiplicity
 (here `[1]`).
-
 
 
 ## Implementation

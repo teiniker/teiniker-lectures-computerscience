@@ -1,4 +1,4 @@
-# Example: One-To-Many Association 
+# Example: One-To-Many Directed Association - User and Mail 
 
 A **directed association of multiplicity `*`** means that one object (`User`)
 holds references to **zero or more** objects of another class (`Mail`).
@@ -14,15 +14,15 @@ destruction.
 classDiagram
     direction LR
     class Mail {
-        -string address
+        -string: address
         +Mail(address: string)$
     }
 
     class User {
-        -int id
-        -string username
-        -string password
-        -vector~Mail*~ mails
+        -int: id
+        -string: username
+        -string: password
+        -vector~Mail*~: mails
         +User(id: int, username: string, password: string)$
         +addMail(mail: Mail*) void
         +mail(index: int) Mail
