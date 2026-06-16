@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <vector>
 #include <algorithm>
+#include <functional>
 
 #include <unity.h>
 
@@ -72,22 +73,26 @@ void test_vector_sort(void)
    TEST_ASSERT_TRUE(expected == numbers);
 }
 
-// Comparator function to sort in descending order
-bool compareDesc(int a, int b) 
-{
-    return a > b;
-}
 
-void test_vector_sort_descending(void)
+void test_vector_find(void)
 {
    vector<int> numbers = {7, 5, 16, 8};
 
-   sort(numbers.begin(), numbers.end(), compareDesc);
+   vector<int>::iterator it = find(numbers.begin(), numbers.end(), 16);
+   TEST_ASSERT_TRUE(it != numbers.end());
+   TEST_ASSERT_EQUAL(16, *it);
 
-   vector<int> expected = {16, 8, 7, 5};
-   TEST_ASSERT_TRUE(expected == numbers);
+   it = find(numbers.begin(), numbers.end(), 99);
+   TEST_ASSERT_TRUE(it == numbers.end());
 }
 
+void test_vector_binary_search(void)
+{
+   vector<int> numbers = {5, 7, 8, 16};   // must be sorted
+
+   TEST_ASSERT_TRUE(binary_search(numbers.begin(), numbers.end(), 8));
+   TEST_ASSERT_FALSE(binary_search(numbers.begin(), numbers.end(), 99));
+}
 
 int main(void)
 {
@@ -98,7 +103,8 @@ int main(void)
    RUN_TEST(test_vector_push_back);
    RUN_TEST(test_vector_for_each);
    RUN_TEST(test_vector_sort);
-   RUN_TEST(test_vector_sort_descending);
+   RUN_TEST(test_vector_find);
+   RUN_TEST(test_vector_binary_search);
    //...
 
 	return UNITY_END();
