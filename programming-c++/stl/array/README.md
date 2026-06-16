@@ -32,6 +32,57 @@ etc.) while maintaining the performance and memory layout of built-in arrays.
 `array` also supports equality operators (`==`, `!=`) and other comparisons.
 
 
+## Sorting
+
+`std::array` has no `sort()` member function. Sorting is done with the
+free function `std::sort()` from `<algorithm>`, which operates on any
+range defined by two random-access iterators.
+
+### Sorting the whole array
+
+The member functions `begin()` and `end()` return iterators to the first
+element and one past the last element, defining the full range:
+
+```cpp
+#include <algorithm>
+
+std::array<int, 5> a = {30, 10, 50, 20, 40};
+std::sort(a.begin(), a.end());
+// a == {10, 20, 30, 40, 50}
+```
+
+The free functions `std::begin()` and `std::end()` are an equivalent,
+more generic form that also works on plain C arrays:
+
+```cpp
+std::sort(std::begin(a), std::end(a));
+```
+
+`data()` exposes the raw pointer to the underlying buffer, which can be
+combined with pointer arithmetic:
+
+```cpp
+std::sort(a.data(), a.data() + a.size());
+```
+
+### Sorting a subarray
+
+Passing any two iterators within the full range sorts only that
+sub-range `[first, last)`, leaving the rest of the array untouched:
+
+```cpp
+std::array<int, 5> a = {30, 10, 50, 20, 40};
+std::sort(a.begin() + 1, a.begin() + 4);
+// a == {30, 10, 20, 50, 40}  (only indices 1, 2, 3 sorted)
+```
+
+The equivalent pointer form using `data()`:
+
+```cpp
+std::sort(a.data() + 1, a.data() + 4);
+```
+
+
 ## References
 
 * [C++ Reference: array](https://en.cppreference.com/w/cpp/container/array)

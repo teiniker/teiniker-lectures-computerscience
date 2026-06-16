@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <string>
 #include <array>
+#include <algorithm>
 
 #include <unity.h>
 
@@ -64,7 +65,7 @@ void test_fill(void)
 
 void test_iteration(void)
 {
-   for (const int element : array) 
+   for (int element : array) 
    {
       printf("%d ", element);
    }
@@ -99,6 +100,17 @@ void test_not_equal(void)
    TEST_ASSERT_TRUE(expected != array);
 }
 
+void test_sort(void)
+{
+   std::array<int, 5> unsorted = {30, 10, 50, 20, 40};
+   std::sort(unsorted.begin(), unsorted.end());
+   TEST_ASSERT_EQUAL(10, unsorted[0]);
+   TEST_ASSERT_EQUAL(20, unsorted[1]);
+   TEST_ASSERT_EQUAL(30, unsorted[2]);
+   TEST_ASSERT_EQUAL(40, unsorted[3]);
+   TEST_ASSERT_EQUAL(50, unsorted[4]);
+}
+
 int main(void)
 {
 	UNITY_BEGIN();
@@ -114,6 +126,7 @@ int main(void)
    RUN_TEST(test_iteration);
    RUN_TEST(test_equal);
    RUN_TEST(test_not_equal);
+   RUN_TEST(test_sort);
    //...
 
 	return UNITY_END();
