@@ -19,9 +19,10 @@ These are data structures that store objects and data. STL containers can be
 divided into several categories:
 
 * **Sequence Containers**: Maintain the order of elements.
+    - **array**: A wrapper around a static array.
     - **vector**: Dynamic array (like an array that can resize).
-    - **deque**: Double-ended queue; efficient insertions/removals at both ends.
     - **list**: Doubly-linked list; fast insertions/removals anywhere.
+    - **deque**: Double-ended queue; efficient insertions/removals at both ends.
 
     - _Examples:_
         * Demo: [array](array/)

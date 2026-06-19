@@ -12,7 +12,7 @@ etc.) while maintaining the performance and memory layout of built-in arrays.
 
     _Example_: `std::array<int, 3>` is a **different type** from `std::array<int, 5>`.
 
-* Elements are stored **contiguously**, so it's compatible with C-style APIs.
+* Elements are stored **continuously**, so it's compatible with C-style APIs.
 
 
 ## Common Member Functions
@@ -31,6 +31,68 @@ etc.) while maintaining the performance and memory layout of built-in arrays.
 
 `array` also supports equality operators (`==`, `!=`) and other comparisons.
 
+
+## Iterator
+
+An **iterator** is an object that points to an element inside a container
+and can be advanced to the next element. It is the standard interface
+between STL containers and STL algorithms: every algorithm accepts
+a pair of iterators defining a range `[first, last)`, so the algorithm
+is independent of the concrete container type.
+
+`std::array` provides **random-access iterators**, which support:
+
+* incrementing (`++it`) and decrementing (`--it`)
+* arbitrary offset (`it + n`, `it - n`)
+* element access via dereference (`*it`) and subscript (`it[n]`)
+* comparison (`==`, `!=`, `<`, `>`, `<=`, `>=`)
+
+The two key member functions are:
+
+* `begin()` -- returns an iterator to the first element.
+* `end()` -- returns an iterator one past the last element.
+
+### Declaring an Iterator
+
+```cpp
+std::array<int, 5> a = {10, 20, 30, 40, 50};
+
+std::array<int, 5>::iterator it = a.begin();
+// or, more concisely:
+auto it2 = a.begin();
+```
+
+### Traversing with an Iterator
+
+```cpp
+std::array<int, 5> a = {10, 20, 30, 40, 50};
+
+for (auto it = a.begin(); it != a.end(); ++it)
+{
+    std::cout << *it << "\n";
+}
+```
+
+The dereference operator `*it` reads the value the iterator points to.
+Incrementing with `++it` advances to the next element.
+
+### Use Cases
+
+**Range-based for loop** (syntactic sugar over iterators):
+
+```cpp
+for (int v : a)
+{
+    std::cout << v << "\n";
+}
+```
+
+**Passing a sub-range to an algorithm**:
+
+```cpp
+// reverse only the first three elements
+std::reverse(a.begin(), a.begin() + 3);
+```
 
 ## Searching
 
@@ -136,4 +198,4 @@ std::sort(a.data() + 1, a.data() + 4);
 
 * [C++ Reference: array](https://en.cppreference.com/w/cpp/container/array)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
