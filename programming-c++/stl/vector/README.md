@@ -17,9 +17,35 @@ The `reserve()` function can be used to eliminate reallocations if the number of
 elements is known beforehand.
 
 The complexity (efficiency) of common operations on vectors is as follows:
-* Random access - constant O(1)
-* Insertion or removal of elements at the end - amortized constant O(1)
-* Insertion or removal of elements - linear in the distance to the end of the vector O(n)
+* **Random access**: constant O(1)
+* **Insertion or removal of elements at the end**: amortized constant O(1)
+* **Insertion or removal of elements**: Linear in the distance to the end of the vector O(n)
+
+## Common Member Functions
+
+| Function             | Description                                       |
+|----------------------|---------------------------------------------------|
+| `v.size()`           | Returns the number of elements.                   |
+| `v.empty()`          | Checks whether the container is empty.            |
+| `v.capacity()`       | Returns the number of elements that fit in the    |
+|                      | currently allocated storage.                      |
+| `v.reserve(n)`       | Requests storage for at least `n` elements        |
+|                      | (avoids reallocations when size is known upfront).|
+| `v.resize(n)`        | Resizes the vector to contain `n` elements.       |
+| `v[i]`               | Access element at index `i` (no bounds check).    |
+| `v.at(i)`            | Access element at index `i` with bounds checking. |
+| `v.front()`          | First element.                                    |
+| `v.back()`           | Last element.                                     |
+| `v.push_back(val)`   | Appends `val` to the end.                         |
+| `v.pop_back()`       | Removes the last element.                         |
+| `v.insert(it, val)`  | Inserts `val` before the element at `it`.         |
+| `v.erase(it)`        | Removes the element at iterator position `it`.    |
+| `v.clear()`          | Removes all elements (size becomes 0).            |
+| `v.data()`           | Returns a pointer to the underlying raw array.    |
+| `begin(), end()`     | Iterators to the first and one-past-last element. |
+
+`vector` also supports equality operators (`==`, `!=`) and lexicographic
+comparisons (`<`, `>`, `<=`, `>=`).
 
 
 ## Searching
@@ -47,7 +73,7 @@ Comparing the returned iterator to `end()` is the standard way to check
 whether the search succeeded. Dereferencing the iterator with `*it`
 gives the found value.
 
-* **Complexity**: O(n) -- every element may be examined.
+* **Complexity**: O(n) - every element may be examined.
 * **Requirement**: none, works on unsorted ranges.
 
 

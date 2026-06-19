@@ -27,30 +27,34 @@ It is usually implemented as a **doubly-linked list**.
     middle of the list, since they only involve changing a few pointer connections 
     without shifting elements.
 
-Common Operations:
 
-* **Insertion and Deletion**: We can insert or delete elements at any position in 
-    the list without invalidating pointers, references, and iterators to other 
-    elements (except those pointing to the element being removed).
-* **Sorting and Merging**: `std::list` provides special member functions to sort 
-    `sort()` and merge `merge()` lists. These operations are optimized for linked 
-    lists and can be more efficient than equivalent operations on other sequence 
-    containers.
-* **Reverse**: Reversing the elements of a list can be done in linear time using 
-    the `reverse()` member function, which is efficient due to the nature of linked 
-    lists.
-* **Splice**: The `splice()` operation is used to transfer elements from one list 
-    to another without moving the actual data, but by simply rearranging the pointers. 
-    This makes moving sections between lists very fast.
+## Common Member Functions
 
-When to Use `std::list`: 
-* `std::list` is particularly useful when we need constant time insertions 
-    and deletions from any point in the list and do not require frequent direct 
-    access to elements by their position. 
+| Function               | Description                                      |
+|------------------------|--------------------------------------------------|
+| `l.size()`             | Returns the number of elements.                  |
+| `l.empty()`            | Checks whether the container is empty.           |
+| `l.front()`            | First element.                                   |
+| `l.back()`             | Last element.                                    |
+| `l.push_back(val)`     | Appends `val` to the end.                        |
+| `l.push_front(val)`    | Inserts `val` before the first element.          |
+| `l.pop_back()`         | Removes the last element.                        |
+| `l.pop_front()`        | Removes the first element.                       |
+| `l.insert(it, val)`    | Inserts `val` before the element at `it`.        |
+| `l.erase(it)`          | Removes the element at iterator position `it`.   |
+| `l.remove(val)`        | Removes all elements equal to `val`.             |
+| `l.clear()`            | Removes all elements (size becomes 0).           |
+| `l.reverse()`          | Reverses the order of elements in place.         |
+| `l.sort()`             | Sorts elements (stable, O(n log n)).             |
+| `l.merge(other)`       | Merges sorted `other` into the list (both must   |
+|                        | be sorted); `other` becomes empty afterwards.    |
+| `l.splice(it, other)`  | Transfers all elements of `other` into the list  |
+|                        | before `it`.                                     |
+| `begin(), end()`       | Bidirectional iterators to first and             |
+|                        | one-past-last element.                           |
 
-* It's ideal for situations where the container might be frequently reorganized, 
-    such as in certain types of scheduling algorithms or when maintaining lists 
-    of items with complex relational positioning requirements.
+`list` also supports equality operators (`==`, `!=`) and lexicographic
+comparisons (`<`, `>`, `<=`, `>=`).
 
 
 ## Searching
