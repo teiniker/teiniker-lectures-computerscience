@@ -13,7 +13,9 @@ via `operator[]`.
 The complexity of common operations is as follows:
 
 * **Random access**: constant O(1)
+
 * **Insertion or removal at front or back**: amortized constant O(1)
+
 * **Insertion or removal in the middle**: linear O(n)
 
 
@@ -66,6 +68,7 @@ if (it != numbers.end())
 ```
 
 * **Complexity**: O(n) -- every element may be examined.
+
 * **Requirement**: none, works on unsorted ranges.
 
 
