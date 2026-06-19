@@ -28,6 +28,7 @@ divided into several categories:
         * Demo: [array](array/)
         * Demo: [vector](vector/)
         * Demo: [list](list/)
+        - Demo: [deque](deque/)
 
 * **Associative Containers**: Automatically sort elements and provide fast 
     retrieval using keys.
@@ -59,7 +60,6 @@ divided into several categories:
     - _Examples:_
         * Demo: [stack](stack/)
         * Demo: [queue](queue/)
-
 
 
 ## Iterators
