@@ -20,8 +20,8 @@ void test_user_constructor(void)
     User* user = new User(7, "homer", mail);
 
     TEST_ASSERT_EQUAL(7, user->id());
-    TEST_ASSERT_EQUAL_STRING("homer", user->username().c_str());
-    TEST_ASSERT_EQUAL_STRING("homer.simpson@springfield.com",user->mail()->address().c_str());
+    TEST_ASSERT_TRUE(user->username() == "homer");
+    TEST_ASSERT_TRUE(user->mail()->address() == "homer.simpson@springfield.com");
 
     delete user->mail();
     delete user;
@@ -33,9 +33,9 @@ void test_admin_constructor(void)
     Admin* admin = new Admin(7, "burns", "c3R1ZGVudA", mail);
 
     TEST_ASSERT_EQUAL(7, admin->id());
-    TEST_ASSERT_EQUAL_STRING("burns", admin->username().c_str());
-    TEST_ASSERT_EQUAL_STRING("c3R1ZGVudA", admin->password().c_str());
-    TEST_ASSERT_EQUAL_STRING("monti.burns@springfield.com",admin->mail()->address().c_str());
+    TEST_ASSERT_TRUE(admin->username() == "burns");
+    TEST_ASSERT_TRUE(admin->password() == "c3R1ZGVudA");
+    TEST_ASSERT_TRUE(admin->mail()->address() == "monti.burns@springfield.com");
 
     delete admin->mail();
     delete admin;
@@ -48,15 +48,15 @@ void test_polymorph_vector(void)
     users.push_back(new Admin(7, "burns", "c3R1ZGVudA",new Mail("monti.burns@springfield.com")));
 
     TEST_ASSERT_EQUAL(3, users[0]->id());
-    TEST_ASSERT_EQUAL_STRING("homer", users[0]->username().c_str());
-    TEST_ASSERT_EQUAL_STRING("homer.simpson@springfield.com",users[0]->mail()->address().c_str());
+    TEST_ASSERT_TRUE(users[0]->username() == "homer");
+    TEST_ASSERT_TRUE(users[0]->mail()->address() == "homer.simpson@springfield.com");
 
     TEST_ASSERT_EQUAL(7, users[1]->id());
-    TEST_ASSERT_EQUAL_STRING("burns", users[1]->username().c_str());
-    TEST_ASSERT_EQUAL_STRING("monti.burns@springfield.com",users[1]->mail()->address().c_str());
+    TEST_ASSERT_TRUE("burns" == users[1]->username());
+    TEST_ASSERT_TRUE("monti.burns@springfield.com" == users[1]->mail()->address());
 
     Admin* admin = static_cast<Admin*>(users[1]);
-    TEST_ASSERT_EQUAL_STRING("c3R1ZGVudA", admin->password().c_str());
+    TEST_ASSERT_TRUE("c3R1ZGVudA" == admin->password());
 
     delete users[0]->mail();
     delete users[0];

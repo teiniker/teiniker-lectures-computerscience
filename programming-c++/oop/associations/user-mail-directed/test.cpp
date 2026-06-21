@@ -21,19 +21,19 @@ void tearDown(void)
 void test_user_constructor(void)
 {
     TEST_ASSERT_EQUAL(7, user->id());
-    TEST_ASSERT_EQUAL_STRING("homer", user->username().c_str());
-    TEST_ASSERT_EQUAL_STRING("c3R1ZGVudA", user->password().c_str());
+    TEST_ASSERT_TRUE(user->username() == "homer");
+    TEST_ASSERT_TRUE(user->password() == "c3R1ZGVudA");
 }
 
 void test_mail_constructor(void)
 {
-    TEST_ASSERT_EQUAL_STRING("homer.simpson@springfield.com", mail->address().c_str());
+    TEST_ASSERT_TRUE(mail->address() == "homer.simpson@springfield.com");
 }
 
 
 void test_navigation(void)
 {
-    TEST_ASSERT_EQUAL_STRING("homer.simpson@springfield.com", user->mail()->address().c_str());
+    TEST_ASSERT_TRUE(user->mail()->address() == "homer.simpson@springfield.com");
 }
 
 

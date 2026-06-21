@@ -9,7 +9,7 @@ class User
 	private:
 		int _id; 
 		std::string _username;
-		Mail* _mail;
+		Mail* _mail;	// --[1]-> Mail 
  
 	public:                
 		User(const int id, const std::string& username, Mail* mail);
