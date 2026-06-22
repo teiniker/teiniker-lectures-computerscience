@@ -19,5 +19,8 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
   - [Default Arguments](functions/default-arguments/)
   - [References](functions/references/)
 
+* **Name Mangling**
+  - [extern-c](extern-c/README.md)
+
 
 *Egon Teiniker, 2020-2026, GPL v3.0*

@@ -7,9 +7,9 @@
 * [Object-Oriented Programming (OOP)](oop/)
 
 * C++ Use Cases
-  - [Arduino Framework](arduino-framework/README.md)
   - [Data Structures in C++](datastructures/)
   - [Standard Template Library (STL)](stl/)
+  - [Arduino Framework](https://github.com/teiniker/teiniker-lectures-arduino/tree/main/embedded-programming/programming-techniques/oop)
 
 
 ## References
