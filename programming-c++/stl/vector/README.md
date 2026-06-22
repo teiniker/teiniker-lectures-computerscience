@@ -21,7 +21,7 @@ The complexity (efficiency) of common operations on vectors is as follows:
 * **Insertion or removal of elements at the end**: amortized constant O(1)
 * **Insertion or removal of elements**: Linear in the distance to the end of the vector O(n)
 
-## Common Member Functions
+## Common Operations
 
 | Function             | Description                                       |
 |----------------------|---------------------------------------------------|
