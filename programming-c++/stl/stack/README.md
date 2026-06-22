@@ -8,7 +8,7 @@ The class template acts as a wrapper to the underlying container - only
 a specific set of functions is provided. The stack pushes and pops the element 
 from the back of the underlying container, known as the top of the stack.
 
-## Common Member Functions
+## Common Operations
 
 | Function          | Description                                        |
 |-------------------|----------------------------------------------------|

@@ -15,7 +15,7 @@ etc.) while maintaining the performance and memory layout of built-in arrays.
 * Elements are stored **continuously**, so it's compatible with C-style APIs.
 
 
-## Common Member Functions
+## Common Operations
 
 | Function             | Description                           |
 |----------------------|---------------------------------------|
