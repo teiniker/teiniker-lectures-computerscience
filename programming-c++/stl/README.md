@@ -25,9 +25,9 @@ divided into several categories:
     - **deque**: Double-ended queue; efficient insertions/removals at both ends.
 
     - _Examples:_
-        * Demo: [array](array/)
-        * Demo: [vector](vector/)
-        * Demo: [list](list/)
+        - Demo: [array](array/)
+        - Demo: [vector](vector/)
+        - Demo: [list](list/)
         - Demo: [deque](deque/)
 
 * **Associative Containers**: Automatically sort elements and provide fast 
@@ -38,7 +38,8 @@ divided into several categories:
     - **multimap**: Key-value pairs with duplicate keys allowed.
 
     - _Examples:_
-        * Demo: [map](map/)
+        - Demo: [set](set/)
+        - Demo: [map](map/)
 
 
 * **Unordered Associative Containers**: Use hash tables for faster average 
@@ -49,7 +50,7 @@ divided into several categories:
     - **unordered_multimap**: Key-value pairs with duplicate keys allowed, no particular order.
 
     - _Examples:_
-        * Demo: [unordered_map](unordered_map/)
+        - Demo: [unordered_map](unordered_map/)
 
 
 * **Container Adapters**: Provide restricted interfaces based on existing containers.
@@ -58,8 +59,8 @@ divided into several categories:
     - **priority_queue**: A heap-based structure for accessing the highest priority element.
 
     - _Examples:_
-        * Demo: [stack](stack/)
-        * Demo: [queue](queue/)
+        - Demo: [stack](stack/)
+        - Demo: [queue](queue/)
 
 
 ## Iterators
