@@ -92,6 +92,9 @@ Often used for custom sorting or filtering.
 * [Iterator library](https://en.cppreference.com/w/cpp/iterator)
 * [Algorithms library](https://en.cppreference.com/w/cpp/algorithm)
 
+
+* [YouTube (CppCon 2021): Back to Basics: Classic STL - Bob Steagall](https://youtu.be/tXUXl_RzkAk)
+
 *  David R. Musser, Atul Saini. **STL Tutorial & Reference Guide: C++ Programming With the Standard Template Library**. Addison-Wesley, 2nd edition, 2001.
 
 *Egon Teiniker, 2020-2026, GPL v3.0*

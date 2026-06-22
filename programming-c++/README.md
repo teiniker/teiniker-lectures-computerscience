@@ -14,9 +14,7 @@
 
 ## References
 
-* [YouTube (CppCon 2021): Back to Basics: Classic STL - Bob Steagall](https://youtu.be/tXUXl_RzkAk)
-
-* [C++ Reference: Containers Library](https://en.cppreference.com/w/cpp/container)
+* [YouTube: Bjarne Stroustrup - The Essence of C++](https://youtu.be/ZXc_z1sNbfA?si=OHv6m5mYWlOzgkjo)
 
 * Josh. Lospinoso. **C++ Crash Course**. No Starch Press, 2019 
 
