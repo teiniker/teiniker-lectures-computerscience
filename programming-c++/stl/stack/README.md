@@ -1,6 +1,6 @@
 # std::stack
 
-The `std::stack` class is a container adaptor that gives the programmer 
+The `std::stack` class is a **container adaptor** that gives the programmer 
 the functionality of a stack - specifically, a **LIFO (last-in, first-out)** 
 data structure.
 

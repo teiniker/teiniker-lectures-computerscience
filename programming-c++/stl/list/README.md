@@ -78,9 +78,9 @@ if (it != numbers.end())
 }
 ```
 
-* **Complexity**: O(n) -- every element may be examined.
+* **Complexity**: O(n) - every element may be examined.
 
-* **Requirement**: none, works on unsorted ranges.
+* **Requirement**: None, works on unsorted ranges.
 
 
 ### std::binary_search()
@@ -95,7 +95,7 @@ bool found = binary_search(numbers.begin(), numbers.end(), 8);
 // found == true
 ```
 
-* **Complexity**: O(n) on a `std::list` -- although the algorithm is
+* **Complexity**: O(n) on a `std::list` although the algorithm is
     O(log n) in comparisons, it cannot jump to the midpoint because
     `std::list` provides only **bidirectional iterators**, not
     random-access iterators. Advancing to the middle requires stepping
@@ -136,7 +136,8 @@ numbers.sort(compareDesc);
 ```
 
 * **Complexity**: O(n log n).
-* **Stability**: `list::sort()` is a **stable sort** -- equal elements
+
+* **Stability**: `list::sort()` is a **stable sort** - equal elements
     preserve their original relative order.
 
 

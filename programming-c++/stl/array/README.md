@@ -49,8 +49,8 @@ is independent of the concrete container type.
 
 The two key member functions are:
 
-* `begin()` -- returns an iterator to the first element.
-* `end()` -- returns an iterator one past the last element.
+* `begin()`: returns an iterator to the first element.
+* `end()`: returns an iterator one past the last element.
 
 ### Declaring an Iterator
 
@@ -119,9 +119,9 @@ Comparing the returned iterator to `end()` is the standard way to check
 whether the search succeeded. Dereferencing the iterator with `*it`
 gives the found value.
 
-* **Complexity**: O(n) -- every element may be examined.
+* **Complexity**: O(n) - every element may be examined.
 
-* **Requirement**: none, works on unsorted ranges.
+* **Requirement**: None, works on unsorted ranges.
 
 
 ### std::binary_search()
@@ -136,10 +136,10 @@ bool found = std::binary_search(a.begin(), a.end(), 40);
 // found == true
 ```
 
-* **Complexity**: O(log n) -- far faster than linear search for large
+* **Complexity**: O(log n) - far faster than linear search for large
     arrays.
 
-* **Requirement**: the range **must be sorted** in ascending order
+* **Requirement**: The range **must be sorted** in ascending order
     before calling `binary_search()`.
 
 

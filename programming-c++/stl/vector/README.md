@@ -74,7 +74,7 @@ whether the search succeeded. Dereferencing the iterator with `*it`
 gives the found value.
 
 * **Complexity**: O(n) - every element may be examined.
-* **Requirement**: none, works on unsorted ranges.
+* **Requirement**: None, works on unsorted ranges.
 
 
 ### std::binary_search()
@@ -89,9 +89,10 @@ bool found = binary_search(numbers.begin(), numbers.end(), 8);
 // found == true
 ```
 
-* **Complexity**: O(log n) -- far faster than linear search for large
+* **Complexity**: O(log n) - far faster than linear search for large
     vectors.
-* **Requirement**: the range **must be sorted** in ascending order
+    
+* **Requirement**: The range **must be sorted** in ascending order
     before calling `binary_search()`.
 
 
