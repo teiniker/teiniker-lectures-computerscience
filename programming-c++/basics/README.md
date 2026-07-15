@@ -22,5 +22,9 @@ It’s possible to benefit immediately from at least **some C++ idioms**:
 * **Name Mangling**
   - [extern-c](extern-c/README.md)
 
+## References
 
+* Josh Lospinoso. **C++ Crash Course**. No Starch Press, 2019 
+    * Chapter: Upgrading to Super C
+  
 *Egon Teiniker, 2020-2026, GPL v3.0*
