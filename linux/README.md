@@ -4,6 +4,8 @@ This section provides an overview of using the **Linux platform for software dev
 
 * [Linux VM Setup](../introduction/setup/Environment-Linux.md)
 
+* [Linux Basics Tutorial](tutorial/README.md)
+
 * Shell Commands
     * [Linux Shell: Bash](shell/README.md)    
 
