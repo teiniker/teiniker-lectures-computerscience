@@ -204,7 +204,7 @@ output.
 
 ## Working with Lecture Repositories
 
-The repositories used in this class consist of **Markdown files**, 
+The GitHub repositories used in this class consist of **Markdown files**, 
 **demo examples**, **exercises**, and **model solutions**.
 
 To support **self-directed learning** with GitHub Copilot, the following activities 
