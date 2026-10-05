@@ -6,43 +6,42 @@ This project collects examples, exercises and model solutions needed to understa
 The following topics will be covered:
 
 * **Introduction**
-    * [Computer Language Processing](introduction/language_processing)
-    * [Working with ChatGPT](introduction/chatgpt/README.md)
+   - [Computer Language Processing](introduction/language_processing)
+   - [Agentic Engineering](introduction/agentic-engineering/README.md)
     
-    * [Development Environments](introduction/setup/)
-      * [Windows: MinGw, Git, VS Code](introduction/setup/Environment-Windows.md)
-      * [MacOS](introduction/setup/Environment-MacOS.md)
-      * [Virtual Lab: Linux VM (Debian 12)](introduction/setup/Environment-Linux.md)
-      * [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
+   - [Development Environments](introduction/setup/)
+      - [Virtual Lab: Linux VM (Debian)](introduction/setup/Environment-Linux.md)
+      - [Arduino Platform](https://github.com/teiniker/teiniker-lectures-arduino)
+      - [MacOS](introduction/setup/Environment-MacOS.md)
       
 * **Programming in C**
-    * [C Basics](programming-c/c-basics)         
-    * [C Advanced Topics](programming-c/c-advanced/)   
-    * [C Standard Library](programming-c/c-std-lib)
+   - [C Basics](programming-c/c-basics)         
+   - [C Advanced Topics](programming-c/c-advanced/)   
+   - [C Standard Library](programming-c/c-std-lib)
 
 * **Operating Systems**
-    * [Linux Platform](linux)
+   - [Linux Platform](linux)
 
 * **Configuration Management**
-   * [Introduction](configuration-management)
-   * [Build Automation](configuration-management/building)
+   - [Introduction](configuration-management)
+   - [Build Automation](configuration-management/building)
         * [Compiler Flags](configuration-management/building/compiler-flags/)
-   * [Test Automation](configuration-management/testing)
-   * [Source Code Versioning](configuration-management/versioning)
-   * [Documentation](configuration-management/documentation/)
-   * [C Coding Standard](configuration-management/coding-standard)
+   - [Test Automation](configuration-management/testing)
+   - [Source Code Versioning](configuration-management/versioning)
+   - [Documentation](configuration-management/documentation/)
+   - [C Coding Standard](configuration-management/coding-standard)
    
 * **Data Structures & Algorithms**
-   * [Introduction](datastructures%2Balgorithms/introduction) 
-   * [Data Structures](datastructures%2Balgorithms/datastructures)
-   * [Algorithms](datastructures%2Balgorithms/algorithms)
+   - [Introduction](datastructures%2Balgorithms/introduction) 
+   - [Data Structures](datastructures%2Balgorithms/datastructures)
+   - [Algorithms](datastructures%2Balgorithms/algorithms)
       * [Searching](datastructures%2Balgorithms/algorithms/searching/) 
       * [Sorting](datastructures%2Balgorithms/algorithms/sorting)
-   * Libraries 
+   - Libraries 
       - [GLib](datastructures+algorithms/libraries/glib/)   
       
 * **Object-Oriented Programming in C++**
-   * [C++ Basics](programming-c++/)
-   * [C++ Advanced](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
+   - [C++ Basics](programming-c++/)
+   - [C++ Advanced](https://github.com/teiniker/teiniker-lectures-embedded-cxx)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*         
