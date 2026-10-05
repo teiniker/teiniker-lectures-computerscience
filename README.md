@@ -6,7 +6,7 @@ This project collects examples, exercises and model solutions needed to understa
 The following topics will be covered:
 
 * **Introduction**
-   - [Computer Language Processing](introduction/language_processing)
+   - [Computer Language Processing](introduction/language-processing)
    - [Agentic Engineering](introduction/agentic-engineering/README.md)
       - [GitHub Copilot](introduction/agentic-engineering/github/copilot/README.md)
       - [GitHub Copilot CLI](introduction/agentic-engineering/github/copilot-cli/README.md)
