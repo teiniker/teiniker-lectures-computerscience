@@ -4,11 +4,12 @@ This tutorial covers the basics of working on the Linux command line. It was
 written for the Debian VM we use in the course, but most of it works the same
 on other Linux distributions.
 
-Every chapter introduces a few commands and ends with a short exercise. You'll
-find the solutions in a [separate file](Solutions.md).
+Every chapter introduces a few commands, and most of them end with a short
+exercise. You'll find the solutions in a [separate file](Solutions.md).
 
 ## Contents
 
+* [The Virtual Machine: VirtualBox](VirtualBox.md)
 * [The Terminal](Terminal.md)
 * [The Shell](Shell.md)
 * [Paths and the Working Directory](Paths.md)
@@ -16,10 +17,7 @@ find the solutions in a [separate file](Solutions.md).
 * [Navigating Directories](Navigation.md)
 * [Creating, Copying and Deleting Files](FilesAndDirectories.md)
 * [Looking into Files](ViewingFiles.md)
-* [Pipes and Redirection](Pipes.md)
-* [Editing Text: nano and vim](Editors.md)
-* [Permissions and sudo](Permissions.md)
-* [Processes](Processes.md)
+* [Editing Text: nano](Editors.md)
 * [Installing Software: apt](PackageManager.md)
 * [Git Workflow](Git.md)
 * [Solutions for the Exercises](Solutions.md)
@@ -50,21 +48,14 @@ VIEWING & SEARCHING
   cat file                Print the contents
   less file               Page through a file (q to quit)
   head / tail file        First / last lines
+  wc -l file              Count lines
   grep "text" file        Search inside a file
   find . -name "*.txt"    Find files
 
-PIPES & REDIRECTION
-  command > file          Write output to a file (overwrites!)
-  command >> file         Append output to a file
-  command1 | command2     Pass output on to the next command
-  ls | wc -l              Count entries
-  ps aux | grep name      Search for a process
-  sort / uniq -c          Sort / count
-
 EDITING
-  nano file               Simple editor (Ctrl+O save, Ctrl+X quit)
-  vim file                i = insert, Esc, :wq = save and quit,
-                          :q! = emergency exit
+  nano file               Edit a file (Ctrl+O save, Ctrl+X quit)
+  nano -l file            ... with line numbers
+  sudo nano file          Edit a file owned by root
 
 PERMISSIONS
   ls -l                   Show permissions

@@ -24,10 +24,10 @@ drwxr-xr-x  2 student student 4096 Aug 15 10:23 Documents
 -rw-r--r--  1 student student  220 Aug 12 09:01 notes.txt
 ```
 
-The cryptic column on the far left contains the **permissions**. We will look at
-them in the chapter [Permissions and sudo](Permissions.md). For now it is enough to
-know: if the line starts with `d`, it is a **d**irectory. If it starts with `-`,
-it is a file.
+The cryptic column on the far left contains the **permissions**. They are
+explained in detail on the page [Permissions](../filesystem/Permissions.md).
+For now it is enough to know: if the line starts with `d`, it is a
+**d**irectory. If it starts with `-`, it is a file.
 
 > The command `dir` from Windows does exist on Debian and does almost the same as `ls`.
 

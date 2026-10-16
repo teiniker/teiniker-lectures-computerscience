@@ -15,6 +15,12 @@ $ apt search editor            # search for packages
 `apt update` only downloads the *lists* of what is available and installs
 nothing. That is why it always comes before an `install`.
 
+Installing software changes the whole system, not just our home directory, so
+it needs administrator rights. The prefix **`sudo`** (**s**uper**u**ser **do**)
+runs a single command with these rights. It asks for the password of the
+logged-in user (`student`), not for the `root` password. Only use it for
+commands that really need it.
+
 A small program to try out:
 
 ```

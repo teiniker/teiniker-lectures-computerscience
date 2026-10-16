@@ -72,7 +72,7 @@ $ git push                                   # upload to the server
 
 Rule of thumb for the workflow: **pull, work, add, commit, push**
 
-## Exercise 8
+## Exercise 5
 
 * Check whether Git is installed and set your name and e-mail address.
 * Change to the directory `computerscience`.

@@ -116,6 +116,10 @@ $ ls --help | less            # read the options of ls page by page
 $ man man                     # the manual about the manual
 ```
 
+The vertical bar `|` is called a **pipe**. It passes the output of the command
+on its left to the command on its right, here from `ls --help` to `less`, so
+that a long output can be read page by page.
+
 **Outlook:**
 A more detailed description can be found in [Linux Shell: Bash](../shell/README.md).
 
