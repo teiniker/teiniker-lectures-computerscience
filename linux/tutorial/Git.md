@@ -33,9 +33,14 @@ $ git config --list          # check the settings
 This is the command used most often in class:
 
 ```
-$ cd ~/computerscience                                # first change to the target location
+$ mkdir ~/computerscience                             # create a directory for the course
+$ cd ~/computerscience                                # and change into it
 $ git clone https://github.com/teiniker/teiniker-lectures-computerscience.git
 ```
+
+`mkdir` (**m**a**k**e **dir**ectory) creates a new directory; it is explained
+together with the other file commands in
+[Creating, Copying and Deleting Files](FilesAndDirectories.md).
 
 Git automatically creates a directory with the project name:
 
@@ -72,10 +77,11 @@ $ git push                                   # upload to the server
 
 Rule of thumb for the workflow: **pull, work, add, commit, push**
 
-## Exercise 5
+## Exercise 3
 
 * Check whether Git is installed and set your name and e-mail address.
-* Change to the directory `computerscience`.
+* Create the directory `computerscience` in your home directory and change
+  into it.
 * Clone any public repository, for example:
   `git clone https://github.com/teiniker/teiniker-lectures-computerscience.git`
 * Change into the new directory and explore it with `ls -a` and

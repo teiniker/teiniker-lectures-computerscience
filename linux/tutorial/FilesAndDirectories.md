@@ -26,7 +26,7 @@ $ rmdir empty_dir             # deletes empty directories only
 > check the line twice. With `rm -i` the system asks before every deletion.
 > The command `rm -rf /` must **never** be entered. It deletes the entire system.
 
-## Exercise 3
+## Exercise 5
 
 * Create a directory `computerscience` in the home directory.
 * Inside it, create the files `task1.txt` and `task2.txt`.

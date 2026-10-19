@@ -25,7 +25,7 @@ drwxr-xr-x  2 student student 4096 Aug 15 10:23 Documents
 ```
 
 The cryptic column on the far left contains the **permissions**. They are
-explained in detail on the page [Permissions](../filesystem/Permissions.md).
+explained in the chapter [File Permissions](Permissions.md).
 For now it is enough to know: if the line starts with `d`, it is a
 **d**irectory. If it starts with `-`, it is a file.
 

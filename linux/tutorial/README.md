@@ -10,16 +10,17 @@ exercise. You'll find the solutions in a [separate file](Solutions.md).
 ## Contents
 
 * [The Virtual Machine: VirtualBox](VirtualBox.md)
-* [The Terminal](Terminal.md)
-* [The Shell](Shell.md)
+* [The Terminal and the Shell](TerminalAndShell.md)
 * [Paths and the Working Directory](Paths.md)
 * [Listing Directory Contents](ListingFiles.md)
 * [Navigating Directories](Navigation.md)
+* [Git Workflow](Git.md)
+* [The Editor: Visual Studio Code](VSCode.md)
+* [Hello Linux World: Compiling and Running](HelloWorld.md)
 * [Creating, Copying and Deleting Files](FilesAndDirectories.md)
 * [Looking into Files](ViewingFiles.md)
 * [Editing Text: nano](Editors.md)
-* [Installing Software: apt](PackageManager.md)
-* [Git Workflow](Git.md)
+* [File Permissions](Permissions.md)
 * [Solutions for the Exercises](Solutions.md)
 
 ## Cheat Sheet
@@ -56,11 +57,19 @@ EDITING
   nano file               Edit a file (Ctrl+O save, Ctrl+X quit)
   nano -l file            ... with line numbers
   sudo nano file          Edit a file owned by root
+  code .                  Open the current directory in VS Code
+
+COMPILING
+  gcc -o prog prog.c      Compile prog.c into the program prog
+  gcc -g -o prog prog.c   ... with debugging information for gdb
+  ./prog                  Run a program in the current directory
 
 PERMISSIONS
   ls -l                   Show permissions
   chmod +x file           Make executable
+  chmod -x file           Remove the execute permission
   chmod 644 file          rw-r--r--
+  chmod 755 file          rwxr-xr-x
   sudo command            Run as administrator
 
 PROCESSES
@@ -73,8 +82,6 @@ PROCESSES
   Ctrl+C / Ctrl+Z         Abort / suspend
 
 SYSTEM
-  sudo apt update         Update the package lists
-  sudo apt install pkg    Install a program
   man command             Manual page
   clear                   Clear the screen
 

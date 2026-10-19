@@ -67,18 +67,7 @@ $ nano -l notes.txt
 > in `/etc`, usually belong to `root`. Open them with `sudo nano file`;
 > otherwise nano shows `[ File is unwritable ]` and refuses to save.
 
-## Outlook: vim
-
-Besides nano, almost every Linux system also ships **`vim`**, a much more
-powerful but mode-based editor with a steeper learning curve. It is not needed
-for this tutorial, but it is worth knowing: on a minimal server it may be the
-only editor available. The repository has a separate, more detailed page on it:
-[Editor: vim](../editors/vim.md).
-
-> **Emergency exit from vim:** if you ever land in it by accident, press
-> `Esc`, then type `:q!` and press Enter.
-
-## Exercise 4
+## Exercise 6
 
 * Use `nano` to create a file `profile.txt` and write three lines into it.
   Save and quit.
