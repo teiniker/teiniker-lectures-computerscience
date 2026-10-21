@@ -1,12 +1,11 @@
 # Hello Linux World: Compiling and Running
 
-So far we have only worked with text files. Now we turn a text file into a
-running program. The file [`hello-linux.c`](hello-linux.c) in this directory is
-a small C program that prints a greeting and Tux, the Linux mascot. Change into
-the tutorial directory of the cloned repository and have a look at it:
+A text file is now turned into a running program. The file
+[`hello-linux.c`](hello-linux.c) in this directory is a small C program that
+prints a greeting and Tux, the Linux mascot.
 
 ```
-$ cd ~/computerscience/teiniker-lectures-computerscience/linux/tutorial
+$ cd ~/IP-CS/teiniker-lectures-computerscience/linux/tutorial
 $ cat hello-linux.c
 ```
 
@@ -14,7 +13,7 @@ The source code is readable by humans, but not by the computer. The
 **compiler** translates it into machine code, an **executable** file. On Linux
 the standard C compiler is **`gcc`** (GNU Compiler Collection).
 
-## Compiling
+## Compiling in a Terminal
 
 ```
 $ gcc -o hello-linux hello-linux.c
@@ -34,10 +33,9 @@ $ ls -l
 
 `hello-linux.c` is the source code, `hello-linux` is the program. The program is
 much larger than its source, because it contains machine code and everything
-needed to start it. Note the `x` in its permissions, which we look at in the
-chapter [File Permissions](Permissions.md).
+needed to start it.
 
-## Running
+## Running in a Terminal
 
 A program in the current directory is started with `./` in front of its name:
 
@@ -56,47 +54,21 @@ Hello in the Linux World!
 Welcome to Linux! 
 ```
 
-Why `./`? The shell looks for commands such as `ls` or `gcc` only in a list of
-system directories (the variable `PATH`, see [The Terminal and the Shell](TerminalAndShell.md)), never in
-the current directory. `./hello-linux` says explicitly: *the file
-`hello-linux` right here*. Typing just `hello-linux` gives
-`command not found`.
-
-> Source files are usually committed to Git, compiled programs are not. They
-> can be recreated at any time, and they differ from machine to machine.
-
-## Compiler Errors
-
-Compilers are picky. Open `hello-linux.c` in VS Code, remove the semicolon at
-the end of the first `printf` line and save the file. Compiling again now
-fails:
-
-```
-$ gcc -o hello-linux hello-linux.c
-hello-linux.c: In function 'main':
-hello-linux.c:10:44: error: expected ';' before 'printf'
-```
-
-The message names the **file**, the **line** (`10`) and the **column** (`44`),
-followed by what the compiler expected. The line number is the important part:
-in VS Code, `[ctrl] + [g]` jumps to a line number, and the editor `nano`
-from a later chapter can open a file directly at a line (see
-[Editing Text: nano](Editors.md)). Put the semicolon back and compile again.
-
-Note that the old `hello-linux` executable survives a failed compilation. If a
-program behaves as if a change had no effect, check whether the last compile
-actually succeeded.
-
-## The Same in VS Code
+## Run the program in VS Code
 
 The same steps work in [Visual Studio Code](VSCode.md), provided the folder
 `.vscode` has been copied from the template as described there.
 
-1. Open the repository with `code .` and the file `hello-linux.c` from the
-   Explorer.
-2. **Compile** with `[ctrl] + [shift] + [b]`. The build task runs `gcc -g` and
-   shows its output in the Terminal panel; errors also appear underlined in the
-   editor and in the **Problems** panel.
+1. Open the repository with `code .` or via the GUI and open the file
+   `hello-linux.c` from the Explorer.
+2. **Compile and run** with the play button at the top right. The small arrow
+   next to it opens a menu: **Run Code** compiles and runs the file and shows
+   the output in the Output panel. `[ctrl] + [shift] + [b]` runs only the
+   build task, which calls `gcc -g`; errors appear underlined in the editor
+   and in the **Problems** panel.
+
+   ![Run Code in VS Code](figures/VSCode-HelloWorld.png)
+
 3. Click left of a line number to set a red **breakpoint**, for example on the
    first `printf`.
 4. **Debug** with `F5`. The program starts and stops at the breakpoint. Step
@@ -114,8 +86,6 @@ line by line.
   called `hello-linux`. Run it.
 * Change the greeting in the first `printf` to your own text in VS Code,
   compile again and run the program. Is the new text shown?
-* Remove a closing parenthesis `)` somewhere in the file, compile, and read the
-  error message. Which line does the compiler point to? Fix the error.
 * Open the file in VS Code, set a breakpoint on the line with `return 0;` and
   start the debugger. In which panel does the output appear?
 

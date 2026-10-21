@@ -1,6 +1,6 @@
 # The Editor: Visual Studio Code
 
-`nano` is perfect for quick changes on the command line, but for writing
+For quick changes a terminal editor such as `nano` is enough, but for writing
 programs we want more: syntax highlighting, error markers while typing, and a
 debugger. For this we use **Visual Studio Code** (short: VS Code, command
 `code`), a free editor from Microsoft that is already installed in the lab
@@ -13,7 +13,7 @@ VS Code works with **folders**, not with single files. The usual way to start
 it is from the terminal, inside the directory we want to work on:
 
 ```
-$ cd ~/computerscience/teiniker-lectures-computerscience
+$ cd ~/IP-CS/teiniker-lectures-computerscience
 $ code .
 ```
 
@@ -58,7 +58,7 @@ Both are configured in a hidden folder `.vscode` inside the workspace. Our
 repository ships a ready-made template, which we copy once:
 
 ```
-$ cd ~/computerscience/teiniker-lectures-computerscience
+$ cd ~/IP-CS/teiniker-lectures-computerscience
 $ cp -r .vscode.template .vscode
 ```
 

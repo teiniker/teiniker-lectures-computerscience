@@ -6,22 +6,11 @@ that simulates a complete computer in a window. Linux runs inside that window,
 Windows keeps running outside of it. If something goes wrong in the VM, the
 host system is not affected, and the VM can simply be reset or re-imported.
 
-Two terms are used throughout this chapter:
-
-| Term | Meaning |
-|---|---|
-| **Host** | The real computer, here Windows |
-| **Guest** | The operating system running inside the VM, here Debian Linux |
-
 ## The Virtual Lab Image
 
 The VM is provided as a ready-made image, so no Linux installation is needed:
 
 > **Virtual Lab (Debian 13.7 Image)**, created by Egon Teiniker, CC BY-SA 4.0
-
-The image is imported into VirtualBox via **File > Import Appliance...**
-(select the `.ova` file, then **Import**). Afterwards it appears in the list on
-the left of the VirtualBox window and can be started with **Start**.
 
 The image comes with two accounts:
 
@@ -36,69 +25,78 @@ Log in as `student`. Administrative commands can be run from this account with
 The image expects a **shared folder** on the host at `c:\shared`. How to set it
 up is described below.
 
+## Importing the Image
+
+The VM can live on the computer's hard disk or on a **USB memory stick**. The
+import is the same in both cases, only the destination folder differs. The
+screenshots show the German user interface, the English menu names are given
+in the text.
+
+1. Open **File > Import Appliance...** (`[ctrl] + [i]`).
+
+   ![Import Appliance](figures/VM-1.png)
+
+2. Select the downloaded `.ova` file as the source and click **Next**.
+
+   ![Select the .ova file](figures/VM-2.png)
+
+3. Check the settings. Here the name, the number of CPUs, the RAM and the
+   **Machine Base Folder** can be changed. The base folder decides where the
+   VM is stored:
+
+   * **Hard disk**: keep the default folder.
+   * **Memory stick**: choose a folder on the stick, e.g. `E:\VMs`, as in the
+     screenshot. The same VM can then be used at home and in the lab, see
+     [Running the VM from a Memory Stick](#running-the-vm-from-a-memory-stick).
+
+   Click **Finish**.
+
+   ![Import settings: Machine Base Folder on drive E:](figures/VM-3.png)
+
+Afterwards the VM appears in the list on the left of the VirtualBox window and
+can be started with **Start**.
+
 ## Running the VM from a Memory Stick
 
-The VM does not have to live on the computer's hard disk. All its files (the
-`.vbox` configuration file and the virtual disk `.vdi`) can be stored on a
-**USB memory stick**, so the same VM can be used at home and in the lab, on any
-computer that has VirtualBox installed.
-
-What is needed:
+All files of the VM (the `.vbox` configuration file and the virtual disk
+`.vdi`) are stored on the stick, so it works on any computer that has
+VirtualBox installed. What is needed:
 
 * A stick with at least **32 GB** of free space; the Debian image alone takes
   several GB and grows while working.
 * A **USB 3.0** stick and port (blue connector). On USB 2.0 the VM is slow.
-* The stick must be formatted with **NTFS** or **exFAT**. The usual FAT32
+* The stick must be formatted with **exFAT**. The usual FAT32
   cannot store files larger than 4 GB, which the virtual disk quickly exceeds.
   Check in the File Explorer with right-click on the drive > **Properties**.
-
-### VM on the USB stick
-
-The easiest way is to choose the stick as the destination when importing:
-
-1. **File > Import Appliance...**, select the `.ova` file, click **Next**.
-2. In the settings list, change **Machine Base Folder** to a folder on the
-   stick, e.g. `E:\VMs`.
-3. Click **Import**.
-
-An already imported VM can be moved afterwards: power it off, right-click it
-in the VirtualBox list and choose **Move...**, then select the folder on the
-stick. VirtualBox copies all files and updates its own records; do not move
-the folder by hand in the File Explorer, otherwise VirtualBox will no longer
-find the virtual disk.
-
-VirtualBox has to be installed on that computer as well. The VM is then
-registered once with **Machine > Add...** by selecting the `.vbox` file on
-the stick. From then on it appears in the list like any other VM.
 
 If the stick gets a different drive letter than before (e.g. `F:` instead of
 `E:`), VirtualBox may complain that the VM is *inaccessible*. In that case
 remove the entry (right-click > **Remove...**, **Remove Only**, never
-**Delete all files**) and add the `.vbox` file again.
+**Delete all files**) and register the VM again with **Machine > Add...** by
+selecting the `.vbox` file on the stick.
 
 * **Shut down** the VM properly and **eject** the stick (**Safely Remove
   Hardware**) before pulling it out. Unplugging a running VM corrupts the
   virtual disk, and all work is lost.
 * The shared folder `c:\shared` is configured per host. On another computer it
   has to exist there as well, or the VM starts with a warning and without it.
-* Memory sticks are slower than built-in disks. A snapshot before important
-  work (see below) is cheap insurance.
+* Memory sticks are slower than built-in disks. A copy of the `.vdi` file
+  before important work is cheap insurance.
 * VirtualBox itself cannot normally run from the stick, it has to be installed
   on each host. There is a third-party *Portable-VirtualBox* package, but it
   still needs administrator rights on the host to load its drivers.
 
 ## Changing the Memory (RAM)
 
-By default the VM gets a fixed amount of the host's memory. If the VM feels
-slow, or if the host becomes sluggish while the VM is running, this value can be
-adjusted. The VM must be **powered off** for this (not just paused or saved).
+By default the VM gets a fixed amount of the host's memory. If the VM is too
+slow this value can be adjusted. The VM must be **powered off** for this (not
+just paused or saved).
 
 1. Select the VM in the VirtualBox window.
 2. Click **Settings** (gear icon) or press `[ctrl] + [s]`.
 3. Open **System > Motherboard**.
 4. Move the **Base Memory** slider or type a value in MB, e.g. `4096` for 4 GB.
 5. Confirm with **OK** and start the VM.
-
 
 ## Setting up the Shared Folder
 
@@ -123,7 +121,6 @@ prefix `sf_`, so our folder is **`/media/sf_shared`**.
 ```
 $ ls /media/sf_shared
 ```
-
 
 Now the folder works in both directions. Create a file in Linux and look for
 it in the Windows File Explorer:

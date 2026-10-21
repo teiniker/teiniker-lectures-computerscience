@@ -25,9 +25,19 @@ drwxr-xr-x  2 student student 4096 Aug 15 10:23 Documents
 ```
 
 The cryptic column on the far left contains the **permissions**. They are
-explained in the chapter [File Permissions](Permissions.md).
+explained in the chapter [File Permissions](../filesystem/Permissions.md).
 For now it is enough to know: if the line starts with `d`, it is a
 **d**irectory. If it starts with `-`, it is a file.
+
+`ls` shows a single directory. `tree` shows a directory with everything below
+it, drawn as a tree. The option `-L` limits the depth:
+
+```
+$ tree -L 1 ~/IP-CS
+/home/student/IP-CS
+├── teiniker-lectures-arduino
+└── teiniker-lectures-computerscience
+```
 
 > The command `dir` from Windows does exist on Debian and does almost the same as `ls`.
 
