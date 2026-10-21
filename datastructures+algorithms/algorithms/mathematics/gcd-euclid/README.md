@@ -65,4 +65,8 @@ When `b` reaches $0$, `a` holds the last non-zero remainder, which is the GCD.
     `abs(INT_MIN)` causes integer overflow/undefined behavior 
     because $-(-2^{31}) = 2^{31}$ cannot fit into a signed 32-bit `int`.
 
+## References
+
+* [YouTube (Numberphile): Euclid's Algorithm ](https://youtu.be/6Y3jHHE_hbA?si=UOm8tTei4oVTY85l)
+
 *Egon Teiniker, 2020-2026, GPL v3.0* 
