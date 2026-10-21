@@ -27,7 +27,7 @@ We build values from real/imag parts with `I` (the imaginary unit) or with const
     (type participates in the usual arithmetic conversions so the resulting 
     type matches the expression).
 
-* The `CMPLX*` macros avoid surprises with promotions and signed zeros, thus, prefer them 
+* The `CMPLX` macros avoid surprises with promotions and signed zeros, thus, prefer them 
     when constructing from variables.
 
 _Example:_ Create complex numbers 
