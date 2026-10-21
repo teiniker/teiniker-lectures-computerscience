@@ -4,19 +4,19 @@
 
 **1. Wofür wird `printf()` verwendet?**
 
-**- A: Um Text auf dem Bildschirm auszugeben**
+- **A: Um Text auf dem Bildschirm auszugeben**
 - B: Um eine Datei zu kompilieren
 - C: Um das Programm zu beenden
 
 **2. Was bewirkt `\n` innerhalb einer Zeichenkette?**
 
 - A: Es gibt einen Backslash aus
-**- B: Es erzeugt einen Zeilenumbruch**
+- **B: Es erzeugt einen Zeilenumbruch**
 - C: Es beendet das gesamte Programm
 
 **3. Was bedeutet `return 0;` am Ende von `main()`?**
 
-**- A: Das Programm wurde normalerweise erfolgreich beendet**
+- **A: Das Programm wurde normalerweise erfolgreich beendet**
 - B: Das Programm wartet auf eine Eingabe
 - C: Es wird eine Null auf dem Bildschirm ausgegeben
 

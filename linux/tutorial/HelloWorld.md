@@ -56,29 +56,23 @@ Welcome to Linux!
 
 ## Run the program in VS Code
 
-The same steps work in [Visual Studio Code](VSCode.md), provided the folder
-`.vscode` has been copied from the template as described there.
+The same steps work in [Visual Studio Code](VSCode.md).
 
 1. Open the repository with `code .` or via the GUI and open the file
    `hello-linux.c` from the Explorer.
 2. **Compile and run** with the play button at the top right. The small arrow
-   next to it opens a menu: **Run Code** compiles and runs the file and shows
-   the output in the Output panel. `[ctrl] + [shift] + [b]` runs only the
-   build task, which calls `gcc -g`; errors appear underlined in the editor
-   and in the **Problems** panel.
+   next to it opens a menu: **Run Code** (`[ctrl] + [alt] + [n]`) compiles and
+   runs the file and shows the output in the Output panel. Errors appear
+   underlined in the editor and in the **Problems** panel.
 
    ![Run Code in VS Code](figures/VSCode-HelloWorld.png)
 
 3. Click left of a line number to set a red **breakpoint**, for example on the
    first `printf`.
-4. **Debug** with `F5`. The program starts and stops at the breakpoint. Step
-   through it line by line with `F10`, and watch the output appear in the
-   Terminal panel. Continue with `F5` or stop with `[shift] + [F5]`.
-
-The option `-g` in the build task adds debugging information so that `gdb`
-knows which machine instruction belongs to which source line. The executable
-built on the command line without `-g` runs the same, but cannot be debugged
-line by line.
+4. **Debug** with **Debug C/C++ File** from the same menu, or with `F5`. The
+   program starts and stops at the breakpoint. Step through it line by line
+   with `F10`, and watch the output appear in the Terminal panel. Continue
+   with `F5` or stop with `[shift] + [F5]`.
 
 ## Exercise 4
 

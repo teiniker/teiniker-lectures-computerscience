@@ -51,29 +51,6 @@ the debugger `gdb`.
 If the extension is already installed in the lab image, the Extensions view
 shows it under *Installed*.
 
-## Build and Debug Configuration
-
-VS Code needs to know how to compile a C file and how to start the debugger.
-Both are configured in a hidden folder `.vscode` inside the workspace. Our
-repository ships a ready-made template, which we copy once:
-
-```
-$ cd ~/IP-CS/teiniker-lectures-computerscience
-$ cp -r .vscode.template .vscode
-```
-
-| File | Purpose |
-|---|---|
-| `tasks.json` | The **build task**: calls `gcc -g` on the file that is currently open and writes the executable next to it |
-| `launch.json` | The **debug configuration**: starts that executable in `gdb` |
-
-The option `-g` adds debugging information to the program, so the debugger can
-show source lines and variable names. A more detailed description can be found
-in [Debugging in VS Code](../../configuration-management/debugging/interactive-debugger/single-files/README.md).
-
-The folder `.vscode` is listed in `.gitignore`, so everybody can adapt it
-without changing the repository.
-
 ## Useful Shortcuts
 
 | Key | Function |
@@ -83,7 +60,7 @@ without changing the repository.
 | `[ctrl] + [shift] + [p]` | Command Palette: every VS Code command, searchable |
 | `[ctrl] + [b]` | Show / hide the Side Bar |
 | `` [ctrl] + [`] `` | Show / hide the Terminal |
-| `[ctrl] + [shift] + [b]` | Run the build task (compile) |
+| `[ctrl] + [alt] + [n]` | Run Code: compile and run the current file |
 | `F5` | Start debugging |
 | `F9` | Set / remove a breakpoint in the current line |
 | `F10` / `F11` | Step over / step into the next line |
