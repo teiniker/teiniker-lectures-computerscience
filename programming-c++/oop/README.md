@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP)
+# OOP Basics
 
 OOP is a **programming paradigm** that organizes software design around objects, 
 rather than functions and logic. An object has unique attributes and behavior. 
