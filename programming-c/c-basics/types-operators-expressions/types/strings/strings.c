@@ -26,7 +26,8 @@ int main(void)
     
     {
         char s[40+1];
-        strncpy(s, "Hello World!", 12+1);    
+        strncpy(s, "Hello World!", 12+1); 
+        s[5] = '\0';
         printf("s = \"%s\"\n", s);
         dump_memory(s, 40+1);
         // s = "Hello World!"

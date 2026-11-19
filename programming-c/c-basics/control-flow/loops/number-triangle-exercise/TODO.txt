@@ -1,0 +1,14 @@
+Exercise: Zahlen Dreieck
+-------------------------------------------------------------------------------
+Schreiben Sie ein C-Programm, 
+das mithilfe von verschachtelten Schleifen folgende Ausgabe erzeugt:
+
+1
+12
+123
+1234
+12345
+...
+
+Verwenden Sie eine äußere Schleife für die Zeilen 
+und eine innere Schleife für die Ausgabe der Zahlen innerhalb einer Zeile.
