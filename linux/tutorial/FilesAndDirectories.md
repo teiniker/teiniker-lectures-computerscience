@@ -5,16 +5,16 @@ commands to create directories and files, copy and move them, and delete them
 again. Each command takes the file or directory it works on as an argument.
 
 ```
-$ mkdir computerscience       # create a directory (make directory)
+$ mkdir IP-CS                 # create a directory (make directory)
 $ mkdir -p ece26/linux/lab01  # create a whole chain of directories at once
 
 $ touch notes.txt             # create an empty file
 
 $ cp notes.txt copy.txt       # copy a file (copy)
-$ cp -r computerscience backup  # copy a whole directory (-r = recursive)
+$ cp -r IP-CS backup          # copy a whole directory (-r = recursive)
 
 $ mv copy.txt old.txt         # rename (move)
-$ mv old.txt computerscience/ # move
+$ mv old.txt IP-CS/           # move
 
 $ rm old.txt                  # delete a file (remove)
 $ rm -r backup                # delete a directory including its contents
@@ -28,7 +28,8 @@ $ rmdir empty_dir             # deletes empty directories only
 
 ## Exercise 5
 
-* Create a directory `computerscience` in the home directory.
+* Create a directory `IP-CS` in the home directory (it already exists if
+  you did Exercise 3).
 * Inside it, create the files `task1.txt` and `task2.txt`.
 * Copy `task1.txt` to `task1_backup.txt`.
 * Create a subdirectory `backup` and move the backup file into it.

@@ -18,10 +18,8 @@ exercise. You'll find the solutions in a [separate file](Solutions.md).
 * [The Editor: Visual Studio Code](VSCode.md)
 * [Hello Linux World: Compiling and Running](HelloWorld.md)
 * [Creating, Copying and Deleting Files](FilesAndDirectories.md)
-* [Looking into Files](ViewingFiles.md)
-* [Editing Text: nano](Editors.md)
-* [File Permissions](Permissions.md)
 * [Solutions for the Exercises](Solutions.md)
+* [Kahoot Quiz](Kahoot.md)
 
 ## Cheat Sheet
 
@@ -37,7 +35,7 @@ ORIENTATION
 
 FILES
   mkdir name              Create a directory
-  mkdir -p a/b/c          Create a chain of directories
+  mkdir -p name/a/b       Create a chain of directories
   touch file              Create an empty file
   cp source target        Copy
   cp -r source target     Copy a directory
@@ -45,55 +43,22 @@ FILES
   rm file                 Delete (permanently)
   rm -r dir               Delete a directory
 
-VIEWING & SEARCHING
-  cat file                Print the contents
-  less file               Page through a file (q to quit)
-  head / tail file        First / last lines
-  wc -l file              Count lines
-  grep "text" file        Search inside a file
-  find . -name "*.txt"    Find files
-
-EDITING
-  nano file               Edit a file (Ctrl+O save, Ctrl+X quit)
-  nano -l file            ... with line numbers
-  sudo nano file          Edit a file owned by root
-  code .                  Open the current directory in VS Code
-
 COMPILING
-  gcc -o prog prog.c      Compile prog.c into the program prog
-  gcc -g -o prog prog.c   ... with debugging information for gdb
-  ./prog                  Run a program in the current directory
-
-PERMISSIONS
-  ls -l                   Show permissions
-  chmod +x file           Make executable
-  chmod -x file           Remove the execute permission
-  chmod 644 file          rw-r--r--
-  chmod 755 file          rwxr-xr-x
-  sudo command            Run as administrator
+  gcc -o hello hello.c    Compile hello.c into the program hello
+  ./hello                 Run a program in the current directory
 
 PROCESSES
-  ps aux                  All processes
-  top / htop              Live view (q to quit)
-  command &               Start in the background
-  jobs / fg               Show / bring back background jobs
-  kill PID                Terminate a process
-  kill -9 PID             Force termination
+  top                     Live view (q to quit)
   Ctrl+C / Ctrl+Z         Abort / suspend
 
 SYSTEM
-  man command             Manual page
+  man command             Manual page, e.g. man ls, man tree
   clear                   Clear the screen
 
 GIT
-  git --version           Check the version
-  git config --global user.name "Name"
   git clone <url>         Download a repository
   git status              Show changes
   git pull                Update
-  git add .               Stage changes
-  git commit -m "Text"    Commit
-  git push                Upload
 ```
 
 ## References

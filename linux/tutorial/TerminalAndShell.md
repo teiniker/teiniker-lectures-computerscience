@@ -80,7 +80,6 @@ Linux comes with documentation for almost every command, directly in the termina
 ```
 $ man ls          # the manual page, quit with q
 $ ls --help       # short overview of the options
-$ man -k copy     # search the manual pages for a keyword
 ```
 
 In `man`, we scroll with the arrow keys, search with `/searchterm` and quit with
@@ -104,45 +103,6 @@ a habit from day one:
 **Note on copy and paste:** in the terminal, `[ctrl] + [c]` does *not* copy,
 it aborts the running command. To copy, use `[ctrl] + [shift] + [c]`,
 to paste, use `[ctrl] + [shift] + [v]`.
-
-## Shell Variables and Environment Variables
-
-The shell can store values in **variables**. A variable is set with `=` (no
-spaces around it) and read with a `$` in front of its name:
-
-```
-$ NAME=student
-$ echo $NAME
-student
-```
-
-Some variables are set by the system and are available in every program we
-start. These are called **environment variables**. The most important ones:
-
-| Variable | Content |
-|---|---|
-| `$HOME` | The home directory, the same as `~` |
-| `$USER` | The name of the logged-in user |
-| `$SHELL` | The shell currently in use |
-| `$PATH` | The directories in which the shell looks for programs |
-
-```
-$ echo $HOME
-/home/student
-$ echo $PATH
-/home/student/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-$ env             # list all environment variables
-```
-
-`$PATH` explains the error message `command not found`: the shell only finds a
-program if it is located in one of these directories.
-
-A variable we set ourselves is only known to the shell. To pass it on to the
-programs we start, we use `export`:
-
-```
-$ export EDITOR=nano
-```
 
 ## Commands to Try
 
