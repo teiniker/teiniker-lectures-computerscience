@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <assert.h> 
 
-int series(int r1, int r2);
-int parallel(int r1, int r2);
+double series(double r1, double r2);
+double parallel(double r1, double r2);
 
 int main(void)
 {
@@ -10,12 +10,12 @@ int main(void)
     //   --[120]--+       +--[120]--
     //            +-[120]-+
 
-    int r;
+    double r;
 
     // TODO: Calculate total resistance 
 
-    printf("R = %d Ohm\n", r);
-    assert(300 == r);
+    printf("R = %.2f Ohm\n", r);
+    assert(300.0 == r);
 
     return 0;
 }

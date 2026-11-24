@@ -11,8 +11,8 @@ Parallelschaltungen von jeweils zwei Widerständen.
 
 A) Implementieren Sie die folgenden Funktionen für die Berechnung des Ersatz-
    wiederstandes einer Serien- und Parallelschaltung zweier Widerstände:
-    int series(int r1, int r2);
-    int parallel(int r1, int r2);
+    double series(double r1, double r2);
+    double parallel(double r1, double r2);
 
 B) Verwenden Sie die beiden Funktionen um in der main() Funktion den Gesamt-
    wiederstand der folgenden Schaltung zu berechnen:
@@ -21,4 +21,4 @@ B) Verwenden Sie die beiden Funktionen um in der main() Funktion den Gesamt-
        --[120]--+       +--[120]--
                 +-[120]-+
 
-   Geben Sie das Ergebnis auf der Konsole aus: R = 300 Ohm
+   Geben Sie das Ergebnis auf der Konsole aus: R = 300.00 Ohm
