@@ -47,8 +47,8 @@
             ([model solution](structures/struct-resistor))  
 
 6. **State Machines**
-   * [Introduction](statemachine/README.md)  
-   * [sm-light-bulb](statemachine/)
+   * [Introduction](statemachine/introduction/README.md)  
+   * [sm-led](statemachine/sm-led/)
    * Exercise: [sm-parking-gate](statemachine/sm-parking-gate-exercise)
       ([model solution](statemachine/sm-parking-gate))
    * Exercise: [sm-roller-blind](statemachine/sm-roller-blind-exercise)
